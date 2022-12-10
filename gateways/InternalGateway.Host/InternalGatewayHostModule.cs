@@ -27,6 +27,7 @@ using Volo.Abp.TenantManagement;
 using Volo.Blogging;
 using Microsoft.AspNetCore.Cors;
 using CurrencyManagment;
+using CustomerManagement;
 
 namespace InternalGateway.Host
 {
@@ -38,6 +39,7 @@ namespace InternalGateway.Host
 
 
         typeof(CurrencyManagmentHttpApiModule),
+        typeof(CustomerManagementHttpApiModule),
 
 
         typeof(AbpEntityFrameworkCoreSqlServerModule),

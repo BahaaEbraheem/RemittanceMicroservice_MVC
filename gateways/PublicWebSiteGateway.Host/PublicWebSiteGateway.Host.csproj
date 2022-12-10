@@ -36,6 +36,10 @@
 
       <ProjectReference Include="..\..\modules\currency\src\CurrencyManagment.HttpApi\CurrencyManagment.HttpApi.csproj" />
 
+
+
+      <ProjectReference Include="..\..\modules\customer\src\CustomerManagement.HttpApi\CustomerManagement.HttpApi.csproj" />
+
       
       
       <ProjectReference Include="..\..\modules\product\src\ProductManagement.HttpApi\ProductManagement.HttpApi.csproj" />

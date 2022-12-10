@@ -30,6 +30,8 @@ using Microsoft.AspNetCore.Cors;
 using Volo.Abp.Http.Client.Web;
 using CurrencyManagment.Web;
 using CurrencyManagment;
+using CustomerManagement;
+using CustomerManagement.Web;
 
 namespace BackendAdminApp.Host
 {
@@ -49,6 +51,9 @@ namespace BackendAdminApp.Host
 
         typeof(CurrencyManagmentHttpApiClientModule),
         typeof(CurrencyManagmentWebModule),
+
+        typeof(CustomerManagementHttpApiClientModule),
+        typeof(CustomerManagementWebModule),
 
         typeof(AbpAspNetCoreMvcUiBasicThemeModule),
         typeof(AbpFeatureManagementHttpApiClientModule),

@@ -35,6 +35,7 @@
       "PublicWebSiteGateway.Host/1.0.0": {
         "dependencies": {
           "CurrencyManagment.HttpApi": "0.1.0",
+          "CustomerManagement.HttpApi": "0.1.0",
           "IdentityServer4.AccessTokenValidation": "3.0.1",
           "Microsoft.AspNetCore.DataProtection.StackExchangeRedis": "6.0.0",
           "Microsoft.Extensions.Caching.StackExchangeRedis": "6.0.0",
@@ -3749,6 +3750,43 @@
         },
         "compile": {
           "CurrencyManagment.HttpApi.dll": {}
+        }
+      },
+      "CustomerManagement.Application.Contracts/0.1.0": {
+        "dependencies": {
+          "CustomerManagement.Domain.Shared": "0.1.0",
+          "Volo.Abp.Authorization": "6.0.2",
+          "Volo.Abp.Ddd.Application.Contracts": "6.0.2"
+        },
+        "runtime": {
+          "CustomerManagement.Application.Contracts.dll": {}
+        },
+        "compile": {
+          "CustomerManagement.Application.Contracts.dll": {}
+        }
+      },
+      "CustomerManagement.Domain.Shared/0.1.0": {
+        "dependencies": {
+          "Microsoft.Extensions.FileProviders.Embedded": "6.0.5",
+          "Volo.Abp.Validation": "6.0.2"
+        },
+        "runtime": {
+          "CustomerManagement.Domain.Shared.dll": {}
+        },
+        "compile": {
+          "CustomerManagement.Domain.Shared.dll": {}
+        }
+      },
+      "CustomerManagement.HttpApi/0.1.0": {
+        "dependencies": {
+          "CustomerManagement.Application.Contracts": "0.1.0",
+          "Volo.Abp.AspNetCore.Mvc": "6.0.2"
+        },
+        "runtime": {
+          "CustomerManagement.HttpApi.dll": {}
+        },
+        "compile": {
+          "CustomerManagement.HttpApi.dll": {}
         }
       },
       "MsDemo.Shared/1.0.0": {
@@ -7474,6 +7512,21 @@
       "sha512": ""
     },
     "CurrencyManagment.HttpApi/0.1.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "CustomerManagement.Application.Contracts/0.1.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "CustomerManagement.Domain.Shared/0.1.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "CustomerManagement.HttpApi/0.1.0": {
       "type": "project",
       "serviceable": false,
       "sha512": ""

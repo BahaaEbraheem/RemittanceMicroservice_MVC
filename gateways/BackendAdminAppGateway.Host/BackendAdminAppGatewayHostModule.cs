@@ -36,6 +36,7 @@ using Volo.Abp.TenantManagement.EntityFrameworkCore;
 using Volo.Blogging;
 using Microsoft.AspNetCore.Cors;
 using CurrencyManagment;
+using CustomerManagement;
 
 namespace BackendAdminAppGateway.Host
 {
@@ -46,6 +47,8 @@ namespace BackendAdminAppGateway.Host
         typeof(ProductManagementHttpApiModule),
 
          typeof(CurrencyManagmentHttpApiModule),
+         typeof(CustomerManagementHttpApiModule),
+
 
         typeof(AbpEntityFrameworkCoreSqlServerModule),
         typeof(AbpPermissionManagementEntityFrameworkCoreModule),

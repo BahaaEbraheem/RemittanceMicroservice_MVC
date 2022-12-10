@@ -36,6 +36,8 @@
         "dependencies": {
           "CurrencyManagment.HttpApi.Client": "0.1.0",
           "CurrencyManagment.Web": "0.1.0",
+          "CustomerManagement.HttpApi.Client": "0.1.0",
+          "CustomerManagement.Web": "0.1.0",
           "Microsoft.AspNetCore.Authentication.OpenIdConnect": "6.0.0",
           "Microsoft.AspNetCore.DataProtection.StackExchangeRedis": "6.0.0",
           "Microsoft.Extensions.Caching.StackExchangeRedis": "6.0.0",
@@ -3833,6 +3835,70 @@
           "CurrencyManagment.Web.dll": {}
         }
       },
+      "CustomerManagement.Application.Contracts/0.1.0": {
+        "dependencies": {
+          "CustomerManagement.Domain.Shared": "0.1.0",
+          "Volo.Abp.Authorization": "6.0.2",
+          "Volo.Abp.Ddd.Application.Contracts": "6.0.2"
+        },
+        "runtime": {
+          "CustomerManagement.Application.Contracts.dll": {}
+        },
+        "compile": {
+          "CustomerManagement.Application.Contracts.dll": {}
+        }
+      },
+      "CustomerManagement.Domain.Shared/0.1.0": {
+        "dependencies": {
+          "Microsoft.Extensions.FileProviders.Embedded": "6.0.5",
+          "Volo.Abp.Validation": "6.0.2"
+        },
+        "runtime": {
+          "CustomerManagement.Domain.Shared.dll": {}
+        },
+        "compile": {
+          "CustomerManagement.Domain.Shared.dll": {}
+        }
+      },
+      "CustomerManagement.HttpApi/0.1.0": {
+        "dependencies": {
+          "CustomerManagement.Application.Contracts": "0.1.0",
+          "Volo.Abp.AspNetCore.Mvc": "6.0.2"
+        },
+        "runtime": {
+          "CustomerManagement.HttpApi.dll": {}
+        },
+        "compile": {
+          "CustomerManagement.HttpApi.dll": {}
+        }
+      },
+      "CustomerManagement.HttpApi.Client/0.1.0": {
+        "dependencies": {
+          "CustomerManagement.Application.Contracts": "0.1.0",
+          "Volo.Abp.Http.Client": "6.0.2"
+        },
+        "runtime": {
+          "CustomerManagement.HttpApi.Client.dll": {}
+        },
+        "compile": {
+          "CustomerManagement.HttpApi.Client.dll": {}
+        }
+      },
+      "CustomerManagement.Web/0.1.0": {
+        "dependencies": {
+          "CustomerManagement.Application.Contracts": "0.1.0",
+          "CustomerManagement.HttpApi": "0.1.0",
+          "Microsoft.Extensions.FileProviders.Embedded": "6.0.5",
+          "Volo.Abp.AspNetCore.Mvc.UI.Theme.Shared": "6.0.2",
+          "Volo.Abp.AutoMapper": "6.0.2"
+        },
+        "runtime": {
+          "CustomerManagement.Web.dll": {}
+        },
+        "compile": {
+          "CustomerManagement.Web.dll": {}
+        }
+      },
       "MsDemo.Shared/1.0.0": {
         "runtime": {
           "MsDemo.Shared.dll": {}
@@ -7549,6 +7615,31 @@
       "sha512": ""
     },
     "CurrencyManagment.Web/0.1.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "CustomerManagement.Application.Contracts/0.1.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "CustomerManagement.Domain.Shared/0.1.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "CustomerManagement.HttpApi/0.1.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "CustomerManagement.HttpApi.Client/0.1.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "CustomerManagement.Web/0.1.0": {
       "type": "project",
       "serviceable": false,
       "sha512": ""

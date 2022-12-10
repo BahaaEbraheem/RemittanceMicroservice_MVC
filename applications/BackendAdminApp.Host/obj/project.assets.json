@@ -5031,6 +5031,83 @@
           "Microsoft.AspNetCore.App"
         ]
       },
+      "CustomerManagement.Application.Contracts/0.1.0": {
+        "type": "project",
+        "framework": ".NETStandard,Version=v2.0",
+        "dependencies": {
+          "CustomerManagement.Domain.Shared": "0.1.0",
+          "Volo.Abp.Authorization": "6.0.1",
+          "Volo.Abp.Ddd.Application.Contracts": "6.0.1"
+        },
+        "compile": {
+          "bin/placeholder/CustomerManagement.Application.Contracts.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/CustomerManagement.Application.Contracts.dll": {}
+        }
+      },
+      "CustomerManagement.Domain.Shared/0.1.0": {
+        "type": "project",
+        "framework": ".NETStandard,Version=v2.0",
+        "dependencies": {
+          "Microsoft.Extensions.FileProviders.Embedded": "6.0.5",
+          "Volo.Abp.Validation": "6.0.1"
+        },
+        "compile": {
+          "bin/placeholder/CustomerManagement.Domain.Shared.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/CustomerManagement.Domain.Shared.dll": {}
+        }
+      },
+      "CustomerManagement.HttpApi/0.1.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v6.0",
+        "dependencies": {
+          "CustomerManagement.Application.Contracts": "0.1.0",
+          "Volo.Abp.AspNetCore.Mvc": "6.0.1"
+        },
+        "compile": {
+          "bin/placeholder/CustomerManagement.HttpApi.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/CustomerManagement.HttpApi.dll": {}
+        }
+      },
+      "CustomerManagement.HttpApi.Client/0.1.0": {
+        "type": "project",
+        "framework": ".NETStandard,Version=v2.0",
+        "dependencies": {
+          "CustomerManagement.Application.Contracts": "0.1.0",
+          "Volo.Abp.Http.Client": "6.0.1"
+        },
+        "compile": {
+          "bin/placeholder/CustomerManagement.HttpApi.Client.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/CustomerManagement.HttpApi.Client.dll": {}
+        }
+      },
+      "CustomerManagement.Web/0.1.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v6.0",
+        "dependencies": {
+          "CustomerManagement.Application.Contracts": "0.1.0",
+          "CustomerManagement.HttpApi": "0.1.0",
+          "Microsoft.Extensions.FileProviders.Embedded": "6.0.5",
+          "Volo.Abp.AspNetCore.Mvc.UI.Theme.Shared": "6.0.1",
+          "Volo.Abp.AutoMapper": "6.0.1"
+        },
+        "compile": {
+          "bin/placeholder/CustomerManagement.Web.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/CustomerManagement.Web.dll": {}
+        },
+        "frameworkReferences": [
+          "Microsoft.AspNetCore.App"
+        ]
+      },
       "MsDemo.Shared/1.0.0": {
         "type": "project",
         "framework": ".NETCoreApp,Version=v6.0",
@@ -12734,6 +12811,31 @@
       "path": "../../modules/currency/src/CurrencyManagment.Web/CurrencyManagment.Web.csproj",
       "msbuildProject": "../../modules/currency/src/CurrencyManagment.Web/CurrencyManagment.Web.csproj"
     },
+    "CustomerManagement.Application.Contracts/0.1.0": {
+      "type": "project",
+      "path": "../../modules/customer/src/CustomerManagement.Application.Contracts/CustomerManagement.Application.Contracts.csproj",
+      "msbuildProject": "../../modules/customer/src/CustomerManagement.Application.Contracts/CustomerManagement.Application.Contracts.csproj"
+    },
+    "CustomerManagement.Domain.Shared/0.1.0": {
+      "type": "project",
+      "path": "../../modules/customer/src/CustomerManagement.Domain.Shared/CustomerManagement.Domain.Shared.csproj",
+      "msbuildProject": "../../modules/customer/src/CustomerManagement.Domain.Shared/CustomerManagement.Domain.Shared.csproj"
+    },
+    "CustomerManagement.HttpApi/0.1.0": {
+      "type": "project",
+      "path": "../../modules/customer/src/CustomerManagement.HttpApi/CustomerManagement.HttpApi.csproj",
+      "msbuildProject": "../../modules/customer/src/CustomerManagement.HttpApi/CustomerManagement.HttpApi.csproj"
+    },
+    "CustomerManagement.HttpApi.Client/0.1.0": {
+      "type": "project",
+      "path": "../../modules/customer/src/CustomerManagement.HttpApi.Client/CustomerManagement.HttpApi.Client.csproj",
+      "msbuildProject": "../../modules/customer/src/CustomerManagement.HttpApi.Client/CustomerManagement.HttpApi.Client.csproj"
+    },
+    "CustomerManagement.Web/0.1.0": {
+      "type": "project",
+      "path": "../../modules/customer/src/CustomerManagement.Web/CustomerManagement.Web.csproj",
+      "msbuildProject": "../../modules/customer/src/CustomerManagement.Web/CustomerManagement.Web.csproj"
+    },
     "MsDemo.Shared/1.0.0": {
       "type": "project",
       "path": "../../shared/MsDemo.Shared/MsDemo.Shared.csproj",
@@ -12769,6 +12871,8 @@
     "net6.0": [
       "CurrencyManagment.HttpApi.Client >= 0.1.0",
       "CurrencyManagment.Web >= 0.1.0",
+      "CustomerManagement.HttpApi.Client >= 0.1.0",
+      "CustomerManagement.Web >= 0.1.0",
       "Microsoft.AspNetCore.Authentication.OpenIdConnect >= 6.0.0",
       "Microsoft.AspNetCore.DataProtection.StackExchangeRedis >= 6.0.0",
       "Microsoft.Extensions.Caching.StackExchangeRedis >= 6.0.0",
@@ -12835,6 +12939,12 @@
             },
             "C:\\Users\\Admin\\Source\\Repos\\RemittanceMicroservice_MVC\\modules\\currency\\src\\CurrencyManagment.Web\\CurrencyManagment.Web.csproj": {
               "projectPath": "C:\\Users\\Admin\\Source\\Repos\\RemittanceMicroservice_MVC\\modules\\currency\\src\\CurrencyManagment.Web\\CurrencyManagment.Web.csproj"
+            },
+            "C:\\Users\\Admin\\Source\\Repos\\RemittanceMicroservice_MVC\\modules\\customer\\src\\CustomerManagement.HttpApi.Client\\CustomerManagement.HttpApi.Client.csproj": {
+              "projectPath": "C:\\Users\\Admin\\Source\\Repos\\RemittanceMicroservice_MVC\\modules\\customer\\src\\CustomerManagement.HttpApi.Client\\CustomerManagement.HttpApi.Client.csproj"
+            },
+            "C:\\Users\\Admin\\Source\\Repos\\RemittanceMicroservice_MVC\\modules\\customer\\src\\CustomerManagement.Web\\CustomerManagement.Web.csproj": {
+              "projectPath": "C:\\Users\\Admin\\Source\\Repos\\RemittanceMicroservice_MVC\\modules\\customer\\src\\CustomerManagement.Web\\CustomerManagement.Web.csproj"
             },
             "C:\\Users\\Admin\\Source\\Repos\\RemittanceMicroservice_MVC\\modules\\product\\src\\ProductManagement.HttpApi.Client\\ProductManagement.HttpApi.Client.csproj": {
               "projectPath": "C:\\Users\\Admin\\Source\\Repos\\RemittanceMicroservice_MVC\\modules\\product\\src\\ProductManagement.HttpApi.Client\\ProductManagement.HttpApi.Client.csproj"

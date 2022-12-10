@@ -25,6 +25,7 @@ using Volo.Abp.Security.Claims;
 using Volo.Abp.SettingManagement.EntityFrameworkCore;
 using Volo.Blogging;
 using CurrencyManagment;
+using CustomerManagement;
 
 namespace PublicWebSiteGateway.Host
 {
@@ -35,6 +36,7 @@ namespace PublicWebSiteGateway.Host
 
 
         typeof(CurrencyManagmentHttpApiModule),
+        typeof(CustomerManagementHttpApiModule),
 
 
         typeof(AbpEntityFrameworkCoreSqlServerModule),

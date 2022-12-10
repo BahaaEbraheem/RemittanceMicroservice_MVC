@@ -18,3 +18,13 @@ C:\Users\Admin\Source\Repos\MicroservicesDemo\modules\product\src\ProductManagem
 C:\Users\Admin\Source\Repos\MicroservicesDemo\modules\product\src\ProductManagement.Domain.Shared\obj\Debug\netstandard2.0\ProductManagement.Domain.Shared.csproj.CoreCompileInputs.cache
 C:\Users\Admin\Source\Repos\MicroservicesDemo\modules\product\src\ProductManagement.Domain.Shared\obj\Debug\netstandard2.0\ProductManagement.Domain.Shared.dll
 C:\Users\Admin\Source\Repos\MicroservicesDemo\modules\product\src\ProductManagement.Domain.Shared\obj\Debug\netstandard2.0\ProductManagement.Domain.Shared.pdb
+C:\Users\Admin\Source\Repos\RemittanceMicroservice_MVC\modules\product\src\ProductManagement.Domain.Shared\bin\Debug\netstandard2.0\ProductManagement.Domain.Shared.deps.json
+C:\Users\Admin\Source\Repos\RemittanceMicroservice_MVC\modules\product\src\ProductManagement.Domain.Shared\bin\Debug\netstandard2.0\ProductManagement.Domain.Shared.dll
+C:\Users\Admin\Source\Repos\RemittanceMicroservice_MVC\modules\product\src\ProductManagement.Domain.Shared\bin\Debug\netstandard2.0\ProductManagement.Domain.Shared.pdb
+C:\Users\Admin\Source\Repos\RemittanceMicroservice_MVC\modules\product\src\ProductManagement.Domain.Shared\obj\Debug\netstandard2.0\ProductManagement.Domain.Shared.csproj.AssemblyReference.cache
+C:\Users\Admin\Source\Repos\RemittanceMicroservice_MVC\modules\product\src\ProductManagement.Domain.Shared\obj\Debug\netstandard2.0\ProductManagement.Domain.Shared.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Admin\Source\Repos\RemittanceMicroservice_MVC\modules\product\src\ProductManagement.Domain.Shared\obj\Debug\netstandard2.0\ProductManagement.Domain.Shared.AssemblyInfoInputs.cache
+C:\Users\Admin\Source\Repos\RemittanceMicroservice_MVC\modules\product\src\ProductManagement.Domain.Shared\obj\Debug\netstandard2.0\ProductManagement.Domain.Shared.AssemblyInfo.cs
+C:\Users\Admin\Source\Repos\RemittanceMicroservice_MVC\modules\product\src\ProductManagement.Domain.Shared\obj\Debug\netstandard2.0\ProductManagement.Domain.Shared.csproj.CoreCompileInputs.cache
+C:\Users\Admin\Source\Repos\RemittanceMicroservice_MVC\modules\product\src\ProductManagement.Domain.Shared\obj\Debug\netstandard2.0\ProductManagement.Domain.Shared.dll
+C:\Users\Admin\Source\Repos\RemittanceMicroservice_MVC\modules\product\src\ProductManagement.Domain.Shared\obj\Debug\netstandard2.0\ProductManagement.Domain.Shared.pdb

@@ -99,6 +99,7 @@ namespace AuthServer.Host
             await CreateApiResourceAsync("ProductService", commonApiUserClaims);
 
             await CreateApiResourceAsync("CurrencyManagment", commonApiUserClaims);
+            await CreateApiResourceAsync("CustomerManagement", commonApiUserClaims);
 
             await CreateApiResourceAsync("InternalGateway", commonApiUserClaims);
             await CreateApiResourceAsync("BackendAdminAppGateway", commonApiUserClaims);
@@ -147,7 +148,7 @@ namespace AuthServer.Host
 
             await CreateClientAsync(
                 "console-client-demo",
-                new[] { "BloggingService", "IdentityService", "InternalGateway", "ProductService", "TenantManagementService", "CurrencyManagment" },
+                new[] { "BloggingService", "IdentityService", "InternalGateway", "ProductService", "TenantManagementService", "CurrencyManagment", "CustomerManagement" },
                 new[] { "client_credentials", "password" },
                 commonSecret,
                 permissions: new[] { IdentityPermissions.Users.Default, TenantManagementPermissions.Tenants.Default, "ProductManagement.Product" }
@@ -155,7 +156,7 @@ namespace AuthServer.Host
 
             await CreateClientAsync(
                 "backend-admin-app-client",
-                commonScopes.Union(new[] { "BackendAdminAppGateway", "IdentityService", "ProductService", "TenantManagementService", "CurrencyManagment" }),
+                commonScopes.Union(new[] { "BackendAdminAppGateway", "IdentityService", "ProductService", "TenantManagementService", "CurrencyManagment", "CustomerManagement" }),
                 new[] { "hybrid" },
                 commonSecret,
                 permissions: new[] { IdentityPermissions.Users.Default, "ProductManagement.Product" },
@@ -165,7 +166,7 @@ namespace AuthServer.Host
 
             await CreateClientAsync(
                 "public-website-client",
-                commonScopes.Union(new[] { "PublicWebSiteGateway", "BloggingService", "ProductService", "CurrencyManagment" }),
+                commonScopes.Union(new[] { "PublicWebSiteGateway", "BloggingService", "ProductService", "CurrencyManagment", "CustomerManagement" }),
                 new[] { "hybrid" },
                 commonSecret,
                 redirectUri: "https://localhost:44335/signin-oidc",

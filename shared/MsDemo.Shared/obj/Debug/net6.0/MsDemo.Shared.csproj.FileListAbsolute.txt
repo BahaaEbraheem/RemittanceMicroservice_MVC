@@ -22,3 +22,15 @@ C:\Users\Admin\Source\Repos\MicroservicesDemo\shared\MsDemo.Shared\obj\Debug\net
 C:\Users\Admin\Source\Repos\MicroservicesDemo\shared\MsDemo.Shared\obj\Debug\net6.0\refint\MsDemo.Shared.dll
 C:\Users\Admin\Source\Repos\MicroservicesDemo\shared\MsDemo.Shared\obj\Debug\net6.0\MsDemo.Shared.pdb
 C:\Users\Admin\Source\Repos\MicroservicesDemo\shared\MsDemo.Shared\obj\Debug\net6.0\ref\MsDemo.Shared.dll
+C:\Users\Admin\Source\Repos\RemittanceMicroservice_MVC\shared\MsDemo.Shared\bin\Debug\net6.0\MsDemo.Shared.deps.json
+C:\Users\Admin\Source\Repos\RemittanceMicroservice_MVC\shared\MsDemo.Shared\bin\Debug\net6.0\MsDemo.Shared.dll
+C:\Users\Admin\Source\Repos\RemittanceMicroservice_MVC\shared\MsDemo.Shared\bin\Debug\net6.0\MsDemo.Shared.pdb
+C:\Users\Admin\Source\Repos\RemittanceMicroservice_MVC\shared\MsDemo.Shared\obj\Debug\net6.0\MsDemo.Shared.csproj.AssemblyReference.cache
+C:\Users\Admin\Source\Repos\RemittanceMicroservice_MVC\shared\MsDemo.Shared\obj\Debug\net6.0\MsDemo.Shared.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Admin\Source\Repos\RemittanceMicroservice_MVC\shared\MsDemo.Shared\obj\Debug\net6.0\MsDemo.Shared.AssemblyInfoInputs.cache
+C:\Users\Admin\Source\Repos\RemittanceMicroservice_MVC\shared\MsDemo.Shared\obj\Debug\net6.0\MsDemo.Shared.AssemblyInfo.cs
+C:\Users\Admin\Source\Repos\RemittanceMicroservice_MVC\shared\MsDemo.Shared\obj\Debug\net6.0\MsDemo.Shared.csproj.CoreCompileInputs.cache
+C:\Users\Admin\Source\Repos\RemittanceMicroservice_MVC\shared\MsDemo.Shared\obj\Debug\net6.0\MsDemo.Shared.dll
+C:\Users\Admin\Source\Repos\RemittanceMicroservice_MVC\shared\MsDemo.Shared\obj\Debug\net6.0\refint\MsDemo.Shared.dll
+C:\Users\Admin\Source\Repos\RemittanceMicroservice_MVC\shared\MsDemo.Shared\obj\Debug\net6.0\MsDemo.Shared.pdb
+C:\Users\Admin\Source\Repos\RemittanceMicroservice_MVC\shared\MsDemo.Shared\obj\Debug\net6.0\ref\MsDemo.Shared.dll
