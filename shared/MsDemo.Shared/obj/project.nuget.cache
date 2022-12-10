@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "6JBW4lPOLy/8Pg9cfZlTeYZoAuihMMa4yNLQ3B8zqQi0GiL83KTZWaBss9A+yZTJgZ9XMlrk44+zkEx91dwgcw==",
+  "dgSpecHash": "KO32fYv61IzEh664y/plhaByo8Um1/QY7w82GLE16mw8X2DCY2T5IRnwYl0o4xdphKveXznusw1oucqfnNJvhw==",
   "success": true,
-  "projectFilePath": "C:\\Users\\Admin\\Source\\Repos\\MicroservicesDemo\\shared\\MsDemo.Shared\\MsDemo.Shared.csproj",
+  "projectFilePath": "C:\\Users\\Admin\\Source\\Repos\\RemittanceMicroservice_MVC\\shared\\MsDemo.Shared\\MsDemo.Shared.csproj",
   "expectedPackageFiles": [],
   "logs": []
 }

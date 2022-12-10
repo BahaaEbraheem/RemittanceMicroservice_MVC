@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Admin\\Source\\Repos\\MicroservicesDemo\\modules\\product\\src\\ProductManagement.Web\\ProductManagement.Web.csproj": {}
+    "C:\\Users\\Admin\\Source\\Repos\\RemittanceMicroservice_MVC\\modules\\product\\src\\ProductManagement.Web\\ProductManagement.Web.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Admin\\Source\\Repos\\MicroservicesDemo\\modules\\product\\src\\ProductManagement.Application.Contracts\\ProductManagement.Application.Contracts.csproj": {
+    "C:\\Users\\Admin\\Source\\Repos\\RemittanceMicroservice_MVC\\modules\\product\\src\\ProductManagement.Application.Contracts\\ProductManagement.Application.Contracts.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Admin\\Source\\Repos\\MicroservicesDemo\\modules\\product\\src\\ProductManagement.Application.Contracts\\ProductManagement.Application.Contracts.csproj",
+        "projectUniqueName": "C:\\Users\\Admin\\Source\\Repos\\RemittanceMicroservice_MVC\\modules\\product\\src\\ProductManagement.Application.Contracts\\ProductManagement.Application.Contracts.csproj",
         "projectName": "ProductManagement.Application.Contracts",
-        "projectPath": "C:\\Users\\Admin\\Source\\Repos\\MicroservicesDemo\\modules\\product\\src\\ProductManagement.Application.Contracts\\ProductManagement.Application.Contracts.csproj",
+        "projectPath": "C:\\Users\\Admin\\Source\\Repos\\RemittanceMicroservice_MVC\\modules\\product\\src\\ProductManagement.Application.Contracts\\ProductManagement.Application.Contracts.csproj",
         "packagesPath": "C:\\Users\\Admin\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Admin\\Source\\Repos\\MicroservicesDemo\\modules\\product\\src\\ProductManagement.Application.Contracts\\obj\\",
+        "outputPath": "C:\\Users\\Admin\\Source\\Repos\\RemittanceMicroservice_MVC\\modules\\product\\src\\ProductManagement.Application.Contracts\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages",
@@ -34,8 +34,8 @@
           "netstandard2.0": {
             "targetAlias": "netstandard2.0",
             "projectReferences": {
-              "C:\\Users\\Admin\\Source\\Repos\\MicroservicesDemo\\modules\\product\\src\\ProductManagement.Domain.Shared\\ProductManagement.Domain.Shared.csproj": {
-                "projectPath": "C:\\Users\\Admin\\Source\\Repos\\MicroservicesDemo\\modules\\product\\src\\ProductManagement.Domain.Shared\\ProductManagement.Domain.Shared.csproj"
+              "C:\\Users\\Admin\\Source\\Repos\\RemittanceMicroservice_MVC\\modules\\product\\src\\ProductManagement.Domain.Shared\\ProductManagement.Domain.Shared.csproj": {
+                "projectPath": "C:\\Users\\Admin\\Source\\Repos\\RemittanceMicroservice_MVC\\modules\\product\\src\\ProductManagement.Domain.Shared\\ProductManagement.Domain.Shared.csproj"
               }
             }
           }
@@ -76,14 +76,14 @@
         }
       }
     },
-    "C:\\Users\\Admin\\Source\\Repos\\MicroservicesDemo\\modules\\product\\src\\ProductManagement.Domain.Shared\\ProductManagement.Domain.Shared.csproj": {
+    "C:\\Users\\Admin\\Source\\Repos\\RemittanceMicroservice_MVC\\modules\\product\\src\\ProductManagement.Domain.Shared\\ProductManagement.Domain.Shared.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Admin\\Source\\Repos\\MicroservicesDemo\\modules\\product\\src\\ProductManagement.Domain.Shared\\ProductManagement.Domain.Shared.csproj",
+        "projectUniqueName": "C:\\Users\\Admin\\Source\\Repos\\RemittanceMicroservice_MVC\\modules\\product\\src\\ProductManagement.Domain.Shared\\ProductManagement.Domain.Shared.csproj",
         "projectName": "ProductManagement.Domain.Shared",
-        "projectPath": "C:\\Users\\Admin\\Source\\Repos\\MicroservicesDemo\\modules\\product\\src\\ProductManagement.Domain.Shared\\ProductManagement.Domain.Shared.csproj",
+        "projectPath": "C:\\Users\\Admin\\Source\\Repos\\RemittanceMicroservice_MVC\\modules\\product\\src\\ProductManagement.Domain.Shared\\ProductManagement.Domain.Shared.csproj",
         "packagesPath": "C:\\Users\\Admin\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Admin\\Source\\Repos\\MicroservicesDemo\\modules\\product\\src\\ProductManagement.Domain.Shared\\obj\\",
+        "outputPath": "C:\\Users\\Admin\\Source\\Repos\\RemittanceMicroservice_MVC\\modules\\product\\src\\ProductManagement.Domain.Shared\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages",
@@ -148,14 +148,14 @@
         }
       }
     },
-    "C:\\Users\\Admin\\Source\\Repos\\MicroservicesDemo\\modules\\product\\src\\ProductManagement.HttpApi\\ProductManagement.HttpApi.csproj": {
+    "C:\\Users\\Admin\\Source\\Repos\\RemittanceMicroservice_MVC\\modules\\product\\src\\ProductManagement.HttpApi\\ProductManagement.HttpApi.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Admin\\Source\\Repos\\MicroservicesDemo\\modules\\product\\src\\ProductManagement.HttpApi\\ProductManagement.HttpApi.csproj",
+        "projectUniqueName": "C:\\Users\\Admin\\Source\\Repos\\RemittanceMicroservice_MVC\\modules\\product\\src\\ProductManagement.HttpApi\\ProductManagement.HttpApi.csproj",
         "projectName": "ProductManagement.HttpApi",
-        "projectPath": "C:\\Users\\Admin\\Source\\Repos\\MicroservicesDemo\\modules\\product\\src\\ProductManagement.HttpApi\\ProductManagement.HttpApi.csproj",
+        "projectPath": "C:\\Users\\Admin\\Source\\Repos\\RemittanceMicroservice_MVC\\modules\\product\\src\\ProductManagement.HttpApi\\ProductManagement.HttpApi.csproj",
         "packagesPath": "C:\\Users\\Admin\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Admin\\Source\\Repos\\MicroservicesDemo\\modules\\product\\src\\ProductManagement.HttpApi\\obj\\",
+        "outputPath": "C:\\Users\\Admin\\Source\\Repos\\RemittanceMicroservice_MVC\\modules\\product\\src\\ProductManagement.HttpApi\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages",
@@ -178,8 +178,8 @@
           "net6.0": {
             "targetAlias": "net6.0",
             "projectReferences": {
-              "C:\\Users\\Admin\\Source\\Repos\\MicroservicesDemo\\modules\\product\\src\\ProductManagement.Application.Contracts\\ProductManagement.Application.Contracts.csproj": {
-                "projectPath": "C:\\Users\\Admin\\Source\\Repos\\MicroservicesDemo\\modules\\product\\src\\ProductManagement.Application.Contracts\\ProductManagement.Application.Contracts.csproj"
+              "C:\\Users\\Admin\\Source\\Repos\\RemittanceMicroservice_MVC\\modules\\product\\src\\ProductManagement.Application.Contracts\\ProductManagement.Application.Contracts.csproj": {
+                "projectPath": "C:\\Users\\Admin\\Source\\Repos\\RemittanceMicroservice_MVC\\modules\\product\\src\\ProductManagement.Application.Contracts\\ProductManagement.Application.Contracts.csproj"
               }
             }
           }
@@ -219,14 +219,14 @@
         }
       }
     },
-    "C:\\Users\\Admin\\Source\\Repos\\MicroservicesDemo\\modules\\product\\src\\ProductManagement.Web\\ProductManagement.Web.csproj": {
+    "C:\\Users\\Admin\\Source\\Repos\\RemittanceMicroservice_MVC\\modules\\product\\src\\ProductManagement.Web\\ProductManagement.Web.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Admin\\Source\\Repos\\MicroservicesDemo\\modules\\product\\src\\ProductManagement.Web\\ProductManagement.Web.csproj",
+        "projectUniqueName": "C:\\Users\\Admin\\Source\\Repos\\RemittanceMicroservice_MVC\\modules\\product\\src\\ProductManagement.Web\\ProductManagement.Web.csproj",
         "projectName": "ProductManagement.Web",
-        "projectPath": "C:\\Users\\Admin\\Source\\Repos\\MicroservicesDemo\\modules\\product\\src\\ProductManagement.Web\\ProductManagement.Web.csproj",
+        "projectPath": "C:\\Users\\Admin\\Source\\Repos\\RemittanceMicroservice_MVC\\modules\\product\\src\\ProductManagement.Web\\ProductManagement.Web.csproj",
         "packagesPath": "C:\\Users\\Admin\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Admin\\Source\\Repos\\MicroservicesDemo\\modules\\product\\src\\ProductManagement.Web\\obj\\",
+        "outputPath": "C:\\Users\\Admin\\Source\\Repos\\RemittanceMicroservice_MVC\\modules\\product\\src\\ProductManagement.Web\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages",
@@ -249,8 +249,8 @@
           "net6.0": {
             "targetAlias": "net6.0",
             "projectReferences": {
-              "C:\\Users\\Admin\\Source\\Repos\\MicroservicesDemo\\modules\\product\\src\\ProductManagement.HttpApi\\ProductManagement.HttpApi.csproj": {
-                "projectPath": "C:\\Users\\Admin\\Source\\Repos\\MicroservicesDemo\\modules\\product\\src\\ProductManagement.HttpApi\\ProductManagement.HttpApi.csproj"
+              "C:\\Users\\Admin\\Source\\Repos\\RemittanceMicroservice_MVC\\modules\\product\\src\\ProductManagement.HttpApi\\ProductManagement.HttpApi.csproj": {
+                "projectPath": "C:\\Users\\Admin\\Source\\Repos\\RemittanceMicroservice_MVC\\modules\\product\\src\\ProductManagement.HttpApi\\ProductManagement.HttpApi.csproj"
               }
             }
           }

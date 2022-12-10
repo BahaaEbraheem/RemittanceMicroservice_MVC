@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "qOMnYuKLqXdCU9aDdNir5WAaYUEfQgiS276rtU/IBVYzhQCF3IU0lIicpalWYJcjYkU8t1RRePgsIdUqP8iiRw==",
+  "dgSpecHash": "2aIO6EGEykiT9Zp8zQnw8CThg+20q1CmkaAngP1hgUhFYp98hj7LglFEh+H3Il2nvFmkfD6RNcLgGR55gSFEzA==",
   "success": true,
-  "projectFilePath": "C:\\Users\\Admin\\Source\\Repos\\MicroservicesDemo\\modules\\product\\src\\ProductManagement.Web\\ProductManagement.Web.csproj",
+  "projectFilePath": "C:\\Users\\Admin\\Source\\Repos\\RemittanceMicroservice_MVC\\modules\\product\\src\\ProductManagement.Web\\ProductManagement.Web.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Admin\\.nuget\\packages\\automapper\\11.0.1\\automapper.11.0.1.nupkg.sha512",
     "C:\\Users\\Admin\\.nuget\\packages\\jetbrains.annotations\\2022.1.0\\jetbrains.annotations.2022.1.0.nupkg.sha512",

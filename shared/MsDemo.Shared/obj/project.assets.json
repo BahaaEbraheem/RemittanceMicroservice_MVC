@@ -15,11 +15,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Admin\\Source\\Repos\\MicroservicesDemo\\shared\\MsDemo.Shared\\MsDemo.Shared.csproj",
+      "projectUniqueName": "C:\\Users\\Admin\\Source\\Repos\\RemittanceMicroservice_MVC\\shared\\MsDemo.Shared\\MsDemo.Shared.csproj",
       "projectName": "MsDemo.Shared",
-      "projectPath": "C:\\Users\\Admin\\Source\\Repos\\MicroservicesDemo\\shared\\MsDemo.Shared\\MsDemo.Shared.csproj",
+      "projectPath": "C:\\Users\\Admin\\Source\\Repos\\RemittanceMicroservice_MVC\\shared\\MsDemo.Shared\\MsDemo.Shared.csproj",
       "packagesPath": "C:\\Users\\Admin\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Admin\\Source\\Repos\\MicroservicesDemo\\shared\\MsDemo.Shared\\obj\\",
+      "outputPath": "C:\\Users\\Admin\\Source\\Repos\\RemittanceMicroservice_MVC\\shared\\MsDemo.Shared\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages",
