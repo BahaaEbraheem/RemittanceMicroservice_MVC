@@ -1,0 +1,12 @@
+{
+  "profiles": {
+    "CustomerManagement.Web": {
+      "commandName": "Project",
+      "launchBrowser": true,
+      "environmentVariables": {
+        "ASPNETCORE_ENVIRONMENT": "Development"
+      },
+      "applicationUrl": "https://localhost:62772;http://localhost:62773"
+    }
+  }
+}

@@ -1,0 +1,7 @@
+{
+  "modules": {
+    "CustomerManagement": {
+      "path": "CustomerManagement.abpmdl.json"
+    }
+  }
+}

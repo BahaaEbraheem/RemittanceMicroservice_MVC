@@ -1,0 +1,33 @@
+﻿using AutoMapper;
+using CurrencyManagment.Currencies;
+using CurrencyManagment.Currencies.Dtos;
+
+namespace CurrencyManagment;
+
+public class CurrencyManagmentApplicationAutoMapperProfile : Profile
+{
+    public CurrencyManagmentApplicationAutoMapperProfile()
+    {
+        /* You can configure your AutoMapper mapping configuration here.
+         * Alternatively, you can split your mapping configurations
+         * into multiple profile classes for a better organization. */
+
+        CreateMap<Currency, CurrencyDto>()
+               .ForMember(model => model.LastModifierId, option => option.Ignore())
+               .ForMember(model => model.CreatorId, option => option.Ignore())
+               .ForMember(model => model.CreationTime, option => option.Ignore())
+               .ForMember(model => model.LastModificationTime, option => option.Ignore());
+
+        CreateMap<CreateUpdateCurrencyDto, Currency>()
+              .ForMember(model => model.ExtraProperties, option => option.Ignore())
+             .ForMember(model => model.ConcurrencyStamp, option => option.Ignore())
+             .ForMember(model => model.Id, option => option.Ignore());
+
+        CreateMap<CurrencyPagedAndSortedResultRequestDto, Currency>()
+          .ForMember(model => model.ExtraProperties, option => option.Ignore())
+         .ForMember(model => model.ConcurrencyStamp, option => option.Ignore())
+         .ForMember(model => model.Id, option => option.Ignore());
+
+
+    }
+}

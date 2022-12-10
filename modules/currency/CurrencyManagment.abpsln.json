@@ -1,0 +1,7 @@
+{
+  "modules": {
+    "CurrencyManagment": {
+      "path": "CurrencyManagment.abpmdl.json"
+    }
+  }
+}

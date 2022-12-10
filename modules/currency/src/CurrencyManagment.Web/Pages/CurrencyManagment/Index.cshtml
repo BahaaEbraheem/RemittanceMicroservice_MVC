@@ -1,0 +1,41 @@
+﻿@page
+@using Microsoft.Extensions.Localization
+@using CurrencyManagment.Localization
+@using CurrencyManagment.Web.Pages.CurrencyManagment
+@model CurrencyManagment.Web.Pages.CurrencyManagment.IndexModel
+@inject IStringLocalizer<CurrencyManagmentResource> L
+
+
+@section scripts
+{
+    <abp-script src="/Pages/CurrencyManagment/Index.js" />
+}
+
+<abp-card>
+        <abp-card-header>
+            <abp-row>
+                <abp-column size-md="_6">
+                    <h2>@L["Currencies"]</h2>
+                </abp-column>
+                <abp-column size-md="_6" class="text-right">
+                @*@if (await Authorization.IsGrantedAsync(ProductManagementPermissions.Products.Create))
+                {*@
+                    <abp-button icon="plus" text="@L["CreateNewCurrency"].Value" button-type="Primary" id="CreateNewCurrencyButtonId"></abp-button>
+               @* }*@
+            </abp-column>
+        </abp-row>
+        </abp-card-header>
+    <abp-card-body>
+            <abp-table striped-rows="true" id="CurrenciesTable" class="nowrap">
+                <thead>
+                    <tr>
+                        <th>@L["Actions"]</th>
+                        <th>@L["Name"]</th>
+                        <th>@L["Symbol"]</th>
+                        <th>@L["Code"]</th>
+                        <th>@L["CreationTime"]</th>
+                    </tr>
+                </thead>
+            </abp-table>
+    </abp-card-body>
+</abp-card>

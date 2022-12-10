@@ -1,0 +1,3 @@
+﻿<Project>
+  <Import Project="..\buildMultiTargeting\BackendAdminApp.Host.props" />
+</Project>

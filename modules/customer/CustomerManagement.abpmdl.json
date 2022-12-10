@@ -1,0 +1,111 @@
+{
+  "folders": {
+    "items": {
+      "src": {},
+      "test": {},
+      "host": {}
+    }
+  },
+  "packages": {
+    "CustomerManagement.Domain.Shared": {
+      "path": "src/CustomerManagement.Domain.Shared/CustomerManagement.Domain.Shared.abppkg.json",
+      "folder": "src"
+    },
+    "CustomerManagement.Domain": {
+      "path": "src/CustomerManagement.Domain/CustomerManagement.Domain.abppkg.json",
+      "folder": "src"
+    },
+    "CustomerManagement.Application.Contracts": {
+      "path": "src/CustomerManagement.Application.Contracts/CustomerManagement.Application.Contracts.abppkg.json",
+      "folder": "src"
+    },
+    "CustomerManagement.Application": {
+      "path": "src/CustomerManagement.Application/CustomerManagement.Application.abppkg.json",
+      "folder": "src"
+    },
+    "CustomerManagement.EntityFrameworkCore": {
+      "path": "src/CustomerManagement.EntityFrameworkCore/CustomerManagement.EntityFrameworkCore.abppkg.json",
+      "folder": "src"
+    },
+    "CustomerManagement.MongoDB": {
+      "path": "src/CustomerManagement.MongoDB/CustomerManagement.MongoDB.abppkg.json",
+      "folder": "src"
+    },
+    "CustomerManagement.HttpApi": {
+      "path": "src/CustomerManagement.HttpApi/CustomerManagement.HttpApi.abppkg.json",
+      "folder": "src"
+    },
+    "CustomerManagement.HttpApi.Client": {
+      "path": "src/CustomerManagement.HttpApi.Client/CustomerManagement.HttpApi.Client.abppkg.json",
+      "folder": "src"
+    },
+    "CustomerManagement.TestBase": {
+      "path": "test/CustomerManagement.TestBase/CustomerManagement.TestBase.abppkg.json",
+      "folder": "test"
+    },
+    "CustomerManagement.EntityFrameworkCore.Tests": {
+      "path": "test/CustomerManagement.EntityFrameworkCore.Tests/CustomerManagement.EntityFrameworkCore.Tests.abppkg.json",
+      "folder": "test"
+    },
+    "CustomerManagement.MongoDB.Tests": {
+      "path": "test/CustomerManagement.MongoDB.Tests/CustomerManagement.MongoDB.Tests.abppkg.json",
+      "folder": "test"
+    },
+    "CustomerManagement.Domain.Tests": {
+      "path": "test/CustomerManagement.Domain.Tests/CustomerManagement.Domain.Tests.abppkg.json",
+      "folder": "test"
+    },
+    "CustomerManagement.Application.Tests": {
+      "path": "test/CustomerManagement.Application.Tests/CustomerManagement.Application.Tests.abppkg.json",
+      "folder": "test"
+    },
+    "CustomerManagement.HttpApi.Host": {
+      "path": "host/CustomerManagement.HttpApi.Host/CustomerManagement.HttpApi.Host.abppkg.json",
+      "folder": "host"
+    },
+    "CustomerManagement.Web": {
+      "path": "src/CustomerManagement.Web/CustomerManagement.Web.abppkg.json",
+      "folder": "src"
+    },
+    "CustomerManagement.HttpApi.Client.ConsoleTestApp": {
+      "path": "test/CustomerManagement.HttpApi.Client.ConsoleTestApp/CustomerManagement.HttpApi.Client.ConsoleTestApp.abppkg.json",
+      "folder": "test"
+    },
+    "CustomerManagement.Web.Host": {
+      "path": "host/CustomerManagement.Web.Host/CustomerManagement.Web.Host.abppkg.json",
+      "folder": "host"
+    },
+    "CustomerManagement.AuthServer": {
+      "path": "host/CustomerManagement.AuthServer/CustomerManagement.AuthServer.abppkg.json",
+      "folder": "host"
+    },
+    "CustomerManagement.Host.Shared": {
+      "path": "host/CustomerManagement.Host.Shared/CustomerManagement.Host.Shared.abppkg.json",
+      "folder": "host"
+    },
+    "CustomerManagement.Web.Unified": {
+      "path": "host/CustomerManagement.Web.Unified/CustomerManagement.Web.Unified.abppkg.json",
+      "folder": "host"
+    },
+    "CustomerManagement.Blazor": {
+      "path": "src/CustomerManagement.Blazor/CustomerManagement.Blazor.abppkg.json",
+      "folder": "src"
+    },
+    "CustomerManagement.Blazor.Host": {
+      "path": "host/CustomerManagement.Blazor.Host/CustomerManagement.Blazor.Host.abppkg.json",
+      "folder": "host"
+    },
+    "CustomerManagement.Blazor.Server": {
+      "path": "src/CustomerManagement.Blazor.Server/CustomerManagement.Blazor.Server.abppkg.json",
+      "folder": "src"
+    },
+    "CustomerManagement.Blazor.WebAssembly": {
+      "path": "src/CustomerManagement.Blazor.WebAssembly/CustomerManagement.Blazor.WebAssembly.abppkg.json",
+      "folder": "src"
+    },
+    "CustomerManagement.Blazor.Server.Host": {
+      "path": "host/CustomerManagement.Blazor.Server.Host/CustomerManagement.Blazor.Server.Host.abppkg.json",
+      "folder": "host"
+    }
+  }
+}

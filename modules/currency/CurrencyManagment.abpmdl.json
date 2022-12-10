@@ -1,0 +1,111 @@
+{
+  "folders": {
+    "items": {
+      "src": {},
+      "test": {},
+      "host": {}
+    }
+  },
+  "packages": {
+    "CurrencyManagment.Domain.Shared": {
+      "path": "src/CurrencyManagment.Domain.Shared/CurrencyManagment.Domain.Shared.abppkg.json",
+      "folder": "src"
+    },
+    "CurrencyManagment.Domain": {
+      "path": "src/CurrencyManagment.Domain/CurrencyManagment.Domain.abppkg.json",
+      "folder": "src"
+    },
+    "CurrencyManagment.Application.Contracts": {
+      "path": "src/CurrencyManagment.Application.Contracts/CurrencyManagment.Application.Contracts.abppkg.json",
+      "folder": "src"
+    },
+    "CurrencyManagment.Application": {
+      "path": "src/CurrencyManagment.Application/CurrencyManagment.Application.abppkg.json",
+      "folder": "src"
+    },
+    "CurrencyManagment.EntityFrameworkCore": {
+      "path": "src/CurrencyManagment.EntityFrameworkCore/CurrencyManagment.EntityFrameworkCore.abppkg.json",
+      "folder": "src"
+    },
+    "CurrencyManagment.MongoDB": {
+      "path": "src/CurrencyManagment.MongoDB/CurrencyManagment.MongoDB.abppkg.json",
+      "folder": "src"
+    },
+    "CurrencyManagment.HttpApi": {
+      "path": "src/CurrencyManagment.HttpApi/CurrencyManagment.HttpApi.abppkg.json",
+      "folder": "src"
+    },
+    "CurrencyManagment.HttpApi.Client": {
+      "path": "src/CurrencyManagment.HttpApi.Client/CurrencyManagment.HttpApi.Client.abppkg.json",
+      "folder": "src"
+    },
+    "CurrencyManagment.TestBase": {
+      "path": "test/CurrencyManagment.TestBase/CurrencyManagment.TestBase.abppkg.json",
+      "folder": "test"
+    },
+    "CurrencyManagment.EntityFrameworkCore.Tests": {
+      "path": "test/CurrencyManagment.EntityFrameworkCore.Tests/CurrencyManagment.EntityFrameworkCore.Tests.abppkg.json",
+      "folder": "test"
+    },
+    "CurrencyManagment.MongoDB.Tests": {
+      "path": "test/CurrencyManagment.MongoDB.Tests/CurrencyManagment.MongoDB.Tests.abppkg.json",
+      "folder": "test"
+    },
+    "CurrencyManagment.Domain.Tests": {
+      "path": "test/CurrencyManagment.Domain.Tests/CurrencyManagment.Domain.Tests.abppkg.json",
+      "folder": "test"
+    },
+    "CurrencyManagment.Application.Tests": {
+      "path": "test/CurrencyManagment.Application.Tests/CurrencyManagment.Application.Tests.abppkg.json",
+      "folder": "test"
+    },
+    "CurrencyManagment.HttpApi.Host": {
+      "path": "host/CurrencyManagment.HttpApi.Host/CurrencyManagment.HttpApi.Host.abppkg.json",
+      "folder": "host"
+    },
+    "CurrencyManagment.Web": {
+      "path": "src/CurrencyManagment.Web/CurrencyManagment.Web.abppkg.json",
+      "folder": "src"
+    },
+    "CurrencyManagment.HttpApi.Client.ConsoleTestApp": {
+      "path": "test/CurrencyManagment.HttpApi.Client.ConsoleTestApp/CurrencyManagment.HttpApi.Client.ConsoleTestApp.abppkg.json",
+      "folder": "test"
+    },
+    "CurrencyManagment.Web.Host": {
+      "path": "host/CurrencyManagment.Web.Host/CurrencyManagment.Web.Host.abppkg.json",
+      "folder": "host"
+    },
+    "CurrencyManagment.AuthServer": {
+      "path": "host/CurrencyManagment.AuthServer/CurrencyManagment.AuthServer.abppkg.json",
+      "folder": "host"
+    },
+    "CurrencyManagment.Host.Shared": {
+      "path": "host/CurrencyManagment.Host.Shared/CurrencyManagment.Host.Shared.abppkg.json",
+      "folder": "host"
+    },
+    "CurrencyManagment.Web.Unified": {
+      "path": "host/CurrencyManagment.Web.Unified/CurrencyManagment.Web.Unified.abppkg.json",
+      "folder": "host"
+    },
+    "CurrencyManagment.Blazor": {
+      "path": "src/CurrencyManagment.Blazor/CurrencyManagment.Blazor.abppkg.json",
+      "folder": "src"
+    },
+    "CurrencyManagment.Blazor.Host": {
+      "path": "host/CurrencyManagment.Blazor.Host/CurrencyManagment.Blazor.Host.abppkg.json",
+      "folder": "host"
+    },
+    "CurrencyManagment.Blazor.Server": {
+      "path": "src/CurrencyManagment.Blazor.Server/CurrencyManagment.Blazor.Server.abppkg.json",
+      "folder": "src"
+    },
+    "CurrencyManagment.Blazor.WebAssembly": {
+      "path": "src/CurrencyManagment.Blazor.WebAssembly/CurrencyManagment.Blazor.WebAssembly.abppkg.json",
+      "folder": "src"
+    },
+    "CurrencyManagment.Blazor.Server.Host": {
+      "path": "host/CurrencyManagment.Blazor.Server.Host/CurrencyManagment.Blazor.Server.Host.abppkg.json",
+      "folder": "host"
+    }
+  }
+}

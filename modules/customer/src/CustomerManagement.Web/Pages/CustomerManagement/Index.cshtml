@@ -1,0 +1,47 @@
+﻿@page
+@using Microsoft.Extensions.Localization
+@using CustomerManagement.Localization
+@using Microsoft.AspNetCore.Mvc;
+@using Volo.Abp.AspNetCore.Mvc.UI.RazorPages;
+@using CustomerManagement.Web.Pages.CustomerManagement
+@model CustomerManagement.Web.Pages.CustomerManagement.IndexModel
+@inject IStringLocalizer<CustomerManagementResource> L
+@section scripts
+{
+    <abp-script src="/Pages/CustomerManagement/Index.js" />
+}
+
+<abp-card>
+        <abp-card-header>
+            <abp-row>
+                <abp-column size-md="_6">
+                    <h2>@L["Customers"]</h2>
+                </abp-column>
+                <abp-column size-md="_6" class="text-right">
+                @*@if (await Authorization.IsGrantedAsync(ProductManagementPermissions.Products.Create))
+                {*@
+                    <abp-button icon="plus" text="@L["CreateNewCustomer"].Value" button-type="Primary" id="CreateNewCustomerButtonId"></abp-button>
+               @* }*@
+            </abp-column>
+        </abp-row>
+        </abp-card-header>
+    <abp-card-body>
+            <abp-table striped-rows="true" id="CustomersTable" class="nowrap">
+                <thead>
+                    <tr>
+                        <th>@L["Actions"]</th>
+                        <th>@L["FirstName"]</th>
+                        <th>@L["FatherName"]</th>
+                        <th>@L["LastName"]</th>
+                        <th>@L["MotherName"]</th>
+                        <th>@L["BirthDate"]</th>
+                        <th>@L["Phone"]</th>
+                        <th>@L["Gender"]</th>
+                        <th>@L["Address"]</th>
+                        <th>@L["CreationTime"]</th>
+                    </tr>
+                </thead>
+            </abp-table>
+    </abp-card-body>
+</abp-card>
+
