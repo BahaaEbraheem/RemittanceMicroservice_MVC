@@ -1,0 +1,15 @@
+{
+  "extends": "./tsconfig.prod.json",
+  "compilerOptions": {
+    "paths": {
+      "@remittance-management": [
+        "projects/remittance-management/src/public-api.ts"
+      ],
+      "@remittance-management/config": [
+        "projects/remittance-management/config/src/public-api.ts"
+      ],
+      "@proxy": ["projects/remittance-management/src/lib/proxy/index.ts"],
+      "@proxy/*": ["projects/remittance-management/src/lib/proxy/*"]
+    }
+  }
+}

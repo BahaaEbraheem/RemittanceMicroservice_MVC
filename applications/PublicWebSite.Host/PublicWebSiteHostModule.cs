@@ -1,4 +1,6 @@
 using System;
+using CurrencyManagment;
+using CustomerManagement;
 using Microsoft.AspNetCore.Authentication.OAuth.Claims;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.DataProtection;
@@ -6,6 +8,7 @@ using Microsoft.Extensions.DependencyInjection;
 using Microsoft.IdentityModel.Protocols.OpenIdConnect;
 using MsDemo.Shared;
 using ProductManagement;
+using RemittanceManagement;
 using StackExchange.Redis;
 using Volo.Abp;
 using Volo.Abp.AspNetCore.Authentication.OAuth;
@@ -29,6 +32,9 @@ namespace PublicWebSite.Host
         typeof(AbpAspNetCoreMvcUiBasicThemeModule),
         typeof(BloggingHttpApiClientModule),
         typeof(BloggingWebModule),
+        typeof(CustomerManagementHttpApiClientModule),
+        typeof(RemittanceManagementHttpApiClientModule),
+        typeof(CurrencyManagmentHttpApiClientModule),
         typeof(ProductManagementHttpApiClientModule)
         )]
     public class PublicWebSiteHostModule : AbpModule

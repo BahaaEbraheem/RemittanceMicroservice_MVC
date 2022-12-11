@@ -1,0 +1,111 @@
+{
+  "folders": {
+    "items": {
+      "src": {},
+      "test": {},
+      "host": {}
+    }
+  },
+  "packages": {
+    "RemittanceManagement.Domain.Shared": {
+      "path": "src/RemittanceManagement.Domain.Shared/RemittanceManagement.Domain.Shared.abppkg.json",
+      "folder": "src"
+    },
+    "RemittanceManagement.Domain": {
+      "path": "src/RemittanceManagement.Domain/RemittanceManagement.Domain.abppkg.json",
+      "folder": "src"
+    },
+    "RemittanceManagement.Application.Contracts": {
+      "path": "src/RemittanceManagement.Application.Contracts/RemittanceManagement.Application.Contracts.abppkg.json",
+      "folder": "src"
+    },
+    "RemittanceManagement.Application": {
+      "path": "src/RemittanceManagement.Application/RemittanceManagement.Application.abppkg.json",
+      "folder": "src"
+    },
+    "RemittanceManagement.EntityFrameworkCore": {
+      "path": "src/RemittanceManagement.EntityFrameworkCore/RemittanceManagement.EntityFrameworkCore.abppkg.json",
+      "folder": "src"
+    },
+    "RemittanceManagement.MongoDB": {
+      "path": "src/RemittanceManagement.MongoDB/RemittanceManagement.MongoDB.abppkg.json",
+      "folder": "src"
+    },
+    "RemittanceManagement.HttpApi": {
+      "path": "src/RemittanceManagement.HttpApi/RemittanceManagement.HttpApi.abppkg.json",
+      "folder": "src"
+    },
+    "RemittanceManagement.HttpApi.Client": {
+      "path": "src/RemittanceManagement.HttpApi.Client/RemittanceManagement.HttpApi.Client.abppkg.json",
+      "folder": "src"
+    },
+    "RemittanceManagement.TestBase": {
+      "path": "test/RemittanceManagement.TestBase/RemittanceManagement.TestBase.abppkg.json",
+      "folder": "test"
+    },
+    "RemittanceManagement.EntityFrameworkCore.Tests": {
+      "path": "test/RemittanceManagement.EntityFrameworkCore.Tests/RemittanceManagement.EntityFrameworkCore.Tests.abppkg.json",
+      "folder": "test"
+    },
+    "RemittanceManagement.MongoDB.Tests": {
+      "path": "test/RemittanceManagement.MongoDB.Tests/RemittanceManagement.MongoDB.Tests.abppkg.json",
+      "folder": "test"
+    },
+    "RemittanceManagement.Domain.Tests": {
+      "path": "test/RemittanceManagement.Domain.Tests/RemittanceManagement.Domain.Tests.abppkg.json",
+      "folder": "test"
+    },
+    "RemittanceManagement.Application.Tests": {
+      "path": "test/RemittanceManagement.Application.Tests/RemittanceManagement.Application.Tests.abppkg.json",
+      "folder": "test"
+    },
+    "RemittanceManagement.HttpApi.Host": {
+      "path": "host/RemittanceManagement.HttpApi.Host/RemittanceManagement.HttpApi.Host.abppkg.json",
+      "folder": "host"
+    },
+    "RemittanceManagement.Web": {
+      "path": "src/RemittanceManagement.Web/RemittanceManagement.Web.abppkg.json",
+      "folder": "src"
+    },
+    "RemittanceManagement.HttpApi.Client.ConsoleTestApp": {
+      "path": "test/RemittanceManagement.HttpApi.Client.ConsoleTestApp/RemittanceManagement.HttpApi.Client.ConsoleTestApp.abppkg.json",
+      "folder": "test"
+    },
+    "RemittanceManagement.Web.Host": {
+      "path": "host/RemittanceManagement.Web.Host/RemittanceManagement.Web.Host.abppkg.json",
+      "folder": "host"
+    },
+    "RemittanceManagement.AuthServer": {
+      "path": "host/RemittanceManagement.AuthServer/RemittanceManagement.AuthServer.abppkg.json",
+      "folder": "host"
+    },
+    "RemittanceManagement.Host.Shared": {
+      "path": "host/RemittanceManagement.Host.Shared/RemittanceManagement.Host.Shared.abppkg.json",
+      "folder": "host"
+    },
+    "RemittanceManagement.Web.Unified": {
+      "path": "host/RemittanceManagement.Web.Unified/RemittanceManagement.Web.Unified.abppkg.json",
+      "folder": "host"
+    },
+    "RemittanceManagement.Blazor": {
+      "path": "src/RemittanceManagement.Blazor/RemittanceManagement.Blazor.abppkg.json",
+      "folder": "src"
+    },
+    "RemittanceManagement.Blazor.Host": {
+      "path": "host/RemittanceManagement.Blazor.Host/RemittanceManagement.Blazor.Host.abppkg.json",
+      "folder": "host"
+    },
+    "RemittanceManagement.Blazor.Server": {
+      "path": "src/RemittanceManagement.Blazor.Server/RemittanceManagement.Blazor.Server.abppkg.json",
+      "folder": "src"
+    },
+    "RemittanceManagement.Blazor.WebAssembly": {
+      "path": "src/RemittanceManagement.Blazor.WebAssembly/RemittanceManagement.Blazor.WebAssembly.abppkg.json",
+      "folder": "src"
+    },
+    "RemittanceManagement.Blazor.Server.Host": {
+      "path": "host/RemittanceManagement.Blazor.Server.Host/RemittanceManagement.Blazor.Server.Host.abppkg.json",
+      "folder": "host"
+    }
+  }
+}

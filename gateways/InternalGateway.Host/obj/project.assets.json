@@ -5319,6 +5319,49 @@
         "runtime": {
           "bin/placeholder/ProductManagement.HttpApi.dll": {}
         }
+      },
+      "RemittanceManagement.Application.Contracts/0.1.0": {
+        "type": "project",
+        "framework": ".NETStandard,Version=v2.0",
+        "dependencies": {
+          "RemittanceManagement.Domain.Shared": "0.1.0",
+          "Volo.Abp.Authorization": "6.0.2",
+          "Volo.Abp.Ddd.Application.Contracts": "6.0.2"
+        },
+        "compile": {
+          "bin/placeholder/RemittanceManagement.Application.Contracts.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/RemittanceManagement.Application.Contracts.dll": {}
+        }
+      },
+      "RemittanceManagement.Domain.Shared/0.1.0": {
+        "type": "project",
+        "framework": ".NETStandard,Version=v2.0",
+        "dependencies": {
+          "Microsoft.Extensions.FileProviders.Embedded": "6.0.5",
+          "Volo.Abp.Validation": "6.0.2"
+        },
+        "compile": {
+          "bin/placeholder/RemittanceManagement.Domain.Shared.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/RemittanceManagement.Domain.Shared.dll": {}
+        }
+      },
+      "RemittanceManagement.HttpApi/0.1.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v6.0",
+        "dependencies": {
+          "RemittanceManagement.Application.Contracts": "0.1.0",
+          "Volo.Abp.AspNetCore.Mvc": "6.0.2"
+        },
+        "compile": {
+          "bin/placeholder/RemittanceManagement.HttpApi.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/RemittanceManagement.HttpApi.dll": {}
+        }
       }
     }
   },
@@ -13357,6 +13400,21 @@
       "type": "project",
       "path": "../../modules/product/src/ProductManagement.HttpApi/ProductManagement.HttpApi.csproj",
       "msbuildProject": "../../modules/product/src/ProductManagement.HttpApi/ProductManagement.HttpApi.csproj"
+    },
+    "RemittanceManagement.Application.Contracts/0.1.0": {
+      "type": "project",
+      "path": "../../modules/remittance/src/RemittanceManagement.Application.Contracts/RemittanceManagement.Application.Contracts.csproj",
+      "msbuildProject": "../../modules/remittance/src/RemittanceManagement.Application.Contracts/RemittanceManagement.Application.Contracts.csproj"
+    },
+    "RemittanceManagement.Domain.Shared/0.1.0": {
+      "type": "project",
+      "path": "../../modules/remittance/src/RemittanceManagement.Domain.Shared/RemittanceManagement.Domain.Shared.csproj",
+      "msbuildProject": "../../modules/remittance/src/RemittanceManagement.Domain.Shared/RemittanceManagement.Domain.Shared.csproj"
+    },
+    "RemittanceManagement.HttpApi/0.1.0": {
+      "type": "project",
+      "path": "../../modules/remittance/src/RemittanceManagement.HttpApi/RemittanceManagement.HttpApi.csproj",
+      "msbuildProject": "../../modules/remittance/src/RemittanceManagement.HttpApi/RemittanceManagement.HttpApi.csproj"
     }
   },
   "projectFileDependencyGroups": {
@@ -13369,6 +13427,7 @@
       "MsDemo.Shared >= 1.0.0",
       "Ocelot >= 17.0.0",
       "ProductManagement.HttpApi >= 1.0.0",
+      "RemittanceManagement.HttpApi >= 0.1.0",
       "Serilog.AspNetCore >= 4.1.0",
       "Serilog.Sinks.Elasticsearch >= 6.5.0",
       "Serilog.Sinks.File >= 4.1.0",
@@ -13427,6 +13486,9 @@
             },
             "C:\\Users\\Admin\\Source\\Repos\\RemittanceMicroservice_MVC\\modules\\product\\src\\ProductManagement.HttpApi\\ProductManagement.HttpApi.csproj": {
               "projectPath": "C:\\Users\\Admin\\Source\\Repos\\RemittanceMicroservice_MVC\\modules\\product\\src\\ProductManagement.HttpApi\\ProductManagement.HttpApi.csproj"
+            },
+            "C:\\Users\\Admin\\Source\\Repos\\RemittanceMicroservice_MVC\\modules\\remittance\\src\\RemittanceManagement.HttpApi\\RemittanceManagement.HttpApi.csproj": {
+              "projectPath": "C:\\Users\\Admin\\Source\\Repos\\RemittanceMicroservice_MVC\\modules\\remittance\\src\\RemittanceManagement.HttpApi\\RemittanceManagement.HttpApi.csproj"
             },
             "C:\\Users\\Admin\\Source\\Repos\\RemittanceMicroservice_MVC\\shared\\MsDemo.Shared\\MsDemo.Shared.csproj": {
               "projectPath": "C:\\Users\\Admin\\Source\\Repos\\RemittanceMicroservice_MVC\\shared\\MsDemo.Shared\\MsDemo.Shared.csproj"

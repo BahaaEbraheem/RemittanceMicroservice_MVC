@@ -32,6 +32,8 @@ using CurrencyManagment.Web;
 using CurrencyManagment;
 using CustomerManagement;
 using CustomerManagement.Web;
+using RemittanceManagement.Web;
+using RemittanceManagement;
 
 namespace BackendAdminApp.Host
 {
@@ -51,6 +53,9 @@ namespace BackendAdminApp.Host
 
         typeof(CurrencyManagmentHttpApiClientModule),
         typeof(CurrencyManagmentWebModule),
+
+        typeof(RemittanceManagementHttpApiClientModule),
+        typeof(RemittanceManagementWebModule),
 
         typeof(CustomerManagementHttpApiClientModule),
         typeof(CustomerManagementWebModule),

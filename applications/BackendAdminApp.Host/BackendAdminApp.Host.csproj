@@ -42,6 +42,9 @@
 
         <ProjectReference Include="..\..\modules\product\src\ProductManagement.HttpApi.Client\ProductManagement.HttpApi.Client.csproj" />
         <ProjectReference Include="..\..\modules\product\src\ProductManagement.Web\ProductManagement.Web.csproj" />
+     
+      <ProjectReference Include="..\..\modules\remittance\src\RemittanceManagement.HttpApi.Client\RemittanceManagement.HttpApi.Client.csproj" />
+      <ProjectReference Include="..\..\modules\remittance\src\RemittanceManagement.Web\RemittanceManagement.Web.csproj" />
 
       <ProjectReference Include="..\..\modules\customer\src\CustomerManagement.HttpApi.Client\CustomerManagement.HttpApi.Client.csproj" />
       <ProjectReference Include="..\..\modules\customer\src\CustomerManagement.Web\CustomerManagement.Web.csproj" />

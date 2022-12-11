@@ -1,0 +1,7 @@
+{
+  "modules": {
+    "RemittanceManagement": {
+      "path": "RemittanceManagement.abpmdl.json"
+    }
+  }
+}

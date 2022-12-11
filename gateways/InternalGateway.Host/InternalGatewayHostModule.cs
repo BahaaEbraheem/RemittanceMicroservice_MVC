@@ -28,6 +28,7 @@ using Volo.Blogging;
 using Microsoft.AspNetCore.Cors;
 using CurrencyManagment;
 using CustomerManagement;
+using RemittanceManagement;
 
 namespace InternalGateway.Host
 {
@@ -37,7 +38,7 @@ namespace InternalGateway.Host
         typeof(BloggingHttpApiModule),
         typeof(ProductManagementHttpApiModule),
 
-
+         typeof(RemittanceManagementHttpApiModule),
         typeof(CurrencyManagmentHttpApiModule),
         typeof(CustomerManagementHttpApiModule),
 
