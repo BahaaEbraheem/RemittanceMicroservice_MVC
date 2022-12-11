@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "vgDUdt4xdmRg4B3ZyLwAKpDfAnv9rTT7u/FcMhYtxiE=",
+  "Hash": "KMHrE/qSr9TeiB3C2g3pOfZFBH9hvhTgTMF4zEKVjcc=",
   "Source": "BackendAdminApp.Host",
   "BasePath": "_content/BackendAdminApp.Host",
   "Mode": "Default",
@@ -32,6 +32,17 @@
       "Identity": "C:\\Users\\Admin\\Source\\Repos\\RemittanceMicroservice_MVC\\modules\\product\\src\\ProductManagement.Web\\ProductManagement.Web.csproj",
       "Version": 2,
       "Source": "ProductManagement.Web",
+      "GetPublishAssetsTargets": "ComputeReferencedStaticWebAssetsPublishManifest;GetCurrentProjectPublishStaticWebAssetItems",
+      "AdditionalPublishProperties": "Configuration=Debug;Platform=AnyCPU",
+      "AdditionalPublishPropertiesToRemove": "WebPublishProfileFile;TargetFramework;RuntimeIdentifier",
+      "GetBuildAssetsTargets": "GetCurrentProjectBuildStaticWebAssetItems",
+      "AdditionalBuildProperties": "Configuration=Debug;Platform=AnyCPU",
+      "AdditionalBuildPropertiesToRemove": "WebPublishProfileFile;TargetFramework;RuntimeIdentifier"
+    },
+    {
+      "Identity": "C:\\Users\\Admin\\Source\\Repos\\RemittanceMicroservice_MVC\\modules\\remittance\\src\\RemittanceManagement.Web\\RemittanceManagement.Web.csproj",
+      "Version": 2,
+      "Source": "RemittanceManagement.Web",
       "GetPublishAssetsTargets": "ComputeReferencedStaticWebAssetsPublishManifest;GetCurrentProjectPublishStaticWebAssetItems",
       "AdditionalPublishProperties": "Configuration=Debug;Platform=AnyCPU",
       "AdditionalPublishPropertiesToRemove": "WebPublishProfileFile;TargetFramework;RuntimeIdentifier",

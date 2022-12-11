@@ -1593,3 +1593,14 @@ C:\Users\Admin\Source\Repos\RemittanceMicroservice_MVC\applications\BackendAdmin
 C:\Users\Admin\Source\Repos\RemittanceMicroservice_MVC\applications\BackendAdminApp.Host\obj\Debug\net6.0\BackendAdminApp.Host.pdb
 C:\Users\Admin\Source\Repos\RemittanceMicroservice_MVC\applications\BackendAdminApp.Host\obj\Debug\net6.0\BackendAdminApp.Host.genruntimeconfig.cache
 C:\Users\Admin\Source\Repos\RemittanceMicroservice_MVC\applications\BackendAdminApp.Host\obj\Debug\net6.0\ref\BackendAdminApp.Host.dll
+C:\Users\Admin\Source\Repos\RemittanceMicroservice_MVC\applications\BackendAdminApp.Host\bin\Debug\net6.0\RemittanceManagement.Web.abppkg.json
+C:\Users\Admin\Source\Repos\RemittanceMicroservice_MVC\applications\BackendAdminApp.Host\bin\Debug\net6.0\RemittanceManagement.Application.Contracts.dll
+C:\Users\Admin\Source\Repos\RemittanceMicroservice_MVC\applications\BackendAdminApp.Host\bin\Debug\net6.0\RemittanceManagement.Domain.Shared.dll
+C:\Users\Admin\Source\Repos\RemittanceMicroservice_MVC\applications\BackendAdminApp.Host\bin\Debug\net6.0\RemittanceManagement.HttpApi.Client.dll
+C:\Users\Admin\Source\Repos\RemittanceMicroservice_MVC\applications\BackendAdminApp.Host\bin\Debug\net6.0\RemittanceManagement.HttpApi.dll
+C:\Users\Admin\Source\Repos\RemittanceMicroservice_MVC\applications\BackendAdminApp.Host\bin\Debug\net6.0\RemittanceManagement.Web.dll
+C:\Users\Admin\Source\Repos\RemittanceMicroservice_MVC\applications\BackendAdminApp.Host\bin\Debug\net6.0\RemittanceManagement.HttpApi.Client.pdb
+C:\Users\Admin\Source\Repos\RemittanceMicroservice_MVC\applications\BackendAdminApp.Host\bin\Debug\net6.0\RemittanceManagement.Web.pdb
+C:\Users\Admin\Source\Repos\RemittanceMicroservice_MVC\applications\BackendAdminApp.Host\bin\Debug\net6.0\RemittanceManagement.Application.Contracts.pdb
+C:\Users\Admin\Source\Repos\RemittanceMicroservice_MVC\applications\BackendAdminApp.Host\bin\Debug\net6.0\RemittanceManagement.Domain.Shared.pdb
+C:\Users\Admin\Source\Repos\RemittanceMicroservice_MVC\applications\BackendAdminApp.Host\bin\Debug\net6.0\RemittanceManagement.HttpApi.pdb

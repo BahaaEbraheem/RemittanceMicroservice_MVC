@@ -44,6 +44,8 @@
           "MsDemo.Shared": "1.0.0",
           "ProductManagement.HttpApi.Client": "1.0.0",
           "ProductManagement.Web": "1.0.0",
+          "RemittanceManagement.HttpApi.Client": "0.1.0",
+          "RemittanceManagement.Web": "0.1.0",
           "Serilog.AspNetCore": "4.1.0",
           "Serilog.Sinks.Elasticsearch": "6.5.0",
           "Serilog.Sinks.File": "4.1.0",
@@ -3968,6 +3970,70 @@
           "ProductManagement.Web.dll": {}
         }
       },
+      "RemittanceManagement.Application.Contracts/0.1.0": {
+        "dependencies": {
+          "RemittanceManagement.Domain.Shared": "0.1.0",
+          "Volo.Abp.Authorization": "6.0.2",
+          "Volo.Abp.Ddd.Application.Contracts": "6.0.2"
+        },
+        "runtime": {
+          "RemittanceManagement.Application.Contracts.dll": {}
+        },
+        "compile": {
+          "RemittanceManagement.Application.Contracts.dll": {}
+        }
+      },
+      "RemittanceManagement.Domain.Shared/0.1.0": {
+        "dependencies": {
+          "Microsoft.Extensions.FileProviders.Embedded": "6.0.5",
+          "Volo.Abp.Validation": "6.0.2"
+        },
+        "runtime": {
+          "RemittanceManagement.Domain.Shared.dll": {}
+        },
+        "compile": {
+          "RemittanceManagement.Domain.Shared.dll": {}
+        }
+      },
+      "RemittanceManagement.HttpApi/0.1.0": {
+        "dependencies": {
+          "RemittanceManagement.Application.Contracts": "0.1.0",
+          "Volo.Abp.AspNetCore.Mvc": "6.0.2"
+        },
+        "runtime": {
+          "RemittanceManagement.HttpApi.dll": {}
+        },
+        "compile": {
+          "RemittanceManagement.HttpApi.dll": {}
+        }
+      },
+      "RemittanceManagement.HttpApi.Client/0.1.0": {
+        "dependencies": {
+          "RemittanceManagement.Application.Contracts": "0.1.0",
+          "Volo.Abp.Http.Client": "6.0.2"
+        },
+        "runtime": {
+          "RemittanceManagement.HttpApi.Client.dll": {}
+        },
+        "compile": {
+          "RemittanceManagement.HttpApi.Client.dll": {}
+        }
+      },
+      "RemittanceManagement.Web/0.1.0": {
+        "dependencies": {
+          "Microsoft.Extensions.FileProviders.Embedded": "6.0.5",
+          "RemittanceManagement.Application.Contracts": "0.1.0",
+          "RemittanceManagement.HttpApi": "0.1.0",
+          "Volo.Abp.AspNetCore.Mvc.UI.Theme.Shared": "6.0.2",
+          "Volo.Abp.AutoMapper": "6.0.2"
+        },
+        "runtime": {
+          "RemittanceManagement.Web.dll": {}
+        },
+        "compile": {
+          "RemittanceManagement.Web.dll": {}
+        }
+      },
       "Microsoft.AspNetCore.Antiforgery/6.0.0.0": {
         "compile": {
           "Microsoft.AspNetCore.Antiforgery.dll": {}
@@ -7670,6 +7736,31 @@
       "sha512": ""
     },
     "ProductManagement.Web/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "RemittanceManagement.Application.Contracts/0.1.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "RemittanceManagement.Domain.Shared/0.1.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "RemittanceManagement.HttpApi/0.1.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "RemittanceManagement.HttpApi.Client/0.1.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "RemittanceManagement.Web/0.1.0": {
       "type": "project",
       "serviceable": false,
       "sha512": ""

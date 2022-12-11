@@ -1594,3 +1594,9 @@ C:\Users\Admin\Source\Repos\RemittanceMicroservice_MVC\gateways\InternalGateway.
 C:\Users\Admin\Source\Repos\RemittanceMicroservice_MVC\gateways\InternalGateway.Host\obj\Debug\net6.0\InternalGateway.Host.pdb
 C:\Users\Admin\Source\Repos\RemittanceMicroservice_MVC\gateways\InternalGateway.Host\obj\Debug\net6.0\InternalGateway.Host.genruntimeconfig.cache
 C:\Users\Admin\Source\Repos\RemittanceMicroservice_MVC\gateways\InternalGateway.Host\obj\Debug\net6.0\ref\InternalGateway.Host.dll
+C:\Users\Admin\Source\Repos\RemittanceMicroservice_MVC\gateways\InternalGateway.Host\bin\Debug\net6.0\RemittanceManagement.Application.Contracts.dll
+C:\Users\Admin\Source\Repos\RemittanceMicroservice_MVC\gateways\InternalGateway.Host\bin\Debug\net6.0\RemittanceManagement.Domain.Shared.dll
+C:\Users\Admin\Source\Repos\RemittanceMicroservice_MVC\gateways\InternalGateway.Host\bin\Debug\net6.0\RemittanceManagement.HttpApi.dll
+C:\Users\Admin\Source\Repos\RemittanceMicroservice_MVC\gateways\InternalGateway.Host\bin\Debug\net6.0\RemittanceManagement.HttpApi.pdb
+C:\Users\Admin\Source\Repos\RemittanceMicroservice_MVC\gateways\InternalGateway.Host\bin\Debug\net6.0\RemittanceManagement.Application.Contracts.pdb
+C:\Users\Admin\Source\Repos\RemittanceMicroservice_MVC\gateways\InternalGateway.Host\bin\Debug\net6.0\RemittanceManagement.Domain.Shared.pdb
