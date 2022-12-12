@@ -3756,3 +3756,223 @@
 2022-12-12 14:55:42.638 +03:00 [INF] Request starting HTTP/2 GET https://localhost:44336/swagger/v1/swagger.json - -
 2022-12-12 14:55:42.640 +03:00 [DBG] AuthenticationScheme: Bearer was not authenticated.
 2022-12-12 14:55:42.854 +03:00 [INF] Request finished HTTP/2 GET https://localhost:44336/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 215.1066ms
+2022-12-12 15:20:35.626 +03:00 [INF] Starting TenantManagementService.Host.
+2022-12-12 15:20:39.128 +03:00 [INF] Loaded ABP modules:
+2022-12-12 15:20:39.130 +03:00 [INF] - TenantManagementService.Host.TenantManagementServiceHostModule
+2022-12-12 15:20:39.130 +03:00 [INF]   - Volo.Abp.Autofac.AbpAutofacModule
+2022-12-12 15:20:39.130 +03:00 [INF]     - Volo.Abp.Castle.AbpCastleCoreModule
+2022-12-12 15:20:39.130 +03:00 [INF]   - Volo.Abp.AspNetCore.Mvc.AbpAspNetCoreMvcModule
+2022-12-12 15:20:39.130 +03:00 [INF]     - Volo.Abp.AspNetCore.AbpAspNetCoreModule
+2022-12-12 15:20:39.130 +03:00 [INF]       - Volo.Abp.Auditing.AbpAuditingModule
+2022-12-12 15:20:39.130 +03:00 [INF]         - Volo.Abp.Data.AbpDataModule
+2022-12-12 15:20:39.130 +03:00 [INF]           - Volo.Abp.ObjectExtending.AbpObjectExtendingModule
+2022-12-12 15:20:39.130 +03:00 [INF]             - Volo.Abp.Localization.AbpLocalizationAbstractionsModule
+2022-12-12 15:20:39.130 +03:00 [INF]             - Volo.Abp.Validation.AbpValidationAbstractionsModule
+2022-12-12 15:20:39.130 +03:00 [INF]           - Volo.Abp.Uow.AbpUnitOfWorkModule
+2022-12-12 15:20:39.130 +03:00 [INF]           - Volo.Abp.EventBus.Abstractions.AbpEventBusAbstractionsModule
+2022-12-12 15:20:39.130 +03:00 [INF]         - Volo.Abp.Json.AbpJsonModule
+2022-12-12 15:20:39.130 +03:00 [INF]           - Volo.Abp.Timing.AbpTimingModule
+2022-12-12 15:20:39.130 +03:00 [INF]             - Volo.Abp.Localization.AbpLocalizationModule
+2022-12-12 15:20:39.130 +03:00 [INF]               - Volo.Abp.VirtualFileSystem.AbpVirtualFileSystemModule
+2022-12-12 15:20:39.130 +03:00 [INF]               - Volo.Abp.Settings.AbpSettingsModule
+2022-12-12 15:20:39.130 +03:00 [INF]                 - Volo.Abp.Security.AbpSecurityModule
+2022-12-12 15:20:39.130 +03:00 [INF]                 - Volo.Abp.MultiTenancy.AbpMultiTenancyModule
+2022-12-12 15:20:39.130 +03:00 [INF]         - Volo.Abp.Threading.AbpThreadingModule
+2022-12-12 15:20:39.130 +03:00 [INF]         - Volo.Abp.Auditing.AbpAuditingContractsModule
+2022-12-12 15:20:39.130 +03:00 [INF]       - Volo.Abp.Http.AbpHttpModule
+2022-12-12 15:20:39.130 +03:00 [INF]         - Volo.Abp.Http.AbpHttpAbstractionsModule
+2022-12-12 15:20:39.130 +03:00 [INF]         - Volo.Abp.Minify.AbpMinifyModule
+2022-12-12 15:20:39.130 +03:00 [INF]       - Volo.Abp.Authorization.AbpAuthorizationModule
+2022-12-12 15:20:39.130 +03:00 [INF]         - Volo.Abp.Authorization.AbpAuthorizationAbstractionsModule
+2022-12-12 15:20:39.130 +03:00 [INF]       - Volo.Abp.Validation.AbpValidationModule
+2022-12-12 15:20:39.130 +03:00 [INF]       - Volo.Abp.ExceptionHandling.AbpExceptionHandlingModule
+2022-12-12 15:20:39.130 +03:00 [INF]     - Volo.Abp.ApiVersioning.AbpApiVersioningAbstractionsModule
+2022-12-12 15:20:39.130 +03:00 [INF]     - Volo.Abp.AspNetCore.Mvc.AbpAspNetCoreMvcContractsModule
+2022-12-12 15:20:39.130 +03:00 [INF]       - Volo.Abp.Application.AbpDddApplicationContractsModule
+2022-12-12 15:20:39.130 +03:00 [INF]     - Volo.Abp.UI.Navigation.AbpUiNavigationModule
+2022-12-12 15:20:39.130 +03:00 [INF]       - Volo.Abp.UI.AbpUiModule
+2022-12-12 15:20:39.130 +03:00 [INF]     - Volo.Abp.GlobalFeatures.AbpGlobalFeaturesModule
+2022-12-12 15:20:39.130 +03:00 [INF]     - Volo.Abp.Application.AbpDddApplicationModule
+2022-12-12 15:20:39.130 +03:00 [INF]       - Volo.Abp.Domain.AbpDddDomainModule
+2022-12-12 15:20:39.130 +03:00 [INF]         - Volo.Abp.EventBus.AbpEventBusModule
+2022-12-12 15:20:39.130 +03:00 [INF]           - Volo.Abp.Guids.AbpGuidsModule
+2022-12-12 15:20:39.130 +03:00 [INF]           - Volo.Abp.BackgroundWorkers.AbpBackgroundWorkersModule
+2022-12-12 15:20:39.130 +03:00 [INF]           - Volo.Abp.DistributedLocking.AbpDistributedLockingAbstractionsModule
+2022-12-12 15:20:39.130 +03:00 [INF]         - Volo.Abp.ObjectMapping.AbpObjectMappingModule
+2022-12-12 15:20:39.130 +03:00 [INF]         - Volo.Abp.Specifications.AbpSpecificationsModule
+2022-12-12 15:20:39.130 +03:00 [INF]       - Volo.Abp.Features.AbpFeaturesModule
+2022-12-12 15:20:39.130 +03:00 [INF]   - Volo.Abp.EventBus.RabbitMq.AbpEventBusRabbitMqModule
+2022-12-12 15:20:39.130 +03:00 [INF]     - Volo.Abp.RabbitMQ.AbpRabbitMqModule
+2022-12-12 15:20:39.130 +03:00 [INF]   - Volo.Abp.EntityFrameworkCore.SqlServer.AbpEntityFrameworkCoreSqlServerModule
+2022-12-12 15:20:39.130 +03:00 [INF]     - Volo.Abp.EntityFrameworkCore.AbpEntityFrameworkCoreModule
+2022-12-12 15:20:39.130 +03:00 [INF]   - Volo.Abp.AuditLogging.EntityFrameworkCore.AbpAuditLoggingEntityFrameworkCoreModule
+2022-12-12 15:20:39.130 +03:00 [INF]     - Volo.Abp.AuditLogging.AbpAuditLoggingDomainModule
+2022-12-12 15:20:39.130 +03:00 [INF]       - Volo.Abp.AuditLogging.AbpAuditLoggingDomainSharedModule
+2022-12-12 15:20:39.130 +03:00 [INF]   - Volo.Abp.PermissionManagement.EntityFrameworkCore.AbpPermissionManagementEntityFrameworkCoreModule
+2022-12-12 15:20:39.130 +03:00 [INF]     - Volo.Abp.PermissionManagement.AbpPermissionManagementDomainModule
+2022-12-12 15:20:39.130 +03:00 [INF]       - Volo.Abp.PermissionManagement.AbpPermissionManagementDomainSharedModule
+2022-12-12 15:20:39.130 +03:00 [INF]       - Volo.Abp.Caching.AbpCachingModule
+2022-12-12 15:20:39.130 +03:00 [INF]         - Volo.Abp.Serialization.AbpSerializationModule
+2022-12-12 15:20:39.130 +03:00 [INF]   - Volo.Abp.SettingManagement.EntityFrameworkCore.AbpSettingManagementEntityFrameworkCoreModule
+2022-12-12 15:20:39.130 +03:00 [INF]     - Volo.Abp.SettingManagement.AbpSettingManagementDomainModule
+2022-12-12 15:20:39.130 +03:00 [INF]       - Volo.Abp.SettingManagement.AbpSettingManagementDomainSharedModule
+2022-12-12 15:20:39.130 +03:00 [INF]   - Volo.Abp.TenantManagement.AbpTenantManagementHttpApiModule
+2022-12-12 15:20:39.130 +03:00 [INF]     - Volo.Abp.TenantManagement.AbpTenantManagementApplicationContractsModule
+2022-12-12 15:20:39.130 +03:00 [INF]       - Volo.Abp.TenantManagement.AbpTenantManagementDomainSharedModule
+2022-12-12 15:20:39.130 +03:00 [INF]     - Volo.Abp.FeatureManagement.AbpFeatureManagementHttpApiModule
+2022-12-12 15:20:39.130 +03:00 [INF]       - Volo.Abp.FeatureManagement.AbpFeatureManagementApplicationContractsModule
+2022-12-12 15:20:39.130 +03:00 [INF]         - Volo.Abp.FeatureManagement.AbpFeatureManagementDomainSharedModule
+2022-12-12 15:20:39.130 +03:00 [INF]   - Volo.Abp.TenantManagement.EntityFrameworkCore.AbpTenantManagementEntityFrameworkCoreModule
+2022-12-12 15:20:39.130 +03:00 [INF]     - Volo.Abp.TenantManagement.AbpTenantManagementDomainModule
+2022-12-12 15:20:39.130 +03:00 [INF]       - Volo.Abp.AutoMapper.AbpAutoMapperModule
+2022-12-12 15:20:39.130 +03:00 [INF]   - Volo.Abp.TenantManagement.AbpTenantManagementApplicationModule
+2022-12-12 15:20:39.130 +03:00 [INF]   - Volo.Abp.AspNetCore.MultiTenancy.AbpAspNetCoreMultiTenancyModule
+2022-12-12 15:20:39.130 +03:00 [INF]   - Volo.Abp.Identity.EntityFrameworkCore.AbpIdentityEntityFrameworkCoreModule
+2022-12-12 15:20:39.130 +03:00 [INF]     - Volo.Abp.Identity.AbpIdentityDomainModule
+2022-12-12 15:20:39.130 +03:00 [INF]       - Volo.Abp.Identity.AbpIdentityDomainSharedModule
+2022-12-12 15:20:39.130 +03:00 [INF]         - Volo.Abp.Users.AbpUsersDomainSharedModule
+2022-12-12 15:20:39.130 +03:00 [INF]       - Volo.Abp.Users.AbpUsersDomainModule
+2022-12-12 15:20:39.130 +03:00 [INF]         - Volo.Abp.Users.AbpUsersAbstractionModule
+2022-12-12 15:20:39.130 +03:00 [INF]     - Volo.Abp.Users.EntityFrameworkCore.AbpUsersEntityFrameworkCoreModule
+2022-12-12 15:20:39.967 +03:00 [INF] Initialized all ABP modules.
+2022-12-12 15:20:40.124 +03:00 [INF] Now listening on: https://localhost:44336
+2022-12-12 15:20:40.125 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+2022-12-12 15:20:40.125 +03:00 [INF] Hosting environment: Development
+2022-12-12 15:20:40.125 +03:00 [INF] Content root path: C:\Users\Admin\Source\Repos\RemittanceMicroservice_MVC\microservices\TenantManagementService.Host
+2022-12-12 15:20:40.679 +03:00 [INF] Request starting HTTP/2 GET https://localhost:44336/ - -
+2022-12-12 15:20:40.810 +03:00 [DBG] AuthenticationScheme: Bearer was not authenticated.
+2022-12-12 15:20:41.461 +03:00 [INF] Executing endpoint 'IdentityService.Host.Controllers.HomeController.Index (TenantManagementService.Host)'
+2022-12-12 15:20:41.497 +03:00 [INF] Route matched with {action = "Index", controller = "Home", area = ""}. Executing controller action with signature Microsoft.AspNetCore.Mvc.ActionResult Index() on controller IdentityService.Host.Controllers.HomeController (TenantManagementService.Host).
+2022-12-12 15:20:41.524 +03:00 [INF] Executing RedirectResult, redirecting to /swagger.
+2022-12-12 15:20:41.529 +03:00 [INF] Executed action IdentityService.Host.Controllers.HomeController.Index (TenantManagementService.Host) in 27.523ms
+2022-12-12 15:20:41.530 +03:00 [INF] Executed endpoint 'IdentityService.Host.Controllers.HomeController.Index (TenantManagementService.Host)'
+2022-12-12 15:20:45.410 +03:00 [DBG] Added 0 entity changes to the current audit log
+2022-12-12 15:20:45.423 +03:00 [DBG] Added 0 entity changes to the current audit log
+2022-12-12 15:20:45.445 +03:00 [INF] Request finished HTTP/2 GET https://localhost:44336/ - - - 302 0 - 4767.5390ms
+2022-12-12 15:20:45.465 +03:00 [INF] Request starting HTTP/2 GET https://localhost:44336/swagger/index.html - -
+2022-12-12 15:20:45.472 +03:00 [DBG] AuthenticationScheme: Bearer was not authenticated.
+2022-12-12 15:20:47.628 +03:00 [INF] Request finished HTTP/2 GET https://localhost:44336/swagger/index.html - - - 200 - text/html;charset=utf-8 2162.6416ms
+2022-12-12 15:20:47.809 +03:00 [INF] Request starting HTTP/2 GET https://localhost:44336/_framework/aspnetcore-browser-refresh.js - -
+2022-12-12 15:20:47.811 +03:00 [INF] Request finished HTTP/2 GET https://localhost:44336/_framework/aspnetcore-browser-refresh.js - - - 200 12026 application/javascript;+charset=utf-8 1.9418ms
+2022-12-12 15:20:48.000 +03:00 [INF] Request starting HTTP/2 GET https://localhost:44336/swagger/v1/swagger.json - -
+2022-12-12 15:20:48.005 +03:00 [DBG] AuthenticationScheme: Bearer was not authenticated.
+2022-12-12 15:20:48.218 +03:00 [INF] Request finished HTTP/2 GET https://localhost:44336/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 216.9847ms
+2022-12-12 15:24:18.828 +03:00 [INF] Starting TenantManagementService.Host.
+2022-12-12 15:24:21.021 +03:00 [INF] Loaded ABP modules:
+2022-12-12 15:24:21.023 +03:00 [INF] - TenantManagementService.Host.TenantManagementServiceHostModule
+2022-12-12 15:24:21.023 +03:00 [INF]   - Volo.Abp.Autofac.AbpAutofacModule
+2022-12-12 15:24:21.023 +03:00 [INF]     - Volo.Abp.Castle.AbpCastleCoreModule
+2022-12-12 15:24:21.023 +03:00 [INF]   - Volo.Abp.AspNetCore.Mvc.AbpAspNetCoreMvcModule
+2022-12-12 15:24:21.023 +03:00 [INF]     - Volo.Abp.AspNetCore.AbpAspNetCoreModule
+2022-12-12 15:24:21.023 +03:00 [INF]       - Volo.Abp.Auditing.AbpAuditingModule
+2022-12-12 15:24:21.023 +03:00 [INF]         - Volo.Abp.Data.AbpDataModule
+2022-12-12 15:24:21.023 +03:00 [INF]           - Volo.Abp.ObjectExtending.AbpObjectExtendingModule
+2022-12-12 15:24:21.023 +03:00 [INF]             - Volo.Abp.Localization.AbpLocalizationAbstractionsModule
+2022-12-12 15:24:21.023 +03:00 [INF]             - Volo.Abp.Validation.AbpValidationAbstractionsModule
+2022-12-12 15:24:21.023 +03:00 [INF]           - Volo.Abp.Uow.AbpUnitOfWorkModule
+2022-12-12 15:24:21.023 +03:00 [INF]           - Volo.Abp.EventBus.Abstractions.AbpEventBusAbstractionsModule
+2022-12-12 15:24:21.023 +03:00 [INF]         - Volo.Abp.Json.AbpJsonModule
+2022-12-12 15:24:21.023 +03:00 [INF]           - Volo.Abp.Timing.AbpTimingModule
+2022-12-12 15:24:21.023 +03:00 [INF]             - Volo.Abp.Localization.AbpLocalizationModule
+2022-12-12 15:24:21.023 +03:00 [INF]               - Volo.Abp.VirtualFileSystem.AbpVirtualFileSystemModule
+2022-12-12 15:24:21.023 +03:00 [INF]               - Volo.Abp.Settings.AbpSettingsModule
+2022-12-12 15:24:21.023 +03:00 [INF]                 - Volo.Abp.Security.AbpSecurityModule
+2022-12-12 15:24:21.023 +03:00 [INF]                 - Volo.Abp.MultiTenancy.AbpMultiTenancyModule
+2022-12-12 15:24:21.023 +03:00 [INF]         - Volo.Abp.Threading.AbpThreadingModule
+2022-12-12 15:24:21.023 +03:00 [INF]         - Volo.Abp.Auditing.AbpAuditingContractsModule
+2022-12-12 15:24:21.023 +03:00 [INF]       - Volo.Abp.Http.AbpHttpModule
+2022-12-12 15:24:21.023 +03:00 [INF]         - Volo.Abp.Http.AbpHttpAbstractionsModule
+2022-12-12 15:24:21.023 +03:00 [INF]         - Volo.Abp.Minify.AbpMinifyModule
+2022-12-12 15:24:21.023 +03:00 [INF]       - Volo.Abp.Authorization.AbpAuthorizationModule
+2022-12-12 15:24:21.023 +03:00 [INF]         - Volo.Abp.Authorization.AbpAuthorizationAbstractionsModule
+2022-12-12 15:24:21.023 +03:00 [INF]       - Volo.Abp.Validation.AbpValidationModule
+2022-12-12 15:24:21.023 +03:00 [INF]       - Volo.Abp.ExceptionHandling.AbpExceptionHandlingModule
+2022-12-12 15:24:21.023 +03:00 [INF]     - Volo.Abp.ApiVersioning.AbpApiVersioningAbstractionsModule
+2022-12-12 15:24:21.023 +03:00 [INF]     - Volo.Abp.AspNetCore.Mvc.AbpAspNetCoreMvcContractsModule
+2022-12-12 15:24:21.023 +03:00 [INF]       - Volo.Abp.Application.AbpDddApplicationContractsModule
+2022-12-12 15:24:21.023 +03:00 [INF]     - Volo.Abp.UI.Navigation.AbpUiNavigationModule
+2022-12-12 15:24:21.023 +03:00 [INF]       - Volo.Abp.UI.AbpUiModule
+2022-12-12 15:24:21.023 +03:00 [INF]     - Volo.Abp.GlobalFeatures.AbpGlobalFeaturesModule
+2022-12-12 15:24:21.023 +03:00 [INF]     - Volo.Abp.Application.AbpDddApplicationModule
+2022-12-12 15:24:21.023 +03:00 [INF]       - Volo.Abp.Domain.AbpDddDomainModule
+2022-12-12 15:24:21.023 +03:00 [INF]         - Volo.Abp.EventBus.AbpEventBusModule
+2022-12-12 15:24:21.023 +03:00 [INF]           - Volo.Abp.Guids.AbpGuidsModule
+2022-12-12 15:24:21.023 +03:00 [INF]           - Volo.Abp.BackgroundWorkers.AbpBackgroundWorkersModule
+2022-12-12 15:24:21.023 +03:00 [INF]           - Volo.Abp.DistributedLocking.AbpDistributedLockingAbstractionsModule
+2022-12-12 15:24:21.023 +03:00 [INF]         - Volo.Abp.ObjectMapping.AbpObjectMappingModule
+2022-12-12 15:24:21.023 +03:00 [INF]         - Volo.Abp.Specifications.AbpSpecificationsModule
+2022-12-12 15:24:21.024 +03:00 [INF]       - Volo.Abp.Features.AbpFeaturesModule
+2022-12-12 15:24:21.024 +03:00 [INF]   - Volo.Abp.EventBus.RabbitMq.AbpEventBusRabbitMqModule
+2022-12-12 15:24:21.024 +03:00 [INF]     - Volo.Abp.RabbitMQ.AbpRabbitMqModule
+2022-12-12 15:24:21.024 +03:00 [INF]   - Volo.Abp.EntityFrameworkCore.SqlServer.AbpEntityFrameworkCoreSqlServerModule
+2022-12-12 15:24:21.024 +03:00 [INF]     - Volo.Abp.EntityFrameworkCore.AbpEntityFrameworkCoreModule
+2022-12-12 15:24:21.024 +03:00 [INF]   - Volo.Abp.AuditLogging.EntityFrameworkCore.AbpAuditLoggingEntityFrameworkCoreModule
+2022-12-12 15:24:21.024 +03:00 [INF]     - Volo.Abp.AuditLogging.AbpAuditLoggingDomainModule
+2022-12-12 15:24:21.024 +03:00 [INF]       - Volo.Abp.AuditLogging.AbpAuditLoggingDomainSharedModule
+2022-12-12 15:24:21.024 +03:00 [INF]   - Volo.Abp.PermissionManagement.EntityFrameworkCore.AbpPermissionManagementEntityFrameworkCoreModule
+2022-12-12 15:24:21.024 +03:00 [INF]     - Volo.Abp.PermissionManagement.AbpPermissionManagementDomainModule
+2022-12-12 15:24:21.024 +03:00 [INF]       - Volo.Abp.PermissionManagement.AbpPermissionManagementDomainSharedModule
+2022-12-12 15:24:21.024 +03:00 [INF]       - Volo.Abp.Caching.AbpCachingModule
+2022-12-12 15:24:21.024 +03:00 [INF]         - Volo.Abp.Serialization.AbpSerializationModule
+2022-12-12 15:24:21.024 +03:00 [INF]   - Volo.Abp.SettingManagement.EntityFrameworkCore.AbpSettingManagementEntityFrameworkCoreModule
+2022-12-12 15:24:21.024 +03:00 [INF]     - Volo.Abp.SettingManagement.AbpSettingManagementDomainModule
+2022-12-12 15:24:21.024 +03:00 [INF]       - Volo.Abp.SettingManagement.AbpSettingManagementDomainSharedModule
+2022-12-12 15:24:21.024 +03:00 [INF]   - Volo.Abp.TenantManagement.AbpTenantManagementHttpApiModule
+2022-12-12 15:24:21.024 +03:00 [INF]     - Volo.Abp.TenantManagement.AbpTenantManagementApplicationContractsModule
+2022-12-12 15:24:21.024 +03:00 [INF]       - Volo.Abp.TenantManagement.AbpTenantManagementDomainSharedModule
+2022-12-12 15:24:21.024 +03:00 [INF]     - Volo.Abp.FeatureManagement.AbpFeatureManagementHttpApiModule
+2022-12-12 15:24:21.024 +03:00 [INF]       - Volo.Abp.FeatureManagement.AbpFeatureManagementApplicationContractsModule
+2022-12-12 15:24:21.024 +03:00 [INF]         - Volo.Abp.FeatureManagement.AbpFeatureManagementDomainSharedModule
+2022-12-12 15:24:21.024 +03:00 [INF]   - Volo.Abp.TenantManagement.EntityFrameworkCore.AbpTenantManagementEntityFrameworkCoreModule
+2022-12-12 15:24:21.024 +03:00 [INF]     - Volo.Abp.TenantManagement.AbpTenantManagementDomainModule
+2022-12-12 15:24:21.024 +03:00 [INF]       - Volo.Abp.AutoMapper.AbpAutoMapperModule
+2022-12-12 15:24:21.024 +03:00 [INF]   - Volo.Abp.TenantManagement.AbpTenantManagementApplicationModule
+2022-12-12 15:24:21.024 +03:00 [INF]   - Volo.Abp.AspNetCore.MultiTenancy.AbpAspNetCoreMultiTenancyModule
+2022-12-12 15:24:21.024 +03:00 [INF]   - Volo.Abp.Identity.EntityFrameworkCore.AbpIdentityEntityFrameworkCoreModule
+2022-12-12 15:24:21.024 +03:00 [INF]     - Volo.Abp.Identity.AbpIdentityDomainModule
+2022-12-12 15:24:21.024 +03:00 [INF]       - Volo.Abp.Identity.AbpIdentityDomainSharedModule
+2022-12-12 15:24:21.024 +03:00 [INF]         - Volo.Abp.Users.AbpUsersDomainSharedModule
+2022-12-12 15:24:21.024 +03:00 [INF]       - Volo.Abp.Users.AbpUsersDomainModule
+2022-12-12 15:24:21.024 +03:00 [INF]         - Volo.Abp.Users.AbpUsersAbstractionModule
+2022-12-12 15:24:21.024 +03:00 [INF]     - Volo.Abp.Users.EntityFrameworkCore.AbpUsersEntityFrameworkCoreModule
+2022-12-12 15:24:21.764 +03:00 [INF] Initialized all ABP modules.
+2022-12-12 15:24:21.944 +03:00 [INF] Now listening on: https://localhost:44336
+2022-12-12 15:24:21.945 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+2022-12-12 15:24:21.945 +03:00 [INF] Hosting environment: Development
+2022-12-12 15:24:21.945 +03:00 [INF] Content root path: C:\Users\Admin\Source\Repos\RemittanceMicroservice_MVC\microservices\TenantManagementService.Host
+2022-12-12 15:24:24.205 +03:00 [INF] Request starting HTTP/2 GET https://localhost:44336/ - -
+2022-12-12 15:24:24.517 +03:00 [DBG] AuthenticationScheme: Bearer was not authenticated.
+2022-12-12 15:24:26.402 +03:00 [INF] Executing endpoint 'IdentityService.Host.Controllers.HomeController.Index (TenantManagementService.Host)'
+2022-12-12 15:24:26.494 +03:00 [INF] Route matched with {action = "Index", controller = "Home", area = ""}. Executing controller action with signature Microsoft.AspNetCore.Mvc.ActionResult Index() on controller IdentityService.Host.Controllers.HomeController (TenantManagementService.Host).
+2022-12-12 15:24:26.555 +03:00 [INF] Executing RedirectResult, redirecting to /swagger.
+2022-12-12 15:24:26.562 +03:00 [INF] Executed action IdentityService.Host.Controllers.HomeController.Index (TenantManagementService.Host) in 60.3943ms
+2022-12-12 15:24:26.563 +03:00 [INF] Executed endpoint 'IdentityService.Host.Controllers.HomeController.Index (TenantManagementService.Host)'
+2022-12-12 15:24:32.262 +03:00 [DBG] Added 0 entity changes to the current audit log
+2022-12-12 15:24:32.279 +03:00 [DBG] Added 0 entity changes to the current audit log
+2022-12-12 15:24:32.306 +03:00 [INF] Request finished HTTP/2 GET https://localhost:44336/ - - - 302 0 - 8104.5120ms
+2022-12-12 15:24:32.344 +03:00 [INF] Request starting HTTP/2 GET https://localhost:44336/swagger/index.html - -
+2022-12-12 15:24:32.353 +03:00 [DBG] AuthenticationScheme: Bearer was not authenticated.
+2022-12-12 15:24:34.752 +03:00 [INF] Request finished HTTP/2 GET https://localhost:44336/swagger/index.html - - - 200 - text/html;charset=utf-8 2408.2385ms
+2022-12-12 15:24:34.964 +03:00 [INF] Request starting HTTP/2 GET https://localhost:44336/_framework/aspnetcore-browser-refresh.js - -
+2022-12-12 15:24:34.967 +03:00 [INF] Request finished HTTP/2 GET https://localhost:44336/_framework/aspnetcore-browser-refresh.js - - - 200 12026 application/javascript;+charset=utf-8 2.4244ms
+2022-12-12 15:24:35.138 +03:00 [INF] Request starting HTTP/2 GET https://localhost:44336/swagger/v1/swagger.json - -
+2022-12-12 15:24:35.141 +03:00 [DBG] AuthenticationScheme: Bearer was not authenticated.
+2022-12-12 15:24:35.349 +03:00 [INF] Request finished HTTP/2 GET https://localhost:44336/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 210.0319ms
+2022-12-12 15:25:44.338 +03:00 [INF] Request starting HTTP/2 GET https://localhost:44336/ - -
+2022-12-12 15:25:44.341 +03:00 [DBG] AuthenticationScheme: Bearer was not authenticated.
+2022-12-12 15:25:44.343 +03:00 [INF] Executing endpoint 'IdentityService.Host.Controllers.HomeController.Index (TenantManagementService.Host)'
+2022-12-12 15:25:44.343 +03:00 [INF] Route matched with {action = "Index", controller = "Home", area = ""}. Executing controller action with signature Microsoft.AspNetCore.Mvc.ActionResult Index() on controller IdentityService.Host.Controllers.HomeController (TenantManagementService.Host).
+2022-12-12 15:25:44.345 +03:00 [INF] Executing RedirectResult, redirecting to /swagger.
+2022-12-12 15:25:44.346 +03:00 [INF] Executed action IdentityService.Host.Controllers.HomeController.Index (TenantManagementService.Host) in 2.1636ms
+2022-12-12 15:25:44.346 +03:00 [INF] Executed endpoint 'IdentityService.Host.Controllers.HomeController.Index (TenantManagementService.Host)'
+2022-12-12 15:25:44.483 +03:00 [DBG] Added 0 entity changes to the current audit log
+2022-12-12 15:25:44.484 +03:00 [DBG] Added 0 entity changes to the current audit log
+2022-12-12 15:25:44.485 +03:00 [INF] Request finished HTTP/2 GET https://localhost:44336/ - - - 302 0 - 146.7754ms
+2022-12-12 15:25:44.536 +03:00 [INF] Request starting HTTP/2 GET https://localhost:44336/swagger/index.html - -
+2022-12-12 15:25:44.539 +03:00 [DBG] AuthenticationScheme: Bearer was not authenticated.
+2022-12-12 15:25:46.859 +03:00 [INF] Request finished HTTP/2 GET https://localhost:44336/swagger/index.html - - - 200 - text/html;charset=utf-8 2322.9188ms
+2022-12-12 15:25:46.909 +03:00 [INF] Request starting HTTP/2 GET https://localhost:44336/_framework/aspnetcore-browser-refresh.js - -
+2022-12-12 15:25:46.910 +03:00 [INF] Request finished HTTP/2 GET https://localhost:44336/_framework/aspnetcore-browser-refresh.js - - - 200 12026 application/javascript;+charset=utf-8 0.6110ms
+2022-12-12 15:25:47.341 +03:00 [INF] Request starting HTTP/2 GET https://localhost:44336/swagger/v1/swagger.json - -
+2022-12-12 15:25:47.342 +03:00 [DBG] AuthenticationScheme: Bearer was not authenticated.
+2022-12-12 15:25:47.379 +03:00 [INF] Request finished HTTP/2 GET https://localhost:44336/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 37.7253ms

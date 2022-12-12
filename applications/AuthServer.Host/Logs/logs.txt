@@ -12050,3 +12050,961 @@ System.Threading.Tasks.TaskCanceledException: A task was canceled.
 2022-12-12 14:54:41.693 +03:00 [DBG] Added 0 entity changes to the current audit log
 2022-12-12 14:54:41.694 +03:00 [DBG] Added 0 entity changes to the current audit log
 2022-12-12 14:54:41.695 +03:00 [INF] Request finished HTTP/2 GET https://localhost:44330/favicon.ico - - - 404 0 - 44.0775ms
+2022-12-12 15:08:56.414 +03:00 [INF] Request starting HTTP/1.1 GET https://localhost:44330/.well-known/openid-configuration - -
+2022-12-12 15:08:56.418 +03:00 [DBG] Request path /.well-known/openid-configuration matched to endpoint type Discovery
+2022-12-12 15:08:56.490 +03:00 [DBG] Endpoint enabled: Discovery, successfully created handler: IdentityServer4.Endpoints.DiscoveryEndpoint
+2022-12-12 15:08:56.490 +03:00 [INF] Invoking IdentityServer endpoint: IdentityServer4.Endpoints.DiscoveryEndpoint for /.well-known/openid-configuration
+2022-12-12 15:08:56.548 +03:00 [DBG] Start discovery request
+2022-12-12 15:08:57.258 +03:00 [INF] Request finished HTTP/1.1 GET https://localhost:44330/.well-known/openid-configuration - - - 200 - application/json;+charset=UTF-8 844.7661ms
+2022-12-12 15:08:58.659 +03:00 [INF] Request starting HTTP/1.1 GET https://localhost:44330/.well-known/openid-configuration/jwks - -
+2022-12-12 15:08:58.661 +03:00 [DBG] Request path /.well-known/openid-configuration/jwks matched to endpoint type Discovery
+2022-12-12 15:08:58.664 +03:00 [DBG] Endpoint enabled: Discovery, successfully created handler: IdentityServer4.Endpoints.DiscoveryKeyEndpoint
+2022-12-12 15:08:58.664 +03:00 [INF] Invoking IdentityServer endpoint: IdentityServer4.Endpoints.DiscoveryKeyEndpoint for /.well-known/openid-configuration/jwks
+2022-12-12 15:08:58.665 +03:00 [DBG] Start key discovery request
+2022-12-12 15:08:58.922 +03:00 [INF] Request finished HTTP/1.1 GET https://localhost:44330/.well-known/openid-configuration/jwks - - - 200 - application/json;+charset=UTF-8 262.9326ms
+2022-12-12 15:08:59.221 +03:00 [INF] Request starting HTTP/2 GET https://localhost:44330/connect/authorize?client_id=backend-admin-app-client&redirect_uri=https%3A%2F%2Flocalhost%3A44354%2Fsignin-oidc&response_type=code%20id_token&scope=openid%20profile%20role%20email%20phone%20BackendAdminAppGateway%20IdentityService%20ProductService%20TenantManagementService&response_mode=form_post&nonce=638064437391103893.YzMyOTdkMzQtM2M1Yi00MGY2LTk2NTMtNWI0ZTM2MWVhYzE1YjY0NWNjNWQtY2M2Zi00Njc0LTg1YWItOTIzOTRmNGQ3YTky&state=CfDJ8FWvNGhp_oRGpUI8m43VBQguwtSR2F-o4HCoOhi2gPygesXq8aIOo_hiNAPZ4NsWJYPmSNaPpT58hUBZ5VqG5CTzbvFvNmCSkJAFTlZiDxg6Hv6F_hVNWmAsWr5014SQPZOZ40LyRsp-dckPaUVtfTVK6JUSf2I6abAMOb2jsp9vuKoANzYpGk9JZU1gW2BQ8hYSaq2NCLJczyvOmQ2rgiIFaRPQ98VRk3k7bgS0snsuCPo9EPGiYJoc8GWYhzFGf2NDGeZHVCQfYV_59rGudvQ1TqQbO--Y60UmXCzeuk76tBn3h3RQEJL3CwijzEMwdA&x-client-SKU=ID_NETSTANDARD2_0&x-client-ver=6.10.0.0 - -
+2022-12-12 15:08:59.231 +03:00 [DBG] Request path /connect/authorize matched to endpoint type Authorize
+2022-12-12 15:08:59.297 +03:00 [DBG] Endpoint enabled: Authorize, successfully created handler: IdentityServer4.Endpoints.AuthorizeEndpoint
+2022-12-12 15:08:59.297 +03:00 [INF] Invoking IdentityServer endpoint: IdentityServer4.Endpoints.AuthorizeEndpoint for /connect/authorize
+2022-12-12 15:08:59.299 +03:00 [DBG] Start authorize request
+2022-12-12 15:08:59.425 +03:00 [DBG] User in authorize request: 4d99b54e-d1b0-2106-51f4-3a0813a56955
+2022-12-12 15:08:59.428 +03:00 [DBG] Start authorize request protocol validation
+2022-12-12 15:08:59.807 +03:00 [DBG] client configuration validation for client backend-admin-app-client succeeded.
+2022-12-12 15:08:59.901 +03:00 [DBG] Checking for PKCE parameters
+2022-12-12 15:08:59.903 +03:00 [DBG] No PKCE used.
+2022-12-12 15:09:00.440 +03:00 [DBG] Calling into custom validator: IdentityServer4.Validation.DefaultCustomAuthorizeRequestValidator
+2022-12-12 15:09:00.464 +03:00 [DBG] ValidatedAuthorizeRequest
+{"ClientId":"backend-admin-app-client","ClientName":"backend-admin-app-client","RedirectUri":"https://localhost:44354/signin-oidc","AllowedRedirectUris":["https://localhost:44354/signin-oidc"],"SubjectId":"4d99b54e-d1b0-2106-51f4-3a0813a56955","ResponseType":"code id_token","ResponseMode":"form_post","GrantType":"hybrid","RequestedScopes":"openid profile role email phone BackendAdminAppGateway IdentityService ProductService TenantManagementService","State":"CfDJ8FWvNGhp_oRGpUI8m43VBQguwtSR2F-o4HCoOhi2gPygesXq8aIOo_hiNAPZ4NsWJYPmSNaPpT58hUBZ5VqG5CTzbvFvNmCSkJAFTlZiDxg6Hv6F_hVNWmAsWr5014SQPZOZ40LyRsp-dckPaUVtfTVK6JUSf2I6abAMOb2jsp9vuKoANzYpGk9JZU1gW2BQ8hYSaq2NCLJczyvOmQ2rgiIFaRPQ98VRk3k7bgS0snsuCPo9EPGiYJoc8GWYhzFGf2NDGeZHVCQfYV_59rGudvQ1TqQbO--Y60UmXCzeuk76tBn3h3RQEJL3CwijzEMwdA","UiLocales":null,"Nonce":"638064437391103893.YzMyOTdkMzQtM2M1Yi00MGY2LTk2NTMtNWI0ZTM2MWVhYzE1YjY0NWNjNWQtY2M2Zi00Njc0LTg1YWItOTIzOTRmNGQ3YTky","AuthenticationContextReferenceClasses":null,"DisplayMode":null,"PromptMode":"","MaxAge":null,"LoginHint":null,"SessionId":"35A0C41E6D8FB795925511E352A1D8C4","Raw":{"client_id":"backend-admin-app-client","redirect_uri":"https://localhost:44354/signin-oidc","response_type":"code id_token","scope":"openid profile role email phone BackendAdminAppGateway IdentityService ProductService TenantManagementService","response_mode":"form_post","nonce":"638064437391103893.YzMyOTdkMzQtM2M1Yi00MGY2LTk2NTMtNWI0ZTM2MWVhYzE1YjY0NWNjNWQtY2M2Zi00Njc0LTg1YWItOTIzOTRmNGQ3YTky","state":"CfDJ8FWvNGhp_oRGpUI8m43VBQguwtSR2F-o4HCoOhi2gPygesXq8aIOo_hiNAPZ4NsWJYPmSNaPpT58hUBZ5VqG5CTzbvFvNmCSkJAFTlZiDxg6Hv6F_hVNWmAsWr5014SQPZOZ40LyRsp-dckPaUVtfTVK6JUSf2I6abAMOb2jsp9vuKoANzYpGk9JZU1gW2BQ8hYSaq2NCLJczyvOmQ2rgiIFaRPQ98VRk3k7bgS0snsuCPo9EPGiYJoc8GWYhzFGf2NDGeZHVCQfYV_59rGudvQ1TqQbO--Y60UmXCzeuk76tBn3h3RQEJL3CwijzEMwdA","x-client-SKU":"ID_NETSTANDARD2_0","x-client-ver":"6.10.0.0"},"$type":"AuthorizeRequestValidationLog"}
+2022-12-12 15:09:00.586 +03:00 [DBG] Client is configured to not require consent, no consent is required
+2022-12-12 15:09:00.588 +03:00 [DBG] Creating Hybrid Flow response.
+2022-12-12 15:09:01.500 +03:00 [DBG] Creating Implicit Flow response.
+2022-12-12 15:09:01.511 +03:00 [DBG] Getting claims for identity token for subject: 4d99b54e-d1b0-2106-51f4-3a0813a56955 and client: backend-admin-app-client
+2022-12-12 15:09:02.153 +03:00 [INF] {"ClientId":"backend-admin-app-client","ClientName":"backend-admin-app-client","RedirectUri":"https://localhost:44354/signin-oidc","Endpoint":"Authorize","SubjectId":"4d99b54e-d1b0-2106-51f4-3a0813a56955","Scopes":"openid profile role email phone BackendAdminAppGateway IdentityService ProductService TenantManagementService","GrantType":"hybrid","Tokens":[{"TokenType":"id_token","TokenValue":"****9eWw","$type":"Token"},{"TokenType":"code","TokenValue":"****3F0A","$type":"Token"}],"Category":"Token","Name":"Token Issued Success","EventType":"Success","Id":2000,"Message":null,"ActivityId":"0HMMS6UD4IVO2:00000001","TimeStamp":"2022-12-12T12:09:02.0000000Z","ProcessId":6324,"LocalIpAddress":"::1:44330","RemoteIpAddress":"::1","$type":"TokenIssuedSuccessEvent"}
+2022-12-12 15:09:02.155 +03:00 [DBG] Authorize endpoint response
+{"SubjectId":"4d99b54e-d1b0-2106-51f4-3a0813a56955","ClientId":"backend-admin-app-client","RedirectUri":"https://localhost:44354/signin-oidc","State":"CfDJ8FWvNGhp_oRGpUI8m43VBQguwtSR2F-o4HCoOhi2gPygesXq8aIOo_hiNAPZ4NsWJYPmSNaPpT58hUBZ5VqG5CTzbvFvNmCSkJAFTlZiDxg6Hv6F_hVNWmAsWr5014SQPZOZ40LyRsp-dckPaUVtfTVK6JUSf2I6abAMOb2jsp9vuKoANzYpGk9JZU1gW2BQ8hYSaq2NCLJczyvOmQ2rgiIFaRPQ98VRk3k7bgS0snsuCPo9EPGiYJoc8GWYhzFGf2NDGeZHVCQfYV_59rGudvQ1TqQbO--Y60UmXCzeuk76tBn3h3RQEJL3CwijzEMwdA","Scope":"openid profile role email phone BackendAdminAppGateway IdentityService ProductService TenantManagementService","Error":null,"ErrorDescription":null,"$type":"AuthorizeResponseLog"}
+2022-12-12 15:09:02.362 +03:00 [INF] Request finished HTTP/2 GET https://localhost:44330/connect/authorize?client_id=backend-admin-app-client&redirect_uri=https%3A%2F%2Flocalhost%3A44354%2Fsignin-oidc&response_type=code%20id_token&scope=openid%20profile%20role%20email%20phone%20BackendAdminAppGateway%20IdentityService%20ProductService%20TenantManagementService&response_mode=form_post&nonce=638064437391103893.YzMyOTdkMzQtM2M1Yi00MGY2LTk2NTMtNWI0ZTM2MWVhYzE1YjY0NWNjNWQtY2M2Zi00Njc0LTg1YWItOTIzOTRmNGQ3YTky&state=CfDJ8FWvNGhp_oRGpUI8m43VBQguwtSR2F-o4HCoOhi2gPygesXq8aIOo_hiNAPZ4NsWJYPmSNaPpT58hUBZ5VqG5CTzbvFvNmCSkJAFTlZiDxg6Hv6F_hVNWmAsWr5014SQPZOZ40LyRsp-dckPaUVtfTVK6JUSf2I6abAMOb2jsp9vuKoANzYpGk9JZU1gW2BQ8hYSaq2NCLJczyvOmQ2rgiIFaRPQ98VRk3k7bgS0snsuCPo9EPGiYJoc8GWYhzFGf2NDGeZHVCQfYV_59rGudvQ1TqQbO--Y60UmXCzeuk76tBn3h3RQEJL3CwijzEMwdA&x-client-SKU=ID_NETSTANDARD2_0&x-client-ver=6.10.0.0 - - - 200 - text/html;+charset=UTF-8 3141.4982ms
+2022-12-12 15:09:04.691 +03:00 [INF] Request starting HTTP/1.1 POST https://localhost:44330/connect/token application/x-www-form-urlencoded 217
+2022-12-12 15:09:04.736 +03:00 [DBG] Request path /connect/token matched to endpoint type Token
+2022-12-12 15:09:04.823 +03:00 [DBG] Endpoint enabled: Token, successfully created handler: IdentityServer4.Endpoints.TokenEndpoint
+2022-12-12 15:09:04.823 +03:00 [INF] Invoking IdentityServer endpoint: IdentityServer4.Endpoints.TokenEndpoint for /connect/token
+2022-12-12 15:09:04.827 +03:00 [DBG] Start token request.
+2022-12-12 15:09:04.829 +03:00 [DBG] Start client validation
+2022-12-12 15:09:04.836 +03:00 [DBG] Start parsing Basic Authentication secret
+2022-12-12 15:09:04.959 +03:00 [DBG] Start parsing for secret in post body
+2022-12-12 15:09:04.959 +03:00 [DBG] Parser found secret: PostBodySecretParser
+2022-12-12 15:09:04.959 +03:00 [DBG] Secret id found: backend-admin-app-client
+2022-12-12 15:09:04.994 +03:00 [DBG] client configuration validation for client backend-admin-app-client succeeded.
+2022-12-12 15:09:05.156 +03:00 [DBG] Secret validator success: HashedSharedSecretValidator
+2022-12-12 15:09:05.157 +03:00 [DBG] Client validation success
+2022-12-12 15:09:05.160 +03:00 [INF] {"ClientId":"backend-admin-app-client","AuthenticationMethod":"SharedSecret","Category":"Authentication","Name":"Client Authentication Success","EventType":"Success","Id":1010,"Message":null,"ActivityId":"0HMMS6UD4IVO1:00000004","TimeStamp":"2022-12-12T12:09:05.0000000Z","ProcessId":6324,"LocalIpAddress":"::1:44330","RemoteIpAddress":"::1","$type":"ClientAuthenticationSuccessEvent"}
+2022-12-12 15:09:05.164 +03:00 [DBG] Start token request validation
+2022-12-12 15:09:05.170 +03:00 [DBG] Start validation of authorization code token request
+2022-12-12 15:09:05.537 +03:00 [DBG] Validation of authorization code token request success
+2022-12-12 15:09:05.540 +03:00 [INF] Token request validation success, {"ClientId":"backend-admin-app-client","ClientName":"backend-admin-app-client","GrantType":"authorization_code","Scopes":null,"AuthorizationCode":"****3F0A","RefreshToken":"********","UserName":null,"AuthenticationContextReferenceClasses":null,"Tenant":null,"IdP":null,"Raw":{"client_id":"backend-admin-app-client","client_secret":"***REDACTED***","code":"F4A28C11DDC7651D36822E5799145F94C7C029D04E6754A2FAE01C4476A93F0A","grant_type":"authorization_code","redirect_uri":"https://localhost:44354/signin-oidc"},"$type":"TokenRequestValidationLog"}
+2022-12-12 15:09:05.591 +03:00 [DBG] client configuration validation for client backend-admin-app-client succeeded.
+2022-12-12 15:09:05.714 +03:00 [DBG] Getting claims for access token for client: backend-admin-app-client
+2022-12-12 15:09:05.715 +03:00 [DBG] Getting claims for access token for subject: 4d99b54e-d1b0-2106-51f4-3a0813a56955
+2022-12-12 15:09:05.853 +03:00 [DBG] client configuration validation for client backend-admin-app-client succeeded.
+2022-12-12 15:09:05.958 +03:00 [DBG] Getting claims for identity token for subject: 4d99b54e-d1b0-2106-51f4-3a0813a56955 and client: backend-admin-app-client
+2022-12-12 15:09:06.279 +03:00 [INF] {"ClientId":"backend-admin-app-client","ClientName":"backend-admin-app-client","RedirectUri":null,"Endpoint":"Token","SubjectId":"4d99b54e-d1b0-2106-51f4-3a0813a56955","Scopes":"openid profile role email phone BackendAdminAppGateway IdentityService ProductService TenantManagementService","GrantType":"authorization_code","Tokens":[{"TokenType":"id_token","TokenValue":"****CsPw","$type":"Token"},{"TokenType":"access_token","TokenValue":"****vsOA","$type":"Token"}],"Category":"Token","Name":"Token Issued Success","EventType":"Success","Id":2000,"Message":null,"ActivityId":"0HMMS6UD4IVO1:00000004","TimeStamp":"2022-12-12T12:09:06.0000000Z","ProcessId":6324,"LocalIpAddress":"::1:44330","RemoteIpAddress":"::1","$type":"TokenIssuedSuccessEvent"}
+2022-12-12 15:09:06.279 +03:00 [DBG] Token request success.
+2022-12-12 15:09:06.285 +03:00 [INF] Request finished HTTP/1.1 POST https://localhost:44330/connect/token application/x-www-form-urlencoded 217 - 200 - application/json;+charset=UTF-8 1593.5239ms
+2022-12-12 15:09:06.343 +03:00 [INF] Request starting HTTP/1.1 GET https://localhost:44330/connect/userinfo - -
+2022-12-12 15:09:06.345 +03:00 [DBG] Request path /connect/userinfo matched to endpoint type Userinfo
+2022-12-12 15:09:06.356 +03:00 [DBG] Endpoint enabled: Userinfo, successfully created handler: IdentityServer4.Endpoints.UserInfoEndpoint
+2022-12-12 15:09:06.356 +03:00 [INF] Invoking IdentityServer endpoint: IdentityServer4.Endpoints.UserInfoEndpoint for /connect/userinfo
+2022-12-12 15:09:06.361 +03:00 [DBG] Start userinfo request
+2022-12-12 15:09:06.363 +03:00 [DBG] Bearer token found in header
+2022-12-12 15:09:07.214 +03:00 [DBG] client configuration validation for client backend-admin-app-client succeeded.
+2022-12-12 15:09:07.251 +03:00 [DBG] client configuration validation for client backend-admin-app-client succeeded.
+2022-12-12 15:09:07.283 +03:00 [DBG] Calling into custom token validator: IdentityServer4.Validation.DefaultCustomTokenValidator
+2022-12-12 15:09:07.284 +03:00 [DBG] Token validation success
+{"ClientId":null,"ClientName":null,"ValidateLifetime":true,"AccessTokenType":"Jwt","ExpectedScope":"openid","TokenHandle":null,"JwtId":null,"Claims":{"nbf":1670846945,"exp":1702382945,"iss":"https://localhost:44330","aud":["BackendAdminAppGateway","IdentityService","ProductService","TenantManagementService"],"client_id":"backend-admin-app-client","sub":"4d99b54e-d1b0-2106-51f4-3a0813a56955","auth_time":1670843208,"idp":"local","http://schemas.xmlsoap.org/ws/2005/05/identity/claims/givenname":"admin","preferred_username":"admin","given_name":"admin","role":"admin","phone_number_verified":"False","email":"admin@abp.io","email_verified":"False","name":"admin","sid":"35A0C41E6D8FB795925511E352A1D8C4","iat":1670846945,"scope":["openid","profile","role","email","phone","BackendAdminAppGateway","IdentityService","ProductService","TenantManagementService"],"amr":"pwd"},"$type":"TokenValidationLog"}
+2022-12-12 15:09:07.323 +03:00 [DBG] Creating userinfo response
+2022-12-12 15:09:07.325 +03:00 [DBG] Scopes in access token: openid profile role email phone BackendAdminAppGateway IdentityService ProductService TenantManagementService
+2022-12-12 15:09:07.355 +03:00 [DBG] Requested claim types: sub birthdate family_name gender given_name locale middle_name name nickname picture preferred_username profile updated_at website zoneinfo role email email_verified phone_number phone_number_verified
+2022-12-12 15:09:07.403 +03:00 [INF] Profile service returned the following claim types: sub role phone_number_verified email email_verified preferred_username name given_name
+2022-12-12 15:09:07.404 +03:00 [DBG] End userinfo request
+2022-12-12 15:09:07.406 +03:00 [INF] Request finished HTTP/1.1 GET https://localhost:44330/connect/userinfo - - - 200 - application/json;+charset=UTF-8 1062.9245ms
+2022-12-12 15:09:08.828 +03:00 [INF] Request starting HTTP/1.1 GET https://localhost:44330/.well-known/openid-configuration - -
+2022-12-12 15:09:08.831 +03:00 [DBG] Request path /.well-known/openid-configuration matched to endpoint type Discovery
+2022-12-12 15:09:08.839 +03:00 [DBG] Endpoint enabled: Discovery, successfully created handler: IdentityServer4.Endpoints.DiscoveryEndpoint
+2022-12-12 15:09:08.839 +03:00 [INF] Invoking IdentityServer endpoint: IdentityServer4.Endpoints.DiscoveryEndpoint for /.well-known/openid-configuration
+2022-12-12 15:09:08.839 +03:00 [DBG] Start discovery request
+2022-12-12 15:09:08.855 +03:00 [INF] Request finished HTTP/1.1 GET https://localhost:44330/.well-known/openid-configuration - - - 200 - application/json;+charset=UTF-8 26.4756ms
+2022-12-12 15:09:10.069 +03:00 [INF] Request starting HTTP/1.1 GET https://localhost:44330/.well-known/openid-configuration/jwks - -
+2022-12-12 15:09:10.071 +03:00 [DBG] Request path /.well-known/openid-configuration/jwks matched to endpoint type Discovery
+2022-12-12 15:09:10.076 +03:00 [DBG] Endpoint enabled: Discovery, successfully created handler: IdentityServer4.Endpoints.DiscoveryKeyEndpoint
+2022-12-12 15:09:10.076 +03:00 [INF] Invoking IdentityServer endpoint: IdentityServer4.Endpoints.DiscoveryKeyEndpoint for /.well-known/openid-configuration/jwks
+2022-12-12 15:09:10.076 +03:00 [DBG] Start key discovery request
+2022-12-12 15:09:10.077 +03:00 [INF] Request finished HTTP/1.1 GET https://localhost:44330/.well-known/openid-configuration/jwks - - - 200 - application/json;+charset=UTF-8 8.4567ms
+2022-12-12 15:09:22.027 +03:00 [INF] Request starting HTTP/1.1 GET https://localhost:44330/.well-known/openid-configuration - -
+2022-12-12 15:09:22.028 +03:00 [DBG] Request path /.well-known/openid-configuration matched to endpoint type Discovery
+2022-12-12 15:09:22.034 +03:00 [DBG] Endpoint enabled: Discovery, successfully created handler: IdentityServer4.Endpoints.DiscoveryEndpoint
+2022-12-12 15:09:22.034 +03:00 [INF] Invoking IdentityServer endpoint: IdentityServer4.Endpoints.DiscoveryEndpoint for /.well-known/openid-configuration
+2022-12-12 15:09:22.034 +03:00 [DBG] Start discovery request
+2022-12-12 15:09:22.044 +03:00 [INF] Request finished HTTP/1.1 GET https://localhost:44330/.well-known/openid-configuration - - - 200 - application/json;+charset=UTF-8 16.8040ms
+2022-12-12 15:09:22.840 +03:00 [INF] Request starting HTTP/1.1 GET https://localhost:44330/.well-known/openid-configuration/jwks - -
+2022-12-12 15:09:22.842 +03:00 [DBG] Request path /.well-known/openid-configuration/jwks matched to endpoint type Discovery
+2022-12-12 15:09:22.847 +03:00 [DBG] Endpoint enabled: Discovery, successfully created handler: IdentityServer4.Endpoints.DiscoveryKeyEndpoint
+2022-12-12 15:09:22.847 +03:00 [INF] Invoking IdentityServer endpoint: IdentityServer4.Endpoints.DiscoveryKeyEndpoint for /.well-known/openid-configuration/jwks
+2022-12-12 15:09:22.847 +03:00 [DBG] Start key discovery request
+2022-12-12 15:09:22.848 +03:00 [INF] Request finished HTTP/1.1 GET https://localhost:44330/.well-known/openid-configuration/jwks - - - 200 - application/json;+charset=UTF-8 7.9443ms
+2022-12-12 15:20:18.388 +03:00 [INF] Starting AuthServer.Host.
+2022-12-12 15:21:11.429 +03:00 [INF] Loaded ABP modules:
+2022-12-12 15:21:11.432 +03:00 [INF] - AuthServer.Host.AuthServerHostModule
+2022-12-12 15:21:11.432 +03:00 [INF]   - Volo.Abp.Autofac.AbpAutofacModule
+2022-12-12 15:21:11.432 +03:00 [INF]     - Volo.Abp.Castle.AbpCastleCoreModule
+2022-12-12 15:21:11.432 +03:00 [INF]   - Volo.Abp.EventBus.RabbitMq.AbpEventBusRabbitMqModule
+2022-12-12 15:21:11.432 +03:00 [INF]     - Volo.Abp.EventBus.AbpEventBusModule
+2022-12-12 15:21:11.432 +03:00 [INF]       - Volo.Abp.EventBus.Abstractions.AbpEventBusAbstractionsModule
+2022-12-12 15:21:11.432 +03:00 [INF]       - Volo.Abp.MultiTenancy.AbpMultiTenancyModule
+2022-12-12 15:21:11.432 +03:00 [INF]         - Volo.Abp.Data.AbpDataModule
+2022-12-12 15:21:11.432 +03:00 [INF]           - Volo.Abp.ObjectExtending.AbpObjectExtendingModule
+2022-12-12 15:21:11.432 +03:00 [INF]             - Volo.Abp.Localization.AbpLocalizationAbstractionsModule
+2022-12-12 15:21:11.432 +03:00 [INF]             - Volo.Abp.Validation.AbpValidationAbstractionsModule
+2022-12-12 15:21:11.432 +03:00 [INF]           - Volo.Abp.Uow.AbpUnitOfWorkModule
+2022-12-12 15:21:11.432 +03:00 [INF]         - Volo.Abp.Security.AbpSecurityModule
+2022-12-12 15:21:11.432 +03:00 [INF]       - Volo.Abp.Json.AbpJsonModule
+2022-12-12 15:21:11.432 +03:00 [INF]         - Volo.Abp.Timing.AbpTimingModule
+2022-12-12 15:21:11.432 +03:00 [INF]           - Volo.Abp.Localization.AbpLocalizationModule
+2022-12-12 15:21:11.432 +03:00 [INF]             - Volo.Abp.VirtualFileSystem.AbpVirtualFileSystemModule
+2022-12-12 15:21:11.432 +03:00 [INF]             - Volo.Abp.Settings.AbpSettingsModule
+2022-12-12 15:21:11.432 +03:00 [INF]       - Volo.Abp.Guids.AbpGuidsModule
+2022-12-12 15:21:11.432 +03:00 [INF]       - Volo.Abp.BackgroundWorkers.AbpBackgroundWorkersModule
+2022-12-12 15:21:11.432 +03:00 [INF]         - Volo.Abp.Threading.AbpThreadingModule
+2022-12-12 15:21:11.432 +03:00 [INF]       - Volo.Abp.DistributedLocking.AbpDistributedLockingAbstractionsModule
+2022-12-12 15:21:11.432 +03:00 [INF]     - Volo.Abp.RabbitMQ.AbpRabbitMqModule
+2022-12-12 15:21:11.432 +03:00 [INF]   - Volo.Abp.PermissionManagement.EntityFrameworkCore.AbpPermissionManagementEntityFrameworkCoreModule
+2022-12-12 15:21:11.432 +03:00 [INF]     - Volo.Abp.PermissionManagement.AbpPermissionManagementDomainModule
+2022-12-12 15:21:11.432 +03:00 [INF]       - Volo.Abp.Authorization.AbpAuthorizationModule
+2022-12-12 15:21:11.432 +03:00 [INF]         - Volo.Abp.Authorization.AbpAuthorizationAbstractionsModule
+2022-12-12 15:21:11.432 +03:00 [INF]       - Volo.Abp.Domain.AbpDddDomainModule
+2022-12-12 15:21:11.432 +03:00 [INF]         - Volo.Abp.Auditing.AbpAuditingModule
+2022-12-12 15:21:11.432 +03:00 [INF]           - Volo.Abp.Auditing.AbpAuditingContractsModule
+2022-12-12 15:21:11.432 +03:00 [INF]         - Volo.Abp.ObjectMapping.AbpObjectMappingModule
+2022-12-12 15:21:11.432 +03:00 [INF]         - Volo.Abp.ExceptionHandling.AbpExceptionHandlingModule
+2022-12-12 15:21:11.432 +03:00 [INF]         - Volo.Abp.Specifications.AbpSpecificationsModule
+2022-12-12 15:21:11.432 +03:00 [INF]       - Volo.Abp.PermissionManagement.AbpPermissionManagementDomainSharedModule
+2022-12-12 15:21:11.432 +03:00 [INF]         - Volo.Abp.Validation.AbpValidationModule
+2022-12-12 15:21:11.432 +03:00 [INF]       - Volo.Abp.Caching.AbpCachingModule
+2022-12-12 15:21:11.432 +03:00 [INF]         - Volo.Abp.Serialization.AbpSerializationModule
+2022-12-12 15:21:11.432 +03:00 [INF]     - Volo.Abp.EntityFrameworkCore.AbpEntityFrameworkCoreModule
+2022-12-12 15:21:11.432 +03:00 [INF]   - Volo.Abp.AuditLogging.EntityFrameworkCore.AbpAuditLoggingEntityFrameworkCoreModule
+2022-12-12 15:21:11.432 +03:00 [INF]     - Volo.Abp.AuditLogging.AbpAuditLoggingDomainModule
+2022-12-12 15:21:11.432 +03:00 [INF]       - Volo.Abp.AuditLogging.AbpAuditLoggingDomainSharedModule
+2022-12-12 15:21:11.432 +03:00 [INF]   - Volo.Abp.SettingManagement.EntityFrameworkCore.AbpSettingManagementEntityFrameworkCoreModule
+2022-12-12 15:21:11.432 +03:00 [INF]     - Volo.Abp.SettingManagement.AbpSettingManagementDomainModule
+2022-12-12 15:21:11.432 +03:00 [INF]       - Volo.Abp.SettingManagement.AbpSettingManagementDomainSharedModule
+2022-12-12 15:21:11.432 +03:00 [INF]         - Volo.Abp.Features.AbpFeaturesModule
+2022-12-12 15:21:11.432 +03:00 [INF]   - Volo.Abp.Identity.EntityFrameworkCore.AbpIdentityEntityFrameworkCoreModule
+2022-12-12 15:21:11.432 +03:00 [INF]     - Volo.Abp.Identity.AbpIdentityDomainModule
+2022-12-12 15:21:11.432 +03:00 [INF]       - Volo.Abp.Identity.AbpIdentityDomainSharedModule
+2022-12-12 15:21:11.433 +03:00 [INF]         - Volo.Abp.Users.AbpUsersDomainSharedModule
+2022-12-12 15:21:11.433 +03:00 [INF]       - Volo.Abp.Users.AbpUsersDomainModule
+2022-12-12 15:21:11.433 +03:00 [INF]         - Volo.Abp.Users.AbpUsersAbstractionModule
+2022-12-12 15:21:11.433 +03:00 [INF]       - Volo.Abp.AutoMapper.AbpAutoMapperModule
+2022-12-12 15:21:11.433 +03:00 [INF]     - Volo.Abp.Users.EntityFrameworkCore.AbpUsersEntityFrameworkCoreModule
+2022-12-12 15:21:11.433 +03:00 [INF]   - Volo.Abp.Identity.AbpIdentityApplicationContractsModule
+2022-12-12 15:21:11.433 +03:00 [INF]     - Volo.Abp.PermissionManagement.AbpPermissionManagementApplicationContractsModule
+2022-12-12 15:21:11.433 +03:00 [INF]       - Volo.Abp.Application.AbpDddApplicationContractsModule
+2022-12-12 15:21:11.433 +03:00 [INF]   - Volo.Abp.Account.AbpAccountApplicationModule
+2022-12-12 15:21:11.433 +03:00 [INF]     - Volo.Abp.Account.AbpAccountApplicationContractsModule
+2022-12-12 15:21:11.433 +03:00 [INF]     - Volo.Abp.Identity.AbpIdentityApplicationModule
+2022-12-12 15:21:11.433 +03:00 [INF]       - Volo.Abp.PermissionManagement.AbpPermissionManagementApplicationModule
+2022-12-12 15:21:11.433 +03:00 [INF]         - Volo.Abp.Application.AbpDddApplicationModule
+2022-12-12 15:21:11.433 +03:00 [INF]           - Volo.Abp.Http.AbpHttpAbstractionsModule
+2022-12-12 15:21:11.433 +03:00 [INF]           - Volo.Abp.GlobalFeatures.AbpGlobalFeaturesModule
+2022-12-12 15:21:11.433 +03:00 [INF]     - Volo.Abp.UI.Navigation.AbpUiNavigationModule
+2022-12-12 15:21:11.433 +03:00 [INF]       - Volo.Abp.UI.AbpUiModule
+2022-12-12 15:21:11.433 +03:00 [INF]     - Volo.Abp.Emailing.AbpEmailingModule
+2022-12-12 15:21:11.433 +03:00 [INF]       - Volo.Abp.BackgroundJobs.AbpBackgroundJobsAbstractionsModule
+2022-12-12 15:21:11.433 +03:00 [INF]       - Volo.Abp.TextTemplating.AbpTextTemplatingModule
+2022-12-12 15:21:11.433 +03:00 [INF]         - Volo.Abp.TextTemplating.Scriban.AbpTextTemplatingScribanModule
+2022-12-12 15:21:11.433 +03:00 [INF]           - Volo.Abp.TextTemplating.AbpTextTemplatingCoreModule
+2022-12-12 15:21:11.433 +03:00 [INF]   - Volo.Abp.IdentityServer.EntityFrameworkCore.AbpIdentityServerEntityFrameworkCoreModule
+2022-12-12 15:21:11.433 +03:00 [INF]     - Volo.Abp.IdentityServer.AbpIdentityServerDomainModule
+2022-12-12 15:21:11.433 +03:00 [INF]       - Volo.Abp.IdentityServer.AbpIdentityServerDomainSharedModule
+2022-12-12 15:21:11.433 +03:00 [INF]   - Volo.Abp.EntityFrameworkCore.SqlServer.AbpEntityFrameworkCoreSqlServerModule
+2022-12-12 15:21:11.433 +03:00 [INF]   - Volo.Abp.Account.Web.AbpAccountWebIdentityServerModule
+2022-12-12 15:21:11.433 +03:00 [INF]     - Volo.Abp.Account.Web.AbpAccountWebModule
+2022-12-12 15:21:11.433 +03:00 [INF]       - Volo.Abp.Identity.AspNetCore.AbpIdentityAspNetCoreModule
+2022-12-12 15:21:11.433 +03:00 [INF]       - Volo.Abp.AspNetCore.Mvc.UI.Theme.Shared.AbpAspNetCoreMvcUiThemeSharedModule
+2022-12-12 15:21:11.433 +03:00 [INF]         - Volo.Abp.AspNetCore.Mvc.UI.Bootstrap.AbpAspNetCoreMvcUiBootstrapModule
+2022-12-12 15:21:11.433 +03:00 [INF]           - Volo.Abp.AspNetCore.Mvc.UI.AbpAspNetCoreMvcUiModule
+2022-12-12 15:21:11.433 +03:00 [INF]             - Volo.Abp.AspNetCore.Mvc.AbpAspNetCoreMvcModule
+2022-12-12 15:21:11.433 +03:00 [INF]               - Volo.Abp.AspNetCore.AbpAspNetCoreModule
+2022-12-12 15:21:11.433 +03:00 [INF]                 - Volo.Abp.Http.AbpHttpModule
+2022-12-12 15:21:11.433 +03:00 [INF]                   - Volo.Abp.Minify.AbpMinifyModule
+2022-12-12 15:21:11.433 +03:00 [INF]               - Volo.Abp.ApiVersioning.AbpApiVersioningAbstractionsModule
+2022-12-12 15:21:11.433 +03:00 [INF]               - Volo.Abp.AspNetCore.Mvc.AbpAspNetCoreMvcContractsModule
+2022-12-12 15:21:11.433 +03:00 [INF]         - Volo.Abp.AspNetCore.Mvc.UI.Packages.AbpAspNetCoreMvcUiPackagesModule
+2022-12-12 15:21:11.433 +03:00 [INF]           - Volo.Abp.AspNetCore.Mvc.UI.Bundling.AbpAspNetCoreMvcUiBundlingAbstractionsModule
+2022-12-12 15:21:11.433 +03:00 [INF]         - Volo.Abp.AspNetCore.Mvc.UI.Widgets.AbpAspNetCoreMvcUiWidgetsModule
+2022-12-12 15:21:11.433 +03:00 [INF]           - Volo.Abp.AspNetCore.Mvc.UI.Bundling.AbpAspNetCoreMvcUiBundlingModule
+2022-12-12 15:21:11.433 +03:00 [INF]   - Volo.Abp.AspNetCore.Mvc.UI.Theme.Basic.AbpAspNetCoreMvcUiBasicThemeModule
+2022-12-12 15:21:11.433 +03:00 [INF]     - Volo.Abp.AspNetCore.Mvc.UI.MultiTenancy.AbpAspNetCoreMvcUiMultiTenancyModule
+2022-12-12 15:21:11.433 +03:00 [INF]       - Volo.Abp.AspNetCore.MultiTenancy.AbpAspNetCoreMultiTenancyModule
+2022-12-12 15:21:11.433 +03:00 [INF]   - Volo.Abp.TenantManagement.EntityFrameworkCore.AbpTenantManagementEntityFrameworkCoreModule
+2022-12-12 15:21:11.433 +03:00 [INF]     - Volo.Abp.TenantManagement.AbpTenantManagementDomainModule
+2022-12-12 15:21:11.433 +03:00 [INF]       - Volo.Abp.TenantManagement.AbpTenantManagementDomainSharedModule
+2022-12-12 15:21:11.433 +03:00 [INF]   - Volo.Abp.TenantManagement.AbpTenantManagementApplicationContractsModule
+2022-12-12 15:21:11.746 +03:00 [DBG] Started background worker: Volo.Abp.IdentityServer.Tokens.TokenCleanupBackgroundWorker
+2022-12-12 15:21:11.834 +03:00 [INF] Starting IdentityServer4 version 4.1.2+997a6cdd643e46cd5762b710c4ddc43574cbec2e
+2022-12-12 15:21:14.804 +03:00 [INF] Using the default authentication scheme Identity.Application for IdentityServer
+2022-12-12 15:21:14.807 +03:00 [DBG] Using Identity.Application as default ASP.NET Core scheme for authentication
+2022-12-12 15:21:14.807 +03:00 [DBG] Using Identity.External as default ASP.NET Core scheme for sign-in
+2022-12-12 15:21:14.807 +03:00 [DBG] Using Identity.External as default ASP.NET Core scheme for sign-out
+2022-12-12 15:21:14.807 +03:00 [DBG] Using Identity.Application as default ASP.NET Core scheme for challenge
+2022-12-12 15:21:14.807 +03:00 [DBG] Using Identity.Application as default ASP.NET Core scheme for forbid
+2022-12-12 15:22:39.156 +03:00 [INF] Starting AuthServer.Host.
+2022-12-12 15:22:40.626 +03:00 [INF] Loaded ABP modules:
+2022-12-12 15:22:40.627 +03:00 [INF] - AuthServer.Host.AuthServerHostModule
+2022-12-12 15:22:40.627 +03:00 [INF]   - Volo.Abp.Autofac.AbpAutofacModule
+2022-12-12 15:22:40.627 +03:00 [INF]     - Volo.Abp.Castle.AbpCastleCoreModule
+2022-12-12 15:22:40.627 +03:00 [INF]   - Volo.Abp.EventBus.RabbitMq.AbpEventBusRabbitMqModule
+2022-12-12 15:22:40.627 +03:00 [INF]     - Volo.Abp.EventBus.AbpEventBusModule
+2022-12-12 15:22:40.627 +03:00 [INF]       - Volo.Abp.EventBus.Abstractions.AbpEventBusAbstractionsModule
+2022-12-12 15:22:40.627 +03:00 [INF]       - Volo.Abp.MultiTenancy.AbpMultiTenancyModule
+2022-12-12 15:22:40.627 +03:00 [INF]         - Volo.Abp.Data.AbpDataModule
+2022-12-12 15:22:40.627 +03:00 [INF]           - Volo.Abp.ObjectExtending.AbpObjectExtendingModule
+2022-12-12 15:22:40.627 +03:00 [INF]             - Volo.Abp.Localization.AbpLocalizationAbstractionsModule
+2022-12-12 15:22:40.627 +03:00 [INF]             - Volo.Abp.Validation.AbpValidationAbstractionsModule
+2022-12-12 15:22:40.627 +03:00 [INF]           - Volo.Abp.Uow.AbpUnitOfWorkModule
+2022-12-12 15:22:40.627 +03:00 [INF]         - Volo.Abp.Security.AbpSecurityModule
+2022-12-12 15:22:40.628 +03:00 [INF]       - Volo.Abp.Json.AbpJsonModule
+2022-12-12 15:22:40.628 +03:00 [INF]         - Volo.Abp.Timing.AbpTimingModule
+2022-12-12 15:22:40.628 +03:00 [INF]           - Volo.Abp.Localization.AbpLocalizationModule
+2022-12-12 15:22:40.628 +03:00 [INF]             - Volo.Abp.VirtualFileSystem.AbpVirtualFileSystemModule
+2022-12-12 15:22:40.628 +03:00 [INF]             - Volo.Abp.Settings.AbpSettingsModule
+2022-12-12 15:22:40.628 +03:00 [INF]       - Volo.Abp.Guids.AbpGuidsModule
+2022-12-12 15:22:40.628 +03:00 [INF]       - Volo.Abp.BackgroundWorkers.AbpBackgroundWorkersModule
+2022-12-12 15:22:40.628 +03:00 [INF]         - Volo.Abp.Threading.AbpThreadingModule
+2022-12-12 15:22:40.628 +03:00 [INF]       - Volo.Abp.DistributedLocking.AbpDistributedLockingAbstractionsModule
+2022-12-12 15:22:40.628 +03:00 [INF]     - Volo.Abp.RabbitMQ.AbpRabbitMqModule
+2022-12-12 15:22:40.628 +03:00 [INF]   - Volo.Abp.PermissionManagement.EntityFrameworkCore.AbpPermissionManagementEntityFrameworkCoreModule
+2022-12-12 15:22:40.628 +03:00 [INF]     - Volo.Abp.PermissionManagement.AbpPermissionManagementDomainModule
+2022-12-12 15:22:40.628 +03:00 [INF]       - Volo.Abp.Authorization.AbpAuthorizationModule
+2022-12-12 15:22:40.628 +03:00 [INF]         - Volo.Abp.Authorization.AbpAuthorizationAbstractionsModule
+2022-12-12 15:22:40.628 +03:00 [INF]       - Volo.Abp.Domain.AbpDddDomainModule
+2022-12-12 15:22:40.628 +03:00 [INF]         - Volo.Abp.Auditing.AbpAuditingModule
+2022-12-12 15:22:40.628 +03:00 [INF]           - Volo.Abp.Auditing.AbpAuditingContractsModule
+2022-12-12 15:22:40.628 +03:00 [INF]         - Volo.Abp.ObjectMapping.AbpObjectMappingModule
+2022-12-12 15:22:40.628 +03:00 [INF]         - Volo.Abp.ExceptionHandling.AbpExceptionHandlingModule
+2022-12-12 15:22:40.628 +03:00 [INF]         - Volo.Abp.Specifications.AbpSpecificationsModule
+2022-12-12 15:22:40.628 +03:00 [INF]       - Volo.Abp.PermissionManagement.AbpPermissionManagementDomainSharedModule
+2022-12-12 15:22:40.628 +03:00 [INF]         - Volo.Abp.Validation.AbpValidationModule
+2022-12-12 15:22:40.628 +03:00 [INF]       - Volo.Abp.Caching.AbpCachingModule
+2022-12-12 15:22:40.628 +03:00 [INF]         - Volo.Abp.Serialization.AbpSerializationModule
+2022-12-12 15:22:40.628 +03:00 [INF]     - Volo.Abp.EntityFrameworkCore.AbpEntityFrameworkCoreModule
+2022-12-12 15:22:40.628 +03:00 [INF]   - Volo.Abp.AuditLogging.EntityFrameworkCore.AbpAuditLoggingEntityFrameworkCoreModule
+2022-12-12 15:22:40.628 +03:00 [INF]     - Volo.Abp.AuditLogging.AbpAuditLoggingDomainModule
+2022-12-12 15:22:40.628 +03:00 [INF]       - Volo.Abp.AuditLogging.AbpAuditLoggingDomainSharedModule
+2022-12-12 15:22:40.628 +03:00 [INF]   - Volo.Abp.SettingManagement.EntityFrameworkCore.AbpSettingManagementEntityFrameworkCoreModule
+2022-12-12 15:22:40.628 +03:00 [INF]     - Volo.Abp.SettingManagement.AbpSettingManagementDomainModule
+2022-12-12 15:22:40.628 +03:00 [INF]       - Volo.Abp.SettingManagement.AbpSettingManagementDomainSharedModule
+2022-12-12 15:22:40.628 +03:00 [INF]         - Volo.Abp.Features.AbpFeaturesModule
+2022-12-12 15:22:40.628 +03:00 [INF]   - Volo.Abp.Identity.EntityFrameworkCore.AbpIdentityEntityFrameworkCoreModule
+2022-12-12 15:22:40.628 +03:00 [INF]     - Volo.Abp.Identity.AbpIdentityDomainModule
+2022-12-12 15:22:40.628 +03:00 [INF]       - Volo.Abp.Identity.AbpIdentityDomainSharedModule
+2022-12-12 15:22:40.628 +03:00 [INF]         - Volo.Abp.Users.AbpUsersDomainSharedModule
+2022-12-12 15:22:40.628 +03:00 [INF]       - Volo.Abp.Users.AbpUsersDomainModule
+2022-12-12 15:22:40.628 +03:00 [INF]         - Volo.Abp.Users.AbpUsersAbstractionModule
+2022-12-12 15:22:40.628 +03:00 [INF]       - Volo.Abp.AutoMapper.AbpAutoMapperModule
+2022-12-12 15:22:40.628 +03:00 [INF]     - Volo.Abp.Users.EntityFrameworkCore.AbpUsersEntityFrameworkCoreModule
+2022-12-12 15:22:40.628 +03:00 [INF]   - Volo.Abp.Identity.AbpIdentityApplicationContractsModule
+2022-12-12 15:22:40.628 +03:00 [INF]     - Volo.Abp.PermissionManagement.AbpPermissionManagementApplicationContractsModule
+2022-12-12 15:22:40.628 +03:00 [INF]       - Volo.Abp.Application.AbpDddApplicationContractsModule
+2022-12-12 15:22:40.628 +03:00 [INF]   - Volo.Abp.Account.AbpAccountApplicationModule
+2022-12-12 15:22:40.628 +03:00 [INF]     - Volo.Abp.Account.AbpAccountApplicationContractsModule
+2022-12-12 15:22:40.628 +03:00 [INF]     - Volo.Abp.Identity.AbpIdentityApplicationModule
+2022-12-12 15:22:40.628 +03:00 [INF]       - Volo.Abp.PermissionManagement.AbpPermissionManagementApplicationModule
+2022-12-12 15:22:40.628 +03:00 [INF]         - Volo.Abp.Application.AbpDddApplicationModule
+2022-12-12 15:22:40.628 +03:00 [INF]           - Volo.Abp.Http.AbpHttpAbstractionsModule
+2022-12-12 15:22:40.628 +03:00 [INF]           - Volo.Abp.GlobalFeatures.AbpGlobalFeaturesModule
+2022-12-12 15:22:40.628 +03:00 [INF]     - Volo.Abp.UI.Navigation.AbpUiNavigationModule
+2022-12-12 15:22:40.628 +03:00 [INF]       - Volo.Abp.UI.AbpUiModule
+2022-12-12 15:22:40.628 +03:00 [INF]     - Volo.Abp.Emailing.AbpEmailingModule
+2022-12-12 15:22:40.628 +03:00 [INF]       - Volo.Abp.BackgroundJobs.AbpBackgroundJobsAbstractionsModule
+2022-12-12 15:22:40.628 +03:00 [INF]       - Volo.Abp.TextTemplating.AbpTextTemplatingModule
+2022-12-12 15:22:40.628 +03:00 [INF]         - Volo.Abp.TextTemplating.Scriban.AbpTextTemplatingScribanModule
+2022-12-12 15:22:40.628 +03:00 [INF]           - Volo.Abp.TextTemplating.AbpTextTemplatingCoreModule
+2022-12-12 15:22:40.628 +03:00 [INF]   - Volo.Abp.IdentityServer.EntityFrameworkCore.AbpIdentityServerEntityFrameworkCoreModule
+2022-12-12 15:22:40.628 +03:00 [INF]     - Volo.Abp.IdentityServer.AbpIdentityServerDomainModule
+2022-12-12 15:22:40.628 +03:00 [INF]       - Volo.Abp.IdentityServer.AbpIdentityServerDomainSharedModule
+2022-12-12 15:22:40.628 +03:00 [INF]   - Volo.Abp.EntityFrameworkCore.SqlServer.AbpEntityFrameworkCoreSqlServerModule
+2022-12-12 15:22:40.628 +03:00 [INF]   - Volo.Abp.Account.Web.AbpAccountWebIdentityServerModule
+2022-12-12 15:22:40.628 +03:00 [INF]     - Volo.Abp.Account.Web.AbpAccountWebModule
+2022-12-12 15:22:40.628 +03:00 [INF]       - Volo.Abp.Identity.AspNetCore.AbpIdentityAspNetCoreModule
+2022-12-12 15:22:40.628 +03:00 [INF]       - Volo.Abp.AspNetCore.Mvc.UI.Theme.Shared.AbpAspNetCoreMvcUiThemeSharedModule
+2022-12-12 15:22:40.628 +03:00 [INF]         - Volo.Abp.AspNetCore.Mvc.UI.Bootstrap.AbpAspNetCoreMvcUiBootstrapModule
+2022-12-12 15:22:40.628 +03:00 [INF]           - Volo.Abp.AspNetCore.Mvc.UI.AbpAspNetCoreMvcUiModule
+2022-12-12 15:22:40.628 +03:00 [INF]             - Volo.Abp.AspNetCore.Mvc.AbpAspNetCoreMvcModule
+2022-12-12 15:22:40.628 +03:00 [INF]               - Volo.Abp.AspNetCore.AbpAspNetCoreModule
+2022-12-12 15:22:40.628 +03:00 [INF]                 - Volo.Abp.Http.AbpHttpModule
+2022-12-12 15:22:40.628 +03:00 [INF]                   - Volo.Abp.Minify.AbpMinifyModule
+2022-12-12 15:22:40.628 +03:00 [INF]               - Volo.Abp.ApiVersioning.AbpApiVersioningAbstractionsModule
+2022-12-12 15:22:40.628 +03:00 [INF]               - Volo.Abp.AspNetCore.Mvc.AbpAspNetCoreMvcContractsModule
+2022-12-12 15:22:40.628 +03:00 [INF]         - Volo.Abp.AspNetCore.Mvc.UI.Packages.AbpAspNetCoreMvcUiPackagesModule
+2022-12-12 15:22:40.628 +03:00 [INF]           - Volo.Abp.AspNetCore.Mvc.UI.Bundling.AbpAspNetCoreMvcUiBundlingAbstractionsModule
+2022-12-12 15:22:40.628 +03:00 [INF]         - Volo.Abp.AspNetCore.Mvc.UI.Widgets.AbpAspNetCoreMvcUiWidgetsModule
+2022-12-12 15:22:40.628 +03:00 [INF]           - Volo.Abp.AspNetCore.Mvc.UI.Bundling.AbpAspNetCoreMvcUiBundlingModule
+2022-12-12 15:22:40.628 +03:00 [INF]   - Volo.Abp.AspNetCore.Mvc.UI.Theme.Basic.AbpAspNetCoreMvcUiBasicThemeModule
+2022-12-12 15:22:40.628 +03:00 [INF]     - Volo.Abp.AspNetCore.Mvc.UI.MultiTenancy.AbpAspNetCoreMvcUiMultiTenancyModule
+2022-12-12 15:22:40.628 +03:00 [INF]       - Volo.Abp.AspNetCore.MultiTenancy.AbpAspNetCoreMultiTenancyModule
+2022-12-12 15:22:40.628 +03:00 [INF]   - Volo.Abp.TenantManagement.EntityFrameworkCore.AbpTenantManagementEntityFrameworkCoreModule
+2022-12-12 15:22:40.628 +03:00 [INF]     - Volo.Abp.TenantManagement.AbpTenantManagementDomainModule
+2022-12-12 15:22:40.628 +03:00 [INF]       - Volo.Abp.TenantManagement.AbpTenantManagementDomainSharedModule
+2022-12-12 15:22:40.628 +03:00 [INF]   - Volo.Abp.TenantManagement.AbpTenantManagementApplicationContractsModule
+2022-12-12 15:22:40.696 +03:00 [DBG] Started background worker: Volo.Abp.IdentityServer.Tokens.TokenCleanupBackgroundWorker
+2022-12-12 15:22:40.722 +03:00 [INF] Starting IdentityServer4 version 4.1.2+997a6cdd643e46cd5762b710c4ddc43574cbec2e
+2022-12-12 15:22:41.273 +03:00 [INF] Using the default authentication scheme Identity.Application for IdentityServer
+2022-12-12 15:22:41.273 +03:00 [DBG] Using Identity.Application as default ASP.NET Core scheme for authentication
+2022-12-12 15:22:41.273 +03:00 [DBG] Using Identity.External as default ASP.NET Core scheme for sign-in
+2022-12-12 15:22:41.273 +03:00 [DBG] Using Identity.External as default ASP.NET Core scheme for sign-out
+2022-12-12 15:22:41.273 +03:00 [DBG] Using Identity.Application as default ASP.NET Core scheme for challenge
+2022-12-12 15:22:41.273 +03:00 [DBG] Using Identity.Application as default ASP.NET Core scheme for forbid
+2022-12-12 15:22:46.159 +03:00 [INF] Initialized all ABP modules.
+2022-12-12 15:22:46.271 +03:00 [INF] Now listening on: https://localhost:44330
+2022-12-12 15:22:46.272 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+2022-12-12 15:22:46.272 +03:00 [INF] Hosting environment: Development
+2022-12-12 15:22:46.272 +03:00 [INF] Content root path: C:\Users\Admin\Source\Repos\RemittanceMicroservice_MVC\applications\AuthServer.Host
+2022-12-12 15:22:46.897 +03:00 [INF] Request starting HTTP/2 GET https://localhost:44330/ - -
+2022-12-12 15:22:57.197 +03:00 [DBG] Login Url: /Account/Login
+2022-12-12 15:22:57.197 +03:00 [DBG] Login Return Url Parameter: ReturnUrl
+2022-12-12 15:22:57.197 +03:00 [DBG] Logout Url: /Account/Logout
+2022-12-12 15:22:57.197 +03:00 [DBG] ConsentUrl Url: /Consent
+2022-12-12 15:22:57.197 +03:00 [DBG] Consent Return Url Parameter: returnUrl
+2022-12-12 15:22:57.198 +03:00 [DBG] Error Url: /Account/Error
+2022-12-12 15:22:57.198 +03:00 [DBG] Error Id Parameter: errorId
+2022-12-12 15:22:57.308 +03:00 [INF] Executing endpoint '/Index'
+2022-12-12 15:22:57.324 +03:00 [INF] Route matched with {page = "/Index", area = "", action = "", controller = ""}. Executing page /Index
+2022-12-12 15:22:57.325 +03:00 [INF] Skipping the execution of current filter as its not the most effective filter implementing the policy Microsoft.AspNetCore.Mvc.ViewFeatures.IAntiforgeryPolicy
+2022-12-12 15:22:57.364 +03:00 [INF] Executing handler method AuthServer.Host.Pages.IndexModel.OnGet - ModelState is "Valid"
+2022-12-12 15:22:57.365 +03:00 [INF] Executed handler method OnGet, returned result .
+2022-12-12 15:22:57.369 +03:00 [INF] Executing an implicit handler method - ModelState is "Valid"
+2022-12-12 15:22:57.369 +03:00 [INF] Executed an implicit handler method, returned result Microsoft.AspNetCore.Mvc.RazorPages.PageResult.
+2022-12-12 15:22:57.633 +03:00 [DBG] Added bundle 'Basic.Global' to the page in 32.30 ms.
+2022-12-12 15:22:57.850 +03:00 [DBG] Added bundle 'Basic.Global' to the page in 41.96 ms.
+2022-12-12 15:22:59.947 +03:00 [INF] Executed page /Index in 2616.9472ms
+2022-12-12 15:22:59.948 +03:00 [INF] Executed endpoint '/Index'
+2022-12-12 15:23:00.274 +03:00 [DBG] Added 0 entity changes to the current audit log
+2022-12-12 15:23:00.277 +03:00 [DBG] Added 0 entity changes to the current audit log
+2022-12-12 15:23:00.297 +03:00 [INF] Request finished HTTP/2 GET https://localhost:44330/ - - - 200 - text/html;+charset=utf-8 13400.5807ms
+2022-12-12 15:23:01.164 +03:00 [INF] Request starting HTTP/2 GET https://localhost:44330/Abp/ApplicationConfigurationScript - -
+2022-12-12 15:23:01.179 +03:00 [INF] Executing endpoint 'Volo.Abp.AspNetCore.Mvc.ApplicationConfigurations.AbpApplicationConfigurationScriptController.Get (Volo.Abp.AspNetCore.Mvc)'
+2022-12-12 15:23:01.188 +03:00 [INF] Route matched with {area = "Abp", action = "Get", controller = "AbpApplicationConfigurationScript", page = ""}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult] Get() on controller Volo.Abp.AspNetCore.Mvc.ApplicationConfigurations.AbpApplicationConfigurationScriptController (Volo.Abp.AspNetCore.Mvc).
+2022-12-12 15:23:01.189 +03:00 [INF] Request starting HTTP/2 GET https://localhost:44330/Abp/ServiceProxyScript - -
+2022-12-12 15:23:01.197 +03:00 [INF] Executing endpoint 'Volo.Abp.AspNetCore.Mvc.ProxyScripting.AbpServiceProxyScriptController.GetAll (Volo.Abp.AspNetCore.Mvc)'
+2022-12-12 15:23:01.219 +03:00 [INF] Route matched with {area = "Abp", action = "GetAll", controller = "AbpServiceProxyScript", page = ""}. Executing controller action with signature Microsoft.AspNetCore.Mvc.ActionResult GetAll(Volo.Abp.AspNetCore.Mvc.ProxyScripting.ServiceProxyGenerationModel) on controller Volo.Abp.AspNetCore.Mvc.ProxyScripting.AbpServiceProxyScriptController (Volo.Abp.AspNetCore.Mvc).
+2022-12-12 15:23:01.233 +03:00 [INF] Request starting HTTP/2 GET https://localhost:44330/_framework/aspnetcore-browser-refresh.js - -
+2022-12-12 15:23:01.236 +03:00 [INF] Request finished HTTP/2 GET https://localhost:44330/_framework/aspnetcore-browser-refresh.js - - - 200 12000 application/javascript;+charset=utf-8 3.0425ms
+2022-12-12 15:23:01.241 +03:00 [DBG] Executing AbpApplicationConfigurationAppService.GetAsync()...
+2022-12-12 15:23:01.289 +03:00 [DBG] ActionApiDescriptionModel.Create: Account.LoginByLogin
+2022-12-12 15:23:01.290 +03:00 [DBG] PermissionStore.GetCacheItemAsync: pn:U,pk:4d99b54e-d1b0-2106-51f4-3a0813a56955,n:AbpIdentity.Roles,pn:U,pk:4d99b54e-d1b0-2106-51f4-3a0813a56955,n:AbpIdentity.Roles.Create,pn:U,pk:4d99b54e-d1b0-2106-51f4-3a0813a56955,n:AbpIdentity.Roles.Update,pn:U,pk:4d99b54e-d1b0-2106-51f4-3a0813a56955,n:AbpIdentity.Roles.Delete,pn:U,pk:4d99b54e-d1b0-2106-51f4-3a0813a56955,n:AbpIdentity.Roles.ManagePermissions,pn:U,pk:4d99b54e-d1b0-2106-51f4-3a0813a56955,n:AbpIdentity.Users,pn:U,pk:4d99b54e-d1b0-2106-51f4-3a0813a56955,n:AbpIdentity.Users.Create,pn:U,pk:4d99b54e-d1b0-2106-51f4-3a0813a56955,n:AbpIdentity.Users.Update,pn:U,pk:4d99b54e-d1b0-2106-51f4-3a0813a56955,n:AbpIdentity.Users.Delete,pn:U,pk:4d99b54e-d1b0-2106-51f4-3a0813a56955,n:AbpIdentity.Users.ManagePermissions,pn:U,pk:4d99b54e-d1b0-2106-51f4-3a0813a56955,n:AbpTenantManagement.Tenants,pn:U,pk:4d99b54e-d1b0-2106-51f4-3a0813a56955,n:AbpTenantManagement.Tenants.Create,pn:U,pk:4d99b54e-d1b0-2106-51f4-3a0813a56955,n:AbpTenantManagement.Tenants.Update,pn:U,pk:4d99b54e-d1b0-2106-51f4-3a0813a56955,n:AbpTenantManagement.Tenants.Delete,pn:U,pk:4d99b54e-d1b0-2106-51f4-3a0813a56955,n:AbpTenantManagement.Tenants.ManageFeatures,pn:U,pk:4d99b54e-d1b0-2106-51f4-3a0813a56955,n:AbpTenantManagement.Tenants.ManageConnectionStrings
+2022-12-12 15:23:01.300 +03:00 [DBG] ActionApiDescriptionModel.Create: Account.Logout
+2022-12-12 15:23:01.301 +03:00 [DBG] ActionApiDescriptionModel.Create: Account.CheckPasswordByLogin
+2022-12-12 15:23:01.302 +03:00 [DBG] ActionApiDescriptionModel.Create: AbpTenant.FindTenantByNameAsyncByName
+2022-12-12 15:23:01.303 +03:00 [DBG] ActionApiDescriptionModel.Create: AbpTenant.FindTenantByIdAsyncById
+2022-12-12 15:23:01.303 +03:00 [DBG] ActionApiDescriptionModel.Create: AbpApplicationConfiguration.GetAsync
+2022-12-12 15:23:01.304 +03:00 [DBG] ActionApiDescriptionModel.Create: AbpApiDefinition.GetByModel
+2022-12-12 15:23:01.323 +03:00 [INF] Executing ContentResult with HTTP Response ContentType of application/javascript
+2022-12-12 15:23:01.324 +03:00 [INF] Executed action Volo.Abp.AspNetCore.Mvc.ProxyScripting.AbpServiceProxyScriptController.GetAll (Volo.Abp.AspNetCore.Mvc) in 104.8778ms
+2022-12-12 15:23:01.324 +03:00 [INF] Executed endpoint 'Volo.Abp.AspNetCore.Mvc.ProxyScripting.AbpServiceProxyScriptController.GetAll (Volo.Abp.AspNetCore.Mvc)'
+2022-12-12 15:23:01.338 +03:00 [DBG] Added 0 entity changes to the current audit log
+2022-12-12 15:23:01.338 +03:00 [DBG] Added 0 entity changes to the current audit log
+2022-12-12 15:23:01.339 +03:00 [INF] Request finished HTTP/2 GET https://localhost:44330/Abp/ServiceProxyScript - - - 200 1936 application/javascript 149.7882ms
+2022-12-12 15:23:01.343 +03:00 [DBG] Found in the cache: pn:U,pk:4d99b54e-d1b0-2106-51f4-3a0813a56955,n:AbpIdentity.Roles,pn:U,pk:4d99b54e-d1b0-2106-51f4-3a0813a56955,n:AbpIdentity.Roles.Create,pn:U,pk:4d99b54e-d1b0-2106-51f4-3a0813a56955,n:AbpIdentity.Roles.Update,pn:U,pk:4d99b54e-d1b0-2106-51f4-3a0813a56955,n:AbpIdentity.Roles.Delete,pn:U,pk:4d99b54e-d1b0-2106-51f4-3a0813a56955,n:AbpIdentity.Roles.ManagePermissions,pn:U,pk:4d99b54e-d1b0-2106-51f4-3a0813a56955,n:AbpIdentity.Users,pn:U,pk:4d99b54e-d1b0-2106-51f4-3a0813a56955,n:AbpIdentity.Users.Create,pn:U,pk:4d99b54e-d1b0-2106-51f4-3a0813a56955,n:AbpIdentity.Users.Update,pn:U,pk:4d99b54e-d1b0-2106-51f4-3a0813a56955,n:AbpIdentity.Users.Delete,pn:U,pk:4d99b54e-d1b0-2106-51f4-3a0813a56955,n:AbpIdentity.Users.ManagePermissions,pn:U,pk:4d99b54e-d1b0-2106-51f4-3a0813a56955,n:AbpTenantManagement.Tenants,pn:U,pk:4d99b54e-d1b0-2106-51f4-3a0813a56955,n:AbpTenantManagement.Tenants.Create,pn:U,pk:4d99b54e-d1b0-2106-51f4-3a0813a56955,n:AbpTenantManagement.Tenants.Update,pn:U,pk:4d99b54e-d1b0-2106-51f4-3a0813a56955,n:AbpTenantManagement.Tenants.Delete,pn:U,pk:4d99b54e-d1b0-2106-51f4-3a0813a56955,n:AbpTenantManagement.Tenants.ManageFeatures,pn:U,pk:4d99b54e-d1b0-2106-51f4-3a0813a56955,n:AbpTenantManagement.Tenants.ManageConnectionStrings
+2022-12-12 15:23:01.362 +03:00 [DBG] PermissionStore.GetCacheItemAsync: pn:R,pk:admin,n:AbpIdentity.Roles,pn:R,pk:admin,n:AbpIdentity.Roles.Create,pn:R,pk:admin,n:AbpIdentity.Roles.Update,pn:R,pk:admin,n:AbpIdentity.Roles.Delete,pn:R,pk:admin,n:AbpIdentity.Roles.ManagePermissions,pn:R,pk:admin,n:AbpIdentity.Users,pn:R,pk:admin,n:AbpIdentity.Users.Create,pn:R,pk:admin,n:AbpIdentity.Users.Update,pn:R,pk:admin,n:AbpIdentity.Users.Delete,pn:R,pk:admin,n:AbpIdentity.Users.ManagePermissions,pn:R,pk:admin,n:AbpTenantManagement.Tenants,pn:R,pk:admin,n:AbpTenantManagement.Tenants.Create,pn:R,pk:admin,n:AbpTenantManagement.Tenants.Update,pn:R,pk:admin,n:AbpTenantManagement.Tenants.Delete,pn:R,pk:admin,n:AbpTenantManagement.Tenants.ManageFeatures,pn:R,pk:admin,n:AbpTenantManagement.Tenants.ManageConnectionStrings
+2022-12-12 15:23:01.374 +03:00 [DBG] Found in the cache: pn:R,pk:admin,n:AbpIdentity.Roles,pn:R,pk:admin,n:AbpIdentity.Roles.Create,pn:R,pk:admin,n:AbpIdentity.Roles.Update,pn:R,pk:admin,n:AbpIdentity.Roles.Delete,pn:R,pk:admin,n:AbpIdentity.Roles.ManagePermissions,pn:R,pk:admin,n:AbpIdentity.Users,pn:R,pk:admin,n:AbpIdentity.Users.Create,pn:R,pk:admin,n:AbpIdentity.Users.Update,pn:R,pk:admin,n:AbpIdentity.Users.Delete,pn:R,pk:admin,n:AbpIdentity.Users.ManagePermissions,pn:R,pk:admin,n:AbpTenantManagement.Tenants,pn:R,pk:admin,n:AbpTenantManagement.Tenants.Create,pn:R,pk:admin,n:AbpTenantManagement.Tenants.Update,pn:R,pk:admin,n:AbpTenantManagement.Tenants.Delete,pn:R,pk:admin,n:AbpTenantManagement.Tenants.ManageFeatures,pn:R,pk:admin,n:AbpTenantManagement.Tenants.ManageConnectionStrings
+2022-12-12 15:23:01.728 +03:00 [DBG] Executed AbpApplicationConfigurationAppService.GetAsync().
+2022-12-12 15:23:01.901 +03:00 [DBG] Added 0 entity changes to the current audit log
+2022-12-12 15:23:01.922 +03:00 [INF] Executing ContentResult with HTTP Response ContentType of application/javascript
+2022-12-12 15:23:01.924 +03:00 [INF] Executed action Volo.Abp.AspNetCore.Mvc.ApplicationConfigurations.AbpApplicationConfigurationScriptController.Get (Volo.Abp.AspNetCore.Mvc) in 735.3673ms
+2022-12-12 15:23:01.924 +03:00 [INF] Executed endpoint 'Volo.Abp.AspNetCore.Mvc.ApplicationConfigurations.AbpApplicationConfigurationScriptController.Get (Volo.Abp.AspNetCore.Mvc)'
+2022-12-12 15:23:01.932 +03:00 [DBG] Added 0 entity changes to the current audit log
+2022-12-12 15:23:01.932 +03:00 [DBG] Added 0 entity changes to the current audit log
+2022-12-12 15:23:01.932 +03:00 [INF] Request finished HTTP/2 GET https://localhost:44330/Abp/ApplicationConfigurationScript - - - 200 50843 application/javascript 768.3217ms
+2022-12-12 15:23:01.950 +03:00 [INF] Request starting HTTP/2 GET https://localhost:44330/favicon.ico - -
+2022-12-12 15:23:01.977 +03:00 [DBG] Added 0 entity changes to the current audit log
+2022-12-12 15:23:01.977 +03:00 [DBG] Added 0 entity changes to the current audit log
+2022-12-12 15:23:01.978 +03:00 [INF] Request finished HTTP/2 GET https://localhost:44330/favicon.ico - - - 404 0 - 27.5026ms
+2022-12-12 15:23:09.708 +03:00 [INF] Request starting HTTP/2 GET https://localhost:44330/Account/Logout - -
+2022-12-12 15:23:09.776 +03:00 [INF] Executing endpoint '/Account/Logout'
+2022-12-12 15:23:09.813 +03:00 [INF] Route matched with {page = "/Account/Logout", area = "", action = "", controller = ""}. Executing page /Account/Logout
+2022-12-12 15:23:09.813 +03:00 [INF] Skipping the execution of current filter as its not the most effective filter implementing the policy Microsoft.AspNetCore.Mvc.ViewFeatures.IAntiforgeryPolicy
+2022-12-12 15:23:09.860 +03:00 [INF] Executing handler method Volo.Abp.Account.Web.Pages.Account.LogoutModel.OnGetAsync - ModelState is "Valid"
+2022-12-12 15:23:09.885 +03:00 [INF] AuthenticationScheme: Identity.Application signed out.
+2022-12-12 15:23:09.887 +03:00 [INF] AuthenticationScheme: Identity.External signed out.
+2022-12-12 15:23:09.889 +03:00 [INF] AuthenticationScheme: Identity.TwoFactorUserId signed out.
+2022-12-12 15:23:09.944 +03:00 [DBG] Added 0 entity changes to the current audit log
+2022-12-12 15:23:09.944 +03:00 [DBG] Added 0 entity changes to the current audit log
+2022-12-12 15:23:09.947 +03:00 [INF] IdentityServerSupportedLogoutModel couldn't find postLogoutUri... Redirecting to:/Account/Login..
+2022-12-12 15:23:09.966 +03:00 [INF] Executed handler method OnGetAsync, returned result Microsoft.AspNetCore.Mvc.RedirectToPageResult.
+2022-12-12 15:23:09.974 +03:00 [INF] Executing RedirectToPageResult, redirecting to /Account/Login.
+2022-12-12 15:23:09.978 +03:00 [INF] Executed page /Account/Logout in 164.9539ms
+2022-12-12 15:23:09.978 +03:00 [INF] Executed endpoint '/Account/Logout'
+2022-12-12 15:23:10.007 +03:00 [DBG] Added 0 entity changes to the current audit log
+2022-12-12 15:23:10.008 +03:00 [DBG] Added 0 entity changes to the current audit log
+2022-12-12 15:23:10.008 +03:00 [DBG] SignOutCalled set; processing post-signout session cleanup.
+2022-12-12 15:23:10.231 +03:00 [DBG] client configuration validation for client backend-admin-app-client succeeded.
+2022-12-12 15:23:10.233 +03:00 [DBG] No client back-channel logout URLs
+2022-12-12 15:23:10.236 +03:00 [INF] Request finished HTTP/2 GET https://localhost:44330/Account/Logout - - - 302 0 - 527.2955ms
+2022-12-12 15:23:10.238 +03:00 [INF] Request starting HTTP/2 GET https://localhost:44330/Account/Login - -
+2022-12-12 15:23:10.244 +03:00 [INF] Executing endpoint '/Account/Login'
+2022-12-12 15:23:10.274 +03:00 [INF] Route matched with {page = "/Account/Login", area = "", action = "", controller = ""}. Executing page /Account/Login
+2022-12-12 15:23:10.274 +03:00 [INF] Skipping the execution of current filter as its not the most effective filter implementing the policy Microsoft.AspNetCore.Mvc.ViewFeatures.IAntiforgeryPolicy
+2022-12-12 15:23:10.288 +03:00 [INF] Executing handler method Volo.Abp.Account.Web.Pages.Account.LoginModel.OnGetAsync - ModelState is "Valid"
+2022-12-12 15:23:10.310 +03:00 [INF] Executed handler method OnGetAsync, returned result Microsoft.AspNetCore.Mvc.RazorPages.PageResult.
+2022-12-12 15:23:10.539 +03:00 [DBG] Added bundle 'Basic.Global' to the page in 10.14 ms.
+2022-12-12 15:23:10.559 +03:00 [DBG] Added bundle 'Basic.Global' to the page in 5.47 ms.
+2022-12-12 15:23:12.599 +03:00 [INF] Executed page /Account/Login in 2324.9785ms
+2022-12-12 15:23:12.599 +03:00 [INF] Executed endpoint '/Account/Login'
+2022-12-12 15:23:12.613 +03:00 [DBG] Added 0 entity changes to the current audit log
+2022-12-12 15:23:12.614 +03:00 [DBG] Added 0 entity changes to the current audit log
+2022-12-12 15:23:12.614 +03:00 [INF] Request finished HTTP/2 GET https://localhost:44330/Account/Login - - - 200 - text/html;+charset=utf-8 2375.6630ms
+2022-12-12 15:23:12.680 +03:00 [INF] Request starting HTTP/2 GET https://localhost:44330/Abp/ApplicationConfigurationScript - -
+2022-12-12 15:23:12.688 +03:00 [INF] Request starting HTTP/2 GET https://localhost:44330/_framework/aspnetcore-browser-refresh.js - -
+2022-12-12 15:23:12.688 +03:00 [INF] Request finished HTTP/2 GET https://localhost:44330/_framework/aspnetcore-browser-refresh.js - - - 200 12000 application/javascript;+charset=utf-8 0.3365ms
+2022-12-12 15:23:12.688 +03:00 [INF] Request starting HTTP/2 GET https://localhost:44330/Abp/ServiceProxyScript - -
+2022-12-12 15:23:12.689 +03:00 [INF] Executing endpoint 'Volo.Abp.AspNetCore.Mvc.ApplicationConfigurations.AbpApplicationConfigurationScriptController.Get (Volo.Abp.AspNetCore.Mvc)'
+2022-12-12 15:23:12.690 +03:00 [INF] Route matched with {area = "Abp", action = "Get", controller = "AbpApplicationConfigurationScript", page = ""}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult] Get() on controller Volo.Abp.AspNetCore.Mvc.ApplicationConfigurations.AbpApplicationConfigurationScriptController (Volo.Abp.AspNetCore.Mvc).
+2022-12-12 15:23:12.690 +03:00 [INF] Executing endpoint 'Volo.Abp.AspNetCore.Mvc.ProxyScripting.AbpServiceProxyScriptController.GetAll (Volo.Abp.AspNetCore.Mvc)'
+2022-12-12 15:23:12.691 +03:00 [INF] Route matched with {area = "Abp", action = "GetAll", controller = "AbpServiceProxyScript", page = ""}. Executing controller action with signature Microsoft.AspNetCore.Mvc.ActionResult GetAll(Volo.Abp.AspNetCore.Mvc.ProxyScripting.ServiceProxyGenerationModel) on controller Volo.Abp.AspNetCore.Mvc.ProxyScripting.AbpServiceProxyScriptController (Volo.Abp.AspNetCore.Mvc).
+2022-12-12 15:23:12.692 +03:00 [DBG] Executing AbpApplicationConfigurationAppService.GetAsync()...
+2022-12-12 15:23:12.694 +03:00 [INF] Executing ContentResult with HTTP Response ContentType of application/javascript
+2022-12-12 15:23:12.694 +03:00 [INF] Executed action Volo.Abp.AspNetCore.Mvc.ProxyScripting.AbpServiceProxyScriptController.GetAll (Volo.Abp.AspNetCore.Mvc) in 3.0636ms
+2022-12-12 15:23:12.694 +03:00 [INF] Executed endpoint 'Volo.Abp.AspNetCore.Mvc.ProxyScripting.AbpServiceProxyScriptController.GetAll (Volo.Abp.AspNetCore.Mvc)'
+2022-12-12 15:23:12.777 +03:00 [DBG] Executed AbpApplicationConfigurationAppService.GetAsync().
+2022-12-12 15:23:12.788 +03:00 [DBG] Added 0 entity changes to the current audit log
+2022-12-12 15:23:12.789 +03:00 [DBG] Added 0 entity changes to the current audit log
+2022-12-12 15:23:12.789 +03:00 [INF] Request finished HTTP/2 GET https://localhost:44330/Abp/ServiceProxyScript - - - 200 1936 application/javascript 100.7847ms
+2022-12-12 15:23:12.793 +03:00 [INF] Executing ContentResult with HTTP Response ContentType of application/javascript
+2022-12-12 15:23:12.793 +03:00 [INF] Executed action Volo.Abp.AspNetCore.Mvc.ApplicationConfigurations.AbpApplicationConfigurationScriptController.Get (Volo.Abp.AspNetCore.Mvc) in 103.4524ms
+2022-12-12 15:23:12.793 +03:00 [INF] Executed endpoint 'Volo.Abp.AspNetCore.Mvc.ApplicationConfigurations.AbpApplicationConfigurationScriptController.Get (Volo.Abp.AspNetCore.Mvc)'
+2022-12-12 15:23:12.857 +03:00 [DBG] Added 0 entity changes to the current audit log
+2022-12-12 15:23:12.858 +03:00 [DBG] Added 0 entity changes to the current audit log
+2022-12-12 15:23:12.858 +03:00 [INF] Request finished HTTP/2 GET https://localhost:44330/Abp/ApplicationConfigurationScript - - - 200 50026 application/javascript 179.1488ms
+2022-12-12 15:23:34.547 +03:00 [INF] Starting AuthServer.Host.
+2022-12-12 15:23:42.076 +03:00 [INF] Loaded ABP modules:
+2022-12-12 15:23:42.079 +03:00 [INF] - AuthServer.Host.AuthServerHostModule
+2022-12-12 15:23:42.079 +03:00 [INF]   - Volo.Abp.Autofac.AbpAutofacModule
+2022-12-12 15:23:42.079 +03:00 [INF]     - Volo.Abp.Castle.AbpCastleCoreModule
+2022-12-12 15:23:42.079 +03:00 [INF]   - Volo.Abp.EventBus.RabbitMq.AbpEventBusRabbitMqModule
+2022-12-12 15:23:42.079 +03:00 [INF]     - Volo.Abp.EventBus.AbpEventBusModule
+2022-12-12 15:23:42.079 +03:00 [INF]       - Volo.Abp.EventBus.Abstractions.AbpEventBusAbstractionsModule
+2022-12-12 15:23:42.080 +03:00 [INF]       - Volo.Abp.MultiTenancy.AbpMultiTenancyModule
+2022-12-12 15:23:42.080 +03:00 [INF]         - Volo.Abp.Data.AbpDataModule
+2022-12-12 15:23:42.080 +03:00 [INF]           - Volo.Abp.ObjectExtending.AbpObjectExtendingModule
+2022-12-12 15:23:42.080 +03:00 [INF]             - Volo.Abp.Localization.AbpLocalizationAbstractionsModule
+2022-12-12 15:23:42.080 +03:00 [INF]             - Volo.Abp.Validation.AbpValidationAbstractionsModule
+2022-12-12 15:23:42.080 +03:00 [INF]           - Volo.Abp.Uow.AbpUnitOfWorkModule
+2022-12-12 15:23:42.080 +03:00 [INF]         - Volo.Abp.Security.AbpSecurityModule
+2022-12-12 15:23:42.080 +03:00 [INF]       - Volo.Abp.Json.AbpJsonModule
+2022-12-12 15:23:42.080 +03:00 [INF]         - Volo.Abp.Timing.AbpTimingModule
+2022-12-12 15:23:42.080 +03:00 [INF]           - Volo.Abp.Localization.AbpLocalizationModule
+2022-12-12 15:23:42.080 +03:00 [INF]             - Volo.Abp.VirtualFileSystem.AbpVirtualFileSystemModule
+2022-12-12 15:23:42.080 +03:00 [INF]             - Volo.Abp.Settings.AbpSettingsModule
+2022-12-12 15:23:42.080 +03:00 [INF]       - Volo.Abp.Guids.AbpGuidsModule
+2022-12-12 15:23:42.080 +03:00 [INF]       - Volo.Abp.BackgroundWorkers.AbpBackgroundWorkersModule
+2022-12-12 15:23:42.080 +03:00 [INF]         - Volo.Abp.Threading.AbpThreadingModule
+2022-12-12 15:23:42.080 +03:00 [INF]       - Volo.Abp.DistributedLocking.AbpDistributedLockingAbstractionsModule
+2022-12-12 15:23:42.080 +03:00 [INF]     - Volo.Abp.RabbitMQ.AbpRabbitMqModule
+2022-12-12 15:23:42.080 +03:00 [INF]   - Volo.Abp.PermissionManagement.EntityFrameworkCore.AbpPermissionManagementEntityFrameworkCoreModule
+2022-12-12 15:23:42.080 +03:00 [INF]     - Volo.Abp.PermissionManagement.AbpPermissionManagementDomainModule
+2022-12-12 15:23:42.080 +03:00 [INF]       - Volo.Abp.Authorization.AbpAuthorizationModule
+2022-12-12 15:23:42.080 +03:00 [INF]         - Volo.Abp.Authorization.AbpAuthorizationAbstractionsModule
+2022-12-12 15:23:42.080 +03:00 [INF]       - Volo.Abp.Domain.AbpDddDomainModule
+2022-12-12 15:23:42.080 +03:00 [INF]         - Volo.Abp.Auditing.AbpAuditingModule
+2022-12-12 15:23:42.080 +03:00 [INF]           - Volo.Abp.Auditing.AbpAuditingContractsModule
+2022-12-12 15:23:42.080 +03:00 [INF]         - Volo.Abp.ObjectMapping.AbpObjectMappingModule
+2022-12-12 15:23:42.080 +03:00 [INF]         - Volo.Abp.ExceptionHandling.AbpExceptionHandlingModule
+2022-12-12 15:23:42.080 +03:00 [INF]         - Volo.Abp.Specifications.AbpSpecificationsModule
+2022-12-12 15:23:42.080 +03:00 [INF]       - Volo.Abp.PermissionManagement.AbpPermissionManagementDomainSharedModule
+2022-12-12 15:23:42.080 +03:00 [INF]         - Volo.Abp.Validation.AbpValidationModule
+2022-12-12 15:23:42.080 +03:00 [INF]       - Volo.Abp.Caching.AbpCachingModule
+2022-12-12 15:23:42.080 +03:00 [INF]         - Volo.Abp.Serialization.AbpSerializationModule
+2022-12-12 15:23:42.080 +03:00 [INF]     - Volo.Abp.EntityFrameworkCore.AbpEntityFrameworkCoreModule
+2022-12-12 15:23:42.080 +03:00 [INF]   - Volo.Abp.AuditLogging.EntityFrameworkCore.AbpAuditLoggingEntityFrameworkCoreModule
+2022-12-12 15:23:42.080 +03:00 [INF]     - Volo.Abp.AuditLogging.AbpAuditLoggingDomainModule
+2022-12-12 15:23:42.080 +03:00 [INF]       - Volo.Abp.AuditLogging.AbpAuditLoggingDomainSharedModule
+2022-12-12 15:23:42.080 +03:00 [INF]   - Volo.Abp.SettingManagement.EntityFrameworkCore.AbpSettingManagementEntityFrameworkCoreModule
+2022-12-12 15:23:42.080 +03:00 [INF]     - Volo.Abp.SettingManagement.AbpSettingManagementDomainModule
+2022-12-12 15:23:42.080 +03:00 [INF]       - Volo.Abp.SettingManagement.AbpSettingManagementDomainSharedModule
+2022-12-12 15:23:42.080 +03:00 [INF]         - Volo.Abp.Features.AbpFeaturesModule
+2022-12-12 15:23:42.080 +03:00 [INF]   - Volo.Abp.Identity.EntityFrameworkCore.AbpIdentityEntityFrameworkCoreModule
+2022-12-12 15:23:42.080 +03:00 [INF]     - Volo.Abp.Identity.AbpIdentityDomainModule
+2022-12-12 15:23:42.080 +03:00 [INF]       - Volo.Abp.Identity.AbpIdentityDomainSharedModule
+2022-12-12 15:23:42.080 +03:00 [INF]         - Volo.Abp.Users.AbpUsersDomainSharedModule
+2022-12-12 15:23:42.080 +03:00 [INF]       - Volo.Abp.Users.AbpUsersDomainModule
+2022-12-12 15:23:42.080 +03:00 [INF]         - Volo.Abp.Users.AbpUsersAbstractionModule
+2022-12-12 15:23:42.080 +03:00 [INF]       - Volo.Abp.AutoMapper.AbpAutoMapperModule
+2022-12-12 15:23:42.080 +03:00 [INF]     - Volo.Abp.Users.EntityFrameworkCore.AbpUsersEntityFrameworkCoreModule
+2022-12-12 15:23:42.080 +03:00 [INF]   - Volo.Abp.Identity.AbpIdentityApplicationContractsModule
+2022-12-12 15:23:42.080 +03:00 [INF]     - Volo.Abp.PermissionManagement.AbpPermissionManagementApplicationContractsModule
+2022-12-12 15:23:42.080 +03:00 [INF]       - Volo.Abp.Application.AbpDddApplicationContractsModule
+2022-12-12 15:23:42.080 +03:00 [INF]   - Volo.Abp.Account.AbpAccountApplicationModule
+2022-12-12 15:23:42.080 +03:00 [INF]     - Volo.Abp.Account.AbpAccountApplicationContractsModule
+2022-12-12 15:23:42.080 +03:00 [INF]     - Volo.Abp.Identity.AbpIdentityApplicationModule
+2022-12-12 15:23:42.080 +03:00 [INF]       - Volo.Abp.PermissionManagement.AbpPermissionManagementApplicationModule
+2022-12-12 15:23:42.080 +03:00 [INF]         - Volo.Abp.Application.AbpDddApplicationModule
+2022-12-12 15:23:42.080 +03:00 [INF]           - Volo.Abp.Http.AbpHttpAbstractionsModule
+2022-12-12 15:23:42.080 +03:00 [INF]           - Volo.Abp.GlobalFeatures.AbpGlobalFeaturesModule
+2022-12-12 15:23:42.080 +03:00 [INF]     - Volo.Abp.UI.Navigation.AbpUiNavigationModule
+2022-12-12 15:23:42.080 +03:00 [INF]       - Volo.Abp.UI.AbpUiModule
+2022-12-12 15:23:42.080 +03:00 [INF]     - Volo.Abp.Emailing.AbpEmailingModule
+2022-12-12 15:23:42.080 +03:00 [INF]       - Volo.Abp.BackgroundJobs.AbpBackgroundJobsAbstractionsModule
+2022-12-12 15:23:42.080 +03:00 [INF]       - Volo.Abp.TextTemplating.AbpTextTemplatingModule
+2022-12-12 15:23:42.080 +03:00 [INF]         - Volo.Abp.TextTemplating.Scriban.AbpTextTemplatingScribanModule
+2022-12-12 15:23:42.080 +03:00 [INF]           - Volo.Abp.TextTemplating.AbpTextTemplatingCoreModule
+2022-12-12 15:23:42.080 +03:00 [INF]   - Volo.Abp.IdentityServer.EntityFrameworkCore.AbpIdentityServerEntityFrameworkCoreModule
+2022-12-12 15:23:42.080 +03:00 [INF]     - Volo.Abp.IdentityServer.AbpIdentityServerDomainModule
+2022-12-12 15:23:42.080 +03:00 [INF]       - Volo.Abp.IdentityServer.AbpIdentityServerDomainSharedModule
+2022-12-12 15:23:42.081 +03:00 [INF]   - Volo.Abp.EntityFrameworkCore.SqlServer.AbpEntityFrameworkCoreSqlServerModule
+2022-12-12 15:23:42.081 +03:00 [INF]   - Volo.Abp.Account.Web.AbpAccountWebIdentityServerModule
+2022-12-12 15:23:42.081 +03:00 [INF]     - Volo.Abp.Account.Web.AbpAccountWebModule
+2022-12-12 15:23:42.081 +03:00 [INF]       - Volo.Abp.Identity.AspNetCore.AbpIdentityAspNetCoreModule
+2022-12-12 15:23:42.081 +03:00 [INF]       - Volo.Abp.AspNetCore.Mvc.UI.Theme.Shared.AbpAspNetCoreMvcUiThemeSharedModule
+2022-12-12 15:23:42.081 +03:00 [INF]         - Volo.Abp.AspNetCore.Mvc.UI.Bootstrap.AbpAspNetCoreMvcUiBootstrapModule
+2022-12-12 15:23:42.081 +03:00 [INF]           - Volo.Abp.AspNetCore.Mvc.UI.AbpAspNetCoreMvcUiModule
+2022-12-12 15:23:42.081 +03:00 [INF]             - Volo.Abp.AspNetCore.Mvc.AbpAspNetCoreMvcModule
+2022-12-12 15:23:42.081 +03:00 [INF]               - Volo.Abp.AspNetCore.AbpAspNetCoreModule
+2022-12-12 15:23:42.081 +03:00 [INF]                 - Volo.Abp.Http.AbpHttpModule
+2022-12-12 15:23:42.081 +03:00 [INF]                   - Volo.Abp.Minify.AbpMinifyModule
+2022-12-12 15:23:42.081 +03:00 [INF]               - Volo.Abp.ApiVersioning.AbpApiVersioningAbstractionsModule
+2022-12-12 15:23:42.081 +03:00 [INF]               - Volo.Abp.AspNetCore.Mvc.AbpAspNetCoreMvcContractsModule
+2022-12-12 15:23:42.081 +03:00 [INF]         - Volo.Abp.AspNetCore.Mvc.UI.Packages.AbpAspNetCoreMvcUiPackagesModule
+2022-12-12 15:23:42.081 +03:00 [INF]           - Volo.Abp.AspNetCore.Mvc.UI.Bundling.AbpAspNetCoreMvcUiBundlingAbstractionsModule
+2022-12-12 15:23:42.081 +03:00 [INF]         - Volo.Abp.AspNetCore.Mvc.UI.Widgets.AbpAspNetCoreMvcUiWidgetsModule
+2022-12-12 15:23:42.081 +03:00 [INF]           - Volo.Abp.AspNetCore.Mvc.UI.Bundling.AbpAspNetCoreMvcUiBundlingModule
+2022-12-12 15:23:42.081 +03:00 [INF]   - Volo.Abp.AspNetCore.Mvc.UI.Theme.Basic.AbpAspNetCoreMvcUiBasicThemeModule
+2022-12-12 15:23:42.081 +03:00 [INF]     - Volo.Abp.AspNetCore.Mvc.UI.MultiTenancy.AbpAspNetCoreMvcUiMultiTenancyModule
+2022-12-12 15:23:42.081 +03:00 [INF]       - Volo.Abp.AspNetCore.MultiTenancy.AbpAspNetCoreMultiTenancyModule
+2022-12-12 15:23:42.081 +03:00 [INF]   - Volo.Abp.TenantManagement.EntityFrameworkCore.AbpTenantManagementEntityFrameworkCoreModule
+2022-12-12 15:23:42.081 +03:00 [INF]     - Volo.Abp.TenantManagement.AbpTenantManagementDomainModule
+2022-12-12 15:23:42.081 +03:00 [INF]       - Volo.Abp.TenantManagement.AbpTenantManagementDomainSharedModule
+2022-12-12 15:23:42.081 +03:00 [INF]   - Volo.Abp.TenantManagement.AbpTenantManagementApplicationContractsModule
+2022-12-12 15:23:42.293 +03:00 [DBG] Started background worker: Volo.Abp.IdentityServer.Tokens.TokenCleanupBackgroundWorker
+2022-12-12 15:23:42.536 +03:00 [INF] Starting IdentityServer4 version 4.1.2+997a6cdd643e46cd5762b710c4ddc43574cbec2e
+2022-12-12 15:23:45.536 +03:00 [INF] Using the default authentication scheme Identity.Application for IdentityServer
+2022-12-12 15:23:45.536 +03:00 [DBG] Using Identity.Application as default ASP.NET Core scheme for authentication
+2022-12-12 15:23:45.536 +03:00 [DBG] Using Identity.External as default ASP.NET Core scheme for sign-in
+2022-12-12 15:23:45.536 +03:00 [DBG] Using Identity.External as default ASP.NET Core scheme for sign-out
+2022-12-12 15:23:45.536 +03:00 [DBG] Using Identity.Application as default ASP.NET Core scheme for challenge
+2022-12-12 15:23:45.536 +03:00 [DBG] Using Identity.Application as default ASP.NET Core scheme for forbid
+2022-12-12 15:24:01.805 +03:00 [INF] Initialized all ABP modules.
+2022-12-12 15:24:02.008 +03:00 [INF] Now listening on: https://localhost:44330
+2022-12-12 15:24:02.009 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+2022-12-12 15:24:02.009 +03:00 [INF] Hosting environment: Development
+2022-12-12 15:24:02.009 +03:00 [INF] Content root path: C:\Users\Admin\Source\Repos\RemittanceMicroservice_MVC\applications\AuthServer.Host
+2022-12-12 15:24:02.906 +03:00 [INF] Request starting HTTP/2 GET https://localhost:44330/ - -
+2022-12-12 15:24:12.808 +03:00 [DBG] Login Url: /Account/Login
+2022-12-12 15:24:12.808 +03:00 [DBG] Login Return Url Parameter: ReturnUrl
+2022-12-12 15:24:12.808 +03:00 [DBG] Logout Url: /Account/Logout
+2022-12-12 15:24:12.808 +03:00 [DBG] ConsentUrl Url: /Consent
+2022-12-12 15:24:12.808 +03:00 [DBG] Consent Return Url Parameter: returnUrl
+2022-12-12 15:24:12.808 +03:00 [DBG] Error Url: /Account/Error
+2022-12-12 15:24:12.808 +03:00 [DBG] Error Id Parameter: errorId
+2022-12-12 15:24:13.224 +03:00 [INF] Executing endpoint '/Index'
+2022-12-12 15:24:13.268 +03:00 [INF] Route matched with {page = "/Index", area = "", action = "", controller = ""}. Executing page /Index
+2022-12-12 15:24:13.273 +03:00 [INF] Skipping the execution of current filter as its not the most effective filter implementing the policy Microsoft.AspNetCore.Mvc.ViewFeatures.IAntiforgeryPolicy
+2022-12-12 15:24:13.336 +03:00 [INF] Executing handler method AuthServer.Host.Pages.IndexModel.OnGet - ModelState is "Valid"
+2022-12-12 15:24:13.338 +03:00 [INF] Executed handler method OnGet, returned result .
+2022-12-12 15:24:13.342 +03:00 [INF] Executing an implicit handler method - ModelState is "Valid"
+2022-12-12 15:24:13.343 +03:00 [INF] Executed an implicit handler method, returned result Microsoft.AspNetCore.Mvc.RazorPages.PageResult.
+2022-12-12 15:24:14.560 +03:00 [DBG] Added bundle 'Basic.Global' to the page in 51.18 ms.
+2022-12-12 15:24:14.804 +03:00 [DBG] Added bundle 'Basic.Global' to the page in 24.16 ms.
+2022-12-12 15:24:17.012 +03:00 [INF] Executed page /Index in 3706.3495ms
+2022-12-12 15:24:17.014 +03:00 [INF] Executed endpoint '/Index'
+2022-12-12 15:24:17.578 +03:00 [DBG] Added 0 entity changes to the current audit log
+2022-12-12 15:24:17.579 +03:00 [DBG] Added 0 entity changes to the current audit log
+2022-12-12 15:24:17.648 +03:00 [INF] Request finished HTTP/2 GET https://localhost:44330/ - - - 200 - text/html;+charset=utf-8 14744.4577ms
+2022-12-12 15:24:24.700 +03:00 [INF] Request starting HTTP/2 GET https://localhost:44330/images/anonymous-user.png - -
+2022-12-12 15:24:25.488 +03:00 [INF] Sending file. Request path: '/images/anonymous-user.png'. Physical path: 'C:\Users\Admin\Source\Repos\RemittanceMicroservice_MVC\applications\AuthServer.Host\wwwroot\images\anonymous-user.png'
+2022-12-12 15:24:25.489 +03:00 [INF] Request finished HTTP/2 GET https://localhost:44330/images/anonymous-user.png - - - 200 23671 image/png 788.9769ms
+2022-12-12 15:24:29.407 +03:00 [INF] Request starting HTTP/2 GET https://localhost:44330/Abp/ApplicationConfigurationScript - -
+2022-12-12 15:24:30.035 +03:00 [INF] Request starting HTTP/2 GET https://localhost:44330/Abp/ServiceProxyScript - -
+2022-12-12 15:24:30.077 +03:00 [INF] Request starting HTTP/2 GET https://localhost:44330/_framework/aspnetcore-browser-refresh.js - -
+2022-12-12 15:24:31.660 +03:00 [INF] Executing endpoint 'Volo.Abp.AspNetCore.Mvc.ProxyScripting.AbpServiceProxyScriptController.GetAll (Volo.Abp.AspNetCore.Mvc)'
+2022-12-12 15:24:31.809 +03:00 [INF] Executing endpoint 'Volo.Abp.AspNetCore.Mvc.ApplicationConfigurations.AbpApplicationConfigurationScriptController.Get (Volo.Abp.AspNetCore.Mvc)'
+2022-12-12 15:24:31.928 +03:00 [INF] Request finished HTTP/2 GET https://localhost:44330/_framework/aspnetcore-browser-refresh.js - - - 200 12000 application/javascript;+charset=utf-8 1850.7788ms
+2022-12-12 15:24:33.467 +03:00 [INF] Route matched with {area = "Abp", action = "Get", controller = "AbpApplicationConfigurationScript", page = ""}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult] Get() on controller Volo.Abp.AspNetCore.Mvc.ApplicationConfigurations.AbpApplicationConfigurationScriptController (Volo.Abp.AspNetCore.Mvc).
+2022-12-12 15:24:33.647 +03:00 [INF] Route matched with {area = "Abp", action = "GetAll", controller = "AbpServiceProxyScript", page = ""}. Executing controller action with signature Microsoft.AspNetCore.Mvc.ActionResult GetAll(Volo.Abp.AspNetCore.Mvc.ProxyScripting.ServiceProxyGenerationModel) on controller Volo.Abp.AspNetCore.Mvc.ProxyScripting.AbpServiceProxyScriptController (Volo.Abp.AspNetCore.Mvc).
+2022-12-12 15:24:33.994 +03:00 [DBG] Executing AbpApplicationConfigurationAppService.GetAsync()...
+2022-12-12 15:24:34.020 +03:00 [DBG] ActionApiDescriptionModel.Create: Account.LoginByLogin
+2022-12-12 15:24:34.048 +03:00 [DBG] ActionApiDescriptionModel.Create: Account.Logout
+2022-12-12 15:24:34.048 +03:00 [DBG] ActionApiDescriptionModel.Create: Account.CheckPasswordByLogin
+2022-12-12 15:24:34.049 +03:00 [DBG] ActionApiDescriptionModel.Create: AbpTenant.FindTenantByNameAsyncByName
+2022-12-12 15:24:34.049 +03:00 [DBG] ActionApiDescriptionModel.Create: AbpTenant.FindTenantByIdAsyncById
+2022-12-12 15:24:34.049 +03:00 [DBG] ActionApiDescriptionModel.Create: AbpApplicationConfiguration.GetAsync
+2022-12-12 15:24:34.049 +03:00 [DBG] ActionApiDescriptionModel.Create: AbpApiDefinition.GetByModel
+2022-12-12 15:24:34.096 +03:00 [INF] Executing ContentResult with HTTP Response ContentType of application/javascript
+2022-12-12 15:24:34.097 +03:00 [INF] Executed action Volo.Abp.AspNetCore.Mvc.ProxyScripting.AbpServiceProxyScriptController.GetAll (Volo.Abp.AspNetCore.Mvc) in 450.15ms
+2022-12-12 15:24:34.097 +03:00 [INF] Executed endpoint 'Volo.Abp.AspNetCore.Mvc.ProxyScripting.AbpServiceProxyScriptController.GetAll (Volo.Abp.AspNetCore.Mvc)'
+2022-12-12 15:24:34.158 +03:00 [DBG] Added 0 entity changes to the current audit log
+2022-12-12 15:24:34.159 +03:00 [DBG] Added 0 entity changes to the current audit log
+2022-12-12 15:24:34.159 +03:00 [INF] Request finished HTTP/2 GET https://localhost:44330/Abp/ServiceProxyScript - - - 200 1936 application/javascript 4124.0843ms
+2022-12-12 15:24:34.768 +03:00 [DBG] Executed AbpApplicationConfigurationAppService.GetAsync().
+2022-12-12 15:24:34.849 +03:00 [INF] Executing ContentResult with HTTP Response ContentType of application/javascript
+2022-12-12 15:24:34.852 +03:00 [INF] Executed action Volo.Abp.AspNetCore.Mvc.ApplicationConfigurations.AbpApplicationConfigurationScriptController.Get (Volo.Abp.AspNetCore.Mvc) in 1385.3799ms
+2022-12-12 15:24:34.852 +03:00 [INF] Executed endpoint 'Volo.Abp.AspNetCore.Mvc.ApplicationConfigurations.AbpApplicationConfigurationScriptController.Get (Volo.Abp.AspNetCore.Mvc)'
+2022-12-12 15:24:34.861 +03:00 [DBG] Added 0 entity changes to the current audit log
+2022-12-12 15:24:34.862 +03:00 [DBG] Added 0 entity changes to the current audit log
+2022-12-12 15:24:34.862 +03:00 [INF] Request finished HTTP/2 GET https://localhost:44330/Abp/ApplicationConfigurationScript - - - 200 50026 application/javascript 5454.5242ms
+2022-12-12 15:24:34.890 +03:00 [INF] Request starting HTTP/2 GET https://localhost:44330/favicon.ico - -
+2022-12-12 15:24:34.909 +03:00 [DBG] Added 0 entity changes to the current audit log
+2022-12-12 15:24:34.910 +03:00 [DBG] Added 0 entity changes to the current audit log
+2022-12-12 15:24:34.911 +03:00 [INF] Request finished HTTP/2 GET https://localhost:44330/favicon.ico - - - 404 0 - 20.9693ms
+2022-12-12 15:25:27.176 +03:00 [INF] Starting AuthServer.Host.
+2022-12-12 15:25:37.931 +03:00 [INF] Loaded ABP modules:
+2022-12-12 15:25:37.936 +03:00 [INF] - AuthServer.Host.AuthServerHostModule
+2022-12-12 15:25:37.936 +03:00 [INF]   - Volo.Abp.Autofac.AbpAutofacModule
+2022-12-12 15:25:37.936 +03:00 [INF]     - Volo.Abp.Castle.AbpCastleCoreModule
+2022-12-12 15:25:37.936 +03:00 [INF]   - Volo.Abp.EventBus.RabbitMq.AbpEventBusRabbitMqModule
+2022-12-12 15:25:37.936 +03:00 [INF]     - Volo.Abp.EventBus.AbpEventBusModule
+2022-12-12 15:25:37.936 +03:00 [INF]       - Volo.Abp.EventBus.Abstractions.AbpEventBusAbstractionsModule
+2022-12-12 15:25:37.936 +03:00 [INF]       - Volo.Abp.MultiTenancy.AbpMultiTenancyModule
+2022-12-12 15:25:37.936 +03:00 [INF]         - Volo.Abp.Data.AbpDataModule
+2022-12-12 15:25:37.936 +03:00 [INF]           - Volo.Abp.ObjectExtending.AbpObjectExtendingModule
+2022-12-12 15:25:37.936 +03:00 [INF]             - Volo.Abp.Localization.AbpLocalizationAbstractionsModule
+2022-12-12 15:25:37.936 +03:00 [INF]             - Volo.Abp.Validation.AbpValidationAbstractionsModule
+2022-12-12 15:25:37.936 +03:00 [INF]           - Volo.Abp.Uow.AbpUnitOfWorkModule
+2022-12-12 15:25:37.936 +03:00 [INF]         - Volo.Abp.Security.AbpSecurityModule
+2022-12-12 15:25:37.936 +03:00 [INF]       - Volo.Abp.Json.AbpJsonModule
+2022-12-12 15:25:37.936 +03:00 [INF]         - Volo.Abp.Timing.AbpTimingModule
+2022-12-12 15:25:37.936 +03:00 [INF]           - Volo.Abp.Localization.AbpLocalizationModule
+2022-12-12 15:25:37.936 +03:00 [INF]             - Volo.Abp.VirtualFileSystem.AbpVirtualFileSystemModule
+2022-12-12 15:25:37.936 +03:00 [INF]             - Volo.Abp.Settings.AbpSettingsModule
+2022-12-12 15:25:37.936 +03:00 [INF]       - Volo.Abp.Guids.AbpGuidsModule
+2022-12-12 15:25:37.936 +03:00 [INF]       - Volo.Abp.BackgroundWorkers.AbpBackgroundWorkersModule
+2022-12-12 15:25:37.936 +03:00 [INF]         - Volo.Abp.Threading.AbpThreadingModule
+2022-12-12 15:25:37.936 +03:00 [INF]       - Volo.Abp.DistributedLocking.AbpDistributedLockingAbstractionsModule
+2022-12-12 15:25:37.936 +03:00 [INF]     - Volo.Abp.RabbitMQ.AbpRabbitMqModule
+2022-12-12 15:25:37.936 +03:00 [INF]   - Volo.Abp.PermissionManagement.EntityFrameworkCore.AbpPermissionManagementEntityFrameworkCoreModule
+2022-12-12 15:25:37.936 +03:00 [INF]     - Volo.Abp.PermissionManagement.AbpPermissionManagementDomainModule
+2022-12-12 15:25:37.936 +03:00 [INF]       - Volo.Abp.Authorization.AbpAuthorizationModule
+2022-12-12 15:25:37.936 +03:00 [INF]         - Volo.Abp.Authorization.AbpAuthorizationAbstractionsModule
+2022-12-12 15:25:37.936 +03:00 [INF]       - Volo.Abp.Domain.AbpDddDomainModule
+2022-12-12 15:25:37.936 +03:00 [INF]         - Volo.Abp.Auditing.AbpAuditingModule
+2022-12-12 15:25:37.936 +03:00 [INF]           - Volo.Abp.Auditing.AbpAuditingContractsModule
+2022-12-12 15:25:37.936 +03:00 [INF]         - Volo.Abp.ObjectMapping.AbpObjectMappingModule
+2022-12-12 15:25:37.936 +03:00 [INF]         - Volo.Abp.ExceptionHandling.AbpExceptionHandlingModule
+2022-12-12 15:25:37.936 +03:00 [INF]         - Volo.Abp.Specifications.AbpSpecificationsModule
+2022-12-12 15:25:37.936 +03:00 [INF]       - Volo.Abp.PermissionManagement.AbpPermissionManagementDomainSharedModule
+2022-12-12 15:25:37.936 +03:00 [INF]         - Volo.Abp.Validation.AbpValidationModule
+2022-12-12 15:25:37.936 +03:00 [INF]       - Volo.Abp.Caching.AbpCachingModule
+2022-12-12 15:25:37.936 +03:00 [INF]         - Volo.Abp.Serialization.AbpSerializationModule
+2022-12-12 15:25:37.936 +03:00 [INF]     - Volo.Abp.EntityFrameworkCore.AbpEntityFrameworkCoreModule
+2022-12-12 15:25:37.936 +03:00 [INF]   - Volo.Abp.AuditLogging.EntityFrameworkCore.AbpAuditLoggingEntityFrameworkCoreModule
+2022-12-12 15:25:37.936 +03:00 [INF]     - Volo.Abp.AuditLogging.AbpAuditLoggingDomainModule
+2022-12-12 15:25:37.936 +03:00 [INF]       - Volo.Abp.AuditLogging.AbpAuditLoggingDomainSharedModule
+2022-12-12 15:25:37.937 +03:00 [INF]   - Volo.Abp.SettingManagement.EntityFrameworkCore.AbpSettingManagementEntityFrameworkCoreModule
+2022-12-12 15:25:37.937 +03:00 [INF]     - Volo.Abp.SettingManagement.AbpSettingManagementDomainModule
+2022-12-12 15:25:37.937 +03:00 [INF]       - Volo.Abp.SettingManagement.AbpSettingManagementDomainSharedModule
+2022-12-12 15:25:37.937 +03:00 [INF]         - Volo.Abp.Features.AbpFeaturesModule
+2022-12-12 15:25:37.937 +03:00 [INF]   - Volo.Abp.Identity.EntityFrameworkCore.AbpIdentityEntityFrameworkCoreModule
+2022-12-12 15:25:37.937 +03:00 [INF]     - Volo.Abp.Identity.AbpIdentityDomainModule
+2022-12-12 15:25:37.937 +03:00 [INF]       - Volo.Abp.Identity.AbpIdentityDomainSharedModule
+2022-12-12 15:25:37.937 +03:00 [INF]         - Volo.Abp.Users.AbpUsersDomainSharedModule
+2022-12-12 15:25:37.937 +03:00 [INF]       - Volo.Abp.Users.AbpUsersDomainModule
+2022-12-12 15:25:37.937 +03:00 [INF]         - Volo.Abp.Users.AbpUsersAbstractionModule
+2022-12-12 15:25:37.937 +03:00 [INF]       - Volo.Abp.AutoMapper.AbpAutoMapperModule
+2022-12-12 15:25:37.937 +03:00 [INF]     - Volo.Abp.Users.EntityFrameworkCore.AbpUsersEntityFrameworkCoreModule
+2022-12-12 15:25:37.937 +03:00 [INF]   - Volo.Abp.Identity.AbpIdentityApplicationContractsModule
+2022-12-12 15:25:37.937 +03:00 [INF]     - Volo.Abp.PermissionManagement.AbpPermissionManagementApplicationContractsModule
+2022-12-12 15:25:37.937 +03:00 [INF]       - Volo.Abp.Application.AbpDddApplicationContractsModule
+2022-12-12 15:25:37.937 +03:00 [INF]   - Volo.Abp.Account.AbpAccountApplicationModule
+2022-12-12 15:25:37.937 +03:00 [INF]     - Volo.Abp.Account.AbpAccountApplicationContractsModule
+2022-12-12 15:25:37.937 +03:00 [INF]     - Volo.Abp.Identity.AbpIdentityApplicationModule
+2022-12-12 15:25:37.937 +03:00 [INF]       - Volo.Abp.PermissionManagement.AbpPermissionManagementApplicationModule
+2022-12-12 15:25:37.937 +03:00 [INF]         - Volo.Abp.Application.AbpDddApplicationModule
+2022-12-12 15:25:37.937 +03:00 [INF]           - Volo.Abp.Http.AbpHttpAbstractionsModule
+2022-12-12 15:25:37.937 +03:00 [INF]           - Volo.Abp.GlobalFeatures.AbpGlobalFeaturesModule
+2022-12-12 15:25:37.937 +03:00 [INF]     - Volo.Abp.UI.Navigation.AbpUiNavigationModule
+2022-12-12 15:25:37.937 +03:00 [INF]       - Volo.Abp.UI.AbpUiModule
+2022-12-12 15:25:37.937 +03:00 [INF]     - Volo.Abp.Emailing.AbpEmailingModule
+2022-12-12 15:25:37.937 +03:00 [INF]       - Volo.Abp.BackgroundJobs.AbpBackgroundJobsAbstractionsModule
+2022-12-12 15:25:37.937 +03:00 [INF]       - Volo.Abp.TextTemplating.AbpTextTemplatingModule
+2022-12-12 15:25:37.937 +03:00 [INF]         - Volo.Abp.TextTemplating.Scriban.AbpTextTemplatingScribanModule
+2022-12-12 15:25:37.937 +03:00 [INF]           - Volo.Abp.TextTemplating.AbpTextTemplatingCoreModule
+2022-12-12 15:25:37.937 +03:00 [INF]   - Volo.Abp.IdentityServer.EntityFrameworkCore.AbpIdentityServerEntityFrameworkCoreModule
+2022-12-12 15:25:37.937 +03:00 [INF]     - Volo.Abp.IdentityServer.AbpIdentityServerDomainModule
+2022-12-12 15:25:37.937 +03:00 [INF]       - Volo.Abp.IdentityServer.AbpIdentityServerDomainSharedModule
+2022-12-12 15:25:37.937 +03:00 [INF]   - Volo.Abp.EntityFrameworkCore.SqlServer.AbpEntityFrameworkCoreSqlServerModule
+2022-12-12 15:25:37.937 +03:00 [INF]   - Volo.Abp.Account.Web.AbpAccountWebIdentityServerModule
+2022-12-12 15:25:37.937 +03:00 [INF]     - Volo.Abp.Account.Web.AbpAccountWebModule
+2022-12-12 15:25:37.937 +03:00 [INF]       - Volo.Abp.Identity.AspNetCore.AbpIdentityAspNetCoreModule
+2022-12-12 15:25:37.937 +03:00 [INF]       - Volo.Abp.AspNetCore.Mvc.UI.Theme.Shared.AbpAspNetCoreMvcUiThemeSharedModule
+2022-12-12 15:25:37.937 +03:00 [INF]         - Volo.Abp.AspNetCore.Mvc.UI.Bootstrap.AbpAspNetCoreMvcUiBootstrapModule
+2022-12-12 15:25:37.937 +03:00 [INF]           - Volo.Abp.AspNetCore.Mvc.UI.AbpAspNetCoreMvcUiModule
+2022-12-12 15:25:37.937 +03:00 [INF]             - Volo.Abp.AspNetCore.Mvc.AbpAspNetCoreMvcModule
+2022-12-12 15:25:37.937 +03:00 [INF]               - Volo.Abp.AspNetCore.AbpAspNetCoreModule
+2022-12-12 15:25:37.937 +03:00 [INF]                 - Volo.Abp.Http.AbpHttpModule
+2022-12-12 15:25:37.937 +03:00 [INF]                   - Volo.Abp.Minify.AbpMinifyModule
+2022-12-12 15:25:37.937 +03:00 [INF]               - Volo.Abp.ApiVersioning.AbpApiVersioningAbstractionsModule
+2022-12-12 15:25:37.937 +03:00 [INF]               - Volo.Abp.AspNetCore.Mvc.AbpAspNetCoreMvcContractsModule
+2022-12-12 15:25:37.937 +03:00 [INF]         - Volo.Abp.AspNetCore.Mvc.UI.Packages.AbpAspNetCoreMvcUiPackagesModule
+2022-12-12 15:25:37.937 +03:00 [INF]           - Volo.Abp.AspNetCore.Mvc.UI.Bundling.AbpAspNetCoreMvcUiBundlingAbstractionsModule
+2022-12-12 15:25:37.937 +03:00 [INF]         - Volo.Abp.AspNetCore.Mvc.UI.Widgets.AbpAspNetCoreMvcUiWidgetsModule
+2022-12-12 15:25:37.937 +03:00 [INF]           - Volo.Abp.AspNetCore.Mvc.UI.Bundling.AbpAspNetCoreMvcUiBundlingModule
+2022-12-12 15:25:37.937 +03:00 [INF]   - Volo.Abp.AspNetCore.Mvc.UI.Theme.Basic.AbpAspNetCoreMvcUiBasicThemeModule
+2022-12-12 15:25:37.937 +03:00 [INF]     - Volo.Abp.AspNetCore.Mvc.UI.MultiTenancy.AbpAspNetCoreMvcUiMultiTenancyModule
+2022-12-12 15:25:37.937 +03:00 [INF]       - Volo.Abp.AspNetCore.MultiTenancy.AbpAspNetCoreMultiTenancyModule
+2022-12-12 15:25:37.937 +03:00 [INF]   - Volo.Abp.TenantManagement.EntityFrameworkCore.AbpTenantManagementEntityFrameworkCoreModule
+2022-12-12 15:25:37.937 +03:00 [INF]     - Volo.Abp.TenantManagement.AbpTenantManagementDomainModule
+2022-12-12 15:25:37.937 +03:00 [INF]       - Volo.Abp.TenantManagement.AbpTenantManagementDomainSharedModule
+2022-12-12 15:25:37.937 +03:00 [INF]   - Volo.Abp.TenantManagement.AbpTenantManagementApplicationContractsModule
+2022-12-12 15:25:38.158 +03:00 [DBG] Started background worker: Volo.Abp.IdentityServer.Tokens.TokenCleanupBackgroundWorker
+2022-12-12 15:25:38.229 +03:00 [INF] Starting IdentityServer4 version 4.1.2+997a6cdd643e46cd5762b710c4ddc43574cbec2e
+2022-12-12 15:25:40.860 +03:00 [INF] Using the default authentication scheme Identity.Application for IdentityServer
+2022-12-12 15:25:40.860 +03:00 [DBG] Using Identity.Application as default ASP.NET Core scheme for authentication
+2022-12-12 15:25:40.860 +03:00 [DBG] Using Identity.External as default ASP.NET Core scheme for sign-in
+2022-12-12 15:25:40.861 +03:00 [DBG] Using Identity.External as default ASP.NET Core scheme for sign-out
+2022-12-12 15:25:40.861 +03:00 [DBG] Using Identity.Application as default ASP.NET Core scheme for challenge
+2022-12-12 15:25:40.861 +03:00 [DBG] Using Identity.Application as default ASP.NET Core scheme for forbid
+2022-12-12 15:25:59.816 +03:00 [INF] Initialized all ABP modules.
+2022-12-12 15:26:00.084 +03:00 [INF] Now listening on: https://localhost:44330
+2022-12-12 15:26:00.085 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+2022-12-12 15:26:00.085 +03:00 [INF] Hosting environment: Development
+2022-12-12 15:26:00.085 +03:00 [INF] Content root path: C:\Users\Admin\Source\Repos\RemittanceMicroservice_MVC\applications\AuthServer.Host
+2022-12-12 15:26:00.867 +03:00 [INF] Request starting HTTP/2 GET https://localhost:44330/ - -
+2022-12-12 15:26:11.630 +03:00 [DBG] Login Url: /Account/Login
+2022-12-12 15:26:11.630 +03:00 [DBG] Login Return Url Parameter: ReturnUrl
+2022-12-12 15:26:11.630 +03:00 [DBG] Logout Url: /Account/Logout
+2022-12-12 15:26:11.630 +03:00 [DBG] ConsentUrl Url: /Consent
+2022-12-12 15:26:11.630 +03:00 [DBG] Consent Return Url Parameter: returnUrl
+2022-12-12 15:26:11.630 +03:00 [DBG] Error Url: /Account/Error
+2022-12-12 15:26:11.630 +03:00 [DBG] Error Id Parameter: errorId
+2022-12-12 15:26:12.074 +03:00 [INF] Executing endpoint '/Index'
+2022-12-12 15:26:12.159 +03:00 [INF] Route matched with {page = "/Index", area = "", action = "", controller = ""}. Executing page /Index
+2022-12-12 15:26:12.164 +03:00 [INF] Skipping the execution of current filter as its not the most effective filter implementing the policy Microsoft.AspNetCore.Mvc.ViewFeatures.IAntiforgeryPolicy
+2022-12-12 15:26:12.228 +03:00 [INF] Executing handler method AuthServer.Host.Pages.IndexModel.OnGet - ModelState is "Valid"
+2022-12-12 15:26:12.230 +03:00 [INF] Executed handler method OnGet, returned result .
+2022-12-12 15:26:12.234 +03:00 [INF] Executing an implicit handler method - ModelState is "Valid"
+2022-12-12 15:26:12.235 +03:00 [INF] Executed an implicit handler method, returned result Microsoft.AspNetCore.Mvc.RazorPages.PageResult.
+2022-12-12 15:26:12.944 +03:00 [DBG] Added bundle 'Basic.Global' to the page in 41.06 ms.
+2022-12-12 15:26:13.158 +03:00 [DBG] Added bundle 'Basic.Global' to the page in 26.53 ms.
+2022-12-12 15:26:15.432 +03:00 [INF] Executed page /Index in 3263.4182ms
+2022-12-12 15:26:15.435 +03:00 [INF] Executed endpoint '/Index'
+2022-12-12 15:26:15.878 +03:00 [INF] Request starting HTTP/2 GET https://localhost:44330/Abp/ApplicationConfigurationScript - -
+2022-12-12 15:26:15.896 +03:00 [INF] Executing endpoint 'Volo.Abp.AspNetCore.Mvc.ApplicationConfigurations.AbpApplicationConfigurationScriptController.Get (Volo.Abp.AspNetCore.Mvc)'
+2022-12-12 15:26:15.896 +03:00 [INF] Request starting HTTP/2 GET https://localhost:44330/Abp/ServiceProxyScript - -
+2022-12-12 15:26:15.901 +03:00 [INF] Executing endpoint 'Volo.Abp.AspNetCore.Mvc.ProxyScripting.AbpServiceProxyScriptController.GetAll (Volo.Abp.AspNetCore.Mvc)'
+2022-12-12 15:26:15.909 +03:00 [INF] Request starting HTTP/2 GET https://localhost:44330/_framework/aspnetcore-browser-refresh.js - -
+2022-12-12 15:26:15.916 +03:00 [INF] Route matched with {area = "Abp", action = "Get", controller = "AbpApplicationConfigurationScript", page = ""}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult] Get() on controller Volo.Abp.AspNetCore.Mvc.ApplicationConfigurations.AbpApplicationConfigurationScriptController (Volo.Abp.AspNetCore.Mvc).
+2022-12-12 15:26:15.931 +03:00 [INF] Request finished HTTP/2 GET https://localhost:44330/_framework/aspnetcore-browser-refresh.js - - - 200 12000 application/javascript;+charset=utf-8 20.6730ms
+2022-12-12 15:26:15.967 +03:00 [INF] Route matched with {area = "Abp", action = "GetAll", controller = "AbpServiceProxyScript", page = ""}. Executing controller action with signature Microsoft.AspNetCore.Mvc.ActionResult GetAll(Volo.Abp.AspNetCore.Mvc.ProxyScripting.ServiceProxyGenerationModel) on controller Volo.Abp.AspNetCore.Mvc.ProxyScripting.AbpServiceProxyScriptController (Volo.Abp.AspNetCore.Mvc).
+2022-12-12 15:26:16.190 +03:00 [DBG] Executing AbpApplicationConfigurationAppService.GetAsync()...
+2022-12-12 15:26:16.227 +03:00 [DBG] Added 0 entity changes to the current audit log
+2022-12-12 15:26:16.228 +03:00 [DBG] Added 0 entity changes to the current audit log
+2022-12-12 15:26:16.247 +03:00 [DBG] ActionApiDescriptionModel.Create: Account.LoginByLogin
+2022-12-12 15:26:16.284 +03:00 [DBG] ActionApiDescriptionModel.Create: Account.Logout
+2022-12-12 15:26:16.285 +03:00 [DBG] ActionApiDescriptionModel.Create: Account.CheckPasswordByLogin
+2022-12-12 15:26:16.288 +03:00 [DBG] ActionApiDescriptionModel.Create: AbpTenant.FindTenantByNameAsyncByName
+2022-12-12 15:26:16.291 +03:00 [DBG] ActionApiDescriptionModel.Create: AbpTenant.FindTenantByIdAsyncById
+2022-12-12 15:26:16.292 +03:00 [DBG] ActionApiDescriptionModel.Create: AbpApplicationConfiguration.GetAsync
+2022-12-12 15:26:16.292 +03:00 [DBG] ActionApiDescriptionModel.Create: AbpApiDefinition.GetByModel
+2022-12-12 15:26:16.381 +03:00 [INF] Request finished HTTP/2 GET https://localhost:44330/ - - - 200 - text/html;+charset=utf-8 15516.7010ms
+2022-12-12 15:26:16.417 +03:00 [INF] Executing ContentResult with HTTP Response ContentType of application/javascript
+2022-12-12 15:26:16.426 +03:00 [INF] Executed action Volo.Abp.AspNetCore.Mvc.ProxyScripting.AbpServiceProxyScriptController.GetAll (Volo.Abp.AspNetCore.Mvc) in 457.8006ms
+2022-12-12 15:26:16.427 +03:00 [INF] Executed endpoint 'Volo.Abp.AspNetCore.Mvc.ProxyScripting.AbpServiceProxyScriptController.GetAll (Volo.Abp.AspNetCore.Mvc)'
+2022-12-12 15:26:16.463 +03:00 [DBG] Added 0 entity changes to the current audit log
+2022-12-12 15:26:16.464 +03:00 [DBG] Added 0 entity changes to the current audit log
+2022-12-12 15:26:16.464 +03:00 [INF] Request finished HTTP/2 GET https://localhost:44330/Abp/ServiceProxyScript - - - 200 1936 application/javascript 567.9170ms
+2022-12-12 15:26:16.861 +03:00 [DBG] Executed AbpApplicationConfigurationAppService.GetAsync().
+2022-12-12 15:26:16.932 +03:00 [INF] Executing ContentResult with HTTP Response ContentType of application/javascript
+2022-12-12 15:26:16.939 +03:00 [INF] Executed action Volo.Abp.AspNetCore.Mvc.ApplicationConfigurations.AbpApplicationConfigurationScriptController.Get (Volo.Abp.AspNetCore.Mvc) in 1022.855ms
+2022-12-12 15:26:16.939 +03:00 [INF] Executed endpoint 'Volo.Abp.AspNetCore.Mvc.ApplicationConfigurations.AbpApplicationConfigurationScriptController.Get (Volo.Abp.AspNetCore.Mvc)'
+2022-12-12 15:26:16.945 +03:00 [DBG] Added 0 entity changes to the current audit log
+2022-12-12 15:26:16.946 +03:00 [DBG] Added 0 entity changes to the current audit log
+2022-12-12 15:26:16.946 +03:00 [INF] Request finished HTTP/2 GET https://localhost:44330/Abp/ApplicationConfigurationScript - - - 200 50026 application/javascript 1068.4612ms
+2022-12-12 15:26:16.981 +03:00 [INF] Request starting HTTP/2 GET https://localhost:44330/favicon.ico - -
+2022-12-12 15:26:17.012 +03:00 [DBG] Added 0 entity changes to the current audit log
+2022-12-12 15:26:17.013 +03:00 [DBG] Added 0 entity changes to the current audit log
+2022-12-12 15:26:17.014 +03:00 [INF] Request finished HTTP/2 GET https://localhost:44330/favicon.ico - - - 404 0 - 32.4861ms
+2022-12-12 15:27:01.323 +03:00 [INF] Request starting HTTP/1.1 GET https://localhost:44330/.well-known/openid-configuration - -
+2022-12-12 15:27:01.326 +03:00 [DBG] Request path /.well-known/openid-configuration matched to endpoint type Discovery
+2022-12-12 15:27:01.810 +03:00 [DBG] Endpoint enabled: Discovery, successfully created handler: IdentityServer4.Endpoints.DiscoveryEndpoint
+2022-12-12 15:27:01.810 +03:00 [INF] Invoking IdentityServer endpoint: IdentityServer4.Endpoints.DiscoveryEndpoint for /.well-known/openid-configuration
+2022-12-12 15:27:01.815 +03:00 [DBG] Start discovery request
+2022-12-12 15:27:02.441 +03:00 [INF] Request finished HTTP/1.1 GET https://localhost:44330/.well-known/openid-configuration - - - 200 - application/json;+charset=UTF-8 1117.7970ms
+2022-12-12 15:27:02.930 +03:00 [INF] Request starting HTTP/1.1 GET https://localhost:44330/.well-known/openid-configuration/jwks - -
+2022-12-12 15:27:02.934 +03:00 [DBG] Request path /.well-known/openid-configuration/jwks matched to endpoint type Discovery
+2022-12-12 15:27:02.946 +03:00 [DBG] Endpoint enabled: Discovery, successfully created handler: IdentityServer4.Endpoints.DiscoveryKeyEndpoint
+2022-12-12 15:27:02.947 +03:00 [INF] Invoking IdentityServer endpoint: IdentityServer4.Endpoints.DiscoveryKeyEndpoint for /.well-known/openid-configuration/jwks
+2022-12-12 15:27:02.950 +03:00 [DBG] Start key discovery request
+2022-12-12 15:27:02.972 +03:00 [INF] Request finished HTTP/1.1 GET https://localhost:44330/.well-known/openid-configuration/jwks - - - 200 - application/json;+charset=UTF-8 41.8357ms
+2022-12-12 15:27:03.047 +03:00 [INF] Request starting HTTP/2 GET https://localhost:44330/connect/authorize?client_id=backend-admin-app-client&redirect_uri=https%3A%2F%2Flocalhost%3A44354%2Fsignin-oidc&response_type=code%20id_token&scope=openid%20profile%20role%20email%20phone%20BackendAdminAppGateway%20IdentityService%20ProductService%20TenantManagementService&response_mode=form_post&nonce=638064448230208701.NDliMTFhNDAtN2RkMC00YjA3LTg1YzMtYmYyMTM4MWRjY2JjZTM0OWVlM2MtMTQzMi00ODhlLThmYzQtYzBiNGU3N2FkYzlk&state=CfDJ8FWvNGhp_oRGpUI8m43VBQgP9QugSP_JiiF_cBpqhdvJ4PCT0UY91UuTS8vMPKMm7oiiq6dZHQ-4gfUiVfbrr5JR49gu5YvPazy6gmfcah2RZF18JWAW4nTvo5ro7Ven3UcQJxcrGKiCzLlW4eFLZvxJaMGTibDyYFPcnNYd7Y7ohWQfh_hj6dT4F_xMpE7VyGvMYucwTI2EKVWF92O5yIbes3ZXIS3a7_ZgelyUxlXJRwnIZekL6PxW6DPWxGIgU0aYMmgsTsqjdvx-MrVTn6cfOLX_TGoW0NXlk6ECbkd7ZbG9CdmTgU6J9gpDvX-3Bw&x-client-SKU=ID_NETSTANDARD2_0&x-client-ver=6.10.0.0 - -
+2022-12-12 15:27:03.064 +03:00 [DBG] Request path /connect/authorize matched to endpoint type Authorize
+2022-12-12 15:27:03.089 +03:00 [DBG] Endpoint enabled: Authorize, successfully created handler: IdentityServer4.Endpoints.AuthorizeEndpoint
+2022-12-12 15:27:03.089 +03:00 [INF] Invoking IdentityServer endpoint: IdentityServer4.Endpoints.AuthorizeEndpoint for /connect/authorize
+2022-12-12 15:27:03.092 +03:00 [DBG] Start authorize request
+2022-12-12 15:27:03.188 +03:00 [DBG] No user present in authorize request
+2022-12-12 15:27:03.200 +03:00 [DBG] Start authorize request protocol validation
+2022-12-12 15:27:03.598 +03:00 [DBG] client configuration validation for client backend-admin-app-client succeeded.
+2022-12-12 15:27:03.632 +03:00 [DBG] Checking for PKCE parameters
+2022-12-12 15:27:03.634 +03:00 [DBG] No PKCE used.
+2022-12-12 15:27:04.683 +03:00 [DBG] Calling into custom validator: IdentityServer4.Validation.DefaultCustomAuthorizeRequestValidator
+2022-12-12 15:27:04.709 +03:00 [DBG] ValidatedAuthorizeRequest
+{"ClientId":"backend-admin-app-client","ClientName":"backend-admin-app-client","RedirectUri":"https://localhost:44354/signin-oidc","AllowedRedirectUris":["https://localhost:44354/signin-oidc"],"SubjectId":"anonymous","ResponseType":"code id_token","ResponseMode":"form_post","GrantType":"hybrid","RequestedScopes":"openid profile role email phone BackendAdminAppGateway IdentityService ProductService TenantManagementService","State":"CfDJ8FWvNGhp_oRGpUI8m43VBQgP9QugSP_JiiF_cBpqhdvJ4PCT0UY91UuTS8vMPKMm7oiiq6dZHQ-4gfUiVfbrr5JR49gu5YvPazy6gmfcah2RZF18JWAW4nTvo5ro7Ven3UcQJxcrGKiCzLlW4eFLZvxJaMGTibDyYFPcnNYd7Y7ohWQfh_hj6dT4F_xMpE7VyGvMYucwTI2EKVWF92O5yIbes3ZXIS3a7_ZgelyUxlXJRwnIZekL6PxW6DPWxGIgU0aYMmgsTsqjdvx-MrVTn6cfOLX_TGoW0NXlk6ECbkd7ZbG9CdmTgU6J9gpDvX-3Bw","UiLocales":null,"Nonce":"638064448230208701.NDliMTFhNDAtN2RkMC00YjA3LTg1YzMtYmYyMTM4MWRjY2JjZTM0OWVlM2MtMTQzMi00ODhlLThmYzQtYzBiNGU3N2FkYzlk","AuthenticationContextReferenceClasses":null,"DisplayMode":null,"PromptMode":"","MaxAge":null,"LoginHint":null,"SessionId":"","Raw":{"client_id":"backend-admin-app-client","redirect_uri":"https://localhost:44354/signin-oidc","response_type":"code id_token","scope":"openid profile role email phone BackendAdminAppGateway IdentityService ProductService TenantManagementService","response_mode":"form_post","nonce":"638064448230208701.NDliMTFhNDAtN2RkMC00YjA3LTg1YzMtYmYyMTM4MWRjY2JjZTM0OWVlM2MtMTQzMi00ODhlLThmYzQtYzBiNGU3N2FkYzlk","state":"CfDJ8FWvNGhp_oRGpUI8m43VBQgP9QugSP_JiiF_cBpqhdvJ4PCT0UY91UuTS8vMPKMm7oiiq6dZHQ-4gfUiVfbrr5JR49gu5YvPazy6gmfcah2RZF18JWAW4nTvo5ro7Ven3UcQJxcrGKiCzLlW4eFLZvxJaMGTibDyYFPcnNYd7Y7ohWQfh_hj6dT4F_xMpE7VyGvMYucwTI2EKVWF92O5yIbes3ZXIS3a7_ZgelyUxlXJRwnIZekL6PxW6DPWxGIgU0aYMmgsTsqjdvx-MrVTn6cfOLX_TGoW0NXlk6ECbkd7ZbG9CdmTgU6J9gpDvX-3Bw","x-client-SKU":"ID_NETSTANDARD2_0","x-client-ver":"6.10.0.0"},"$type":"AuthorizeRequestValidationLog"}
+2022-12-12 15:27:04.784 +03:00 [INF] Showing login: User is not authenticated
+2022-12-12 15:27:04.806 +03:00 [INF] Request finished HTTP/2 GET https://localhost:44330/connect/authorize?client_id=backend-admin-app-client&redirect_uri=https%3A%2F%2Flocalhost%3A44354%2Fsignin-oidc&response_type=code%20id_token&scope=openid%20profile%20role%20email%20phone%20BackendAdminAppGateway%20IdentityService%20ProductService%20TenantManagementService&response_mode=form_post&nonce=638064448230208701.NDliMTFhNDAtN2RkMC00YjA3LTg1YzMtYmYyMTM4MWRjY2JjZTM0OWVlM2MtMTQzMi00ODhlLThmYzQtYzBiNGU3N2FkYzlk&state=CfDJ8FWvNGhp_oRGpUI8m43VBQgP9QugSP_JiiF_cBpqhdvJ4PCT0UY91UuTS8vMPKMm7oiiq6dZHQ-4gfUiVfbrr5JR49gu5YvPazy6gmfcah2RZF18JWAW4nTvo5ro7Ven3UcQJxcrGKiCzLlW4eFLZvxJaMGTibDyYFPcnNYd7Y7ohWQfh_hj6dT4F_xMpE7VyGvMYucwTI2EKVWF92O5yIbes3ZXIS3a7_ZgelyUxlXJRwnIZekL6PxW6DPWxGIgU0aYMmgsTsqjdvx-MrVTn6cfOLX_TGoW0NXlk6ECbkd7ZbG9CdmTgU6J9gpDvX-3Bw&x-client-SKU=ID_NETSTANDARD2_0&x-client-ver=6.10.0.0 - - - 302 0 - 1759.3422ms
+2022-12-12 15:27:04.897 +03:00 [INF] Request starting HTTP/2 GET https://localhost:44330/Account/Login?ReturnUrl=%2Fconnect%2Fauthorize%2Fcallback%3Fclient_id%3Dbackend-admin-app-client%26redirect_uri%3Dhttps%253A%252F%252Flocalhost%253A44354%252Fsignin-oidc%26response_type%3Dcode%2520id_token%26scope%3Dopenid%2520profile%2520role%2520email%2520phone%2520BackendAdminAppGateway%2520IdentityService%2520ProductService%2520TenantManagementService%26response_mode%3Dform_post%26nonce%3D638064448230208701.NDliMTFhNDAtN2RkMC00YjA3LTg1YzMtYmYyMTM4MWRjY2JjZTM0OWVlM2MtMTQzMi00ODhlLThmYzQtYzBiNGU3N2FkYzlk%26state%3DCfDJ8FWvNGhp_oRGpUI8m43VBQgP9QugSP_JiiF_cBpqhdvJ4PCT0UY91UuTS8vMPKMm7oiiq6dZHQ-4gfUiVfbrr5JR49gu5YvPazy6gmfcah2RZF18JWAW4nTvo5ro7Ven3UcQJxcrGKiCzLlW4eFLZvxJaMGTibDyYFPcnNYd7Y7ohWQfh_hj6dT4F_xMpE7VyGvMYucwTI2EKVWF92O5yIbes3ZXIS3a7_ZgelyUxlXJRwnIZekL6PxW6DPWxGIgU0aYMmgsTsqjdvx-MrVTn6cfOLX_TGoW0NXlk6ECbkd7ZbG9CdmTgU6J9gpDvX-3Bw%26x-client-SKU%3DID_NETSTANDARD2_0%26x-client-ver%3D6.10.0.0 - -
+2022-12-12 15:27:04.938 +03:00 [INF] Executing endpoint '/Account/Login'
+2022-12-12 15:27:04.974 +03:00 [INF] Route matched with {page = "/Account/Login", area = "", action = "", controller = ""}. Executing page /Account/Login
+2022-12-12 15:27:04.974 +03:00 [INF] Skipping the execution of current filter as its not the most effective filter implementing the policy Microsoft.AspNetCore.Mvc.ViewFeatures.IAntiforgeryPolicy
+2022-12-12 15:27:05.159 +03:00 [INF] Executing handler method Volo.Abp.Account.Web.Pages.Account.LoginModel.OnGetAsync - ModelState is "Valid"
+2022-12-12 15:27:05.196 +03:00 [DBG] Start authorize request protocol validation
+2022-12-12 15:27:05.350 +03:00 [DBG] client configuration validation for client backend-admin-app-client succeeded.
+2022-12-12 15:27:05.350 +03:00 [DBG] Checking for PKCE parameters
+2022-12-12 15:27:05.350 +03:00 [DBG] No PKCE used.
+2022-12-12 15:27:05.527 +03:00 [DBG] Calling into custom validator: IdentityServer4.Validation.DefaultCustomAuthorizeRequestValidator
+2022-12-12 15:27:05.565 +03:00 [DBG] client configuration validation for client backend-admin-app-client succeeded.
+2022-12-12 15:27:05.575 +03:00 [INF] Executed handler method OnGetAsync, returned result Microsoft.AspNetCore.Mvc.RazorPages.PageResult.
+2022-12-12 15:27:05.583 +03:00 [DBG] Added 0 entity changes to the current audit log
+2022-12-12 15:27:06.912 +03:00 [DBG] Added bundle 'Basic.Global' to the page in 5.64 ms.
+2022-12-12 15:27:06.968 +03:00 [DBG] Added bundle 'Basic.Global' to the page in 18.71 ms.
+2022-12-12 15:27:09.482 +03:00 [INF] Executed page /Account/Login in 4507.8139ms
+2022-12-12 15:27:09.482 +03:00 [INF] Executed endpoint '/Account/Login'
+2022-12-12 15:27:09.667 +03:00 [INF] Request starting HTTP/2 GET https://localhost:44330/Abp/ApplicationConfigurationScript - -
+2022-12-12 15:27:09.676 +03:00 [INF] Request starting HTTP/2 GET https://localhost:44330/_framework/aspnetcore-browser-refresh.js - -
+2022-12-12 15:27:09.676 +03:00 [DBG] Added 0 entity changes to the current audit log
+2022-12-12 15:27:09.677 +03:00 [INF] Request finished HTTP/2 GET https://localhost:44330/_framework/aspnetcore-browser-refresh.js - - - 200 12000 application/javascript;+charset=utf-8 0.3618ms
+2022-12-12 15:27:09.677 +03:00 [DBG] Added 0 entity changes to the current audit log
+2022-12-12 15:27:09.677 +03:00 [INF] Request starting HTTP/2 GET https://localhost:44330/Abp/ServiceProxyScript - -
+2022-12-12 15:27:09.677 +03:00 [INF] Request finished HTTP/2 GET https://localhost:44330/Account/Login?ReturnUrl=%2Fconnect%2Fauthorize%2Fcallback%3Fclient_id%3Dbackend-admin-app-client%26redirect_uri%3Dhttps%253A%252F%252Flocalhost%253A44354%252Fsignin-oidc%26response_type%3Dcode%2520id_token%26scope%3Dopenid%2520profile%2520role%2520email%2520phone%2520BackendAdminAppGateway%2520IdentityService%2520ProductService%2520TenantManagementService%26response_mode%3Dform_post%26nonce%3D638064448230208701.NDliMTFhNDAtN2RkMC00YjA3LTg1YzMtYmYyMTM4MWRjY2JjZTM0OWVlM2MtMTQzMi00ODhlLThmYzQtYzBiNGU3N2FkYzlk%26state%3DCfDJ8FWvNGhp_oRGpUI8m43VBQgP9QugSP_JiiF_cBpqhdvJ4PCT0UY91UuTS8vMPKMm7oiiq6dZHQ-4gfUiVfbrr5JR49gu5YvPazy6gmfcah2RZF18JWAW4nTvo5ro7Ven3UcQJxcrGKiCzLlW4eFLZvxJaMGTibDyYFPcnNYd7Y7ohWQfh_hj6dT4F_xMpE7VyGvMYucwTI2EKVWF92O5yIbes3ZXIS3a7_ZgelyUxlXJRwnIZekL6PxW6DPWxGIgU0aYMmgsTsqjdvx-MrVTn6cfOLX_TGoW0NXlk6ECbkd7ZbG9CdmTgU6J9gpDvX-3Bw%26x-client-SKU%3DID_NETSTANDARD2_0%26x-client-ver%3D6.10.0.0 - - - 200 - text/html;+charset=utf-8 4780.0221ms
+2022-12-12 15:27:09.680 +03:00 [INF] Executing endpoint 'Volo.Abp.AspNetCore.Mvc.ProxyScripting.AbpServiceProxyScriptController.GetAll (Volo.Abp.AspNetCore.Mvc)'
+2022-12-12 15:27:09.680 +03:00 [INF] Route matched with {area = "Abp", action = "GetAll", controller = "AbpServiceProxyScript", page = ""}. Executing controller action with signature Microsoft.AspNetCore.Mvc.ActionResult GetAll(Volo.Abp.AspNetCore.Mvc.ProxyScripting.ServiceProxyGenerationModel) on controller Volo.Abp.AspNetCore.Mvc.ProxyScripting.AbpServiceProxyScriptController (Volo.Abp.AspNetCore.Mvc).
+2022-12-12 15:27:09.680 +03:00 [INF] Executing endpoint 'Volo.Abp.AspNetCore.Mvc.ApplicationConfigurations.AbpApplicationConfigurationScriptController.Get (Volo.Abp.AspNetCore.Mvc)'
+2022-12-12 15:27:09.681 +03:00 [INF] Route matched with {area = "Abp", action = "Get", controller = "AbpApplicationConfigurationScript", page = ""}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult] Get() on controller Volo.Abp.AspNetCore.Mvc.ApplicationConfigurations.AbpApplicationConfigurationScriptController (Volo.Abp.AspNetCore.Mvc).
+2022-12-12 15:27:09.684 +03:00 [DBG] Executing AbpApplicationConfigurationAppService.GetAsync()...
+2022-12-12 15:27:09.686 +03:00 [INF] Executing ContentResult with HTTP Response ContentType of application/javascript
+2022-12-12 15:27:09.686 +03:00 [INF] Executed action Volo.Abp.AspNetCore.Mvc.ProxyScripting.AbpServiceProxyScriptController.GetAll (Volo.Abp.AspNetCore.Mvc) in 5.9132ms
+2022-12-12 15:27:09.687 +03:00 [INF] Executed endpoint 'Volo.Abp.AspNetCore.Mvc.ProxyScripting.AbpServiceProxyScriptController.GetAll (Volo.Abp.AspNetCore.Mvc)'
+2022-12-12 15:27:10.126 +03:00 [DBG] Added 0 entity changes to the current audit log
+2022-12-12 15:27:10.126 +03:00 [DBG] Added 0 entity changes to the current audit log
+2022-12-12 15:27:10.127 +03:00 [INF] Request finished HTTP/2 GET https://localhost:44330/Abp/ServiceProxyScript - - - 200 1936 application/javascript 450.1130ms
+2022-12-12 15:27:10.264 +03:00 [DBG] Executed AbpApplicationConfigurationAppService.GetAsync().
+2022-12-12 15:27:10.288 +03:00 [INF] Executing ContentResult with HTTP Response ContentType of application/javascript
+2022-12-12 15:27:10.290 +03:00 [INF] Executed action Volo.Abp.AspNetCore.Mvc.ApplicationConfigurations.AbpApplicationConfigurationScriptController.Get (Volo.Abp.AspNetCore.Mvc) in 608.3084ms
+2022-12-12 15:27:10.291 +03:00 [INF] Executed endpoint 'Volo.Abp.AspNetCore.Mvc.ApplicationConfigurations.AbpApplicationConfigurationScriptController.Get (Volo.Abp.AspNetCore.Mvc)'
+2022-12-12 15:27:10.307 +03:00 [DBG] Added 0 entity changes to the current audit log
+2022-12-12 15:27:10.308 +03:00 [DBG] Added 0 entity changes to the current audit log
+2022-12-12 15:27:10.308 +03:00 [INF] Request finished HTTP/2 GET https://localhost:44330/Abp/ApplicationConfigurationScript - - - 200 50026 application/javascript 640.9346ms
+2022-12-12 15:27:12.596 +03:00 [INF] Request starting HTTP/2 POST https://localhost:44330/Account/Login?ReturnUrl=%2Fconnect%2Fauthorize%2Fcallback%3Fclient_id%3Dbackend-admin-app-client%26redirect_uri%3Dhttps%253A%252F%252Flocalhost%253A44354%252Fsignin-oidc%26response_type%3Dcode%2520id_token%26scope%3Dopenid%2520profile%2520role%2520email%2520phone%2520BackendAdminAppGateway%2520IdentityService%2520ProductService%2520TenantManagementService%26response_mode%3Dform_post%26nonce%3D638064448230208701.NDliMTFhNDAtN2RkMC00YjA3LTg1YzMtYmYyMTM4MWRjY2JjZTM0OWVlM2MtMTQzMi00ODhlLThmYzQtYzBiNGU3N2FkYzlk%26state%3DCfDJ8FWvNGhp_oRGpUI8m43VBQgP9QugSP_JiiF_cBpqhdvJ4PCT0UY91UuTS8vMPKMm7oiiq6dZHQ-4gfUiVfbrr5JR49gu5YvPazy6gmfcah2RZF18JWAW4nTvo5ro7Ven3UcQJxcrGKiCzLlW4eFLZvxJaMGTibDyYFPcnNYd7Y7ohWQfh_hj6dT4F_xMpE7VyGvMYucwTI2EKVWF92O5yIbes3ZXIS3a7_ZgelyUxlXJRwnIZekL6PxW6DPWxGIgU0aYMmgsTsqjdvx-MrVTn6cfOLX_TGoW0NXlk6ECbkd7ZbG9CdmTgU6J9gpDvX-3Bw%26x-client-SKU%3DID_NETSTANDARD2_0%26x-client-ver%3D6.10.0.0 application/x-www-form-urlencoded 318
+2022-12-12 15:27:12.647 +03:00 [INF] No CORS policy found for the specified request.
+2022-12-12 15:27:12.648 +03:00 [INF] Executing endpoint '/Account/Login'
+2022-12-12 15:27:12.648 +03:00 [INF] Route matched with {page = "/Account/Login", area = "", action = "", controller = ""}. Executing page /Account/Login
+2022-12-12 15:27:12.648 +03:00 [INF] Skipping the execution of current filter as its not the most effective filter implementing the policy Microsoft.AspNetCore.Mvc.ViewFeatures.IAntiforgeryPolicy
+2022-12-12 15:27:12.858 +03:00 [INF] Executing handler method Volo.Abp.Account.Web.Pages.Account.LoginModel.OnPostAsync - ModelState is "Valid"
+2022-12-12 15:27:12.867 +03:00 [DBG] Start authorize request protocol validation
+2022-12-12 15:27:12.892 +03:00 [DBG] client configuration validation for client backend-admin-app-client succeeded.
+2022-12-12 15:27:12.892 +03:00 [DBG] Checking for PKCE parameters
+2022-12-12 15:27:12.892 +03:00 [DBG] No PKCE used.
+2022-12-12 15:27:13.081 +03:00 [DBG] Calling into custom validator: IdentityServer4.Validation.DefaultCustomAuthorizeRequestValidator
+2022-12-12 15:27:13.925 +03:00 [DBG] Augmenting SignInContext
+2022-12-12 15:27:13.929 +03:00 [DBG] Adding idp claim with value: local
+2022-12-12 15:27:13.929 +03:00 [DBG] Adding auth_time claim with value: 1670848033
+2022-12-12 15:27:13.997 +03:00 [INF] AuthenticationScheme: Identity.Application signed in.
+2022-12-12 15:27:14.158 +03:00 [DBG] Added 0 entity changes to the current audit log
+2022-12-12 15:27:14.159 +03:00 [DBG] Added 0 entity changes to the current audit log
+2022-12-12 15:27:14.180 +03:00 [INF] {"Username":"admin","Provider":null,"ProviderUserId":null,"SubjectId":"4d99b54e-d1b0-2106-51f4-3a0813a56955","DisplayName":"admin","Endpoint":"UI","ClientId":null,"Category":"Authentication","Name":"User Login Success","EventType":"Success","Id":1000,"Message":null,"ActivityId":"0HMMS7G3GVJI9:0000000B","TimeStamp":"2022-12-12T12:27:14.0000000Z","ProcessId":16264,"LocalIpAddress":"::1:44330","RemoteIpAddress":"::1","$type":"UserLoginSuccessEvent"}
+2022-12-12 15:27:14.182 +03:00 [INF] Executed handler method OnPostAsync, returned result Microsoft.AspNetCore.Mvc.RedirectResult.
+2022-12-12 15:27:14.183 +03:00 [DBG] Added 0 entity changes to the current audit log
+2022-12-12 15:27:14.184 +03:00 [DBG] Added 0 entity changes to the current audit log
+2022-12-12 15:27:14.186 +03:00 [INF] Executing RedirectResult, redirecting to /connect/authorize/callback?client_id=backend-admin-app-client&redirect_uri=https%3A%2F%2Flocalhost%3A44354%2Fsignin-oidc&response_type=code%20id_token&scope=openid%20profile%20role%20email%20phone%20BackendAdminAppGateway%20IdentityService%20ProductService%20TenantManagementService&response_mode=form_post&nonce=638064448230208701.NDliMTFhNDAtN2RkMC00YjA3LTg1YzMtYmYyMTM4MWRjY2JjZTM0OWVlM2MtMTQzMi00ODhlLThmYzQtYzBiNGU3N2FkYzlk&state=CfDJ8FWvNGhp_oRGpUI8m43VBQgP9QugSP_JiiF_cBpqhdvJ4PCT0UY91UuTS8vMPKMm7oiiq6dZHQ-4gfUiVfbrr5JR49gu5YvPazy6gmfcah2RZF18JWAW4nTvo5ro7Ven3UcQJxcrGKiCzLlW4eFLZvxJaMGTibDyYFPcnNYd7Y7ohWQfh_hj6dT4F_xMpE7VyGvMYucwTI2EKVWF92O5yIbes3ZXIS3a7_ZgelyUxlXJRwnIZekL6PxW6DPWxGIgU0aYMmgsTsqjdvx-MrVTn6cfOLX_TGoW0NXlk6ECbkd7ZbG9CdmTgU6J9gpDvX-3Bw&x-client-SKU=ID_NETSTANDARD2_0&x-client-ver=6.10.0.0.
+2022-12-12 15:27:14.187 +03:00 [INF] Executed page /Account/Login in 1538.4221ms
+2022-12-12 15:27:14.187 +03:00 [INF] Executed endpoint '/Account/Login'
+2022-12-12 15:27:14.198 +03:00 [DBG] Added 0 entity changes to the current audit log
+2022-12-12 15:27:14.199 +03:00 [DBG] Added 0 entity changes to the current audit log
+2022-12-12 15:27:14.200 +03:00 [INF] Request finished HTTP/2 POST https://localhost:44330/Account/Login?ReturnUrl=%2Fconnect%2Fauthorize%2Fcallback%3Fclient_id%3Dbackend-admin-app-client%26redirect_uri%3Dhttps%253A%252F%252Flocalhost%253A44354%252Fsignin-oidc%26response_type%3Dcode%2520id_token%26scope%3Dopenid%2520profile%2520role%2520email%2520phone%2520BackendAdminAppGateway%2520IdentityService%2520ProductService%2520TenantManagementService%26response_mode%3Dform_post%26nonce%3D638064448230208701.NDliMTFhNDAtN2RkMC00YjA3LTg1YzMtYmYyMTM4MWRjY2JjZTM0OWVlM2MtMTQzMi00ODhlLThmYzQtYzBiNGU3N2FkYzlk%26state%3DCfDJ8FWvNGhp_oRGpUI8m43VBQgP9QugSP_JiiF_cBpqhdvJ4PCT0UY91UuTS8vMPKMm7oiiq6dZHQ-4gfUiVfbrr5JR49gu5YvPazy6gmfcah2RZF18JWAW4nTvo5ro7Ven3UcQJxcrGKiCzLlW4eFLZvxJaMGTibDyYFPcnNYd7Y7ohWQfh_hj6dT4F_xMpE7VyGvMYucwTI2EKVWF92O5yIbes3ZXIS3a7_ZgelyUxlXJRwnIZekL6PxW6DPWxGIgU0aYMmgsTsqjdvx-MrVTn6cfOLX_TGoW0NXlk6ECbkd7ZbG9CdmTgU6J9gpDvX-3Bw%26x-client-SKU%3DID_NETSTANDARD2_0%26x-client-ver%3D6.10.0.0 application/x-www-form-urlencoded 318 - 302 0 - 1603.8496ms
+2022-12-12 15:27:14.206 +03:00 [INF] Request starting HTTP/2 GET https://localhost:44330/connect/authorize/callback?client_id=backend-admin-app-client&redirect_uri=https%3A%2F%2Flocalhost%3A44354%2Fsignin-oidc&response_type=code%20id_token&scope=openid%20profile%20role%20email%20phone%20BackendAdminAppGateway%20IdentityService%20ProductService%20TenantManagementService&response_mode=form_post&nonce=638064448230208701.NDliMTFhNDAtN2RkMC00YjA3LTg1YzMtYmYyMTM4MWRjY2JjZTM0OWVlM2MtMTQzMi00ODhlLThmYzQtYzBiNGU3N2FkYzlk&state=CfDJ8FWvNGhp_oRGpUI8m43VBQgP9QugSP_JiiF_cBpqhdvJ4PCT0UY91UuTS8vMPKMm7oiiq6dZHQ-4gfUiVfbrr5JR49gu5YvPazy6gmfcah2RZF18JWAW4nTvo5ro7Ven3UcQJxcrGKiCzLlW4eFLZvxJaMGTibDyYFPcnNYd7Y7ohWQfh_hj6dT4F_xMpE7VyGvMYucwTI2EKVWF92O5yIbes3ZXIS3a7_ZgelyUxlXJRwnIZekL6PxW6DPWxGIgU0aYMmgsTsqjdvx-MrVTn6cfOLX_TGoW0NXlk6ECbkd7ZbG9CdmTgU6J9gpDvX-3Bw&x-client-SKU=ID_NETSTANDARD2_0&x-client-ver=6.10.0.0 - -
+2022-12-12 15:27:14.228 +03:00 [DBG] Request path /connect/authorize/callback matched to endpoint type Authorize
+2022-12-12 15:27:14.231 +03:00 [DBG] Endpoint enabled: Authorize, successfully created handler: IdentityServer4.Endpoints.AuthorizeCallbackEndpoint
+2022-12-12 15:27:14.231 +03:00 [INF] Invoking IdentityServer endpoint: IdentityServer4.Endpoints.AuthorizeCallbackEndpoint for /connect/authorize/callback
+2022-12-12 15:27:14.241 +03:00 [DBG] Start authorize callback request
+2022-12-12 15:27:14.248 +03:00 [DBG] User in authorize request: 4d99b54e-d1b0-2106-51f4-3a0813a56955
+2022-12-12 15:27:14.248 +03:00 [DBG] Start authorize request protocol validation
+2022-12-12 15:27:14.281 +03:00 [DBG] client configuration validation for client backend-admin-app-client succeeded.
+2022-12-12 15:27:14.281 +03:00 [DBG] Checking for PKCE parameters
+2022-12-12 15:27:14.281 +03:00 [DBG] No PKCE used.
+2022-12-12 15:27:14.362 +03:00 [DBG] Calling into custom validator: IdentityServer4.Validation.DefaultCustomAuthorizeRequestValidator
+2022-12-12 15:27:14.362 +03:00 [DBG] ValidatedAuthorizeRequest
+{"ClientId":"backend-admin-app-client","ClientName":"backend-admin-app-client","RedirectUri":"https://localhost:44354/signin-oidc","AllowedRedirectUris":["https://localhost:44354/signin-oidc"],"SubjectId":"4d99b54e-d1b0-2106-51f4-3a0813a56955","ResponseType":"code id_token","ResponseMode":"form_post","GrantType":"hybrid","RequestedScopes":"openid profile role email phone BackendAdminAppGateway IdentityService ProductService TenantManagementService","State":"CfDJ8FWvNGhp_oRGpUI8m43VBQgP9QugSP_JiiF_cBpqhdvJ4PCT0UY91UuTS8vMPKMm7oiiq6dZHQ-4gfUiVfbrr5JR49gu5YvPazy6gmfcah2RZF18JWAW4nTvo5ro7Ven3UcQJxcrGKiCzLlW4eFLZvxJaMGTibDyYFPcnNYd7Y7ohWQfh_hj6dT4F_xMpE7VyGvMYucwTI2EKVWF92O5yIbes3ZXIS3a7_ZgelyUxlXJRwnIZekL6PxW6DPWxGIgU0aYMmgsTsqjdvx-MrVTn6cfOLX_TGoW0NXlk6ECbkd7ZbG9CdmTgU6J9gpDvX-3Bw","UiLocales":null,"Nonce":"638064448230208701.NDliMTFhNDAtN2RkMC00YjA3LTg1YzMtYmYyMTM4MWRjY2JjZTM0OWVlM2MtMTQzMi00ODhlLThmYzQtYzBiNGU3N2FkYzlk","AuthenticationContextReferenceClasses":null,"DisplayMode":null,"PromptMode":"","MaxAge":null,"LoginHint":null,"SessionId":"315AA1AAFEFD060065D37F181174C730","Raw":{"client_id":"backend-admin-app-client","redirect_uri":"https://localhost:44354/signin-oidc","response_type":"code id_token","scope":"openid profile role email phone BackendAdminAppGateway IdentityService ProductService TenantManagementService","response_mode":"form_post","nonce":"638064448230208701.NDliMTFhNDAtN2RkMC00YjA3LTg1YzMtYmYyMTM4MWRjY2JjZTM0OWVlM2MtMTQzMi00ODhlLThmYzQtYzBiNGU3N2FkYzlk","state":"CfDJ8FWvNGhp_oRGpUI8m43VBQgP9QugSP_JiiF_cBpqhdvJ4PCT0UY91UuTS8vMPKMm7oiiq6dZHQ-4gfUiVfbrr5JR49gu5YvPazy6gmfcah2RZF18JWAW4nTvo5ro7Ven3UcQJxcrGKiCzLlW4eFLZvxJaMGTibDyYFPcnNYd7Y7ohWQfh_hj6dT4F_xMpE7VyGvMYucwTI2EKVWF92O5yIbes3ZXIS3a7_ZgelyUxlXJRwnIZekL6PxW6DPWxGIgU0aYMmgsTsqjdvx-MrVTn6cfOLX_TGoW0NXlk6ECbkd7ZbG9CdmTgU6J9gpDvX-3Bw","x-client-SKU":"ID_NETSTANDARD2_0","x-client-ver":"6.10.0.0"},"$type":"AuthorizeRequestValidationLog"}
+2022-12-12 15:27:14.494 +03:00 [DBG] Client is configured to not require consent, no consent is required
+2022-12-12 15:27:14.501 +03:00 [DBG] Creating Hybrid Flow response.
+2022-12-12 15:27:14.798 +03:00 [DBG] Creating Implicit Flow response.
+2022-12-12 15:27:14.811 +03:00 [DBG] Getting claims for identity token for subject: 4d99b54e-d1b0-2106-51f4-3a0813a56955 and client: backend-admin-app-client
+2022-12-12 15:27:16.100 +03:00 [INF] {"ClientId":"backend-admin-app-client","ClientName":"backend-admin-app-client","RedirectUri":"https://localhost:44354/signin-oidc","Endpoint":"Authorize","SubjectId":"4d99b54e-d1b0-2106-51f4-3a0813a56955","Scopes":"openid profile role email phone BackendAdminAppGateway IdentityService ProductService TenantManagementService","GrantType":"hybrid","Tokens":[{"TokenType":"id_token","TokenValue":"****mEgQ","$type":"Token"},{"TokenType":"code","TokenValue":"****5501","$type":"Token"}],"Category":"Token","Name":"Token Issued Success","EventType":"Success","Id":2000,"Message":null,"ActivityId":"0HMMS7G3GVJI9:0000000D","TimeStamp":"2022-12-12T12:27:16.0000000Z","ProcessId":16264,"LocalIpAddress":"::1:44330","RemoteIpAddress":"::1","$type":"TokenIssuedSuccessEvent"}
+2022-12-12 15:27:16.105 +03:00 [DBG] Authorize endpoint response
+{"SubjectId":"4d99b54e-d1b0-2106-51f4-3a0813a56955","ClientId":"backend-admin-app-client","RedirectUri":"https://localhost:44354/signin-oidc","State":"CfDJ8FWvNGhp_oRGpUI8m43VBQgP9QugSP_JiiF_cBpqhdvJ4PCT0UY91UuTS8vMPKMm7oiiq6dZHQ-4gfUiVfbrr5JR49gu5YvPazy6gmfcah2RZF18JWAW4nTvo5ro7Ven3UcQJxcrGKiCzLlW4eFLZvxJaMGTibDyYFPcnNYd7Y7ohWQfh_hj6dT4F_xMpE7VyGvMYucwTI2EKVWF92O5yIbes3ZXIS3a7_ZgelyUxlXJRwnIZekL6PxW6DPWxGIgU0aYMmgsTsqjdvx-MrVTn6cfOLX_TGoW0NXlk6ECbkd7ZbG9CdmTgU6J9gpDvX-3Bw","Scope":"openid profile role email phone BackendAdminAppGateway IdentityService ProductService TenantManagementService","Error":null,"ErrorDescription":null,"$type":"AuthorizeResponseLog"}
+2022-12-12 15:27:16.124 +03:00 [DBG] Augmenting SignInContext
+2022-12-12 15:27:16.125 +03:00 [INF] AuthenticationScheme: Identity.Application signed in.
+2022-12-12 15:27:16.161 +03:00 [INF] Request finished HTTP/2 GET https://localhost:44330/connect/authorize/callback?client_id=backend-admin-app-client&redirect_uri=https%3A%2F%2Flocalhost%3A44354%2Fsignin-oidc&response_type=code%20id_token&scope=openid%20profile%20role%20email%20phone%20BackendAdminAppGateway%20IdentityService%20ProductService%20TenantManagementService&response_mode=form_post&nonce=638064448230208701.NDliMTFhNDAtN2RkMC00YjA3LTg1YzMtYmYyMTM4MWRjY2JjZTM0OWVlM2MtMTQzMi00ODhlLThmYzQtYzBiNGU3N2FkYzlk&state=CfDJ8FWvNGhp_oRGpUI8m43VBQgP9QugSP_JiiF_cBpqhdvJ4PCT0UY91UuTS8vMPKMm7oiiq6dZHQ-4gfUiVfbrr5JR49gu5YvPazy6gmfcah2RZF18JWAW4nTvo5ro7Ven3UcQJxcrGKiCzLlW4eFLZvxJaMGTibDyYFPcnNYd7Y7ohWQfh_hj6dT4F_xMpE7VyGvMYucwTI2EKVWF92O5yIbes3ZXIS3a7_ZgelyUxlXJRwnIZekL6PxW6DPWxGIgU0aYMmgsTsqjdvx-MrVTn6cfOLX_TGoW0NXlk6ECbkd7ZbG9CdmTgU6J9gpDvX-3Bw&x-client-SKU=ID_NETSTANDARD2_0&x-client-ver=6.10.0.0 - - - 200 - text/html;+charset=UTF-8 1955.5182ms
+2022-12-12 15:27:16.731 +03:00 [INF] Request starting HTTP/1.1 POST https://localhost:44330/connect/token application/x-www-form-urlencoded 217
+2022-12-12 15:27:16.751 +03:00 [DBG] Request path /connect/token matched to endpoint type Token
+2022-12-12 15:27:17.062 +03:00 [DBG] Endpoint enabled: Token, successfully created handler: IdentityServer4.Endpoints.TokenEndpoint
+2022-12-12 15:27:17.062 +03:00 [INF] Invoking IdentityServer endpoint: IdentityServer4.Endpoints.TokenEndpoint for /connect/token
+2022-12-12 15:27:17.074 +03:00 [DBG] Start token request.
+2022-12-12 15:27:17.084 +03:00 [DBG] Start client validation
+2022-12-12 15:27:17.094 +03:00 [DBG] Start parsing Basic Authentication secret
+2022-12-12 15:27:17.099 +03:00 [DBG] Start parsing for secret in post body
+2022-12-12 15:27:17.099 +03:00 [DBG] Parser found secret: PostBodySecretParser
+2022-12-12 15:27:17.099 +03:00 [DBG] Secret id found: backend-admin-app-client
+2022-12-12 15:27:17.120 +03:00 [DBG] client configuration validation for client backend-admin-app-client succeeded.
+2022-12-12 15:27:17.135 +03:00 [DBG] Secret validator success: HashedSharedSecretValidator
+2022-12-12 15:27:17.135 +03:00 [DBG] Client validation success
+2022-12-12 15:27:17.136 +03:00 [INF] {"ClientId":"backend-admin-app-client","AuthenticationMethod":"SharedSecret","Category":"Authentication","Name":"Client Authentication Success","EventType":"Success","Id":1010,"Message":null,"ActivityId":"0HMMS7G3GVJI8:00000004","TimeStamp":"2022-12-12T12:27:17.0000000Z","ProcessId":16264,"LocalIpAddress":"::1:44330","RemoteIpAddress":"::1","$type":"ClientAuthenticationSuccessEvent"}
+2022-12-12 15:27:17.147 +03:00 [DBG] Start token request validation
+2022-12-12 15:27:17.163 +03:00 [DBG] Start validation of authorization code token request
+2022-12-12 15:27:17.506 +03:00 [DBG] Validation of authorization code token request success
+2022-12-12 15:27:17.511 +03:00 [INF] Token request validation success, {"ClientId":"backend-admin-app-client","ClientName":"backend-admin-app-client","GrantType":"authorization_code","Scopes":null,"AuthorizationCode":"****5501","RefreshToken":"********","UserName":null,"AuthenticationContextReferenceClasses":null,"Tenant":null,"IdP":null,"Raw":{"client_id":"backend-admin-app-client","client_secret":"***REDACTED***","code":"1D4C349F12F44F5F25E089D42730936D0971F585797D787923107AD86F9E5501","grant_type":"authorization_code","redirect_uri":"https://localhost:44354/signin-oidc"},"$type":"TokenRequestValidationLog"}
+2022-12-12 15:27:17.565 +03:00 [DBG] client configuration validation for client backend-admin-app-client succeeded.
+2022-12-12 15:27:17.683 +03:00 [DBG] Getting claims for access token for client: backend-admin-app-client
+2022-12-12 15:27:17.684 +03:00 [DBG] Getting claims for access token for subject: 4d99b54e-d1b0-2106-51f4-3a0813a56955
+2022-12-12 15:27:17.782 +03:00 [DBG] client configuration validation for client backend-admin-app-client succeeded.
+2022-12-12 15:27:17.905 +03:00 [DBG] Getting claims for identity token for subject: 4d99b54e-d1b0-2106-51f4-3a0813a56955 and client: backend-admin-app-client
+2022-12-12 15:27:17.973 +03:00 [INF] {"ClientId":"backend-admin-app-client","ClientName":"backend-admin-app-client","RedirectUri":null,"Endpoint":"Token","SubjectId":"4d99b54e-d1b0-2106-51f4-3a0813a56955","Scopes":"openid profile role email phone BackendAdminAppGateway IdentityService ProductService TenantManagementService","GrantType":"authorization_code","Tokens":[{"TokenType":"id_token","TokenValue":"****eiHA","$type":"Token"},{"TokenType":"access_token","TokenValue":"****PP0Q","$type":"Token"}],"Category":"Token","Name":"Token Issued Success","EventType":"Success","Id":2000,"Message":null,"ActivityId":"0HMMS7G3GVJI8:00000004","TimeStamp":"2022-12-12T12:27:17.0000000Z","ProcessId":16264,"LocalIpAddress":"::1:44330","RemoteIpAddress":"::1","$type":"TokenIssuedSuccessEvent"}
+2022-12-12 15:27:17.974 +03:00 [DBG] Token request success.
+2022-12-12 15:27:17.982 +03:00 [INF] Request finished HTTP/1.1 POST https://localhost:44330/connect/token application/x-www-form-urlencoded 217 - 200 - application/json;+charset=UTF-8 1250.7608ms
+2022-12-12 15:27:18.031 +03:00 [INF] Request starting HTTP/1.1 GET https://localhost:44330/connect/userinfo - -
+2022-12-12 15:27:18.033 +03:00 [DBG] Request path /connect/userinfo matched to endpoint type Userinfo
+2022-12-12 15:27:18.043 +03:00 [DBG] Endpoint enabled: Userinfo, successfully created handler: IdentityServer4.Endpoints.UserInfoEndpoint
+2022-12-12 15:27:18.043 +03:00 [INF] Invoking IdentityServer endpoint: IdentityServer4.Endpoints.UserInfoEndpoint for /connect/userinfo
+2022-12-12 15:27:18.053 +03:00 [DBG] Start userinfo request
+2022-12-12 15:27:18.059 +03:00 [DBG] Bearer token found in header
+2022-12-12 15:27:18.201 +03:00 [DBG] client configuration validation for client backend-admin-app-client succeeded.
+2022-12-12 15:27:18.216 +03:00 [DBG] client configuration validation for client backend-admin-app-client succeeded.
+2022-12-12 15:27:18.240 +03:00 [DBG] Calling into custom token validator: IdentityServer4.Validation.DefaultCustomTokenValidator
+2022-12-12 15:27:18.243 +03:00 [DBG] Token validation success
+{"ClientId":null,"ClientName":null,"ValidateLifetime":true,"AccessTokenType":"Jwt","ExpectedScope":"openid","TokenHandle":null,"JwtId":null,"Claims":{"nbf":1670848037,"exp":1702384037,"iss":"https://localhost:44330","aud":["BackendAdminAppGateway","IdentityService","ProductService","TenantManagementService"],"client_id":"backend-admin-app-client","sub":"4d99b54e-d1b0-2106-51f4-3a0813a56955","auth_time":1670848033,"idp":"local","http://schemas.xmlsoap.org/ws/2005/05/identity/claims/givenname":"admin","preferred_username":"admin","given_name":"admin","role":"admin","phone_number_verified":"False","email":"admin@abp.io","email_verified":"False","name":"admin","sid":"315AA1AAFEFD060065D37F181174C730","iat":1670848037,"scope":["openid","profile","role","email","phone","BackendAdminAppGateway","IdentityService","ProductService","TenantManagementService"],"amr":"pwd"},"$type":"TokenValidationLog"}
+2022-12-12 15:27:18.305 +03:00 [DBG] Creating userinfo response
+2022-12-12 15:27:18.312 +03:00 [DBG] Scopes in access token: openid profile role email phone BackendAdminAppGateway IdentityService ProductService TenantManagementService
+2022-12-12 15:27:18.362 +03:00 [DBG] Requested claim types: sub birthdate family_name gender given_name locale middle_name name nickname picture preferred_username profile updated_at website zoneinfo role email email_verified phone_number phone_number_verified
+2022-12-12 15:27:18.429 +03:00 [INF] Profile service returned the following claim types: sub role phone_number_verified email email_verified preferred_username name given_name
+2022-12-12 15:27:18.429 +03:00 [DBG] End userinfo request
+2022-12-12 15:27:18.433 +03:00 [INF] Request finished HTTP/1.1 GET https://localhost:44330/connect/userinfo - - - 200 - application/json;+charset=UTF-8 402.0991ms
+2022-12-12 15:27:18.855 +03:00 [INF] Request starting HTTP/1.1 GET https://localhost:44330/.well-known/openid-configuration - -
+2022-12-12 15:27:18.857 +03:00 [DBG] Request path /.well-known/openid-configuration matched to endpoint type Discovery
+2022-12-12 15:27:18.864 +03:00 [DBG] Endpoint enabled: Discovery, successfully created handler: IdentityServer4.Endpoints.DiscoveryEndpoint
+2022-12-12 15:27:18.864 +03:00 [INF] Invoking IdentityServer endpoint: IdentityServer4.Endpoints.DiscoveryEndpoint for /.well-known/openid-configuration
+2022-12-12 15:27:18.865 +03:00 [DBG] Start discovery request
+2022-12-12 15:27:18.877 +03:00 [INF] Request finished HTTP/1.1 GET https://localhost:44330/.well-known/openid-configuration - - - 200 - application/json;+charset=UTF-8 22.2949ms
+2022-12-12 15:27:19.056 +03:00 [INF] Request starting HTTP/1.1 GET https://localhost:44330/.well-known/openid-configuration/jwks - -
+2022-12-12 15:27:19.057 +03:00 [DBG] Request path /.well-known/openid-configuration/jwks matched to endpoint type Discovery
+2022-12-12 15:27:19.059 +03:00 [DBG] Endpoint enabled: Discovery, successfully created handler: IdentityServer4.Endpoints.DiscoveryKeyEndpoint
+2022-12-12 15:27:19.059 +03:00 [INF] Invoking IdentityServer endpoint: IdentityServer4.Endpoints.DiscoveryKeyEndpoint for /.well-known/openid-configuration/jwks
+2022-12-12 15:27:19.059 +03:00 [DBG] Start key discovery request
+2022-12-12 15:27:19.060 +03:00 [INF] Request finished HTTP/1.1 GET https://localhost:44330/.well-known/openid-configuration/jwks - - - 200 - application/json;+charset=UTF-8 3.8204ms
+2022-12-12 15:27:29.884 +03:00 [INF] Request starting HTTP/1.1 GET https://localhost:44330/.well-known/openid-configuration - -
+2022-12-12 15:27:29.886 +03:00 [DBG] Request path /.well-known/openid-configuration matched to endpoint type Discovery
+2022-12-12 15:27:29.890 +03:00 [DBG] Endpoint enabled: Discovery, successfully created handler: IdentityServer4.Endpoints.DiscoveryEndpoint
+2022-12-12 15:27:29.890 +03:00 [INF] Invoking IdentityServer endpoint: IdentityServer4.Endpoints.DiscoveryEndpoint for /.well-known/openid-configuration
+2022-12-12 15:27:29.890 +03:00 [DBG] Start discovery request
+2022-12-12 15:27:29.906 +03:00 [INF] Request finished HTTP/1.1 GET https://localhost:44330/.well-known/openid-configuration - - - 200 - application/json;+charset=UTF-8 21.8782ms
+2022-12-12 15:27:30.283 +03:00 [INF] Request starting HTTP/1.1 GET https://localhost:44330/.well-known/openid-configuration/jwks - -
+2022-12-12 15:27:30.285 +03:00 [DBG] Request path /.well-known/openid-configuration/jwks matched to endpoint type Discovery
+2022-12-12 15:27:30.289 +03:00 [DBG] Endpoint enabled: Discovery, successfully created handler: IdentityServer4.Endpoints.DiscoveryKeyEndpoint
+2022-12-12 15:27:30.289 +03:00 [INF] Invoking IdentityServer endpoint: IdentityServer4.Endpoints.DiscoveryKeyEndpoint for /.well-known/openid-configuration/jwks
+2022-12-12 15:27:30.289 +03:00 [DBG] Start key discovery request
+2022-12-12 15:27:30.290 +03:00 [INF] Request finished HTTP/1.1 GET https://localhost:44330/.well-known/openid-configuration/jwks - - - 200 - application/json;+charset=UTF-8 6.4838ms
