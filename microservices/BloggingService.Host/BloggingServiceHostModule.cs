@@ -58,6 +58,7 @@ namespace BloggingService.Host
         )]
     public class BloggingServiceHostModule : AbpModule
     {
+        [Obsolete]
         public override void ConfigureServices(ServiceConfigurationContext context)
         {
             var configuration = context.Services.GetConfiguration();

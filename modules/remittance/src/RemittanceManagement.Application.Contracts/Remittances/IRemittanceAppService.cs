@@ -27,7 +27,9 @@ namespace RemittanceManagement.Remittances
         Task DeleteAsync(Guid id);
 
         //Task<ListResultDto<CurrencyLookupDto>> GetCurrencyLookupAsync();
+
         //Task<ListResultDto<CustomerLookupDto>> GetCustomerLookupAsync();
+
         //Task<ListResultDto<UserLookupDto>> GetUserLookupAsync();
         Task SetReady(RemittanceDto input);
         Task SetApprove(RemittanceDto input);

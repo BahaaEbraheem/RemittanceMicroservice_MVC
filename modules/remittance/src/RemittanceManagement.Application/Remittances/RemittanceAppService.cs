@@ -37,7 +37,7 @@ using CustomerManagement.Customers;
 
 namespace RemittanceManagement.Remittances
 {
-    [Authorize(RemittanceManagementPermissions.Remittances.Default)]
+    //[Authorize(RemittanceManagementPermissions.Remittances.Default)]
 
     public class RemittanceAppService : RemittanceManagementAppService, IRemittanceAppService, ITransientDependency
     {
@@ -73,7 +73,7 @@ namespace RemittanceManagement.Remittances
 
 
         }
-        [Authorize(RemittanceManagementPermissions.Remittances.Create)]
+        //[Authorize(RemittanceManagementPermissions.Remittances.Create)]
 
         public async Task<RemittanceDto> CreateAsync(CreateRemittanceDto input)
         {
@@ -144,7 +144,7 @@ namespace RemittanceManagement.Remittances
 
         }
 
-        [Authorize(RemittanceManagementPermissions.Remittances.Delete)]
+        //[Authorize(RemittanceManagementPermissions.Remittances.Delete)]
 
         public async Task DeleteAsync(Guid id)
         {
@@ -282,7 +282,7 @@ namespace RemittanceManagement.Remittances
 
 
 
-        [Authorize(RemittanceManagementPermissions.Remittances.Edit)]
+        //[Authorize(RemittanceManagementPermissions.Remittances.Edit)]
         public async Task UpdateAsync(Guid id, UpdateRemittanceDto input)
         {
             try
@@ -357,7 +357,7 @@ namespace RemittanceManagement.Remittances
 
 
 
-        [Authorize(RemittanceManagementPermissions.Status.Ready)]
+        //[Authorize(RemittanceManagementPermissions.Status.Ready)]
 
         public async Task SetReady(RemittanceDto input)
         {
@@ -394,7 +394,7 @@ namespace RemittanceManagement.Remittances
 
 
 
-        [Authorize(RemittanceManagementPermissions.Status.Approved)]
+        //[Authorize(RemittanceManagementPermissions.Status.Approved)]
 
         public async Task SetApprove(RemittanceDto input)
         {
@@ -429,7 +429,7 @@ namespace RemittanceManagement.Remittances
 
 
 
-        [Authorize(RemittanceManagementPermissions.Status.Released)]
+        //[Authorize(RemittanceManagementPermissions.Status.Released)]
         public async Task SetRelease(RemittanceDto input)
         {
             try
@@ -665,7 +665,7 @@ namespace RemittanceManagement.Remittances
 
        
 
-        [Authorize(RemittanceManagementPermissions.Status.Create)]
+        //[Authorize(RemittanceManagementPermissions.Status.Create)]
 
         public async Task<PagedResultDto<RemittanceDto>> GetListRemittancesForCreator(GetRemittanceListPagedAndSortedResultRequestDto input)
         {
@@ -727,7 +727,7 @@ namespace RemittanceManagement.Remittances
             );
         }
 
-        [Authorize(RemittanceManagementPermissions.Status.Approved)]
+        //[Authorize(RemittanceManagementPermissions.Status.Approved)]
 
         public async Task<PagedResultDto<RemittanceDto>> GetListRemittancesForSupervisor(GetRemittanceListPagedAndSortedResultRequestDto input)
         {
@@ -804,7 +804,7 @@ namespace RemittanceManagement.Remittances
         }
 
 
-        [Authorize(RemittanceManagementPermissions.Status.Released)]
+        //[Authorize(RemittanceManagementPermissions.Status.Released)]
 
         public async Task<PagedResultDto<RemittanceDto>> GetListRemittancesForReleaser(GetRemittanceListPagedAndSortedResultRequestDto input)
         {

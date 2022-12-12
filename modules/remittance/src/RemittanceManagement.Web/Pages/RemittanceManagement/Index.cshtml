@@ -5,7 +5,42 @@
 @model RemittanceManagement.Web.Pages.RemittanceManagement.IndexModel
 @inject IStringLocalizer<RemittanceManagementResource> L
 
-@{
+
+@section scripts
+{
+    <abp-script src="/Pages/RemittanceManagement/Index.js" />
 }
-<h1>RemittanceManagement</h1>
-<p>@L["SamplePageMessage"]</p>
+
+<abp-card>
+        <abp-card-header>
+            <abp-row>
+                <abp-column size-md="_6">
+                    <h2>@L["Remittances"]</h2>
+                </abp-column>
+                <abp-column size-md="_6" class="text-right">
+                @*@if (await Authorization.IsGrantedAsync(ProductManagementPermissions.Products.Create))
+                {*@
+                    <abp-button icon="plus" text="@L["CreateNewRemittance"].Value" button-type="Primary" id="CreateNewRemittanceButtonId"></abp-button>
+               @* }*@
+            </abp-column>
+        </abp-row>
+        </abp-card-header>
+    <abp-card-body>
+            <abp-table striped-rows="true" id="RemittancesTable" class="nowrap">
+                <thead>
+                    <tr>
+                        <th>@L["Actions"]</th>
+                        <th>@L["SerialNumber"]</th>
+                        <th>@L["Amount"]</th>
+                        <th>@L["TotalAmount"]</th>
+                        <th>@L["ReceiverFullName"]</th>
+                        <th>@L["CurrencyName"]</th>
+                        <th>@L["SenderName"]</th>
+                        <th>@L["State"]</th>
+                        <th>@L["StatusDate"]</th>
+                        <th>@L["CreationTime"]</th>
+                    </tr>
+                </thead>
+            </abp-table>
+    </abp-card-body>
+</abp-card>

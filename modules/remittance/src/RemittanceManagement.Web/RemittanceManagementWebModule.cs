@@ -24,6 +24,7 @@ public class RemittanceManagementWebModule : AbpModule
         context.Services.PreConfigure<AbpMvcDataAnnotationsLocalizationOptions>(options =>
         {
             options.AddAssemblyResource(typeof(RemittanceManagementResource), typeof(RemittanceManagementWebModule).Assembly);
+       
         });
 
         PreConfigure<IMvcBuilder>(mvcBuilder =>

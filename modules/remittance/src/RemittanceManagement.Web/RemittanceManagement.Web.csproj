@@ -38,4 +38,15 @@
     <Content Remove="wwwroot\**\*.*" />
   </ItemGroup>
 
+  <ItemGroup>
+    <None Remove="Pages\RemittanceManagement\Index.js" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Content Update="Pages\RemittanceManagement\Index.cshtml">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+  </ItemGroup>
+
 </Project>

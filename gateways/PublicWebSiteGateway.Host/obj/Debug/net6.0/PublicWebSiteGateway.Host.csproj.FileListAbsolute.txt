@@ -1525,9 +1525,14 @@ C:\Users\Admin\Source\Repos\RemittanceMicroservice_MVC\gateways\PublicWebSiteGat
 C:\Users\Admin\Source\Repos\RemittanceMicroservice_MVC\gateways\PublicWebSiteGateway.Host\bin\Debug\net6.0\ProductManagement.Application.Contracts.dll
 C:\Users\Admin\Source\Repos\RemittanceMicroservice_MVC\gateways\PublicWebSiteGateway.Host\bin\Debug\net6.0\ProductManagement.Domain.Shared.dll
 C:\Users\Admin\Source\Repos\RemittanceMicroservice_MVC\gateways\PublicWebSiteGateway.Host\bin\Debug\net6.0\ProductManagement.HttpApi.dll
+C:\Users\Admin\Source\Repos\RemittanceMicroservice_MVC\gateways\PublicWebSiteGateway.Host\bin\Debug\net6.0\RemittanceManagement.Application.Contracts.dll
+C:\Users\Admin\Source\Repos\RemittanceMicroservice_MVC\gateways\PublicWebSiteGateway.Host\bin\Debug\net6.0\RemittanceManagement.Domain.dll
+C:\Users\Admin\Source\Repos\RemittanceMicroservice_MVC\gateways\PublicWebSiteGateway.Host\bin\Debug\net6.0\RemittanceManagement.Domain.Shared.dll
+C:\Users\Admin\Source\Repos\RemittanceMicroservice_MVC\gateways\PublicWebSiteGateway.Host\bin\Debug\net6.0\RemittanceManagement.HttpApi.dll
 C:\Users\Admin\Source\Repos\RemittanceMicroservice_MVC\gateways\PublicWebSiteGateway.Host\bin\Debug\net6.0\CurrencyManagment.HttpApi.pdb
 C:\Users\Admin\Source\Repos\RemittanceMicroservice_MVC\gateways\PublicWebSiteGateway.Host\bin\Debug\net6.0\CustomerManagement.HttpApi.pdb
 C:\Users\Admin\Source\Repos\RemittanceMicroservice_MVC\gateways\PublicWebSiteGateway.Host\bin\Debug\net6.0\ProductManagement.HttpApi.pdb
+C:\Users\Admin\Source\Repos\RemittanceMicroservice_MVC\gateways\PublicWebSiteGateway.Host\bin\Debug\net6.0\RemittanceManagement.HttpApi.pdb
 C:\Users\Admin\Source\Repos\RemittanceMicroservice_MVC\gateways\PublicWebSiteGateway.Host\bin\Debug\net6.0\MsDemo.Shared.pdb
 C:\Users\Admin\Source\Repos\RemittanceMicroservice_MVC\gateways\PublicWebSiteGateway.Host\bin\Debug\net6.0\CurrencyManagment.Application.Contracts.pdb
 C:\Users\Admin\Source\Repos\RemittanceMicroservice_MVC\gateways\PublicWebSiteGateway.Host\bin\Debug\net6.0\CurrencyManagment.Domain.Shared.pdb
@@ -1535,6 +1540,9 @@ C:\Users\Admin\Source\Repos\RemittanceMicroservice_MVC\gateways\PublicWebSiteGat
 C:\Users\Admin\Source\Repos\RemittanceMicroservice_MVC\gateways\PublicWebSiteGateway.Host\bin\Debug\net6.0\CustomerManagement.Domain.Shared.pdb
 C:\Users\Admin\Source\Repos\RemittanceMicroservice_MVC\gateways\PublicWebSiteGateway.Host\bin\Debug\net6.0\ProductManagement.Application.Contracts.pdb
 C:\Users\Admin\Source\Repos\RemittanceMicroservice_MVC\gateways\PublicWebSiteGateway.Host\bin\Debug\net6.0\ProductManagement.Domain.Shared.pdb
+C:\Users\Admin\Source\Repos\RemittanceMicroservice_MVC\gateways\PublicWebSiteGateway.Host\bin\Debug\net6.0\RemittanceManagement.Application.Contracts.pdb
+C:\Users\Admin\Source\Repos\RemittanceMicroservice_MVC\gateways\PublicWebSiteGateway.Host\bin\Debug\net6.0\RemittanceManagement.Domain.pdb
+C:\Users\Admin\Source\Repos\RemittanceMicroservice_MVC\gateways\PublicWebSiteGateway.Host\bin\Debug\net6.0\RemittanceManagement.Domain.Shared.pdb
 C:\Users\Admin\Source\Repos\RemittanceMicroservice_MVC\gateways\PublicWebSiteGateway.Host\obj\Debug\net6.0\PublicWebSiteGateway.Host.csproj.AssemblyReference.cache
 C:\Users\Admin\Source\Repos\RemittanceMicroservice_MVC\gateways\PublicWebSiteGateway.Host\obj\Debug\net6.0\PublicWebSiteGateway.Host.csproj.SuggestedBindingRedirects.cache
 C:\Users\Admin\Source\Repos\RemittanceMicroservice_MVC\gateways\PublicWebSiteGateway.Host\obj\Debug\net6.0\PublicWebSiteGateway.Host.dll.config
@@ -1558,9 +1566,3 @@ C:\Users\Admin\Source\Repos\RemittanceMicroservice_MVC\gateways\PublicWebSiteGat
 C:\Users\Admin\Source\Repos\RemittanceMicroservice_MVC\gateways\PublicWebSiteGateway.Host\obj\Debug\net6.0\PublicWebSiteGateway.Host.pdb
 C:\Users\Admin\Source\Repos\RemittanceMicroservice_MVC\gateways\PublicWebSiteGateway.Host\obj\Debug\net6.0\PublicWebSiteGateway.Host.genruntimeconfig.cache
 C:\Users\Admin\Source\Repos\RemittanceMicroservice_MVC\gateways\PublicWebSiteGateway.Host\obj\Debug\net6.0\ref\PublicWebSiteGateway.Host.dll
-C:\Users\Admin\Source\Repos\RemittanceMicroservice_MVC\gateways\PublicWebSiteGateway.Host\bin\Debug\net6.0\RemittanceManagement.Application.Contracts.dll
-C:\Users\Admin\Source\Repos\RemittanceMicroservice_MVC\gateways\PublicWebSiteGateway.Host\bin\Debug\net6.0\RemittanceManagement.Domain.Shared.dll
-C:\Users\Admin\Source\Repos\RemittanceMicroservice_MVC\gateways\PublicWebSiteGateway.Host\bin\Debug\net6.0\RemittanceManagement.HttpApi.dll
-C:\Users\Admin\Source\Repos\RemittanceMicroservice_MVC\gateways\PublicWebSiteGateway.Host\bin\Debug\net6.0\RemittanceManagement.HttpApi.pdb
-C:\Users\Admin\Source\Repos\RemittanceMicroservice_MVC\gateways\PublicWebSiteGateway.Host\bin\Debug\net6.0\RemittanceManagement.Application.Contracts.pdb
-C:\Users\Admin\Source\Repos\RemittanceMicroservice_MVC\gateways\PublicWebSiteGateway.Host\bin\Debug\net6.0\RemittanceManagement.Domain.Shared.pdb

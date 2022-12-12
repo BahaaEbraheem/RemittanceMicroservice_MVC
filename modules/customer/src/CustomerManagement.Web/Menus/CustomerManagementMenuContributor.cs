@@ -1,4 +1,5 @@
-﻿using System.Threading.Tasks;
+﻿using CustomerManagement.Localization;
+using System.Threading.Tasks;
 using Volo.Abp.UI.Navigation;
 
 namespace CustomerManagement.Web.Menus;
@@ -15,8 +16,10 @@ public class CustomerManagementMenuContributor : IMenuContributor
 
     private Task ConfigureMainMenuAsync(MenuConfigurationContext context)
     {
+        var l = context.GetLocalizer<CustomerManagementResource>();
+
         //Add main menu items.
-        context.Menu.AddItem(new ApplicationMenuItem(CustomerManagementMenus.Prefix, displayName: "CustomerManagement", "~/CustomerManagement", icon: "fa fa-globe"));
+        context.Menu.AddItem(new ApplicationMenuItem(CustomerManagementMenus.Prefix, displayName: l["Menu:CustomerManagement"] , "~/CustomerManagement", icon: "fa fa-globe"));
 
         return Task.CompletedTask;
     }

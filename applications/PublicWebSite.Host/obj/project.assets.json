@@ -4706,6 +4706,7 @@
         "type": "project",
         "framework": ".NETStandard,Version=v2.0",
         "dependencies": {
+          "RemittanceManagement.Domain": "0.1.0",
           "RemittanceManagement.Domain.Shared": "0.1.0",
           "Volo.Abp.Authorization": "6.0.2",
           "Volo.Abp.Ddd.Application.Contracts": "6.0.2"
@@ -4715,6 +4716,20 @@
         },
         "runtime": {
           "bin/placeholder/RemittanceManagement.Application.Contracts.dll": {}
+        }
+      },
+      "RemittanceManagement.Domain/0.1.0": {
+        "type": "project",
+        "framework": ".NETStandard,Version=v2.0",
+        "dependencies": {
+          "RemittanceManagement.Domain.Shared": "0.1.0",
+          "Volo.Abp.Ddd.Domain": "6.0.2"
+        },
+        "compile": {
+          "bin/placeholder/RemittanceManagement.Domain.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/RemittanceManagement.Domain.dll": {}
         }
       },
       "RemittanceManagement.Domain.Shared/0.1.0": {
@@ -12082,6 +12097,11 @@
       "type": "project",
       "path": "../../modules/remittance/src/RemittanceManagement.Application.Contracts/RemittanceManagement.Application.Contracts.csproj",
       "msbuildProject": "../../modules/remittance/src/RemittanceManagement.Application.Contracts/RemittanceManagement.Application.Contracts.csproj"
+    },
+    "RemittanceManagement.Domain/0.1.0": {
+      "type": "project",
+      "path": "../../modules/remittance/src/RemittanceManagement.Domain/RemittanceManagement.Domain.csproj",
+      "msbuildProject": "../../modules/remittance/src/RemittanceManagement.Domain/RemittanceManagement.Domain.csproj"
     },
     "RemittanceManagement.Domain.Shared/0.1.0": {
       "type": "project",

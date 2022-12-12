@@ -2533,3 +2533,853 @@ Volo.Abp.AbpInitializationException: An error occurred during ConfigureServices 
 2022-12-10 13:28:08.354 +03:00 [DBG] AuthenticationScheme: Bearer was not authenticated.
 2022-12-10 13:28:08.354 +03:00 [INF] Sending file. Request path: '/favicon-32x32.png'. Physical path: 'N/A'
 2022-12-10 13:28:08.355 +03:00 [INF] Request finished HTTP/2 GET https://localhost:44329/swagger/favicon-32x32.png - - - 200 628 image/png 1.6888ms
+2022-12-11 17:22:57.980 +03:00 [INF] Starting IdentityService.Host.
+2022-12-11 17:23:09.997 +03:00 [INF] Loaded ABP modules:
+2022-12-11 17:23:10.021 +03:00 [INF] - InternalGateway.Host.InternalGatewayHostModule
+2022-12-11 17:23:10.022 +03:00 [INF]   - Volo.Abp.Autofac.AbpAutofacModule
+2022-12-11 17:23:10.022 +03:00 [INF]     - Volo.Abp.Castle.AbpCastleCoreModule
+2022-12-11 17:23:10.022 +03:00 [INF]   - Volo.Abp.Identity.AbpIdentityHttpApiModule
+2022-12-11 17:23:10.022 +03:00 [INF]     - Volo.Abp.Identity.AbpIdentityApplicationContractsModule
+2022-12-11 17:23:10.022 +03:00 [INF]       - Volo.Abp.Identity.AbpIdentityDomainSharedModule
+2022-12-11 17:23:10.023 +03:00 [INF]         - Volo.Abp.Users.AbpUsersDomainSharedModule
+2022-12-11 17:23:10.023 +03:00 [INF]         - Volo.Abp.Validation.AbpValidationModule
+2022-12-11 17:23:10.023 +03:00 [INF]           - Volo.Abp.Validation.AbpValidationAbstractionsModule
+2022-12-11 17:23:10.023 +03:00 [INF]           - Volo.Abp.Localization.AbpLocalizationModule
+2022-12-11 17:23:10.023 +03:00 [INF]             - Volo.Abp.VirtualFileSystem.AbpVirtualFileSystemModule
+2022-12-11 17:23:10.023 +03:00 [INF]             - Volo.Abp.Settings.AbpSettingsModule
+2022-12-11 17:23:10.023 +03:00 [INF]               - Volo.Abp.Localization.AbpLocalizationAbstractionsModule
+2022-12-11 17:23:10.023 +03:00 [INF]               - Volo.Abp.Security.AbpSecurityModule
+2022-12-11 17:23:10.023 +03:00 [INF]               - Volo.Abp.MultiTenancy.AbpMultiTenancyModule
+2022-12-11 17:23:10.023 +03:00 [INF]                 - Volo.Abp.Data.AbpDataModule
+2022-12-11 17:23:10.024 +03:00 [INF]                   - Volo.Abp.ObjectExtending.AbpObjectExtendingModule
+2022-12-11 17:23:10.024 +03:00 [INF]                   - Volo.Abp.Uow.AbpUnitOfWorkModule
+2022-12-11 17:23:10.024 +03:00 [INF]                   - Volo.Abp.EventBus.Abstractions.AbpEventBusAbstractionsModule
+2022-12-11 17:23:10.024 +03:00 [INF]         - Volo.Abp.Features.AbpFeaturesModule
+2022-12-11 17:23:10.024 +03:00 [INF]           - Volo.Abp.Authorization.AbpAuthorizationAbstractionsModule
+2022-12-11 17:23:10.024 +03:00 [INF]       - Volo.Abp.Users.AbpUsersAbstractionModule
+2022-12-11 17:23:10.024 +03:00 [INF]         - Volo.Abp.EventBus.AbpEventBusModule
+2022-12-11 17:23:10.024 +03:00 [INF]           - Volo.Abp.Json.AbpJsonModule
+2022-12-11 17:23:10.024 +03:00 [INF]             - Volo.Abp.Timing.AbpTimingModule
+2022-12-11 17:23:10.025 +03:00 [INF]           - Volo.Abp.Guids.AbpGuidsModule
+2022-12-11 17:23:10.025 +03:00 [INF]           - Volo.Abp.BackgroundWorkers.AbpBackgroundWorkersModule
+2022-12-11 17:23:10.025 +03:00 [INF]             - Volo.Abp.Threading.AbpThreadingModule
+2022-12-11 17:23:10.025 +03:00 [INF]           - Volo.Abp.DistributedLocking.AbpDistributedLockingAbstractionsModule
+2022-12-11 17:23:10.025 +03:00 [INF]       - Volo.Abp.Authorization.AbpAuthorizationModule
+2022-12-11 17:23:10.025 +03:00 [INF]       - Volo.Abp.PermissionManagement.AbpPermissionManagementApplicationContractsModule
+2022-12-11 17:23:10.025 +03:00 [INF]         - Volo.Abp.Application.AbpDddApplicationContractsModule
+2022-12-11 17:23:10.025 +03:00 [INF]           - Volo.Abp.Auditing.AbpAuditingContractsModule
+2022-12-11 17:23:10.025 +03:00 [INF]         - Volo.Abp.PermissionManagement.AbpPermissionManagementDomainSharedModule
+2022-12-11 17:23:10.025 +03:00 [INF]     - Volo.Abp.AspNetCore.Mvc.AbpAspNetCoreMvcModule
+2022-12-11 17:23:10.025 +03:00 [INF]       - Volo.Abp.AspNetCore.AbpAspNetCoreModule
+2022-12-11 17:23:10.025 +03:00 [INF]         - Volo.Abp.Auditing.AbpAuditingModule
+2022-12-11 17:23:10.025 +03:00 [INF]         - Volo.Abp.Http.AbpHttpModule
+2022-12-11 17:23:10.026 +03:00 [INF]           - Volo.Abp.Http.AbpHttpAbstractionsModule
+2022-12-11 17:23:10.026 +03:00 [INF]           - Volo.Abp.Minify.AbpMinifyModule
+2022-12-11 17:23:10.026 +03:00 [INF]         - Volo.Abp.ExceptionHandling.AbpExceptionHandlingModule
+2022-12-11 17:23:10.026 +03:00 [INF]       - Volo.Abp.ApiVersioning.AbpApiVersioningAbstractionsModule
+2022-12-11 17:23:10.026 +03:00 [INF]       - Volo.Abp.AspNetCore.Mvc.AbpAspNetCoreMvcContractsModule
+2022-12-11 17:23:10.026 +03:00 [INF]       - Volo.Abp.UI.Navigation.AbpUiNavigationModule
+2022-12-11 17:23:10.026 +03:00 [INF]         - Volo.Abp.UI.AbpUiModule
+2022-12-11 17:23:10.026 +03:00 [INF]       - Volo.Abp.GlobalFeatures.AbpGlobalFeaturesModule
+2022-12-11 17:23:10.026 +03:00 [INF]       - Volo.Abp.Application.AbpDddApplicationModule
+2022-12-11 17:23:10.026 +03:00 [INF]         - Volo.Abp.Domain.AbpDddDomainModule
+2022-12-11 17:23:10.026 +03:00 [INF]           - Volo.Abp.ObjectMapping.AbpObjectMappingModule
+2022-12-11 17:23:10.026 +03:00 [INF]           - Volo.Abp.Specifications.AbpSpecificationsModule
+2022-12-11 17:23:10.026 +03:00 [INF]   - Volo.Blogging.BloggingHttpApiModule
+2022-12-11 17:23:10.027 +03:00 [INF]     - Volo.Blogging.BloggingApplicationContractsModule
+2022-12-11 17:23:10.027 +03:00 [INF]       - Volo.Blogging.BloggingApplicationContractsSharedModule
+2022-12-11 17:23:10.027 +03:00 [INF]         - Volo.Blogging.BloggingDomainSharedModule
+2022-12-11 17:23:10.027 +03:00 [INF]   - ProductManagement.ProductManagementHttpApiModule
+2022-12-11 17:23:10.027 +03:00 [INF]     - ProductManagement.ProductManagementApplicationContractsModule
+2022-12-11 17:23:10.027 +03:00 [INF]       - ProductManagement.ProductManagementDomainSharedModule
+2022-12-11 17:23:10.027 +03:00 [INF]   - RemittanceManagement.RemittanceManagementHttpApiModule
+2022-12-11 17:23:10.027 +03:00 [INF]     - RemittanceManagement.RemittanceManagementApplicationContractsModule
+2022-12-11 17:23:10.027 +03:00 [INF]       - RemittanceManagement.RemittanceManagementDomainSharedModule
+2022-12-11 17:23:10.027 +03:00 [INF]   - CurrencyManagment.CurrencyManagmentHttpApiModule
+2022-12-11 17:23:10.027 +03:00 [INF]     - CurrencyManagment.CurrencyManagmentApplicationContractsModule
+2022-12-11 17:23:10.027 +03:00 [INF]       - CurrencyManagment.CurrencyManagmentDomainSharedModule
+2022-12-11 17:23:10.027 +03:00 [INF]   - CustomerManagement.CustomerManagementHttpApiModule
+2022-12-11 17:23:10.027 +03:00 [INF]     - CustomerManagement.CustomerManagementApplicationContractsModule
+2022-12-11 17:23:10.027 +03:00 [INF]       - CustomerManagement.CustomerManagementDomainSharedModule
+2022-12-11 17:23:10.027 +03:00 [INF]   - Volo.Abp.EntityFrameworkCore.SqlServer.AbpEntityFrameworkCoreSqlServerModule
+2022-12-11 17:23:10.027 +03:00 [INF]     - Volo.Abp.EntityFrameworkCore.AbpEntityFrameworkCoreModule
+2022-12-11 17:23:10.027 +03:00 [INF]   - Volo.Abp.PermissionManagement.EntityFrameworkCore.AbpPermissionManagementEntityFrameworkCoreModule
+2022-12-11 17:23:10.028 +03:00 [INF]     - Volo.Abp.PermissionManagement.AbpPermissionManagementDomainModule
+2022-12-11 17:23:10.028 +03:00 [INF]       - Volo.Abp.Caching.AbpCachingModule
+2022-12-11 17:23:10.028 +03:00 [INF]         - Volo.Abp.Serialization.AbpSerializationModule
+2022-12-11 17:23:10.028 +03:00 [INF]   - Volo.Abp.SettingManagement.EntityFrameworkCore.AbpSettingManagementEntityFrameworkCoreModule
+2022-12-11 17:23:10.028 +03:00 [INF]     - Volo.Abp.SettingManagement.AbpSettingManagementDomainModule
+2022-12-11 17:23:10.028 +03:00 [INF]       - Volo.Abp.SettingManagement.AbpSettingManagementDomainSharedModule
+2022-12-11 17:23:10.028 +03:00 [INF]   - Volo.Abp.TenantManagement.AbpTenantManagementHttpApiModule
+2022-12-11 17:23:10.028 +03:00 [INF]     - Volo.Abp.TenantManagement.AbpTenantManagementApplicationContractsModule
+2022-12-11 17:23:10.028 +03:00 [INF]       - Volo.Abp.TenantManagement.AbpTenantManagementDomainSharedModule
+2022-12-11 17:23:10.028 +03:00 [INF]     - Volo.Abp.FeatureManagement.AbpFeatureManagementHttpApiModule
+2022-12-11 17:23:10.028 +03:00 [INF]       - Volo.Abp.FeatureManagement.AbpFeatureManagementApplicationContractsModule
+2022-12-11 17:23:10.028 +03:00 [INF]         - Volo.Abp.FeatureManagement.AbpFeatureManagementDomainSharedModule
+2022-12-11 17:23:10.028 +03:00 [INF]   - Volo.Abp.AspNetCore.MultiTenancy.AbpAspNetCoreMultiTenancyModule
+2022-12-11 17:23:14.222 +03:00 [INF] Initialized all ABP modules.
+2022-12-11 17:23:14.602 +03:00 [INF] Now listening on: https://localhost:44329
+2022-12-11 17:23:14.605 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+2022-12-11 17:23:14.605 +03:00 [INF] Hosting environment: Development
+2022-12-11 17:23:14.605 +03:00 [INF] Content root path: C:\Users\Admin\Source\Repos\RemittanceMicroservice_MVC\gateways\InternalGateway.Host
+2022-12-11 17:23:15.628 +03:00 [INF] Request starting HTTP/2 GET https://localhost:44329/ - -
+2022-12-11 17:23:15.959 +03:00 [DBG] AuthenticationScheme: Bearer was not authenticated.
+2022-12-11 17:23:16.333 +03:00 [DBG] requestId: 0HMMRGCUPTC01:00000001, previousRequestId: no previous request id, message: ocelot pipeline started
+2022-12-11 17:23:16.374 +03:00 [DBG] requestId: 0HMMRGCUPTC01:00000001, previousRequestId: no previous request id, message: Upstream url path is /
+2022-12-11 17:23:16.446 +03:00 [WRN] requestId: 0HMMRGCUPTC01:00000001, previousRequestId: no previous request id, message: DownstreamRouteFinderMiddleware setting pipeline errors. IDownstreamRouteFinder returned Error Code: UnableToFindDownstreamRouteError Message: Failed to match Route configuration for upstream path: /, verb: GET.
+2022-12-11 17:23:16.462 +03:00 [WRN] requestId: 0HMMRGCUPTC01:00000001, previousRequestId: no previous request id, message: Error Code: UnableToFindDownstreamRouteError Message: Failed to match Route configuration for upstream path: /, verb: GET. errors found in ResponderMiddleware. Setting error response for request path:/, request method: GET
+2022-12-11 17:23:16.469 +03:00 [DBG] requestId: 0HMMRGCUPTC01:00000001, previousRequestId: no previous request id, message: ocelot pipeline finished
+2022-12-11 17:23:16.529 +03:00 [INF] Request finished HTTP/2 GET https://localhost:44329/ - - - 404 0 - 901.9493ms
+2022-12-11 17:23:28.301 +03:00 [INF] Request starting HTTP/2 GET https://localhost:44329/swagger - -
+2022-12-11 17:23:28.308 +03:00 [DBG] AuthenticationScheme: Bearer was not authenticated.
+2022-12-11 17:23:28.315 +03:00 [INF] Request finished HTTP/2 GET https://localhost:44329/swagger - - - 301 0 - 13.8314ms
+2022-12-11 17:23:28.342 +03:00 [INF] Request starting HTTP/2 GET https://localhost:44329/swagger/index.html - -
+2022-12-11 17:23:28.355 +03:00 [DBG] AuthenticationScheme: Bearer was not authenticated.
+2022-12-11 17:23:30.612 +03:00 [INF] Request finished HTTP/2 GET https://localhost:44329/swagger/index.html - - - 200 - text/html;charset=utf-8 2270.5607ms
+2022-12-11 17:23:30.623 +03:00 [INF] Request starting HTTP/2 GET https://localhost:44329/swagger/swagger-ui.css - -
+2022-12-11 17:23:30.624 +03:00 [INF] Request starting HTTP/2 GET https://localhost:44329/swagger/swagger-ui-bundle.js - -
+2022-12-11 17:23:30.625 +03:00 [DBG] AuthenticationScheme: Bearer was not authenticated.
+2022-12-11 17:23:30.626 +03:00 [DBG] AuthenticationScheme: Bearer was not authenticated.
+2022-12-11 17:23:30.660 +03:00 [INF] Request starting HTTP/2 GET https://localhost:44329/swagger/swagger-ui-standalone-preset.js - -
+2022-12-11 17:23:30.660 +03:00 [INF] Request starting HTTP/2 GET https://localhost:44329/_framework/aspnetcore-browser-refresh.js - -
+2022-12-11 17:23:30.661 +03:00 [DBG] AuthenticationScheme: Bearer was not authenticated.
+2022-12-11 17:23:30.664 +03:00 [INF] Request finished HTTP/2 GET https://localhost:44329/_framework/aspnetcore-browser-refresh.js - - - 200 12010 application/javascript;+charset=utf-8 3.5223ms
+2022-12-11 17:23:30.716 +03:00 [INF] Sending file. Request path: '/swagger-ui.css'. Physical path: 'N/A'
+2022-12-11 17:23:30.718 +03:00 [INF] Request finished HTTP/2 GET https://localhost:44329/swagger/swagger-ui.css - - - 200 143632 text/css 93.7184ms
+2022-12-11 17:23:30.741 +03:00 [INF] Sending file. Request path: '/swagger-ui-standalone-preset.js'. Physical path: 'N/A'
+2022-12-11 17:23:30.744 +03:00 [INF] Request finished HTTP/2 GET https://localhost:44329/swagger/swagger-ui-standalone-preset.js - - - 200 337162 application/javascript 84.3291ms
+2022-12-11 17:23:30.790 +03:00 [INF] Sending file. Request path: '/swagger-ui-bundle.js'. Physical path: 'N/A'
+2022-12-11 17:23:30.790 +03:00 [INF] Request finished HTTP/2 GET https://localhost:44329/swagger/swagger-ui-bundle.js - - - 200 1091362 application/javascript 166.0021ms
+2022-12-11 17:23:31.303 +03:00 [INF] Request starting HTTP/2 GET https://localhost:44329/swagger/v1/swagger.json - -
+2022-12-11 17:23:31.304 +03:00 [DBG] AuthenticationScheme: Bearer was not authenticated.
+2022-12-11 17:23:31.562 +03:00 [INF] Request starting HTTP/2 GET https://localhost:44329/swagger/favicon-32x32.png - -
+2022-12-11 17:23:31.563 +03:00 [DBG] AuthenticationScheme: Bearer was not authenticated.
+2022-12-11 17:23:31.568 +03:00 [INF] Sending file. Request path: '/favicon-32x32.png'. Physical path: 'N/A'
+2022-12-11 17:23:31.569 +03:00 [INF] Request finished HTTP/2 GET https://localhost:44329/swagger/favicon-32x32.png - - - 200 628 image/png 6.5904ms
+2022-12-11 17:23:32.159 +03:00 [INF] Request finished HTTP/2 GET https://localhost:44329/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 856.3982ms
+2022-12-12 10:48:52.829 +03:00 [INF] Starting IdentityService.Host.
+2022-12-12 10:48:55.970 +03:00 [INF] Loaded ABP modules:
+2022-12-12 10:48:55.973 +03:00 [INF] - InternalGateway.Host.InternalGatewayHostModule
+2022-12-12 10:48:55.973 +03:00 [INF]   - Volo.Abp.Autofac.AbpAutofacModule
+2022-12-12 10:48:55.973 +03:00 [INF]     - Volo.Abp.Castle.AbpCastleCoreModule
+2022-12-12 10:48:55.973 +03:00 [INF]   - Volo.Abp.Identity.AbpIdentityHttpApiModule
+2022-12-12 10:48:55.973 +03:00 [INF]     - Volo.Abp.Identity.AbpIdentityApplicationContractsModule
+2022-12-12 10:48:55.973 +03:00 [INF]       - Volo.Abp.Identity.AbpIdentityDomainSharedModule
+2022-12-12 10:48:55.973 +03:00 [INF]         - Volo.Abp.Users.AbpUsersDomainSharedModule
+2022-12-12 10:48:55.973 +03:00 [INF]         - Volo.Abp.Validation.AbpValidationModule
+2022-12-12 10:48:55.973 +03:00 [INF]           - Volo.Abp.Validation.AbpValidationAbstractionsModule
+2022-12-12 10:48:55.973 +03:00 [INF]           - Volo.Abp.Localization.AbpLocalizationModule
+2022-12-12 10:48:55.973 +03:00 [INF]             - Volo.Abp.VirtualFileSystem.AbpVirtualFileSystemModule
+2022-12-12 10:48:55.974 +03:00 [INF]             - Volo.Abp.Settings.AbpSettingsModule
+2022-12-12 10:48:55.974 +03:00 [INF]               - Volo.Abp.Localization.AbpLocalizationAbstractionsModule
+2022-12-12 10:48:55.974 +03:00 [INF]               - Volo.Abp.Security.AbpSecurityModule
+2022-12-12 10:48:55.974 +03:00 [INF]               - Volo.Abp.MultiTenancy.AbpMultiTenancyModule
+2022-12-12 10:48:55.974 +03:00 [INF]                 - Volo.Abp.Data.AbpDataModule
+2022-12-12 10:48:55.974 +03:00 [INF]                   - Volo.Abp.ObjectExtending.AbpObjectExtendingModule
+2022-12-12 10:48:55.974 +03:00 [INF]                   - Volo.Abp.Uow.AbpUnitOfWorkModule
+2022-12-12 10:48:55.974 +03:00 [INF]                   - Volo.Abp.EventBus.Abstractions.AbpEventBusAbstractionsModule
+2022-12-12 10:48:55.974 +03:00 [INF]         - Volo.Abp.Features.AbpFeaturesModule
+2022-12-12 10:48:55.974 +03:00 [INF]           - Volo.Abp.Authorization.AbpAuthorizationAbstractionsModule
+2022-12-12 10:48:55.974 +03:00 [INF]       - Volo.Abp.Users.AbpUsersAbstractionModule
+2022-12-12 10:48:55.974 +03:00 [INF]         - Volo.Abp.EventBus.AbpEventBusModule
+2022-12-12 10:48:55.974 +03:00 [INF]           - Volo.Abp.Json.AbpJsonModule
+2022-12-12 10:48:55.974 +03:00 [INF]             - Volo.Abp.Timing.AbpTimingModule
+2022-12-12 10:48:55.974 +03:00 [INF]           - Volo.Abp.Guids.AbpGuidsModule
+2022-12-12 10:48:55.974 +03:00 [INF]           - Volo.Abp.BackgroundWorkers.AbpBackgroundWorkersModule
+2022-12-12 10:48:55.974 +03:00 [INF]             - Volo.Abp.Threading.AbpThreadingModule
+2022-12-12 10:48:55.974 +03:00 [INF]           - Volo.Abp.DistributedLocking.AbpDistributedLockingAbstractionsModule
+2022-12-12 10:48:55.974 +03:00 [INF]       - Volo.Abp.Authorization.AbpAuthorizationModule
+2022-12-12 10:48:55.974 +03:00 [INF]       - Volo.Abp.PermissionManagement.AbpPermissionManagementApplicationContractsModule
+2022-12-12 10:48:55.974 +03:00 [INF]         - Volo.Abp.Application.AbpDddApplicationContractsModule
+2022-12-12 10:48:55.974 +03:00 [INF]           - Volo.Abp.Auditing.AbpAuditingContractsModule
+2022-12-12 10:48:55.974 +03:00 [INF]         - Volo.Abp.PermissionManagement.AbpPermissionManagementDomainSharedModule
+2022-12-12 10:48:55.974 +03:00 [INF]     - Volo.Abp.AspNetCore.Mvc.AbpAspNetCoreMvcModule
+2022-12-12 10:48:55.974 +03:00 [INF]       - Volo.Abp.AspNetCore.AbpAspNetCoreModule
+2022-12-12 10:48:55.974 +03:00 [INF]         - Volo.Abp.Auditing.AbpAuditingModule
+2022-12-12 10:48:55.974 +03:00 [INF]         - Volo.Abp.Http.AbpHttpModule
+2022-12-12 10:48:55.974 +03:00 [INF]           - Volo.Abp.Http.AbpHttpAbstractionsModule
+2022-12-12 10:48:55.974 +03:00 [INF]           - Volo.Abp.Minify.AbpMinifyModule
+2022-12-12 10:48:55.974 +03:00 [INF]         - Volo.Abp.ExceptionHandling.AbpExceptionHandlingModule
+2022-12-12 10:48:55.974 +03:00 [INF]       - Volo.Abp.ApiVersioning.AbpApiVersioningAbstractionsModule
+2022-12-12 10:48:55.974 +03:00 [INF]       - Volo.Abp.AspNetCore.Mvc.AbpAspNetCoreMvcContractsModule
+2022-12-12 10:48:55.974 +03:00 [INF]       - Volo.Abp.UI.Navigation.AbpUiNavigationModule
+2022-12-12 10:48:55.974 +03:00 [INF]         - Volo.Abp.UI.AbpUiModule
+2022-12-12 10:48:55.974 +03:00 [INF]       - Volo.Abp.GlobalFeatures.AbpGlobalFeaturesModule
+2022-12-12 10:48:55.974 +03:00 [INF]       - Volo.Abp.Application.AbpDddApplicationModule
+2022-12-12 10:48:55.974 +03:00 [INF]         - Volo.Abp.Domain.AbpDddDomainModule
+2022-12-12 10:48:55.974 +03:00 [INF]           - Volo.Abp.ObjectMapping.AbpObjectMappingModule
+2022-12-12 10:48:55.974 +03:00 [INF]           - Volo.Abp.Specifications.AbpSpecificationsModule
+2022-12-12 10:48:55.974 +03:00 [INF]   - Volo.Blogging.BloggingHttpApiModule
+2022-12-12 10:48:55.974 +03:00 [INF]     - Volo.Blogging.BloggingApplicationContractsModule
+2022-12-12 10:48:55.974 +03:00 [INF]       - Volo.Blogging.BloggingApplicationContractsSharedModule
+2022-12-12 10:48:55.974 +03:00 [INF]         - Volo.Blogging.BloggingDomainSharedModule
+2022-12-12 10:48:55.974 +03:00 [INF]   - ProductManagement.ProductManagementHttpApiModule
+2022-12-12 10:48:55.974 +03:00 [INF]     - ProductManagement.ProductManagementApplicationContractsModule
+2022-12-12 10:48:55.974 +03:00 [INF]       - ProductManagement.ProductManagementDomainSharedModule
+2022-12-12 10:48:55.975 +03:00 [INF]   - RemittanceManagement.RemittanceManagementHttpApiModule
+2022-12-12 10:48:55.975 +03:00 [INF]     - RemittanceManagement.RemittanceManagementApplicationContractsModule
+2022-12-12 10:48:55.975 +03:00 [INF]       - RemittanceManagement.RemittanceManagementDomainSharedModule
+2022-12-12 10:48:55.975 +03:00 [INF]   - CurrencyManagment.CurrencyManagmentHttpApiModule
+2022-12-12 10:48:55.975 +03:00 [INF]     - CurrencyManagment.CurrencyManagmentApplicationContractsModule
+2022-12-12 10:48:55.975 +03:00 [INF]       - CurrencyManagment.CurrencyManagmentDomainSharedModule
+2022-12-12 10:48:55.975 +03:00 [INF]   - CustomerManagement.CustomerManagementHttpApiModule
+2022-12-12 10:48:55.975 +03:00 [INF]     - CustomerManagement.CustomerManagementApplicationContractsModule
+2022-12-12 10:48:55.975 +03:00 [INF]       - CustomerManagement.CustomerManagementDomainSharedModule
+2022-12-12 10:48:55.975 +03:00 [INF]   - Volo.Abp.EntityFrameworkCore.SqlServer.AbpEntityFrameworkCoreSqlServerModule
+2022-12-12 10:48:55.975 +03:00 [INF]     - Volo.Abp.EntityFrameworkCore.AbpEntityFrameworkCoreModule
+2022-12-12 10:48:55.975 +03:00 [INF]   - Volo.Abp.PermissionManagement.EntityFrameworkCore.AbpPermissionManagementEntityFrameworkCoreModule
+2022-12-12 10:48:55.975 +03:00 [INF]     - Volo.Abp.PermissionManagement.AbpPermissionManagementDomainModule
+2022-12-12 10:48:55.975 +03:00 [INF]       - Volo.Abp.Caching.AbpCachingModule
+2022-12-12 10:48:55.975 +03:00 [INF]         - Volo.Abp.Serialization.AbpSerializationModule
+2022-12-12 10:48:55.975 +03:00 [INF]   - Volo.Abp.SettingManagement.EntityFrameworkCore.AbpSettingManagementEntityFrameworkCoreModule
+2022-12-12 10:48:55.975 +03:00 [INF]     - Volo.Abp.SettingManagement.AbpSettingManagementDomainModule
+2022-12-12 10:48:55.975 +03:00 [INF]       - Volo.Abp.SettingManagement.AbpSettingManagementDomainSharedModule
+2022-12-12 10:48:55.975 +03:00 [INF]   - Volo.Abp.TenantManagement.AbpTenantManagementHttpApiModule
+2022-12-12 10:48:55.975 +03:00 [INF]     - Volo.Abp.TenantManagement.AbpTenantManagementApplicationContractsModule
+2022-12-12 10:48:55.975 +03:00 [INF]       - Volo.Abp.TenantManagement.AbpTenantManagementDomainSharedModule
+2022-12-12 10:48:55.975 +03:00 [INF]     - Volo.Abp.FeatureManagement.AbpFeatureManagementHttpApiModule
+2022-12-12 10:48:55.975 +03:00 [INF]       - Volo.Abp.FeatureManagement.AbpFeatureManagementApplicationContractsModule
+2022-12-12 10:48:55.975 +03:00 [INF]         - Volo.Abp.FeatureManagement.AbpFeatureManagementDomainSharedModule
+2022-12-12 10:48:55.975 +03:00 [INF]   - Volo.Abp.AspNetCore.MultiTenancy.AbpAspNetCoreMultiTenancyModule
+2022-12-12 10:48:58.164 +03:00 [INF] Initialized all ABP modules.
+2022-12-12 10:48:58.230 +03:00 [INF] Unable to bind to https://localhost:44329 on the IPv6 loopback interface: 'An attempt was made to access a socket in a way forbidden by its access permissions.'.
+2022-12-12 10:48:58.234 +03:00 [INF] Now listening on: https://localhost:44329
+2022-12-12 10:48:58.234 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+2022-12-12 10:48:58.234 +03:00 [INF] Hosting environment: Development
+2022-12-12 10:48:58.234 +03:00 [INF] Content root path: C:\Users\Admin\Source\Repos\RemittanceMicroservice_MVC\gateways\InternalGateway.Host
+2022-12-12 11:07:16.074 +03:00 [INF] Starting IdentityService.Host.
+2022-12-12 11:07:30.550 +03:00 [INF] Loaded ABP modules:
+2022-12-12 11:07:30.551 +03:00 [INF] - InternalGateway.Host.InternalGatewayHostModule
+2022-12-12 11:07:30.551 +03:00 [INF]   - Volo.Abp.Autofac.AbpAutofacModule
+2022-12-12 11:07:30.551 +03:00 [INF]     - Volo.Abp.Castle.AbpCastleCoreModule
+2022-12-12 11:07:30.551 +03:00 [INF]   - Volo.Abp.Identity.AbpIdentityHttpApiModule
+2022-12-12 11:07:30.551 +03:00 [INF]     - Volo.Abp.Identity.AbpIdentityApplicationContractsModule
+2022-12-12 11:07:30.551 +03:00 [INF]       - Volo.Abp.Identity.AbpIdentityDomainSharedModule
+2022-12-12 11:07:30.551 +03:00 [INF]         - Volo.Abp.Users.AbpUsersDomainSharedModule
+2022-12-12 11:07:30.551 +03:00 [INF]         - Volo.Abp.Validation.AbpValidationModule
+2022-12-12 11:07:30.551 +03:00 [INF]           - Volo.Abp.Validation.AbpValidationAbstractionsModule
+2022-12-12 11:07:30.551 +03:00 [INF]           - Volo.Abp.Localization.AbpLocalizationModule
+2022-12-12 11:07:30.552 +03:00 [INF]             - Volo.Abp.VirtualFileSystem.AbpVirtualFileSystemModule
+2022-12-12 11:07:30.552 +03:00 [INF]             - Volo.Abp.Settings.AbpSettingsModule
+2022-12-12 11:07:30.552 +03:00 [INF]               - Volo.Abp.Localization.AbpLocalizationAbstractionsModule
+2022-12-12 11:07:30.552 +03:00 [INF]               - Volo.Abp.Security.AbpSecurityModule
+2022-12-12 11:07:30.552 +03:00 [INF]               - Volo.Abp.MultiTenancy.AbpMultiTenancyModule
+2022-12-12 11:07:30.552 +03:00 [INF]                 - Volo.Abp.Data.AbpDataModule
+2022-12-12 11:07:30.552 +03:00 [INF]                   - Volo.Abp.ObjectExtending.AbpObjectExtendingModule
+2022-12-12 11:07:30.552 +03:00 [INF]                   - Volo.Abp.Uow.AbpUnitOfWorkModule
+2022-12-12 11:07:30.552 +03:00 [INF]                   - Volo.Abp.EventBus.Abstractions.AbpEventBusAbstractionsModule
+2022-12-12 11:07:30.552 +03:00 [INF]         - Volo.Abp.Features.AbpFeaturesModule
+2022-12-12 11:07:30.552 +03:00 [INF]           - Volo.Abp.Authorization.AbpAuthorizationAbstractionsModule
+2022-12-12 11:07:30.552 +03:00 [INF]       - Volo.Abp.Users.AbpUsersAbstractionModule
+2022-12-12 11:07:30.552 +03:00 [INF]         - Volo.Abp.EventBus.AbpEventBusModule
+2022-12-12 11:07:30.552 +03:00 [INF]           - Volo.Abp.Json.AbpJsonModule
+2022-12-12 11:07:30.552 +03:00 [INF]             - Volo.Abp.Timing.AbpTimingModule
+2022-12-12 11:07:30.552 +03:00 [INF]           - Volo.Abp.Guids.AbpGuidsModule
+2022-12-12 11:07:30.552 +03:00 [INF]           - Volo.Abp.BackgroundWorkers.AbpBackgroundWorkersModule
+2022-12-12 11:07:30.552 +03:00 [INF]             - Volo.Abp.Threading.AbpThreadingModule
+2022-12-12 11:07:30.552 +03:00 [INF]           - Volo.Abp.DistributedLocking.AbpDistributedLockingAbstractionsModule
+2022-12-12 11:07:30.552 +03:00 [INF]       - Volo.Abp.Authorization.AbpAuthorizationModule
+2022-12-12 11:07:30.552 +03:00 [INF]       - Volo.Abp.PermissionManagement.AbpPermissionManagementApplicationContractsModule
+2022-12-12 11:07:30.552 +03:00 [INF]         - Volo.Abp.Application.AbpDddApplicationContractsModule
+2022-12-12 11:07:30.552 +03:00 [INF]           - Volo.Abp.Auditing.AbpAuditingContractsModule
+2022-12-12 11:07:30.552 +03:00 [INF]         - Volo.Abp.PermissionManagement.AbpPermissionManagementDomainSharedModule
+2022-12-12 11:07:30.552 +03:00 [INF]     - Volo.Abp.AspNetCore.Mvc.AbpAspNetCoreMvcModule
+2022-12-12 11:07:30.552 +03:00 [INF]       - Volo.Abp.AspNetCore.AbpAspNetCoreModule
+2022-12-12 11:07:30.552 +03:00 [INF]         - Volo.Abp.Auditing.AbpAuditingModule
+2022-12-12 11:07:30.552 +03:00 [INF]         - Volo.Abp.Http.AbpHttpModule
+2022-12-12 11:07:30.552 +03:00 [INF]           - Volo.Abp.Http.AbpHttpAbstractionsModule
+2022-12-12 11:07:30.552 +03:00 [INF]           - Volo.Abp.Minify.AbpMinifyModule
+2022-12-12 11:07:30.552 +03:00 [INF]         - Volo.Abp.ExceptionHandling.AbpExceptionHandlingModule
+2022-12-12 11:07:30.552 +03:00 [INF]       - Volo.Abp.ApiVersioning.AbpApiVersioningAbstractionsModule
+2022-12-12 11:07:30.552 +03:00 [INF]       - Volo.Abp.AspNetCore.Mvc.AbpAspNetCoreMvcContractsModule
+2022-12-12 11:07:30.552 +03:00 [INF]       - Volo.Abp.UI.Navigation.AbpUiNavigationModule
+2022-12-12 11:07:30.552 +03:00 [INF]         - Volo.Abp.UI.AbpUiModule
+2022-12-12 11:07:30.552 +03:00 [INF]       - Volo.Abp.GlobalFeatures.AbpGlobalFeaturesModule
+2022-12-12 11:07:30.552 +03:00 [INF]       - Volo.Abp.Application.AbpDddApplicationModule
+2022-12-12 11:07:30.552 +03:00 [INF]         - Volo.Abp.Domain.AbpDddDomainModule
+2022-12-12 11:07:30.552 +03:00 [INF]           - Volo.Abp.ObjectMapping.AbpObjectMappingModule
+2022-12-12 11:07:30.552 +03:00 [INF]           - Volo.Abp.Specifications.AbpSpecificationsModule
+2022-12-12 11:07:30.552 +03:00 [INF]   - Volo.Blogging.BloggingHttpApiModule
+2022-12-12 11:07:30.552 +03:00 [INF]     - Volo.Blogging.BloggingApplicationContractsModule
+2022-12-12 11:07:30.552 +03:00 [INF]       - Volo.Blogging.BloggingApplicationContractsSharedModule
+2022-12-12 11:07:30.552 +03:00 [INF]         - Volo.Blogging.BloggingDomainSharedModule
+2022-12-12 11:07:30.552 +03:00 [INF]   - ProductManagement.ProductManagementHttpApiModule
+2022-12-12 11:07:30.552 +03:00 [INF]     - ProductManagement.ProductManagementApplicationContractsModule
+2022-12-12 11:07:30.552 +03:00 [INF]       - ProductManagement.ProductManagementDomainSharedModule
+2022-12-12 11:07:30.552 +03:00 [INF]   - RemittanceManagement.RemittanceManagementHttpApiModule
+2022-12-12 11:07:30.552 +03:00 [INF]     - RemittanceManagement.RemittanceManagementApplicationContractsModule
+2022-12-12 11:07:30.552 +03:00 [INF]       - RemittanceManagement.RemittanceManagementDomainSharedModule
+2022-12-12 11:07:30.552 +03:00 [INF]   - CurrencyManagment.CurrencyManagmentHttpApiModule
+2022-12-12 11:07:30.552 +03:00 [INF]     - CurrencyManagment.CurrencyManagmentApplicationContractsModule
+2022-12-12 11:07:30.552 +03:00 [INF]       - CurrencyManagment.CurrencyManagmentDomainSharedModule
+2022-12-12 11:07:30.552 +03:00 [INF]   - CustomerManagement.CustomerManagementHttpApiModule
+2022-12-12 11:07:30.552 +03:00 [INF]     - CustomerManagement.CustomerManagementApplicationContractsModule
+2022-12-12 11:07:30.552 +03:00 [INF]       - CustomerManagement.CustomerManagementDomainSharedModule
+2022-12-12 11:07:30.552 +03:00 [INF]   - Volo.Abp.EntityFrameworkCore.SqlServer.AbpEntityFrameworkCoreSqlServerModule
+2022-12-12 11:07:30.552 +03:00 [INF]     - Volo.Abp.EntityFrameworkCore.AbpEntityFrameworkCoreModule
+2022-12-12 11:07:30.552 +03:00 [INF]   - Volo.Abp.PermissionManagement.EntityFrameworkCore.AbpPermissionManagementEntityFrameworkCoreModule
+2022-12-12 11:07:30.552 +03:00 [INF]     - Volo.Abp.PermissionManagement.AbpPermissionManagementDomainModule
+2022-12-12 11:07:30.552 +03:00 [INF]       - Volo.Abp.Caching.AbpCachingModule
+2022-12-12 11:07:30.552 +03:00 [INF]         - Volo.Abp.Serialization.AbpSerializationModule
+2022-12-12 11:07:30.552 +03:00 [INF]   - Volo.Abp.SettingManagement.EntityFrameworkCore.AbpSettingManagementEntityFrameworkCoreModule
+2022-12-12 11:07:30.552 +03:00 [INF]     - Volo.Abp.SettingManagement.AbpSettingManagementDomainModule
+2022-12-12 11:07:30.552 +03:00 [INF]       - Volo.Abp.SettingManagement.AbpSettingManagementDomainSharedModule
+2022-12-12 11:07:30.552 +03:00 [INF]   - Volo.Abp.TenantManagement.AbpTenantManagementHttpApiModule
+2022-12-12 11:07:30.552 +03:00 [INF]     - Volo.Abp.TenantManagement.AbpTenantManagementApplicationContractsModule
+2022-12-12 11:07:30.552 +03:00 [INF]       - Volo.Abp.TenantManagement.AbpTenantManagementDomainSharedModule
+2022-12-12 11:07:30.552 +03:00 [INF]     - Volo.Abp.FeatureManagement.AbpFeatureManagementHttpApiModule
+2022-12-12 11:07:30.552 +03:00 [INF]       - Volo.Abp.FeatureManagement.AbpFeatureManagementApplicationContractsModule
+2022-12-12 11:07:30.552 +03:00 [INF]         - Volo.Abp.FeatureManagement.AbpFeatureManagementDomainSharedModule
+2022-12-12 11:07:30.552 +03:00 [INF]   - Volo.Abp.AspNetCore.MultiTenancy.AbpAspNetCoreMultiTenancyModule
+2022-12-12 11:07:36.900 +03:00 [INF] Initialized all ABP modules.
+2022-12-12 11:07:36.978 +03:00 [INF] Unable to bind to https://localhost:44329 on the IPv6 loopback interface: 'An attempt was made to access a socket in a way forbidden by its access permissions.'.
+2022-12-12 11:07:36.983 +03:00 [INF] Now listening on: https://localhost:44329
+2022-12-12 11:07:36.983 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+2022-12-12 11:07:36.983 +03:00 [INF] Hosting environment: Development
+2022-12-12 11:07:36.983 +03:00 [INF] Content root path: C:\Users\Admin\Source\Repos\RemittanceMicroservice_MVC\gateways\InternalGateway.Host
+2022-12-12 11:33:46.522 +03:00 [INF] Starting IdentityService.Host.
+2022-12-12 11:33:48.582 +03:00 [INF] Loaded ABP modules:
+2022-12-12 11:33:48.583 +03:00 [INF] - InternalGateway.Host.InternalGatewayHostModule
+2022-12-12 11:33:48.583 +03:00 [INF]   - Volo.Abp.Autofac.AbpAutofacModule
+2022-12-12 11:33:48.584 +03:00 [INF]     - Volo.Abp.Castle.AbpCastleCoreModule
+2022-12-12 11:33:48.584 +03:00 [INF]   - Volo.Abp.Identity.AbpIdentityHttpApiModule
+2022-12-12 11:33:48.584 +03:00 [INF]     - Volo.Abp.Identity.AbpIdentityApplicationContractsModule
+2022-12-12 11:33:48.584 +03:00 [INF]       - Volo.Abp.Identity.AbpIdentityDomainSharedModule
+2022-12-12 11:33:48.584 +03:00 [INF]         - Volo.Abp.Users.AbpUsersDomainSharedModule
+2022-12-12 11:33:48.584 +03:00 [INF]         - Volo.Abp.Validation.AbpValidationModule
+2022-12-12 11:33:48.584 +03:00 [INF]           - Volo.Abp.Validation.AbpValidationAbstractionsModule
+2022-12-12 11:33:48.584 +03:00 [INF]           - Volo.Abp.Localization.AbpLocalizationModule
+2022-12-12 11:33:48.584 +03:00 [INF]             - Volo.Abp.VirtualFileSystem.AbpVirtualFileSystemModule
+2022-12-12 11:33:48.584 +03:00 [INF]             - Volo.Abp.Settings.AbpSettingsModule
+2022-12-12 11:33:48.584 +03:00 [INF]               - Volo.Abp.Localization.AbpLocalizationAbstractionsModule
+2022-12-12 11:33:48.584 +03:00 [INF]               - Volo.Abp.Security.AbpSecurityModule
+2022-12-12 11:33:48.584 +03:00 [INF]               - Volo.Abp.MultiTenancy.AbpMultiTenancyModule
+2022-12-12 11:33:48.584 +03:00 [INF]                 - Volo.Abp.Data.AbpDataModule
+2022-12-12 11:33:48.584 +03:00 [INF]                   - Volo.Abp.ObjectExtending.AbpObjectExtendingModule
+2022-12-12 11:33:48.584 +03:00 [INF]                   - Volo.Abp.Uow.AbpUnitOfWorkModule
+2022-12-12 11:33:48.584 +03:00 [INF]                   - Volo.Abp.EventBus.Abstractions.AbpEventBusAbstractionsModule
+2022-12-12 11:33:48.584 +03:00 [INF]         - Volo.Abp.Features.AbpFeaturesModule
+2022-12-12 11:33:48.584 +03:00 [INF]           - Volo.Abp.Authorization.AbpAuthorizationAbstractionsModule
+2022-12-12 11:33:48.584 +03:00 [INF]       - Volo.Abp.Users.AbpUsersAbstractionModule
+2022-12-12 11:33:48.584 +03:00 [INF]         - Volo.Abp.EventBus.AbpEventBusModule
+2022-12-12 11:33:48.584 +03:00 [INF]           - Volo.Abp.Json.AbpJsonModule
+2022-12-12 11:33:48.584 +03:00 [INF]             - Volo.Abp.Timing.AbpTimingModule
+2022-12-12 11:33:48.584 +03:00 [INF]           - Volo.Abp.Guids.AbpGuidsModule
+2022-12-12 11:33:48.584 +03:00 [INF]           - Volo.Abp.BackgroundWorkers.AbpBackgroundWorkersModule
+2022-12-12 11:33:48.584 +03:00 [INF]             - Volo.Abp.Threading.AbpThreadingModule
+2022-12-12 11:33:48.584 +03:00 [INF]           - Volo.Abp.DistributedLocking.AbpDistributedLockingAbstractionsModule
+2022-12-12 11:33:48.584 +03:00 [INF]       - Volo.Abp.Authorization.AbpAuthorizationModule
+2022-12-12 11:33:48.584 +03:00 [INF]       - Volo.Abp.PermissionManagement.AbpPermissionManagementApplicationContractsModule
+2022-12-12 11:33:48.584 +03:00 [INF]         - Volo.Abp.Application.AbpDddApplicationContractsModule
+2022-12-12 11:33:48.584 +03:00 [INF]           - Volo.Abp.Auditing.AbpAuditingContractsModule
+2022-12-12 11:33:48.584 +03:00 [INF]         - Volo.Abp.PermissionManagement.AbpPermissionManagementDomainSharedModule
+2022-12-12 11:33:48.584 +03:00 [INF]     - Volo.Abp.AspNetCore.Mvc.AbpAspNetCoreMvcModule
+2022-12-12 11:33:48.584 +03:00 [INF]       - Volo.Abp.AspNetCore.AbpAspNetCoreModule
+2022-12-12 11:33:48.584 +03:00 [INF]         - Volo.Abp.Auditing.AbpAuditingModule
+2022-12-12 11:33:48.584 +03:00 [INF]         - Volo.Abp.Http.AbpHttpModule
+2022-12-12 11:33:48.584 +03:00 [INF]           - Volo.Abp.Http.AbpHttpAbstractionsModule
+2022-12-12 11:33:48.584 +03:00 [INF]           - Volo.Abp.Minify.AbpMinifyModule
+2022-12-12 11:33:48.584 +03:00 [INF]         - Volo.Abp.ExceptionHandling.AbpExceptionHandlingModule
+2022-12-12 11:33:48.584 +03:00 [INF]       - Volo.Abp.ApiVersioning.AbpApiVersioningAbstractionsModule
+2022-12-12 11:33:48.584 +03:00 [INF]       - Volo.Abp.AspNetCore.Mvc.AbpAspNetCoreMvcContractsModule
+2022-12-12 11:33:48.584 +03:00 [INF]       - Volo.Abp.UI.Navigation.AbpUiNavigationModule
+2022-12-12 11:33:48.584 +03:00 [INF]         - Volo.Abp.UI.AbpUiModule
+2022-12-12 11:33:48.584 +03:00 [INF]       - Volo.Abp.GlobalFeatures.AbpGlobalFeaturesModule
+2022-12-12 11:33:48.584 +03:00 [INF]       - Volo.Abp.Application.AbpDddApplicationModule
+2022-12-12 11:33:48.584 +03:00 [INF]         - Volo.Abp.Domain.AbpDddDomainModule
+2022-12-12 11:33:48.584 +03:00 [INF]           - Volo.Abp.ObjectMapping.AbpObjectMappingModule
+2022-12-12 11:33:48.584 +03:00 [INF]           - Volo.Abp.Specifications.AbpSpecificationsModule
+2022-12-12 11:33:48.584 +03:00 [INF]   - Volo.Blogging.BloggingHttpApiModule
+2022-12-12 11:33:48.584 +03:00 [INF]     - Volo.Blogging.BloggingApplicationContractsModule
+2022-12-12 11:33:48.584 +03:00 [INF]       - Volo.Blogging.BloggingApplicationContractsSharedModule
+2022-12-12 11:33:48.584 +03:00 [INF]         - Volo.Blogging.BloggingDomainSharedModule
+2022-12-12 11:33:48.584 +03:00 [INF]   - ProductManagement.ProductManagementHttpApiModule
+2022-12-12 11:33:48.584 +03:00 [INF]     - ProductManagement.ProductManagementApplicationContractsModule
+2022-12-12 11:33:48.584 +03:00 [INF]       - ProductManagement.ProductManagementDomainSharedModule
+2022-12-12 11:33:48.584 +03:00 [INF]   - RemittanceManagement.RemittanceManagementHttpApiModule
+2022-12-12 11:33:48.584 +03:00 [INF]     - RemittanceManagement.RemittanceManagementApplicationContractsModule
+2022-12-12 11:33:48.584 +03:00 [INF]       - RemittanceManagement.RemittanceManagementDomainSharedModule
+2022-12-12 11:33:48.584 +03:00 [INF]   - CurrencyManagment.CurrencyManagmentHttpApiModule
+2022-12-12 11:33:48.584 +03:00 [INF]     - CurrencyManagment.CurrencyManagmentApplicationContractsModule
+2022-12-12 11:33:48.584 +03:00 [INF]       - CurrencyManagment.CurrencyManagmentDomainSharedModule
+2022-12-12 11:33:48.584 +03:00 [INF]   - CustomerManagement.CustomerManagementHttpApiModule
+2022-12-12 11:33:48.584 +03:00 [INF]     - CustomerManagement.CustomerManagementApplicationContractsModule
+2022-12-12 11:33:48.584 +03:00 [INF]       - CustomerManagement.CustomerManagementDomainSharedModule
+2022-12-12 11:33:48.584 +03:00 [INF]   - Volo.Abp.EntityFrameworkCore.SqlServer.AbpEntityFrameworkCoreSqlServerModule
+2022-12-12 11:33:48.584 +03:00 [INF]     - Volo.Abp.EntityFrameworkCore.AbpEntityFrameworkCoreModule
+2022-12-12 11:33:48.584 +03:00 [INF]   - Volo.Abp.PermissionManagement.EntityFrameworkCore.AbpPermissionManagementEntityFrameworkCoreModule
+2022-12-12 11:33:48.584 +03:00 [INF]     - Volo.Abp.PermissionManagement.AbpPermissionManagementDomainModule
+2022-12-12 11:33:48.584 +03:00 [INF]       - Volo.Abp.Caching.AbpCachingModule
+2022-12-12 11:33:48.584 +03:00 [INF]         - Volo.Abp.Serialization.AbpSerializationModule
+2022-12-12 11:33:48.584 +03:00 [INF]   - Volo.Abp.SettingManagement.EntityFrameworkCore.AbpSettingManagementEntityFrameworkCoreModule
+2022-12-12 11:33:48.584 +03:00 [INF]     - Volo.Abp.SettingManagement.AbpSettingManagementDomainModule
+2022-12-12 11:33:48.584 +03:00 [INF]       - Volo.Abp.SettingManagement.AbpSettingManagementDomainSharedModule
+2022-12-12 11:33:48.584 +03:00 [INF]   - Volo.Abp.TenantManagement.AbpTenantManagementHttpApiModule
+2022-12-12 11:33:48.584 +03:00 [INF]     - Volo.Abp.TenantManagement.AbpTenantManagementApplicationContractsModule
+2022-12-12 11:33:48.584 +03:00 [INF]       - Volo.Abp.TenantManagement.AbpTenantManagementDomainSharedModule
+2022-12-12 11:33:48.584 +03:00 [INF]     - Volo.Abp.FeatureManagement.AbpFeatureManagementHttpApiModule
+2022-12-12 11:33:48.584 +03:00 [INF]       - Volo.Abp.FeatureManagement.AbpFeatureManagementApplicationContractsModule
+2022-12-12 11:33:48.584 +03:00 [INF]         - Volo.Abp.FeatureManagement.AbpFeatureManagementDomainSharedModule
+2022-12-12 11:33:48.584 +03:00 [INF]   - Volo.Abp.AspNetCore.MultiTenancy.AbpAspNetCoreMultiTenancyModule
+2022-12-12 11:33:49.544 +03:00 [INF] Initialized all ABP modules.
+2022-12-12 11:33:50.441 +03:00 [INF] Unable to bind to https://localhost:44329 on the IPv6 loopback interface: 'An attempt was made to access a socket in a way forbidden by its access permissions.'.
+2022-12-12 11:33:50.447 +03:00 [INF] Now listening on: https://localhost:44329
+2022-12-12 11:33:50.447 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+2022-12-12 11:33:50.447 +03:00 [INF] Hosting environment: Development
+2022-12-12 11:33:50.447 +03:00 [INF] Content root path: C:\Users\Admin\Source\Repos\RemittanceMicroservice_MVC\gateways\InternalGateway.Host
+2022-12-12 12:23:22.491 +03:00 [INF] Starting IdentityService.Host.
+2022-12-12 12:23:32.226 +03:00 [INF] Loaded ABP modules:
+2022-12-12 12:23:32.227 +03:00 [INF] - InternalGateway.Host.InternalGatewayHostModule
+2022-12-12 12:23:32.227 +03:00 [INF]   - Volo.Abp.Autofac.AbpAutofacModule
+2022-12-12 12:23:32.227 +03:00 [INF]     - Volo.Abp.Castle.AbpCastleCoreModule
+2022-12-12 12:23:32.227 +03:00 [INF]   - Volo.Abp.Identity.AbpIdentityHttpApiModule
+2022-12-12 12:23:32.227 +03:00 [INF]     - Volo.Abp.Identity.AbpIdentityApplicationContractsModule
+2022-12-12 12:23:32.227 +03:00 [INF]       - Volo.Abp.Identity.AbpIdentityDomainSharedModule
+2022-12-12 12:23:32.227 +03:00 [INF]         - Volo.Abp.Users.AbpUsersDomainSharedModule
+2022-12-12 12:23:32.227 +03:00 [INF]         - Volo.Abp.Validation.AbpValidationModule
+2022-12-12 12:23:32.227 +03:00 [INF]           - Volo.Abp.Validation.AbpValidationAbstractionsModule
+2022-12-12 12:23:32.227 +03:00 [INF]           - Volo.Abp.Localization.AbpLocalizationModule
+2022-12-12 12:23:32.227 +03:00 [INF]             - Volo.Abp.VirtualFileSystem.AbpVirtualFileSystemModule
+2022-12-12 12:23:32.227 +03:00 [INF]             - Volo.Abp.Settings.AbpSettingsModule
+2022-12-12 12:23:32.227 +03:00 [INF]               - Volo.Abp.Localization.AbpLocalizationAbstractionsModule
+2022-12-12 12:23:32.227 +03:00 [INF]               - Volo.Abp.Security.AbpSecurityModule
+2022-12-12 12:23:32.227 +03:00 [INF]               - Volo.Abp.MultiTenancy.AbpMultiTenancyModule
+2022-12-12 12:23:32.227 +03:00 [INF]                 - Volo.Abp.Data.AbpDataModule
+2022-12-12 12:23:32.227 +03:00 [INF]                   - Volo.Abp.ObjectExtending.AbpObjectExtendingModule
+2022-12-12 12:23:32.227 +03:00 [INF]                   - Volo.Abp.Uow.AbpUnitOfWorkModule
+2022-12-12 12:23:32.227 +03:00 [INF]                   - Volo.Abp.EventBus.Abstractions.AbpEventBusAbstractionsModule
+2022-12-12 12:23:32.227 +03:00 [INF]         - Volo.Abp.Features.AbpFeaturesModule
+2022-12-12 12:23:32.227 +03:00 [INF]           - Volo.Abp.Authorization.AbpAuthorizationAbstractionsModule
+2022-12-12 12:23:32.227 +03:00 [INF]       - Volo.Abp.Users.AbpUsersAbstractionModule
+2022-12-12 12:23:32.227 +03:00 [INF]         - Volo.Abp.EventBus.AbpEventBusModule
+2022-12-12 12:23:32.227 +03:00 [INF]           - Volo.Abp.Json.AbpJsonModule
+2022-12-12 12:23:32.227 +03:00 [INF]             - Volo.Abp.Timing.AbpTimingModule
+2022-12-12 12:23:32.227 +03:00 [INF]           - Volo.Abp.Guids.AbpGuidsModule
+2022-12-12 12:23:32.227 +03:00 [INF]           - Volo.Abp.BackgroundWorkers.AbpBackgroundWorkersModule
+2022-12-12 12:23:32.227 +03:00 [INF]             - Volo.Abp.Threading.AbpThreadingModule
+2022-12-12 12:23:32.227 +03:00 [INF]           - Volo.Abp.DistributedLocking.AbpDistributedLockingAbstractionsModule
+2022-12-12 12:23:32.228 +03:00 [INF]       - Volo.Abp.Authorization.AbpAuthorizationModule
+2022-12-12 12:23:32.228 +03:00 [INF]       - Volo.Abp.PermissionManagement.AbpPermissionManagementApplicationContractsModule
+2022-12-12 12:23:32.228 +03:00 [INF]         - Volo.Abp.Application.AbpDddApplicationContractsModule
+2022-12-12 12:23:32.228 +03:00 [INF]           - Volo.Abp.Auditing.AbpAuditingContractsModule
+2022-12-12 12:23:32.228 +03:00 [INF]         - Volo.Abp.PermissionManagement.AbpPermissionManagementDomainSharedModule
+2022-12-12 12:23:32.228 +03:00 [INF]     - Volo.Abp.AspNetCore.Mvc.AbpAspNetCoreMvcModule
+2022-12-12 12:23:32.228 +03:00 [INF]       - Volo.Abp.AspNetCore.AbpAspNetCoreModule
+2022-12-12 12:23:32.228 +03:00 [INF]         - Volo.Abp.Auditing.AbpAuditingModule
+2022-12-12 12:23:32.228 +03:00 [INF]         - Volo.Abp.Http.AbpHttpModule
+2022-12-12 12:23:32.228 +03:00 [INF]           - Volo.Abp.Http.AbpHttpAbstractionsModule
+2022-12-12 12:23:32.228 +03:00 [INF]           - Volo.Abp.Minify.AbpMinifyModule
+2022-12-12 12:23:32.228 +03:00 [INF]         - Volo.Abp.ExceptionHandling.AbpExceptionHandlingModule
+2022-12-12 12:23:32.228 +03:00 [INF]       - Volo.Abp.ApiVersioning.AbpApiVersioningAbstractionsModule
+2022-12-12 12:23:32.228 +03:00 [INF]       - Volo.Abp.AspNetCore.Mvc.AbpAspNetCoreMvcContractsModule
+2022-12-12 12:23:32.228 +03:00 [INF]       - Volo.Abp.UI.Navigation.AbpUiNavigationModule
+2022-12-12 12:23:32.228 +03:00 [INF]         - Volo.Abp.UI.AbpUiModule
+2022-12-12 12:23:32.228 +03:00 [INF]       - Volo.Abp.GlobalFeatures.AbpGlobalFeaturesModule
+2022-12-12 12:23:32.228 +03:00 [INF]       - Volo.Abp.Application.AbpDddApplicationModule
+2022-12-12 12:23:32.228 +03:00 [INF]         - Volo.Abp.Domain.AbpDddDomainModule
+2022-12-12 12:23:32.228 +03:00 [INF]           - Volo.Abp.ObjectMapping.AbpObjectMappingModule
+2022-12-12 12:23:32.228 +03:00 [INF]           - Volo.Abp.Specifications.AbpSpecificationsModule
+2022-12-12 12:23:32.228 +03:00 [INF]   - Volo.Blogging.BloggingHttpApiModule
+2022-12-12 12:23:32.228 +03:00 [INF]     - Volo.Blogging.BloggingApplicationContractsModule
+2022-12-12 12:23:32.228 +03:00 [INF]       - Volo.Blogging.BloggingApplicationContractsSharedModule
+2022-12-12 12:23:32.228 +03:00 [INF]         - Volo.Blogging.BloggingDomainSharedModule
+2022-12-12 12:23:32.228 +03:00 [INF]   - ProductManagement.ProductManagementHttpApiModule
+2022-12-12 12:23:32.228 +03:00 [INF]     - ProductManagement.ProductManagementApplicationContractsModule
+2022-12-12 12:23:32.228 +03:00 [INF]       - ProductManagement.ProductManagementDomainSharedModule
+2022-12-12 12:23:32.228 +03:00 [INF]   - RemittanceManagement.RemittanceManagementHttpApiModule
+2022-12-12 12:23:32.228 +03:00 [INF]     - RemittanceManagement.RemittanceManagementApplicationContractsModule
+2022-12-12 12:23:32.228 +03:00 [INF]       - RemittanceManagement.RemittanceManagementDomainSharedModule
+2022-12-12 12:23:32.228 +03:00 [INF]   - CurrencyManagment.CurrencyManagmentHttpApiModule
+2022-12-12 12:23:32.228 +03:00 [INF]     - CurrencyManagment.CurrencyManagmentApplicationContractsModule
+2022-12-12 12:23:32.228 +03:00 [INF]       - CurrencyManagment.CurrencyManagmentDomainSharedModule
+2022-12-12 12:23:32.228 +03:00 [INF]   - CustomerManagement.CustomerManagementHttpApiModule
+2022-12-12 12:23:32.228 +03:00 [INF]     - CustomerManagement.CustomerManagementApplicationContractsModule
+2022-12-12 12:23:32.228 +03:00 [INF]       - CustomerManagement.CustomerManagementDomainSharedModule
+2022-12-12 12:23:32.228 +03:00 [INF]   - Volo.Abp.EntityFrameworkCore.SqlServer.AbpEntityFrameworkCoreSqlServerModule
+2022-12-12 12:23:32.228 +03:00 [INF]     - Volo.Abp.EntityFrameworkCore.AbpEntityFrameworkCoreModule
+2022-12-12 12:23:32.228 +03:00 [INF]   - Volo.Abp.PermissionManagement.EntityFrameworkCore.AbpPermissionManagementEntityFrameworkCoreModule
+2022-12-12 12:23:32.228 +03:00 [INF]     - Volo.Abp.PermissionManagement.AbpPermissionManagementDomainModule
+2022-12-12 12:23:32.228 +03:00 [INF]       - Volo.Abp.Caching.AbpCachingModule
+2022-12-12 12:23:32.228 +03:00 [INF]         - Volo.Abp.Serialization.AbpSerializationModule
+2022-12-12 12:23:32.228 +03:00 [INF]   - Volo.Abp.SettingManagement.EntityFrameworkCore.AbpSettingManagementEntityFrameworkCoreModule
+2022-12-12 12:23:32.228 +03:00 [INF]     - Volo.Abp.SettingManagement.AbpSettingManagementDomainModule
+2022-12-12 12:23:32.228 +03:00 [INF]       - Volo.Abp.SettingManagement.AbpSettingManagementDomainSharedModule
+2022-12-12 12:23:32.228 +03:00 [INF]   - Volo.Abp.TenantManagement.AbpTenantManagementHttpApiModule
+2022-12-12 12:23:32.228 +03:00 [INF]     - Volo.Abp.TenantManagement.AbpTenantManagementApplicationContractsModule
+2022-12-12 12:23:32.228 +03:00 [INF]       - Volo.Abp.TenantManagement.AbpTenantManagementDomainSharedModule
+2022-12-12 12:23:32.228 +03:00 [INF]     - Volo.Abp.FeatureManagement.AbpFeatureManagementHttpApiModule
+2022-12-12 12:23:32.228 +03:00 [INF]       - Volo.Abp.FeatureManagement.AbpFeatureManagementApplicationContractsModule
+2022-12-12 12:23:32.228 +03:00 [INF]         - Volo.Abp.FeatureManagement.AbpFeatureManagementDomainSharedModule
+2022-12-12 12:23:32.228 +03:00 [INF]   - Volo.Abp.AspNetCore.MultiTenancy.AbpAspNetCoreMultiTenancyModule
+2022-12-12 12:23:36.790 +03:00 [INF] Initialized all ABP modules.
+2022-12-12 12:23:37.068 +03:00 [INF] Unable to bind to https://localhost:44329 on the IPv6 loopback interface: 'An attempt was made to access a socket in a way forbidden by its access permissions.'.
+2022-12-12 12:23:37.072 +03:00 [INF] Now listening on: https://localhost:44329
+2022-12-12 12:23:37.072 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+2022-12-12 12:23:37.072 +03:00 [INF] Hosting environment: Development
+2022-12-12 12:23:37.072 +03:00 [INF] Content root path: C:\Users\Admin\Source\Repos\RemittanceMicroservice_MVC\gateways\InternalGateway.Host
+2022-12-12 13:36:29.925 +03:00 [INF] Starting IdentityService.Host.
+2022-12-12 13:36:54.494 +03:00 [INF] Loaded ABP modules:
+2022-12-12 13:36:54.496 +03:00 [INF] - InternalGateway.Host.InternalGatewayHostModule
+2022-12-12 13:36:54.496 +03:00 [INF]   - Volo.Abp.Autofac.AbpAutofacModule
+2022-12-12 13:36:54.496 +03:00 [INF]     - Volo.Abp.Castle.AbpCastleCoreModule
+2022-12-12 13:36:54.496 +03:00 [INF]   - Volo.Abp.Identity.AbpIdentityHttpApiModule
+2022-12-12 13:36:54.496 +03:00 [INF]     - Volo.Abp.Identity.AbpIdentityApplicationContractsModule
+2022-12-12 13:36:54.496 +03:00 [INF]       - Volo.Abp.Identity.AbpIdentityDomainSharedModule
+2022-12-12 13:36:54.496 +03:00 [INF]         - Volo.Abp.Users.AbpUsersDomainSharedModule
+2022-12-12 13:36:54.496 +03:00 [INF]         - Volo.Abp.Validation.AbpValidationModule
+2022-12-12 13:36:54.496 +03:00 [INF]           - Volo.Abp.Validation.AbpValidationAbstractionsModule
+2022-12-12 13:36:54.496 +03:00 [INF]           - Volo.Abp.Localization.AbpLocalizationModule
+2022-12-12 13:36:54.496 +03:00 [INF]             - Volo.Abp.VirtualFileSystem.AbpVirtualFileSystemModule
+2022-12-12 13:36:54.496 +03:00 [INF]             - Volo.Abp.Settings.AbpSettingsModule
+2022-12-12 13:36:54.496 +03:00 [INF]               - Volo.Abp.Localization.AbpLocalizationAbstractionsModule
+2022-12-12 13:36:54.496 +03:00 [INF]               - Volo.Abp.Security.AbpSecurityModule
+2022-12-12 13:36:54.496 +03:00 [INF]               - Volo.Abp.MultiTenancy.AbpMultiTenancyModule
+2022-12-12 13:36:54.496 +03:00 [INF]                 - Volo.Abp.Data.AbpDataModule
+2022-12-12 13:36:54.496 +03:00 [INF]                   - Volo.Abp.ObjectExtending.AbpObjectExtendingModule
+2022-12-12 13:36:54.497 +03:00 [INF]                   - Volo.Abp.Uow.AbpUnitOfWorkModule
+2022-12-12 13:36:54.497 +03:00 [INF]                   - Volo.Abp.EventBus.Abstractions.AbpEventBusAbstractionsModule
+2022-12-12 13:36:54.497 +03:00 [INF]         - Volo.Abp.Features.AbpFeaturesModule
+2022-12-12 13:36:54.497 +03:00 [INF]           - Volo.Abp.Authorization.AbpAuthorizationAbstractionsModule
+2022-12-12 13:36:54.497 +03:00 [INF]       - Volo.Abp.Users.AbpUsersAbstractionModule
+2022-12-12 13:36:54.497 +03:00 [INF]         - Volo.Abp.EventBus.AbpEventBusModule
+2022-12-12 13:36:54.497 +03:00 [INF]           - Volo.Abp.Json.AbpJsonModule
+2022-12-12 13:36:54.497 +03:00 [INF]             - Volo.Abp.Timing.AbpTimingModule
+2022-12-12 13:36:54.497 +03:00 [INF]           - Volo.Abp.Guids.AbpGuidsModule
+2022-12-12 13:36:54.497 +03:00 [INF]           - Volo.Abp.BackgroundWorkers.AbpBackgroundWorkersModule
+2022-12-12 13:36:54.497 +03:00 [INF]             - Volo.Abp.Threading.AbpThreadingModule
+2022-12-12 13:36:54.497 +03:00 [INF]           - Volo.Abp.DistributedLocking.AbpDistributedLockingAbstractionsModule
+2022-12-12 13:36:54.497 +03:00 [INF]       - Volo.Abp.Authorization.AbpAuthorizationModule
+2022-12-12 13:36:54.497 +03:00 [INF]       - Volo.Abp.PermissionManagement.AbpPermissionManagementApplicationContractsModule
+2022-12-12 13:36:54.497 +03:00 [INF]         - Volo.Abp.Application.AbpDddApplicationContractsModule
+2022-12-12 13:36:54.497 +03:00 [INF]           - Volo.Abp.Auditing.AbpAuditingContractsModule
+2022-12-12 13:36:54.497 +03:00 [INF]         - Volo.Abp.PermissionManagement.AbpPermissionManagementDomainSharedModule
+2022-12-12 13:36:54.497 +03:00 [INF]     - Volo.Abp.AspNetCore.Mvc.AbpAspNetCoreMvcModule
+2022-12-12 13:36:54.497 +03:00 [INF]       - Volo.Abp.AspNetCore.AbpAspNetCoreModule
+2022-12-12 13:36:54.497 +03:00 [INF]         - Volo.Abp.Auditing.AbpAuditingModule
+2022-12-12 13:36:54.497 +03:00 [INF]         - Volo.Abp.Http.AbpHttpModule
+2022-12-12 13:36:54.497 +03:00 [INF]           - Volo.Abp.Http.AbpHttpAbstractionsModule
+2022-12-12 13:36:54.497 +03:00 [INF]           - Volo.Abp.Minify.AbpMinifyModule
+2022-12-12 13:36:54.497 +03:00 [INF]         - Volo.Abp.ExceptionHandling.AbpExceptionHandlingModule
+2022-12-12 13:36:54.497 +03:00 [INF]       - Volo.Abp.ApiVersioning.AbpApiVersioningAbstractionsModule
+2022-12-12 13:36:54.497 +03:00 [INF]       - Volo.Abp.AspNetCore.Mvc.AbpAspNetCoreMvcContractsModule
+2022-12-12 13:36:54.497 +03:00 [INF]       - Volo.Abp.UI.Navigation.AbpUiNavigationModule
+2022-12-12 13:36:54.497 +03:00 [INF]         - Volo.Abp.UI.AbpUiModule
+2022-12-12 13:36:54.497 +03:00 [INF]       - Volo.Abp.GlobalFeatures.AbpGlobalFeaturesModule
+2022-12-12 13:36:54.497 +03:00 [INF]       - Volo.Abp.Application.AbpDddApplicationModule
+2022-12-12 13:36:54.497 +03:00 [INF]         - Volo.Abp.Domain.AbpDddDomainModule
+2022-12-12 13:36:54.497 +03:00 [INF]           - Volo.Abp.ObjectMapping.AbpObjectMappingModule
+2022-12-12 13:36:54.497 +03:00 [INF]           - Volo.Abp.Specifications.AbpSpecificationsModule
+2022-12-12 13:36:54.497 +03:00 [INF]   - Volo.Blogging.BloggingHttpApiModule
+2022-12-12 13:36:54.497 +03:00 [INF]     - Volo.Blogging.BloggingApplicationContractsModule
+2022-12-12 13:36:54.497 +03:00 [INF]       - Volo.Blogging.BloggingApplicationContractsSharedModule
+2022-12-12 13:36:54.497 +03:00 [INF]         - Volo.Blogging.BloggingDomainSharedModule
+2022-12-12 13:36:54.497 +03:00 [INF]   - ProductManagement.ProductManagementHttpApiModule
+2022-12-12 13:36:54.497 +03:00 [INF]     - ProductManagement.ProductManagementApplicationContractsModule
+2022-12-12 13:36:54.497 +03:00 [INF]       - ProductManagement.ProductManagementDomainSharedModule
+2022-12-12 13:36:54.498 +03:00 [INF]   - RemittanceManagement.RemittanceManagementHttpApiModule
+2022-12-12 13:36:54.498 +03:00 [INF]     - RemittanceManagement.RemittanceManagementApplicationContractsModule
+2022-12-12 13:36:54.498 +03:00 [INF]       - RemittanceManagement.RemittanceManagementDomainSharedModule
+2022-12-12 13:36:54.498 +03:00 [INF]   - CurrencyManagment.CurrencyManagmentHttpApiModule
+2022-12-12 13:36:54.498 +03:00 [INF]     - CurrencyManagment.CurrencyManagmentApplicationContractsModule
+2022-12-12 13:36:54.498 +03:00 [INF]       - CurrencyManagment.CurrencyManagmentDomainSharedModule
+2022-12-12 13:36:54.498 +03:00 [INF]   - CustomerManagement.CustomerManagementHttpApiModule
+2022-12-12 13:36:54.498 +03:00 [INF]     - CustomerManagement.CustomerManagementApplicationContractsModule
+2022-12-12 13:36:54.498 +03:00 [INF]       - CustomerManagement.CustomerManagementDomainSharedModule
+2022-12-12 13:36:54.498 +03:00 [INF]   - Volo.Abp.EntityFrameworkCore.SqlServer.AbpEntityFrameworkCoreSqlServerModule
+2022-12-12 13:36:54.498 +03:00 [INF]     - Volo.Abp.EntityFrameworkCore.AbpEntityFrameworkCoreModule
+2022-12-12 13:36:54.498 +03:00 [INF]   - Volo.Abp.PermissionManagement.EntityFrameworkCore.AbpPermissionManagementEntityFrameworkCoreModule
+2022-12-12 13:36:54.498 +03:00 [INF]     - Volo.Abp.PermissionManagement.AbpPermissionManagementDomainModule
+2022-12-12 13:36:54.498 +03:00 [INF]       - Volo.Abp.Caching.AbpCachingModule
+2022-12-12 13:36:54.498 +03:00 [INF]         - Volo.Abp.Serialization.AbpSerializationModule
+2022-12-12 13:36:54.498 +03:00 [INF]   - Volo.Abp.SettingManagement.EntityFrameworkCore.AbpSettingManagementEntityFrameworkCoreModule
+2022-12-12 13:36:54.498 +03:00 [INF]     - Volo.Abp.SettingManagement.AbpSettingManagementDomainModule
+2022-12-12 13:36:54.498 +03:00 [INF]       - Volo.Abp.SettingManagement.AbpSettingManagementDomainSharedModule
+2022-12-12 13:36:54.498 +03:00 [INF]   - Volo.Abp.TenantManagement.AbpTenantManagementHttpApiModule
+2022-12-12 13:36:54.498 +03:00 [INF]     - Volo.Abp.TenantManagement.AbpTenantManagementApplicationContractsModule
+2022-12-12 13:36:54.498 +03:00 [INF]       - Volo.Abp.TenantManagement.AbpTenantManagementDomainSharedModule
+2022-12-12 13:36:54.498 +03:00 [INF]     - Volo.Abp.FeatureManagement.AbpFeatureManagementHttpApiModule
+2022-12-12 13:36:54.498 +03:00 [INF]       - Volo.Abp.FeatureManagement.AbpFeatureManagementApplicationContractsModule
+2022-12-12 13:36:54.498 +03:00 [INF]         - Volo.Abp.FeatureManagement.AbpFeatureManagementDomainSharedModule
+2022-12-12 13:36:54.498 +03:00 [INF]   - Volo.Abp.AspNetCore.MultiTenancy.AbpAspNetCoreMultiTenancyModule
+2022-12-12 13:37:03.547 +03:00 [INF] Initialized all ABP modules.
+2022-12-12 13:37:03.796 +03:00 [INF] Now listening on: https://localhost:44329
+2022-12-12 13:37:03.797 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+2022-12-12 13:37:03.797 +03:00 [INF] Hosting environment: Development
+2022-12-12 13:37:03.797 +03:00 [INF] Content root path: C:\Users\Admin\Source\Repos\RemittanceMicroservice_MVC\gateways\InternalGateway.Host
+2022-12-12 13:37:05.006 +03:00 [INF] Request starting HTTP/2 GET https://localhost:44329/ - -
+2022-12-12 13:37:05.411 +03:00 [DBG] AuthenticationScheme: Bearer was not authenticated.
+2022-12-12 13:37:05.625 +03:00 [DBG] requestId: 0HMMS5J7J20UM:00000001, previousRequestId: no previous request id, message: ocelot pipeline started
+2022-12-12 13:37:05.645 +03:00 [DBG] requestId: 0HMMS5J7J20UM:00000001, previousRequestId: no previous request id, message: Upstream url path is /
+2022-12-12 13:37:05.655 +03:00 [WRN] requestId: 0HMMS5J7J20UM:00000001, previousRequestId: no previous request id, message: DownstreamRouteFinderMiddleware setting pipeline errors. IDownstreamRouteFinder returned Error Code: UnableToFindDownstreamRouteError Message: Failed to match Route configuration for upstream path: /, verb: GET.
+2022-12-12 13:37:05.657 +03:00 [WRN] requestId: 0HMMS5J7J20UM:00000001, previousRequestId: no previous request id, message: Error Code: UnableToFindDownstreamRouteError Message: Failed to match Route configuration for upstream path: /, verb: GET. errors found in ResponderMiddleware. Setting error response for request path:/, request method: GET
+2022-12-12 13:37:05.661 +03:00 [DBG] requestId: 0HMMS5J7J20UM:00000001, previousRequestId: no previous request id, message: ocelot pipeline finished
+2022-12-12 13:37:05.722 +03:00 [INF] Request finished HTTP/2 GET https://localhost:44329/ - - - 404 0 - 717.1266ms
+2022-12-12 13:37:10.417 +03:00 [INF] Request starting HTTP/2 GET https://localhost:44329/swagger - -
+2022-12-12 13:37:10.421 +03:00 [DBG] AuthenticationScheme: Bearer was not authenticated.
+2022-12-12 13:37:10.423 +03:00 [INF] Request finished HTTP/2 GET https://localhost:44329/swagger - - - 301 0 - 5.3544ms
+2022-12-12 13:37:10.430 +03:00 [INF] Request starting HTTP/2 GET https://localhost:44329/swagger/index.html - -
+2022-12-12 13:37:10.438 +03:00 [DBG] AuthenticationScheme: Bearer was not authenticated.
+2022-12-12 13:37:12.845 +03:00 [INF] Request finished HTTP/2 GET https://localhost:44329/swagger/index.html - - - 200 - text/html;charset=utf-8 2415.3085ms
+2022-12-12 13:37:12.931 +03:00 [INF] Request starting HTTP/2 GET https://localhost:44329/swagger/swagger-ui.css - -
+2022-12-12 13:37:12.931 +03:00 [INF] Request starting HTTP/2 GET https://localhost:44329/swagger/swagger-ui-bundle.js - -
+2022-12-12 13:37:12.931 +03:00 [INF] Request starting HTTP/2 GET https://localhost:44329/swagger/swagger-ui-standalone-preset.js - -
+2022-12-12 13:37:12.932 +03:00 [DBG] AuthenticationScheme: Bearer was not authenticated.
+2022-12-12 13:37:12.932 +03:00 [DBG] AuthenticationScheme: Bearer was not authenticated.
+2022-12-12 13:37:12.933 +03:00 [INF] Request starting HTTP/2 GET https://localhost:44329/_framework/aspnetcore-browser-refresh.js - -
+2022-12-12 13:37:12.936 +03:00 [DBG] AuthenticationScheme: Bearer was not authenticated.
+2022-12-12 13:37:12.937 +03:00 [INF] Request finished HTTP/2 GET https://localhost:44329/_framework/aspnetcore-browser-refresh.js - - - 200 12010 application/javascript;+charset=utf-8 4.5032ms
+2022-12-12 13:37:14.306 +03:00 [INF] Request starting HTTP/2 GET https://localhost:44329/_framework/aspnetcore-browser-refresh.js - -
+2022-12-12 13:37:14.319 +03:00 [INF] Request finished HTTP/2 GET https://localhost:44329/_framework/aspnetcore-browser-refresh.js - - - 200 12010 application/javascript;+charset=utf-8 10.5391ms
+2022-12-12 13:37:14.352 +03:00 [INF] Sending file. Request path: '/swagger-ui.css'. Physical path: 'N/A'
+2022-12-12 13:37:14.353 +03:00 [INF] Request finished HTTP/2 GET https://localhost:44329/swagger/swagger-ui.css - - - 200 143632 text/css 1422.3193ms
+2022-12-12 13:37:14.623 +03:00 [INF] Sending file. Request path: '/swagger-ui-standalone-preset.js'. Physical path: 'N/A'
+2022-12-12 13:37:14.623 +03:00 [INF] Request finished HTTP/2 GET https://localhost:44329/swagger/swagger-ui-standalone-preset.js - - - 200 337162 application/javascript 1691.7950ms
+2022-12-12 13:37:14.715 +03:00 [INF] Request starting HTTP/2 GET https://localhost:44329/favicon.ico - -
+2022-12-12 13:37:14.730 +03:00 [DBG] AuthenticationScheme: Bearer was not authenticated.
+2022-12-12 13:37:14.731 +03:00 [DBG] requestId: 0HMMS5J7J20UN:0000000F, previousRequestId: no previous request id, message: ocelot pipeline started
+2022-12-12 13:37:14.731 +03:00 [DBG] requestId: 0HMMS5J7J20UN:0000000F, previousRequestId: no previous request id, message: Upstream url path is /favicon.ico
+2022-12-12 13:37:14.732 +03:00 [WRN] requestId: 0HMMS5J7J20UN:0000000F, previousRequestId: no previous request id, message: DownstreamRouteFinderMiddleware setting pipeline errors. IDownstreamRouteFinder returned Error Code: UnableToFindDownstreamRouteError Message: Failed to match Route configuration for upstream path: /favicon.ico, verb: GET.
+2022-12-12 13:37:14.741 +03:00 [WRN] requestId: 0HMMS5J7J20UN:0000000F, previousRequestId: no previous request id, message: Error Code: UnableToFindDownstreamRouteError Message: Failed to match Route configuration for upstream path: /favicon.ico, verb: GET. errors found in ResponderMiddleware. Setting error response for request path:/favicon.ico, request method: GET
+2022-12-12 13:37:14.741 +03:00 [DBG] requestId: 0HMMS5J7J20UN:0000000F, previousRequestId: no previous request id, message: ocelot pipeline finished
+2022-12-12 13:37:14.742 +03:00 [INF] Request finished HTTP/2 GET https://localhost:44329/favicon.ico - - - 404 0 - 26.6569ms
+2022-12-12 13:37:14.742 +03:00 [INF] Sending file. Request path: '/swagger-ui-bundle.js'. Physical path: 'N/A'
+2022-12-12 13:37:14.742 +03:00 [INF] Request finished HTTP/2 GET https://localhost:44329/swagger/swagger-ui-bundle.js - - - 200 1091362 application/javascript 1811.5245ms
+2022-12-12 13:37:15.531 +03:00 [INF] Request starting HTTP/2 GET https://localhost:44329/swagger/v1/swagger.json - -
+2022-12-12 13:37:15.531 +03:00 [DBG] AuthenticationScheme: Bearer was not authenticated.
+2022-12-12 13:37:16.427 +03:00 [INF] Request starting HTTP/2 GET https://localhost:44329/swagger/favicon-32x32.png - -
+2022-12-12 13:37:16.430 +03:00 [DBG] AuthenticationScheme: Bearer was not authenticated.
+2022-12-12 13:37:16.431 +03:00 [INF] Sending file. Request path: '/favicon-32x32.png'. Physical path: 'N/A'
+2022-12-12 13:37:16.431 +03:00 [INF] Request finished HTTP/2 GET https://localhost:44329/swagger/favicon-32x32.png - - - 200 628 image/png 3.5045ms
+2022-12-12 13:37:17.261 +03:00 [INF] Request finished HTTP/2 GET https://localhost:44329/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 1730.7363ms
+2022-12-12 14:02:34.060 +03:00 [INF] Starting IdentityService.Host.
+2022-12-12 14:02:36.732 +03:00 [INF] Loaded ABP modules:
+2022-12-12 14:02:36.734 +03:00 [INF] - InternalGateway.Host.InternalGatewayHostModule
+2022-12-12 14:02:36.734 +03:00 [INF]   - Volo.Abp.Autofac.AbpAutofacModule
+2022-12-12 14:02:36.734 +03:00 [INF]     - Volo.Abp.Castle.AbpCastleCoreModule
+2022-12-12 14:02:36.734 +03:00 [INF]   - Volo.Abp.Identity.AbpIdentityHttpApiModule
+2022-12-12 14:02:36.734 +03:00 [INF]     - Volo.Abp.Identity.AbpIdentityApplicationContractsModule
+2022-12-12 14:02:36.734 +03:00 [INF]       - Volo.Abp.Identity.AbpIdentityDomainSharedModule
+2022-12-12 14:02:36.734 +03:00 [INF]         - Volo.Abp.Users.AbpUsersDomainSharedModule
+2022-12-12 14:02:36.734 +03:00 [INF]         - Volo.Abp.Validation.AbpValidationModule
+2022-12-12 14:02:36.734 +03:00 [INF]           - Volo.Abp.Validation.AbpValidationAbstractionsModule
+2022-12-12 14:02:36.734 +03:00 [INF]           - Volo.Abp.Localization.AbpLocalizationModule
+2022-12-12 14:02:36.734 +03:00 [INF]             - Volo.Abp.VirtualFileSystem.AbpVirtualFileSystemModule
+2022-12-12 14:02:36.734 +03:00 [INF]             - Volo.Abp.Settings.AbpSettingsModule
+2022-12-12 14:02:36.734 +03:00 [INF]               - Volo.Abp.Localization.AbpLocalizationAbstractionsModule
+2022-12-12 14:02:36.734 +03:00 [INF]               - Volo.Abp.Security.AbpSecurityModule
+2022-12-12 14:02:36.734 +03:00 [INF]               - Volo.Abp.MultiTenancy.AbpMultiTenancyModule
+2022-12-12 14:02:36.734 +03:00 [INF]                 - Volo.Abp.Data.AbpDataModule
+2022-12-12 14:02:36.734 +03:00 [INF]                   - Volo.Abp.ObjectExtending.AbpObjectExtendingModule
+2022-12-12 14:02:36.734 +03:00 [INF]                   - Volo.Abp.Uow.AbpUnitOfWorkModule
+2022-12-12 14:02:36.734 +03:00 [INF]                   - Volo.Abp.EventBus.Abstractions.AbpEventBusAbstractionsModule
+2022-12-12 14:02:36.734 +03:00 [INF]         - Volo.Abp.Features.AbpFeaturesModule
+2022-12-12 14:02:36.734 +03:00 [INF]           - Volo.Abp.Authorization.AbpAuthorizationAbstractionsModule
+2022-12-12 14:02:36.734 +03:00 [INF]       - Volo.Abp.Users.AbpUsersAbstractionModule
+2022-12-12 14:02:36.734 +03:00 [INF]         - Volo.Abp.EventBus.AbpEventBusModule
+2022-12-12 14:02:36.734 +03:00 [INF]           - Volo.Abp.Json.AbpJsonModule
+2022-12-12 14:02:36.734 +03:00 [INF]             - Volo.Abp.Timing.AbpTimingModule
+2022-12-12 14:02:36.734 +03:00 [INF]           - Volo.Abp.Guids.AbpGuidsModule
+2022-12-12 14:02:36.734 +03:00 [INF]           - Volo.Abp.BackgroundWorkers.AbpBackgroundWorkersModule
+2022-12-12 14:02:36.734 +03:00 [INF]             - Volo.Abp.Threading.AbpThreadingModule
+2022-12-12 14:02:36.734 +03:00 [INF]           - Volo.Abp.DistributedLocking.AbpDistributedLockingAbstractionsModule
+2022-12-12 14:02:36.734 +03:00 [INF]       - Volo.Abp.Authorization.AbpAuthorizationModule
+2022-12-12 14:02:36.734 +03:00 [INF]       - Volo.Abp.PermissionManagement.AbpPermissionManagementApplicationContractsModule
+2022-12-12 14:02:36.734 +03:00 [INF]         - Volo.Abp.Application.AbpDddApplicationContractsModule
+2022-12-12 14:02:36.734 +03:00 [INF]           - Volo.Abp.Auditing.AbpAuditingContractsModule
+2022-12-12 14:02:36.734 +03:00 [INF]         - Volo.Abp.PermissionManagement.AbpPermissionManagementDomainSharedModule
+2022-12-12 14:02:36.734 +03:00 [INF]     - Volo.Abp.AspNetCore.Mvc.AbpAspNetCoreMvcModule
+2022-12-12 14:02:36.734 +03:00 [INF]       - Volo.Abp.AspNetCore.AbpAspNetCoreModule
+2022-12-12 14:02:36.734 +03:00 [INF]         - Volo.Abp.Auditing.AbpAuditingModule
+2022-12-12 14:02:36.734 +03:00 [INF]         - Volo.Abp.Http.AbpHttpModule
+2022-12-12 14:02:36.734 +03:00 [INF]           - Volo.Abp.Http.AbpHttpAbstractionsModule
+2022-12-12 14:02:36.734 +03:00 [INF]           - Volo.Abp.Minify.AbpMinifyModule
+2022-12-12 14:02:36.734 +03:00 [INF]         - Volo.Abp.ExceptionHandling.AbpExceptionHandlingModule
+2022-12-12 14:02:36.734 +03:00 [INF]       - Volo.Abp.ApiVersioning.AbpApiVersioningAbstractionsModule
+2022-12-12 14:02:36.734 +03:00 [INF]       - Volo.Abp.AspNetCore.Mvc.AbpAspNetCoreMvcContractsModule
+2022-12-12 14:02:36.734 +03:00 [INF]       - Volo.Abp.UI.Navigation.AbpUiNavigationModule
+2022-12-12 14:02:36.734 +03:00 [INF]         - Volo.Abp.UI.AbpUiModule
+2022-12-12 14:02:36.734 +03:00 [INF]       - Volo.Abp.GlobalFeatures.AbpGlobalFeaturesModule
+2022-12-12 14:02:36.734 +03:00 [INF]       - Volo.Abp.Application.AbpDddApplicationModule
+2022-12-12 14:02:36.734 +03:00 [INF]         - Volo.Abp.Domain.AbpDddDomainModule
+2022-12-12 14:02:36.734 +03:00 [INF]           - Volo.Abp.ObjectMapping.AbpObjectMappingModule
+2022-12-12 14:02:36.734 +03:00 [INF]           - Volo.Abp.Specifications.AbpSpecificationsModule
+2022-12-12 14:02:36.734 +03:00 [INF]   - Volo.Blogging.BloggingHttpApiModule
+2022-12-12 14:02:36.734 +03:00 [INF]     - Volo.Blogging.BloggingApplicationContractsModule
+2022-12-12 14:02:36.734 +03:00 [INF]       - Volo.Blogging.BloggingApplicationContractsSharedModule
+2022-12-12 14:02:36.734 +03:00 [INF]         - Volo.Blogging.BloggingDomainSharedModule
+2022-12-12 14:02:36.734 +03:00 [INF]   - ProductManagement.ProductManagementHttpApiModule
+2022-12-12 14:02:36.734 +03:00 [INF]     - ProductManagement.ProductManagementApplicationContractsModule
+2022-12-12 14:02:36.734 +03:00 [INF]       - ProductManagement.ProductManagementDomainSharedModule
+2022-12-12 14:02:36.734 +03:00 [INF]   - RemittanceManagement.RemittanceManagementHttpApiModule
+2022-12-12 14:02:36.734 +03:00 [INF]     - RemittanceManagement.RemittanceManagementApplicationContractsModule
+2022-12-12 14:02:36.734 +03:00 [INF]       - RemittanceManagement.RemittanceManagementDomainSharedModule
+2022-12-12 14:02:36.734 +03:00 [INF]   - CurrencyManagment.CurrencyManagmentHttpApiModule
+2022-12-12 14:02:36.734 +03:00 [INF]     - CurrencyManagment.CurrencyManagmentApplicationContractsModule
+2022-12-12 14:02:36.734 +03:00 [INF]       - CurrencyManagment.CurrencyManagmentDomainSharedModule
+2022-12-12 14:02:36.734 +03:00 [INF]   - CustomerManagement.CustomerManagementHttpApiModule
+2022-12-12 14:02:36.734 +03:00 [INF]     - CustomerManagement.CustomerManagementApplicationContractsModule
+2022-12-12 14:02:36.734 +03:00 [INF]       - CustomerManagement.CustomerManagementDomainSharedModule
+2022-12-12 14:02:36.734 +03:00 [INF]   - Volo.Abp.EntityFrameworkCore.SqlServer.AbpEntityFrameworkCoreSqlServerModule
+2022-12-12 14:02:36.734 +03:00 [INF]     - Volo.Abp.EntityFrameworkCore.AbpEntityFrameworkCoreModule
+2022-12-12 14:02:36.734 +03:00 [INF]   - Volo.Abp.PermissionManagement.EntityFrameworkCore.AbpPermissionManagementEntityFrameworkCoreModule
+2022-12-12 14:02:36.734 +03:00 [INF]     - Volo.Abp.PermissionManagement.AbpPermissionManagementDomainModule
+2022-12-12 14:02:36.734 +03:00 [INF]       - Volo.Abp.Caching.AbpCachingModule
+2022-12-12 14:02:36.734 +03:00 [INF]         - Volo.Abp.Serialization.AbpSerializationModule
+2022-12-12 14:02:36.734 +03:00 [INF]   - Volo.Abp.SettingManagement.EntityFrameworkCore.AbpSettingManagementEntityFrameworkCoreModule
+2022-12-12 14:02:36.734 +03:00 [INF]     - Volo.Abp.SettingManagement.AbpSettingManagementDomainModule
+2022-12-12 14:02:36.734 +03:00 [INF]       - Volo.Abp.SettingManagement.AbpSettingManagementDomainSharedModule
+2022-12-12 14:02:36.734 +03:00 [INF]   - Volo.Abp.TenantManagement.AbpTenantManagementHttpApiModule
+2022-12-12 14:02:36.735 +03:00 [INF]     - Volo.Abp.TenantManagement.AbpTenantManagementApplicationContractsModule
+2022-12-12 14:02:36.735 +03:00 [INF]       - Volo.Abp.TenantManagement.AbpTenantManagementDomainSharedModule
+2022-12-12 14:02:36.735 +03:00 [INF]     - Volo.Abp.FeatureManagement.AbpFeatureManagementHttpApiModule
+2022-12-12 14:02:36.735 +03:00 [INF]       - Volo.Abp.FeatureManagement.AbpFeatureManagementApplicationContractsModule
+2022-12-12 14:02:36.735 +03:00 [INF]         - Volo.Abp.FeatureManagement.AbpFeatureManagementDomainSharedModule
+2022-12-12 14:02:36.735 +03:00 [INF]   - Volo.Abp.AspNetCore.MultiTenancy.AbpAspNetCoreMultiTenancyModule
+2022-12-12 14:02:38.021 +03:00 [INF] Initialized all ABP modules.
+2022-12-12 14:02:38.135 +03:00 [INF] Now listening on: https://localhost:44329
+2022-12-12 14:02:38.136 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+2022-12-12 14:02:38.136 +03:00 [INF] Hosting environment: Development
+2022-12-12 14:02:38.136 +03:00 [INF] Content root path: C:\Users\Admin\Source\Repos\RemittanceMicroservice_MVC\gateways\InternalGateway.Host
+2022-12-12 14:02:40.361 +03:00 [INF] Request starting HTTP/2 GET https://localhost:44329/ - -
+2022-12-12 14:02:40.677 +03:00 [DBG] AuthenticationScheme: Bearer was not authenticated.
+2022-12-12 14:02:40.962 +03:00 [DBG] requestId: 0HMMS61GUM4OF:00000001, previousRequestId: no previous request id, message: ocelot pipeline started
+2022-12-12 14:02:40.990 +03:00 [DBG] requestId: 0HMMS61GUM4OF:00000001, previousRequestId: no previous request id, message: Upstream url path is /
+2022-12-12 14:02:40.995 +03:00 [WRN] requestId: 0HMMS61GUM4OF:00000001, previousRequestId: no previous request id, message: DownstreamRouteFinderMiddleware setting pipeline errors. IDownstreamRouteFinder returned Error Code: UnableToFindDownstreamRouteError Message: Failed to match Route configuration for upstream path: /, verb: GET.
+2022-12-12 14:02:40.996 +03:00 [WRN] requestId: 0HMMS61GUM4OF:00000001, previousRequestId: no previous request id, message: Error Code: UnableToFindDownstreamRouteError Message: Failed to match Route configuration for upstream path: /, verb: GET. errors found in ResponderMiddleware. Setting error response for request path:/, request method: GET
+2022-12-12 14:02:40.997 +03:00 [DBG] requestId: 0HMMS61GUM4OF:00000001, previousRequestId: no previous request id, message: ocelot pipeline finished
+2022-12-12 14:02:41.015 +03:00 [INF] Request finished HTTP/2 GET https://localhost:44329/ - - - 404 0 - 653.0767ms
+2022-12-12 14:02:50.065 +03:00 [INF] Request starting HTTP/2 GET https://localhost:44329/swagger/index.html - -
+2022-12-12 14:02:50.075 +03:00 [DBG] AuthenticationScheme: Bearer was not authenticated.
+2022-12-12 14:02:52.253 +03:00 [INF] Request finished HTTP/2 GET https://localhost:44329/swagger/index.html - - - 200 - text/html;charset=utf-8 2188.8099ms
+2022-12-12 14:02:52.264 +03:00 [INF] Request starting HTTP/2 GET https://localhost:44329/_framework/aspnetcore-browser-refresh.js - -
+2022-12-12 14:02:52.265 +03:00 [INF] Request finished HTTP/2 GET https://localhost:44329/_framework/aspnetcore-browser-refresh.js - - - 200 12010 application/javascript;+charset=utf-8 1.2214ms
+2022-12-12 14:02:54.035 +03:00 [INF] Request starting HTTP/2 GET https://localhost:44329/swagger/v1/swagger.json - -
+2022-12-12 14:02:54.036 +03:00 [DBG] AuthenticationScheme: Bearer was not authenticated.
+2022-12-12 14:02:54.561 +03:00 [INF] Request finished HTTP/2 GET https://localhost:44329/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 526.0969ms
+2022-12-12 14:25:25.865 +03:00 [INF] Starting IdentityService.Host.
+2022-12-12 14:25:27.923 +03:00 [INF] Loaded ABP modules:
+2022-12-12 14:25:27.925 +03:00 [INF] - InternalGateway.Host.InternalGatewayHostModule
+2022-12-12 14:25:27.925 +03:00 [INF]   - Volo.Abp.Autofac.AbpAutofacModule
+2022-12-12 14:25:27.925 +03:00 [INF]     - Volo.Abp.Castle.AbpCastleCoreModule
+2022-12-12 14:25:27.925 +03:00 [INF]   - Volo.Abp.Identity.AbpIdentityHttpApiModule
+2022-12-12 14:25:27.925 +03:00 [INF]     - Volo.Abp.Identity.AbpIdentityApplicationContractsModule
+2022-12-12 14:25:27.925 +03:00 [INF]       - Volo.Abp.Identity.AbpIdentityDomainSharedModule
+2022-12-12 14:25:27.925 +03:00 [INF]         - Volo.Abp.Users.AbpUsersDomainSharedModule
+2022-12-12 14:25:27.925 +03:00 [INF]         - Volo.Abp.Validation.AbpValidationModule
+2022-12-12 14:25:27.925 +03:00 [INF]           - Volo.Abp.Validation.AbpValidationAbstractionsModule
+2022-12-12 14:25:27.925 +03:00 [INF]           - Volo.Abp.Localization.AbpLocalizationModule
+2022-12-12 14:25:27.925 +03:00 [INF]             - Volo.Abp.VirtualFileSystem.AbpVirtualFileSystemModule
+2022-12-12 14:25:27.925 +03:00 [INF]             - Volo.Abp.Settings.AbpSettingsModule
+2022-12-12 14:25:27.925 +03:00 [INF]               - Volo.Abp.Localization.AbpLocalizationAbstractionsModule
+2022-12-12 14:25:27.925 +03:00 [INF]               - Volo.Abp.Security.AbpSecurityModule
+2022-12-12 14:25:27.925 +03:00 [INF]               - Volo.Abp.MultiTenancy.AbpMultiTenancyModule
+2022-12-12 14:25:27.925 +03:00 [INF]                 - Volo.Abp.Data.AbpDataModule
+2022-12-12 14:25:27.925 +03:00 [INF]                   - Volo.Abp.ObjectExtending.AbpObjectExtendingModule
+2022-12-12 14:25:27.925 +03:00 [INF]                   - Volo.Abp.Uow.AbpUnitOfWorkModule
+2022-12-12 14:25:27.925 +03:00 [INF]                   - Volo.Abp.EventBus.Abstractions.AbpEventBusAbstractionsModule
+2022-12-12 14:25:27.925 +03:00 [INF]         - Volo.Abp.Features.AbpFeaturesModule
+2022-12-12 14:25:27.925 +03:00 [INF]           - Volo.Abp.Authorization.AbpAuthorizationAbstractionsModule
+2022-12-12 14:25:27.925 +03:00 [INF]       - Volo.Abp.Users.AbpUsersAbstractionModule
+2022-12-12 14:25:27.925 +03:00 [INF]         - Volo.Abp.EventBus.AbpEventBusModule
+2022-12-12 14:25:27.925 +03:00 [INF]           - Volo.Abp.Json.AbpJsonModule
+2022-12-12 14:25:27.925 +03:00 [INF]             - Volo.Abp.Timing.AbpTimingModule
+2022-12-12 14:25:27.925 +03:00 [INF]           - Volo.Abp.Guids.AbpGuidsModule
+2022-12-12 14:25:27.925 +03:00 [INF]           - Volo.Abp.BackgroundWorkers.AbpBackgroundWorkersModule
+2022-12-12 14:25:27.925 +03:00 [INF]             - Volo.Abp.Threading.AbpThreadingModule
+2022-12-12 14:25:27.925 +03:00 [INF]           - Volo.Abp.DistributedLocking.AbpDistributedLockingAbstractionsModule
+2022-12-12 14:25:27.925 +03:00 [INF]       - Volo.Abp.Authorization.AbpAuthorizationModule
+2022-12-12 14:25:27.926 +03:00 [INF]       - Volo.Abp.PermissionManagement.AbpPermissionManagementApplicationContractsModule
+2022-12-12 14:25:27.926 +03:00 [INF]         - Volo.Abp.Application.AbpDddApplicationContractsModule
+2022-12-12 14:25:27.926 +03:00 [INF]           - Volo.Abp.Auditing.AbpAuditingContractsModule
+2022-12-12 14:25:27.926 +03:00 [INF]         - Volo.Abp.PermissionManagement.AbpPermissionManagementDomainSharedModule
+2022-12-12 14:25:27.926 +03:00 [INF]     - Volo.Abp.AspNetCore.Mvc.AbpAspNetCoreMvcModule
+2022-12-12 14:25:27.926 +03:00 [INF]       - Volo.Abp.AspNetCore.AbpAspNetCoreModule
+2022-12-12 14:25:27.926 +03:00 [INF]         - Volo.Abp.Auditing.AbpAuditingModule
+2022-12-12 14:25:27.926 +03:00 [INF]         - Volo.Abp.Http.AbpHttpModule
+2022-12-12 14:25:27.926 +03:00 [INF]           - Volo.Abp.Http.AbpHttpAbstractionsModule
+2022-12-12 14:25:27.926 +03:00 [INF]           - Volo.Abp.Minify.AbpMinifyModule
+2022-12-12 14:25:27.926 +03:00 [INF]         - Volo.Abp.ExceptionHandling.AbpExceptionHandlingModule
+2022-12-12 14:25:27.926 +03:00 [INF]       - Volo.Abp.ApiVersioning.AbpApiVersioningAbstractionsModule
+2022-12-12 14:25:27.926 +03:00 [INF]       - Volo.Abp.AspNetCore.Mvc.AbpAspNetCoreMvcContractsModule
+2022-12-12 14:25:27.926 +03:00 [INF]       - Volo.Abp.UI.Navigation.AbpUiNavigationModule
+2022-12-12 14:25:27.926 +03:00 [INF]         - Volo.Abp.UI.AbpUiModule
+2022-12-12 14:25:27.926 +03:00 [INF]       - Volo.Abp.GlobalFeatures.AbpGlobalFeaturesModule
+2022-12-12 14:25:27.926 +03:00 [INF]       - Volo.Abp.Application.AbpDddApplicationModule
+2022-12-12 14:25:27.926 +03:00 [INF]         - Volo.Abp.Domain.AbpDddDomainModule
+2022-12-12 14:25:27.926 +03:00 [INF]           - Volo.Abp.ObjectMapping.AbpObjectMappingModule
+2022-12-12 14:25:27.926 +03:00 [INF]           - Volo.Abp.Specifications.AbpSpecificationsModule
+2022-12-12 14:25:27.926 +03:00 [INF]   - Volo.Blogging.BloggingHttpApiModule
+2022-12-12 14:25:27.926 +03:00 [INF]     - Volo.Blogging.BloggingApplicationContractsModule
+2022-12-12 14:25:27.926 +03:00 [INF]       - Volo.Blogging.BloggingApplicationContractsSharedModule
+2022-12-12 14:25:27.926 +03:00 [INF]         - Volo.Blogging.BloggingDomainSharedModule
+2022-12-12 14:25:27.926 +03:00 [INF]   - ProductManagement.ProductManagementHttpApiModule
+2022-12-12 14:25:27.926 +03:00 [INF]     - ProductManagement.ProductManagementApplicationContractsModule
+2022-12-12 14:25:27.926 +03:00 [INF]       - ProductManagement.ProductManagementDomainSharedModule
+2022-12-12 14:25:27.926 +03:00 [INF]   - RemittanceManagement.RemittanceManagementHttpApiModule
+2022-12-12 14:25:27.926 +03:00 [INF]     - RemittanceManagement.RemittanceManagementApplicationContractsModule
+2022-12-12 14:25:27.926 +03:00 [INF]       - RemittanceManagement.RemittanceManagementDomainSharedModule
+2022-12-12 14:25:27.926 +03:00 [INF]   - CurrencyManagment.CurrencyManagmentHttpApiModule
+2022-12-12 14:25:27.926 +03:00 [INF]     - CurrencyManagment.CurrencyManagmentApplicationContractsModule
+2022-12-12 14:25:27.926 +03:00 [INF]       - CurrencyManagment.CurrencyManagmentDomainSharedModule
+2022-12-12 14:25:27.926 +03:00 [INF]   - CustomerManagement.CustomerManagementHttpApiModule
+2022-12-12 14:25:27.926 +03:00 [INF]     - CustomerManagement.CustomerManagementApplicationContractsModule
+2022-12-12 14:25:27.926 +03:00 [INF]       - CustomerManagement.CustomerManagementDomainSharedModule
+2022-12-12 14:25:27.926 +03:00 [INF]   - Volo.Abp.EntityFrameworkCore.SqlServer.AbpEntityFrameworkCoreSqlServerModule
+2022-12-12 14:25:27.926 +03:00 [INF]     - Volo.Abp.EntityFrameworkCore.AbpEntityFrameworkCoreModule
+2022-12-12 14:25:27.926 +03:00 [INF]   - Volo.Abp.PermissionManagement.EntityFrameworkCore.AbpPermissionManagementEntityFrameworkCoreModule
+2022-12-12 14:25:27.926 +03:00 [INF]     - Volo.Abp.PermissionManagement.AbpPermissionManagementDomainModule
+2022-12-12 14:25:27.926 +03:00 [INF]       - Volo.Abp.Caching.AbpCachingModule
+2022-12-12 14:25:27.926 +03:00 [INF]         - Volo.Abp.Serialization.AbpSerializationModule
+2022-12-12 14:25:27.926 +03:00 [INF]   - Volo.Abp.SettingManagement.EntityFrameworkCore.AbpSettingManagementEntityFrameworkCoreModule
+2022-12-12 14:25:27.926 +03:00 [INF]     - Volo.Abp.SettingManagement.AbpSettingManagementDomainModule
+2022-12-12 14:25:27.926 +03:00 [INF]       - Volo.Abp.SettingManagement.AbpSettingManagementDomainSharedModule
+2022-12-12 14:25:27.926 +03:00 [INF]   - Volo.Abp.TenantManagement.AbpTenantManagementHttpApiModule
+2022-12-12 14:25:27.926 +03:00 [INF]     - Volo.Abp.TenantManagement.AbpTenantManagementApplicationContractsModule
+2022-12-12 14:25:27.926 +03:00 [INF]       - Volo.Abp.TenantManagement.AbpTenantManagementDomainSharedModule
+2022-12-12 14:25:27.926 +03:00 [INF]     - Volo.Abp.FeatureManagement.AbpFeatureManagementHttpApiModule
+2022-12-12 14:25:27.927 +03:00 [INF]       - Volo.Abp.FeatureManagement.AbpFeatureManagementApplicationContractsModule
+2022-12-12 14:25:27.927 +03:00 [INF]         - Volo.Abp.FeatureManagement.AbpFeatureManagementDomainSharedModule
+2022-12-12 14:25:27.927 +03:00 [INF]   - Volo.Abp.AspNetCore.MultiTenancy.AbpAspNetCoreMultiTenancyModule
+2022-12-12 14:25:28.985 +03:00 [INF] Initialized all ABP modules.
+2022-12-12 14:25:29.237 +03:00 [INF] Now listening on: https://localhost:44329
+2022-12-12 14:25:29.238 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+2022-12-12 14:25:29.238 +03:00 [INF] Hosting environment: Development
+2022-12-12 14:25:29.238 +03:00 [INF] Content root path: C:\Users\Admin\Source\Repos\RemittanceMicroservice_MVC\gateways\InternalGateway.Host
+2022-12-12 14:25:30.077 +03:00 [INF] Request starting HTTP/2 GET https://localhost:44329/ - -
+2022-12-12 14:25:30.202 +03:00 [DBG] AuthenticationScheme: Bearer was not authenticated.
+2022-12-12 14:25:30.400 +03:00 [DBG] requestId: 0HMMS6E9G3VPG:00000001, previousRequestId: no previous request id, message: ocelot pipeline started
+2022-12-12 14:25:30.404 +03:00 [DBG] requestId: 0HMMS6E9G3VPG:00000001, previousRequestId: no previous request id, message: Upstream url path is /
+2022-12-12 14:25:30.444 +03:00 [WRN] requestId: 0HMMS6E9G3VPG:00000001, previousRequestId: no previous request id, message: DownstreamRouteFinderMiddleware setting pipeline errors. IDownstreamRouteFinder returned Error Code: UnableToFindDownstreamRouteError Message: Failed to match Route configuration for upstream path: /, verb: GET.
+2022-12-12 14:25:30.446 +03:00 [WRN] requestId: 0HMMS6E9G3VPG:00000001, previousRequestId: no previous request id, message: Error Code: UnableToFindDownstreamRouteError Message: Failed to match Route configuration for upstream path: /, verb: GET. errors found in ResponderMiddleware. Setting error response for request path:/, request method: GET
+2022-12-12 14:25:30.449 +03:00 [DBG] requestId: 0HMMS6E9G3VPG:00000001, previousRequestId: no previous request id, message: ocelot pipeline finished
+2022-12-12 14:25:30.468 +03:00 [INF] Request finished HTTP/2 GET https://localhost:44329/ - - - 404 0 - 390.7414ms
+2022-12-12 14:25:41.415 +03:00 [INF] Request starting HTTP/2 GET https://localhost:44329/swagger - -
+2022-12-12 14:25:41.421 +03:00 [DBG] AuthenticationScheme: Bearer was not authenticated.
+2022-12-12 14:25:41.423 +03:00 [INF] Request finished HTTP/2 GET https://localhost:44329/swagger - - - 301 0 - 8.7305ms
+2022-12-12 14:25:41.528 +03:00 [INF] Request starting HTTP/2 GET https://localhost:44329/swagger/index.html - -
+2022-12-12 14:25:41.538 +03:00 [DBG] AuthenticationScheme: Bearer was not authenticated.
+2022-12-12 14:25:43.730 +03:00 [INF] Request finished HTTP/2 GET https://localhost:44329/swagger/index.html - - - 200 - text/html;charset=utf-8 2201.8848ms
+2022-12-12 14:25:47.946 +03:00 [INF] Request starting HTTP/2 GET https://localhost:44329/swagger/index.html - -
+2022-12-12 14:25:47.948 +03:00 [DBG] AuthenticationScheme: Bearer was not authenticated.
+2022-12-12 14:25:49.978 +03:00 [INF] Request finished HTTP/2 GET https://localhost:44329/swagger/index.html - - - 200 - text/html;charset=utf-8 2031.8037ms
+2022-12-12 14:25:49.984 +03:00 [INF] Request starting HTTP/2 GET https://localhost:44329/swagger/swagger-ui.css - -
+2022-12-12 14:25:49.984 +03:00 [INF] Request starting HTTP/2 GET https://localhost:44329/swagger/swagger-ui-bundle.js - -
+2022-12-12 14:25:49.985 +03:00 [DBG] AuthenticationScheme: Bearer was not authenticated.
+2022-12-12 14:25:49.985 +03:00 [INF] Request starting HTTP/2 GET https://localhost:44329/swagger/swagger-ui-standalone-preset.js - -
+2022-12-12 14:25:49.985 +03:00 [DBG] AuthenticationScheme: Bearer was not authenticated.
+2022-12-12 14:25:49.986 +03:00 [DBG] AuthenticationScheme: Bearer was not authenticated.
+2022-12-12 14:25:50.013 +03:00 [INF] Sending file. Request path: '/swagger-ui-standalone-preset.js'. Physical path: 'N/A'
+2022-12-12 14:25:50.014 +03:00 [INF] Request finished HTTP/2 GET https://localhost:44329/swagger/swagger-ui-standalone-preset.js - - - 200 337162 application/javascript 28.7852ms
+2022-12-12 14:25:50.019 +03:00 [INF] Sending file. Request path: '/swagger-ui.css'. Physical path: 'N/A'
+2022-12-12 14:25:50.021 +03:00 [INF] Request finished HTTP/2 GET https://localhost:44329/swagger/swagger-ui.css - - - 200 143632 text/css 36.6173ms
+2022-12-12 14:25:50.021 +03:00 [INF] Sending file. Request path: '/swagger-ui-bundle.js'. Physical path: 'N/A'
+2022-12-12 14:25:50.021 +03:00 [INF] Request finished HTTP/2 GET https://localhost:44329/swagger/swagger-ui-bundle.js - - - 200 1091362 application/javascript 36.8120ms
+2022-12-12 14:25:50.046 +03:00 [INF] Request starting HTTP/2 GET https://localhost:44329/_framework/aspnetcore-browser-refresh.js - -
+2022-12-12 14:25:50.049 +03:00 [INF] Request finished HTTP/2 GET https://localhost:44329/_framework/aspnetcore-browser-refresh.js - - - 200 12010 application/javascript;+charset=utf-8 3.0963ms
+2022-12-12 14:25:50.373 +03:00 [INF] Request starting HTTP/2 GET https://localhost:44329/swagger/v1/swagger.json - -
+2022-12-12 14:25:50.373 +03:00 [DBG] AuthenticationScheme: Bearer was not authenticated.
+2022-12-12 14:25:51.190 +03:00 [INF] Request finished HTTP/2 GET https://localhost:44329/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 817.3057ms
+2022-12-12 14:25:59.301 +03:00 [INF] Request starting HTTP/2 GET https://localhost:44329/swagger/favicon-32x32.png - -
+2022-12-12 14:25:59.301 +03:00 [DBG] AuthenticationScheme: Bearer was not authenticated.
+2022-12-12 14:25:59.302 +03:00 [INF] Sending file. Request path: '/favicon-32x32.png'. Physical path: 'N/A'
+2022-12-12 14:25:59.302 +03:00 [INF] Request finished HTTP/2 GET https://localhost:44329/swagger/favicon-32x32.png - - - 200 628 image/png 1.5524ms

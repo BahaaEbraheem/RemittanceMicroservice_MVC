@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Threading.Tasks;
+using CurrencyManagment.Web.Menus;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Volo.Abp.UI.Navigation;
@@ -32,6 +33,7 @@ namespace BackendAdminApp.Host
 
             if (currentUser.IsAuthenticated)
             {
+
                 //TODO: Localize menu items
                 context.Menu.AddItem(new ApplicationMenuItem("Account.Manage", "Manage Your Profile", $"{identityServerUrl.EnsureEndsWith('/')}Account/Manage", icon: "fa fa-cog", order: 1000, null, "_blank"));
                 context.Menu.AddItem(new ApplicationMenuItem("Account.Logout", "Logout", url: "/Account/Logout", icon: "fa fa-power-off", order: int.MaxValue - 1000));

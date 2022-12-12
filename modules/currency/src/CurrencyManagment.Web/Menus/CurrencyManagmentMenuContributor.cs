@@ -1,4 +1,5 @@
-﻿using System.Threading.Tasks;
+﻿using CurrencyManagment.Localization;
+using System.Threading.Tasks;
 using Volo.Abp.UI.Navigation;
 
 namespace CurrencyManagment.Web.Menus;
@@ -15,8 +16,10 @@ public class CurrencyManagmentMenuContributor : IMenuContributor
 
     private Task ConfigureMainMenuAsync(MenuConfigurationContext context)
     {
+        var l = context.GetLocalizer<CurrencyManagmentResource>();
+
         //Add main menu items.
-        context.Menu.AddItem(new ApplicationMenuItem(CurrencyManagmentMenus.Prefix, displayName: "CurrencyManagment", "~/CurrencyManagment", icon: "fa fa-globe"));
+        context.Menu.AddItem(new ApplicationMenuItem(CurrencyManagmentMenus.Prefix, displayName: l["Menu:CurrencyManagment"], "~/CurrencyManagment", icon: "fa fa-globe"));
 
         return Task.CompletedTask;
     }

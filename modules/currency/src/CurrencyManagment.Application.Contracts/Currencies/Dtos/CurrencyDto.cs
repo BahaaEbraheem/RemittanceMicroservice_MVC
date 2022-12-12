@@ -7,7 +7,7 @@ namespace CurrencyManagment.Currencies.Dtos
 {
       public class CurrencyDto : AuditedEntityDto<Guid>
     {
-        public Guid Id { get; set; }
+        public new Guid Id { get; set; }
       
         public string Name { get; set; }
         public string Symbol { get; set; }

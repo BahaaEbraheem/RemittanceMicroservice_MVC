@@ -28,25 +28,14 @@
     "AmessageConfirmingThatTheRemittanceIsReady": "Are you sure to Ready the Remittance '{0}'?",
 
 
-    "Permission:RMS": "RMS",
-    "Permission:Customers": "Currency Management",
-    "Permission:Customers.Create": "Creating new Customers",
-    "Permission:Customers.Edit": "Editing the Customers",
-    "Permission:Customers.Delete": "Deleting the Customers",
-    "Permission:CustomerManagement": "Customer Management",
-    "Permission:Customers": "Customer Management",
-    "Permission:Customers.Create": "Creating new Customer",
-    "Permission:Customers.Edit": "Editing the Customer",
-    "Permission:Customers.Delete": "Deleting the Customer",
+    "Permission:CustomerManagement": "Currency Management",
+    "Permission:CustomerManagement.Create": "Creating new Customers",
+    "Permission:CustomerManagement.Edit": "Editing the Customers",
+    "Permission:CustomerManagement.Delete": "Deleting the Customers",
 
-    "Permission:Remittances": "Remittance Management",
-    "Permission:Remittances.Create": "Creating new Remittance",
-    "Permission:Remittances.Edit": "Editing the Remittance",
-    "Permission:Remittances.Delete": "Deleting the Remittance",
 
-    "Menu:RMS": "RMS",
-    "Menu:Customers": "Customers",
-    "Menu:Customers": "Customers",
+
+    "Menu:CustomerManagement": "Customers",
     "Menu:Remittances": "Created Remittances",
     "Menu:ReadyRemittances": "Ready Remittances",
     "Menu:ApprovedRemittances": "Approved Remittances",
