@@ -204,14 +204,6 @@ public class RemittanceAppService : RemittanceManagementAppService ,IRemittanceA
 
 
 
-
-
-
-
-
-
-
-
     public async Task<PagedResultDto<RemittanceDto>> GetListAsync(GetRemittanceListDto input)
     {
         try
