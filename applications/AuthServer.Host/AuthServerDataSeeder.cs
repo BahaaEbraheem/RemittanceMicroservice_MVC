@@ -1,4 +1,7 @@
-﻿using System;
+﻿using CurrencyManagment.Permissions;
+using CustomerManagement.Permissions;
+using IdentityServer4.Models;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
@@ -16,6 +19,7 @@ using Volo.Abp.PermissionManagement;
 using Volo.Abp.TenantManagement;
 using Volo.Abp.Uow;
 using ApiResource = Volo.Abp.IdentityServer.ApiResources.ApiResource;
+using ApiScope = Volo.Abp.IdentityServer.ApiScopes.ApiScope;
 using Client = Volo.Abp.IdentityServer.Clients.Client;
 
 namespace AuthServer.Host
@@ -222,6 +226,17 @@ namespace AuthServer.Host
                 commonSecret,
                 permissions: new[] { IdentityPermissions.UserLookup.Default }
             );
+          
+            await CreateClientAsync(
+          "remittance-management-client",
+          new[]
+    {
+        "CurrencyManagment", "CustomerManagement"
+    },
+            new[] { "client_credentials" },
+           secret: commonSecret
+
+       );
         }
 
         private async Task<Client> CreateClientAsync(

@@ -106,6 +106,7 @@ namespace ProductService.Host
             app.UseStaticFiles();
             app.UseRouting();
             app.UseAuthentication();
+            app.UseAuthorization();
             app.UseAbpClaimsMap();
 
             if (MsDemoConsts.IsMultiTenancyEnabled)

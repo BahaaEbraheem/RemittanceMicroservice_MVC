@@ -14,7 +14,11 @@ public class CustomerManagementWebAutoMapperProfile : Profile
          * into multiple profile classes for a better organization. */
         CreateMap<CustomerDto, CreateUpdateCustomerDto>();
         CreateMap<CreateUpdateCustomerDto, CustomerCreateViewModel>();
-        CreateMap<CustomerCreateViewModel, CreateUpdateCustomerDto>();
+
+
+        CreateMap<CustomerCreateViewModel, CreateUpdateCustomerDto>()
+            
+            ;
         CreateMap<CustomerDto, CustomerUpdateViewModel>();
     }
 }

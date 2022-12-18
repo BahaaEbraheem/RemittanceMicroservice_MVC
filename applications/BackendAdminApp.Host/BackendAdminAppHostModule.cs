@@ -48,6 +48,7 @@ namespace BackendAdminApp.Host
         typeof(AbpTenantManagementWebModule),
         typeof(BloggingApplicationContractsModule),
         typeof(AbpPermissionManagementHttpApiClientModule),
+
         typeof(ProductManagementHttpApiClientModule),
         typeof(ProductManagementWebModule),
 
@@ -113,6 +114,7 @@ namespace BackendAdminApp.Host
                     options.Scope.Add("BackendAdminAppGateway");
                     options.Scope.Add("IdentityService");
                     options.Scope.Add("ProductService");
+           
                     options.Scope.Add("TenantManagementService");
                     
                 });

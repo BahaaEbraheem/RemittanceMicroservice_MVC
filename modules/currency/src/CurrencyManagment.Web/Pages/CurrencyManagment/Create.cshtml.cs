@@ -37,7 +37,17 @@ namespace CurrencyManagment.Web.Pages.CurrencyManagment
             [Required]
             public string Symbol { get; set; }
             public string Code { get; set; }
+            [HiddenInput]
+            public DateTime? LastModificationTime { get; set; }
+            [HiddenInput]
 
+            public Guid? LastModifierId { get; set; }
+            [HiddenInput]
+
+            public DateTime CreationTime { get; set; }
+            [HiddenInput]
+
+            public Guid? CreatorId { get; set; }
 
         }
     }

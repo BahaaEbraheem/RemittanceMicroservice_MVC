@@ -17,12 +17,15 @@ using Volo.Abp.DependencyInjection;
 using static System.Reflection.Metadata.BlobBuilder;
 //using Volo.Abp.SettingManagement;
 using Volo.Abp;
+using System.Xml.Linq;
+using System.Reflection;
+using static CurrencyManagment.Permissions.CurrencyManagmentPermissions;
 //using Currency.Remittances;
 
 namespace CurrencyManagment.Currencies
 {
-  //  [Authorize(CurrencyManagmentPermissions.Currencies.Default)]
-
+    //  [Authorize(CurrencyManagmentPermissions.Currencies.Default)]
+   
     public class CurrencyAppService :
         CrudAppService<
                Currency, //The Currency entity
@@ -50,18 +53,20 @@ namespace CurrencyManagment.Currencies
 
         public override async Task<PagedResultDto<CurrencyDto>> GetListAsync(CurrencyPagedAndSortedResultRequestDto input)
         {
-            var filter = ObjectMapper.Map<CurrencyPagedAndSortedResultRequestDto, Currency>(input);
+           
+            var filter = ObjectMapper.Map<CurrencyPagedAndSortedResultRequestDto, CurrencyDto>(input);
             var sorting = (string.IsNullOrEmpty(input.Sorting) ? "Name DESC" : input.Sorting).Replace("ShortName", "Name");
-            var currencies = await _currencyRepository.GetListAsync(input.SkipCount, input.MaxResultCount, sorting, filter);
-            var totalCount = await _currencyRepository.GetTotalCountAsync(filter);
-            return new PagedResultDto<CurrencyDto>(totalCount, ObjectMapper.Map<List<Currency>, List<CurrencyDto>>(currencies));
+
+            var currencies =await GetFromReposListAsync(input.SkipCount, input.MaxResultCount, sorting, filter);
+            var totalCount =await GetTotalCountAsync(filter);
+            return new  PagedResultDto<CurrencyDto>( totalCount, currencies);
         }
 
 
 
 
       //  [Authorize(CurrencyManagmentPermissions.Currencies.Create)]
-        public override  Task<CurrencyDto> CreateAsync(CreateUpdateCurrencyDto input)
+        public override async Task<CurrencyDto> CreateAsync(CreateUpdateCurrencyDto input)
         {
             if (input == null)
             {
@@ -69,12 +74,12 @@ namespace CurrencyManagment.Currencies
             }
             Check.NotNullOrWhiteSpace(input.Name, nameof(input.Name));
             Check.NotNullOrWhiteSpace(input.Symbol, nameof(input.Symbol));
-            var existingCurrency = _currencyRepository.FindByNameAndSymbolAsync(input.Name, input.Symbol).Result;
+            var existingCurrency = FindByNameAndSymbolAsync(input.Name, input.Symbol).Result;
             if (existingCurrency != null)
             {
                 throw new CurrencyAlreadyExistsException(existingCurrency.Name);
             }
-            return base.CreateAsync(input);
+            return await base.CreateAsync(input);
         }
 
 
@@ -90,7 +95,7 @@ namespace CurrencyManagment.Currencies
             }
             Check.NotNullOrWhiteSpace(id.ToString(), nameof(id));
             //check if currency exist befor in tables
-            var existingCurrency = await _currencyRepository.FindByNameAndSymbolAsync(input.Name, input.Symbol);
+            var existingCurrency = await FindByNameAndSymbolAsync(input.Name, input.Symbol);
             if ((existingCurrency != null && !existingCurrency.Name.Contains(input.Name))
                || (existingCurrency != null && !existingCurrency.Symbol.Contains(input.Symbol)))
             {
@@ -109,6 +114,40 @@ namespace CurrencyManagment.Currencies
             return base.DeleteAsync(id);
         }
 
+        public async Task<CurrencyDto> FindByNameAndSymbolAsync(string name, string symbol)
+        {
+            var currencyDto = await _currencyRepository.FindByNameAndSymbolAsync(name, symbol);
+           return ObjectMapper.Map<Currency, CurrencyDto>(currencyDto);
+        }
+
+     
+
+        public async Task<int> GetTotalCountAsync(CurrencyDto filter)
+        {
+            return await _currencyRepository.GetTotalCountFromReposAsync(
+                ObjectMapper.Map<CurrencyDto,Currency>(filter));
+        }
+
+        public  async Task<List<CurrencyDto>> GetAllAsync()
+        {
+              return  ObjectMapper.Map<List<Currency>, List<CurrencyDto>>(await _currencyRepository.GetAllAsync());
+        }
+
+      public async Task<List<CurrencyDto>> GetFromReposListAsync(int skipCount, int maxResultCount, string sorting, CurrencyDto filter)
+        {
+            var currencies = new List<Currency>();
+            //if (filter.Code == null && filter.Name==null && filter.Symbol==null)
+            //{
+            //     currencies =  _currencyRepository.GetAllAsync();
+            //}
+            //else
+            //{
+            var filter_ = ObjectMapper.Map<CurrencyDto, Currency>(filter);
+            currencies =await _currencyRepository.GetFromReposListAsync(skipCount, maxResultCount, sorting, filter_);
+
+            //}
+           return  ObjectMapper.Map<List<Currency>, List<CurrencyDto>>(currencies);
+        }
     }
 }
 

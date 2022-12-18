@@ -16,8 +16,7 @@ namespace CustomerManagement.Customers.Dtos
         public string FatherName { get; set; }
 
         public string MotherName { get; set; }
-        [DataType(DataType.Date)]
-        [DisplayFormat(DataFormatString = "{0:yyyy-MM-dd}", ApplyFormatInEditMode = true)]
+    
         public DateTime BirthDate { get; set; }
 
 
@@ -25,7 +24,8 @@ namespace CustomerManagement.Customers.Dtos
 
         public string Address { get; set; }
 
-        [EnumDataType(typeof(Gender))]
+       
         public Gender Gender { get; set; }
+
     }
 }

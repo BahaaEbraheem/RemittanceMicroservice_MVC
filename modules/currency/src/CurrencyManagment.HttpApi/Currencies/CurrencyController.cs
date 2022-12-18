@@ -1,19 +1,23 @@
 ﻿using System;
+using System.Collections.Generic;
 using System.Threading.Tasks;
+using System.Xml.Linq;
 using CurrencyManagment;
 using CurrencyManagment.Currencies;
 using CurrencyManagment.Currencies.Dtos;
 using CurrencyManagment.Samples;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.CodeAnalysis;
 using Volo.Abp;
 using Volo.Abp.Application.Dtos;
-
 namespace CurrencyManagment.Currencies;
+//[ApiController]
+[Area(CurrencyManagmentRemoteServiceConsts.ModuleName)]
+[RemoteService(Name = CurrencyManagmentRemoteServiceConsts.RemoteServiceName)]
+[Route("api/CurrencyManagment/currency")]
 
-[RemoteService]
-[Area("CurrencyManagment")]
-[Route("api/CurrencyManagment/Currency")]
+
 public class CurrencyController : CurrencyManagmentController, ICurrencyAppService
 {
     private readonly ICurrencyAppService _currencyAppService;
@@ -30,21 +34,28 @@ public class CurrencyController : CurrencyManagmentController, ICurrencyAppServi
         return await _currencyAppService.GetAsync(id);
     }
 
-    [HttpGet]
-    [Route("GetListAsync")]
-    public virtual async Task<PagedResultDto<CurrencyDto>> GetListAsync(CurrencyPagedAndSortedResultRequestDto input)
+    [HttpGet("GetListAsync")]
+
+    public virtual async Task<PagedResultDto<CurrencyDto>> GetListAsync( CurrencyPagedAndSortedResultRequestDto input)
     {
         return await _currencyAppService.GetListAsync(input);
     }
-    [HttpPost]
+
+
+
+
+
+
+
+    [HttpGet]
     [Route("CreateAsync")]
-    public virtual async Task<CurrencyDto> CreateAsync(CreateUpdateCurrencyDto input)
+    public virtual async Task<CurrencyDto> CreateAsync( CreateUpdateCurrencyDto input)
     {
         return await _currencyAppService.CreateAsync(input);
     }
-    [HttpPut]
+    [HttpGet]
     [Route("UpdateAsync")]
-    public virtual async Task<CurrencyDto> UpdateAsync(Guid id, CreateUpdateCurrencyDto input)
+    public  async Task<CurrencyDto> UpdateAsync(Guid id,  CreateUpdateCurrencyDto input)
 
     {
         return await _currencyAppService.UpdateAsync(id, input);
@@ -55,6 +66,31 @@ public class CurrencyController : CurrencyManagmentController, ICurrencyAppServi
     {
         return _currencyAppService.DeleteAsync(id);
     }
+    [HttpGet]
+    [Route("FindByNameAndSymbolAsync")]
+    public Task<CurrencyDto> FindByNameAndSymbolAsync(string name, string symbol)
+    {
+        return _currencyAppService.FindByNameAndSymbolAsync(name, symbol);
+    }
+
+    [HttpGet]
+    [Route("GetAllAsync")]
+    public async Task<List<CurrencyDto>> GetAllAsync()
+    {
+        return await _currencyAppService.GetAllAsync();
+    }
 
 
+    //[HttpGet]
+    //[Route("GetFromReposListAsync")]
+    //public Task<List<CurrencyDto>> GetFromReposListAsync(int skipCount, int maxResultCount, string sorting, [FromQuery] CurrencyDto filter)
+    //{
+    //    return _currencyAppService.GetFromReposListAsync(skipCount, maxResultCount, sorting, filter);
+    //}
+    //[HttpGet]
+    //[Route("GetTotalCountAsync")]
+    //public Task<int> GetTotalCountAsync(CurrencyDto filter)
+    //{
+    //    return _currencyAppService.GetTotalCountAsync(filter);
+    //}
 }

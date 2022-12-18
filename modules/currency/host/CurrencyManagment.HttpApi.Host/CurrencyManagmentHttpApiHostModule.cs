@@ -41,6 +41,11 @@ using Volo.Abp.AspNetCore.Mvc;
 using Volo.Abp.EventBus.RabbitMq;
 using Volo.Abp.Auditing;
 using MsDemo.Shared;
+using Autofac.Core;
+using Volo.Abp.Http.Client.IdentityModel;
+using Volo.Abp.Http.Client.Web;
+using Volo.Abp.Http.Client.IdentityModel.Web;
+using Volo.Abp.Identity;
 
 namespace CurrencyManagment;
 
@@ -48,31 +53,46 @@ namespace CurrencyManagment;
     typeof(CurrencyManagmentApplicationModule),
     typeof(CurrencyManagmentEntityFrameworkCoreModule),
     typeof(CurrencyManagmentHttpApiModule),
-    typeof(AbpAspNetCoreMvcUiMultiTenancyModule),
-    typeof(AbpAutofacModule),
-    typeof(AbpCachingStackExchangeRedisModule),
-    typeof(AbpEntityFrameworkCoreSqlServerModule),
-    typeof(AbpAuditLoggingEntityFrameworkCoreModule),
-    typeof(AbpPermissionManagementEntityFrameworkCoreModule),
-    typeof(AbpSettingManagementEntityFrameworkCoreModule),
-    typeof(AbpTenantManagementEntityFrameworkCoreModule),
-    typeof(AbpAspNetCoreSerilogModule),
-    typeof(AbpSwashbuckleModule),
+        //typeof(AbpAspNetCoreMvcUiMultiTenancyModule),
+        //   typeof(AbpAutofacModule),
+        //   typeof(AbpCachingStackExchangeRedisModule),
+        //   typeof(AbpEntityFrameworkCoreSqlServerModule),
+        //   typeof(AbpAuditLoggingEntityFrameworkCoreModule),
+        //   typeof(AbpPermissionManagementEntityFrameworkCoreModule),
+        //   typeof(AbpSettingManagementEntityFrameworkCoreModule),
+        //   typeof(AbpTenantManagementEntityFrameworkCoreModule),
+        //   typeof(AbpAspNetCoreSerilogModule),
+        //   typeof(AbpSwashbuckleModule)
+        typeof(AbpAutofacModule),
+        typeof(AbpAspNetCoreMvcModule),
+        typeof(AbpEventBusRabbitMqModule),
+        typeof(AbpEntityFrameworkCoreSqlServerModule),
+        typeof(AbpAuditLoggingEntityFrameworkCoreModule),
+        typeof(AbpPermissionManagementEntityFrameworkCoreModule),
+        typeof(AbpSettingManagementEntityFrameworkCoreModule),
+
+        typeof(AbpAspNetCoreMultiTenancyModule),
+        typeof(AbpTenantManagementEntityFrameworkCoreModule),
+
+        // To automate requesting access token and adding it as bearer to the request headers
+        typeof(AbpHttpClientIdentityModelModule),
+
+        typeof(AbpHttpClientWebModule),
+        typeof(AbpHttpClientIdentityModelWebModule),
+        typeof(AbpIdentityHttpApiClientModule),
 
 
-
-        typeof(AbpAutoMapperModule),
-    typeof(AbpAspNetCoreMultiTenancyModule),
-     typeof(AbpAspNetCoreMvcModule),
-        typeof(AbpEventBusRabbitMqModule)
-
+        typeof(AbpAspNetCoreMvcUiMultiTenancyModule),
+        typeof(AbpCachingStackExchangeRedisModule),
+        typeof(AbpAspNetCoreSerilogModule),
+        typeof(AbpSwashbuckleModule)
     )]
 public class CurrencyManagmentHttpApiHostModule : AbpModule
 {
 
     public override void ConfigureServices(ServiceConfigurationContext context)
     {
-
+        var hostingEnvironment = context.Services.GetHostingEnvironment();
 
         var configuration = context.Services.GetConfiguration();
 
@@ -80,6 +100,25 @@ public class CurrencyManagmentHttpApiHostModule : AbpModule
         {
             options.IsEnabled = MsDemoConsts.IsMultiTenancyEnabled;
         });
+
+
+
+        //context.Services.AddAbpSwaggerGenWithOAuth(
+        //          configuration["AuthServer:Authority"],
+        //          new Dictionary<string, string>
+        //          {
+        //              {"CurrencyManagment", "CurrencyManagment API"}
+        //          },
+        //          options =>
+        //          {
+        //              options.SwaggerDoc("v1", new OpenApiInfo { Title = "CurrencyManagment API", Version = "v1" });
+        //              options.DocInclusionPredicate((docName, description) => true);
+        //              options.CustomSchemaIds(type => type.FullName);
+        //          });
+
+
+
+
 
         context.Services.AddAuthentication("Bearer")
             .AddIdentityServerAuthentication(options =>
@@ -94,6 +133,7 @@ public class CurrencyManagmentHttpApiHostModule : AbpModule
             options.SwaggerDoc("v1", new OpenApiInfo { Title = "Currency Managment API", Version = "v1" });
             options.DocInclusionPredicate((docName, description) => true);
             options.CustomSchemaIds(type => type.FullName);
+
         });
 
         Configure<AbpLocalizationOptions>(options =>
@@ -145,7 +185,6 @@ public class CurrencyManagmentHttpApiHostModule : AbpModule
         });
         app.UseAuditing();
         app.UseConfiguredEndpoints();
-
         //TODO: Problem on a clustered environment
         AsyncHelper.RunSync(async () =>
         {

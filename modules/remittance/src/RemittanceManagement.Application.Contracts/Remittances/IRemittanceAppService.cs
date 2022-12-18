@@ -11,13 +11,12 @@ namespace RemittanceManagement.Remittances
    public interface IRemittanceAppService : IApplicationService
     {
         Task<RemittanceDto> GetAsync(Guid id);
-
         Task<PagedResultDto<RemittanceDto>> GetListAsync(GetRemittanceListDto input);
-        Task<PagedResultDto<RemittanceDto>> GetListRemittancesStatusAsync(GetRemittanceListPagedAndSortedResultRequestDto input);
-        Task<PagedResultDto<RemittanceDto>> GetListRemittancesForCreator(GetRemittanceListPagedAndSortedResultRequestDto input);
-        Task<PagedResultDto<RemittanceDto>> GetListRemittancesForSupervisor(GetRemittanceListPagedAndSortedResultRequestDto input);
-        Task<PagedResultDto<RemittanceDto>> GetListRemittancesForReleaser(GetRemittanceListPagedAndSortedResultRequestDto input);
-        
+        //Task<PagedResultDto<RemittanceDto>> GetListRemittancesStatusAsync(GetRemittanceListPagedAndSortedResultRequestDto input);
+        //Task<PagedResultDto<RemittanceDto>> GetListRemittancesForCreator(GetRemittanceListPagedAndSortedResultRequestDto input);
+        //Task<PagedResultDto<RemittanceDto>> GetListRemittancesForSupervisor(GetRemittanceListPagedAndSortedResultRequestDto input);
+        //Task<PagedResultDto<RemittanceDto>> GetListRemittancesForReleaser(GetRemittanceListPagedAndSortedResultRequestDto input);
+
 
 
         Task<RemittanceDto> CreateAsync(CreateRemittanceDto input);
@@ -26,9 +25,9 @@ namespace RemittanceManagement.Remittances
 
         Task DeleteAsync(Guid id);
 
-        //Task<ListResultDto<CurrencyLookupDto>> GetCurrencyLookupAsync();
+        Task<ListResultDto<CurrencyLookupDto>> GetCurrencyLookupAsync();
 
-        //Task<ListResultDto<CustomerLookupDto>> GetCustomerLookupAsync();
+       Task<ListResultDto<CustomerLookupDto>> GetCustomerLookupAsync();
 
         //Task<ListResultDto<UserLookupDto>> GetUserLookupAsync();
         Task SetReady(RemittanceDto input);

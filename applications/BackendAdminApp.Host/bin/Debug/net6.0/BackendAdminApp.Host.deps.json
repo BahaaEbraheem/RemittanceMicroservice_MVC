@@ -3972,6 +3972,8 @@
       },
       "RemittanceManagement.Application.Contracts/0.1.0": {
         "dependencies": {
+          "CurrencyManagment.Application.Contracts": "0.1.0",
+          "CustomerManagement.Application.Contracts": "0.1.0",
           "RemittanceManagement.Domain": "0.1.0",
           "RemittanceManagement.Domain.Shared": "0.1.0",
           "Volo.Abp.Authorization": "6.0.2",

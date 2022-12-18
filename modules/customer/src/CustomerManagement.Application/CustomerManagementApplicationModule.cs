@@ -10,6 +10,8 @@ namespace CustomerManagement;
     typeof(CustomerManagementApplicationContractsModule),
     typeof(AbpDddApplicationModule),
     typeof(AbpAutoMapperModule)
+    
+    
     )]
 public class CustomerManagementApplicationModule : AbpModule
 {

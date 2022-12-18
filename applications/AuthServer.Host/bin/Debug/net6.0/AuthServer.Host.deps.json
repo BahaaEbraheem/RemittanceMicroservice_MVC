@@ -34,6 +34,8 @@
     ".NETCoreApp,Version=v6.0": {
       "AuthServer.Host/1.0.0": {
         "dependencies": {
+          "CurrencyManagment.Application.Contracts": "0.1.0",
+          "CustomerManagement.Application.Contracts": "0.1.0",
           "Microsoft.AspNetCore.DataProtection.StackExchangeRedis": "6.0.0",
           "Microsoft.EntityFrameworkCore.Tools": "6.0.0",
           "Microsoft.Extensions.Caching.StackExchangeRedis": "6.0.0",
@@ -540,11 +542,11 @@
           "lib/netstandard2.0/IdentityServer4.Storage.dll": {}
         }
       },
-      "JetBrains.Annotations/2021.2.0": {
+      "JetBrains.Annotations/2022.1.0": {
         "runtime": {
           "lib/netstandard2.0/JetBrains.Annotations.dll": {
-            "assemblyVersion": "2021.2.0.0",
-            "fileVersion": "2021.2.0.0"
+            "assemblyVersion": "4242.42.42.42",
+            "fileVersion": "2022.1.0.0"
           }
         },
         "compile": {
@@ -565,11 +567,17 @@
           "lib/netcoreapp3.1/Microsoft.AspNetCore.Authentication.OpenIdConnect.dll": {}
         }
       },
-      "Microsoft.AspNetCore.Authorization/6.0.0": {
+      "Microsoft.AspNetCore.Authorization/6.0.5": {
         "dependencies": {
-          "Microsoft.AspNetCore.Metadata": "6.0.0",
-          "Microsoft.Extensions.Logging.Abstractions": "6.0.0",
+          "Microsoft.AspNetCore.Metadata": "6.0.5",
+          "Microsoft.Extensions.Logging.Abstractions": "6.0.1",
           "Microsoft.Extensions.Options": "6.0.0"
+        },
+        "runtime": {
+          "lib/net6.0/Microsoft.AspNetCore.Authorization.dll": {
+            "assemblyVersion": "6.0.0.0",
+            "fileVersion": "6.0.522.21802"
+          }
         }
       },
       "Microsoft.AspNetCore.Cryptography.Internal/6.0.0": {},
@@ -584,7 +592,7 @@
           "Microsoft.AspNetCore.DataProtection.Abstractions": "6.0.0",
           "Microsoft.Extensions.DependencyInjection.Abstractions": "6.0.0",
           "Microsoft.Extensions.Hosting.Abstractions": "6.0.0",
-          "Microsoft.Extensions.Logging.Abstractions": "6.0.0",
+          "Microsoft.Extensions.Logging.Abstractions": "6.0.1",
           "Microsoft.Extensions.Options": "6.0.0",
           "System.Security.Cryptography.Xml": "6.0.0"
         }
@@ -620,7 +628,14 @@
           "lib/net6.0/Microsoft.AspNetCore.JsonPatch.dll": {}
         }
       },
-      "Microsoft.AspNetCore.Metadata/6.0.0": {},
+      "Microsoft.AspNetCore.Metadata/6.0.5": {
+        "runtime": {
+          "lib/net6.0/Microsoft.AspNetCore.Metadata.dll": {
+            "assemblyVersion": "6.0.0.0",
+            "fileVersion": "6.0.522.21802"
+          }
+        }
+      },
       "Microsoft.AspNetCore.Mvc.NewtonsoftJson/6.0.0": {
         "dependencies": {
           "Microsoft.AspNetCore.JsonPatch": "6.0.0",
@@ -987,7 +1002,7 @@
         "dependencies": {
           "Microsoft.Extensions.Caching.Abstractions": "6.0.0",
           "Microsoft.Extensions.DependencyInjection.Abstractions": "6.0.0",
-          "Microsoft.Extensions.Logging.Abstractions": "6.0.0",
+          "Microsoft.Extensions.Logging.Abstractions": "6.0.1",
           "Microsoft.Extensions.Options": "6.0.0",
           "Microsoft.Extensions.Primitives": "6.0.0"
         }
@@ -1030,10 +1045,16 @@
           "Microsoft.Extensions.Configuration.Abstractions": "6.0.0"
         }
       },
-      "Microsoft.Extensions.Configuration.EnvironmentVariables/6.0.0": {
+      "Microsoft.Extensions.Configuration.EnvironmentVariables/6.0.1": {
         "dependencies": {
           "Microsoft.Extensions.Configuration": "6.0.0",
           "Microsoft.Extensions.Configuration.Abstractions": "6.0.0"
+        },
+        "runtime": {
+          "lib/netstandard2.0/Microsoft.Extensions.Configuration.EnvironmentVariables.dll": {
+            "assemblyVersion": "6.0.0.0",
+            "fileVersion": "6.0.222.6406"
+          }
         }
       },
       "Microsoft.Extensions.Configuration.FileExtensions/6.0.0": {
@@ -1054,12 +1075,18 @@
           "System.Text.Json": "6.0.0"
         }
       },
-      "Microsoft.Extensions.Configuration.UserSecrets/6.0.0": {
+      "Microsoft.Extensions.Configuration.UserSecrets/6.0.1": {
         "dependencies": {
           "Microsoft.Extensions.Configuration.Abstractions": "6.0.0",
           "Microsoft.Extensions.Configuration.Json": "6.0.0",
           "Microsoft.Extensions.FileProviders.Abstractions": "6.0.0",
           "Microsoft.Extensions.FileProviders.Physical": "6.0.0"
+        },
+        "runtime": {
+          "lib/netstandard2.0/Microsoft.Extensions.Configuration.UserSecrets.dll": {
+            "assemblyVersion": "6.0.0.0",
+            "fileVersion": "6.0.222.6406"
+          }
         }
       },
       "Microsoft.Extensions.DependencyInjection/6.0.0": {
@@ -1098,9 +1125,15 @@
           "Microsoft.Extensions.Primitives": "6.0.0"
         }
       },
-      "Microsoft.Extensions.FileProviders.Embedded/6.0.0": {
+      "Microsoft.Extensions.FileProviders.Embedded/6.0.5": {
         "dependencies": {
           "Microsoft.Extensions.FileProviders.Abstractions": "6.0.0"
+        },
+        "runtime": {
+          "lib/net6.0/Microsoft.Extensions.FileProviders.Embedded.dll": {
+            "assemblyVersion": "6.0.0.0",
+            "fileVersion": "6.0.522.21802"
+          }
         }
       },
       "Microsoft.Extensions.FileProviders.Physical/6.0.0": {
@@ -1125,25 +1158,45 @@
           "Microsoft.Extensions.Options": "6.0.0"
         }
       },
-      "Microsoft.Extensions.Localization/6.0.0": {
+      "Microsoft.Extensions.Localization/6.0.5": {
         "dependencies": {
           "Microsoft.Extensions.DependencyInjection.Abstractions": "6.0.0",
-          "Microsoft.Extensions.Localization.Abstractions": "6.0.0",
-          "Microsoft.Extensions.Logging.Abstractions": "6.0.0",
+          "Microsoft.Extensions.Localization.Abstractions": "6.0.5",
+          "Microsoft.Extensions.Logging.Abstractions": "6.0.1",
           "Microsoft.Extensions.Options": "6.0.0"
+        },
+        "runtime": {
+          "lib/net6.0/Microsoft.Extensions.Localization.dll": {
+            "assemblyVersion": "6.0.0.0",
+            "fileVersion": "6.0.522.21802"
+          }
         }
       },
-      "Microsoft.Extensions.Localization.Abstractions/6.0.0": {},
+      "Microsoft.Extensions.Localization.Abstractions/6.0.5": {
+        "runtime": {
+          "lib/net6.0/Microsoft.Extensions.Localization.Abstractions.dll": {
+            "assemblyVersion": "6.0.0.0",
+            "fileVersion": "6.0.522.21802"
+          }
+        }
+      },
       "Microsoft.Extensions.Logging/6.0.0": {
         "dependencies": {
           "Microsoft.Extensions.DependencyInjection": "6.0.0",
           "Microsoft.Extensions.DependencyInjection.Abstractions": "6.0.0",
-          "Microsoft.Extensions.Logging.Abstractions": "6.0.0",
+          "Microsoft.Extensions.Logging.Abstractions": "6.0.1",
           "Microsoft.Extensions.Options": "6.0.0",
           "System.Diagnostics.DiagnosticSource": "6.0.0"
         }
       },
-      "Microsoft.Extensions.Logging.Abstractions/6.0.0": {},
+      "Microsoft.Extensions.Logging.Abstractions/6.0.1": {
+        "runtime": {
+          "lib/net6.0/Microsoft.Extensions.Logging.Abstractions.dll": {
+            "assemblyVersion": "6.0.0.0",
+            "fileVersion": "6.0.322.12309"
+          }
+        }
+      },
       "Microsoft.Extensions.Options/6.0.0": {
         "dependencies": {
           "Microsoft.Extensions.DependencyInjection.Abstractions": "6.0.0",
@@ -1350,68 +1403,68 @@
           "lib/netstandard2.0/Newtonsoft.Json.Bson.dll": {}
         }
       },
-      "Nito.AsyncEx.Context/5.1.0": {
+      "Nito.AsyncEx.Context/5.1.2": {
         "dependencies": {
-          "Nito.AsyncEx.Tasks": "5.1.0"
+          "Nito.AsyncEx.Tasks": "5.1.2"
         },
         "runtime": {
           "lib/netstandard2.0/Nito.AsyncEx.Context.dll": {
-            "assemblyVersion": "5.1.0.0",
-            "fileVersion": "5.1.0.0"
+            "assemblyVersion": "5.1.2.0",
+            "fileVersion": "5.1.2.0"
           }
         },
         "compile": {
           "lib/netstandard2.0/Nito.AsyncEx.Context.dll": {}
         }
       },
-      "Nito.AsyncEx.Coordination/5.1.0": {
+      "Nito.AsyncEx.Coordination/5.1.2": {
         "dependencies": {
-          "Nito.AsyncEx.Tasks": "5.1.0",
-          "Nito.Collections.Deque": "1.1.0"
+          "Nito.AsyncEx.Tasks": "5.1.2",
+          "Nito.Collections.Deque": "1.1.1"
         },
         "runtime": {
           "lib/netstandard2.0/Nito.AsyncEx.Coordination.dll": {
-            "assemblyVersion": "5.1.0.0",
-            "fileVersion": "5.1.0.0"
+            "assemblyVersion": "5.1.2.0",
+            "fileVersion": "5.1.2.0"
           }
         },
         "compile": {
           "lib/netstandard2.0/Nito.AsyncEx.Coordination.dll": {}
         }
       },
-      "Nito.AsyncEx.Tasks/5.1.0": {
+      "Nito.AsyncEx.Tasks/5.1.2": {
         "dependencies": {
-          "Nito.Disposables": "2.2.0"
+          "Nito.Disposables": "2.2.1"
         },
         "runtime": {
           "lib/netstandard2.0/Nito.AsyncEx.Tasks.dll": {
-            "assemblyVersion": "5.1.0.0",
-            "fileVersion": "5.1.0.0"
+            "assemblyVersion": "5.1.2.0",
+            "fileVersion": "5.1.2.0"
           }
         },
         "compile": {
           "lib/netstandard2.0/Nito.AsyncEx.Tasks.dll": {}
         }
       },
-      "Nito.Collections.Deque/1.1.0": {
+      "Nito.Collections.Deque/1.1.1": {
         "runtime": {
           "lib/netstandard2.0/Nito.Collections.Deque.dll": {
-            "assemblyVersion": "1.1.0.0",
-            "fileVersion": "1.1.0.0"
+            "assemblyVersion": "1.1.1.0",
+            "fileVersion": "1.1.1.0"
           }
         },
         "compile": {
           "lib/netstandard2.0/Nito.Collections.Deque.dll": {}
         }
       },
-      "Nito.Disposables/2.2.0": {
+      "Nito.Disposables/2.2.1": {
         "dependencies": {
           "System.Collections.Immutable": "6.0.0"
         },
         "runtime": {
           "lib/netstandard2.1/Nito.Disposables.dll": {
-            "assemblyVersion": "2.2.0.0",
-            "fileVersion": "2.2.0.0"
+            "assemblyVersion": "2.2.1.0",
+            "fileVersion": "2.2.1.0"
           }
         },
         "compile": {
@@ -1554,7 +1607,7 @@
         "dependencies": {
           "Microsoft.Extensions.DependencyInjection.Abstractions": "6.0.0",
           "Microsoft.Extensions.Hosting.Abstractions": "6.0.0",
-          "Microsoft.Extensions.Logging.Abstractions": "6.0.0",
+          "Microsoft.Extensions.Logging.Abstractions": "6.0.1",
           "Serilog": "2.10.0",
           "Serilog.Extensions.Logging": "3.0.1"
         },
@@ -2050,15 +2103,15 @@
           "System.Runtime.Extensions": "4.3.0"
         }
       },
-      "System.Linq.Dynamic.Core/1.2.12": {
+      "System.Linq.Dynamic.Core/1.2.18": {
         "runtime": {
-          "lib/net5.0/System.Linq.Dynamic.Core.dll": {
-            "assemblyVersion": "1.2.12.0",
-            "fileVersion": "1.2.12.0"
+          "lib/net6.0/System.Linq.Dynamic.Core.dll": {
+            "assemblyVersion": "1.2.18.0",
+            "fileVersion": "1.2.18.0"
           }
         },
         "compile": {
-          "lib/net5.0/System.Linq.Dynamic.Core.dll": {}
+          "lib/net6.0/System.Linq.Dynamic.Core.dll": {}
         }
       },
       "System.Linq.Expressions/4.3.0": {
@@ -2582,7 +2635,7 @@
       },
       "Volo.Abp.Account.Application/5.0.0": {
         "dependencies": {
-          "Microsoft.Extensions.FileProviders.Embedded": "6.0.0",
+          "Microsoft.Extensions.FileProviders.Embedded": "6.0.5",
           "System.Text.Encodings.Web": "6.0.0",
           "Volo.Abp.Account.Application.Contracts": "5.0.0",
           "Volo.Abp.Emailing": "5.0.0",
@@ -2601,7 +2654,7 @@
       },
       "Volo.Abp.Account.Application.Contracts/5.0.0": {
         "dependencies": {
-          "Microsoft.Extensions.FileProviders.Embedded": "6.0.0",
+          "Microsoft.Extensions.FileProviders.Embedded": "6.0.5",
           "Volo.Abp.Identity.Application.Contracts": "5.0.0"
         },
         "runtime": {
@@ -2616,7 +2669,7 @@
       },
       "Volo.Abp.Account.Web/5.0.0": {
         "dependencies": {
-          "Microsoft.Extensions.FileProviders.Embedded": "6.0.0",
+          "Microsoft.Extensions.FileProviders.Embedded": "6.0.5",
           "Volo.Abp.Account.Application.Contracts": "5.0.0",
           "Volo.Abp.AspNetCore.Mvc.UI.Theme.Shared": "5.0.0",
           "Volo.Abp.AutoMapper": "5.0.0",
@@ -2634,7 +2687,7 @@
       },
       "Volo.Abp.Account.Web.IdentityServer/5.0.0": {
         "dependencies": {
-          "Microsoft.Extensions.FileProviders.Embedded": "6.0.0",
+          "Microsoft.Extensions.FileProviders.Embedded": "6.0.5",
           "System.Security.Principal.Windows": "5.0.0",
           "Volo.Abp.Account.Web": "5.0.0",
           "Volo.Abp.IdentityServer.Domain": "5.0.0"
@@ -2651,7 +2704,7 @@
       },
       "Volo.Abp.ApiVersioning.Abstractions/5.0.0": {
         "dependencies": {
-          "Volo.Abp.Core": "5.0.0"
+          "Volo.Abp.Core": "6.0.2"
         },
         "runtime": {
           "lib/netstandard2.0/Volo.Abp.ApiVersioning.Abstractions.dll": {
@@ -2666,13 +2719,13 @@
       "Volo.Abp.AspNetCore/5.0.0": {
         "dependencies": {
           "Volo.Abp.Auditing": "5.0.0",
-          "Volo.Abp.Authorization": "5.0.0",
+          "Volo.Abp.Authorization": "6.0.2",
           "Volo.Abp.ExceptionHandling": "5.0.0",
           "Volo.Abp.Http": "5.0.0",
-          "Volo.Abp.Security": "5.0.0",
-          "Volo.Abp.Uow": "5.0.0",
-          "Volo.Abp.Validation": "5.0.0",
-          "Volo.Abp.VirtualFileSystem": "5.0.0"
+          "Volo.Abp.Security": "6.0.2",
+          "Volo.Abp.Uow": "6.0.2",
+          "Volo.Abp.Validation": "6.0.2",
+          "Volo.Abp.VirtualFileSystem": "6.0.2"
         },
         "runtime": {
           "lib/net6.0/Volo.Abp.AspNetCore.dll": {
@@ -2687,7 +2740,7 @@
       "Volo.Abp.AspNetCore.MultiTenancy/5.0.0": {
         "dependencies": {
           "Volo.Abp.AspNetCore": "5.0.0",
-          "Volo.Abp.MultiTenancy": "5.0.0"
+          "Volo.Abp.MultiTenancy": "6.0.2"
         },
         "runtime": {
           "lib/net6.0/Volo.Abp.AspNetCore.MultiTenancy.dll": {
@@ -2709,7 +2762,7 @@
           "Volo.Abp.AspNetCore.Mvc.Contracts": "5.0.0",
           "Volo.Abp.Ddd.Application": "5.0.0",
           "Volo.Abp.GlobalFeatures": "5.0.0",
-          "Volo.Abp.Localization": "5.0.0",
+          "Volo.Abp.Localization": "6.0.2",
           "Volo.Abp.UI.Navigation": "5.0.0"
         },
         "runtime": {
@@ -2724,7 +2777,7 @@
       },
       "Volo.Abp.AspNetCore.Mvc.Contracts/5.0.0": {
         "dependencies": {
-          "Volo.Abp.Ddd.Application.Contracts": "5.0.0"
+          "Volo.Abp.Ddd.Application.Contracts": "6.0.2"
         },
         "runtime": {
           "lib/netstandard2.0/Volo.Abp.AspNetCore.Mvc.Contracts.dll": {
@@ -2784,7 +2837,7 @@
       },
       "Volo.Abp.AspNetCore.Mvc.UI.Bundling.Abstractions/5.0.0": {
         "dependencies": {
-          "Volo.Abp.Core": "5.0.0"
+          "Volo.Abp.Core": "6.0.2"
         },
         "runtime": {
           "lib/net6.0/Volo.Abp.AspNetCore.Mvc.UI.Bundling.Abstractions.dll": {
@@ -2814,7 +2867,7 @@
       "Volo.Abp.AspNetCore.Mvc.UI.Packages/5.0.0": {
         "dependencies": {
           "Volo.Abp.AspNetCore.Mvc.UI.Bundling.Abstractions": "5.0.0",
-          "Volo.Abp.Localization": "5.0.0"
+          "Volo.Abp.Localization": "6.0.2"
         },
         "runtime": {
           "lib/net6.0/Volo.Abp.AspNetCore.Mvc.UI.Packages.dll": {
@@ -2873,11 +2926,11 @@
       },
       "Volo.Abp.Auditing/5.0.0": {
         "dependencies": {
-          "Volo.Abp.Auditing.Contracts": "5.0.0",
-          "Volo.Abp.Data": "5.0.0",
+          "Volo.Abp.Auditing.Contracts": "6.0.2",
+          "Volo.Abp.Data": "6.0.2",
           "Volo.Abp.Json": "5.0.0",
-          "Volo.Abp.MultiTenancy": "5.0.0",
-          "Volo.Abp.Security": "5.0.0",
+          "Volo.Abp.MultiTenancy": "6.0.2",
+          "Volo.Abp.Security": "6.0.2",
           "Volo.Abp.Threading": "5.0.0",
           "Volo.Abp.Timing": "5.0.0"
         },
@@ -2891,14 +2944,14 @@
           "lib/netstandard2.0/Volo.Abp.Auditing.dll": {}
         }
       },
-      "Volo.Abp.Auditing.Contracts/5.0.0": {
+      "Volo.Abp.Auditing.Contracts/6.0.2": {
         "dependencies": {
-          "Volo.Abp.Core": "5.0.0"
+          "Volo.Abp.Core": "6.0.2"
         },
         "runtime": {
           "lib/netstandard2.0/Volo.Abp.Auditing.Contracts.dll": {
-            "assemblyVersion": "5.0.0.0",
-            "fileVersion": "5.0.0.0"
+            "assemblyVersion": "6.0.2.0",
+            "fileVersion": "6.0.2.0"
           }
         },
         "compile": {
@@ -2923,7 +2976,7 @@
       },
       "Volo.Abp.AuditLogging.Domain.Shared/5.0.0": {
         "dependencies": {
-          "Volo.Abp.Localization": "5.0.0"
+          "Volo.Abp.Localization": "6.0.2"
         },
         "runtime": {
           "lib/netstandard2.0/Volo.Abp.AuditLogging.Domain.Shared.dll": {
@@ -2950,31 +3003,31 @@
           "lib/net6.0/Volo.Abp.AuditLogging.EntityFrameworkCore.dll": {}
         }
       },
-      "Volo.Abp.Authorization/5.0.0": {
+      "Volo.Abp.Authorization/6.0.2": {
         "dependencies": {
-          "Volo.Abp.Authorization.Abstractions": "5.0.0",
-          "Volo.Abp.Localization": "5.0.0",
-          "Volo.Abp.Security": "5.0.0"
+          "Volo.Abp.Authorization.Abstractions": "6.0.2",
+          "Volo.Abp.Localization": "6.0.2",
+          "Volo.Abp.Security": "6.0.2"
         },
         "runtime": {
           "lib/netstandard2.0/Volo.Abp.Authorization.dll": {
-            "assemblyVersion": "5.0.0.0",
-            "fileVersion": "5.0.0.0"
+            "assemblyVersion": "6.0.2.0",
+            "fileVersion": "6.0.2.0"
           }
         },
         "compile": {
           "lib/netstandard2.0/Volo.Abp.Authorization.dll": {}
         }
       },
-      "Volo.Abp.Authorization.Abstractions/5.0.0": {
+      "Volo.Abp.Authorization.Abstractions/6.0.2": {
         "dependencies": {
-          "Microsoft.AspNetCore.Authorization": "6.0.0",
-          "Volo.Abp.MultiTenancy": "5.0.0"
+          "Microsoft.AspNetCore.Authorization": "6.0.5",
+          "Volo.Abp.MultiTenancy": "6.0.2"
         },
         "runtime": {
           "lib/netstandard2.0/Volo.Abp.Authorization.Abstractions.dll": {
-            "assemblyVersion": "5.0.0.0",
-            "fileVersion": "5.0.0.0"
+            "assemblyVersion": "6.0.2.0",
+            "fileVersion": "6.0.2.0"
           }
         },
         "compile": {
@@ -3004,7 +3057,7 @@
         "dependencies": {
           "AutoMapper": "10.1.1",
           "Volo.Abp.Auditing": "5.0.0",
-          "Volo.Abp.ObjectExtending": "5.0.0",
+          "Volo.Abp.ObjectExtending": "6.0.2",
           "Volo.Abp.ObjectMapping": "5.0.0"
         },
         "runtime": {
@@ -3049,7 +3102,7 @@
         "dependencies": {
           "Microsoft.Extensions.Caching.Memory": "6.0.0",
           "Volo.Abp.Json": "5.0.0",
-          "Volo.Abp.MultiTenancy": "5.0.0",
+          "Volo.Abp.MultiTenancy": "6.0.2",
           "Volo.Abp.Serialization": "5.0.0",
           "Volo.Abp.Threading": "5.0.0"
         },
@@ -3067,7 +3120,7 @@
         "dependencies": {
           "Castle.Core": "4.4.1",
           "Castle.Core.AsyncInterceptor": "2.0.0",
-          "Volo.Abp.Core": "5.0.0"
+          "Volo.Abp.Core": "6.0.2"
         },
         "runtime": {
           "lib/netstandard2.0/Volo.Abp.Castle.Core.dll": {
@@ -3079,46 +3132,46 @@
           "lib/netstandard2.0/Volo.Abp.Castle.Core.dll": {}
         }
       },
-      "Volo.Abp.Core/5.0.0": {
+      "Volo.Abp.Core/6.0.2": {
         "dependencies": {
-          "JetBrains.Annotations": "2021.2.0",
+          "JetBrains.Annotations": "2022.1.0",
           "Microsoft.Extensions.Configuration.CommandLine": "6.0.0",
-          "Microsoft.Extensions.Configuration.EnvironmentVariables": "6.0.0",
-          "Microsoft.Extensions.Configuration.UserSecrets": "6.0.0",
+          "Microsoft.Extensions.Configuration.EnvironmentVariables": "6.0.1",
+          "Microsoft.Extensions.Configuration.UserSecrets": "6.0.1",
           "Microsoft.Extensions.DependencyInjection": "6.0.0",
           "Microsoft.Extensions.Hosting.Abstractions": "6.0.0",
-          "Microsoft.Extensions.Localization": "6.0.0",
+          "Microsoft.Extensions.Localization": "6.0.5",
           "Microsoft.Extensions.Logging": "6.0.0",
           "Microsoft.Extensions.Options": "6.0.0",
           "Microsoft.Extensions.Options.ConfigurationExtensions": "6.0.0",
-          "Nito.AsyncEx.Context": "5.1.0",
-          "Nito.AsyncEx.Coordination": "5.1.0",
+          "Nito.AsyncEx.Context": "5.1.2",
+          "Nito.AsyncEx.Coordination": "5.1.2",
           "System.Collections.Immutable": "6.0.0",
-          "System.Linq.Dynamic.Core": "1.2.12",
+          "System.Linq.Dynamic.Core": "1.2.18",
           "System.Linq.Queryable": "4.3.0",
           "System.Runtime.Loader": "4.3.0",
           "System.Text.Encodings.Web": "6.0.0"
         },
         "runtime": {
           "lib/netstandard2.0/Volo.Abp.Core.dll": {
-            "assemblyVersion": "5.0.0.0",
-            "fileVersion": "5.0.0.0"
+            "assemblyVersion": "6.0.2.0",
+            "fileVersion": "6.0.2.0"
           }
         },
         "compile": {
           "lib/netstandard2.0/Volo.Abp.Core.dll": {}
         }
       },
-      "Volo.Abp.Data/5.0.0": {
+      "Volo.Abp.Data/6.0.2": {
         "dependencies": {
-          "Volo.Abp.EventBus.Abstractions": "5.0.0",
-          "Volo.Abp.ObjectExtending": "5.0.0",
-          "Volo.Abp.Uow": "5.0.0"
+          "Volo.Abp.EventBus.Abstractions": "6.0.2",
+          "Volo.Abp.ObjectExtending": "6.0.2",
+          "Volo.Abp.Uow": "6.0.2"
         },
         "runtime": {
           "lib/netstandard2.0/Volo.Abp.Data.dll": {
-            "assemblyVersion": "5.0.0.0",
-            "fileVersion": "5.0.0.0"
+            "assemblyVersion": "6.0.2.0",
+            "fileVersion": "6.0.2.0"
           }
         },
         "compile": {
@@ -3127,17 +3180,17 @@
       },
       "Volo.Abp.Ddd.Application/5.0.0": {
         "dependencies": {
-          "Volo.Abp.Authorization": "5.0.0",
-          "Volo.Abp.Ddd.Application.Contracts": "5.0.0",
+          "Volo.Abp.Authorization": "6.0.2",
+          "Volo.Abp.Ddd.Application.Contracts": "6.0.2",
           "Volo.Abp.Ddd.Domain": "5.0.0",
           "Volo.Abp.Features": "5.0.0",
           "Volo.Abp.GlobalFeatures": "5.0.0",
           "Volo.Abp.Http.Abstractions": "5.0.0",
-          "Volo.Abp.Localization": "5.0.0",
+          "Volo.Abp.Localization": "6.0.2",
           "Volo.Abp.ObjectMapping": "5.0.0",
-          "Volo.Abp.Security": "5.0.0",
-          "Volo.Abp.Settings": "5.0.0",
-          "Volo.Abp.Validation": "5.0.0"
+          "Volo.Abp.Security": "6.0.2",
+          "Volo.Abp.Settings": "6.0.2",
+          "Volo.Abp.Validation": "6.0.2"
         },
         "runtime": {
           "lib/netstandard2.0/Volo.Abp.Ddd.Application.dll": {
@@ -3149,15 +3202,15 @@
           "lib/netstandard2.0/Volo.Abp.Ddd.Application.dll": {}
         }
       },
-      "Volo.Abp.Ddd.Application.Contracts/5.0.0": {
+      "Volo.Abp.Ddd.Application.Contracts/6.0.2": {
         "dependencies": {
-          "Volo.Abp.Auditing.Contracts": "5.0.0",
-          "Volo.Abp.Localization": "5.0.0"
+          "Volo.Abp.Auditing.Contracts": "6.0.2",
+          "Volo.Abp.Localization": "6.0.2"
         },
         "runtime": {
           "lib/netstandard2.0/Volo.Abp.Ddd.Application.Contracts.dll": {
-            "assemblyVersion": "5.0.0.0",
-            "fileVersion": "5.0.0.0"
+            "assemblyVersion": "6.0.2.0",
+            "fileVersion": "6.0.2.0"
           }
         },
         "compile": {
@@ -3167,16 +3220,16 @@
       "Volo.Abp.Ddd.Domain/5.0.0": {
         "dependencies": {
           "Volo.Abp.Auditing": "5.0.0",
-          "Volo.Abp.Data": "5.0.0",
+          "Volo.Abp.Data": "6.0.2",
           "Volo.Abp.EventBus": "5.0.0",
           "Volo.Abp.ExceptionHandling": "5.0.0",
           "Volo.Abp.Guids": "5.0.0",
-          "Volo.Abp.MultiTenancy": "5.0.0",
+          "Volo.Abp.MultiTenancy": "6.0.2",
           "Volo.Abp.ObjectMapping": "5.0.0",
           "Volo.Abp.Specifications": "5.0.0",
           "Volo.Abp.Threading": "5.0.0",
           "Volo.Abp.Timing": "5.0.0",
-          "Volo.Abp.Uow": "5.0.0"
+          "Volo.Abp.Uow": "6.0.2"
         },
         "runtime": {
           "lib/netstandard2.0/Volo.Abp.Ddd.Domain.dll": {
@@ -3190,7 +3243,7 @@
       },
       "Volo.Abp.DistributedLocking.Abstractions/5.0.0": {
         "dependencies": {
-          "Volo.Abp.Core": "5.0.0"
+          "Volo.Abp.Core": "6.0.2"
         },
         "runtime": {
           "lib/netstandard2.0/Volo.Abp.DistributedLocking.Abstractions.dll": {
@@ -3205,10 +3258,10 @@
       "Volo.Abp.Emailing/5.0.0": {
         "dependencies": {
           "Volo.Abp.BackgroundJobs.Abstractions": "5.0.0",
-          "Volo.Abp.Localization": "5.0.0",
-          "Volo.Abp.Settings": "5.0.0",
+          "Volo.Abp.Localization": "6.0.2",
+          "Volo.Abp.Settings": "6.0.2",
           "Volo.Abp.TextTemplating": "5.0.0",
-          "Volo.Abp.VirtualFileSystem": "5.0.0"
+          "Volo.Abp.VirtualFileSystem": "6.0.2"
         },
         "runtime": {
           "lib/netstandard2.0/Volo.Abp.Emailing.dll": {
@@ -3256,10 +3309,10 @@
         "dependencies": {
           "Volo.Abp.BackgroundWorkers": "5.0.0",
           "Volo.Abp.DistributedLocking.Abstractions": "5.0.0",
-          "Volo.Abp.EventBus.Abstractions": "5.0.0",
+          "Volo.Abp.EventBus.Abstractions": "6.0.2",
           "Volo.Abp.Guids": "5.0.0",
           "Volo.Abp.Json": "5.0.0",
-          "Volo.Abp.MultiTenancy": "5.0.0"
+          "Volo.Abp.MultiTenancy": "6.0.2"
         },
         "runtime": {
           "lib/netstandard2.0/Volo.Abp.EventBus.dll": {
@@ -3271,14 +3324,14 @@
           "lib/netstandard2.0/Volo.Abp.EventBus.dll": {}
         }
       },
-      "Volo.Abp.EventBus.Abstractions/5.0.0": {
+      "Volo.Abp.EventBus.Abstractions/6.0.2": {
         "dependencies": {
-          "Volo.Abp.Core": "5.0.0"
+          "Volo.Abp.Core": "6.0.2"
         },
         "runtime": {
           "lib/netstandard2.0/Volo.Abp.EventBus.Abstractions.dll": {
-            "assemblyVersion": "5.0.0.0",
-            "fileVersion": "5.0.0.0"
+            "assemblyVersion": "6.0.2.0",
+            "fileVersion": "6.0.2.0"
           }
         },
         "compile": {
@@ -3302,8 +3355,8 @@
       },
       "Volo.Abp.ExceptionHandling/5.0.0": {
         "dependencies": {
-          "Microsoft.Extensions.FileProviders.Embedded": "6.0.0",
-          "Volo.Abp.Localization": "5.0.0"
+          "Microsoft.Extensions.FileProviders.Embedded": "6.0.5",
+          "Volo.Abp.Localization": "6.0.2"
         },
         "runtime": {
           "lib/netstandard2.0/Volo.Abp.ExceptionHandling.dll": {
@@ -3334,8 +3387,8 @@
       },
       "Volo.Abp.FeatureManagement.Domain.Shared/5.0.0": {
         "dependencies": {
-          "Microsoft.Extensions.FileProviders.Embedded": "6.0.0",
-          "Volo.Abp.Validation": "5.0.0"
+          "Microsoft.Extensions.FileProviders.Embedded": "6.0.5",
+          "Volo.Abp.Validation": "6.0.2"
         },
         "runtime": {
           "lib/netstandard2.0/Volo.Abp.FeatureManagement.Domain.Shared.dll": {
@@ -3364,10 +3417,10 @@
       },
       "Volo.Abp.Features/5.0.0": {
         "dependencies": {
-          "Volo.Abp.Authorization.Abstractions": "5.0.0",
-          "Volo.Abp.Localization": "5.0.0",
-          "Volo.Abp.MultiTenancy": "5.0.0",
-          "Volo.Abp.Validation": "5.0.0"
+          "Volo.Abp.Authorization.Abstractions": "6.0.2",
+          "Volo.Abp.Localization": "6.0.2",
+          "Volo.Abp.MultiTenancy": "6.0.2",
+          "Volo.Abp.Validation": "6.0.2"
         },
         "runtime": {
           "lib/netstandard2.0/Volo.Abp.Features.dll": {
@@ -3381,9 +3434,9 @@
       },
       "Volo.Abp.GlobalFeatures/5.0.0": {
         "dependencies": {
-          "Volo.Abp.Authorization.Abstractions": "5.0.0",
-          "Volo.Abp.Localization": "5.0.0",
-          "Volo.Abp.VirtualFileSystem": "5.0.0"
+          "Volo.Abp.Authorization.Abstractions": "6.0.2",
+          "Volo.Abp.Localization": "6.0.2",
+          "Volo.Abp.VirtualFileSystem": "6.0.2"
         },
         "runtime": {
           "lib/netstandard2.0/Volo.Abp.GlobalFeatures.dll": {
@@ -3397,7 +3450,7 @@
       },
       "Volo.Abp.Guids/5.0.0": {
         "dependencies": {
-          "Volo.Abp.Core": "5.0.0"
+          "Volo.Abp.Core": "6.0.2"
         },
         "runtime": {
           "lib/netstandard2.0/Volo.Abp.Guids.dll": {
@@ -3427,7 +3480,7 @@
       },
       "Volo.Abp.Http.Abstractions/5.0.0": {
         "dependencies": {
-          "Volo.Abp.Core": "5.0.0"
+          "Volo.Abp.Core": "6.0.2"
         },
         "runtime": {
           "lib/netstandard2.0/Volo.Abp.Http.Abstractions.dll": {
@@ -3458,7 +3511,7 @@
       },
       "Volo.Abp.Identity.Application.Contracts/5.0.0": {
         "dependencies": {
-          "Volo.Abp.Authorization": "5.0.0",
+          "Volo.Abp.Authorization": "6.0.2",
           "Volo.Abp.Identity.Domain.Shared": "5.0.0",
           "Volo.Abp.PermissionManagement.Application.Contracts": "5.0.0",
           "Volo.Abp.Users.Abstractions": "5.0.0"
@@ -3507,10 +3560,10 @@
       },
       "Volo.Abp.Identity.Domain.Shared/5.0.0": {
         "dependencies": {
-          "Microsoft.Extensions.FileProviders.Embedded": "6.0.0",
+          "Microsoft.Extensions.FileProviders.Embedded": "6.0.5",
           "Volo.Abp.Features": "5.0.0",
           "Volo.Abp.Users.Domain.Shared": "5.0.0",
-          "Volo.Abp.Validation": "5.0.0"
+          "Volo.Abp.Validation": "6.0.2"
         },
         "runtime": {
           "lib/netstandard2.0/Volo.Abp.Identity.Domain.Shared.dll": {
@@ -3546,8 +3599,8 @@
           "Volo.Abp.Caching": "5.0.0",
           "Volo.Abp.Identity.Domain": "5.0.0",
           "Volo.Abp.IdentityServer.Domain.Shared": "5.0.0",
-          "Volo.Abp.Security": "5.0.0",
-          "Volo.Abp.Validation": "5.0.0"
+          "Volo.Abp.Security": "6.0.2",
+          "Volo.Abp.Validation": "6.0.2"
         },
         "runtime": {
           "lib/net6.0/Volo.Abp.IdentityServer.Domain.dll": {
@@ -3561,7 +3614,7 @@
       },
       "Volo.Abp.IdentityServer.Domain.Shared/5.0.0": {
         "dependencies": {
-          "Volo.Abp.Validation": "5.0.0"
+          "Volo.Abp.Validation": "6.0.2"
         },
         "runtime": {
           "lib/netstandard2.0/Volo.Abp.IdentityServer.Domain.Shared.dll": {
@@ -3591,7 +3644,7 @@
       "Volo.Abp.Json/5.0.0": {
         "dependencies": {
           "Newtonsoft.Json": "13.0.1",
-          "Volo.Abp.ObjectExtending": "5.0.0",
+          "Volo.Abp.ObjectExtending": "6.0.2",
           "Volo.Abp.Timing": "5.0.0"
         },
         "runtime": {
@@ -3604,30 +3657,30 @@
           "lib/netstandard2.0/Volo.Abp.Json.dll": {}
         }
       },
-      "Volo.Abp.Localization/5.0.0": {
+      "Volo.Abp.Localization/6.0.2": {
         "dependencies": {
-          "Volo.Abp.Localization.Abstractions": "5.0.0",
-          "Volo.Abp.Settings": "5.0.0",
-          "Volo.Abp.VirtualFileSystem": "5.0.0"
+          "Volo.Abp.Localization.Abstractions": "6.0.2",
+          "Volo.Abp.Settings": "6.0.2",
+          "Volo.Abp.VirtualFileSystem": "6.0.2"
         },
         "runtime": {
           "lib/netstandard2.0/Volo.Abp.Localization.dll": {
-            "assemblyVersion": "5.0.0.0",
-            "fileVersion": "5.0.0.0"
+            "assemblyVersion": "6.0.2.0",
+            "fileVersion": "6.0.2.0"
           }
         },
         "compile": {
           "lib/netstandard2.0/Volo.Abp.Localization.dll": {}
         }
       },
-      "Volo.Abp.Localization.Abstractions/5.0.0": {
+      "Volo.Abp.Localization.Abstractions/6.0.2": {
         "dependencies": {
-          "Volo.Abp.Core": "5.0.0"
+          "Volo.Abp.Core": "6.0.2"
         },
         "runtime": {
           "lib/netstandard2.0/Volo.Abp.Localization.Abstractions.dll": {
-            "assemblyVersion": "5.0.0.0",
-            "fileVersion": "5.0.0.0"
+            "assemblyVersion": "6.0.2.0",
+            "fileVersion": "6.0.2.0"
           }
         },
         "compile": {
@@ -3637,7 +3690,7 @@
       "Volo.Abp.Minify/5.0.0": {
         "dependencies": {
           "NUglify": "1.16.0",
-          "Volo.Abp.Core": "5.0.0"
+          "Volo.Abp.Core": "6.0.2"
         },
         "runtime": {
           "lib/netstandard2.0/Volo.Abp.Minify.dll": {
@@ -3649,31 +3702,31 @@
           "lib/netstandard2.0/Volo.Abp.Minify.dll": {}
         }
       },
-      "Volo.Abp.MultiTenancy/5.0.0": {
+      "Volo.Abp.MultiTenancy/6.0.2": {
         "dependencies": {
-          "Volo.Abp.Data": "5.0.0",
-          "Volo.Abp.EventBus.Abstractions": "5.0.0",
-          "Volo.Abp.Security": "5.0.0"
+          "Volo.Abp.Data": "6.0.2",
+          "Volo.Abp.EventBus.Abstractions": "6.0.2",
+          "Volo.Abp.Security": "6.0.2"
         },
         "runtime": {
           "lib/netstandard2.0/Volo.Abp.MultiTenancy.dll": {
-            "assemblyVersion": "5.0.0.0",
-            "fileVersion": "5.0.0.0"
+            "assemblyVersion": "6.0.2.0",
+            "fileVersion": "6.0.2.0"
           }
         },
         "compile": {
           "lib/netstandard2.0/Volo.Abp.MultiTenancy.dll": {}
         }
       },
-      "Volo.Abp.ObjectExtending/5.0.0": {
+      "Volo.Abp.ObjectExtending/6.0.2": {
         "dependencies": {
-          "Volo.Abp.Localization.Abstractions": "5.0.0",
-          "Volo.Abp.Validation.Abstractions": "5.0.0"
+          "Volo.Abp.Localization.Abstractions": "6.0.2",
+          "Volo.Abp.Validation.Abstractions": "6.0.2"
         },
         "runtime": {
           "lib/netstandard2.0/Volo.Abp.ObjectExtending.dll": {
-            "assemblyVersion": "5.0.0.0",
-            "fileVersion": "5.0.0.0"
+            "assemblyVersion": "6.0.2.0",
+            "fileVersion": "6.0.2.0"
           }
         },
         "compile": {
@@ -3682,7 +3735,7 @@
       },
       "Volo.Abp.ObjectMapping/5.0.0": {
         "dependencies": {
-          "Volo.Abp.Core": "5.0.0"
+          "Volo.Abp.Core": "6.0.2"
         },
         "runtime": {
           "lib/netstandard2.0/Volo.Abp.ObjectMapping.dll": {
@@ -3712,8 +3765,8 @@
       },
       "Volo.Abp.PermissionManagement.Application.Contracts/5.0.0": {
         "dependencies": {
-          "Volo.Abp.Authorization.Abstractions": "5.0.0",
-          "Volo.Abp.Ddd.Application.Contracts": "5.0.0",
+          "Volo.Abp.Authorization.Abstractions": "6.0.2",
+          "Volo.Abp.Ddd.Application.Contracts": "6.0.2",
           "Volo.Abp.PermissionManagement.Domain.Shared": "5.0.0"
         },
         "runtime": {
@@ -3728,7 +3781,7 @@
       },
       "Volo.Abp.PermissionManagement.Domain/5.0.0": {
         "dependencies": {
-          "Volo.Abp.Authorization": "5.0.0",
+          "Volo.Abp.Authorization": "6.0.2",
           "Volo.Abp.Caching": "5.0.0",
           "Volo.Abp.Ddd.Domain": "5.0.0",
           "Volo.Abp.Json": "5.0.0",
@@ -3746,8 +3799,8 @@
       },
       "Volo.Abp.PermissionManagement.Domain.Shared/5.0.0": {
         "dependencies": {
-          "Microsoft.Extensions.FileProviders.Embedded": "6.0.0",
-          "Volo.Abp.Validation": "5.0.0"
+          "Microsoft.Extensions.FileProviders.Embedded": "6.0.5",
+          "Volo.Abp.Validation": "6.0.2"
         },
         "runtime": {
           "lib/netstandard2.0/Volo.Abp.PermissionManagement.Domain.Shared.dll": {
@@ -3790,14 +3843,14 @@
           "lib/netstandard2.0/Volo.Abp.RabbitMQ.dll": {}
         }
       },
-      "Volo.Abp.Security/5.0.0": {
+      "Volo.Abp.Security/6.0.2": {
         "dependencies": {
-          "Volo.Abp.Core": "5.0.0"
+          "Volo.Abp.Core": "6.0.2"
         },
         "runtime": {
           "lib/netstandard2.0/Volo.Abp.Security.dll": {
-            "assemblyVersion": "5.0.0.0",
-            "fileVersion": "5.0.0.0"
+            "assemblyVersion": "6.0.2.0",
+            "fileVersion": "6.0.2.0"
           }
         },
         "compile": {
@@ -3806,7 +3859,7 @@
       },
       "Volo.Abp.Serialization/5.0.0": {
         "dependencies": {
-          "Volo.Abp.Core": "5.0.0"
+          "Volo.Abp.Core": "6.0.2"
         },
         "runtime": {
           "lib/netstandard2.0/Volo.Abp.Serialization.dll": {
@@ -3823,7 +3876,7 @@
           "Volo.Abp.Caching": "5.0.0",
           "Volo.Abp.Ddd.Domain": "5.0.0",
           "Volo.Abp.SettingManagement.Domain.Shared": "5.0.0",
-          "Volo.Abp.Settings": "5.0.0"
+          "Volo.Abp.Settings": "6.0.2"
         },
         "runtime": {
           "lib/netstandard2.0/Volo.Abp.SettingManagement.Domain.dll": {
@@ -3837,10 +3890,10 @@
       },
       "Volo.Abp.SettingManagement.Domain.Shared/5.0.0": {
         "dependencies": {
-          "Microsoft.Extensions.FileProviders.Embedded": "6.0.0",
+          "Microsoft.Extensions.FileProviders.Embedded": "6.0.5",
           "Volo.Abp.Features": "5.0.0",
-          "Volo.Abp.Localization": "5.0.0",
-          "Volo.Abp.Validation": "5.0.0"
+          "Volo.Abp.Localization": "6.0.2",
+          "Volo.Abp.Validation": "6.0.2"
         },
         "runtime": {
           "lib/netstandard2.0/Volo.Abp.SettingManagement.Domain.Shared.dll": {
@@ -3867,16 +3920,16 @@
           "lib/net6.0/Volo.Abp.SettingManagement.EntityFrameworkCore.dll": {}
         }
       },
-      "Volo.Abp.Settings/5.0.0": {
+      "Volo.Abp.Settings/6.0.2": {
         "dependencies": {
-          "Volo.Abp.Localization.Abstractions": "5.0.0",
-          "Volo.Abp.MultiTenancy": "5.0.0",
-          "Volo.Abp.Security": "5.0.0"
+          "Volo.Abp.Localization.Abstractions": "6.0.2",
+          "Volo.Abp.MultiTenancy": "6.0.2",
+          "Volo.Abp.Security": "6.0.2"
         },
         "runtime": {
           "lib/netstandard2.0/Volo.Abp.Settings.dll": {
-            "assemblyVersion": "5.0.0.0",
-            "fileVersion": "5.0.0.0"
+            "assemblyVersion": "6.0.2.0",
+            "fileVersion": "6.0.2.0"
           }
         },
         "compile": {
@@ -3885,7 +3938,7 @@
       },
       "Volo.Abp.Specifications/5.0.0": {
         "dependencies": {
-          "Volo.Abp.Core": "5.0.0"
+          "Volo.Abp.Core": "6.0.2"
         },
         "runtime": {
           "lib/netstandard2.0/Volo.Abp.Specifications.dll": {
@@ -3899,8 +3952,8 @@
       },
       "Volo.Abp.TenantManagement.Application.Contracts/5.0.0": {
         "dependencies": {
-          "Volo.Abp.Authorization.Abstractions": "5.0.0",
-          "Volo.Abp.Ddd.Application.Contracts": "5.0.0",
+          "Volo.Abp.Authorization.Abstractions": "6.0.2",
+          "Volo.Abp.Ddd.Application.Contracts": "6.0.2",
           "Volo.Abp.TenantManagement.Domain.Shared": "5.0.0"
         },
         "runtime": {
@@ -3917,9 +3970,9 @@
         "dependencies": {
           "Volo.Abp.AutoMapper": "5.0.0",
           "Volo.Abp.Caching": "5.0.0",
-          "Volo.Abp.Data": "5.0.0",
+          "Volo.Abp.Data": "6.0.2",
           "Volo.Abp.Ddd.Domain": "5.0.0",
-          "Volo.Abp.MultiTenancy": "5.0.0",
+          "Volo.Abp.MultiTenancy": "6.0.2",
           "Volo.Abp.TenantManagement.Domain.Shared": "5.0.0"
         },
         "runtime": {
@@ -3934,8 +3987,8 @@
       },
       "Volo.Abp.TenantManagement.Domain.Shared/5.0.0": {
         "dependencies": {
-          "Microsoft.Extensions.FileProviders.Embedded": "6.0.0",
-          "Volo.Abp.Validation": "5.0.0"
+          "Microsoft.Extensions.FileProviders.Embedded": "6.0.5",
+          "Volo.Abp.Validation": "6.0.2"
         },
         "runtime": {
           "lib/netstandard2.0/Volo.Abp.TenantManagement.Domain.Shared.dll": {
@@ -3978,8 +4031,8 @@
       },
       "Volo.Abp.TextTemplating.Core/5.0.0": {
         "dependencies": {
-          "Volo.Abp.Localization.Abstractions": "5.0.0",
-          "Volo.Abp.VirtualFileSystem": "5.0.0"
+          "Volo.Abp.Localization.Abstractions": "6.0.2",
+          "Volo.Abp.VirtualFileSystem": "6.0.2"
         },
         "runtime": {
           "lib/netstandard2.0/Volo.Abp.TextTemplating.Core.dll": {
@@ -4008,7 +4061,7 @@
       },
       "Volo.Abp.Threading/5.0.0": {
         "dependencies": {
-          "Volo.Abp.Core": "5.0.0"
+          "Volo.Abp.Core": "6.0.2"
         },
         "runtime": {
           "lib/netstandard2.0/Volo.Abp.Threading.dll": {
@@ -4023,8 +4076,8 @@
       "Volo.Abp.Timing/5.0.0": {
         "dependencies": {
           "TimeZoneConverter": "3.5.0",
-          "Volo.Abp.Localization": "5.0.0",
-          "Volo.Abp.Settings": "5.0.0"
+          "Volo.Abp.Localization": "6.0.2",
+          "Volo.Abp.Settings": "6.0.2"
         },
         "runtime": {
           "lib/netstandard2.0/Volo.Abp.Timing.dll": {
@@ -4052,7 +4105,7 @@
       },
       "Volo.Abp.UI.Navigation/5.0.0": {
         "dependencies": {
-          "Volo.Abp.Authorization": "5.0.0",
+          "Volo.Abp.Authorization": "6.0.2",
           "Volo.Abp.UI": "5.0.0"
         },
         "runtime": {
@@ -4065,14 +4118,14 @@
           "lib/netstandard2.0/Volo.Abp.UI.Navigation.dll": {}
         }
       },
-      "Volo.Abp.Uow/5.0.0": {
+      "Volo.Abp.Uow/6.0.2": {
         "dependencies": {
-          "Volo.Abp.Core": "5.0.0"
+          "Volo.Abp.Core": "6.0.2"
         },
         "runtime": {
           "lib/netstandard2.0/Volo.Abp.Uow.dll": {
-            "assemblyVersion": "5.0.0.0",
-            "fileVersion": "5.0.0.0"
+            "assemblyVersion": "6.0.2.0",
+            "fileVersion": "6.0.2.0"
           }
         },
         "compile": {
@@ -4082,7 +4135,7 @@
       "Volo.Abp.Users.Abstractions/5.0.0": {
         "dependencies": {
           "Volo.Abp.EventBus": "5.0.0",
-          "Volo.Abp.MultiTenancy": "5.0.0"
+          "Volo.Abp.MultiTenancy": "6.0.2"
         },
         "runtime": {
           "lib/netstandard2.0/Volo.Abp.Users.Abstractions.dll": {
@@ -4112,7 +4165,7 @@
       },
       "Volo.Abp.Users.Domain.Shared/5.0.0": {
         "dependencies": {
-          "Volo.Abp.Core": "5.0.0"
+          "Volo.Abp.Core": "6.0.2"
         },
         "runtime": {
           "lib/netstandard2.0/Volo.Abp.Users.Domain.Shared.dll": {
@@ -4139,50 +4192,100 @@
           "lib/net6.0/Volo.Abp.Users.EntityFrameworkCore.dll": {}
         }
       },
-      "Volo.Abp.Validation/5.0.0": {
+      "Volo.Abp.Validation/6.0.2": {
         "dependencies": {
-          "Volo.Abp.Localization": "5.0.0",
-          "Volo.Abp.Validation.Abstractions": "5.0.0"
+          "Volo.Abp.Localization": "6.0.2",
+          "Volo.Abp.Validation.Abstractions": "6.0.2"
         },
         "runtime": {
           "lib/netstandard2.0/Volo.Abp.Validation.dll": {
-            "assemblyVersion": "5.0.0.0",
-            "fileVersion": "5.0.0.0"
+            "assemblyVersion": "6.0.2.0",
+            "fileVersion": "6.0.2.0"
           }
         },
         "compile": {
           "lib/netstandard2.0/Volo.Abp.Validation.dll": {}
         }
       },
-      "Volo.Abp.Validation.Abstractions/5.0.0": {
+      "Volo.Abp.Validation.Abstractions/6.0.2": {
         "dependencies": {
-          "Volo.Abp.Core": "5.0.0"
+          "Volo.Abp.Core": "6.0.2"
         },
         "runtime": {
           "lib/netstandard2.0/Volo.Abp.Validation.Abstractions.dll": {
-            "assemblyVersion": "5.0.0.0",
-            "fileVersion": "5.0.0.0"
+            "assemblyVersion": "6.0.2.0",
+            "fileVersion": "6.0.2.0"
           }
         },
         "compile": {
           "lib/netstandard2.0/Volo.Abp.Validation.Abstractions.dll": {}
         }
       },
-      "Volo.Abp.VirtualFileSystem/5.0.0": {
+      "Volo.Abp.VirtualFileSystem/6.0.2": {
         "dependencies": {
           "Microsoft.Extensions.FileProviders.Composite": "6.0.0",
-          "Microsoft.Extensions.FileProviders.Embedded": "6.0.0",
+          "Microsoft.Extensions.FileProviders.Embedded": "6.0.5",
           "Microsoft.Extensions.FileProviders.Physical": "6.0.0",
-          "Volo.Abp.Core": "5.0.0"
+          "Volo.Abp.Core": "6.0.2"
         },
         "runtime": {
           "lib/netstandard2.0/Volo.Abp.VirtualFileSystem.dll": {
-            "assemblyVersion": "5.0.0.0",
-            "fileVersion": "5.0.0.0"
+            "assemblyVersion": "6.0.2.0",
+            "fileVersion": "6.0.2.0"
           }
         },
         "compile": {
           "lib/netstandard2.0/Volo.Abp.VirtualFileSystem.dll": {}
+        }
+      },
+      "CurrencyManagment.Application.Contracts/0.1.0": {
+        "dependencies": {
+          "CurrencyManagment.Domain.Shared": "0.1.0",
+          "Volo.Abp.Authorization": "6.0.2",
+          "Volo.Abp.Ddd.Application.Contracts": "6.0.2"
+        },
+        "runtime": {
+          "CurrencyManagment.Application.Contracts.dll": {}
+        },
+        "compile": {
+          "CurrencyManagment.Application.Contracts.dll": {}
+        }
+      },
+      "CurrencyManagment.Domain.Shared/0.1.0": {
+        "dependencies": {
+          "Microsoft.Extensions.FileProviders.Embedded": "6.0.5",
+          "Volo.Abp.Validation": "6.0.2"
+        },
+        "runtime": {
+          "CurrencyManagment.Domain.Shared.dll": {}
+        },
+        "compile": {
+          "CurrencyManagment.Domain.Shared.dll": {}
+        }
+      },
+      "CustomerManagement.Application.Contracts/0.1.0": {
+        "dependencies": {
+          "CustomerManagement.Domain.Shared": "0.1.0",
+          "Volo.Abp.Authorization": "6.0.2",
+          "Volo.Abp.Ddd.Application.Contracts": "6.0.2"
+        },
+        "runtime": {
+          "CustomerManagement.Application.Contracts.dll": {}
+        },
+        "compile": {
+          "CustomerManagement.Application.Contracts.dll": {}
+        }
+      },
+      "CustomerManagement.Domain.Shared/0.1.0": {
+        "dependencies": {
+          "Microsoft.Extensions.FileProviders.Embedded": "6.0.5",
+          "Volo.Abp.Validation": "6.0.2"
+        },
+        "runtime": {
+          "CustomerManagement.Domain.Shared.dll": {}
+        },
+        "compile": {
+          "CustomerManagement.Domain.Shared.dll": {}
         }
       },
       "MsDemo.Shared/1.0.0": {
@@ -6013,12 +6116,12 @@
       "path": "identityserver4.storage/4.1.2",
       "hashPath": "identityserver4.storage.4.1.2.nupkg.sha512"
     },
-    "JetBrains.Annotations/2021.2.0": {
+    "JetBrains.Annotations/2022.1.0": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-kKSyoVfndMriKHLfYGmr0uzQuI4jcc3TKGyww7buJFCYeHb/X0kodYBPL7n9454q7v6ASiRmDgpPGaDGerg/Hg==",
-      "path": "jetbrains.annotations/2021.2.0",
-      "hashPath": "jetbrains.annotations.2021.2.0.nupkg.sha512"
+      "sha512": "sha512-ASfpoFJxiRsC9Xc4TWuPM41Zb/gl64xwfMOhnOZ3RnVWGYIZchjpWQV5zshJgoc/ZxVtgjaF7b577lURj7E6ig==",
+      "path": "jetbrains.annotations/2022.1.0",
+      "hashPath": "jetbrains.annotations.2022.1.0.nupkg.sha512"
     },
     "Microsoft.AspNetCore.Authentication.OpenIdConnect/3.1.0": {
       "type": "package",
@@ -6027,12 +6130,12 @@
       "path": "microsoft.aspnetcore.authentication.openidconnect/3.1.0",
       "hashPath": "microsoft.aspnetcore.authentication.openidconnect.3.1.0.nupkg.sha512"
     },
-    "Microsoft.AspNetCore.Authorization/6.0.0": {
+    "Microsoft.AspNetCore.Authorization/6.0.5": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-HPEhmNwINXzGVWirzmvVxx5/GkoaQJC7vKNIbhOUTzgnRHEf2zO6S2s4lMw3TPFWBGcAlfn6Ta0cVB9f15QC8w==",
-      "path": "microsoft.aspnetcore.authorization/6.0.0",
-      "hashPath": "microsoft.aspnetcore.authorization.6.0.0.nupkg.sha512"
+      "sha512": "sha512-T3J4Z4xK/mmJlMv/j7Cs1PZjRLh1fGsvHay3RNBNooP0qhHCk3UnU+WgBvcGApZFnEfeyOEGZBHZv5gb1RrDLA==",
+      "path": "microsoft.aspnetcore.authorization/6.0.5",
+      "hashPath": "microsoft.aspnetcore.authorization.6.0.5.nupkg.sha512"
     },
     "Microsoft.AspNetCore.Cryptography.Internal/6.0.0": {
       "type": "package",
@@ -6076,12 +6179,12 @@
       "path": "microsoft.aspnetcore.jsonpatch/6.0.0",
       "hashPath": "microsoft.aspnetcore.jsonpatch.6.0.0.nupkg.sha512"
     },
-    "Microsoft.AspNetCore.Metadata/6.0.0": {
+    "Microsoft.AspNetCore.Metadata/6.0.5": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-giBCvjANLIOqC+DJ84zCkCQnE4ebRTrgVyBe5e0gG3/F8GYzdqSSdtMSAvbOkBQsf0F8dySBPSM59vX6ksOeQg==",
-      "path": "microsoft.aspnetcore.metadata/6.0.0",
-      "hashPath": "microsoft.aspnetcore.metadata.6.0.0.nupkg.sha512"
+      "sha512": "sha512-4VRJoJa/EbncxQTAzM6abqQUUbNrohg5MC1glZ1R1lzzXJM2CdXiRKvcpAfn3luAwPzkwJtHejuLgI6Osn0aDA==",
+      "path": "microsoft.aspnetcore.metadata/6.0.5",
+      "hashPath": "microsoft.aspnetcore.metadata.6.0.5.nupkg.sha512"
     },
     "Microsoft.AspNetCore.Mvc.NewtonsoftJson/6.0.0": {
       "type": "package",
@@ -6272,12 +6375,12 @@
       "path": "microsoft.extensions.configuration.commandline/6.0.0",
       "hashPath": "microsoft.extensions.configuration.commandline.6.0.0.nupkg.sha512"
     },
-    "Microsoft.Extensions.Configuration.EnvironmentVariables/6.0.0": {
+    "Microsoft.Extensions.Configuration.EnvironmentVariables/6.0.1": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-DjYkzqvhiHCq38LW71PcIxXk6nhtV6VySP9yDcSO0goPl7YCU1VG1f2Wbgy58lkA10pWkjHCblZPUyboCB93ZA==",
-      "path": "microsoft.extensions.configuration.environmentvariables/6.0.0",
-      "hashPath": "microsoft.extensions.configuration.environmentvariables.6.0.0.nupkg.sha512"
+      "sha512": "sha512-pnyXV1LFOsYjGveuC07xp0YHIyGq7jRq5Ncb5zrrIieMLWVwgMyYxcOH0jTnBedDT4Gh1QinSqsjqzcieHk1og==",
+      "path": "microsoft.extensions.configuration.environmentvariables/6.0.1",
+      "hashPath": "microsoft.extensions.configuration.environmentvariables.6.0.1.nupkg.sha512"
     },
     "Microsoft.Extensions.Configuration.FileExtensions/6.0.0": {
       "type": "package",
@@ -6293,12 +6396,12 @@
       "path": "microsoft.extensions.configuration.json/6.0.0",
       "hashPath": "microsoft.extensions.configuration.json.6.0.0.nupkg.sha512"
     },
-    "Microsoft.Extensions.Configuration.UserSecrets/6.0.0": {
+    "Microsoft.Extensions.Configuration.UserSecrets/6.0.1": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-lB0Hb2V4+RUHy+LjEcqEr4EcV4RWc9EnjAV2GdtWQEdljQX+R4hGREftI7sInU9okP93pDrJiaj6QUJ6ZsslOA==",
-      "path": "microsoft.extensions.configuration.usersecrets/6.0.0",
-      "hashPath": "microsoft.extensions.configuration.usersecrets.6.0.0.nupkg.sha512"
+      "sha512": "sha512-Fy8yr4V6obi7ZxvKYI1i85jqtwMq8tqyxQVZpRSkgeA8enqy/KvBIMdcuNdznlxQMZa72mvbHqb7vbg4Pyx95w==",
+      "path": "microsoft.extensions.configuration.usersecrets/6.0.1",
+      "hashPath": "microsoft.extensions.configuration.usersecrets.6.0.1.nupkg.sha512"
     },
     "Microsoft.Extensions.DependencyInjection/6.0.0": {
       "type": "package",
@@ -6335,12 +6438,12 @@
       "path": "microsoft.extensions.fileproviders.composite/6.0.0",
       "hashPath": "microsoft.extensions.fileproviders.composite.6.0.0.nupkg.sha512"
     },
-    "Microsoft.Extensions.FileProviders.Embedded/6.0.0": {
+    "Microsoft.Extensions.FileProviders.Embedded/6.0.5": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-9uQbDTqX1MidhoZFUSK1JItt74IapEadFDOIWAlBIKxr3O/ZEWLWkLYGlgUeP1Dkyog6/CB7h1EAU3xADYZ/lA==",
-      "path": "microsoft.extensions.fileproviders.embedded/6.0.0",
-      "hashPath": "microsoft.extensions.fileproviders.embedded.6.0.0.nupkg.sha512"
+      "sha512": "sha512-z7M3GpcYfKw1FYUGcurTbv/v0ZZ95LSMOZOjOtYLUztzUIUZZ61H5NFjLXjeQ8G72zxrVrt+jubb4MZGvm0EQw==",
+      "path": "microsoft.extensions.fileproviders.embedded/6.0.5",
+      "hashPath": "microsoft.extensions.fileproviders.embedded.6.0.5.nupkg.sha512"
     },
     "Microsoft.Extensions.FileProviders.Physical/6.0.0": {
       "type": "package",
@@ -6370,19 +6473,19 @@
       "path": "microsoft.extensions.identity.core/6.0.0",
       "hashPath": "microsoft.extensions.identity.core.6.0.0.nupkg.sha512"
     },
-    "Microsoft.Extensions.Localization/6.0.0": {
+    "Microsoft.Extensions.Localization/6.0.5": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-WS/BXvYSh0yGAXvKYvqGLzmhe4raIxmsLwd3pqg0T/zmTMy44PFiTbJm41F2GcPsv3zAV34jcs5aPjjE8td8bA==",
-      "path": "microsoft.extensions.localization/6.0.0",
-      "hashPath": "microsoft.extensions.localization.6.0.0.nupkg.sha512"
+      "sha512": "sha512-mbNGvpCgCYD6o+2IFNT3EZ+AQE8W0yI9GXmXDYWtCXclhvjKn3RJ37QrMRXqzNqOBkWzdiJ/HINVuccrJEenNA==",
+      "path": "microsoft.extensions.localization/6.0.5",
+      "hashPath": "microsoft.extensions.localization.6.0.5.nupkg.sha512"
     },
-    "Microsoft.Extensions.Localization.Abstractions/6.0.0": {
+    "Microsoft.Extensions.Localization.Abstractions/6.0.5": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-UQJmE78r414kbguPmvbT6MIz0r8LPsBhjLNOlpXOP1VVjaSIuUMATfAve8Q+oivwNG3Mnv+5OLZHfaBkB4SuUg==",
-      "path": "microsoft.extensions.localization.abstractions/6.0.0",
-      "hashPath": "microsoft.extensions.localization.abstractions.6.0.0.nupkg.sha512"
+      "sha512": "sha512-PzYBMoQk4i1dOC2szAy90hPLBIe6YWdiaGxqoRdWesiJbZwiGCd2syC7kkePp2/ef3f8o202YRMt0tzbLP50rw==",
+      "path": "microsoft.extensions.localization.abstractions/6.0.5",
+      "hashPath": "microsoft.extensions.localization.abstractions.6.0.5.nupkg.sha512"
     },
     "Microsoft.Extensions.Logging/6.0.0": {
       "type": "package",
@@ -6391,12 +6494,12 @@
       "path": "microsoft.extensions.logging/6.0.0",
       "hashPath": "microsoft.extensions.logging.6.0.0.nupkg.sha512"
     },
-    "Microsoft.Extensions.Logging.Abstractions/6.0.0": {
+    "Microsoft.Extensions.Logging.Abstractions/6.0.1": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-/HggWBbTwy8TgebGSX5DBZ24ndhzi93sHUBDvP1IxbZD7FDokYzdAr6+vbWGjw2XAfR2EJ1sfKUotpjHnFWPxA==",
-      "path": "microsoft.extensions.logging.abstractions/6.0.0",
-      "hashPath": "microsoft.extensions.logging.abstractions.6.0.0.nupkg.sha512"
+      "sha512": "sha512-dzB2Cgg+JmrouhjkcQGzSFjjvpwlq353i8oBQO2GWNjCXSzhbtBRUf28HSauWe7eib3wYOdb3tItdjRwAdwCSg==",
+      "path": "microsoft.extensions.logging.abstractions/6.0.1",
+      "hashPath": "microsoft.extensions.logging.abstractions.6.0.1.nupkg.sha512"
     },
     "Microsoft.Extensions.Options/6.0.0": {
       "type": "package",
@@ -6517,40 +6620,40 @@
       "path": "newtonsoft.json.bson/1.0.2",
       "hashPath": "newtonsoft.json.bson.1.0.2.nupkg.sha512"
     },
-    "Nito.AsyncEx.Context/5.1.0": {
+    "Nito.AsyncEx.Context/5.1.2": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-EE7M37c5E/kvulzEkpUR6v1AnK34b2wysOLJHSjl78p/3hL7grte0XCPRqCfLZDwq98AD9GHMTCRfZy7TEeHhw==",
-      "path": "nito.asyncex.context/5.1.0",
-      "hashPath": "nito.asyncex.context.5.1.0.nupkg.sha512"
+      "sha512": "sha512-rMwL7Nj3oNyvFu/jxUzQ/YBobEkM2RQHe+5mpCDRyq6mfD7vCj7Z3rjB6XgpM6Mqcx1CA2xGv0ascU/2Xk8IIg==",
+      "path": "nito.asyncex.context/5.1.2",
+      "hashPath": "nito.asyncex.context.5.1.2.nupkg.sha512"
     },
-    "Nito.AsyncEx.Coordination/5.1.0": {
+    "Nito.AsyncEx.Coordination/5.1.2": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-Nv+oA+cSxidjOImiKcz2FJgMIDxiK0A6xormKmsUklUBjTNqQpjtdJsACMgTQG56PkTHdbMi5QijPTTUsmcCeg==",
-      "path": "nito.asyncex.coordination/5.1.0",
-      "hashPath": "nito.asyncex.coordination.5.1.0.nupkg.sha512"
+      "sha512": "sha512-QMyUfsaxov//0ZMbOHWr9hJaBFteZd66DV1ay4J5wRODDb8+K/uHC7+3VsOflo6SVw/29mu8OWZp8vMDSuzc0w==",
+      "path": "nito.asyncex.coordination/5.1.2",
+      "hashPath": "nito.asyncex.coordination.5.1.2.nupkg.sha512"
     },
-    "Nito.AsyncEx.Tasks/5.1.0": {
+    "Nito.AsyncEx.Tasks/5.1.2": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-tU3Ib4zs8ivM+uS8n7F7ReWZlA3mODyLqwPE+v+WJI94hZ8xLXl+a9npfj/IcmeXo9a6fGKLWkswKQHOeTWqwA==",
-      "path": "nito.asyncex.tasks/5.1.0",
-      "hashPath": "nito.asyncex.tasks.5.1.0.nupkg.sha512"
+      "sha512": "sha512-jEkCfR2/M26OK/U4G7SEN063EU/F4LiVA06TtpZILMdX/quIHCg+wn31Zerl2LC+u1cyFancjTY3cNAr2/89PA==",
+      "path": "nito.asyncex.tasks/5.1.2",
+      "hashPath": "nito.asyncex.tasks.5.1.2.nupkg.sha512"
     },
-    "Nito.Collections.Deque/1.1.0": {
+    "Nito.Collections.Deque/1.1.1": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-RXHe531Oaw2IathDr0Q2kbid0iuudBxtgZsfBZ2eUPuFI8I1P7HMiuUeaIefqYykcDYFTDQsFAPAljduIjihLA==",
-      "path": "nito.collections.deque/1.1.0",
-      "hashPath": "nito.collections.deque.1.1.0.nupkg.sha512"
+      "sha512": "sha512-CU0/Iuv5VDynK8I8pDLwkgF0rZhbQoZahtodfL0M3x2gFkpBRApKs8RyMyNlAi1mwExE4gsmqQXk4aFVvW9a4Q==",
+      "path": "nito.collections.deque/1.1.1",
+      "hashPath": "nito.collections.deque.1.1.1.nupkg.sha512"
     },
-    "Nito.Disposables/2.2.0": {
+    "Nito.Disposables/2.2.1": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-QcL+uBwUCEoK8GKp/WzjdCiG8/3G1WLlVNJgLJUNG7bIIVAcEV+Mro4s53VT4Nd8xMSplv0gy+Priw44vRvLaA==",
-      "path": "nito.disposables/2.2.0",
-      "hashPath": "nito.disposables.2.2.0.nupkg.sha512"
+      "sha512": "sha512-6sZ5uynQeAE9dPWBQGKebNmxbY4xsvcc5VplB5WkYEESUS7oy4AwnFp0FhqxTSKm/PaFrFqLrYr696CYN8cugg==",
+      "path": "nito.disposables/2.2.1",
+      "hashPath": "nito.disposables.2.2.1.nupkg.sha512"
     },
     "NUglify/1.16.0": {
       "type": "package",
@@ -7007,12 +7110,12 @@
       "path": "system.linq/4.3.0",
       "hashPath": "system.linq.4.3.0.nupkg.sha512"
     },
-    "System.Linq.Dynamic.Core/1.2.12": {
+    "System.Linq.Dynamic.Core/1.2.18": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-wJDLhidcJnLAJeZ4z10YVAxMm4rTW0zlYmUjriJTo4eGLHD5NKZOm6qFabkn5TinbfZ6LM9LeYFPyiQMpRly3Q==",
-      "path": "system.linq.dynamic.core/1.2.12",
-      "hashPath": "system.linq.dynamic.core.1.2.12.nupkg.sha512"
+      "sha512": "sha512-+RH90sKD6SK2c9MD2Xo2jz1hkAJYfgPVyW1VgAwiPURR+JzOJCdvsDBg2Iq97FmTymxlQBY76G1cMxsF6j+6tA==",
+      "path": "system.linq.dynamic.core/1.2.18",
+      "hashPath": "system.linq.dynamic.core.1.2.18.nupkg.sha512"
     },
     "System.Linq.Expressions/4.3.0": {
       "type": "package",
@@ -7532,12 +7635,12 @@
       "path": "volo.abp.auditing/5.0.0",
       "hashPath": "volo.abp.auditing.5.0.0.nupkg.sha512"
     },
-    "Volo.Abp.Auditing.Contracts/5.0.0": {
+    "Volo.Abp.Auditing.Contracts/6.0.2": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-QQ9x8VxzjaQg5O+J5bj/sxdbILu49l1Xx1Y2NLjq4CeiQ/Js7FebgtKlXvCDVUTXpifyW+fE0D21IS+6WL6j7w==",
-      "path": "volo.abp.auditing.contracts/5.0.0",
-      "hashPath": "volo.abp.auditing.contracts.5.0.0.nupkg.sha512"
+      "sha512": "sha512-TNnCpKhIx2052j82Z3hgEpcoE1GQ0/4+NwJog5p7ntTw4T9vkN2zsepIKBxDOpVtAkhrF14p4sHORYMz1Cd0eg==",
+      "path": "volo.abp.auditing.contracts/6.0.2",
+      "hashPath": "volo.abp.auditing.contracts.6.0.2.nupkg.sha512"
     },
     "Volo.Abp.AuditLogging.Domain/5.0.0": {
       "type": "package",
@@ -7560,19 +7663,19 @@
       "path": "volo.abp.auditlogging.entityframeworkcore/5.0.0",
       "hashPath": "volo.abp.auditlogging.entityframeworkcore.5.0.0.nupkg.sha512"
     },
-    "Volo.Abp.Authorization/5.0.0": {
+    "Volo.Abp.Authorization/6.0.2": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-5s2q2pJE2jaWeKr2RbDDquMxV39Zxf7j2iq0iPHaIlsEDc4PHULnFmSZ4GBfA9hvuk1Hxexod1xuwy38Q5s0Tg==",
-      "path": "volo.abp.authorization/5.0.0",
-      "hashPath": "volo.abp.authorization.5.0.0.nupkg.sha512"
+      "sha512": "sha512-BJpHCmrEC/DZfXXv85ULGOK66D0SFAzC5aMwe2IaTeO6K4OqxyyMefH8S8lMGkE75vBAN3BB9QvPk1Qcvsbmrw==",
+      "path": "volo.abp.authorization/6.0.2",
+      "hashPath": "volo.abp.authorization.6.0.2.nupkg.sha512"
     },
-    "Volo.Abp.Authorization.Abstractions/5.0.0": {
+    "Volo.Abp.Authorization.Abstractions/6.0.2": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-y2ae1lipo4lKoikVQIIKY/vwTpc2DL/zHgc+D/gSC6syA7JmhZQ0lkMQ7lfcEzocc54qF6Aq6K7rWgt0u0CgBg==",
-      "path": "volo.abp.authorization.abstractions/5.0.0",
-      "hashPath": "volo.abp.authorization.abstractions.5.0.0.nupkg.sha512"
+      "sha512": "sha512-IuhvX9q2oPSE5FHV9ie69+wmkrf8KjkE8c89iN67As4OOEhakF7RJhAu/hIv5CPLG0vIsHDisRzXW4WIT2T2xA==",
+      "path": "volo.abp.authorization.abstractions/6.0.2",
+      "hashPath": "volo.abp.authorization.abstractions.6.0.2.nupkg.sha512"
     },
     "Volo.Abp.Autofac/5.0.0": {
       "type": "package",
@@ -7616,19 +7719,19 @@
       "path": "volo.abp.castle.core/5.0.0",
       "hashPath": "volo.abp.castle.core.5.0.0.nupkg.sha512"
     },
-    "Volo.Abp.Core/5.0.0": {
+    "Volo.Abp.Core/6.0.2": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-+i1tKijMJSjK4V/1+bsh2lxLD4xQd1jCfLDEN6184BrMYcClSuRRprTTPykDp//lRsvo3M8KRmWobgnAczcrvQ==",
-      "path": "volo.abp.core/5.0.0",
-      "hashPath": "volo.abp.core.5.0.0.nupkg.sha512"
+      "sha512": "sha512-wuY90hoFxowFD0jatwJ0SWJ+bDuwQD4C+Wb00EWJ7sfYDq9Xu0l4Hh7QmUKFQOKPMotLy5Lt8LGirmwE88D00w==",
+      "path": "volo.abp.core/6.0.2",
+      "hashPath": "volo.abp.core.6.0.2.nupkg.sha512"
     },
-    "Volo.Abp.Data/5.0.0": {
+    "Volo.Abp.Data/6.0.2": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-p5GSLGwjhZgAnCUuOd39+9F3WuScmCWiL4EfPI/8hUnB4HCYoh2JXrTUMv46IUP5eSbDS8XnzIj/Vx9sLd4hLQ==",
-      "path": "volo.abp.data/5.0.0",
-      "hashPath": "volo.abp.data.5.0.0.nupkg.sha512"
+      "sha512": "sha512-JBWe8xpTKv9kUYCbwSL5OvviyWbldGWjkQ517SdmzqXiYbYhTIpBuEBv+XemxjMbgBG+jOxmtrXc/7/77uXd5w==",
+      "path": "volo.abp.data/6.0.2",
+      "hashPath": "volo.abp.data.6.0.2.nupkg.sha512"
     },
     "Volo.Abp.Ddd.Application/5.0.0": {
       "type": "package",
@@ -7637,12 +7740,12 @@
       "path": "volo.abp.ddd.application/5.0.0",
       "hashPath": "volo.abp.ddd.application.5.0.0.nupkg.sha512"
     },
-    "Volo.Abp.Ddd.Application.Contracts/5.0.0": {
+    "Volo.Abp.Ddd.Application.Contracts/6.0.2": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-tHz5dYI8XhSMtBWi0gz2F/nZj7fqM4fxbQu0GQftPh2GhwK3wq8xKJO0h3mwS1zZ2eTSkEyQe5i5wkmpvsKc8w==",
-      "path": "volo.abp.ddd.application.contracts/5.0.0",
-      "hashPath": "volo.abp.ddd.application.contracts.5.0.0.nupkg.sha512"
+      "sha512": "sha512-ilF6JQyJ9Om0gYE3JULJBV5lZruKkearM2L16ibZ/y/7iIjWhB4Av2W3vCpGNUz+LxL8tu0RKZZM9cLx6KYLCQ==",
+      "path": "volo.abp.ddd.application.contracts/6.0.2",
+      "hashPath": "volo.abp.ddd.application.contracts.6.0.2.nupkg.sha512"
     },
     "Volo.Abp.Ddd.Domain/5.0.0": {
       "type": "package",
@@ -7686,12 +7789,12 @@
       "path": "volo.abp.eventbus/5.0.0",
       "hashPath": "volo.abp.eventbus.5.0.0.nupkg.sha512"
     },
-    "Volo.Abp.EventBus.Abstractions/5.0.0": {
+    "Volo.Abp.EventBus.Abstractions/6.0.2": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-hiOtlU/amNbEMNIwJcZSoeMcLPP5HYGcdtFd+jn5dY7vX3sgYLMdgvZA4AldAGRGRJUAL0C4Tzz1t2CclsfkDA==",
-      "path": "volo.abp.eventbus.abstractions/5.0.0",
-      "hashPath": "volo.abp.eventbus.abstractions.5.0.0.nupkg.sha512"
+      "sha512": "sha512-9eHrajsiJYfSBf1/hKnF8Wjc8K9aANfS9HKbJIkVJUS1PgRSLiCbLrCuyesCkgORSt3a3VDDywAfP0RhgEJ/zQ==",
+      "path": "volo.abp.eventbus.abstractions/6.0.2",
+      "hashPath": "volo.abp.eventbus.abstractions.6.0.2.nupkg.sha512"
     },
     "Volo.Abp.EventBus.RabbitMQ/5.0.0": {
       "type": "package",
@@ -7833,19 +7936,19 @@
       "path": "volo.abp.json/5.0.0",
       "hashPath": "volo.abp.json.5.0.0.nupkg.sha512"
     },
-    "Volo.Abp.Localization/5.0.0": {
+    "Volo.Abp.Localization/6.0.2": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-lFLdvn2a+GoBq8xjPndpgwsnstymCzFKr2lt8Ir0N6lCJBqUxe0KjexvmI9pM0DUIkSlK+yaQAZq2Gb7DVTvHA==",
-      "path": "volo.abp.localization/5.0.0",
-      "hashPath": "volo.abp.localization.5.0.0.nupkg.sha512"
+      "sha512": "sha512-YYUEzyfH3u/ILYm045fbPZQKh2asIEXiw1swsh3qyo7fPV1q5xxEsb5xBwfE5SC0F+lcUBy72cJjRmf8HqiQFw==",
+      "path": "volo.abp.localization/6.0.2",
+      "hashPath": "volo.abp.localization.6.0.2.nupkg.sha512"
     },
-    "Volo.Abp.Localization.Abstractions/5.0.0": {
+    "Volo.Abp.Localization.Abstractions/6.0.2": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-+g+4jIsJTvpN4aHCpNBF2zkNabnI6jzBC3SB76oOMfEeVRpw+7zTIAj+SBij/h2SfdSGcMDKVVya87oe7YMo5Q==",
-      "path": "volo.abp.localization.abstractions/5.0.0",
-      "hashPath": "volo.abp.localization.abstractions.5.0.0.nupkg.sha512"
+      "sha512": "sha512-RE2tYmLJJ6W6BEm4LXiqJHBpY07JE9iiAj7djfYvQzrn3oSonCyLFxH+/UWIBzcGgOrjdhzI/UuF0Y9GHNRWTA==",
+      "path": "volo.abp.localization.abstractions/6.0.2",
+      "hashPath": "volo.abp.localization.abstractions.6.0.2.nupkg.sha512"
     },
     "Volo.Abp.Minify/5.0.0": {
       "type": "package",
@@ -7854,19 +7957,19 @@
       "path": "volo.abp.minify/5.0.0",
       "hashPath": "volo.abp.minify.5.0.0.nupkg.sha512"
     },
-    "Volo.Abp.MultiTenancy/5.0.0": {
+    "Volo.Abp.MultiTenancy/6.0.2": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-zcfUoDbj24mpHxHa6c+9QElhsTj2c8a6qwkgGCq+/euqL4E16IoM89OZ6f7FY98PObR6kosaYQAx9eYjCE696Q==",
-      "path": "volo.abp.multitenancy/5.0.0",
-      "hashPath": "volo.abp.multitenancy.5.0.0.nupkg.sha512"
+      "sha512": "sha512-1RU/gR260DELa1hZKmb8pwFu5yUzF3dv5ilSc3ICcu8CnStod1/wD1gwLl8WbLob2IZX/CqRRqUzawwc4lwY6w==",
+      "path": "volo.abp.multitenancy/6.0.2",
+      "hashPath": "volo.abp.multitenancy.6.0.2.nupkg.sha512"
     },
-    "Volo.Abp.ObjectExtending/5.0.0": {
+    "Volo.Abp.ObjectExtending/6.0.2": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-V2EtplzSrn8zVfc/HJUchTSWSNJZclsTNHleckyjUAozCij72YOj6zvF7QfqKSQs5L4BzMjLHtCGCrkSzOxFEA==",
-      "path": "volo.abp.objectextending/5.0.0",
-      "hashPath": "volo.abp.objectextending.5.0.0.nupkg.sha512"
+      "sha512": "sha512-KNAIAAoQIJg75TisdF6ZE8roeeqwlyjCMu9PAgnKbwraxwU12F390Rl3ObKhVI9aHAk31aMj4+EZpLTUbCmFpA==",
+      "path": "volo.abp.objectextending/6.0.2",
+      "hashPath": "volo.abp.objectextending.6.0.2.nupkg.sha512"
     },
     "Volo.Abp.ObjectMapping/5.0.0": {
       "type": "package",
@@ -7917,12 +8020,12 @@
       "path": "volo.abp.rabbitmq/5.0.0",
       "hashPath": "volo.abp.rabbitmq.5.0.0.nupkg.sha512"
     },
-    "Volo.Abp.Security/5.0.0": {
+    "Volo.Abp.Security/6.0.2": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-t5ePEIEiUtJ+5luRnIeavwRSLiDjQ7uLRBeS5d9ZrISE0az8BURGywkIpMwwj2FZEEB7/Bouvd2AjzrhiLudkw==",
-      "path": "volo.abp.security/5.0.0",
-      "hashPath": "volo.abp.security.5.0.0.nupkg.sha512"
+      "sha512": "sha512-+SxP7wxD+Auc4WXuPXZZ6Ra1VTy1H+UWbkvUBiKnjw8258tdTEsWBLBosOM74OzCcBMysj3uxiKVv/unNg3sWg==",
+      "path": "volo.abp.security/6.0.2",
+      "hashPath": "volo.abp.security.6.0.2.nupkg.sha512"
     },
     "Volo.Abp.Serialization/5.0.0": {
       "type": "package",
@@ -7952,12 +8055,12 @@
       "path": "volo.abp.settingmanagement.entityframeworkcore/5.0.0",
       "hashPath": "volo.abp.settingmanagement.entityframeworkcore.5.0.0.nupkg.sha512"
     },
-    "Volo.Abp.Settings/5.0.0": {
+    "Volo.Abp.Settings/6.0.2": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-ocPuQkN+3KE2l26IhRqEikGyXSKeaXDsRszAoTf+CMj+hpO5mD7tHX1dtpAABcNTfPC1eY2MO52Dk9mUROsp0Q==",
-      "path": "volo.abp.settings/5.0.0",
-      "hashPath": "volo.abp.settings.5.0.0.nupkg.sha512"
+      "sha512": "sha512-jRlV1GF/TjphMXIwBn/ldkweRdvZY4U/p5iNebVT2hhz8W896Y88jF5yS9JZtjWHT9vs0AitVIYWPs2ZNW8yrQ==",
+      "path": "volo.abp.settings/6.0.2",
+      "hashPath": "volo.abp.settings.6.0.2.nupkg.sha512"
     },
     "Volo.Abp.Specifications/5.0.0": {
       "type": "package",
@@ -8043,12 +8146,12 @@
       "path": "volo.abp.ui.navigation/5.0.0",
       "hashPath": "volo.abp.ui.navigation.5.0.0.nupkg.sha512"
     },
-    "Volo.Abp.Uow/5.0.0": {
+    "Volo.Abp.Uow/6.0.2": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-lSwpDI0YPYumduUEnHKtY7LSA0vwmS3LAHy/JmXFYYLMJpvywt3H0uyDtaBPemEqgreQJFd6lIvO6wQidel6Vg==",
-      "path": "volo.abp.uow/5.0.0",
-      "hashPath": "volo.abp.uow.5.0.0.nupkg.sha512"
+      "sha512": "sha512-frheu6miUaSeDzSaKpk4IUT1vZQ1a5Yji9s4pRmX7skd13bTeB6P45n+555qDBEf4/plpr4GPz+9Fd+u/EnVvQ==",
+      "path": "volo.abp.uow/6.0.2",
+      "hashPath": "volo.abp.uow.6.0.2.nupkg.sha512"
     },
     "Volo.Abp.Users.Abstractions/5.0.0": {
       "type": "package",
@@ -8078,26 +8181,46 @@
       "path": "volo.abp.users.entityframeworkcore/5.0.0",
       "hashPath": "volo.abp.users.entityframeworkcore.5.0.0.nupkg.sha512"
     },
-    "Volo.Abp.Validation/5.0.0": {
+    "Volo.Abp.Validation/6.0.2": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-IMiCG1ql4b5NpIRnZQzs7tp7vIHOAfA56u5i9WAFBYwfEzMzE6wtMTYJ8qRhtykCZW1p2zTOE1S8Ae0EG6mr+Q==",
-      "path": "volo.abp.validation/5.0.0",
-      "hashPath": "volo.abp.validation.5.0.0.nupkg.sha512"
+      "sha512": "sha512-8k3aA2/HJ0WDUuJraC0Xvhks3c56whMrqG7K4nPimBJMhENNUaEwB7n38src5rmtoTwhmJ9tC8mB+2DWD8lqXA==",
+      "path": "volo.abp.validation/6.0.2",
+      "hashPath": "volo.abp.validation.6.0.2.nupkg.sha512"
     },
-    "Volo.Abp.Validation.Abstractions/5.0.0": {
+    "Volo.Abp.Validation.Abstractions/6.0.2": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-Hz5AnQ4OLUoDTJZTVB4ESfBD0YmXTnNp+4M9VbkFBSuYTv7/21y8nahVVRS521Wt+spefOqZ1sGCWlrMBdKz7A==",
-      "path": "volo.abp.validation.abstractions/5.0.0",
-      "hashPath": "volo.abp.validation.abstractions.5.0.0.nupkg.sha512"
+      "sha512": "sha512-LEeESHPMPHrrkf0sFjgUKiHayaStq4uTt7PTQyUvU3WaAJZWrENuC3aXkz4aHJhO2jjW2bRoRHNqfmoGjdzqRg==",
+      "path": "volo.abp.validation.abstractions/6.0.2",
+      "hashPath": "volo.abp.validation.abstractions.6.0.2.nupkg.sha512"
     },
-    "Volo.Abp.VirtualFileSystem/5.0.0": {
+    "Volo.Abp.VirtualFileSystem/6.0.2": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-KqDFDW5o+h/spLpHKdO41HRROPdZb0IXUez5Vm89R6vZ29E/IEdPWJ7GNnniXh9JEL1O+EEqzXVGLdwAvKr6JA==",
-      "path": "volo.abp.virtualfilesystem/5.0.0",
-      "hashPath": "volo.abp.virtualfilesystem.5.0.0.nupkg.sha512"
+      "sha512": "sha512-/uA+KzInBEgg31HRis/z7qDsK1rNT8vCEdgQ4cZzUujB6vV7j8cBJQfsXLVmctSEadt0DibFa/XLn7w51J1oXg==",
+      "path": "volo.abp.virtualfilesystem/6.0.2",
+      "hashPath": "volo.abp.virtualfilesystem.6.0.2.nupkg.sha512"
+    },
+    "CurrencyManagment.Application.Contracts/0.1.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "CurrencyManagment.Domain.Shared/0.1.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "CustomerManagement.Application.Contracts/0.1.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "CustomerManagement.Domain.Shared/0.1.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
     },
     "MsDemo.Shared/1.0.0": {
       "type": "project",

@@ -30,7 +30,7 @@ namespace RemittanceManagement.Remittances.Dtos
         public string ReceiverFullName { get; set; }
         public string ReceiverName { get; set; }
 
-        public Guid CurrencyId { get; set; }
+        public Guid? CurrencyId { get; set; }
         public string CurrencyName { get; set; }
 
 

@@ -44,8 +44,6 @@ namespace CustomerManagement.Web.Pages.CustomerManagement
 
             public string MotherName { get; set; }
             [Required]
-            [DataType(DataType.Date)]
-            [DisplayFormat(DataFormatString = "{0:yyyy-MM-dd}", ApplyFormatInEditMode = true)]
             public DateTime BirthDate { get; set; }
 
             [Required]
@@ -55,9 +53,18 @@ namespace CustomerManagement.Web.Pages.CustomerManagement
             public string Address { get; set; }
             [Required]
 
-            [EnumDataType(typeof(Gender))]
             public Gender Gender { get; set; }
+            [HiddenInput]
+            public DateTime? LastModificationTime { get; set; }
+            [HiddenInput]
 
+            public Guid? LastModifierId { get; set; }
+            [HiddenInput]
+
+            public DateTime CreationTime { get; set; }
+            [HiddenInput]
+
+            public Guid? CreatorId { get; set; }
 
         }
     }

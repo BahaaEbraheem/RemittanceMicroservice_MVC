@@ -53,7 +53,7 @@ namespace RemittanceManagement.Migrations
                         .HasColumnType("uniqueidentifier")
                         .HasColumnName("CreatorId");
 
-                    b.Property<Guid>("CurrencyId")
+                    b.Property<Guid?>("CurrencyId")
                         .HasColumnType("uniqueidentifier");
 
                     b.Property<Guid?>("DeleterId")

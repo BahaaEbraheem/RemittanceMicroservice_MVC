@@ -16,9 +16,20 @@ namespace CustomerManagement.Customers.Dtos
         public string FatherName { get; set; }
 
         public string MotherName { get; set; }
+        public DateTime BirthDate { get; set; }
 
-        //public DateTime BirthDate { get; set; }
-   
+
+        public string Phone { get; set; }
+
+        public string Address { get; set; }
+
+        public Gender Gender { get; set; } = Gender.Male;
+        public DateTime? LastModificationTime { get; set; }
+
+        public Guid? LastModifierId { get; set; }
+        public DateTime CreationTime { get; set; }
+
+        public Guid? CreatorId { get; set; }
 
     }
 }

@@ -31,8 +31,13 @@ namespace CustomerManagement.Customers.Dtos
         public string Address { get; set; }
         [Required]
 
-        [EnumDataType(typeof(Gender))]
         public Gender Gender { get; set; }
+        public DateTime? LastModificationTime { get; set; }
+
+        public Guid? LastModifierId { get; set; }
+        public DateTime CreationTime { get; set; }
+
+        public Guid? CreatorId { get; set; }
         public IEnumerable<ValidationResult> Validate(ValidationContext validationContext)
         {
             if (BirthDate > DateTime.Now)

@@ -18,8 +18,10 @@ namespace CurrencyManagment.Currencies
         public string Symbol { get; set; }
         public string Code { get; set; }
         private Currency() { }
-        public Currency(Guid id,[NotNull] string name, [NotNull] string symbol, string code) : base(id) {
-            SetName(name, symbol);
+        public Currency(Guid id,string name,  string symbol, string code) : base(id) {
+            //SetName(name, symbol);
+            Name = name;
+            Symbol = symbol;
             Code = code;
             }
         internal Currency ChangeName([NotNull] string name, [NotNull] string symbol)

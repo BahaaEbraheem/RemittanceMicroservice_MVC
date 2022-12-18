@@ -9,9 +9,12 @@ using Volo.Abp.Application.Dtos;
 
 namespace RemittanceManagement.Remittances;
 
-[Area(RemittanceManagementRemoteServiceConsts.ModuleName)]
-[RemoteService(Name = RemittanceManagementRemoteServiceConsts.RemoteServiceName)]
-[Route("api/RemittanceManagement/remittance")]
+//[Area(RemittanceManagementRemoteServiceConsts.ModuleName)]
+//[RemoteService(Name = RemittanceManagementRemoteServiceConsts.RemoteServiceName)]
+//[Route("api/RemittanceManagement/remittance")]
+[RemoteService]
+[Area("remittanceManagement")]
+[Route("api/remittanceManagement/remittance")]
 public class RemittanceController : RemittanceManagementController, IRemittanceAppService
 {
     private readonly IRemittanceAppService _remittanceAppService;
@@ -39,38 +42,50 @@ public class RemittanceController : RemittanceManagementController, IRemittanceA
     {
         return await _remittanceAppService.GetAsync(id);
     }
+    [HttpGet]
+    [Route("GetCurrencyLookupAsync")]
+    public async Task<ListResultDto<CurrencyLookupDto>> GetCurrencyLookupAsync()
+    {
+        return await _remittanceAppService.GetCurrencyLookupAsync();
+    }
+    [HttpGet]
+    [Route("GetCustomerLookupAsync")]
+    public async Task<ListResultDto<CustomerLookupDto>> GetCustomerLookupAsync()
+    {
+        return await _remittanceAppService.GetCustomerLookupAsync();
+    }
 
     [HttpGet]
     [Route("GetListAsync")]
-    public async Task<PagedResultDto<RemittanceDto>> GetListAsync(GetRemittanceListDto input)
+    public virtual async Task<PagedResultDto<RemittanceDto>> GetListAsync(GetRemittanceListDto input)
     {
         return await _remittanceAppService.GetListAsync(input);
     }
 
-    [HttpGet]
-    [Route("GetListRemittancesForCreator")]
-    public async Task<PagedResultDto<RemittanceDto>> GetListRemittancesForCreator(GetRemittanceListPagedAndSortedResultRequestDto input)
-    {
-        return await _remittanceAppService.GetListRemittancesForCreator(input);
-    }
-    [HttpGet]
-    [Route("GetListRemittancesForReleaser")]
-    public async Task<PagedResultDto<RemittanceDto>> GetListRemittancesForReleaser(GetRemittanceListPagedAndSortedResultRequestDto input)
-    {
-        return await _remittanceAppService.GetListRemittancesForReleaser(input);
-    }
-    [HttpGet]
-    [Route("GetListRemittancesForSupervisor")]
-    public async Task<PagedResultDto<RemittanceDto>> GetListRemittancesForSupervisor(GetRemittanceListPagedAndSortedResultRequestDto input)
-    {
-        return await _remittanceAppService.GetListRemittancesForSupervisor(input);
-    }
-    [HttpGet]
-    [Route("GetListRemittancesStatusAsync")]
-    public async Task<PagedResultDto<RemittanceDto>> GetListRemittancesStatusAsync(GetRemittanceListPagedAndSortedResultRequestDto input)
-    {
-        return await _remittanceAppService.GetListRemittancesStatusAsync(input);
-    }
+    //[HttpGet]
+    //[Route("GetListRemittancesForCreator")]
+    //public async Task<PagedResultDto<RemittanceDto>> GetListRemittancesForCreator(GetRemittanceListPagedAndSortedResultRequestDto input)
+    //{
+    //    return await _remittanceAppService.GetListRemittancesForCreator(input);
+    //}
+    //[HttpGet]
+    //[Route("GetListRemittancesForReleaser")]
+    //public async Task<PagedResultDto<RemittanceDto>> GetListRemittancesForReleaser(GetRemittanceListPagedAndSortedResultRequestDto input)
+    //{
+    //    return await _remittanceAppService.GetListRemittancesForReleaser(input);
+    //}
+    //[HttpGet]
+    //[Route("GetListRemittancesForSupervisor")]
+    //public async Task<PagedResultDto<RemittanceDto>> GetListRemittancesForSupervisor(GetRemittanceListPagedAndSortedResultRequestDto input)
+    //{
+    //    return await _remittanceAppService.GetListRemittancesForSupervisor(input);
+    //}
+    //[HttpGet]
+    //[Route("GetListRemittancesStatusAsync")]
+    //public async Task<PagedResultDto<RemittanceDto>> GetListRemittancesStatusAsync(GetRemittanceListPagedAndSortedResultRequestDto input)
+    //{
+    //    return await _remittanceAppService.GetListRemittancesStatusAsync(input);
+    //}
     [HttpPost]
     [Route("SetApprove")]
     public async Task SetApprove(RemittanceDto input)

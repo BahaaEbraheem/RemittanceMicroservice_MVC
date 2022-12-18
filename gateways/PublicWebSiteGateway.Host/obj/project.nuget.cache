@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "sMpzd7+mWarfhKd7cVlczLS87QZsosz9Cb7PrsD6HKIR1e2yBShTwQUFTcSFnDGnQ2pxLqmbKaZ3P0S8U+Hkxg==",
+  "dgSpecHash": "WY3n8bk1VfzlF8TlC8bXmFuRs+jM6LJnBPo9z6PPZvHRTwsaZ4/gzl7RoNzVj6rw3xJiCc4Q2QKkQSwLJoKMbA==",
   "success": true,
   "projectFilePath": "C:\\Users\\Admin\\Source\\Repos\\RemittanceMicroservice_MVC\\gateways\\PublicWebSiteGateway.Host\\PublicWebSiteGateway.Host.csproj",
   "expectedPackageFiles": [

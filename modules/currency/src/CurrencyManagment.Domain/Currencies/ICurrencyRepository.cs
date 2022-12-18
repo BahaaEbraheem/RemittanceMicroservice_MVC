@@ -9,13 +9,14 @@ namespace CurrencyManagment.Currencies
 {
    public interface ICurrencyRepository : IRepository<Currency,Guid>
     {
-        Task<Currency> FindByNameAndSymbolAsync(string name, string symbol);
-        Task<List<Currency>> GetListAsync(
+      Task<Currency> FindByNameAndSymbolAsync(string name, string symbol);
+        Task<List<Currency>>GetAllAsync();
+        Task<List<Currency>> GetFromReposListAsync(
             int skipCount,
             int maxResultCount,
             string sorting,
             Currency filter
         );
-        Task<int> GetTotalCountAsync(Currency filter);
+        Task<int> GetTotalCountFromReposAsync(Currency filter);
     }
 }

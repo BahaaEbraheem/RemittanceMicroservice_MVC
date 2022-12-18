@@ -32,13 +32,13 @@ namespace RemittanceManagement.Remittances
         public Guid SenderBy { get; set; }
         public Guid? ReceiverBy { get; set; }
         public string ReceiverFullName { get; set; }
-        public Guid CurrencyId { get; set; }
+        public Guid? CurrencyId { get; set; }
 
         public ICollection<RemittanceStatus> Status { get; set; }
 
         private Remittance() { }
         public Remittance(Guid id, [NotNull] double amount,Guid? creatorId, RemittanceType type,string receiverFullName
-            ,[NotNull]Guid currencyId,Guid senderBy) : base(id)
+            ,Guid currencyId,Guid senderBy) : base(id)
         {
             Id = id;
             SerialNumber= SetSerialNum(); 

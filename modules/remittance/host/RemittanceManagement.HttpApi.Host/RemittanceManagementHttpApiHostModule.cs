@@ -37,22 +37,43 @@ using MsDemo.Shared;
 using Volo.Abp.Auditing;
 using Volo.Abp.Threading;
 using Volo.Abp.Data;
+using Volo.Abp.AspNetCore.Mvc;
+using Volo.Abp.AspNetCore.MultiTenancy;
+using Volo.Abp.EventBus.RabbitMq;
+using Volo.Abp.Http.Client.IdentityModel;
+using Volo.Abp.Http.Client;
+using Volo.Abp.Http.Client.Web;
+using Volo.Abp.Http.Client.IdentityModel.Web;
+using Volo.Abp.Identity;
 
 namespace RemittanceManagement;
 [DependsOn(
-    typeof(RemittanceManagementApplicationModule),
-    typeof(RemittanceManagementEntityFrameworkCoreModule),
-    typeof(RemittanceManagementHttpApiModule),
-    typeof(AbpAspNetCoreMvcUiMultiTenancyModule),
-    typeof(AbpAutofacModule),
-    typeof(AbpCachingStackExchangeRedisModule),
-    typeof(AbpEntityFrameworkCoreSqlServerModule),
-    typeof(AbpAuditLoggingEntityFrameworkCoreModule),
-    typeof(AbpPermissionManagementEntityFrameworkCoreModule),
-    typeof(AbpSettingManagementEntityFrameworkCoreModule),
-    typeof(AbpTenantManagementEntityFrameworkCoreModule),
-    typeof(AbpAspNetCoreSerilogModule),
-    typeof(AbpSwashbuckleModule)
+        typeof(AbpAutofacModule),
+        typeof(AbpAspNetCoreMvcModule),
+        typeof(AbpEventBusRabbitMqModule),
+        typeof(AbpEntityFrameworkCoreSqlServerModule),
+        typeof(AbpAuditLoggingEntityFrameworkCoreModule),
+        typeof(AbpPermissionManagementEntityFrameworkCoreModule),
+        typeof(AbpSettingManagementEntityFrameworkCoreModule),
+
+        typeof(RemittanceManagementApplicationModule),
+        typeof(RemittanceManagementEntityFrameworkCoreModule),
+        typeof(RemittanceManagementHttpApiModule),
+        typeof(AbpAspNetCoreMultiTenancyModule),
+        typeof(AbpTenantManagementEntityFrameworkCoreModule),
+
+    // To automate requesting access token and adding it as bearer to the request headers
+        typeof(AbpHttpClientIdentityModelModule),
+
+        typeof(AbpHttpClientWebModule),
+        typeof(AbpHttpClientIdentityModelWebModule),
+        typeof(AbpIdentityHttpApiClientModule),
+
+
+        typeof(AbpAspNetCoreMvcUiMultiTenancyModule),
+        typeof(AbpCachingStackExchangeRedisModule),
+        typeof(AbpAspNetCoreSerilogModule),
+        typeof(AbpSwashbuckleModule)
     )]
 public class RemittanceManagementHttpApiHostModule : AbpModule
 {
@@ -80,10 +101,39 @@ public class RemittanceManagementHttpApiHostModule : AbpModule
 
         context.Services.AddSwaggerGen(options =>
         {
-            options.SwaggerDoc("v1", new OpenApiInfo { Title = "Remittance Managment API", Version = "v1" });
+            options.SwaggerDoc("v1", new OpenApiInfo { Title = "Remittance Management API", Version = "v1" });
             options.DocInclusionPredicate((docName, description) => true);
             options.CustomSchemaIds(type => type.FullName);
         });
+        //context.Services.Configure<AbpRemoteServiceOptions>(options =>
+        //{
+        //    options.RemoteServices.Default =
+        //        new RemoteServiceConfiguration(configuration["RemoteServices:Default:BaseUrl"]);
+        //});
+        //Configure<AbpDistributedCacheOptions>(options => { options.KeyPrefix = "RemittanceManagement:"; });
+
+
+        //context.Services.AddCors(options =>
+        //{
+        //    options.AddDefaultPolicy(builder =>
+        //    {
+        //        builder
+        //            .WithOrigins(
+        //                configuration["App:CorsOrigins"]
+        //                    .Split(",", StringSplitOptions.RemoveEmptyEntries)
+        //                    .Select(o => o.Trim().RemovePostFix("/"))
+        //                    .ToArray()
+        //            )
+        //            .WithAbpExposedHeaders()
+        //            .SetIsOriginAllowedToAllowWildcardSubdomains()
+        //            .AllowAnyHeader()
+        //            .AllowAnyMethod()
+        //            .AllowCredentials();
+        //    });
+        //});
+
+
+
 
         Configure<AbpLocalizationOptions>(options =>
         {
@@ -118,6 +168,8 @@ public class RemittanceManagementHttpApiHostModule : AbpModule
         app.UseCorrelationId();
         app.UseStaticFiles();
         app.UseRouting();
+        //app.UseCors();
+
         app.UseAuthentication();
         app.UseAbpClaimsMap();
 
@@ -130,7 +182,7 @@ public class RemittanceManagementHttpApiHostModule : AbpModule
         app.UseSwagger();
         app.UseSwaggerUI(options =>
         {
-            options.SwaggerEndpoint("/swagger/v1/swagger.json", "Remittance Managment API");
+            options.SwaggerEndpoint("/swagger/v1/swagger.json", "Remittance Management API");
         });
         app.UseAuditing();
         app.UseConfiguredEndpoints();

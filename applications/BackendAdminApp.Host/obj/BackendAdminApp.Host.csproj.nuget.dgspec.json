@@ -1442,6 +1442,12 @@
           "netstandard2.0": {
             "targetAlias": "netstandard2.0",
             "projectReferences": {
+              "C:\\Users\\Admin\\Source\\Repos\\RemittanceMicroservice_MVC\\modules\\currency\\src\\CurrencyManagment.Application.Contracts\\CurrencyManagment.Application.Contracts.csproj": {
+                "projectPath": "C:\\Users\\Admin\\Source\\Repos\\RemittanceMicroservice_MVC\\modules\\currency\\src\\CurrencyManagment.Application.Contracts\\CurrencyManagment.Application.Contracts.csproj"
+              },
+              "C:\\Users\\Admin\\Source\\Repos\\RemittanceMicroservice_MVC\\modules\\customer\\src\\CustomerManagement.Application.Contracts\\CustomerManagement.Application.Contracts.csproj": {
+                "projectPath": "C:\\Users\\Admin\\Source\\Repos\\RemittanceMicroservice_MVC\\modules\\customer\\src\\CustomerManagement.Application.Contracts\\CustomerManagement.Application.Contracts.csproj"
+              },
               "C:\\Users\\Admin\\Source\\Repos\\RemittanceMicroservice_MVC\\modules\\remittance\\src\\RemittanceManagement.Domain.Shared\\RemittanceManagement.Domain.Shared.csproj": {
                 "projectPath": "C:\\Users\\Admin\\Source\\Repos\\RemittanceMicroservice_MVC\\modules\\remittance\\src\\RemittanceManagement.Domain.Shared\\RemittanceManagement.Domain.Shared.csproj"
               },

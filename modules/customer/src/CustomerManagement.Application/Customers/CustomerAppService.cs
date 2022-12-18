@@ -45,12 +45,11 @@ namespace CustomerManagement.Customers
 
         public override async Task<PagedResultDto<CustomerDto>> GetListAsync(CustomerPagedAndSortedResultRequestDto input)
         {
-
-            var filter = ObjectMapper.Map<CustomerPagedAndSortedResultRequestDto, Customer>(input);
+            var filter = ObjectMapper.Map<CustomerPagedAndSortedResultRequestDto, CustomerDto>(input);
             var sorting = (string.IsNullOrEmpty(input.Sorting) ? "FirstName DESC" : input.Sorting).Replace("ShortName", "FirstName");
-            var customers = await _customerRepository.GetListAsync(input.SkipCount, input.MaxResultCount, sorting, filter);
-            var totalCount = await _customerRepository.GetTotalCountAsync(filter);
-            return new PagedResultDto<CustomerDto>(totalCount, ObjectMapper.Map<List<Customer>, List<CustomerDto>>(customers));
+            var customers = await GetFromReposListAsync(input.SkipCount, input.MaxResultCount, sorting, filter);
+            var totalCount = await GetTotalCountAsync(filter);
+            return new PagedResultDto<CustomerDto>(totalCount,customers);
         }
 
        // [Authorize(CustomerManagementPermissions.Customers.Create)]
@@ -117,6 +116,25 @@ namespace CustomerManagement.Customers
         }
 
 
+
+    
+
+        public async Task<List<CustomerDto>> GetFromReposListAsync(int skipCount, int maxResultCount, string sorting, CustomerDto filter)
+        {
+
+            return await _customerRepository.GetFromReposListAsync(skipCount, maxResultCount, sorting, filter);
+           
+        }
+
+        public async Task<int> GetTotalCountAsync(CustomerDto filter)
+        {
+            return await _customerRepository.GetTotalCountAsync(filter);
+        }
+
+        public async Task<List<CustomerDto>> GetAllAsync()
+        {
+            return ObjectMapper.Map<List<Customer>, List<CustomerDto>>(await _customerRepository.GetAllAsync());
+        }
     }
 }
 

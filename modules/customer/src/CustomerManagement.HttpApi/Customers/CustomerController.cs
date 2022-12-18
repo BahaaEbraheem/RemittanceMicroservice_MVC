@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections.Generic;
 using System.Threading.Tasks;
 using CustomerManagement.Customers;
 using CustomerManagement.Customers.Dtos;
@@ -8,7 +9,6 @@ using Volo.Abp;
 using Volo.Abp.Application.Dtos;
 
 namespace CustomerManagement.Customers;
-
 [Area(CustomerManagementRemoteServiceConsts.ModuleName)]
 [RemoteService(Name = CustomerManagementRemoteServiceConsts.RemoteServiceName)]
 [Route("api/CustomerManagement/customer")]
@@ -21,19 +21,24 @@ public class CustomerController : CustomerManagementController, ICustomerAppServ
         _customerAppService = customerAppService;
     }
 
-    [HttpPost]
+    [HttpGet]
     [Route("CreateAsync")]
 
     public Task<CustomerDto> CreateAsync(CreateUpdateCustomerDto input)
     {
         return _customerAppService.CreateAsync(input);
     }
-    [HttpDelete]
-    [Route("DeleteAsync")]
+    [HttpGet("DeleteAsync")]
 
     public Task DeleteAsync(Guid id)
     {
         return _customerAppService.DeleteAsync(id);
+    }
+    [HttpGet]
+    [Route("GetAllAsync")]
+    public Task<List<CustomerDto>> GetAllAsync()
+    {
+        return _customerAppService.GetAllAsync();
     }
 
     [HttpGet]
@@ -43,14 +48,26 @@ public class CustomerController : CustomerManagementController, ICustomerAppServ
     {
         return  _customerAppService.GetAsync(id);
     }
-
-    [HttpGet]
-    [Route("GetListAsync")]
+    [HttpGet("GetListAsync")]
     public virtual async Task<PagedResultDto<CustomerDto>> GetListAsync(CustomerPagedAndSortedResultRequestDto input)
     {
         return await  _customerAppService.GetListAsync(input);
     }
-    [HttpPut]
+
+    [HttpGet]
+    [Route("GetFromReposListAsync")]
+    public Task<List<CustomerDto>> GetFromReposListAsync(int skipCount, int maxResultCount, string sorting, CustomerDto filter)
+    {
+        return _customerAppService.GetFromReposListAsync(skipCount, maxResultCount, sorting, filter);
+    }
+    [HttpGet]
+    [Route("GetTotalCountAsync")]
+    public Task<int> GetTotalCountAsync(CustomerDto filter)
+    {
+        return _customerAppService.GetTotalCountAsync(filter);
+    }
+
+    [HttpGet]
     [Route("UpdateAsync")]
 
     public Task<CustomerDto> UpdateAsync(Guid id, CreateUpdateCustomerDto input)

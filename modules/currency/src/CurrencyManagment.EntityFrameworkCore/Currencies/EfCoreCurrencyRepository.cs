@@ -35,13 +35,17 @@ namespace CurrencyManagment.Currencies
             return null;
         }
 
-        
-        public async Task<List<Currency>> GetListAsync(int skipCount, int maxResultCount, string sorting, Currency filter)
+        public async  Task<List<Currency>> GetAllAsync()
         {
-            var dbSet = await GetDbSetAsync();
-            var currencies = await dbSet
-                //.WhereIf(!filter.Id.Equals(null), 
-                //x => x.Id.ToString().Contains(filter.Id.ToString()))
+            var dbSet =  GetDbSetAsync();
+            var currencies =await  dbSet.Result.ToListAsync();
+            return currencies;
+        }
+        public Task<List<Currency>> GetFromReposListAsync(int skipCount, int maxResultCount, string sorting, Currency filter)
+        {
+        
+            var dbSet =  GetDbSetAsync();
+            var currencies =  dbSet.Result
                 .WhereIf(!filter.Name.IsNullOrWhiteSpace(),
                 x => x.Name.Contains(filter.Name))
                 .WhereIf(!filter.Symbol.IsNullOrWhiteSpace(),
@@ -52,12 +56,10 @@ namespace CurrencyManagment.Currencies
             return currencies;
         }
 
-        public async Task<int> GetTotalCountAsync(Currency filter)
+        public async Task<int> GetTotalCountFromReposAsync(Currency filter)
         {
             var dbSet = await GetDbSetAsync();
             var currencies = await dbSet
-                //.WhereIf(!filter.Id.Equals(null),
-                //x => x.Id.ToString().Contains(filter.Id.ToString()))
                 .WhereIf(!filter.Name.IsNullOrWhiteSpace(),
                 x => x.Name.Contains(filter.Name))
                 .WhereIf(!filter.Symbol.IsNullOrWhiteSpace(),
@@ -67,6 +69,8 @@ namespace CurrencyManagment.Currencies
                 .ToListAsync();
             return currencies.Count;
         }
+
+        
     }
 }
 

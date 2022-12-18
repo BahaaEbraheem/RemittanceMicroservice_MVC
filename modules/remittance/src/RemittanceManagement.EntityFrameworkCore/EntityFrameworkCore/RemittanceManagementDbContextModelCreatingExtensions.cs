@@ -22,7 +22,7 @@ public static class RemittanceManagementDbContextModelCreatingExtensions
                 b.Property(x => x.Type).IsRequired();
                 b.Property(x => x.ReceiverFullName).IsRequired();
 
-              b.Property(x => x.CurrencyId).IsRequired();
+              b.Property(x => x.CurrencyId);
 
               b.Property(x => x.SenderBy).IsRequired();
               b.Property(x => x.ReceiverBy);
