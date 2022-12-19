@@ -44,8 +44,7 @@ namespace ProductService.Host
         typeof(ProductManagementHttpApiModule),
         typeof(ProductManagementEntityFrameworkCoreModule),
         typeof(AbpAspNetCoreMultiTenancyModule),
-        typeof(AbpTenantManagementEntityFrameworkCoreModule)
-        )]
+        typeof(AbpTenantManagementEntityFrameworkCoreModule))]
     public class ProductServiceHostModule : AbpModule
     {
         public override void ConfigureServices(ServiceConfigurationContext context)

@@ -1903,6 +1903,10 @@
               "target": "Package",
               "version": "[6.0.5, )"
             },
+            "Volo.Abp.AspNetCore.Components.Server.BasicTheme": {
+              "target": "Package",
+              "version": "[6.0.2, )"
+            },
             "Volo.Abp.AspNetCore.Mvc.UI.Theme.Shared": {
               "target": "Package",
               "version": "[6.0.2, )"

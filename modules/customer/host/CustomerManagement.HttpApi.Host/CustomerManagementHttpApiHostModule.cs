@@ -37,6 +37,7 @@ using MsDemo.Shared;
 using Volo.Abp.Threading;
 using Volo.Abp.Data;
 using Volo.Abp.Auditing;
+using Microsoft.AspNetCore.Cors.Infrastructure;
 
 namespace CustomerManagement;
 [DependsOn(
@@ -108,6 +109,33 @@ public class CustomerManagementHttpApiHostModule : AbpModule
         var redis = ConnectionMultiplexer.Connect(configuration["Redis:Configuration"]);
         context.Services.AddDataProtection()
             .PersistKeysToStackExchangeRedis(redis, "MsDemo-DataProtection-Keys");
+
+
+
+
+    
+
+    context.Services.AddCors(options =>
+        {
+            options.AddDefaultPolicy(builder =>
+            {
+                builder
+                    .WithOrigins(
+                        configuration["App:CorsOrigins"]
+                            .Split(",", StringSplitOptions.RemoveEmptyEntries)
+                            .Select(o => o.Trim().RemovePostFix("/"))
+                            .ToArray()
+                    )
+                    .WithAbpExposedHeaders()
+                    .SetIsOriginAllowedToAllowWildcardSubdomains()
+                    .AllowAnyHeader()
+                    .AllowAnyMethod()
+                    .AllowCredentials();
+            });
+        });
+
+
+
     }
 
     public override void OnApplicationInitialization(ApplicationInitializationContext context)
@@ -119,6 +147,7 @@ public class CustomerManagementHttpApiHostModule : AbpModule
         app.UseRouting();
         app.UseAuthentication();
         app.UseAbpClaimsMap();
+        app.UseCors();
 
         if (MsDemoConsts.IsMultiTenancyEnabled)
         {

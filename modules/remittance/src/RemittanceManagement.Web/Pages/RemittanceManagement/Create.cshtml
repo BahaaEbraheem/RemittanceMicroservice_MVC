@@ -12,7 +12,21 @@
     <abp-modal size="@(AbpModalSize.Large)">
         <abp-modal-header title="@L["Create"].Value"></abp-modal-header>
         <abp-modal-body>
-            <abp-form-content />
+           <abp-form-content />
+      
+@*            <abp-select asp-for="Remittance.SenderBy" asp-items="@Model.CustomerListItems" />
+          
+          <select asp-for="Remittance.SenderBy" 
+              class="auto-complete-select"
+                    data-autocomplete-api-url="/api/RemittanceManagement/remittance"
+               data-autocomplete-display-property="amount"
+               data-autocomplete-value-property="id"
+                    data-autocomplete-items-property="GetListAsync"
+                    data-autocomplete-filter-param-name="input">
+
+    <!-- You can define selected option(s) here  -->
+              <option selected value="1">bahaa</option>
+</select>*@
         </abp-modal-body>
         <abp-modal-footer buttons="@(AbpModalButtons.Cancel|AbpModalButtons.Save)"></abp-modal-footer>
     </abp-modal>

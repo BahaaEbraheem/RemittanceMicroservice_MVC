@@ -68,6 +68,100 @@
           }
         }
       },
+      "Blazorise/1.0.4": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.AspNetCore.Components": "6.0.0",
+          "Microsoft.AspNetCore.Components.Web": "6.0.0",
+          "Microsoft.Extensions.Logging.Abstractions": "6.0.1"
+        },
+        "compile": {
+          "lib/net6.0/Blazorise.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net6.0/Blazorise.dll": {
+            "related": ".xml"
+          }
+        },
+        "build": {
+          "buildTransitive/Blazorise.props": {}
+        },
+        "buildMultiTargeting": {
+          "buildMultiTargeting/Blazorise.props": {}
+        }
+      },
+      "Blazorise.Components/1.0.4": {
+        "type": "package",
+        "dependencies": {
+          "Blazorise": "1.0.4",
+          "Blazorise.Snackbar": "1.0.4",
+          "Microsoft.AspNetCore.Components": "6.0.0",
+          "Microsoft.AspNetCore.Components.Web": "6.0.0",
+          "Microsoft.Extensions.Logging.Abstractions": "6.0.1"
+        },
+        "compile": {
+          "lib/net6.0/Blazorise.Components.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net6.0/Blazorise.Components.dll": {
+            "related": ".xml"
+          }
+        }
+      },
+      "Blazorise.DataGrid/1.0.4": {
+        "type": "package",
+        "dependencies": {
+          "Blazorise": "1.0.4",
+          "Microsoft.AspNetCore.Components": "6.0.0",
+          "Microsoft.AspNetCore.Components.Web": "6.0.0",
+          "Microsoft.Extensions.Logging.Abstractions": "6.0.1"
+        },
+        "compile": {
+          "lib/net6.0/Blazorise.DataGrid.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net6.0/Blazorise.DataGrid.dll": {
+            "related": ".xml"
+          }
+        },
+        "build": {
+          "buildTransitive/Blazorise.DataGrid.props": {}
+        },
+        "buildMultiTargeting": {
+          "buildMultiTargeting/Blazorise.DataGrid.props": {}
+        }
+      },
+      "Blazorise.Snackbar/1.0.4": {
+        "type": "package",
+        "dependencies": {
+          "Blazorise": "1.0.4",
+          "Microsoft.AspNetCore.Components": "6.0.0",
+          "Microsoft.AspNetCore.Components.Web": "6.0.0",
+          "Microsoft.Extensions.Logging.Abstractions": "6.0.1"
+        },
+        "compile": {
+          "lib/net6.0/Blazorise.Snackbar.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net6.0/Blazorise.Snackbar.dll": {
+            "related": ".xml"
+          }
+        },
+        "build": {
+          "buildTransitive/Blazorise.Snackbar.props": {}
+        },
+        "buildMultiTargeting": {
+          "buildMultiTargeting/Blazorise.Snackbar.props": {}
+        }
+      },
       "Castle.Core/5.0.0": {
         "type": "package",
         "dependencies": {
@@ -181,6 +275,82 @@
         },
         "runtime": {
           "lib/net6.0/Microsoft.AspNetCore.Authorization.dll": {
+            "related": ".xml"
+          }
+        }
+      },
+      "Microsoft.AspNetCore.Components/6.0.5": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.AspNetCore.Authorization": "6.0.5",
+          "Microsoft.AspNetCore.Components.Analyzers": "6.0.5"
+        },
+        "compile": {
+          "lib/net6.0/Microsoft.AspNetCore.Components.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net6.0/Microsoft.AspNetCore.Components.dll": {
+            "related": ".xml"
+          }
+        }
+      },
+      "Microsoft.AspNetCore.Components.Analyzers/6.0.5": {
+        "type": "package",
+        "build": {
+          "buildTransitive/netstandard2.0/Microsoft.AspNetCore.Components.Analyzers.targets": {}
+        }
+      },
+      "Microsoft.AspNetCore.Components.Authorization/6.0.5": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.AspNetCore.Authorization": "6.0.5",
+          "Microsoft.AspNetCore.Components": "6.0.5"
+        },
+        "compile": {
+          "lib/net6.0/Microsoft.AspNetCore.Components.Authorization.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net6.0/Microsoft.AspNetCore.Components.Authorization.dll": {
+            "related": ".xml"
+          }
+        }
+      },
+      "Microsoft.AspNetCore.Components.Forms/6.0.5": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.AspNetCore.Components": "6.0.5"
+        },
+        "compile": {
+          "lib/net6.0/Microsoft.AspNetCore.Components.Forms.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net6.0/Microsoft.AspNetCore.Components.Forms.dll": {
+            "related": ".xml"
+          }
+        }
+      },
+      "Microsoft.AspNetCore.Components.Web/6.0.5": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.AspNetCore.Components": "6.0.5",
+          "Microsoft.AspNetCore.Components.Forms": "6.0.5",
+          "Microsoft.Extensions.DependencyInjection": "6.0.0",
+          "Microsoft.JSInterop": "6.0.5",
+          "System.IO.Pipelines": "6.0.3"
+        },
+        "compile": {
+          "lib/net6.0/Microsoft.AspNetCore.Components.Web.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net6.0/Microsoft.AspNetCore.Components.Web.dll": {
             "related": ".xml"
           }
         }
@@ -361,6 +531,23 @@
         },
         "runtime": {
           "lib/netstandard2.0/Microsoft.AspNetCore.Razor.Language.dll": {}
+        }
+      },
+      "Microsoft.AspNetCore.WebUtilities/2.2.0": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.Net.Http.Headers": "2.2.0",
+          "System.Text.Encodings.Web": "4.5.0"
+        },
+        "compile": {
+          "lib/netstandard2.0/Microsoft.AspNetCore.WebUtilities.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/netstandard2.0/Microsoft.AspNetCore.WebUtilities.dll": {
+            "related": ".xml"
+          }
         }
       },
       "Microsoft.Bcl.AsyncInterfaces/6.0.0": {
@@ -1125,6 +1312,36 @@
         },
         "runtime": {
           "lib/netstandard2.0/Microsoft.IdentityModel.Tokens.dll": {
+            "related": ".xml"
+          }
+        }
+      },
+      "Microsoft.JSInterop/6.0.5": {
+        "type": "package",
+        "compile": {
+          "lib/net6.0/Microsoft.JSInterop.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net6.0/Microsoft.JSInterop.dll": {
+            "related": ".xml"
+          }
+        }
+      },
+      "Microsoft.Net.Http.Headers/2.2.0": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.Extensions.Primitives": "2.2.0",
+          "System.Buffers": "4.5.0"
+        },
+        "compile": {
+          "lib/netstandard2.0/Microsoft.Net.Http.Headers.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/netstandard2.0/Microsoft.Net.Http.Headers.dll": {
             "related": ".xml"
           }
         }
@@ -2317,17 +2534,20 @@
           "lib/netstandard1.3/System.IO.FileSystem.Primitives.dll": {}
         }
       },
-      "System.IO.Pipelines/5.0.0": {
+      "System.IO.Pipelines/6.0.3": {
         "type": "package",
         "compile": {
-          "ref/netcoreapp2.0/System.IO.Pipelines.dll": {
+          "lib/net6.0/System.IO.Pipelines.dll": {
             "related": ".xml"
           }
         },
         "runtime": {
-          "lib/netcoreapp3.0/System.IO.Pipelines.dll": {
+          "lib/net6.0/System.IO.Pipelines.dll": {
             "related": ".xml"
           }
+        },
+        "build": {
+          "buildTransitive/netcoreapp3.1/_._": {}
         }
       },
       "System.Linq/4.3.0": {
@@ -3434,6 +3654,152 @@
           "Microsoft.AspNetCore.App"
         ]
       },
+      "Volo.Abp.AspNetCore.Components/6.0.2": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.AspNetCore.Components": "6.0.5",
+          "Volo.Abp.ObjectMapping": "6.0.2",
+          "Volo.Abp.Security": "6.0.2",
+          "Volo.Abp.Timing": "6.0.2"
+        },
+        "compile": {
+          "lib/net6.0/Volo.Abp.AspNetCore.Components.dll": {
+            "related": ".pdb;.xml"
+          }
+        },
+        "runtime": {
+          "lib/net6.0/Volo.Abp.AspNetCore.Components.dll": {
+            "related": ".pdb;.xml"
+          }
+        }
+      },
+      "Volo.Abp.AspNetCore.Components.Server/6.0.2": {
+        "type": "package",
+        "dependencies": {
+          "Volo.Abp.AspNetCore.Components.Web": "6.0.2",
+          "Volo.Abp.AspNetCore.Mvc.Contracts": "6.0.2",
+          "Volo.Abp.AspNetCore.SignalR": "6.0.2",
+          "Volo.Abp.EventBus": "6.0.2",
+          "Volo.Abp.Http.Client": "6.0.2"
+        },
+        "compile": {
+          "lib/net6.0/Volo.Abp.AspNetCore.Components.Server.dll": {
+            "related": ".pdb;.xml"
+          }
+        },
+        "runtime": {
+          "lib/net6.0/Volo.Abp.AspNetCore.Components.Server.dll": {
+            "related": ".pdb;.xml"
+          }
+        },
+        "frameworkReferences": [
+          "Microsoft.AspNetCore.App"
+        ]
+      },
+      "Volo.Abp.AspNetCore.Components.Server.BasicTheme/6.0.2": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.AspNetCore.WebUtilities": "2.2.0",
+          "Volo.Abp.AspNetCore.Components.Server.Theming": "6.0.2",
+          "Volo.Abp.AspNetCore.Components.Web.BasicTheme": "6.0.2"
+        },
+        "compile": {
+          "lib/net6.0/Volo.Abp.AspNetCore.Components.Server.BasicTheme.dll": {
+            "related": ".pdb;.xml"
+          }
+        },
+        "runtime": {
+          "lib/net6.0/Volo.Abp.AspNetCore.Components.Server.BasicTheme.dll": {
+            "related": ".pdb;.xml"
+          }
+        }
+      },
+      "Volo.Abp.AspNetCore.Components.Server.Theming/6.0.2": {
+        "type": "package",
+        "dependencies": {
+          "Volo.Abp.AspNetCore.Components.Server": "6.0.2",
+          "Volo.Abp.AspNetCore.Components.Web.Theming": "6.0.2",
+          "Volo.Abp.AspNetCore.Mvc.UI.Bundling": "6.0.2",
+          "Volo.Abp.AspNetCore.Mvc.UI.Packages": "6.0.2"
+        },
+        "compile": {
+          "lib/net6.0/Volo.Abp.AspNetCore.Components.Server.Theming.dll": {
+            "related": ".pdb;.xml"
+          }
+        },
+        "runtime": {
+          "lib/net6.0/Volo.Abp.AspNetCore.Components.Server.Theming.dll": {
+            "related": ".pdb;.xml"
+          }
+        },
+        "frameworkReferences": [
+          "Microsoft.AspNetCore.App"
+        ]
+      },
+      "Volo.Abp.AspNetCore.Components.Web/6.0.2": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.AspNetCore.Components.Authorization": "6.0.5",
+          "Microsoft.AspNetCore.Components.Web": "6.0.5",
+          "Volo.Abp.AspNetCore.Components": "6.0.2",
+          "Volo.Abp.UI": "6.0.2"
+        },
+        "compile": {
+          "lib/net6.0/Volo.Abp.AspNetCore.Components.Web.dll": {
+            "related": ".pdb;.xml"
+          }
+        },
+        "runtime": {
+          "lib/net6.0/Volo.Abp.AspNetCore.Components.Web.dll": {
+            "related": ".pdb;.xml"
+          }
+        },
+        "build": {
+          "buildTransitive/Volo.Abp.AspNetCore.Components.Web.props": {}
+        },
+        "buildMultiTargeting": {
+          "buildMultiTargeting/Volo.Abp.AspNetCore.Components.Web.props": {}
+        }
+      },
+      "Volo.Abp.AspNetCore.Components.Web.BasicTheme/6.0.2": {
+        "type": "package",
+        "dependencies": {
+          "Volo.Abp.AspNetCore.Components.Web.Theming": "6.0.2"
+        },
+        "compile": {
+          "lib/net6.0/Volo.Abp.AspNetCore.Components.Web.BasicTheme.dll": {
+            "related": ".pdb;.xml"
+          }
+        },
+        "runtime": {
+          "lib/net6.0/Volo.Abp.AspNetCore.Components.Web.BasicTheme.dll": {
+            "related": ".pdb;.xml"
+          }
+        },
+        "build": {
+          "buildTransitive/Volo.Abp.AspNetCore.Components.Web.BasicTheme.props": {}
+        },
+        "buildMultiTargeting": {
+          "buildMultiTargeting/Volo.Abp.AspNetCore.Components.Web.BasicTheme.props": {}
+        }
+      },
+      "Volo.Abp.AspNetCore.Components.Web.Theming/6.0.2": {
+        "type": "package",
+        "dependencies": {
+          "Volo.Abp.BlazoriseUI": "6.0.2",
+          "Volo.Abp.UI.Navigation": "6.0.2"
+        },
+        "compile": {
+          "lib/net6.0/Volo.Abp.AspNetCore.Components.Web.Theming.dll": {
+            "related": ".pdb;.xml"
+          }
+        },
+        "runtime": {
+          "lib/net6.0/Volo.Abp.AspNetCore.Components.Web.Theming.dll": {
+            "related": ".pdb;.xml"
+          }
+        }
+      },
       "Volo.Abp.AspNetCore.MultiTenancy/6.0.0": {
         "type": "package",
         "dependencies": {
@@ -3689,6 +4055,25 @@
           }
         }
       },
+      "Volo.Abp.AspNetCore.SignalR/6.0.2": {
+        "type": "package",
+        "dependencies": {
+          "Volo.Abp.AspNetCore": "6.0.2"
+        },
+        "compile": {
+          "lib/net6.0/Volo.Abp.AspNetCore.SignalR.dll": {
+            "related": ".pdb;.xml"
+          }
+        },
+        "runtime": {
+          "lib/net6.0/Volo.Abp.AspNetCore.SignalR.dll": {
+            "related": ".pdb;.xml"
+          }
+        },
+        "frameworkReferences": [
+          "Microsoft.AspNetCore.App"
+        ]
+      },
       "Volo.Abp.Auditing/6.0.2": {
         "type": "package",
         "dependencies": {
@@ -3814,6 +4199,28 @@
         },
         "runtime": {
           "lib/netstandard2.0/Volo.Abp.BackgroundWorkers.dll": {
+            "related": ".pdb;.xml"
+          }
+        }
+      },
+      "Volo.Abp.BlazoriseUI/6.0.2": {
+        "type": "package",
+        "dependencies": {
+          "Blazorise": "1.0.4",
+          "Blazorise.Components": "1.0.4",
+          "Blazorise.DataGrid": "1.0.4",
+          "Blazorise.Snackbar": "1.0.4",
+          "Volo.Abp.AspNetCore.Components.Web": "6.0.2",
+          "Volo.Abp.Authorization": "6.0.2",
+          "Volo.Abp.Ddd.Application.Contracts": "6.0.2"
+        },
+        "compile": {
+          "lib/net6.0/Volo.Abp.BlazoriseUI.dll": {
+            "related": ".pdb;.xml"
+          }
+        },
+        "runtime": {
+          "lib/net6.0/Volo.Abp.BlazoriseUI.dll": {
             "related": ".pdb;.xml"
           }
         }
@@ -5273,6 +5680,7 @@
           "Microsoft.Extensions.FileProviders.Embedded": "6.0.5",
           "RemittanceManagement.Application.Contracts": "0.1.0",
           "RemittanceManagement.HttpApi": "0.1.0",
+          "Volo.Abp.AspNetCore.Components.Server.BasicTheme": "6.0.2",
           "Volo.Abp.AspNetCore.Mvc.UI.Theme.Shared": "6.0.2",
           "Volo.Abp.AutoMapper": "6.0.2"
         },
@@ -5360,6 +5768,111 @@
         "icon.png",
         "lib/netstandard2.1/AutoMapper.dll",
         "lib/netstandard2.1/AutoMapper.xml"
+      ]
+    },
+    "Blazorise/1.0.4": {
+      "sha512": "iU8o7R7epeXMvzoWJGVr5oHu+tJ3YuQf7qlJWREl0qmo3oWtn5phFpCnf2xGXVyDob7TUuu6p63cPJpwx2waew==",
+      "type": "package",
+      "path": "blazorise/1.0.4",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "Blazorise.png",
+        "LICENSE.md",
+        "blazorise.1.0.4.nupkg.sha512",
+        "blazorise.nuspec",
+        "build/Blazorise.props",
+        "build/Microsoft.AspNetCore.StaticWebAssets.props",
+        "buildMultiTargeting/Blazorise.props",
+        "buildTransitive/Blazorise.props",
+        "lib/net6.0/Blazorise.dll",
+        "lib/net6.0/Blazorise.xml",
+        "staticwebassets/blazorise.css",
+        "staticwebassets/breakpoint.js",
+        "staticwebassets/button.js",
+        "staticwebassets/closable.js",
+        "staticwebassets/colorPicker.js",
+        "staticwebassets/datePicker.js",
+        "staticwebassets/dragDrop.js",
+        "staticwebassets/dropdown.js",
+        "staticwebassets/fileEdit.js",
+        "staticwebassets/inputMask.js",
+        "staticwebassets/io.js",
+        "staticwebassets/memoEdit.js",
+        "staticwebassets/numericPicker.js",
+        "staticwebassets/observer.js",
+        "staticwebassets/popper.js",
+        "staticwebassets/select.js",
+        "staticwebassets/table.js",
+        "staticwebassets/textEdit.js",
+        "staticwebassets/theme.js",
+        "staticwebassets/timePicker.js",
+        "staticwebassets/tooltip.js",
+        "staticwebassets/utilities.js",
+        "staticwebassets/validators/DateTimeMaskValidator.js",
+        "staticwebassets/validators/NoValidator.js",
+        "staticwebassets/validators/NumericMaskValidator.js",
+        "staticwebassets/validators/RegExMaskValidator.js",
+        "staticwebassets/vendors/Behave.js",
+        "staticwebassets/vendors/Pickr.js",
+        "staticwebassets/vendors/autoNumeric.js",
+        "staticwebassets/vendors/flatpickr.js",
+        "staticwebassets/vendors/inputmask.js"
+      ]
+    },
+    "Blazorise.Components/1.0.4": {
+      "sha512": "n+gFAKfZ2pt3wuvbekT8sReDNAeNEfxYjZYrBdueUyTXffio30yubvaledzQaw8N3xS6FHPTQ9chnTx0PFocRA==",
+      "type": "package",
+      "path": "blazorise.components/1.0.4",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "Blazorise.png",
+        "LICENSE.md",
+        "blazorise.components.1.0.4.nupkg.sha512",
+        "blazorise.components.nuspec",
+        "lib/net6.0/Blazorise.Components.dll",
+        "lib/net6.0/Blazorise.Components.xml"
+      ]
+    },
+    "Blazorise.DataGrid/1.0.4": {
+      "sha512": "2bKm2pqfkK8Nqw/PS/Sqlwq2/eRlMt7VipvJslrxksMwBC6cNuvxy9osVSAT6Xke6NxDcIHH6ClvYW1vD72X0A==",
+      "type": "package",
+      "path": "blazorise.datagrid/1.0.4",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "Blazorise.png",
+        "LICENSE.md",
+        "blazorise.datagrid.1.0.4.nupkg.sha512",
+        "blazorise.datagrid.nuspec",
+        "build/Blazorise.DataGrid.props",
+        "build/Microsoft.AspNetCore.StaticWebAssets.props",
+        "buildMultiTargeting/Blazorise.DataGrid.props",
+        "buildTransitive/Blazorise.DataGrid.props",
+        "lib/net6.0/Blazorise.DataGrid.dll",
+        "lib/net6.0/Blazorise.DataGrid.xml",
+        "staticwebassets/datagrid.js"
+      ]
+    },
+    "Blazorise.Snackbar/1.0.4": {
+      "sha512": "PhJ2o+T1b+Aa97O8FEBWrsr1fozdfMtkBniSZUCrIboCP0h73+5HWYbVhcxR6u/85gz5p125sWAnilAfJHcGcQ==",
+      "type": "package",
+      "path": "blazorise.snackbar/1.0.4",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "Blazorise.png",
+        "LICENSE.md",
+        "blazorise.snackbar.1.0.4.nupkg.sha512",
+        "blazorise.snackbar.nuspec",
+        "build/Blazorise.Snackbar.props",
+        "build/Microsoft.AspNetCore.StaticWebAssets.props",
+        "buildMultiTargeting/Blazorise.Snackbar.props",
+        "buildTransitive/Blazorise.Snackbar.props",
+        "lib/net6.0/Blazorise.Snackbar.dll",
+        "lib/net6.0/Blazorise.Snackbar.xml",
+        "staticwebassets/blazorise.snackbar.css"
       ]
     },
     "Castle.Core/5.0.0": {
@@ -5504,6 +6017,82 @@
         "lib/netstandard2.0/Microsoft.AspNetCore.Authorization.xml",
         "microsoft.aspnetcore.authorization.6.0.5.nupkg.sha512",
         "microsoft.aspnetcore.authorization.nuspec"
+      ]
+    },
+    "Microsoft.AspNetCore.Components/6.0.5": {
+      "sha512": "pm7wo05ANEduCj/HCKVIvBLL8BzszHttgHtX/hbV5f6xb6/0oCsTuZexRmBfM30PrlbQDjzWuH1rpiPYP30l7g==",
+      "type": "package",
+      "path": "microsoft.aspnetcore.components/6.0.5",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "Icon.png",
+        "THIRD-PARTY-NOTICES.txt",
+        "lib/net6.0/Microsoft.AspNetCore.Components.dll",
+        "lib/net6.0/Microsoft.AspNetCore.Components.xml",
+        "microsoft.aspnetcore.components.6.0.5.nupkg.sha512",
+        "microsoft.aspnetcore.components.nuspec"
+      ]
+    },
+    "Microsoft.AspNetCore.Components.Analyzers/6.0.5": {
+      "sha512": "zxAXJIA/VL3BkqBPvgNiojppfmhmOIB8JtWi1Q85kcy1MGxwOi+UXAFXlvaMliocrycUazTguZBTXMhC2jFiow==",
+      "type": "package",
+      "path": "microsoft.aspnetcore.components.analyzers/6.0.5",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "Icon.png",
+        "THIRD-PARTY-NOTICES.txt",
+        "analyzers/dotnet/cs/Microsoft.AspNetCore.Components.Analyzers.dll",
+        "build/netstandard2.0/Microsoft.AspNetCore.Components.Analyzers.targets",
+        "buildTransitive/netstandard2.0/Microsoft.AspNetCore.Components.Analyzers.targets",
+        "microsoft.aspnetcore.components.analyzers.6.0.5.nupkg.sha512",
+        "microsoft.aspnetcore.components.analyzers.nuspec"
+      ]
+    },
+    "Microsoft.AspNetCore.Components.Authorization/6.0.5": {
+      "sha512": "VqyrGxH8Rb4DDFrqE56WSAIIm/X3RegGKYyq0nr4iUuRplE7sCe3Rn1gZGRynqnf3XDwL6ZlT1nC9CTd50Uhyw==",
+      "type": "package",
+      "path": "microsoft.aspnetcore.components.authorization/6.0.5",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "Icon.png",
+        "THIRD-PARTY-NOTICES.txt",
+        "lib/net6.0/Microsoft.AspNetCore.Components.Authorization.dll",
+        "lib/net6.0/Microsoft.AspNetCore.Components.Authorization.xml",
+        "microsoft.aspnetcore.components.authorization.6.0.5.nupkg.sha512",
+        "microsoft.aspnetcore.components.authorization.nuspec"
+      ]
+    },
+    "Microsoft.AspNetCore.Components.Forms/6.0.5": {
+      "sha512": "yh8bWPxPkJ/60IHVA6Vv5dPuyG/i4LiG6Nwkq/8ejtHn/hyGuPBrcsymBjLGQEqSmhTPnqteIL9BOP7VBYV1NQ==",
+      "type": "package",
+      "path": "microsoft.aspnetcore.components.forms/6.0.5",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "Icon.png",
+        "THIRD-PARTY-NOTICES.txt",
+        "lib/net6.0/Microsoft.AspNetCore.Components.Forms.dll",
+        "lib/net6.0/Microsoft.AspNetCore.Components.Forms.xml",
+        "microsoft.aspnetcore.components.forms.6.0.5.nupkg.sha512",
+        "microsoft.aspnetcore.components.forms.nuspec"
+      ]
+    },
+    "Microsoft.AspNetCore.Components.Web/6.0.5": {
+      "sha512": "QbPAY7trw1IpafCIbizib1IW/3Lqxf3AJ6tCO/FzbmvWeImD3rNLrgWb3gH7Mz+RtkmYmbrfdEk4eh9mW/2tGg==",
+      "type": "package",
+      "path": "microsoft.aspnetcore.components.web/6.0.5",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "Icon.png",
+        "THIRD-PARTY-NOTICES.txt",
+        "lib/net6.0/Microsoft.AspNetCore.Components.Web.dll",
+        "lib/net6.0/Microsoft.AspNetCore.Components.Web.xml",
+        "microsoft.aspnetcore.components.web.6.0.5.nupkg.sha512",
+        "microsoft.aspnetcore.components.web.nuspec"
       ]
     },
     "Microsoft.AspNetCore.Cryptography.Internal/6.0.0": {
@@ -5697,6 +6286,19 @@
         "lib/netstandard2.0/Microsoft.AspNetCore.Razor.Language.dll",
         "microsoft.aspnetcore.razor.language.6.0.5.nupkg.sha512",
         "microsoft.aspnetcore.razor.language.nuspec"
+      ]
+    },
+    "Microsoft.AspNetCore.WebUtilities/2.2.0": {
+      "sha512": "9ErxAAKaDzxXASB/b5uLEkLgUWv1QbeVxyJYEHQwMaxXOeFFVkQxiq8RyfVcifLU7NR0QY0p3acqx4ZpYfhHDg==",
+      "type": "package",
+      "path": "microsoft.aspnetcore.webutilities/2.2.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "lib/netstandard2.0/Microsoft.AspNetCore.WebUtilities.dll",
+        "lib/netstandard2.0/Microsoft.AspNetCore.WebUtilities.xml",
+        "microsoft.aspnetcore.webutilities.2.2.0.nupkg.sha512",
+        "microsoft.aspnetcore.webutilities.nuspec"
       ]
     },
     "Microsoft.Bcl.AsyncInterfaces/6.0.0": {
@@ -6732,6 +7334,34 @@
         "lib/netstandard2.0/Microsoft.IdentityModel.Tokens.xml",
         "microsoft.identitymodel.tokens.6.10.0.nupkg.sha512",
         "microsoft.identitymodel.tokens.nuspec"
+      ]
+    },
+    "Microsoft.JSInterop/6.0.5": {
+      "sha512": "ST48YNjqpW2WNbTFBN5V3fdpnV8Civ6VeewzGtKdtYtBtM0q5afQVnUOwx3w5oeBZNQjn2nk3OZM1tSe10x4lA==",
+      "type": "package",
+      "path": "microsoft.jsinterop/6.0.5",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "Icon.png",
+        "THIRD-PARTY-NOTICES.TXT",
+        "lib/net6.0/Microsoft.JSInterop.dll",
+        "lib/net6.0/Microsoft.JSInterop.xml",
+        "microsoft.jsinterop.6.0.5.nupkg.sha512",
+        "microsoft.jsinterop.nuspec"
+      ]
+    },
+    "Microsoft.Net.Http.Headers/2.2.0": {
+      "sha512": "iZNkjYqlo8sIOI0bQfpsSoMTmB/kyvmV2h225ihyZT33aTp48ZpF6qYnXxzSXmHt8DpBAwBTX+1s1UFLbYfZKg==",
+      "type": "package",
+      "path": "microsoft.net.http.headers/2.2.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "lib/netstandard2.0/Microsoft.Net.Http.Headers.dll",
+        "lib/netstandard2.0/Microsoft.Net.Http.Headers.xml",
+        "microsoft.net.http.headers.2.2.0.nupkg.sha512",
+        "microsoft.net.http.headers.nuspec"
       ]
     },
     "Microsoft.NETCore.Platforms/5.0.0": {
@@ -8869,30 +9499,29 @@
         "system.io.filesystem.primitives.nuspec"
       ]
     },
-    "System.IO.Pipelines/5.0.0": {
-      "sha512": "irMYm3vhVgRsYvHTU5b2gsT2CwT/SMM6LZFzuJjpIvT5Z4CshxNsaoBC1X/LltwuR3Opp8d6jOS/60WwOb7Q2Q==",
+    "System.IO.Pipelines/6.0.3": {
+      "sha512": "ryTgF+iFkpGZY1vRQhfCzX0xTdlV3pyaTTqRu2ETbEv+HlV7O6y7hyQURnghNIXvctl5DuZ//Dpks6HdL/Txgw==",
       "type": "package",
-      "path": "system.io.pipelines/5.0.0",
+      "path": "system.io.pipelines/6.0.3",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
         "Icon.png",
         "LICENSE.TXT",
         "THIRD-PARTY-NOTICES.TXT",
+        "buildTransitive/netcoreapp2.0/System.IO.Pipelines.targets",
+        "buildTransitive/netcoreapp3.1/_._",
         "lib/net461/System.IO.Pipelines.dll",
         "lib/net461/System.IO.Pipelines.xml",
-        "lib/netcoreapp3.0/System.IO.Pipelines.dll",
-        "lib/netcoreapp3.0/System.IO.Pipelines.xml",
-        "lib/netstandard1.3/System.IO.Pipelines.dll",
-        "lib/netstandard1.3/System.IO.Pipelines.xml",
+        "lib/net6.0/System.IO.Pipelines.dll",
+        "lib/net6.0/System.IO.Pipelines.xml",
+        "lib/netcoreapp3.1/System.IO.Pipelines.dll",
+        "lib/netcoreapp3.1/System.IO.Pipelines.xml",
         "lib/netstandard2.0/System.IO.Pipelines.dll",
         "lib/netstandard2.0/System.IO.Pipelines.xml",
-        "ref/netcoreapp2.0/System.IO.Pipelines.dll",
-        "ref/netcoreapp2.0/System.IO.Pipelines.xml",
-        "system.io.pipelines.5.0.0.nupkg.sha512",
+        "system.io.pipelines.6.0.3.nupkg.sha512",
         "system.io.pipelines.nuspec",
-        "useSharedDesignerContext.txt",
-        "version.txt"
+        "useSharedDesignerContext.txt"
       ]
     },
     "System.Linq/4.3.0": {
@@ -11718,6 +12347,115 @@
         "volo.abp.aspnetcore.authentication.oauth.nuspec"
       ]
     },
+    "Volo.Abp.AspNetCore.Components/6.0.2": {
+      "sha512": "pNsuiorWsGrWFlQDKPDjT7BUFesG+Y5QxNiHdc4vPgaoiWLvhRAZwWpqhKclQLybZTf8ixfzU+38hha12PzJ9A==",
+      "type": "package",
+      "path": "volo.abp.aspnetcore.components/6.0.2",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "lib/net6.0/Volo.Abp.AspNetCore.Components.dll",
+        "lib/net6.0/Volo.Abp.AspNetCore.Components.pdb",
+        "lib/net6.0/Volo.Abp.AspNetCore.Components.xml",
+        "volo.abp.aspnetcore.components.6.0.2.nupkg.sha512",
+        "volo.abp.aspnetcore.components.nuspec"
+      ]
+    },
+    "Volo.Abp.AspNetCore.Components.Server/6.0.2": {
+      "sha512": "ERZw+BiZrRYbdXS7kyxsbJPuXSxWm6eAznRgki79xHwfpi2a7x/e3EGfO/1sGBcmUsQxR6Y6VCo82q+C1yL4Pw==",
+      "type": "package",
+      "path": "volo.abp.aspnetcore.components.server/6.0.2",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "lib/net6.0/Volo.Abp.AspNetCore.Components.Server.dll",
+        "lib/net6.0/Volo.Abp.AspNetCore.Components.Server.pdb",
+        "lib/net6.0/Volo.Abp.AspNetCore.Components.Server.xml",
+        "volo.abp.aspnetcore.components.server.6.0.2.nupkg.sha512",
+        "volo.abp.aspnetcore.components.server.nuspec"
+      ]
+    },
+    "Volo.Abp.AspNetCore.Components.Server.BasicTheme/6.0.2": {
+      "sha512": "U2XOp4bFR/Oxg1jjYaqDWFLOmYVoEG9uWIdKFGLCj0jmvx7/9/4Qqp/RH3zHt7uhH1c7G0XXpPbTNLIFGuU+ug==",
+      "type": "package",
+      "path": "volo.abp.aspnetcore.components.server.basictheme/6.0.2",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "lib/net6.0/Volo.Abp.AspNetCore.Components.Server.BasicTheme.dll",
+        "lib/net6.0/Volo.Abp.AspNetCore.Components.Server.BasicTheme.pdb",
+        "lib/net6.0/Volo.Abp.AspNetCore.Components.Server.BasicTheme.xml",
+        "volo.abp.aspnetcore.components.server.basictheme.6.0.2.nupkg.sha512",
+        "volo.abp.aspnetcore.components.server.basictheme.nuspec"
+      ]
+    },
+    "Volo.Abp.AspNetCore.Components.Server.Theming/6.0.2": {
+      "sha512": "cSM11YuhuKyTry/Dxkv1zDNUKJ0pBe43XcbVBXBGnQmKivOpGYFgK5KrUeq6h5ivtmTM8ghskZm4H05ZrrzgCg==",
+      "type": "package",
+      "path": "volo.abp.aspnetcore.components.server.theming/6.0.2",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "lib/net6.0/Volo.Abp.AspNetCore.Components.Server.Theming.dll",
+        "lib/net6.0/Volo.Abp.AspNetCore.Components.Server.Theming.pdb",
+        "lib/net6.0/Volo.Abp.AspNetCore.Components.Server.Theming.xml",
+        "volo.abp.aspnetcore.components.server.theming.6.0.2.nupkg.sha512",
+        "volo.abp.aspnetcore.components.server.theming.nuspec"
+      ]
+    },
+    "Volo.Abp.AspNetCore.Components.Web/6.0.2": {
+      "sha512": "ualZ4Tj+Rk9cM7MnFbg/LLJk9+x06+vru9m+NHWUsrKCoMt97jg/alsWlL/sjgpXsBw6Z6eETnVEQ+jxCs9dWQ==",
+      "type": "package",
+      "path": "volo.abp.aspnetcore.components.web/6.0.2",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "build/Microsoft.AspNetCore.StaticWebAssets.props",
+        "build/Volo.Abp.AspNetCore.Components.Web.props",
+        "buildMultiTargeting/Volo.Abp.AspNetCore.Components.Web.props",
+        "buildTransitive/Volo.Abp.AspNetCore.Components.Web.props",
+        "lib/net6.0/Volo.Abp.AspNetCore.Components.Web.dll",
+        "lib/net6.0/Volo.Abp.AspNetCore.Components.Web.pdb",
+        "lib/net6.0/Volo.Abp.AspNetCore.Components.Web.xml",
+        "staticwebassets/libs/abp/js/abp.js",
+        "staticwebassets/libs/abp/js/lang-utils.js",
+        "volo.abp.aspnetcore.components.web.6.0.2.nupkg.sha512",
+        "volo.abp.aspnetcore.components.web.nuspec"
+      ]
+    },
+    "Volo.Abp.AspNetCore.Components.Web.BasicTheme/6.0.2": {
+      "sha512": "5PLPQ/b6QHlxyY3h9+I8MBJGxA0ahOHwX/m6n7ajyGfRNgWvvpEkIUbOgeeeYdoZdEuc7MbuS+I9YX/474gGpg==",
+      "type": "package",
+      "path": "volo.abp.aspnetcore.components.web.basictheme/6.0.2",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "build/Microsoft.AspNetCore.StaticWebAssets.props",
+        "build/Volo.Abp.AspNetCore.Components.Web.BasicTheme.props",
+        "buildMultiTargeting/Volo.Abp.AspNetCore.Components.Web.BasicTheme.props",
+        "buildTransitive/Volo.Abp.AspNetCore.Components.Web.BasicTheme.props",
+        "lib/net6.0/Volo.Abp.AspNetCore.Components.Web.BasicTheme.dll",
+        "lib/net6.0/Volo.Abp.AspNetCore.Components.Web.BasicTheme.pdb",
+        "lib/net6.0/Volo.Abp.AspNetCore.Components.Web.BasicTheme.xml",
+        "staticwebassets/libs/abp/css/theme.css",
+        "volo.abp.aspnetcore.components.web.basictheme.6.0.2.nupkg.sha512",
+        "volo.abp.aspnetcore.components.web.basictheme.nuspec"
+      ]
+    },
+    "Volo.Abp.AspNetCore.Components.Web.Theming/6.0.2": {
+      "sha512": "Xi1XE7mj1mVuNQPN/Xn5usXMC9g5z7GmNnWH1aAh456Q2dqc31ORhFeIH7XQMcaR2HMLU9HX/y1wWLl43ILrHQ==",
+      "type": "package",
+      "path": "volo.abp.aspnetcore.components.web.theming/6.0.2",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "lib/net6.0/Volo.Abp.AspNetCore.Components.Web.Theming.dll",
+        "lib/net6.0/Volo.Abp.AspNetCore.Components.Web.Theming.pdb",
+        "lib/net6.0/Volo.Abp.AspNetCore.Components.Web.Theming.xml",
+        "volo.abp.aspnetcore.components.web.theming.6.0.2.nupkg.sha512",
+        "volo.abp.aspnetcore.components.web.theming.nuspec"
+      ]
+    },
     "Volo.Abp.AspNetCore.MultiTenancy/6.0.0": {
       "sha512": "6dLE9E15aiILff9/e+ypqiTccz10WjnFjA/hdQMaKvs29+xEChEUv0E5o/wBy4S+LcVJJwN0zvuHSOwHH7lQHg==",
       "type": "package",
@@ -11914,6 +12652,20 @@
         "volo.abp.aspnetcore.mvc.ui.widgets.nuspec"
       ]
     },
+    "Volo.Abp.AspNetCore.SignalR/6.0.2": {
+      "sha512": "4fhthfK7Renf0cdj7qG5g3SeRCFZSvyVDzKntntzreB/NyETCdBR1hr9Y/3/eJzY6QUKpaurPPgygwTg63R24g==",
+      "type": "package",
+      "path": "volo.abp.aspnetcore.signalr/6.0.2",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "lib/net6.0/Volo.Abp.AspNetCore.SignalR.dll",
+        "lib/net6.0/Volo.Abp.AspNetCore.SignalR.pdb",
+        "lib/net6.0/Volo.Abp.AspNetCore.SignalR.xml",
+        "volo.abp.aspnetcore.signalr.6.0.2.nupkg.sha512",
+        "volo.abp.aspnetcore.signalr.nuspec"
+      ]
+    },
     "Volo.Abp.Auditing/6.0.2": {
       "sha512": "2vkUSnsKYa291+S8l/XPytd3z8eHJ3/3W4jGOliWs5cSiwR8evieJ6jrn4vvlebydOrjEL+t2hQraJKyyj5J6Q==",
       "type": "package",
@@ -12010,6 +12762,20 @@
         "lib/netstandard2.0/Volo.Abp.BackgroundWorkers.xml",
         "volo.abp.backgroundworkers.6.0.2.nupkg.sha512",
         "volo.abp.backgroundworkers.nuspec"
+      ]
+    },
+    "Volo.Abp.BlazoriseUI/6.0.2": {
+      "sha512": "oOg5ZIHBnOQCX0oBsrqOub6zklovEUs/ZkX6gXFdYueW/JI/5/EFXiIV3p0mFRexPdlhEXRN5mvImi6fKVWVBg==",
+      "type": "package",
+      "path": "volo.abp.blazoriseui/6.0.2",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "lib/net6.0/Volo.Abp.BlazoriseUI.dll",
+        "lib/net6.0/Volo.Abp.BlazoriseUI.pdb",
+        "lib/net6.0/Volo.Abp.BlazoriseUI.xml",
+        "volo.abp.blazoriseui.6.0.2.nupkg.sha512",
+        "volo.abp.blazoriseui.nuspec"
       ]
     },
     "Volo.Abp.Caching/6.0.0": {

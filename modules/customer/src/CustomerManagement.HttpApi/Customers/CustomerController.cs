@@ -4,11 +4,13 @@ using System.Threading.Tasks;
 using CustomerManagement.Customers;
 using CustomerManagement.Customers.Dtos;
 using Microsoft.AspNetCore.Authorization;
+using Microsoft.AspNetCore.Cors;
 using Microsoft.AspNetCore.Mvc;
 using Volo.Abp;
 using Volo.Abp.Application.Dtos;
 
 namespace CustomerManagement.Customers;
+[EnableCors]
 [Area(CustomerManagementRemoteServiceConsts.ModuleName)]
 [RemoteService(Name = CustomerManagementRemoteServiceConsts.RemoteServiceName)]
 [Route("api/CustomerManagement/customer")]

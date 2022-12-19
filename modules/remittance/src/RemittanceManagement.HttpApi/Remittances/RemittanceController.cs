@@ -61,6 +61,12 @@ public class RemittanceController : RemittanceManagementController, IRemittanceA
     {
         return await _remittanceAppService.GetListAsync(input);
     }
+    [HttpGet]
+    [Route("GetListRemittancesForCreator")]
+    public virtual async Task<PagedResultDto<RemittanceDto>> GetListRemittancesForCreator(GetRemittanceListPagedAndSortedResultRequestDto input)
+    {
+        return await _remittanceAppService.GetListRemittancesForCreator(input);
+    }
 
     //[HttpGet]
     //[Route("GetListRemittancesForCreator")]
