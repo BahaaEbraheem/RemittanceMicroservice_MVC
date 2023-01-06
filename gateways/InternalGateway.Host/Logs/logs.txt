@@ -29107,3 +29107,342 @@ HelpLink.EvtID = 208
 HelpLink.BaseHelpUrl = https://go.microsoft.com/fwlink
 HelpLink.LinkId = 20476
 
+2023-01-06 15:52:48.215 +02:00 [INF] Starting IdentityService.Host.
+2023-01-06 15:53:05.046 +02:00 [INF] Loaded ABP modules:
+2023-01-06 15:53:05.049 +02:00 [INF] - InternalGateway.Host.InternalGatewayHostModule
+2023-01-06 15:53:05.049 +02:00 [INF]   - Volo.Abp.Autofac.AbpAutofacModule
+2023-01-06 15:53:05.049 +02:00 [INF]     - Volo.Abp.Castle.AbpCastleCoreModule
+2023-01-06 15:53:05.049 +02:00 [INF]   - Volo.Abp.Identity.AbpIdentityHttpApiModule
+2023-01-06 15:53:05.049 +02:00 [INF]     - Volo.Abp.Identity.AbpIdentityApplicationContractsModule
+2023-01-06 15:53:05.049 +02:00 [INF]       - Volo.Abp.Identity.AbpIdentityDomainSharedModule
+2023-01-06 15:53:05.049 +02:00 [INF]         - Volo.Abp.Users.AbpUsersDomainSharedModule
+2023-01-06 15:53:05.049 +02:00 [INF]         - Volo.Abp.Validation.AbpValidationModule
+2023-01-06 15:53:05.049 +02:00 [INF]           - Volo.Abp.Validation.AbpValidationAbstractionsModule
+2023-01-06 15:53:05.049 +02:00 [INF]           - Volo.Abp.Localization.AbpLocalizationModule
+2023-01-06 15:53:05.049 +02:00 [INF]             - Volo.Abp.VirtualFileSystem.AbpVirtualFileSystemModule
+2023-01-06 15:53:05.049 +02:00 [INF]             - Volo.Abp.Settings.AbpSettingsModule
+2023-01-06 15:53:05.049 +02:00 [INF]               - Volo.Abp.Localization.AbpLocalizationAbstractionsModule
+2023-01-06 15:53:05.049 +02:00 [INF]               - Volo.Abp.Security.AbpSecurityModule
+2023-01-06 15:53:05.049 +02:00 [INF]               - Volo.Abp.MultiTenancy.AbpMultiTenancyModule
+2023-01-06 15:53:05.049 +02:00 [INF]                 - Volo.Abp.Data.AbpDataModule
+2023-01-06 15:53:05.049 +02:00 [INF]                   - Volo.Abp.ObjectExtending.AbpObjectExtendingModule
+2023-01-06 15:53:05.050 +02:00 [INF]                   - Volo.Abp.Uow.AbpUnitOfWorkModule
+2023-01-06 15:53:05.050 +02:00 [INF]                   - Volo.Abp.EventBus.Abstractions.AbpEventBusAbstractionsModule
+2023-01-06 15:53:05.050 +02:00 [INF]             - Volo.Abp.Threading.AbpThreadingModule
+2023-01-06 15:53:05.050 +02:00 [INF]         - Volo.Abp.Features.AbpFeaturesModule
+2023-01-06 15:53:05.050 +02:00 [INF]           - Volo.Abp.Authorization.AbpAuthorizationAbstractionsModule
+2023-01-06 15:53:05.050 +02:00 [INF]       - Volo.Abp.Users.AbpUsersAbstractionModule
+2023-01-06 15:53:05.050 +02:00 [INF]         - Volo.Abp.EventBus.AbpEventBusModule
+2023-01-06 15:53:05.050 +02:00 [INF]           - Volo.Abp.Json.AbpJsonModule
+2023-01-06 15:53:05.050 +02:00 [INF]             - Volo.Abp.Json.SystemTextJson.AbpJsonSystemTextJsonModule
+2023-01-06 15:53:05.050 +02:00 [INF]               - Volo.Abp.Json.AbpJsonAbstractionsModule
+2023-01-06 15:53:05.050 +02:00 [INF]               - Volo.Abp.Timing.AbpTimingModule
+2023-01-06 15:53:05.050 +02:00 [INF]           - Volo.Abp.Guids.AbpGuidsModule
+2023-01-06 15:53:05.050 +02:00 [INF]           - Volo.Abp.BackgroundWorkers.AbpBackgroundWorkersModule
+2023-01-06 15:53:05.050 +02:00 [INF]           - Volo.Abp.DistributedLocking.AbpDistributedLockingAbstractionsModule
+2023-01-06 15:53:05.050 +02:00 [INF]       - Volo.Abp.Authorization.AbpAuthorizationModule
+2023-01-06 15:53:05.050 +02:00 [INF]       - Volo.Abp.PermissionManagement.AbpPermissionManagementApplicationContractsModule
+2023-01-06 15:53:05.050 +02:00 [INF]         - Volo.Abp.Application.AbpDddApplicationContractsModule
+2023-01-06 15:53:05.050 +02:00 [INF]           - Volo.Abp.Auditing.AbpAuditingContractsModule
+2023-01-06 15:53:05.050 +02:00 [INF]         - Volo.Abp.PermissionManagement.AbpPermissionManagementDomainSharedModule
+2023-01-06 15:53:05.050 +02:00 [INF]     - Volo.Abp.AspNetCore.Mvc.AbpAspNetCoreMvcModule
+2023-01-06 15:53:05.050 +02:00 [INF]       - Volo.Abp.AspNetCore.AbpAspNetCoreModule
+2023-01-06 15:53:05.050 +02:00 [INF]         - Volo.Abp.Auditing.AbpAuditingModule
+2023-01-06 15:53:05.050 +02:00 [INF]         - Volo.Abp.Http.AbpHttpModule
+2023-01-06 15:53:05.050 +02:00 [INF]           - Volo.Abp.Http.AbpHttpAbstractionsModule
+2023-01-06 15:53:05.050 +02:00 [INF]           - Volo.Abp.Minify.AbpMinifyModule
+2023-01-06 15:53:05.050 +02:00 [INF]         - Volo.Abp.ExceptionHandling.AbpExceptionHandlingModule
+2023-01-06 15:53:05.050 +02:00 [INF]       - Volo.Abp.ApiVersioning.AbpApiVersioningAbstractionsModule
+2023-01-06 15:53:05.050 +02:00 [INF]       - Volo.Abp.AspNetCore.Mvc.AbpAspNetCoreMvcContractsModule
+2023-01-06 15:53:05.050 +02:00 [INF]       - Volo.Abp.UI.Navigation.AbpUiNavigationModule
+2023-01-06 15:53:05.050 +02:00 [INF]         - Volo.Abp.UI.AbpUiModule
+2023-01-06 15:53:05.051 +02:00 [INF]       - Volo.Abp.GlobalFeatures.AbpGlobalFeaturesModule
+2023-01-06 15:53:05.051 +02:00 [INF]       - Volo.Abp.Application.AbpDddApplicationModule
+2023-01-06 15:53:05.051 +02:00 [INF]         - Volo.Abp.Domain.AbpDddDomainModule
+2023-01-06 15:53:05.051 +02:00 [INF]           - Volo.Abp.ObjectMapping.AbpObjectMappingModule
+2023-01-06 15:53:05.051 +02:00 [INF]           - Volo.Abp.Specifications.AbpSpecificationsModule
+2023-01-06 15:53:05.051 +02:00 [INF]           - Volo.Abp.Caching.AbpCachingModule
+2023-01-06 15:53:05.051 +02:00 [INF]             - Volo.Abp.Serialization.AbpSerializationModule
+2023-01-06 15:53:05.051 +02:00 [INF]   - Volo.Blogging.BloggingHttpApiModule
+2023-01-06 15:53:05.051 +02:00 [INF]     - Volo.Blogging.BloggingApplicationContractsModule
+2023-01-06 15:53:05.051 +02:00 [INF]       - Volo.Blogging.BloggingApplicationContractsSharedModule
+2023-01-06 15:53:05.051 +02:00 [INF]         - Volo.Blogging.BloggingDomainSharedModule
+2023-01-06 15:53:05.051 +02:00 [INF]   - ProductManagement.ProductManagementHttpApiModule
+2023-01-06 15:53:05.051 +02:00 [INF]     - ProductManagement.ProductManagementApplicationContractsModule
+2023-01-06 15:53:05.051 +02:00 [INF]       - ProductManagement.ProductManagementDomainSharedModule
+2023-01-06 15:53:05.051 +02:00 [INF]   - RemittanceManagement.RemittanceManagementHttpApiModule
+2023-01-06 15:53:05.051 +02:00 [INF]     - RemittanceManagement.RemittanceManagementApplicationContractsModule
+2023-01-06 15:53:05.051 +02:00 [INF]       - RemittanceManagement.RemittanceManagementDomainSharedModule
+2023-01-06 15:53:05.051 +02:00 [INF]       - CurrencyManagment.CurrencyManagmentApplicationContractsModule
+2023-01-06 15:53:05.051 +02:00 [INF]         - CurrencyManagment.CurrencyManagmentDomainSharedModule
+2023-01-06 15:53:05.051 +02:00 [INF]       - CustomerManagement.CustomerManagementApplicationContractsModule
+2023-01-06 15:53:05.051 +02:00 [INF]         - CustomerManagement.CustomerManagementDomainSharedModule
+2023-01-06 15:53:05.051 +02:00 [INF]   - CurrencyManagment.CurrencyManagmentHttpApiModule
+2023-01-06 15:53:05.051 +02:00 [INF]   - CustomerManagement.CustomerManagementHttpApiModule
+2023-01-06 15:53:05.051 +02:00 [INF]   - Volo.Abp.EntityFrameworkCore.SqlServer.AbpEntityFrameworkCoreSqlServerModule
+2023-01-06 15:53:05.051 +02:00 [INF]     - Volo.Abp.EntityFrameworkCore.AbpEntityFrameworkCoreModule
+2023-01-06 15:53:05.051 +02:00 [INF]   - Volo.Abp.PermissionManagement.EntityFrameworkCore.AbpPermissionManagementEntityFrameworkCoreModule
+2023-01-06 15:53:05.051 +02:00 [INF]     - Volo.Abp.PermissionManagement.AbpPermissionManagementDomainModule
+2023-01-06 15:53:05.051 +02:00 [INF]   - Volo.Abp.SettingManagement.EntityFrameworkCore.AbpSettingManagementEntityFrameworkCoreModule
+2023-01-06 15:53:05.051 +02:00 [INF]     - Volo.Abp.SettingManagement.AbpSettingManagementDomainModule
+2023-01-06 15:53:05.051 +02:00 [INF]       - Volo.Abp.SettingManagement.AbpSettingManagementDomainSharedModule
+2023-01-06 15:53:05.051 +02:00 [INF]   - Volo.Abp.TenantManagement.AbpTenantManagementHttpApiModule
+2023-01-06 15:53:05.051 +02:00 [INF]     - Volo.Abp.TenantManagement.AbpTenantManagementApplicationContractsModule
+2023-01-06 15:53:05.051 +02:00 [INF]       - Volo.Abp.TenantManagement.AbpTenantManagementDomainSharedModule
+2023-01-06 15:53:05.051 +02:00 [INF]     - Volo.Abp.FeatureManagement.AbpFeatureManagementHttpApiModule
+2023-01-06 15:53:05.051 +02:00 [INF]       - Volo.Abp.FeatureManagement.AbpFeatureManagementApplicationContractsModule
+2023-01-06 15:53:05.051 +02:00 [INF]         - Volo.Abp.FeatureManagement.AbpFeatureManagementDomainSharedModule
+2023-01-06 15:53:05.051 +02:00 [INF]   - Volo.Abp.AspNetCore.MultiTenancy.AbpAspNetCoreMultiTenancyModule
+2023-01-06 15:53:08.971 +02:00 [INF] Initialized all ABP modules.
+2023-01-06 15:53:09.103 +02:00 [INF] Now listening on: https://localhost:44329
+2023-01-06 15:53:09.105 +02:00 [INF] Application started. Press Ctrl+C to shut down.
+2023-01-06 15:53:09.105 +02:00 [INF] Hosting environment: Development
+2023-01-06 15:53:09.105 +02:00 [INF] Content root path: C:\Git\RemittanceMicroservice_MVC\gateways\InternalGateway.Host
+2023-01-06 15:53:10.143 +02:00 [INF] Request starting HTTP/2 GET https://localhost:44329/ - -
+2023-01-06 15:53:10.238 +02:00 [DBG] AuthenticationScheme: Bearer was not authenticated.
+2023-01-06 15:53:10.365 +02:00 [DBG] requestId: 0HMNFTLC4QC0T:00000001, previousRequestId: no previous request id, message: ocelot pipeline started
+2023-01-06 15:53:10.376 +02:00 [DBG] requestId: 0HMNFTLC4QC0T:00000001, previousRequestId: no previous request id, message: Upstream url path is /
+2023-01-06 15:53:10.420 +02:00 [WRN] requestId: 0HMNFTLC4QC0T:00000001, previousRequestId: no previous request id, message: DownstreamRouteFinderMiddleware setting pipeline errors. IDownstreamRouteFinder returned Error Code: UnableToFindDownstreamRouteError Message: Failed to match Route configuration for upstream path: /, verb: GET.
+2023-01-06 15:53:10.424 +02:00 [WRN] requestId: 0HMNFTLC4QC0T:00000001, previousRequestId: no previous request id, message: Error Code: UnableToFindDownstreamRouteError Message: Failed to match Route configuration for upstream path: /, verb: GET. errors found in ResponderMiddleware. Setting error response for request path:/, request method: GET
+2023-01-06 15:53:10.428 +02:00 [DBG] requestId: 0HMNFTLC4QC0T:00000001, previousRequestId: no previous request id, message: ocelot pipeline finished
+2023-01-06 15:53:10.444 +02:00 [INF] Request finished HTTP/2 GET https://localhost:44329/ - - - 404 0 - 302.7979ms
+2023-01-06 15:53:13.237 +02:00 [ERR] Failed executing DbCommand (58ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [a].[Id], [a].[DisplayName], [a].[ExtraProperties], [a].[Name]
+FROM [AbpPermissionGroups] AS [a]
+2023-01-06 15:53:13.287 +02:00 [ERR] An exception occurred while iterating over the results of a query for context type 'Volo.Abp.PermissionManagement.EntityFrameworkCore.PermissionManagementDbContext'.
+Microsoft.Data.SqlClient.SqlException (0x80131904): Invalid object name 'AbpPermissionGroups'.
+   at Microsoft.Data.SqlClient.SqlCommand.<>c.<ExecuteDbDataReaderAsync>b__208_0(Task`1 result)
+   at System.Threading.Tasks.ContinuationResultTaskFromResultTask`2.InnerInvoke()
+   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state)
+--- End of stack trace from previous location ---
+   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state)
+   at System.Threading.Tasks.Task.ExecuteWithThreadLocal(Task& currentTaskSlot, Thread threadPoolThread)
+--- End of stack trace from previous location ---
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SplitQueryingEnumerable`1.AsyncEnumerator.InitializeReaderAsync(AsyncEnumerator enumerator, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SplitQueryingEnumerable`1.AsyncEnumerator.MoveNextAsync()
+ClientConnectionId:3ccd5942-6204-4c63-9a36-55da6d8fc0b6
+Error Number:208,State:1,Class:16
+Microsoft.Data.SqlClient.SqlException (0x80131904): Invalid object name 'AbpPermissionGroups'.
+   at Microsoft.Data.SqlClient.SqlCommand.<>c.<ExecuteDbDataReaderAsync>b__208_0(Task`1 result)
+   at System.Threading.Tasks.ContinuationResultTaskFromResultTask`2.InnerInvoke()
+   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state)
+--- End of stack trace from previous location ---
+   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state)
+   at System.Threading.Tasks.Task.ExecuteWithThreadLocal(Task& currentTaskSlot, Thread threadPoolThread)
+--- End of stack trace from previous location ---
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SplitQueryingEnumerable`1.AsyncEnumerator.InitializeReaderAsync(AsyncEnumerator enumerator, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SplitQueryingEnumerable`1.AsyncEnumerator.MoveNextAsync()
+ClientConnectionId:3ccd5942-6204-4c63-9a36-55da6d8fc0b6
+Error Number:208,State:1,Class:16
+2023-01-06 15:53:13.361 +02:00 [ERR] Invalid object name 'AbpPermissionGroups'.
+Microsoft.Data.SqlClient.SqlException (0x80131904): Invalid object name 'AbpPermissionGroups'.
+   at Microsoft.Data.SqlClient.SqlCommand.<>c.<ExecuteDbDataReaderAsync>b__208_0(Task`1 result)
+   at System.Threading.Tasks.ContinuationResultTaskFromResultTask`2.InnerInvoke()
+   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state)
+--- End of stack trace from previous location ---
+   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state)
+   at System.Threading.Tasks.Task.ExecuteWithThreadLocal(Task& currentTaskSlot, Thread threadPoolThread)
+--- End of stack trace from previous location ---
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SplitQueryingEnumerable`1.AsyncEnumerator.InitializeReaderAsync(AsyncEnumerator enumerator, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SplitQueryingEnumerable`1.AsyncEnumerator.MoveNextAsync()
+   at Microsoft.EntityFrameworkCore.EntityFrameworkQueryableExtensions.ToListAsync[TSource](IQueryable`1 source, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.EntityFrameworkQueryableExtensions.ToListAsync[TSource](IQueryable`1 source, CancellationToken cancellationToken)
+   at Volo.Abp.Domain.Repositories.EntityFrameworkCore.EfCoreRepository`2.GetListAsync(Boolean includeDetails, CancellationToken cancellationToken)
+   at Castle.DynamicProxy.AsyncInterceptorBase.ProceedAsynchronous[TResult](IInvocation invocation, IInvocationProceedInfo proceedInfo)
+   at Volo.Abp.Castle.DynamicProxy.CastleAbpMethodInvocationAdapterWithReturnValue`1.ProceedAsync()
+   at Volo.Abp.Uow.UnitOfWorkInterceptor.InterceptAsync(IAbpMethodInvocation invocation)
+   at Volo.Abp.Castle.DynamicProxy.CastleAsyncAbpInterceptorAdapter`1.InterceptAsync[TResult](IInvocation invocation, IInvocationProceedInfo proceedInfo, Func`3 proceed)
+   at Volo.Abp.PermissionManagement.StaticPermissionSaver.UpdateChangedPermissionGroupsAsync(IEnumerable`1 permissionGroupRecords)
+   at Volo.Abp.PermissionManagement.StaticPermissionSaver.SaveAsync()
+   at Volo.Abp.PermissionManagement.StaticPermissionSaver.SaveAsync()
+   at Volo.Abp.PermissionManagement.StaticPermissionSaver.SaveAsync()
+   at Castle.DynamicProxy.AsyncInterceptorBase.ProceedAsynchronous(IInvocation invocation, IInvocationProceedInfo proceedInfo)
+   at Volo.Abp.Castle.DynamicProxy.CastleAbpMethodInvocationAdapter.ProceedAsync()
+   at Volo.Abp.Uow.UnitOfWorkInterceptor.InterceptAsync(IAbpMethodInvocation invocation)
+   at Volo.Abp.Castle.DynamicProxy.CastleAsyncAbpInterceptorAdapter`1.InterceptAsync(IInvocation invocation, IInvocationProceedInfo proceedInfo, Func`3 proceed)
+   at Volo.Abp.PermissionManagement.AbpPermissionManagementDomainModule.<>c__DisplayClass6_0.<<SaveStaticPermissionsToDatabaseAsync>b__1>d.MoveNext()
+ClientConnectionId:3ccd5942-6204-4c63-9a36-55da6d8fc0b6
+Error Number:208,State:1,Class:16
+2023-01-06 15:53:13.371 +02:00 [ERR] ---------- Exception Data ----------
+HelpLink.ProdName = Microsoft SQL Server
+HelpLink.ProdVer = 15.00.2000
+HelpLink.EvtSrc = MSSQLServer
+HelpLink.EvtID = 208
+HelpLink.BaseHelpUrl = https://go.microsoft.com/fwlink
+HelpLink.LinkId = 20476
+
+2023-01-06 15:53:22.080 +02:00 [INF] Request starting HTTP/2 GET https://localhost:44329/ - -
+2023-01-06 15:53:22.095 +02:00 [DBG] AuthenticationScheme: Bearer was not authenticated.
+2023-01-06 15:53:22.107 +02:00 [DBG] requestId: 0HMNFTLC4QC0U:00000001, previousRequestId: no previous request id, message: ocelot pipeline started
+2023-01-06 15:53:22.108 +02:00 [DBG] requestId: 0HMNFTLC4QC0U:00000001, previousRequestId: no previous request id, message: Upstream url path is /
+2023-01-06 15:53:22.109 +02:00 [WRN] requestId: 0HMNFTLC4QC0U:00000001, previousRequestId: no previous request id, message: DownstreamRouteFinderMiddleware setting pipeline errors. IDownstreamRouteFinder returned Error Code: UnableToFindDownstreamRouteError Message: Failed to match Route configuration for upstream path: /, verb: GET.
+2023-01-06 15:53:22.109 +02:00 [WRN] requestId: 0HMNFTLC4QC0U:00000001, previousRequestId: no previous request id, message: Error Code: UnableToFindDownstreamRouteError Message: Failed to match Route configuration for upstream path: /, verb: GET. errors found in ResponderMiddleware. Setting error response for request path:/, request method: GET
+2023-01-06 15:53:22.110 +02:00 [DBG] requestId: 0HMNFTLC4QC0U:00000001, previousRequestId: no previous request id, message: ocelot pipeline finished
+2023-01-06 15:53:22.111 +02:00 [INF] Request finished HTTP/2 GET https://localhost:44329/ - - - 404 0 - 30.6897ms
+2023-01-06 15:53:27.398 +02:00 [INF] Request starting HTTP/2 GET https://localhost:44329/swagger/index.html - -
+2023-01-06 15:53:27.407 +02:00 [DBG] AuthenticationScheme: Bearer was not authenticated.
+2023-01-06 15:53:27.672 +02:00 [INF] Request finished HTTP/2 GET https://localhost:44329/swagger/index.html - - - 200 - text/html;charset=utf-8 273.4278ms
+2023-01-06 15:53:27.742 +02:00 [INF] Request starting HTTP/2 GET https://localhost:44329/_framework/aspnetcore-browser-refresh.js - -
+2023-01-06 15:53:27.742 +02:00 [INF] Request starting HTTP/2 GET https://localhost:44329/_vs/browserLink - -
+2023-01-06 15:53:27.751 +02:00 [INF] Request finished HTTP/2 GET https://localhost:44329/_framework/aspnetcore-browser-refresh.js - - - 200 12010 application/javascript;+charset=utf-8 9.3918ms
+2023-01-06 15:53:27.810 +02:00 [INF] Request finished HTTP/2 GET https://localhost:44329/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 67.8849ms
+2023-01-06 15:53:28.490 +02:00 [INF] Request starting HTTP/2 GET https://localhost:44329/swagger/v1/swagger.json - -
+2023-01-06 15:53:28.491 +02:00 [DBG] AuthenticationScheme: Bearer was not authenticated.
+2023-01-06 15:53:29.401 +02:00 [INF] Request finished HTTP/2 GET https://localhost:44329/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 911.1501ms
+2023-01-06 15:53:33.439 +02:00 [ERR] Failed executing DbCommand (3ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [a].[Id], [a].[DisplayName], [a].[ExtraProperties], [a].[Name]
+FROM [AbpPermissionGroups] AS [a]
+2023-01-06 15:53:33.441 +02:00 [ERR] An exception occurred while iterating over the results of a query for context type 'Volo.Abp.PermissionManagement.EntityFrameworkCore.PermissionManagementDbContext'.
+Microsoft.Data.SqlClient.SqlException (0x80131904): Invalid object name 'AbpPermissionGroups'.
+   at Microsoft.Data.SqlClient.SqlCommand.<>c.<ExecuteDbDataReaderAsync>b__208_0(Task`1 result)
+   at System.Threading.Tasks.ContinuationResultTaskFromResultTask`2.InnerInvoke()
+   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state)
+--- End of stack trace from previous location ---
+   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state)
+   at System.Threading.Tasks.Task.ExecuteWithThreadLocal(Task& currentTaskSlot, Thread threadPoolThread)
+--- End of stack trace from previous location ---
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SplitQueryingEnumerable`1.AsyncEnumerator.InitializeReaderAsync(AsyncEnumerator enumerator, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SplitQueryingEnumerable`1.AsyncEnumerator.MoveNextAsync()
+ClientConnectionId:3ccd5942-6204-4c63-9a36-55da6d8fc0b6
+Error Number:208,State:1,Class:16
+Microsoft.Data.SqlClient.SqlException (0x80131904): Invalid object name 'AbpPermissionGroups'.
+   at Microsoft.Data.SqlClient.SqlCommand.<>c.<ExecuteDbDataReaderAsync>b__208_0(Task`1 result)
+   at System.Threading.Tasks.ContinuationResultTaskFromResultTask`2.InnerInvoke()
+   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state)
+--- End of stack trace from previous location ---
+   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state)
+   at System.Threading.Tasks.Task.ExecuteWithThreadLocal(Task& currentTaskSlot, Thread threadPoolThread)
+--- End of stack trace from previous location ---
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SplitQueryingEnumerable`1.AsyncEnumerator.InitializeReaderAsync(AsyncEnumerator enumerator, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SplitQueryingEnumerable`1.AsyncEnumerator.MoveNextAsync()
+ClientConnectionId:3ccd5942-6204-4c63-9a36-55da6d8fc0b6
+Error Number:208,State:1,Class:16
+2023-01-06 15:53:33.444 +02:00 [ERR] Invalid object name 'AbpPermissionGroups'.
+Microsoft.Data.SqlClient.SqlException (0x80131904): Invalid object name 'AbpPermissionGroups'.
+   at Microsoft.Data.SqlClient.SqlCommand.<>c.<ExecuteDbDataReaderAsync>b__208_0(Task`1 result)
+   at System.Threading.Tasks.ContinuationResultTaskFromResultTask`2.InnerInvoke()
+   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state)
+--- End of stack trace from previous location ---
+   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state)
+   at System.Threading.Tasks.Task.ExecuteWithThreadLocal(Task& currentTaskSlot, Thread threadPoolThread)
+--- End of stack trace from previous location ---
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SplitQueryingEnumerable`1.AsyncEnumerator.InitializeReaderAsync(AsyncEnumerator enumerator, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SplitQueryingEnumerable`1.AsyncEnumerator.MoveNextAsync()
+   at Microsoft.EntityFrameworkCore.EntityFrameworkQueryableExtensions.ToListAsync[TSource](IQueryable`1 source, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.EntityFrameworkQueryableExtensions.ToListAsync[TSource](IQueryable`1 source, CancellationToken cancellationToken)
+   at Volo.Abp.Domain.Repositories.EntityFrameworkCore.EfCoreRepository`2.GetListAsync(Boolean includeDetails, CancellationToken cancellationToken)
+   at Castle.DynamicProxy.AsyncInterceptorBase.ProceedAsynchronous[TResult](IInvocation invocation, IInvocationProceedInfo proceedInfo)
+   at Volo.Abp.Castle.DynamicProxy.CastleAbpMethodInvocationAdapterWithReturnValue`1.ProceedAsync()
+   at Volo.Abp.Uow.UnitOfWorkInterceptor.InterceptAsync(IAbpMethodInvocation invocation)
+   at Volo.Abp.Castle.DynamicProxy.CastleAsyncAbpInterceptorAdapter`1.InterceptAsync[TResult](IInvocation invocation, IInvocationProceedInfo proceedInfo, Func`3 proceed)
+   at Volo.Abp.PermissionManagement.StaticPermissionSaver.UpdateChangedPermissionGroupsAsync(IEnumerable`1 permissionGroupRecords)
+   at Volo.Abp.PermissionManagement.StaticPermissionSaver.SaveAsync()
+   at Volo.Abp.PermissionManagement.StaticPermissionSaver.SaveAsync()
+   at Volo.Abp.PermissionManagement.StaticPermissionSaver.SaveAsync()
+   at Castle.DynamicProxy.AsyncInterceptorBase.ProceedAsynchronous(IInvocation invocation, IInvocationProceedInfo proceedInfo)
+   at Volo.Abp.Castle.DynamicProxy.CastleAbpMethodInvocationAdapter.ProceedAsync()
+   at Volo.Abp.Uow.UnitOfWorkInterceptor.InterceptAsync(IAbpMethodInvocation invocation)
+   at Volo.Abp.Castle.DynamicProxy.CastleAsyncAbpInterceptorAdapter`1.InterceptAsync(IInvocation invocation, IInvocationProceedInfo proceedInfo, Func`3 proceed)
+   at Volo.Abp.PermissionManagement.AbpPermissionManagementDomainModule.<>c__DisplayClass6_0.<<SaveStaticPermissionsToDatabaseAsync>b__1>d.MoveNext()
+ClientConnectionId:3ccd5942-6204-4c63-9a36-55da6d8fc0b6
+Error Number:208,State:1,Class:16
+2023-01-06 15:53:33.447 +02:00 [ERR] ---------- Exception Data ----------
+HelpLink.ProdName = Microsoft SQL Server
+HelpLink.ProdVer = 15.00.2000
+HelpLink.EvtSrc = MSSQLServer
+HelpLink.EvtID = 208
+HelpLink.BaseHelpUrl = https://go.microsoft.com/fwlink
+HelpLink.LinkId = 20476
+
+2023-01-06 15:54:13.644 +02:00 [ERR] Failed executing DbCommand (2ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [a].[Id], [a].[DisplayName], [a].[ExtraProperties], [a].[Name]
+FROM [AbpPermissionGroups] AS [a]
+2023-01-06 15:54:13.645 +02:00 [ERR] An exception occurred while iterating over the results of a query for context type 'Volo.Abp.PermissionManagement.EntityFrameworkCore.PermissionManagementDbContext'.
+Microsoft.Data.SqlClient.SqlException (0x80131904): Invalid object name 'AbpPermissionGroups'.
+   at Microsoft.Data.SqlClient.SqlCommand.<>c.<ExecuteDbDataReaderAsync>b__208_0(Task`1 result)
+   at System.Threading.Tasks.ContinuationResultTaskFromResultTask`2.InnerInvoke()
+   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state)
+--- End of stack trace from previous location ---
+   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state)
+   at System.Threading.Tasks.Task.ExecuteWithThreadLocal(Task& currentTaskSlot, Thread threadPoolThread)
+--- End of stack trace from previous location ---
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SplitQueryingEnumerable`1.AsyncEnumerator.InitializeReaderAsync(AsyncEnumerator enumerator, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SplitQueryingEnumerable`1.AsyncEnumerator.MoveNextAsync()
+ClientConnectionId:3ccd5942-6204-4c63-9a36-55da6d8fc0b6
+Error Number:208,State:1,Class:16
+Microsoft.Data.SqlClient.SqlException (0x80131904): Invalid object name 'AbpPermissionGroups'.
+   at Microsoft.Data.SqlClient.SqlCommand.<>c.<ExecuteDbDataReaderAsync>b__208_0(Task`1 result)
+   at System.Threading.Tasks.ContinuationResultTaskFromResultTask`2.InnerInvoke()
+   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state)
+--- End of stack trace from previous location ---
+   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state)
+   at System.Threading.Tasks.Task.ExecuteWithThreadLocal(Task& currentTaskSlot, Thread threadPoolThread)
+--- End of stack trace from previous location ---
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SplitQueryingEnumerable`1.AsyncEnumerator.InitializeReaderAsync(AsyncEnumerator enumerator, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SplitQueryingEnumerable`1.AsyncEnumerator.MoveNextAsync()
+ClientConnectionId:3ccd5942-6204-4c63-9a36-55da6d8fc0b6
+Error Number:208,State:1,Class:16
+2023-01-06 15:54:13.649 +02:00 [ERR] Invalid object name 'AbpPermissionGroups'.
+Microsoft.Data.SqlClient.SqlException (0x80131904): Invalid object name 'AbpPermissionGroups'.
+   at Microsoft.Data.SqlClient.SqlCommand.<>c.<ExecuteDbDataReaderAsync>b__208_0(Task`1 result)
+   at System.Threading.Tasks.ContinuationResultTaskFromResultTask`2.InnerInvoke()
+   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state)
+--- End of stack trace from previous location ---
+   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state)
+   at System.Threading.Tasks.Task.ExecuteWithThreadLocal(Task& currentTaskSlot, Thread threadPoolThread)
+--- End of stack trace from previous location ---
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SplitQueryingEnumerable`1.AsyncEnumerator.InitializeReaderAsync(AsyncEnumerator enumerator, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SplitQueryingEnumerable`1.AsyncEnumerator.MoveNextAsync()
+   at Microsoft.EntityFrameworkCore.EntityFrameworkQueryableExtensions.ToListAsync[TSource](IQueryable`1 source, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.EntityFrameworkQueryableExtensions.ToListAsync[TSource](IQueryable`1 source, CancellationToken cancellationToken)
+   at Volo.Abp.Domain.Repositories.EntityFrameworkCore.EfCoreRepository`2.GetListAsync(Boolean includeDetails, CancellationToken cancellationToken)
+   at Castle.DynamicProxy.AsyncInterceptorBase.ProceedAsynchronous[TResult](IInvocation invocation, IInvocationProceedInfo proceedInfo)
+   at Volo.Abp.Castle.DynamicProxy.CastleAbpMethodInvocationAdapterWithReturnValue`1.ProceedAsync()
+   at Volo.Abp.Uow.UnitOfWorkInterceptor.InterceptAsync(IAbpMethodInvocation invocation)
+   at Volo.Abp.Castle.DynamicProxy.CastleAsyncAbpInterceptorAdapter`1.InterceptAsync[TResult](IInvocation invocation, IInvocationProceedInfo proceedInfo, Func`3 proceed)
+   at Volo.Abp.PermissionManagement.StaticPermissionSaver.UpdateChangedPermissionGroupsAsync(IEnumerable`1 permissionGroupRecords)
+   at Volo.Abp.PermissionManagement.StaticPermissionSaver.SaveAsync()
+   at Volo.Abp.PermissionManagement.StaticPermissionSaver.SaveAsync()
+   at Volo.Abp.PermissionManagement.StaticPermissionSaver.SaveAsync()
+   at Castle.DynamicProxy.AsyncInterceptorBase.ProceedAsynchronous(IInvocation invocation, IInvocationProceedInfo proceedInfo)
+   at Volo.Abp.Castle.DynamicProxy.CastleAbpMethodInvocationAdapter.ProceedAsync()
+   at Volo.Abp.Uow.UnitOfWorkInterceptor.InterceptAsync(IAbpMethodInvocation invocation)
+   at Volo.Abp.Castle.DynamicProxy.CastleAsyncAbpInterceptorAdapter`1.InterceptAsync(IInvocation invocation, IInvocationProceedInfo proceedInfo, Func`3 proceed)
+   at Volo.Abp.PermissionManagement.AbpPermissionManagementDomainModule.<>c__DisplayClass6_0.<<SaveStaticPermissionsToDatabaseAsync>b__1>d.MoveNext()
+ClientConnectionId:3ccd5942-6204-4c63-9a36-55da6d8fc0b6
+Error Number:208,State:1,Class:16
+2023-01-06 15:54:13.652 +02:00 [ERR] ---------- Exception Data ----------
+HelpLink.ProdName = Microsoft SQL Server
+HelpLink.ProdVer = 15.00.2000
+HelpLink.EvtSrc = MSSQLServer
+HelpLink.EvtID = 208
+HelpLink.BaseHelpUrl = https://go.microsoft.com/fwlink
+HelpLink.LinkId = 20476
+

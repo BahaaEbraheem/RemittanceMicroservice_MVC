@@ -306,6 +306,8 @@ C:\Git\RemittanceMicroservice_MVC\microservices\IdentityService.Host\bin\Debug\n
 C:\Git\RemittanceMicroservice_MVC\microservices\IdentityService.Host\bin\Debug\net7.0\Autofac.Extensions.DependencyInjection.dll
 C:\Git\RemittanceMicroservice_MVC\microservices\IdentityService.Host\bin\Debug\net7.0\Autofac.Extras.DynamicProxy.dll
 C:\Git\RemittanceMicroservice_MVC\microservices\IdentityService.Host\bin\Debug\net7.0\AutoMapper.dll
+C:\Git\RemittanceMicroservice_MVC\microservices\IdentityService.Host\bin\Debug\net7.0\Azure.Core.dll
+C:\Git\RemittanceMicroservice_MVC\microservices\IdentityService.Host\bin\Debug\net7.0\Azure.Identity.dll
 C:\Git\RemittanceMicroservice_MVC\microservices\IdentityService.Host\bin\Debug\net7.0\Castle.Core.dll
 C:\Git\RemittanceMicroservice_MVC\microservices\IdentityService.Host\bin\Debug\net7.0\Castle.Core.AsyncInterceptor.dll
 C:\Git\RemittanceMicroservice_MVC\microservices\IdentityService.Host\bin\Debug\net7.0\Elasticsearch.Net.dll
@@ -314,6 +316,9 @@ C:\Git\RemittanceMicroservice_MVC\microservices\IdentityService.Host\bin\Debug\n
 C:\Git\RemittanceMicroservice_MVC\microservices\IdentityService.Host\bin\Debug\net7.0\IdentityServer4.AccessTokenValidation.dll
 C:\Git\RemittanceMicroservice_MVC\microservices\IdentityService.Host\bin\Debug\net7.0\JetBrains.Annotations.dll
 C:\Git\RemittanceMicroservice_MVC\microservices\IdentityService.Host\bin\Debug\net7.0\Microsoft.AspNetCore.Authentication.JwtBearer.dll
+C:\Git\RemittanceMicroservice_MVC\microservices\IdentityService.Host\bin\Debug\net7.0\Microsoft.AspNetCore.Cryptography.Internal.dll
+C:\Git\RemittanceMicroservice_MVC\microservices\IdentityService.Host\bin\Debug\net7.0\Microsoft.AspNetCore.DataProtection.dll
+C:\Git\RemittanceMicroservice_MVC\microservices\IdentityService.Host\bin\Debug\net7.0\Microsoft.AspNetCore.DataProtection.Abstractions.dll
 C:\Git\RemittanceMicroservice_MVC\microservices\IdentityService.Host\bin\Debug\net7.0\Microsoft.AspNetCore.DataProtection.StackExchangeRedis.dll
 C:\Git\RemittanceMicroservice_MVC\microservices\IdentityService.Host\bin\Debug\net7.0\Microsoft.AspNetCore.Mvc.Razor.Extensions.dll
 C:\Git\RemittanceMicroservice_MVC\microservices\IdentityService.Host\bin\Debug\net7.0\Microsoft.AspNetCore.Mvc.Razor.RuntimeCompilation.dll
@@ -331,12 +336,15 @@ C:\Git\RemittanceMicroservice_MVC\microservices\IdentityService.Host\bin\Debug\n
 C:\Git\RemittanceMicroservice_MVC\microservices\IdentityService.Host\bin\Debug\net7.0\Microsoft.Extensions.Caching.StackExchangeRedis.dll
 C:\Git\RemittanceMicroservice_MVC\microservices\IdentityService.Host\bin\Debug\net7.0\Microsoft.Extensions.DependencyModel.dll
 C:\Git\RemittanceMicroservice_MVC\microservices\IdentityService.Host\bin\Debug\net7.0\Microsoft.Identity.Client.dll
+C:\Git\RemittanceMicroservice_MVC\microservices\IdentityService.Host\bin\Debug\net7.0\Microsoft.Identity.Client.Extensions.Msal.dll
+C:\Git\RemittanceMicroservice_MVC\microservices\IdentityService.Host\bin\Debug\net7.0\Microsoft.IdentityModel.Abstractions.dll
 C:\Git\RemittanceMicroservice_MVC\microservices\IdentityService.Host\bin\Debug\net7.0\Microsoft.IdentityModel.JsonWebTokens.dll
 C:\Git\RemittanceMicroservice_MVC\microservices\IdentityService.Host\bin\Debug\net7.0\Microsoft.IdentityModel.Logging.dll
 C:\Git\RemittanceMicroservice_MVC\microservices\IdentityService.Host\bin\Debug\net7.0\Microsoft.IdentityModel.Protocols.dll
 C:\Git\RemittanceMicroservice_MVC\microservices\IdentityService.Host\bin\Debug\net7.0\Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
 C:\Git\RemittanceMicroservice_MVC\microservices\IdentityService.Host\bin\Debug\net7.0\Microsoft.IdentityModel.Tokens.dll
 C:\Git\RemittanceMicroservice_MVC\microservices\IdentityService.Host\bin\Debug\net7.0\Microsoft.OpenApi.dll
+C:\Git\RemittanceMicroservice_MVC\microservices\IdentityService.Host\bin\Debug\net7.0\Microsoft.SqlServer.Server.dll
 C:\Git\RemittanceMicroservice_MVC\microservices\IdentityService.Host\bin\Debug\net7.0\Microsoft.Win32.SystemEvents.dll
 C:\Git\RemittanceMicroservice_MVC\microservices\IdentityService.Host\bin\Debug\net7.0\Newtonsoft.Json.dll
 C:\Git\RemittanceMicroservice_MVC\microservices\IdentityService.Host\bin\Debug\net7.0\Nito.AsyncEx.Context.dll
@@ -346,6 +354,7 @@ C:\Git\RemittanceMicroservice_MVC\microservices\IdentityService.Host\bin\Debug\n
 C:\Git\RemittanceMicroservice_MVC\microservices\IdentityService.Host\bin\Debug\net7.0\Nito.Disposables.dll
 C:\Git\RemittanceMicroservice_MVC\microservices\IdentityService.Host\bin\Debug\net7.0\NUglify.dll
 C:\Git\RemittanceMicroservice_MVC\microservices\IdentityService.Host\bin\Debug\net7.0\Pipelines.Sockets.Unofficial.dll
+C:\Git\RemittanceMicroservice_MVC\microservices\IdentityService.Host\bin\Debug\net7.0\Polly.dll
 C:\Git\RemittanceMicroservice_MVC\microservices\IdentityService.Host\bin\Debug\net7.0\RabbitMQ.Client.dll
 C:\Git\RemittanceMicroservice_MVC\microservices\IdentityService.Host\bin\Debug\net7.0\Serilog.dll
 C:\Git\RemittanceMicroservice_MVC\microservices\IdentityService.Host\bin\Debug\net7.0\Serilog.AspNetCore.dll
@@ -368,6 +377,7 @@ C:\Git\RemittanceMicroservice_MVC\microservices\IdentityService.Host\bin\Debug\n
 C:\Git\RemittanceMicroservice_MVC\microservices\IdentityService.Host\bin\Debug\net7.0\System.Drawing.Common.dll
 C:\Git\RemittanceMicroservice_MVC\microservices\IdentityService.Host\bin\Debug\net7.0\System.IdentityModel.Tokens.Jwt.dll
 C:\Git\RemittanceMicroservice_MVC\microservices\IdentityService.Host\bin\Debug\net7.0\System.Linq.Dynamic.Core.dll
+C:\Git\RemittanceMicroservice_MVC\microservices\IdentityService.Host\bin\Debug\net7.0\System.Memory.Data.dll
 C:\Git\RemittanceMicroservice_MVC\microservices\IdentityService.Host\bin\Debug\net7.0\System.Runtime.Caching.dll
 C:\Git\RemittanceMicroservice_MVC\microservices\IdentityService.Host\bin\Debug\net7.0\System.Security.Cryptography.ProtectedData.dll
 C:\Git\RemittanceMicroservice_MVC\microservices\IdentityService.Host\bin\Debug\net7.0\System.Security.Permissions.dll
@@ -414,6 +424,8 @@ C:\Git\RemittanceMicroservice_MVC\microservices\IdentityService.Host\bin\Debug\n
 C:\Git\RemittanceMicroservice_MVC\microservices\IdentityService.Host\bin\Debug\net7.0\Volo.Abp.Identity.EntityFrameworkCore.dll
 C:\Git\RemittanceMicroservice_MVC\microservices\IdentityService.Host\bin\Debug\net7.0\Volo.Abp.Identity.HttpApi.dll
 C:\Git\RemittanceMicroservice_MVC\microservices\IdentityService.Host\bin\Debug\net7.0\Volo.Abp.Json.dll
+C:\Git\RemittanceMicroservice_MVC\microservices\IdentityService.Host\bin\Debug\net7.0\Volo.Abp.Json.Abstractions.dll
+C:\Git\RemittanceMicroservice_MVC\microservices\IdentityService.Host\bin\Debug\net7.0\Volo.Abp.Json.SystemTextJson.dll
 C:\Git\RemittanceMicroservice_MVC\microservices\IdentityService.Host\bin\Debug\net7.0\Volo.Abp.Localization.dll
 C:\Git\RemittanceMicroservice_MVC\microservices\IdentityService.Host\bin\Debug\net7.0\Volo.Abp.Localization.Abstractions.dll
 C:\Git\RemittanceMicroservice_MVC\microservices\IdentityService.Host\bin\Debug\net7.0\Volo.Abp.Minify.dll
@@ -512,15 +524,3 @@ C:\Git\RemittanceMicroservice_MVC\microservices\IdentityService.Host\obj\Debug\n
 C:\Git\RemittanceMicroservice_MVC\microservices\IdentityService.Host\obj\Debug\net7.0\IdentityService.Host.pdb
 C:\Git\RemittanceMicroservice_MVC\microservices\IdentityService.Host\obj\Debug\net7.0\IdentityService.Host.genruntimeconfig.cache
 C:\Git\RemittanceMicroservice_MVC\microservices\IdentityService.Host\obj\Debug\net7.0\ref\IdentityService.Host.dll
-C:\Git\RemittanceMicroservice_MVC\microservices\IdentityService.Host\bin\Debug\net7.0\Azure.Core.dll
-C:\Git\RemittanceMicroservice_MVC\microservices\IdentityService.Host\bin\Debug\net7.0\Azure.Identity.dll
-C:\Git\RemittanceMicroservice_MVC\microservices\IdentityService.Host\bin\Debug\net7.0\Microsoft.AspNetCore.Cryptography.Internal.dll
-C:\Git\RemittanceMicroservice_MVC\microservices\IdentityService.Host\bin\Debug\net7.0\Microsoft.AspNetCore.DataProtection.dll
-C:\Git\RemittanceMicroservice_MVC\microservices\IdentityService.Host\bin\Debug\net7.0\Microsoft.AspNetCore.DataProtection.Abstractions.dll
-C:\Git\RemittanceMicroservice_MVC\microservices\IdentityService.Host\bin\Debug\net7.0\Microsoft.Identity.Client.Extensions.Msal.dll
-C:\Git\RemittanceMicroservice_MVC\microservices\IdentityService.Host\bin\Debug\net7.0\Microsoft.IdentityModel.Abstractions.dll
-C:\Git\RemittanceMicroservice_MVC\microservices\IdentityService.Host\bin\Debug\net7.0\Microsoft.SqlServer.Server.dll
-C:\Git\RemittanceMicroservice_MVC\microservices\IdentityService.Host\bin\Debug\net7.0\Polly.dll
-C:\Git\RemittanceMicroservice_MVC\microservices\IdentityService.Host\bin\Debug\net7.0\System.Memory.Data.dll
-C:\Git\RemittanceMicroservice_MVC\microservices\IdentityService.Host\bin\Debug\net7.0\Volo.Abp.Json.Abstractions.dll
-C:\Git\RemittanceMicroservice_MVC\microservices\IdentityService.Host\bin\Debug\net7.0\Volo.Abp.Json.SystemTextJson.dll

@@ -11,16 +11,3 @@ C:\Users\Admin\Source\Repos\RemittanceMicroservice_MVC\modules\product\src\Produ
 C:\Users\Admin\Source\Repos\RemittanceMicroservice_MVC\modules\product\src\ProductManagement.Application.Contracts\obj\Debug\netstandard2.0\ProductManagement.Application.Contracts.csproj.CopyComplete
 C:\Users\Admin\Source\Repos\RemittanceMicroservice_MVC\modules\product\src\ProductManagement.Application.Contracts\obj\Debug\netstandard2.0\ProductManagement.Application.Contracts.dll
 C:\Users\Admin\Source\Repos\RemittanceMicroservice_MVC\modules\product\src\ProductManagement.Application.Contracts\obj\Debug\netstandard2.0\ProductManagement.Application.Contracts.pdb
-C:\Git\RemittanceMicroservice_MVC\modules\product\src\ProductManagement.Application.Contracts\bin\Debug\netstandard2.0\ProductManagement.Application.Contracts.deps.json
-C:\Git\RemittanceMicroservice_MVC\modules\product\src\ProductManagement.Application.Contracts\bin\Debug\netstandard2.0\ProductManagement.Application.Contracts.dll
-C:\Git\RemittanceMicroservice_MVC\modules\product\src\ProductManagement.Application.Contracts\bin\Debug\netstandard2.0\ProductManagement.Application.Contracts.pdb
-C:\Git\RemittanceMicroservice_MVC\modules\product\src\ProductManagement.Application.Contracts\bin\Debug\netstandard2.0\ProductManagement.Domain.Shared.dll
-C:\Git\RemittanceMicroservice_MVC\modules\product\src\ProductManagement.Application.Contracts\bin\Debug\netstandard2.0\ProductManagement.Domain.Shared.pdb
-C:\Git\RemittanceMicroservice_MVC\modules\product\src\ProductManagement.Application.Contracts\obj\Debug\netstandard2.0\ProductManagement.Application.Contracts.csproj.AssemblyReference.cache
-C:\Git\RemittanceMicroservice_MVC\modules\product\src\ProductManagement.Application.Contracts\obj\Debug\netstandard2.0\ProductManagement.Application.Contracts.GeneratedMSBuildEditorConfig.editorconfig
-C:\Git\RemittanceMicroservice_MVC\modules\product\src\ProductManagement.Application.Contracts\obj\Debug\netstandard2.0\ProductManagement.Application.Contracts.AssemblyInfoInputs.cache
-C:\Git\RemittanceMicroservice_MVC\modules\product\src\ProductManagement.Application.Contracts\obj\Debug\netstandard2.0\ProductManagement.Application.Contracts.AssemblyInfo.cs
-C:\Git\RemittanceMicroservice_MVC\modules\product\src\ProductManagement.Application.Contracts\obj\Debug\netstandard2.0\ProductManagement.Application.Contracts.csproj.CoreCompileInputs.cache
-C:\Git\RemittanceMicroservice_MVC\modules\product\src\ProductManagement.Application.Contracts\obj\Debug\netstandard2.0\ProductManagement.Application.Contracts.csproj.CopyComplete
-C:\Git\RemittanceMicroservice_MVC\modules\product\src\ProductManagement.Application.Contracts\obj\Debug\netstandard2.0\ProductManagement.Application.Contracts.dll
-C:\Git\RemittanceMicroservice_MVC\modules\product\src\ProductManagement.Application.Contracts\obj\Debug\netstandard2.0\ProductManagement.Application.Contracts.pdb
