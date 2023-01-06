@@ -3,7 +3,7 @@
   <Import Project="..\..\common.props" />
 
   <PropertyGroup>
-    <TargetFramework>net6.0</TargetFramework>
+    <TargetFramework>net7.0</TargetFramework>
     <RootNamespace>CustomerManagement</RootNamespace>
     <PreserveCompilationReferences>true</PreserveCompilationReferences>
     <UserSecretsId>CustomerManagement-c2d31439-b723-48e2-b061-5ebd7aeb6010</UserSecretsId>
@@ -37,7 +37,7 @@
     <ProjectReference Include="..\..\src\CustomerManagement.HttpApi\CustomerManagement.HttpApi.csproj" />
     <ProjectReference Include="..\..\src\CustomerManagement.Application\CustomerManagement.Application.csproj" />
     <ProjectReference Include="..\..\src\CustomerManagement.EntityFrameworkCore\CustomerManagement.EntityFrameworkCore.csproj" />
-    <ProjectReference Include="..\CustomerManagement.Host.Shared\CustomerManagement.Host.Shared.csproj" />
+  <!--<ProjectReference Include="..\CustomerManagement.Host.Shared\CustomerManagement.Host.Shared.csproj" /> -->  
   </ItemGroup>
 
   <ItemGroup>

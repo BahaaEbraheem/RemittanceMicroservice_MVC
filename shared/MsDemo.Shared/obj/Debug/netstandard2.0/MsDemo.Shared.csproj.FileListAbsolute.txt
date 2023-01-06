@@ -1,0 +1,10 @@
+C:\Git\RemittanceMicroservice_MVC\shared\MsDemo.Shared\bin\Debug\netstandard2.0\MsDemo.Shared.deps.json
+C:\Git\RemittanceMicroservice_MVC\shared\MsDemo.Shared\bin\Debug\netstandard2.0\MsDemo.Shared.dll
+C:\Git\RemittanceMicroservice_MVC\shared\MsDemo.Shared\bin\Debug\netstandard2.0\MsDemo.Shared.pdb
+C:\Git\RemittanceMicroservice_MVC\shared\MsDemo.Shared\obj\Debug\netstandard2.0\MsDemo.Shared.csproj.AssemblyReference.cache
+C:\Git\RemittanceMicroservice_MVC\shared\MsDemo.Shared\obj\Debug\netstandard2.0\MsDemo.Shared.GeneratedMSBuildEditorConfig.editorconfig
+C:\Git\RemittanceMicroservice_MVC\shared\MsDemo.Shared\obj\Debug\netstandard2.0\MsDemo.Shared.AssemblyInfoInputs.cache
+C:\Git\RemittanceMicroservice_MVC\shared\MsDemo.Shared\obj\Debug\netstandard2.0\MsDemo.Shared.AssemblyInfo.cs
+C:\Git\RemittanceMicroservice_MVC\shared\MsDemo.Shared\obj\Debug\netstandard2.0\MsDemo.Shared.csproj.CoreCompileInputs.cache
+C:\Git\RemittanceMicroservice_MVC\shared\MsDemo.Shared\obj\Debug\netstandard2.0\MsDemo.Shared.dll
+C:\Git\RemittanceMicroservice_MVC\shared\MsDemo.Shared\obj\Debug\netstandard2.0\MsDemo.Shared.pdb

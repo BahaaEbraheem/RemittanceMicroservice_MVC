@@ -8,3 +8,13 @@ C:\Users\Admin\Source\Repos\RemittanceMicroservice_MVC\modules\product\src\Produ
 C:\Users\Admin\Source\Repos\RemittanceMicroservice_MVC\modules\product\src\ProductManagement.Domain.Shared\obj\Debug\netstandard2.0\ProductManagement.Domain.Shared.csproj.CoreCompileInputs.cache
 C:\Users\Admin\Source\Repos\RemittanceMicroservice_MVC\modules\product\src\ProductManagement.Domain.Shared\obj\Debug\netstandard2.0\ProductManagement.Domain.Shared.dll
 C:\Users\Admin\Source\Repos\RemittanceMicroservice_MVC\modules\product\src\ProductManagement.Domain.Shared\obj\Debug\netstandard2.0\ProductManagement.Domain.Shared.pdb
+C:\Git\RemittanceMicroservice_MVC\modules\product\src\ProductManagement.Domain.Shared\bin\Debug\netstandard2.0\ProductManagement.Domain.Shared.deps.json
+C:\Git\RemittanceMicroservice_MVC\modules\product\src\ProductManagement.Domain.Shared\bin\Debug\netstandard2.0\ProductManagement.Domain.Shared.dll
+C:\Git\RemittanceMicroservice_MVC\modules\product\src\ProductManagement.Domain.Shared\bin\Debug\netstandard2.0\ProductManagement.Domain.Shared.pdb
+C:\Git\RemittanceMicroservice_MVC\modules\product\src\ProductManagement.Domain.Shared\obj\Debug\netstandard2.0\ProductManagement.Domain.Shared.csproj.AssemblyReference.cache
+C:\Git\RemittanceMicroservice_MVC\modules\product\src\ProductManagement.Domain.Shared\obj\Debug\netstandard2.0\ProductManagement.Domain.Shared.GeneratedMSBuildEditorConfig.editorconfig
+C:\Git\RemittanceMicroservice_MVC\modules\product\src\ProductManagement.Domain.Shared\obj\Debug\netstandard2.0\ProductManagement.Domain.Shared.AssemblyInfoInputs.cache
+C:\Git\RemittanceMicroservice_MVC\modules\product\src\ProductManagement.Domain.Shared\obj\Debug\netstandard2.0\ProductManagement.Domain.Shared.AssemblyInfo.cs
+C:\Git\RemittanceMicroservice_MVC\modules\product\src\ProductManagement.Domain.Shared\obj\Debug\netstandard2.0\ProductManagement.Domain.Shared.csproj.CoreCompileInputs.cache
+C:\Git\RemittanceMicroservice_MVC\modules\product\src\ProductManagement.Domain.Shared\obj\Debug\netstandard2.0\ProductManagement.Domain.Shared.dll
+C:\Git\RemittanceMicroservice_MVC\modules\product\src\ProductManagement.Domain.Shared\obj\Debug\netstandard2.0\ProductManagement.Domain.Shared.pdb

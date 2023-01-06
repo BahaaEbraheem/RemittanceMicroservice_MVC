@@ -3,7 +3,7 @@
   <Import Project="..\..\common.props" />
 
   <PropertyGroup>
-    <TargetFramework>net6.0</TargetFramework>
+    <TargetFramework>net7.0</TargetFramework>
     <RootNamespace>RemittanceManagement</RootNamespace>
     <PreserveCompilationReferences>true</PreserveCompilationReferences>
     <UserSecretsId>RemittanceManagement-c2d31439-b723-48e2-b061-5ebd7aeb6010</UserSecretsId>
@@ -43,7 +43,7 @@
     <ProjectReference Include="..\..\src\RemittanceManagement.HttpApi\RemittanceManagement.HttpApi.csproj" />
     <ProjectReference Include="..\..\src\RemittanceManagement.Application\RemittanceManagement.Application.csproj" />
     <ProjectReference Include="..\..\src\RemittanceManagement.EntityFrameworkCore\RemittanceManagement.EntityFrameworkCore.csproj" />
-    <ProjectReference Include="..\RemittanceManagement.Host.Shared\RemittanceManagement.Host.Shared.csproj" />
+   <!--<ProjectReference Include="..\RemittanceManagement.Host.Shared\RemittanceManagement.Host.Shared.csproj" />--> 
   </ItemGroup>
 
   <ItemGroup>

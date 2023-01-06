@@ -1,7 +1,7 @@
 {
   "version": 3,
   "targets": {
-    "net6.0": {
+    "net7.0": {
       "Autofac/6.3.0": {
         "type": "package",
         "dependencies": {
@@ -4998,7 +4998,7 @@
       },
       "CurrencyManagment.HttpApi/0.1.0": {
         "type": "project",
-        "framework": ".NETCoreApp,Version=v6.0",
+        "framework": ".NETCoreApp,Version=v7.0",
         "dependencies": {
           "CurrencyManagment.Application.Contracts": "0.1.0",
           "Volo.Abp.AspNetCore.Mvc": "6.0.2"
@@ -5041,7 +5041,7 @@
       },
       "CustomerManagement.HttpApi/0.1.0": {
         "type": "project",
-        "framework": ".NETCoreApp,Version=v6.0",
+        "framework": ".NETCoreApp,Version=v7.0",
         "dependencies": {
           "CustomerManagement.Application.Contracts": "0.1.0",
           "Volo.Abp.AspNetCore.Mvc": "6.0.1"
@@ -5055,7 +5055,7 @@
       },
       "MsDemo.Shared/1.0.0": {
         "type": "project",
-        "framework": ".NETCoreApp,Version=v6.0",
+        "framework": ".NETStandard,Version=v2.0",
         "compile": {
           "bin/placeholder/MsDemo.Shared.dll": {}
         },
@@ -5093,7 +5093,7 @@
       },
       "ProductManagement.HttpApi/1.0.0": {
         "type": "project",
-        "framework": ".NETCoreApp,Version=v6.0",
+        "framework": ".NETCoreApp,Version=v7.0",
         "dependencies": {
           "ProductManagement.Application.Contracts": "1.0.0",
           "Volo.Abp.AspNetCore.Mvc": "6.0.2"
@@ -5153,7 +5153,7 @@
       },
       "RemittanceManagement.HttpApi/0.1.0": {
         "type": "project",
-        "framework": ".NETCoreApp,Version=v6.0",
+        "framework": ".NETCoreApp,Version=v7.0",
         "dependencies": {
           "RemittanceManagement.Application.Contracts": "0.1.0",
           "Volo.Abp.AspNetCore.Mvc": "6.0.2"
@@ -13057,7 +13057,7 @@
     }
   },
   "projectFileDependencyGroups": {
-    "net6.0": [
+    "net7.0": [
       "CurrencyManagment.HttpApi >= 0.1.0",
       "CustomerManagement.HttpApi >= 0.1.0",
       "IdentityServer4.AccessTokenValidation >= 3.0.1",
@@ -13081,54 +13081,51 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\Admin\\.nuget\\packages\\": {},
-    "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {},
-    "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder": {}
+    "C:\\Users\\Administrator\\.nuget\\packages\\": {},
+    "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Admin\\Source\\Repos\\RemittanceMicroservice_MVC\\gateways\\PublicWebSiteGateway.Host\\PublicWebSiteGateway.Host.csproj",
+      "projectUniqueName": "C:\\Git\\RemittanceMicroservice_MVC\\gateways\\PublicWebSiteGateway.Host\\PublicWebSiteGateway.Host.csproj",
       "projectName": "PublicWebSiteGateway.Host",
-      "projectPath": "C:\\Users\\Admin\\Source\\Repos\\RemittanceMicroservice_MVC\\gateways\\PublicWebSiteGateway.Host\\PublicWebSiteGateway.Host.csproj",
-      "packagesPath": "C:\\Users\\Admin\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Admin\\Source\\Repos\\RemittanceMicroservice_MVC\\gateways\\PublicWebSiteGateway.Host\\obj\\",
+      "projectPath": "C:\\Git\\RemittanceMicroservice_MVC\\gateways\\PublicWebSiteGateway.Host\\PublicWebSiteGateway.Host.csproj",
+      "packagesPath": "C:\\Users\\Administrator\\.nuget\\packages\\",
+      "outputPath": "C:\\Git\\RemittanceMicroservice_MVC\\gateways\\PublicWebSiteGateway.Host\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
-        "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages",
-        "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+        "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
       ],
       "configFilePaths": [
-        "C:\\Users\\Admin\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\Administrator\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
-        "net6.0"
+        "net7.0"
       ],
       "sources": {
         "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-        "C:\\Program Files\\dotnet\\library-packs": {},
         "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {
-        "net6.0": {
-          "targetAlias": "net6.0",
+        "net7.0": {
+          "targetAlias": "net7.0",
           "projectReferences": {
-            "C:\\Users\\Admin\\Source\\Repos\\RemittanceMicroservice_MVC\\modules\\currency\\src\\CurrencyManagment.HttpApi\\CurrencyManagment.HttpApi.csproj": {
-              "projectPath": "C:\\Users\\Admin\\Source\\Repos\\RemittanceMicroservice_MVC\\modules\\currency\\src\\CurrencyManagment.HttpApi\\CurrencyManagment.HttpApi.csproj"
+            "C:\\Git\\RemittanceMicroservice_MVC\\modules\\currency\\src\\CurrencyManagment.HttpApi\\CurrencyManagment.HttpApi.csproj": {
+              "projectPath": "C:\\Git\\RemittanceMicroservice_MVC\\modules\\currency\\src\\CurrencyManagment.HttpApi\\CurrencyManagment.HttpApi.csproj"
             },
-            "C:\\Users\\Admin\\Source\\Repos\\RemittanceMicroservice_MVC\\modules\\customer\\src\\CustomerManagement.HttpApi\\CustomerManagement.HttpApi.csproj": {
-              "projectPath": "C:\\Users\\Admin\\Source\\Repos\\RemittanceMicroservice_MVC\\modules\\customer\\src\\CustomerManagement.HttpApi\\CustomerManagement.HttpApi.csproj"
+            "C:\\Git\\RemittanceMicroservice_MVC\\modules\\customer\\src\\CustomerManagement.HttpApi\\CustomerManagement.HttpApi.csproj": {
+              "projectPath": "C:\\Git\\RemittanceMicroservice_MVC\\modules\\customer\\src\\CustomerManagement.HttpApi\\CustomerManagement.HttpApi.csproj"
             },
-            "C:\\Users\\Admin\\Source\\Repos\\RemittanceMicroservice_MVC\\modules\\product\\src\\ProductManagement.HttpApi\\ProductManagement.HttpApi.csproj": {
-              "projectPath": "C:\\Users\\Admin\\Source\\Repos\\RemittanceMicroservice_MVC\\modules\\product\\src\\ProductManagement.HttpApi\\ProductManagement.HttpApi.csproj"
+            "C:\\Git\\RemittanceMicroservice_MVC\\modules\\product\\src\\ProductManagement.HttpApi\\ProductManagement.HttpApi.csproj": {
+              "projectPath": "C:\\Git\\RemittanceMicroservice_MVC\\modules\\product\\src\\ProductManagement.HttpApi\\ProductManagement.HttpApi.csproj"
             },
-            "C:\\Users\\Admin\\Source\\Repos\\RemittanceMicroservice_MVC\\modules\\remittance\\src\\RemittanceManagement.HttpApi\\RemittanceManagement.HttpApi.csproj": {
-              "projectPath": "C:\\Users\\Admin\\Source\\Repos\\RemittanceMicroservice_MVC\\modules\\remittance\\src\\RemittanceManagement.HttpApi\\RemittanceManagement.HttpApi.csproj"
+            "C:\\Git\\RemittanceMicroservice_MVC\\modules\\remittance\\src\\RemittanceManagement.HttpApi\\RemittanceManagement.HttpApi.csproj": {
+              "projectPath": "C:\\Git\\RemittanceMicroservice_MVC\\modules\\remittance\\src\\RemittanceManagement.HttpApi\\RemittanceManagement.HttpApi.csproj"
             },
-            "C:\\Users\\Admin\\Source\\Repos\\RemittanceMicroservice_MVC\\shared\\MsDemo.Shared\\MsDemo.Shared.csproj": {
-              "projectPath": "C:\\Users\\Admin\\Source\\Repos\\RemittanceMicroservice_MVC\\shared\\MsDemo.Shared\\MsDemo.Shared.csproj"
+            "C:\\Git\\RemittanceMicroservice_MVC\\shared\\MsDemo.Shared\\MsDemo.Shared.csproj": {
+              "projectPath": "C:\\Git\\RemittanceMicroservice_MVC\\shared\\MsDemo.Shared\\MsDemo.Shared.csproj"
             }
           }
         }
@@ -13140,8 +13137,8 @@
       }
     },
     "frameworks": {
-      "net6.0": {
-        "targetAlias": "net6.0",
+      "net7.0": {
+        "targetAlias": "net7.0",
         "dependencies": {
           "IdentityServer4.AccessTokenValidation": {
             "target": "Package",
@@ -13224,7 +13221,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.100-rc.1.22431.12\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.101\\RuntimeIdentifierGraph.json"
       }
     }
   }
