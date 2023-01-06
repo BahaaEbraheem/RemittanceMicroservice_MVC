@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
 using System.Text;
-using static RemittanceManagement.Enums.Enums;
+using static MsDemo.Shared.Enums.Enums;
 
 namespace RemittanceManagement.Status.Dtos
 {

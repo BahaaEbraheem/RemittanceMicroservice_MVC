@@ -1,4 +1,4 @@
-﻿using RemittanceManagement.Remittances.Dtos;
+﻿using MsDemo.Shared.Dtos;
 using System;
 using System.Collections.Generic;
 using System.Text;

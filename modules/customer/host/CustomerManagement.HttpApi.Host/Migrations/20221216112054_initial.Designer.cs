@@ -14,7 +14,9 @@ namespace CustomerManagement.Migrations
 {
     [DbContext(typeof(CustomerManagementHttpApiHostMigrationsDbContext))]
     [Migration("20221216112054_initial")]
+#pragma warning disable CS8981 // The type name only contains lower-cased ascii characters. Such names may become reserved for the language.
     partial class initial
+#pragma warning restore CS8981 // The type name only contains lower-cased ascii characters. Such names may become reserved for the language.
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {

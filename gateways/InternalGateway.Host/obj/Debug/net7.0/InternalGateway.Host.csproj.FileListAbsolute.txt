@@ -363,7 +363,6 @@ C:\Git\RemittanceMicroservice_MVC\gateways\InternalGateway.Host\bin\Debug\net7.0
 C:\Git\RemittanceMicroservice_MVC\gateways\InternalGateway.Host\bin\Debug\net7.0\Serilog.Sinks.Elasticsearch.dll
 C:\Git\RemittanceMicroservice_MVC\gateways\InternalGateway.Host\bin\Debug\net7.0\Serilog.Sinks.File.dll
 C:\Git\RemittanceMicroservice_MVC\gateways\InternalGateway.Host\bin\Debug\net7.0\Serilog.Sinks.PeriodicBatching.dll
-C:\Git\RemittanceMicroservice_MVC\gateways\InternalGateway.Host\bin\Debug\net7.0\Serilog.Sinks.RollingFile.dll
 C:\Git\RemittanceMicroservice_MVC\gateways\InternalGateway.Host\bin\Debug\net7.0\StackExchange.Redis.dll
 C:\Git\RemittanceMicroservice_MVC\gateways\InternalGateway.Host\bin\Debug\net7.0\Swashbuckle.AspNetCore.Swagger.dll
 C:\Git\RemittanceMicroservice_MVC\gateways\InternalGateway.Host\bin\Debug\net7.0\Swashbuckle.AspNetCore.SwaggerGen.dll
@@ -546,3 +545,17 @@ C:\Git\RemittanceMicroservice_MVC\gateways\InternalGateway.Host\obj\Debug\net7.0
 C:\Git\RemittanceMicroservice_MVC\gateways\InternalGateway.Host\obj\Debug\net7.0\InternalGateway.Host.pdb
 C:\Git\RemittanceMicroservice_MVC\gateways\InternalGateway.Host\obj\Debug\net7.0\InternalGateway.Host.genruntimeconfig.cache
 C:\Git\RemittanceMicroservice_MVC\gateways\InternalGateway.Host\obj\Debug\net7.0\ref\InternalGateway.Host.dll
+C:\Git\RemittanceMicroservice_MVC\gateways\InternalGateway.Host\bin\Debug\net7.0\Azure.Core.dll
+C:\Git\RemittanceMicroservice_MVC\gateways\InternalGateway.Host\bin\Debug\net7.0\Azure.Identity.dll
+C:\Git\RemittanceMicroservice_MVC\gateways\InternalGateway.Host\bin\Debug\net7.0\Microsoft.AspNetCore.Cryptography.Internal.dll
+C:\Git\RemittanceMicroservice_MVC\gateways\InternalGateway.Host\bin\Debug\net7.0\Microsoft.AspNetCore.DataProtection.dll
+C:\Git\RemittanceMicroservice_MVC\gateways\InternalGateway.Host\bin\Debug\net7.0\Microsoft.AspNetCore.DataProtection.Abstractions.dll
+C:\Git\RemittanceMicroservice_MVC\gateways\InternalGateway.Host\bin\Debug\net7.0\Microsoft.Extensions.FileProviders.Embedded.dll
+C:\Git\RemittanceMicroservice_MVC\gateways\InternalGateway.Host\bin\Debug\net7.0\Microsoft.Identity.Client.Extensions.Msal.dll
+C:\Git\RemittanceMicroservice_MVC\gateways\InternalGateway.Host\bin\Debug\net7.0\Microsoft.IdentityModel.Abstractions.dll
+C:\Git\RemittanceMicroservice_MVC\gateways\InternalGateway.Host\bin\Debug\net7.0\Microsoft.SqlServer.Server.dll
+C:\Git\RemittanceMicroservice_MVC\gateways\InternalGateway.Host\bin\Debug\net7.0\Polly.dll
+C:\Git\RemittanceMicroservice_MVC\gateways\InternalGateway.Host\bin\Debug\net7.0\Serilog.Formatting.Elasticsearch.dll
+C:\Git\RemittanceMicroservice_MVC\gateways\InternalGateway.Host\bin\Debug\net7.0\System.Memory.Data.dll
+C:\Git\RemittanceMicroservice_MVC\gateways\InternalGateway.Host\bin\Debug\net7.0\Volo.Abp.Json.Abstractions.dll
+C:\Git\RemittanceMicroservice_MVC\gateways\InternalGateway.Host\bin\Debug\net7.0\Volo.Abp.Json.SystemTextJson.dll

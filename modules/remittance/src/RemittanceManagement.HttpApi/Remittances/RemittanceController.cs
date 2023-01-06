@@ -3,7 +3,7 @@ using System.Threading.Tasks;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using RemittanceManagement.Remittances;
-using RemittanceManagement.Remittances.Dtos;
+using MsDemo.Shared.Dtos;
 using Volo.Abp;
 using Volo.Abp.Application.Dtos;
 

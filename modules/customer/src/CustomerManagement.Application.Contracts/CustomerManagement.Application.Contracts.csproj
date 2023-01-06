@@ -8,9 +8,18 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <PackageReference Include="Volo.Abp.Ddd.Application.Contracts" Version="6.0.1" />
-    <PackageReference Include="Volo.Abp.Authorization" Version="6.0.1" />
+    <PackageReference Include="Volo.Abp.Ddd.Application.Contracts" Version="7.0.0" />
+    <PackageReference Include="Volo.Abp.Authorization" Version="7.0.0" />
+    <ProjectReference Include="..\..\..\..\shared\MsDemo.Shared\MsDemo.Shared.csproj" />
     <ProjectReference Include="..\CustomerManagement.Domain.Shared\CustomerManagement.Domain.Shared.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Update="ConfigureAwait.Fody" Version="3.3.2" />
+    <PackageReference Update="Fody" Version="6.6.4">
+      <PrivateAssets>all</PrivateAssets>
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers</IncludeAssets>
+    </PackageReference>
   </ItemGroup>
 
 </Project>

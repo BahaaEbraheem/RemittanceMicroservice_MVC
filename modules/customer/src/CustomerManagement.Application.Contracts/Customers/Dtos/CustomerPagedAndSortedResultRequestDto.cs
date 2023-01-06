@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
 using System.Text;
 using Volo.Abp.Application.Dtos;
-using static CustomerManagement.Enums.Enums;
+using static MsDemo.Shared.Enums.Enums;
 
 namespace CustomerManagement.Customers.Dtos
 {

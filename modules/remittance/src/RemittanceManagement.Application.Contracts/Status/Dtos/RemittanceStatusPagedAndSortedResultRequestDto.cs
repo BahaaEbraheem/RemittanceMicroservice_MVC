@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using System.Text;
 using Volo.Abp.Application.Dtos;
-using static RemittanceManagement.Enums.Enums;
+using static MsDemo.Shared.Enums.Enums;
 
 namespace RemittanceManagement.Status.Dtos
 {

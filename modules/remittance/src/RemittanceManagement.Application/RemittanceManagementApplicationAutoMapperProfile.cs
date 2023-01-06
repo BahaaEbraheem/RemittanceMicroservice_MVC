@@ -2,7 +2,7 @@
 using CurrencyManagment.Currencies.Dtos;
 using CustomerManagement.Customers.Dtos;
 using RemittanceManagement.Remittances;
-using RemittanceManagement.Remittances.Dtos;
+using MsDemo.Shared.Dtos;
 using RemittanceManagement.Status;
 using RemittanceManagement.Status.Dtos;
 using System.Collections.Generic;

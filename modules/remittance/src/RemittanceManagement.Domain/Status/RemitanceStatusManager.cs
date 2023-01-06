@@ -12,7 +12,7 @@ using Volo.Abp;
 using Volo.Abp.Domain.Repositories;
 using Volo.Abp.Domain.Services;
 using Volo.Abp.Users;
-using static RemittanceManagement.Enums.Enums;
+using static MsDemo.Shared.Enums.Enums;
 
 namespace RemittanceManagement.Status
 {
@@ -33,11 +33,11 @@ namespace RemittanceManagement.Status
         public async Task<RemittanceStatus> CreateAsync(Guid remittanceId, Remittance_Status State)
         {
 
-            return new RemittanceStatus(
+            return await Task.FromResult( new RemittanceStatus(
                  GuidGenerator.Create(),
                  remittanceId, State
 
-            );
+            ));
         }
 
         public  async Task<RemittanceStatus> UpdateAsync(Guid remittanceId)

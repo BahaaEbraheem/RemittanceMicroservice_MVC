@@ -1,6 +1,6 @@
 ﻿using AutoMapper;
 using RemittanceManagement.Remittances;
-using RemittanceManagement.Remittances.Dtos;
+using MsDemo.Shared.Dtos;
 using RemittanceManagement.Status;
 using RemittanceManagement.Status.Dtos;
 

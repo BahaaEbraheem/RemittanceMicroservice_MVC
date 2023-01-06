@@ -316,8 +316,6 @@ C:\Git\RemittanceMicroservice_MVC\microservices\ProductService.Host\bin\Debug\ne
 C:\Git\RemittanceMicroservice_MVC\microservices\ProductService.Host\bin\Debug\net7.0\JetBrains.Annotations.dll
 C:\Git\RemittanceMicroservice_MVC\microservices\ProductService.Host\bin\Debug\net7.0\Microsoft.AspNetCore.Authentication.JwtBearer.dll
 C:\Git\RemittanceMicroservice_MVC\microservices\ProductService.Host\bin\Debug\net7.0\Microsoft.AspNetCore.DataProtection.StackExchangeRedis.dll
-C:\Git\RemittanceMicroservice_MVC\microservices\ProductService.Host\bin\Debug\net7.0\Microsoft.AspNetCore.JsonPatch.dll
-C:\Git\RemittanceMicroservice_MVC\microservices\ProductService.Host\bin\Debug\net7.0\Microsoft.AspNetCore.Mvc.NewtonsoftJson.dll
 C:\Git\RemittanceMicroservice_MVC\microservices\ProductService.Host\bin\Debug\net7.0\Microsoft.AspNetCore.Mvc.Razor.Extensions.dll
 C:\Git\RemittanceMicroservice_MVC\microservices\ProductService.Host\bin\Debug\net7.0\Microsoft.AspNetCore.Mvc.Razor.RuntimeCompilation.dll
 C:\Git\RemittanceMicroservice_MVC\microservices\ProductService.Host\bin\Debug\net7.0\Microsoft.AspNetCore.Mvc.Versioning.dll
@@ -343,7 +341,6 @@ C:\Git\RemittanceMicroservice_MVC\microservices\ProductService.Host\bin\Debug\ne
 C:\Git\RemittanceMicroservice_MVC\microservices\ProductService.Host\bin\Debug\net7.0\Microsoft.OpenApi.dll
 C:\Git\RemittanceMicroservice_MVC\microservices\ProductService.Host\bin\Debug\net7.0\Microsoft.Win32.SystemEvents.dll
 C:\Git\RemittanceMicroservice_MVC\microservices\ProductService.Host\bin\Debug\net7.0\Newtonsoft.Json.dll
-C:\Git\RemittanceMicroservice_MVC\microservices\ProductService.Host\bin\Debug\net7.0\Newtonsoft.Json.Bson.dll
 C:\Git\RemittanceMicroservice_MVC\microservices\ProductService.Host\bin\Debug\net7.0\Nito.AsyncEx.Context.dll
 C:\Git\RemittanceMicroservice_MVC\microservices\ProductService.Host\bin\Debug\net7.0\Nito.AsyncEx.Coordination.dll
 C:\Git\RemittanceMicroservice_MVC\microservices\ProductService.Host\bin\Debug\net7.0\Nito.AsyncEx.Tasks.dll
@@ -517,3 +514,17 @@ C:\Git\RemittanceMicroservice_MVC\microservices\ProductService.Host\obj\Debug\ne
 C:\Git\RemittanceMicroservice_MVC\microservices\ProductService.Host\obj\Debug\net7.0\ProductService.Host.pdb
 C:\Git\RemittanceMicroservice_MVC\microservices\ProductService.Host\obj\Debug\net7.0\ProductService.Host.genruntimeconfig.cache
 C:\Git\RemittanceMicroservice_MVC\microservices\ProductService.Host\obj\Debug\net7.0\ref\ProductService.Host.dll
+C:\Git\RemittanceMicroservice_MVC\microservices\ProductService.Host\bin\Debug\net7.0\Azure.Core.dll
+C:\Git\RemittanceMicroservice_MVC\microservices\ProductService.Host\bin\Debug\net7.0\Azure.Identity.dll
+C:\Git\RemittanceMicroservice_MVC\microservices\ProductService.Host\bin\Debug\net7.0\Microsoft.AspNetCore.Cryptography.Internal.dll
+C:\Git\RemittanceMicroservice_MVC\microservices\ProductService.Host\bin\Debug\net7.0\Microsoft.AspNetCore.DataProtection.dll
+C:\Git\RemittanceMicroservice_MVC\microservices\ProductService.Host\bin\Debug\net7.0\Microsoft.AspNetCore.DataProtection.Abstractions.dll
+C:\Git\RemittanceMicroservice_MVC\microservices\ProductService.Host\bin\Debug\net7.0\Microsoft.Identity.Client.Extensions.Msal.dll
+C:\Git\RemittanceMicroservice_MVC\microservices\ProductService.Host\bin\Debug\net7.0\Microsoft.IdentityModel.Abstractions.dll
+C:\Git\RemittanceMicroservice_MVC\microservices\ProductService.Host\bin\Debug\net7.0\Microsoft.SqlServer.Server.dll
+C:\Git\RemittanceMicroservice_MVC\microservices\ProductService.Host\bin\Debug\net7.0\Mono.TextTemplating.dll
+C:\Git\RemittanceMicroservice_MVC\microservices\ProductService.Host\bin\Debug\net7.0\Polly.dll
+C:\Git\RemittanceMicroservice_MVC\microservices\ProductService.Host\bin\Debug\net7.0\System.CodeDom.dll
+C:\Git\RemittanceMicroservice_MVC\microservices\ProductService.Host\bin\Debug\net7.0\System.Memory.Data.dll
+C:\Git\RemittanceMicroservice_MVC\microservices\ProductService.Host\bin\Debug\net7.0\Volo.Abp.Json.Abstractions.dll
+C:\Git\RemittanceMicroservice_MVC\microservices\ProductService.Host\bin\Debug\net7.0\Volo.Abp.Json.SystemTextJson.dll

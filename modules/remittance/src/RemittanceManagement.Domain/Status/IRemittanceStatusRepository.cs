@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using static RemittanceManagement.Enums.Enums;
+using static MsDemo.Shared.Enums.Enums;
 using Volo.Abp.Domain.Repositories;
 
 namespace RemittanceManagement.Status

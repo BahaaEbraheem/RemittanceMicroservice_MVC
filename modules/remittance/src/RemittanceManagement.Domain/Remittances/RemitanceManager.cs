@@ -13,7 +13,6 @@ using Volo.Abp.DependencyInjection;
 using Volo.Abp.Domain.Entities;
 using Volo.Abp.Domain.Repositories;
 using System.Linq.Dynamic.Core;
-using static RemittanceManagement.Enums.Enums;
 using Volo.Abp.Validation;
 //using Microsoft.AspNetCore.Identity;
 //using Volo.Abp.Identity;
@@ -21,6 +20,7 @@ using Volo.Abp.Validation;
 using Volo.Abp.ObjectMapping;
 using RemittanceManagement.Status;
 using Volo.Abp.Users;
+using static MsDemo.Shared.Enums.Enums;
 
 namespace RemittanceManagement.Remittances
 {

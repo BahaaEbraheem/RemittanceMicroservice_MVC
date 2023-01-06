@@ -5,11 +5,11 @@ using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.Rendering;
 using RemittanceManagement.Remittances;
-using RemittanceManagement.Remittances.Dtos;
+using MsDemo.Shared.Dtos;
 using Volo.Abp.Application.Dtos;
 using Volo.Abp.AspNetCore.Mvc.UI.Bootstrap.TagHelpers.Form;
 using Volo.Abp.AspNetCore.Mvc.UI.RazorPages;
-using static CustomerManagement.Enums.Enums;
+using static MsDemo.Shared.Enums.Enums;
 
 namespace RemittanceManagement.Web.Pages.RemittanceManagement;
 

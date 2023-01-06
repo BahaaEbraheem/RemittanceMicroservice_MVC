@@ -56,87 +56,89 @@
           "dependencies": {
             "Microsoft.AspNetCore.DataProtection.StackExchangeRedis": {
               "target": "Package",
-              "version": "[6.0.0, )"
+              "version": "[7.0.1, )"
             },
             "Microsoft.EntityFrameworkCore.Tools": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
               "target": "Package",
-              "version": "[6.0.0, )"
+              "version": "[7.0.1, )"
             },
             "Microsoft.Extensions.Caching.StackExchangeRedis": {
               "target": "Package",
-              "version": "[6.0.0, )"
+              "version": "[7.0.1, )"
             },
             "Serilog.AspNetCore": {
               "target": "Package",
-              "version": "[4.1.0, )"
+              "version": "[6.1.0, )"
             },
             "Serilog.Sinks.Elasticsearch": {
               "target": "Package",
-              "version": "[6.5.0, )"
+              "version": "[8.4.1, )"
             },
             "Serilog.Sinks.File": {
               "target": "Package",
-              "version": "[4.1.0, )"
+              "version": "[5.0.0, )"
             },
             "Volo.Abp.Account.Application": {
               "target": "Package",
-              "version": "[5.0.0, )"
+              "version": "[7.0.0, )"
             },
             "Volo.Abp.Account.Web.IdentityServer": {
               "target": "Package",
-              "version": "[5.0.0, )"
+              "version": "[7.0.0, )"
             },
             "Volo.Abp.AspNetCore.Mvc.UI.Theme.Basic": {
               "target": "Package",
-              "version": "[5.0.0, )"
+              "version": "[7.0.0, )"
             },
             "Volo.Abp.AuditLogging.EntityFrameworkCore": {
               "target": "Package",
-              "version": "[5.0.0, )"
+              "version": "[7.0.0, )"
             },
             "Volo.Abp.Autofac": {
               "target": "Package",
-              "version": "[5.0.0, )"
+              "version": "[7.0.0, )"
             },
             "Volo.Abp.EntityFrameworkCore.SqlServer": {
               "target": "Package",
-              "version": "[5.0.0, )"
+              "version": "[7.0.0, )"
             },
             "Volo.Abp.EventBus.RabbitMQ": {
               "target": "Package",
-              "version": "[5.0.0, )"
+              "version": "[7.0.0, )"
             },
             "Volo.Abp.FeatureManagement.EntityFrameworkCore": {
               "target": "Package",
-              "version": "[5.0.0, )"
+              "version": "[7.0.0, )"
             },
             "Volo.Abp.Identity.Application.Contracts": {
               "target": "Package",
-              "version": "[5.0.0, )"
+              "version": "[7.0.0, )"
             },
             "Volo.Abp.Identity.EntityFrameworkCore": {
               "target": "Package",
-              "version": "[5.0.0, )"
+              "version": "[7.0.0, )"
             },
             "Volo.Abp.IdentityServer.EntityFrameworkCore": {
               "target": "Package",
-              "version": "[5.0.0, )"
+              "version": "[7.0.0, )"
             },
             "Volo.Abp.PermissionManagement.EntityFrameworkCore": {
               "target": "Package",
-              "version": "[5.0.0, )"
+              "version": "[7.0.0, )"
             },
             "Volo.Abp.SettingManagement.EntityFrameworkCore": {
               "target": "Package",
-              "version": "[5.0.0, )"
+              "version": "[7.0.0, )"
             },
             "Volo.Abp.TenantManagement.Application.Contracts": {
               "target": "Package",
-              "version": "[5.0.0, )"
+              "version": "[7.0.0, )"
             },
             "Volo.Abp.TenantManagement.EntityFrameworkCore": {
               "target": "Package",
-              "version": "[5.0.0, )"
+              "version": "[7.0.0, )"
             }
           },
           "imports": [
@@ -212,13 +214,13 @@
             "ConfigureAwait.Fody": {
               "suppressParent": "All",
               "target": "Package",
-              "version": "[3.3.1, )"
+              "version": "[3.3.2, )"
             },
             "Fody": {
               "include": "Runtime, Build, Native, ContentFiles, Analyzers",
               "suppressParent": "All",
               "target": "Package",
-              "version": "[6.5.3, )"
+              "version": "[6.6.4, )"
             },
             "NETStandard.Library": {
               "suppressParent": "All",
@@ -228,11 +230,11 @@
             },
             "Volo.Abp.Authorization": {
               "target": "Package",
-              "version": "[6.0.2, )"
+              "version": "[7.0.0, )"
             },
             "Volo.Abp.Ddd.Application.Contracts": {
               "target": "Package",
-              "version": "[6.0.2, )"
+              "version": "[7.0.0, )"
             }
           },
           "imports": [
@@ -295,17 +297,17 @@
             "ConfigureAwait.Fody": {
               "suppressParent": "All",
               "target": "Package",
-              "version": "[3.3.1, )"
+              "version": "[3.3.2, )"
             },
             "Fody": {
               "include": "Runtime, Build, Native, ContentFiles, Analyzers",
               "suppressParent": "All",
               "target": "Package",
-              "version": "[6.5.3, )"
+              "version": "[6.6.4, )"
             },
             "Microsoft.Extensions.FileProviders.Embedded": {
               "target": "Package",
-              "version": "[6.0.5, )"
+              "version": "[7.0.1, )"
             },
             "NETStandard.Library": {
               "suppressParent": "All",
@@ -315,7 +317,7 @@
             },
             "Volo.Abp.Validation": {
               "target": "Package",
-              "version": "[6.0.2, )"
+              "version": "[7.0.0, )"
             }
           },
           "imports": [
@@ -365,6 +367,9 @@
             "projectReferences": {
               "C:\\Git\\RemittanceMicroservice_MVC\\modules\\customer\\src\\CustomerManagement.Domain.Shared\\CustomerManagement.Domain.Shared.csproj": {
                 "projectPath": "C:\\Git\\RemittanceMicroservice_MVC\\modules\\customer\\src\\CustomerManagement.Domain.Shared\\CustomerManagement.Domain.Shared.csproj"
+              },
+              "C:\\Git\\RemittanceMicroservice_MVC\\shared\\MsDemo.Shared\\MsDemo.Shared.csproj": {
+                "projectPath": "C:\\Git\\RemittanceMicroservice_MVC\\shared\\MsDemo.Shared\\MsDemo.Shared.csproj"
               }
             }
           }
@@ -382,13 +387,13 @@
             "ConfigureAwait.Fody": {
               "suppressParent": "All",
               "target": "Package",
-              "version": "[3.3.1, )"
+              "version": "[3.3.2, )"
             },
             "Fody": {
               "include": "Runtime, Build, Native, ContentFiles, Analyzers",
               "suppressParent": "All",
               "target": "Package",
-              "version": "[6.5.3, )"
+              "version": "[6.6.4, )"
             },
             "NETStandard.Library": {
               "suppressParent": "All",
@@ -398,11 +403,11 @@
             },
             "Volo.Abp.Authorization": {
               "target": "Package",
-              "version": "[6.0.1, )"
+              "version": "[7.0.0, )"
             },
             "Volo.Abp.Ddd.Application.Contracts": {
               "target": "Package",
-              "version": "[6.0.1, )"
+              "version": "[7.0.0, )"
             }
           },
           "imports": [
@@ -465,17 +470,17 @@
             "ConfigureAwait.Fody": {
               "suppressParent": "All",
               "target": "Package",
-              "version": "[3.3.1, )"
+              "version": "[3.3.2, )"
             },
             "Fody": {
               "include": "Runtime, Build, Native, ContentFiles, Analyzers",
               "suppressParent": "All",
               "target": "Package",
-              "version": "[6.5.3, )"
+              "version": "[6.6.4, )"
             },
             "Microsoft.Extensions.FileProviders.Embedded": {
               "target": "Package",
-              "version": "[6.0.5, )"
+              "version": "[7.0.1, )"
             },
             "NETStandard.Library": {
               "suppressParent": "All",
@@ -485,7 +490,7 @@
             },
             "Volo.Abp.Validation": {
               "target": "Package",
-              "version": "[6.0.1, )"
+              "version": "[7.0.0, )"
             }
           },
           "imports": [
@@ -548,6 +553,14 @@
               "target": "Package",
               "version": "[2.0.3, )",
               "autoReferenced": true
+            },
+            "System.ComponentModel.Annotations": {
+              "target": "Package",
+              "version": "[5.0.0, )"
+            },
+            "Volo.Abp.Ddd.Application.Contracts": {
+              "target": "Package",
+              "version": "[7.0.0, )"
             }
           },
           "imports": [

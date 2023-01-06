@@ -8,12 +8,20 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <PackageReference Include="Volo.Abp.AutoMapper" Version="6.0.2" />
-    <PackageReference Include="Volo.Abp.Ddd.Application" Version="6.0.2" />
+    <PackageReference Include="Volo.Abp.AutoMapper" Version="7.0.0" />
+    <PackageReference Include="Volo.Abp.Ddd.Application" Version="7.0.0" />
     <ProjectReference Include="..\..\..\currency\src\CurrencyManagment.HttpApi.Client\CurrencyManagment.HttpApi.Client.csproj" />
     <ProjectReference Include="..\..\..\customer\src\CustomerManagement.HttpApi.Client\CustomerManagement.HttpApi.Client.csproj" />
     <ProjectReference Include="..\RemittanceManagement.Application.Contracts\RemittanceManagement.Application.Contracts.csproj" />
     <ProjectReference Include="..\RemittanceManagement.Domain\RemittanceManagement.Domain.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Update="ConfigureAwait.Fody" Version="3.3.2" />
+    <PackageReference Update="Fody" Version="6.6.4">
+      <PrivateAssets>all</PrivateAssets>
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers</IncludeAssets>
+    </PackageReference>
   </ItemGroup>
 
 </Project>

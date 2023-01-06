@@ -5,11 +5,11 @@ using CurrencyManagment.Currencies;
 using CurrencyManagment.Currencies.Dtos;
 using Microsoft.AspNetCore.Mvc;
 using RemittanceManagement.Remittances;
-using RemittanceManagement.Remittances.Dtos;
+using MsDemo.Shared.Dtos;
 using Volo.Abp.AspNetCore.Mvc.UI.RazorPages;
 using Volo.Abp.ObjectMapping;
-using static CustomerManagement.Enums.Enums;
 using static RemittanceManagement.Permissions.RemittanceManagementPermissions;
+using static MsDemo.Shared.Enums.Enums;
 
 namespace RemittanceManagement.Web.Pages.RemittanceManagement;
 
@@ -41,10 +41,10 @@ namespace RemittanceManagement.Web.Pages.RemittanceManagement;
             await _remittanceAppService.UpdateAsync(Remittance.Id, new UpdateRemittanceDto()
             {
                 Amount = Remittance.Amount,
-                Type = (Enums.Enums.RemittanceType)Remittance.Type,
+                Type = (RemittanceType)Remittance.Type,
                 SenderBy=Remittance.SenderBy,
                 CurrencyId= (Guid)Remittance.CurrencyId,
-                State = (Enums.Enums.Remittance_Status)Remittance.State,
+                State = (Remittance_Status)Remittance.State,
             });
             return NoContent();
         }

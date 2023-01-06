@@ -4,7 +4,6 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using Volo.Abp.Domain.Repositories;
-using static RemittanceManagement.Enums.Enums;
 
 namespace RemittanceManagement.Remittances
 {

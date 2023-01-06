@@ -6,7 +6,7 @@ using CustomerManagement.Customers.Dtos;
 using CustomerManagement.Web.Pages;
 using Microsoft.AspNetCore.Mvc;
 using Volo.Abp.AspNetCore.Mvc.UI.RazorPages;
-using static CustomerManagement.Enums.Enums;
+using static MsDemo.Shared.Enums.Enums;
 
 namespace CustomerManagement.Web.Pages.CustomerManagement
 {

@@ -8,7 +8,7 @@ using System.Threading.Tasks;
 using Volo.Abp.Domain.Repositories.EntityFrameworkCore;
 using Volo.Abp.EntityFrameworkCore;
 using System.Linq.Dynamic.Core;
-using static RemittanceManagement.Enums.Enums;
+using static MsDemo.Shared.Enums.Enums;
 using RemittanceManagement.Remittances;
 
 namespace RemittanceManagement.Status

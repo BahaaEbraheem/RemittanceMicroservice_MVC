@@ -58,7 +58,10 @@ namespace BloggingService.Host
         )]
     public class BloggingServiceHostModule : AbpModule
     {
+        [Obsolete]
+#pragma warning disable CS0809 // Obsolete member overrides non-obsolete member
         public override void ConfigureServices(ServiceConfigurationContext context)
+#pragma warning restore CS0809 // Obsolete member overrides non-obsolete member
         {
             var configuration = context.Services.GetConfiguration();
             var hostingEnvironment = context.Services.GetHostingEnvironment();
