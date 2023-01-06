@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "yCKIk/+cWCDc45SM0mdMyYDiuI205mjzJTrVRM8M6GbHfFw6GCBDeCDAlH31m70WGpyQlYrmRtuNS9DNsaiCpQ==",
+  "dgSpecHash": "HOtjEdO1cYM4ohoR/shvSwyIS1S0aLz0vb0vWLlqZz3zyowIn5W/htGUzrTU3fJ4PSPD6u4rkYckVYK4qmFWFQ==",
   "success": true,
   "projectFilePath": "C:\\Git\\RemittanceMicroservice_MVC\\applications\\AuthServer.Host\\AuthServer.Host.csproj",
   "expectedPackageFiles": [

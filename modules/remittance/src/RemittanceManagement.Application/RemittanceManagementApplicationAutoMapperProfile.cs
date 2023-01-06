@@ -60,7 +60,8 @@ public class RemittanceManagementApplicationAutoMapperProfile : Profile
 
         CreateMap<GetRemittanceListPagedAndSortedResultRequestDto, Remittance>()
               .ForMember(model => model.ExtraProperties, option => option.Ignore())
-               .ForMember(model => model.ConcurrencyStamp, option => option.Ignore());
+               .ForMember(model => model.ConcurrencyStamp, option => option.Ignore())
+               .ForMember(model => model.Status, option => option.Ignore());
 
         CreateMap<RemittanceStatus, RemittanceStatusDto>();
 

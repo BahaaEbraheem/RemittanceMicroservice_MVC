@@ -31,7 +31,8 @@ public class RemittanceManagementWebAutoMapperProfile : Profile
 
         CreateMap<GetRemittanceListPagedAndSortedResultRequestDto, Remittance>()
               .ForMember(model => model.ExtraProperties, option => option.Ignore())
-               .ForMember(model => model.ConcurrencyStamp, option => option.Ignore());
+               .ForMember(model => model.ConcurrencyStamp, option => option.Ignore())
+               .ForMember(model => model.Status, option => option.Ignore());
         /* You can configure your AutoMapper mapping configuration here.
          * Alternatively, you can split your mapping configurations
          * into multiple profile classes for a better organization. */

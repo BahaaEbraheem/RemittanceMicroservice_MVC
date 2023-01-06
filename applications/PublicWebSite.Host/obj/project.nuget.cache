@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "rT8Ivj/pIMSpS+jeU/Su0/P9DX8MxsELeJ2+leW9XMTYoZRhnQcuFbNJfOEof9QKWowce1kZP+5FzeB5TU33kA==",
+  "dgSpecHash": "9WLauFFa7Y3rhMJyyN8WyWKtHwPkoO7VJV04ES6mpErPoevlpUaduyofuHJMtTPznlLsV9dPOl3v2bSPw8en0Q==",
   "success": true,
   "projectFilePath": "C:\\Git\\RemittanceMicroservice_MVC\\applications\\PublicWebSite.Host\\PublicWebSite.Host.csproj",
   "expectedPackageFiles": [
