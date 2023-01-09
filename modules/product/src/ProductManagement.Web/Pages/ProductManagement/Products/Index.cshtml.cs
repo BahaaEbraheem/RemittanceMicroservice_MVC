@@ -5,9 +5,8 @@ namespace ProductManagement.Pages.ProductManagement.Products
 {
     public class IndexModel : AbpPageModel
     {
-        public Task OnGetAsync()
+        public async Task OnGetAsync()
         {
-            return Task.CompletedTask;
         }
     }
 }

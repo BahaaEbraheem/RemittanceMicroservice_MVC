@@ -1206,3 +1206,135 @@ Volo.Abp.AbpInitializationException: An error occurred during ConfigureServices 
 2022-12-12 11:10:01.869 +03:00 [INF] Sending file. Request path: '/favicon-32x32.png'. Physical path: 'N/A'
 2022-12-12 11:10:01.870 +03:00 [INF] Request finished HTTP/2 GET https://localhost:44397/swagger/favicon-32x32.png - - - 200 628 image/png 2.7642ms
 2022-12-12 11:10:02.130 +03:00 [INF] Request finished HTTP/2 GET https://localhost:44397/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 437.5708ms
+2023-01-07 14:25:51.550 +02:00 [INF] Starting IdentityService.Host.
+2023-01-07 14:26:13.911 +02:00 [INF] Loaded ABP modules:
+2023-01-07 14:26:13.913 +02:00 [INF] - PublicWebSiteGateway.Host.PublicWebSiteGatewayHostModule
+2023-01-07 14:26:13.913 +02:00 [INF]   - Volo.Abp.Autofac.AbpAutofacModule
+2023-01-07 14:26:13.913 +02:00 [INF]     - Volo.Abp.Castle.AbpCastleCoreModule
+2023-01-07 14:26:13.913 +02:00 [INF]   - Volo.Blogging.BloggingHttpApiModule
+2023-01-07 14:26:13.913 +02:00 [INF]     - Volo.Blogging.BloggingApplicationContractsModule
+2023-01-07 14:26:13.913 +02:00 [INF]       - Volo.Blogging.BloggingApplicationContractsSharedModule
+2023-01-07 14:26:13.913 +02:00 [INF]         - Volo.Blogging.BloggingDomainSharedModule
+2023-01-07 14:26:13.913 +02:00 [INF]           - Volo.Abp.Validation.AbpValidationModule
+2023-01-07 14:26:13.913 +02:00 [INF]             - Volo.Abp.Validation.AbpValidationAbstractionsModule
+2023-01-07 14:26:13.913 +02:00 [INF]             - Volo.Abp.Localization.AbpLocalizationModule
+2023-01-07 14:26:13.913 +02:00 [INF]               - Volo.Abp.VirtualFileSystem.AbpVirtualFileSystemModule
+2023-01-07 14:26:13.913 +02:00 [INF]               - Volo.Abp.Settings.AbpSettingsModule
+2023-01-07 14:26:13.913 +02:00 [INF]                 - Volo.Abp.Localization.AbpLocalizationAbstractionsModule
+2023-01-07 14:26:13.914 +02:00 [INF]                 - Volo.Abp.Security.AbpSecurityModule
+2023-01-07 14:26:13.914 +02:00 [INF]                 - Volo.Abp.MultiTenancy.AbpMultiTenancyModule
+2023-01-07 14:26:13.914 +02:00 [INF]                   - Volo.Abp.Data.AbpDataModule
+2023-01-07 14:26:13.914 +02:00 [INF]                     - Volo.Abp.ObjectExtending.AbpObjectExtendingModule
+2023-01-07 14:26:13.914 +02:00 [INF]                     - Volo.Abp.Uow.AbpUnitOfWorkModule
+2023-01-07 14:26:13.914 +02:00 [INF]                     - Volo.Abp.EventBus.Abstractions.AbpEventBusAbstractionsModule
+2023-01-07 14:26:13.914 +02:00 [INF]               - Volo.Abp.Threading.AbpThreadingModule
+2023-01-07 14:26:13.914 +02:00 [INF]         - Volo.Abp.Application.AbpDddApplicationContractsModule
+2023-01-07 14:26:13.914 +02:00 [INF]           - Volo.Abp.Auditing.AbpAuditingContractsModule
+2023-01-07 14:26:13.914 +02:00 [INF]         - Volo.Abp.Authorization.AbpAuthorizationAbstractionsModule
+2023-01-07 14:26:13.914 +02:00 [INF]     - Volo.Abp.AspNetCore.Mvc.AbpAspNetCoreMvcModule
+2023-01-07 14:26:13.914 +02:00 [INF]       - Volo.Abp.AspNetCore.AbpAspNetCoreModule
+2023-01-07 14:26:13.914 +02:00 [INF]         - Volo.Abp.Auditing.AbpAuditingModule
+2023-01-07 14:26:13.914 +02:00 [INF]           - Volo.Abp.Json.AbpJsonModule
+2023-01-07 14:26:13.914 +02:00 [INF]             - Volo.Abp.Json.SystemTextJson.AbpJsonSystemTextJsonModule
+2023-01-07 14:26:13.914 +02:00 [INF]               - Volo.Abp.Json.AbpJsonAbstractionsModule
+2023-01-07 14:26:13.914 +02:00 [INF]               - Volo.Abp.Timing.AbpTimingModule
+2023-01-07 14:26:13.914 +02:00 [INF]         - Volo.Abp.Http.AbpHttpModule
+2023-01-07 14:26:13.914 +02:00 [INF]           - Volo.Abp.Http.AbpHttpAbstractionsModule
+2023-01-07 14:26:13.914 +02:00 [INF]           - Volo.Abp.Minify.AbpMinifyModule
+2023-01-07 14:26:13.914 +02:00 [INF]         - Volo.Abp.Authorization.AbpAuthorizationModule
+2023-01-07 14:26:13.914 +02:00 [INF]         - Volo.Abp.ExceptionHandling.AbpExceptionHandlingModule
+2023-01-07 14:26:13.914 +02:00 [INF]       - Volo.Abp.ApiVersioning.AbpApiVersioningAbstractionsModule
+2023-01-07 14:26:13.914 +02:00 [INF]       - Volo.Abp.AspNetCore.Mvc.AbpAspNetCoreMvcContractsModule
+2023-01-07 14:26:13.914 +02:00 [INF]       - Volo.Abp.UI.Navigation.AbpUiNavigationModule
+2023-01-07 14:26:13.914 +02:00 [INF]         - Volo.Abp.UI.AbpUiModule
+2023-01-07 14:26:13.914 +02:00 [INF]       - Volo.Abp.GlobalFeatures.AbpGlobalFeaturesModule
+2023-01-07 14:26:13.914 +02:00 [INF]       - Volo.Abp.Application.AbpDddApplicationModule
+2023-01-07 14:26:13.914 +02:00 [INF]         - Volo.Abp.Domain.AbpDddDomainModule
+2023-01-07 14:26:13.914 +02:00 [INF]           - Volo.Abp.EventBus.AbpEventBusModule
+2023-01-07 14:26:13.914 +02:00 [INF]             - Volo.Abp.Guids.AbpGuidsModule
+2023-01-07 14:26:13.914 +02:00 [INF]             - Volo.Abp.BackgroundWorkers.AbpBackgroundWorkersModule
+2023-01-07 14:26:13.914 +02:00 [INF]             - Volo.Abp.DistributedLocking.AbpDistributedLockingAbstractionsModule
+2023-01-07 14:26:13.914 +02:00 [INF]           - Volo.Abp.ObjectMapping.AbpObjectMappingModule
+2023-01-07 14:26:13.914 +02:00 [INF]           - Volo.Abp.Specifications.AbpSpecificationsModule
+2023-01-07 14:26:13.914 +02:00 [INF]           - Volo.Abp.Caching.AbpCachingModule
+2023-01-07 14:26:13.914 +02:00 [INF]             - Volo.Abp.Serialization.AbpSerializationModule
+2023-01-07 14:26:13.914 +02:00 [INF]         - Volo.Abp.Features.AbpFeaturesModule
+2023-01-07 14:26:13.914 +02:00 [INF]   - ProductManagement.ProductManagementHttpApiModule
+2023-01-07 14:26:13.914 +02:00 [INF]     - ProductManagement.ProductManagementApplicationContractsModule
+2023-01-07 14:26:13.914 +02:00 [INF]       - ProductManagement.ProductManagementDomainSharedModule
+2023-01-07 14:26:13.915 +02:00 [INF]   - CurrencyManagment.CurrencyManagmentHttpApiModule
+2023-01-07 14:26:13.915 +02:00 [INF]     - CurrencyManagment.CurrencyManagmentApplicationContractsModule
+2023-01-07 14:26:13.915 +02:00 [INF]       - CurrencyManagment.CurrencyManagmentDomainSharedModule
+2023-01-07 14:26:13.915 +02:00 [INF]   - CustomerManagement.CustomerManagementHttpApiModule
+2023-01-07 14:26:13.915 +02:00 [INF]     - CustomerManagement.CustomerManagementApplicationContractsModule
+2023-01-07 14:26:13.915 +02:00 [INF]       - CustomerManagement.CustomerManagementDomainSharedModule
+2023-01-07 14:26:13.915 +02:00 [INF]   - RemittanceManagement.RemittanceManagementHttpApiModule
+2023-01-07 14:26:13.915 +02:00 [INF]     - RemittanceManagement.RemittanceManagementApplicationContractsModule
+2023-01-07 14:26:13.915 +02:00 [INF]       - RemittanceManagement.RemittanceManagementDomainSharedModule
+2023-01-07 14:26:13.915 +02:00 [INF]   - Volo.Abp.EntityFrameworkCore.SqlServer.AbpEntityFrameworkCoreSqlServerModule
+2023-01-07 14:26:13.915 +02:00 [INF]     - Volo.Abp.EntityFrameworkCore.AbpEntityFrameworkCoreModule
+2023-01-07 14:26:13.915 +02:00 [INF]   - Volo.Abp.PermissionManagement.EntityFrameworkCore.AbpPermissionManagementEntityFrameworkCoreModule
+2023-01-07 14:26:13.915 +02:00 [INF]     - Volo.Abp.PermissionManagement.AbpPermissionManagementDomainModule
+2023-01-07 14:26:13.915 +02:00 [INF]       - Volo.Abp.PermissionManagement.AbpPermissionManagementDomainSharedModule
+2023-01-07 14:26:13.915 +02:00 [INF]   - Volo.Abp.SettingManagement.EntityFrameworkCore.AbpSettingManagementEntityFrameworkCoreModule
+2023-01-07 14:26:13.915 +02:00 [INF]     - Volo.Abp.SettingManagement.AbpSettingManagementDomainModule
+2023-01-07 14:26:13.915 +02:00 [INF]       - Volo.Abp.SettingManagement.AbpSettingManagementDomainSharedModule
+2023-01-07 14:26:13.915 +02:00 [INF]   - Volo.Abp.AspNetCore.Mvc.UI.MultiTenancy.AbpAspNetCoreMvcUiMultiTenancyModule
+2023-01-07 14:26:13.915 +02:00 [INF]     - Volo.Abp.AspNetCore.Mvc.UI.Theme.Shared.AbpAspNetCoreMvcUiThemeSharedModule
+2023-01-07 14:26:13.915 +02:00 [INF]       - Volo.Abp.AspNetCore.Mvc.UI.Bootstrap.AbpAspNetCoreMvcUiBootstrapModule
+2023-01-07 14:26:13.915 +02:00 [INF]         - Volo.Abp.AspNetCore.Mvc.UI.AbpAspNetCoreMvcUiModule
+2023-01-07 14:26:13.915 +02:00 [INF]       - Volo.Abp.AspNetCore.Mvc.UI.Packages.AbpAspNetCoreMvcUiPackagesModule
+2023-01-07 14:26:13.915 +02:00 [INF]         - Volo.Abp.AspNetCore.Mvc.UI.Bundling.AbpAspNetCoreMvcUiBundlingAbstractionsModule
+2023-01-07 14:26:13.915 +02:00 [INF]       - Volo.Abp.AspNetCore.Mvc.UI.Widgets.AbpAspNetCoreMvcUiWidgetsModule
+2023-01-07 14:26:13.915 +02:00 [INF]         - Volo.Abp.AspNetCore.Mvc.UI.Bundling.AbpAspNetCoreMvcUiBundlingModule
+2023-01-07 14:26:13.915 +02:00 [INF]     - Volo.Abp.AspNetCore.MultiTenancy.AbpAspNetCoreMultiTenancyModule
+2023-01-07 14:26:18.015 +02:00 [INF] Initialized all ABP modules.
+2023-01-07 14:26:18.278 +02:00 [INF] Now listening on: https://localhost:44397
+2023-01-07 14:26:18.280 +02:00 [INF] Application started. Press Ctrl+C to shut down.
+2023-01-07 14:26:18.280 +02:00 [INF] Hosting environment: Development
+2023-01-07 14:26:18.280 +02:00 [INF] Content root path: C:\Git\RemittanceMicroservice_MVC\gateways\PublicWebSiteGateway.Host
+2023-01-07 14:26:21.136 +02:00 [INF] Request starting HTTP/2 GET https://localhost:44397/ - -
+2023-01-07 14:26:21.406 +02:00 [DBG] AuthenticationScheme: Bearer was not authenticated.
+2023-01-07 14:26:21.773 +02:00 [DBG] requestId: 0HMNGL9GCPUI5:00000001, previousRequestId: no previous request id, message: ocelot pipeline started
+2023-01-07 14:26:21.779 +02:00 [DBG] requestId: 0HMNGL9GCPUI5:00000001, previousRequestId: no previous request id, message: Upstream url path is /
+2023-01-07 14:26:21.915 +02:00 [WRN] requestId: 0HMNGL9GCPUI5:00000001, previousRequestId: no previous request id, message: DownstreamRouteFinderMiddleware setting pipeline errors. IDownstreamRouteFinder returned Error Code: UnableToFindDownstreamRouteError Message: Failed to match Route configuration for upstream path: /, verb: GET.
+2023-01-07 14:26:21.923 +02:00 [WRN] requestId: 0HMNGL9GCPUI5:00000001, previousRequestId: no previous request id, message: Error Code: UnableToFindDownstreamRouteError Message: Failed to match Route configuration for upstream path: /, verb: GET. errors found in ResponderMiddleware. Setting error response for request path:/, request method: GET
+2023-01-07 14:26:21.925 +02:00 [DBG] requestId: 0HMNGL9GCPUI5:00000001, previousRequestId: no previous request id, message: ocelot pipeline finished
+2023-01-07 14:26:22.013 +02:00 [INF] Request finished HTTP/2 GET https://localhost:44397/ - - - 404 0 - 879.1407ms
+2023-01-07 14:26:29.926 +02:00 [INF] Request starting HTTP/2 GET https://localhost:44397/ - -
+2023-01-07 14:26:29.932 +02:00 [DBG] AuthenticationScheme: Bearer was not authenticated.
+2023-01-07 14:26:29.934 +02:00 [DBG] requestId: 0HMNGL9GCPUI6:00000001, previousRequestId: no previous request id, message: ocelot pipeline started
+2023-01-07 14:26:29.935 +02:00 [DBG] requestId: 0HMNGL9GCPUI6:00000001, previousRequestId: no previous request id, message: Upstream url path is /
+2023-01-07 14:26:29.938 +02:00 [WRN] requestId: 0HMNGL9GCPUI6:00000001, previousRequestId: no previous request id, message: DownstreamRouteFinderMiddleware setting pipeline errors. IDownstreamRouteFinder returned Error Code: UnableToFindDownstreamRouteError Message: Failed to match Route configuration for upstream path: /, verb: GET.
+2023-01-07 14:26:29.938 +02:00 [WRN] requestId: 0HMNGL9GCPUI6:00000001, previousRequestId: no previous request id, message: Error Code: UnableToFindDownstreamRouteError Message: Failed to match Route configuration for upstream path: /, verb: GET. errors found in ResponderMiddleware. Setting error response for request path:/, request method: GET
+2023-01-07 14:26:29.939 +02:00 [DBG] requestId: 0HMNGL9GCPUI6:00000001, previousRequestId: no previous request id, message: ocelot pipeline finished
+2023-01-07 14:26:29.940 +02:00 [INF] Request finished HTTP/2 GET https://localhost:44397/ - - - 404 0 - 13.6021ms
+2023-01-07 14:26:40.033 +02:00 [INF] Request starting HTTP/2 GET https://localhost:44397/swagger - -
+2023-01-07 14:26:40.034 +02:00 [DBG] AuthenticationScheme: Bearer was not authenticated.
+2023-01-07 14:26:40.042 +02:00 [INF] Request finished HTTP/2 GET https://localhost:44397/swagger - - - 301 0 - 9.5072ms
+2023-01-07 14:26:40.058 +02:00 [INF] Request starting HTTP/2 GET https://localhost:44397/swagger/index.html - -
+2023-01-07 14:26:40.064 +02:00 [DBG] AuthenticationScheme: Bearer was not authenticated.
+2023-01-07 14:26:40.237 +02:00 [INF] Request finished HTTP/2 GET https://localhost:44397/swagger/index.html - - - 200 - text/html;charset=utf-8 178.4191ms
+2023-01-07 14:26:40.303 +02:00 [INF] Request starting HTTP/2 GET https://localhost:44397/swagger/swagger-ui.css - -
+2023-01-07 14:26:40.304 +02:00 [DBG] AuthenticationScheme: Bearer was not authenticated.
+2023-01-07 14:26:40.305 +02:00 [INF] Request starting HTTP/2 GET https://localhost:44397/swagger/swagger-ui-bundle.js - -
+2023-01-07 14:26:40.307 +02:00 [DBG] AuthenticationScheme: Bearer was not authenticated.
+2023-01-07 14:26:40.308 +02:00 [INF] Request starting HTTP/2 GET https://localhost:44397/swagger/swagger-ui-standalone-preset.js - -
+2023-01-07 14:26:40.309 +02:00 [DBG] AuthenticationScheme: Bearer was not authenticated.
+2023-01-07 14:26:40.310 +02:00 [INF] Request starting HTTP/2 GET https://localhost:44397/_framework/aspnetcore-browser-refresh.js - -
+2023-01-07 14:26:40.312 +02:00 [INF] Request starting HTTP/2 GET https://localhost:44397/_vs/browserLink - -
+2023-01-07 14:26:40.326 +02:00 [INF] Request finished HTTP/2 GET https://localhost:44397/_framework/aspnetcore-browser-refresh.js - - - 200 12020 application/javascript;+charset=utf-8 15.9836ms
+2023-01-07 14:26:40.347 +02:00 [INF] Sending file. Request path: '/swagger-ui.css'. Physical path: 'N/A'
+2023-01-07 14:26:40.347 +02:00 [INF] Sending file. Request path: '/swagger-ui-standalone-preset.js'. Physical path: 'N/A'
+2023-01-07 14:26:40.348 +02:00 [INF] Request finished HTTP/2 GET https://localhost:44397/swagger/swagger-ui-standalone-preset.js - - - 200 339486 text/javascript 39.6915ms
+2023-01-07 14:26:40.348 +02:00 [INF] Request finished HTTP/2 GET https://localhost:44397/swagger/swagger-ui.css - - - 200 143943 text/css 45.1808ms
+2023-01-07 14:26:40.382 +02:00 [INF] Sending file. Request path: '/swagger-ui-bundle.js'. Physical path: 'N/A'
+2023-01-07 14:26:40.382 +02:00 [INF] Request finished HTTP/2 GET https://localhost:44397/swagger/swagger-ui-bundle.js - - - 200 1096145 text/javascript 76.9151ms
+2023-01-07 14:26:40.417 +02:00 [INF] Request finished HTTP/2 GET https://localhost:44397/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 105.1996ms
+2023-01-07 14:26:40.916 +02:00 [INF] Request starting HTTP/2 GET https://localhost:44397/swagger/v1/swagger.json - -
+2023-01-07 14:26:40.917 +02:00 [DBG] AuthenticationScheme: Bearer was not authenticated.
+2023-01-07 14:26:41.018 +02:00 [INF] Request starting HTTP/2 GET https://localhost:44397/swagger/favicon-32x32.png - -
+2023-01-07 14:26:41.024 +02:00 [DBG] AuthenticationScheme: Bearer was not authenticated.
+2023-01-07 14:26:41.025 +02:00 [INF] Sending file. Request path: '/favicon-32x32.png'. Physical path: 'N/A'
+2023-01-07 14:26:41.039 +02:00 [INF] Request finished HTTP/2 GET https://localhost:44397/swagger/favicon-32x32.png - - - 200 628 image/png 21.4209ms
+2023-01-07 14:26:41.463 +02:00 [INF] Request finished HTTP/2 GET https://localhost:44397/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 547.1879ms

@@ -202,12 +202,13 @@ namespace AuthServer.Host
 
             await CreateClientAsync(
                 "backend-admin-app-client",
-                commonScopes.Union(new[] { "BackendAdminAppGateway", "IdentityService", "ProductService", "TenantManagementService", "CurrencyManagment", "CustomerManagement" , "RemittanceManagement" }),
+                commonScopes.Union(new[] { "BackendAdminAppGateway", "IdentityService",
+                    "ProductService", "TenantManagementService" }),
                 new[] { "hybrid" },
                 commonSecret,
                 permissions: new[] { IdentityPermissions.Users.Default, "ProductManagement.Product" },
-                redirectUri: "https://localhost:44354/signin-oidc",
-                postLogoutRedirectUri: "https://localhost:44354/signout-callback-oidc"
+                redirectUri:   "https://localhost:44354/signin-oidc",
+                postLogoutRedirectUri:  "https://localhost:44354/signout-callback-oidc"
             );
 
             await CreateClientAsync(
@@ -226,7 +227,7 @@ namespace AuthServer.Host
                 commonSecret,
                 permissions: new[] { IdentityPermissions.UserLookup.Default }
             );
-          
+
             await CreateClientAsync(
           "remittance-management-client",
           new[]
@@ -237,6 +238,7 @@ namespace AuthServer.Host
            secret: commonSecret
 
        );
+
         }
 
         private async Task<Client> CreateClientAsync(

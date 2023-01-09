@@ -37,7 +37,7 @@
         "dependencies": {
           "IdentityServer4.AccessTokenValidation": "3.0.1",
           "Microsoft.AspNetCore.DataProtection.StackExchangeRedis": "7.0.1",
-          "Microsoft.Extensions.Caching.StackExchangeRedis": "7.0.1",
+          "Microsoft.Extensions.Caching.StackExchangeRedis": "7.0.0",
           "MsDemo.Shared": "1.0.0",
           "Serilog.AspNetCore": "6.1.0",
           "Serilog.Sinks.Elasticsearch": "8.4.1",
@@ -971,7 +971,7 @@
           "Microsoft.Extensions.Primitives": "7.0.0"
         }
       },
-      "Microsoft.Extensions.Caching.StackExchangeRedis/7.0.1": {
+      "Microsoft.Extensions.Caching.StackExchangeRedis/7.0.0": {
         "dependencies": {
           "Microsoft.Extensions.Caching.Abstractions": "7.0.0",
           "Microsoft.Extensions.Logging.Abstractions": "7.0.0",
@@ -980,8 +980,8 @@
         },
         "runtime": {
           "lib/net7.0/Microsoft.Extensions.Caching.StackExchangeRedis.dll": {
-            "assemblyVersion": "7.0.1.0",
-            "fileVersion": "7.0.122.56809"
+            "assemblyVersion": "7.0.0.0",
+            "fileVersion": "7.0.22.51819"
           }
         },
         "compile": {
@@ -5448,12 +5448,12 @@
       "path": "microsoft.extensions.caching.memory/7.0.0",
       "hashPath": "microsoft.extensions.caching.memory.7.0.0.nupkg.sha512"
     },
-    "Microsoft.Extensions.Caching.StackExchangeRedis/7.0.1": {
+    "Microsoft.Extensions.Caching.StackExchangeRedis/7.0.0": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-YtwtXPy5sBBkfj7kZkDEHwiMxgUZC0Coqq0x9ViL2zvj2nHBesNvJz/gFCLsFzEvw8UFfzHT1KGKG/QGI2cLVg==",
-      "path": "microsoft.extensions.caching.stackexchangeredis/7.0.1",
-      "hashPath": "microsoft.extensions.caching.stackexchangeredis.7.0.1.nupkg.sha512"
+      "sha512": "sha512-ShOGhu7s+QEirDRtp93Phkb3WpCvknoZxFN+dyFdvrxtGS0n5EGCQOJyXURx6A8LNQHIiJRJltTCd6q3xbecYQ==",
+      "path": "microsoft.extensions.caching.stackexchangeredis/7.0.0",
+      "hashPath": "microsoft.extensions.caching.stackexchangeredis.7.0.0.nupkg.sha512"
     },
     "Microsoft.Extensions.Configuration/7.0.0": {
       "type": "package",

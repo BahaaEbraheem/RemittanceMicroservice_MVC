@@ -22,15 +22,15 @@
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
-          "net7.0"
+          "net6.0"
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
-          "net7.0": {
-            "targetAlias": "net7.0",
+          "net6.0": {
+            "targetAlias": "net6.0",
             "projectReferences": {
               "C:\\Git\\RemittanceMicroservice_MVC\\modules\\product\\src\\ProductManagement.Application\\ProductManagement.Application.csproj": {
                 "projectPath": "C:\\Git\\RemittanceMicroservice_MVC\\modules\\product\\src\\ProductManagement.Application\\ProductManagement.Application.csproj"
@@ -54,8 +54,8 @@
         }
       },
       "frameworks": {
-        "net7.0": {
-          "targetAlias": "net7.0",
+        "net6.0": {
+          "targetAlias": "net6.0",
           "dependencies": {
             "IdentityServer4.AccessTokenValidation": {
               "target": "Package",
@@ -63,17 +63,17 @@
             },
             "Microsoft.AspNetCore.DataProtection.StackExchangeRedis": {
               "target": "Package",
-              "version": "[7.0.1, )"
+              "version": "[6.0.5, )"
             },
             "Microsoft.EntityFrameworkCore.Tools": {
               "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
               "suppressParent": "All",
               "target": "Package",
-              "version": "[7.0.1, )"
+              "version": "[6.0.2, )"
             },
             "Microsoft.Extensions.Caching.StackExchangeRedis": {
               "target": "Package",
-              "version": "[7.0.1, )"
+              "version": "[6.0.5, )"
             },
             "Serilog.AspNetCore": {
               "target": "Package",
@@ -93,35 +93,35 @@
             },
             "Volo.Abp.AspNetCore.MultiTenancy": {
               "target": "Package",
-              "version": "[7.0.0, )"
+              "version": "[6.0.2, )"
             },
             "Volo.Abp.AuditLogging.EntityFrameworkCore": {
               "target": "Package",
-              "version": "[7.0.0, )"
+              "version": "[6.0.2, )"
             },
             "Volo.Abp.Autofac": {
               "target": "Package",
-              "version": "[7.0.0, )"
+              "version": "[6.0.2, )"
             },
             "Volo.Abp.EntityFrameworkCore.SqlServer": {
               "target": "Package",
-              "version": "[7.0.0, )"
+              "version": "[6.0.2, )"
             },
             "Volo.Abp.EventBus.RabbitMQ": {
               "target": "Package",
-              "version": "[7.0.0, )"
+              "version": "[6.0.2, )"
             },
             "Volo.Abp.PermissionManagement.EntityFrameworkCore": {
               "target": "Package",
-              "version": "[7.0.0, )"
+              "version": "[6.0.2, )"
             },
             "Volo.Abp.SettingManagement.EntityFrameworkCore": {
               "target": "Package",
-              "version": "[7.0.0, )"
+              "version": "[6.0.2, )"
             },
             "Volo.Abp.TenantManagement.EntityFrameworkCore": {
               "target": "Package",
-              "version": "[7.0.0, )"
+              "version": "[6.0.2, )"
             }
           },
           "imports": [
@@ -200,7 +200,7 @@
             },
             "Volo.Abp.Ddd.Application": {
               "target": "Package",
-              "version": "[7.0.0, )"
+              "version": "[6.0.2, )"
             }
           },
           "imports": [
@@ -236,15 +236,15 @@
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
-          "net7.0"
+          "net6.0"
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
-          "net7.0": {
-            "targetAlias": "net7.0",
+          "net6.0": {
+            "targetAlias": "net6.0",
             "projectReferences": {
               "C:\\Git\\RemittanceMicroservice_MVC\\modules\\product\\src\\ProductManagement.Application.Contracts\\ProductManagement.Application.Contracts.csproj": {
                 "projectPath": "C:\\Git\\RemittanceMicroservice_MVC\\modules\\product\\src\\ProductManagement.Application.Contracts\\ProductManagement.Application.Contracts.csproj"
@@ -262,12 +262,12 @@
         }
       },
       "frameworks": {
-        "net7.0": {
-          "targetAlias": "net7.0",
+        "net6.0": {
+          "targetAlias": "net6.0",
           "dependencies": {
             "Volo.Abp.AutoMapper": {
               "target": "Package",
-              "version": "[7.0.0, )"
+              "version": "[6.0.2, )"
             }
           },
           "imports": [
@@ -338,11 +338,11 @@
             },
             "Volo.Abp.Ddd.Domain": {
               "target": "Package",
-              "version": "[7.0.0, )"
+              "version": "[6.0.2, )"
             },
             "Volo.Abp.Localization": {
               "target": "Package",
-              "version": "[7.0.0, )"
+              "version": "[6.0.2, )"
             }
           },
           "imports": [
@@ -378,15 +378,15 @@
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
-          "net7.0"
+          "net6.0"
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
-          "net7.0": {
-            "targetAlias": "net7.0",
+          "net6.0": {
+            "targetAlias": "net6.0",
             "projectReferences": {
               "C:\\Git\\RemittanceMicroservice_MVC\\modules\\product\\src\\ProductManagement.Domain.Shared\\ProductManagement.Domain.Shared.csproj": {
                 "projectPath": "C:\\Git\\RemittanceMicroservice_MVC\\modules\\product\\src\\ProductManagement.Domain.Shared\\ProductManagement.Domain.Shared.csproj"
@@ -401,12 +401,12 @@
         }
       },
       "frameworks": {
-        "net7.0": {
-          "targetAlias": "net7.0",
+        "net6.0": {
+          "targetAlias": "net6.0",
           "dependencies": {
             "Volo.Abp.EntityFrameworkCore": {
               "target": "Package",
-              "version": "[7.0.0, )"
+              "version": "[6.0.2, )"
             }
           },
           "imports": [
@@ -447,15 +447,15 @@
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
-          "net7.0"
+          "net6.0"
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
-          "net7.0": {
-            "targetAlias": "net7.0",
+          "net6.0": {
+            "targetAlias": "net6.0",
             "projectReferences": {
               "C:\\Git\\RemittanceMicroservice_MVC\\modules\\product\\src\\ProductManagement.Domain\\ProductManagement.Domain.csproj": {
                 "projectPath": "C:\\Git\\RemittanceMicroservice_MVC\\modules\\product\\src\\ProductManagement.Domain\\ProductManagement.Domain.csproj"
@@ -470,18 +470,18 @@
         }
       },
       "frameworks": {
-        "net7.0": {
-          "targetAlias": "net7.0",
+        "net6.0": {
+          "targetAlias": "net6.0",
           "dependencies": {
             "Microsoft.EntityFrameworkCore.Design": {
               "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
               "suppressParent": "All",
               "target": "Package",
-              "version": "[7.0.1, )"
+              "version": "[6.0.2, )"
             },
             "Volo.Abp.EntityFrameworkCore": {
               "target": "Package",
-              "version": "[7.0.0, )"
+              "version": "[6.0.2, )"
             }
           },
           "imports": [
@@ -522,15 +522,15 @@
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
-          "net7.0"
+          "net6.0"
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
-          "net7.0": {
-            "targetAlias": "net7.0",
+          "net6.0": {
+            "targetAlias": "net6.0",
             "projectReferences": {
               "C:\\Git\\RemittanceMicroservice_MVC\\modules\\product\\src\\ProductManagement.Application.Contracts\\ProductManagement.Application.Contracts.csproj": {
                 "projectPath": "C:\\Git\\RemittanceMicroservice_MVC\\modules\\product\\src\\ProductManagement.Application.Contracts\\ProductManagement.Application.Contracts.csproj"
@@ -545,12 +545,12 @@
         }
       },
       "frameworks": {
-        "net7.0": {
-          "targetAlias": "net7.0",
+        "net6.0": {
+          "targetAlias": "net6.0",
           "dependencies": {
             "Volo.Abp.AspNetCore.Mvc": {
               "target": "Package",
-              "version": "[7.0.0, )"
+              "version": "[6.0.2, )"
             }
           },
           "imports": [
@@ -625,7 +625,7 @@
             },
             "Volo.Abp.Ddd.Application.Contracts": {
               "target": "Package",
-              "version": "[7.0.0, )"
+              "version": "[6.0.2, )"
             }
           },
           "imports": [

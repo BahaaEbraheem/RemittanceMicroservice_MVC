@@ -22,15 +22,15 @@
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
-          "net7.0"
+          "net6.0"
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
-          "net7.0": {
-            "targetAlias": "net7.0",
+          "net6.0": {
+            "targetAlias": "net6.0",
             "projectReferences": {
               "C:\\Git\\RemittanceMicroservice_MVC\\modules\\product\\src\\ProductManagement.HttpApi.Client\\ProductManagement.HttpApi.Client.csproj": {
                 "projectPath": "C:\\Git\\RemittanceMicroservice_MVC\\modules\\product\\src\\ProductManagement.HttpApi.Client\\ProductManagement.HttpApi.Client.csproj"
@@ -45,12 +45,12 @@
         }
       },
       "frameworks": {
-        "net7.0": {
-          "targetAlias": "net7.0",
+        "net6.0": {
+          "targetAlias": "net6.0",
           "dependencies": {
             "Microsoft.Extensions.Hosting": {
               "target": "Package",
-              "version": "[7.0.0, )"
+              "version": "[6.0.1, )"
             },
             "Serilog.Extensions.Logging": {
               "target": "Package",
@@ -62,19 +62,19 @@
             },
             "Volo.Abp.Autofac": {
               "target": "Package",
-              "version": "[7.0.0, )"
+              "version": "[6.0.2, )"
             },
             "Volo.Abp.Http.Client.IdentityModel": {
               "target": "Package",
-              "version": "[7.0.0, )"
+              "version": "[6.0.2, )"
             },
             "Volo.Abp.Identity.HttpApi.Client": {
               "target": "Package",
-              "version": "[7.0.0, )"
+              "version": "[6.0.2, )"
             },
             "Volo.Abp.TenantManagement.HttpApi.Client": {
               "target": "Package",
-              "version": "[7.0.0, )"
+              "version": "[6.0.2, )"
             }
           },
           "imports": [
@@ -149,7 +149,7 @@
             },
             "Volo.Abp.Ddd.Application": {
               "target": "Package",
-              "version": "[7.0.0, )"
+              "version": "[6.0.2, )"
             }
           },
           "imports": [
@@ -215,11 +215,11 @@
             },
             "Volo.Abp.Ddd.Domain": {
               "target": "Package",
-              "version": "[7.0.0, )"
+              "version": "[6.0.2, )"
             },
             "Volo.Abp.Localization": {
               "target": "Package",
-              "version": "[7.0.0, )"
+              "version": "[6.0.2, )"
             }
           },
           "imports": [
@@ -255,15 +255,15 @@
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
-          "net7.0"
+          "net6.0"
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
-          "net7.0": {
-            "targetAlias": "net7.0",
+          "net6.0": {
+            "targetAlias": "net6.0",
             "projectReferences": {
               "C:\\Git\\RemittanceMicroservice_MVC\\modules\\product\\src\\ProductManagement.Application.Contracts\\ProductManagement.Application.Contracts.csproj": {
                 "projectPath": "C:\\Git\\RemittanceMicroservice_MVC\\modules\\product\\src\\ProductManagement.Application.Contracts\\ProductManagement.Application.Contracts.csproj"
@@ -278,12 +278,12 @@
         }
       },
       "frameworks": {
-        "net7.0": {
-          "targetAlias": "net7.0",
+        "net6.0": {
+          "targetAlias": "net6.0",
           "dependencies": {
             "Volo.Abp.Http.Client": {
               "target": "Package",
-              "version": "[7.0.0, )"
+              "version": "[6.0.2, )"
             }
           },
           "imports": [

@@ -22,15 +22,15 @@
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
-          "net7.0"
+          "net6.0"
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
-          "net7.0": {
-            "targetAlias": "net7.0",
+          "net6.0": {
+            "targetAlias": "net6.0",
             "projectReferences": {
               "C:\\Git\\RemittanceMicroservice_MVC\\modules\\currency\\src\\CurrencyManagment.HttpApi.Client\\CurrencyManagment.HttpApi.Client.csproj": {
                 "projectPath": "C:\\Git\\RemittanceMicroservice_MVC\\modules\\currency\\src\\CurrencyManagment.HttpApi.Client\\CurrencyManagment.HttpApi.Client.csproj"
@@ -57,20 +57,20 @@
         }
       },
       "frameworks": {
-        "net7.0": {
-          "targetAlias": "net7.0",
+        "net6.0": {
+          "targetAlias": "net6.0",
           "dependencies": {
             "Microsoft.AspNetCore.Authentication.OpenIdConnect": {
               "target": "Package",
-              "version": "[7.0.1, )"
+              "version": "[6.0.5, )"
             },
             "Microsoft.AspNetCore.DataProtection.StackExchangeRedis": {
               "target": "Package",
-              "version": "[7.0.1, )"
+              "version": "[6.0.5, )"
             },
             "Microsoft.Extensions.Caching.StackExchangeRedis": {
               "target": "Package",
-              "version": "[7.0.1, )"
+              "version": "[6.0.5, )"
             },
             "Serilog.AspNetCore": {
               "target": "Package",
@@ -86,31 +86,31 @@
             },
             "Volo.Abp.AspNetCore.Authentication.OAuth": {
               "target": "Package",
-              "version": "[7.0.0, )"
+              "version": "[6.0.2, )"
             },
             "Volo.Abp.AspNetCore.Mvc.Client": {
               "target": "Package",
-              "version": "[7.0.0, )"
+              "version": "[6.0.2, )"
             },
             "Volo.Abp.AspNetCore.Mvc.UI.Theme.Basic": {
               "target": "Package",
-              "version": "[7.0.0, )"
+              "version": "[6.0.2, )"
             },
             "Volo.Abp.Autofac": {
               "target": "Package",
-              "version": "[7.0.0, )"
+              "version": "[6.0.2, )"
             },
             "Volo.Abp.Http.Client.IdentityModel.Web": {
               "target": "Package",
-              "version": "[7.0.0, )"
+              "version": "[6.0.2, )"
             },
             "Volo.Blogging.HttpApi.Client": {
               "target": "Package",
-              "version": "[7.0.0, )"
+              "version": "[6.0.2, )"
             },
             "Volo.Blogging.Web": {
               "target": "Package",
-              "version": "[7.0.0, )"
+              "version": "[6.0.2, )"
             }
           },
           "imports": [
@@ -200,11 +200,11 @@
             },
             "Volo.Abp.Authorization": {
               "target": "Package",
-              "version": "[7.0.0, )"
+              "version": "[6.0.2, )"
             },
             "Volo.Abp.Ddd.Application.Contracts": {
               "target": "Package",
-              "version": "[7.0.0, )"
+              "version": "[6.0.2, )"
             }
           },
           "imports": [
@@ -275,7 +275,7 @@
             },
             "Microsoft.Extensions.FileProviders.Embedded": {
               "target": "Package",
-              "version": "[7.0.1, )"
+              "version": "[6.0.5, )"
             },
             "NETStandard.Library": {
               "suppressParent": "All",
@@ -285,7 +285,7 @@
             },
             "Volo.Abp.Validation": {
               "target": "Package",
-              "version": "[7.0.0, )"
+              "version": "[6.0.2, )"
             }
           },
           "imports": [
@@ -366,7 +366,7 @@
             },
             "Volo.Abp.Http.Client": {
               "target": "Package",
-              "version": "[7.0.0, )"
+              "version": "[6.0.2, )"
             }
           },
           "imports": [
@@ -450,11 +450,11 @@
             },
             "Volo.Abp.Authorization": {
               "target": "Package",
-              "version": "[7.0.0, )"
+              "version": "[6.0.2, )"
             },
             "Volo.Abp.Ddd.Application.Contracts": {
               "target": "Package",
-              "version": "[7.0.0, )"
+              "version": "[6.0.2, )"
             }
           },
           "imports": [
@@ -525,7 +525,7 @@
             },
             "Microsoft.Extensions.FileProviders.Embedded": {
               "target": "Package",
-              "version": "[7.0.1, )"
+              "version": "[6.0.5, )"
             },
             "NETStandard.Library": {
               "suppressParent": "All",
@@ -535,7 +535,7 @@
             },
             "Volo.Abp.Validation": {
               "target": "Package",
-              "version": "[7.0.0, )"
+              "version": "[6.0.2, )"
             }
           },
           "imports": [
@@ -616,7 +616,7 @@
             },
             "Volo.Abp.Http.Client": {
               "target": "Package",
-              "version": "[7.0.0, )"
+              "version": "[6.0.2, )"
             }
           },
           "imports": [
@@ -686,7 +686,7 @@
             },
             "Volo.Abp.Ddd.Application": {
               "target": "Package",
-              "version": "[7.0.0, )"
+              "version": "[6.0.2, )"
             }
           },
           "imports": [
@@ -752,11 +752,11 @@
             },
             "Volo.Abp.Ddd.Domain": {
               "target": "Package",
-              "version": "[7.0.0, )"
+              "version": "[6.0.2, )"
             },
             "Volo.Abp.Localization": {
               "target": "Package",
-              "version": "[7.0.0, )"
+              "version": "[6.0.2, )"
             }
           },
           "imports": [
@@ -792,15 +792,15 @@
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
-          "net7.0"
+          "net6.0"
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
-          "net7.0": {
-            "targetAlias": "net7.0",
+          "net6.0": {
+            "targetAlias": "net6.0",
             "projectReferences": {
               "C:\\Git\\RemittanceMicroservice_MVC\\modules\\product\\src\\ProductManagement.Application.Contracts\\ProductManagement.Application.Contracts.csproj": {
                 "projectPath": "C:\\Git\\RemittanceMicroservice_MVC\\modules\\product\\src\\ProductManagement.Application.Contracts\\ProductManagement.Application.Contracts.csproj"
@@ -815,12 +815,12 @@
         }
       },
       "frameworks": {
-        "net7.0": {
-          "targetAlias": "net7.0",
+        "net6.0": {
+          "targetAlias": "net6.0",
           "dependencies": {
             "Volo.Abp.Http.Client": {
               "target": "Package",
-              "version": "[7.0.0, )"
+              "version": "[6.0.2, )"
             }
           },
           "imports": [
@@ -915,11 +915,11 @@
             },
             "Volo.Abp.Authorization": {
               "target": "Package",
-              "version": "[7.0.0, )"
+              "version": "[6.0.2, )"
             },
             "Volo.Abp.Ddd.Application.Contracts": {
               "target": "Package",
-              "version": "[7.0.0, )"
+              "version": "[6.0.2, )"
             }
           },
           "imports": [
@@ -990,7 +990,7 @@
             },
             "Microsoft.Extensions.FileProviders.Embedded": {
               "target": "Package",
-              "version": "[7.0.1, )"
+              "version": "[6.0.5, )"
             },
             "NETStandard.Library": {
               "suppressParent": "All",
@@ -1000,7 +1000,7 @@
             },
             "Volo.Abp.Validation": {
               "target": "Package",
-              "version": "[7.0.0, )"
+              "version": "[6.0.2, )"
             }
           },
           "imports": [
@@ -1087,7 +1087,7 @@
             },
             "Volo.Abp.Ddd.Domain": {
               "target": "Package",
-              "version": "[7.0.0, )"
+              "version": "[6.0.2, )"
             }
           },
           "imports": [
@@ -1168,7 +1168,7 @@
             },
             "Volo.Abp.Http.Client": {
               "target": "Package",
-              "version": "[7.0.0, )"
+              "version": "[6.0.2, )"
             }
           },
           "imports": [
@@ -1238,7 +1238,7 @@
             },
             "Volo.Abp.Ddd.Application.Contracts": {
               "target": "Package",
-              "version": "[7.0.0, )"
+              "version": "[6.0.2, )"
             }
           },
           "imports": [

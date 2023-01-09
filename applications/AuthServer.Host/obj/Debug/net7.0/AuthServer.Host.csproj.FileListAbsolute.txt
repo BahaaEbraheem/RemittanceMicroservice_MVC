@@ -1,5 +1,6 @@
 C:\Git\RemittanceMicroservice_MVC\applications\AuthServer.Host\bin\Debug\net7.0\appsettings.Development.json
 C:\Git\RemittanceMicroservice_MVC\applications\AuthServer.Host\bin\Debug\net7.0\appsettings.json
+C:\Git\RemittanceMicroservice_MVC\applications\AuthServer.Host\bin\Debug\net7.0\libman.json
 C:\Git\RemittanceMicroservice_MVC\applications\AuthServer.Host\bin\Debug\net7.0\package.json
 C:\Git\RemittanceMicroservice_MVC\applications\AuthServer.Host\bin\Debug\net7.0\AuthServer.Host.staticwebassets.runtime.json
 C:\Git\RemittanceMicroservice_MVC\applications\AuthServer.Host\bin\Debug\net7.0\AuthServer.Host.exe
@@ -320,9 +321,6 @@ C:\Git\RemittanceMicroservice_MVC\applications\AuthServer.Host\bin\Debug\net7.0\
 C:\Git\RemittanceMicroservice_MVC\applications\AuthServer.Host\bin\Debug\net7.0\IdentityServer4.Storage.dll
 C:\Git\RemittanceMicroservice_MVC\applications\AuthServer.Host\bin\Debug\net7.0\JetBrains.Annotations.dll
 C:\Git\RemittanceMicroservice_MVC\applications\AuthServer.Host\bin\Debug\net7.0\Microsoft.AspNetCore.Authentication.OpenIdConnect.dll
-C:\Git\RemittanceMicroservice_MVC\applications\AuthServer.Host\bin\Debug\net7.0\Microsoft.AspNetCore.Cryptography.Internal.dll
-C:\Git\RemittanceMicroservice_MVC\applications\AuthServer.Host\bin\Debug\net7.0\Microsoft.AspNetCore.DataProtection.dll
-C:\Git\RemittanceMicroservice_MVC\applications\AuthServer.Host\bin\Debug\net7.0\Microsoft.AspNetCore.DataProtection.Abstractions.dll
 C:\Git\RemittanceMicroservice_MVC\applications\AuthServer.Host\bin\Debug\net7.0\Microsoft.AspNetCore.DataProtection.StackExchangeRedis.dll
 C:\Git\RemittanceMicroservice_MVC\applications\AuthServer.Host\bin\Debug\net7.0\Microsoft.AspNetCore.Mvc.Razor.Extensions.dll
 C:\Git\RemittanceMicroservice_MVC\applications\AuthServer.Host\bin\Debug\net7.0\Microsoft.AspNetCore.Mvc.Razor.RuntimeCompilation.dll

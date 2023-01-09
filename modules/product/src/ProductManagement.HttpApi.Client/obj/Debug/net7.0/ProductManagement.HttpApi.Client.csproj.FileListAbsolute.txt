@@ -1,0 +1,17 @@
+C:\Git\RemittanceMicroservice_MVC\modules\product\src\ProductManagement.HttpApi.Client\bin\Debug\net7.0\ProductManagement.HttpApi.Client.deps.json
+C:\Git\RemittanceMicroservice_MVC\modules\product\src\ProductManagement.HttpApi.Client\bin\Debug\net7.0\ProductManagement.HttpApi.Client.dll
+C:\Git\RemittanceMicroservice_MVC\modules\product\src\ProductManagement.HttpApi.Client\bin\Debug\net7.0\ProductManagement.HttpApi.Client.pdb
+C:\Git\RemittanceMicroservice_MVC\modules\product\src\ProductManagement.HttpApi.Client\bin\Debug\net7.0\ProductManagement.Application.Contracts.dll
+C:\Git\RemittanceMicroservice_MVC\modules\product\src\ProductManagement.HttpApi.Client\bin\Debug\net7.0\ProductManagement.Domain.Shared.dll
+C:\Git\RemittanceMicroservice_MVC\modules\product\src\ProductManagement.HttpApi.Client\bin\Debug\net7.0\ProductManagement.Application.Contracts.pdb
+C:\Git\RemittanceMicroservice_MVC\modules\product\src\ProductManagement.HttpApi.Client\bin\Debug\net7.0\ProductManagement.Domain.Shared.pdb
+C:\Git\RemittanceMicroservice_MVC\modules\product\src\ProductManagement.HttpApi.Client\obj\Debug\net7.0\ProductManagement.HttpApi.Client.csproj.AssemblyReference.cache
+C:\Git\RemittanceMicroservice_MVC\modules\product\src\ProductManagement.HttpApi.Client\obj\Debug\net7.0\ProductManagement.HttpApi.Client.GeneratedMSBuildEditorConfig.editorconfig
+C:\Git\RemittanceMicroservice_MVC\modules\product\src\ProductManagement.HttpApi.Client\obj\Debug\net7.0\ProductManagement.HttpApi.Client.AssemblyInfoInputs.cache
+C:\Git\RemittanceMicroservice_MVC\modules\product\src\ProductManagement.HttpApi.Client\obj\Debug\net7.0\ProductManagement.HttpApi.Client.AssemblyInfo.cs
+C:\Git\RemittanceMicroservice_MVC\modules\product\src\ProductManagement.HttpApi.Client\obj\Debug\net7.0\ProductManagement.HttpApi.Client.csproj.CoreCompileInputs.cache
+C:\Git\RemittanceMicroservice_MVC\modules\product\src\ProductManagement.HttpApi.Client\obj\Debug\net7.0\ProductManagement.HttpApi.Client.csproj.CopyComplete
+C:\Git\RemittanceMicroservice_MVC\modules\product\src\ProductManagement.HttpApi.Client\obj\Debug\net7.0\ProductManagement.HttpApi.Client.dll
+C:\Git\RemittanceMicroservice_MVC\modules\product\src\ProductManagement.HttpApi.Client\obj\Debug\net7.0\refint\ProductManagement.HttpApi.Client.dll
+C:\Git\RemittanceMicroservice_MVC\modules\product\src\ProductManagement.HttpApi.Client\obj\Debug\net7.0\ProductManagement.HttpApi.Client.pdb
+C:\Git\RemittanceMicroservice_MVC\modules\product\src\ProductManagement.HttpApi.Client\obj\Debug\net7.0\ref\ProductManagement.HttpApi.Client.dll

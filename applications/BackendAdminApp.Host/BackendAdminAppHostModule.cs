@@ -34,6 +34,20 @@ using CustomerManagement;
 using CustomerManagement.Web;
 using RemittanceManagement.Web;
 using RemittanceManagement;
+using Volo.Abp.PermissionManagement.Web;
+using Volo.Abp.Http.Client.IdentityModel;
+//using Volo.Abp.PermissionManagement.HttpApi;
+using Volo.Abp.AspNetCore.Mvc.UI.MultiTenancy;
+using Volo.Abp.UI.Navigation.Urls;
+using Volo.Abp.AspNetCore.Mvc;
+using Volo.Abp.Account;
+using Volo.Abp.IdentityServer.EntityFrameworkCore;
+using Volo.Abp.Account.Web;
+using Microsoft.AspNetCore.Authentication.OpenIdConnect;
+using Microsoft.AspNetCore.Authentication.JwtBearer;
+using Microsoft.AspNetCore.Authentication.Cookies;
+using Volo.Abp.Http.Client;
+//using Volo.Abp.EntityFrameworkCore.SqlServer;
 
 namespace BackendAdminApp.Host
 {
@@ -47,7 +61,9 @@ namespace BackendAdminApp.Host
         typeof(AbpTenantManagementHttpApiClientModule),
         typeof(AbpTenantManagementWebModule),
         typeof(BloggingApplicationContractsModule),
-        typeof(AbpPermissionManagementHttpApiClientModule),
+
+        //typeof(AbpPermissionManagementHttpApiClientModule),
+        typeof(AbpPermissionManagementWebModule),
 
         typeof(ProductManagementHttpApiClientModule),
         typeof(ProductManagementWebModule),
@@ -64,9 +80,23 @@ namespace BackendAdminApp.Host
         typeof(AbpAspNetCoreMvcUiBasicThemeModule),
         typeof(AbpFeatureManagementHttpApiClientModule),
 
+        typeof(AbpHttpClientWebModule),
+        typeof(AbpHttpClientIdentityModelModule),
+     typeof(AbpIdentityHttpApiModule),
+        typeof(AbpAspNetCoreMvcContractsModule),
+        typeof(AbpTenantManagementApplicationContractsModule),
+        typeof(AbpAspNetCoreMvcUiMultiTenancyModule),
+        typeof(AbpIdentityApplicationContractsModule),
+        typeof(AbpIdentityServerEntityFrameworkCoreModule),
+        typeof(AbpAccountWebIdentityServerModule),
 
-        typeof(AbpHttpClientWebModule)
 
+
+             typeof(AbpHttpClientModule)
+
+
+
+        //typeof(AbpAccountApplicationModule)
 
         )]
         public class BackendAdminAppHostModule : AbpModule
@@ -74,7 +104,8 @@ namespace BackendAdminApp.Host
         public override void ConfigureServices(ServiceConfigurationContext context)
         {
             var configuration = context.Services.GetConfiguration();
-        
+
+
             Configure<AbpLocalizationOptions>(options =>
             {
                 options.Languages.Add(new LanguageInfo("en", "en", "English"));
@@ -91,10 +122,10 @@ namespace BackendAdminApp.Host
             });
 
             context.Services.AddAuthentication(options =>
-                {
-                    options.DefaultScheme = "Cookies";
-                    options.DefaultChallengeScheme = "oidc";
-                })
+            {
+                options.DefaultScheme = "Cookies";
+                options.DefaultChallengeScheme = "oidc";
+            })
                 .AddCookie("Cookies", options =>
                 {
                     options.ExpireTimeSpan = TimeSpan.FromDays(365);
@@ -114,9 +145,8 @@ namespace BackendAdminApp.Host
                     options.Scope.Add("BackendAdminAppGateway");
                     options.Scope.Add("IdentityService");
                     options.Scope.Add("ProductService");
-           
                     options.Scope.Add("TenantManagementService");
-                    
+
                 });
 
             context.Services.AddSwaggerGen(
@@ -139,11 +169,12 @@ namespace BackendAdminApp.Host
         public override void OnApplicationInitialization(ApplicationInitializationContext context)
         {
             var app = context.GetApplicationBuilder();
-
-            app.UseCorrelationId();
+        
+             app.UseCorrelationId();
             app.UseStaticFiles();
             app.UseRouting();
             app.UseAuthentication();
+
             if (MsDemoConsts.IsMultiTenancyEnabled)
             {
                 app.UseMultiTenancy();

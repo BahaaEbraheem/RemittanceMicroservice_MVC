@@ -1,0 +1,77 @@
+2023-01-07 16:42:33.051 +02:00 [INF] Starting ConsoleClientDemo...
+2023-01-07 16:42:38.131 +02:00 [INF] Loaded ABP modules:
+2023-01-07 16:42:38.132 +02:00 [INF] - ConsoleClientDemo.ConsoleClientDemoModule
+2023-01-07 16:42:38.133 +02:00 [INF]   - Volo.Abp.Autofac.AbpAutofacModule
+2023-01-07 16:42:38.133 +02:00 [INF]     - Volo.Abp.Castle.AbpCastleCoreModule
+2023-01-07 16:42:38.133 +02:00 [INF]   - Volo.Abp.Http.Client.IdentityModel.AbpHttpClientIdentityModelModule
+2023-01-07 16:42:38.133 +02:00 [INF]     - Volo.Abp.Http.Client.AbpHttpClientModule
+2023-01-07 16:42:38.133 +02:00 [INF]       - Volo.Abp.Http.AbpHttpModule
+2023-01-07 16:42:38.133 +02:00 [INF]         - Volo.Abp.Http.AbpHttpAbstractionsModule
+2023-01-07 16:42:38.133 +02:00 [INF]         - Volo.Abp.Json.AbpJsonModule
+2023-01-07 16:42:38.133 +02:00 [INF]           - Volo.Abp.Json.SystemTextJson.AbpJsonSystemTextJsonModule
+2023-01-07 16:42:38.133 +02:00 [INF]             - Volo.Abp.Json.AbpJsonAbstractionsModule
+2023-01-07 16:42:38.133 +02:00 [INF]             - Volo.Abp.Timing.AbpTimingModule
+2023-01-07 16:42:38.133 +02:00 [INF]               - Volo.Abp.Localization.AbpLocalizationModule
+2023-01-07 16:42:38.133 +02:00 [INF]                 - Volo.Abp.VirtualFileSystem.AbpVirtualFileSystemModule
+2023-01-07 16:42:38.133 +02:00 [INF]                 - Volo.Abp.Settings.AbpSettingsModule
+2023-01-07 16:42:38.133 +02:00 [INF]                   - Volo.Abp.Localization.AbpLocalizationAbstractionsModule
+2023-01-07 16:42:38.133 +02:00 [INF]                   - Volo.Abp.Security.AbpSecurityModule
+2023-01-07 16:42:38.133 +02:00 [INF]                   - Volo.Abp.MultiTenancy.AbpMultiTenancyModule
+2023-01-07 16:42:38.133 +02:00 [INF]                     - Volo.Abp.Data.AbpDataModule
+2023-01-07 16:42:38.133 +02:00 [INF]                       - Volo.Abp.ObjectExtending.AbpObjectExtendingModule
+2023-01-07 16:42:38.133 +02:00 [INF]                         - Volo.Abp.Validation.AbpValidationAbstractionsModule
+2023-01-07 16:42:38.133 +02:00 [INF]                       - Volo.Abp.Uow.AbpUnitOfWorkModule
+2023-01-07 16:42:38.133 +02:00 [INF]                       - Volo.Abp.EventBus.Abstractions.AbpEventBusAbstractionsModule
+2023-01-07 16:42:38.133 +02:00 [INF]                 - Volo.Abp.Threading.AbpThreadingModule
+2023-01-07 16:42:38.133 +02:00 [INF]         - Volo.Abp.Minify.AbpMinifyModule
+2023-01-07 16:42:38.133 +02:00 [INF]       - Volo.Abp.Validation.AbpValidationModule
+2023-01-07 16:42:38.133 +02:00 [INF]       - Volo.Abp.ExceptionHandling.AbpExceptionHandlingModule
+2023-01-07 16:42:38.133 +02:00 [INF]       - Volo.Abp.RemoteServices.AbpRemoteServicesModule
+2023-01-07 16:42:38.133 +02:00 [INF]     - Volo.Abp.IdentityModel.AbpIdentityModelModule
+2023-01-07 16:42:38.133 +02:00 [INF]       - Volo.Abp.Caching.AbpCachingModule
+2023-01-07 16:42:38.133 +02:00 [INF]         - Volo.Abp.Serialization.AbpSerializationModule
+2023-01-07 16:42:38.133 +02:00 [INF]   - Volo.Abp.Identity.AbpIdentityHttpApiClientModule
+2023-01-07 16:42:38.133 +02:00 [INF]     - Volo.Abp.Identity.AbpIdentityApplicationContractsModule
+2023-01-07 16:42:38.133 +02:00 [INF]       - Volo.Abp.Identity.AbpIdentityDomainSharedModule
+2023-01-07 16:42:38.133 +02:00 [INF]         - Volo.Abp.Users.AbpUsersDomainSharedModule
+2023-01-07 16:42:38.133 +02:00 [INF]         - Volo.Abp.Features.AbpFeaturesModule
+2023-01-07 16:42:38.133 +02:00 [INF]           - Volo.Abp.Authorization.AbpAuthorizationAbstractionsModule
+2023-01-07 16:42:38.133 +02:00 [INF]       - Volo.Abp.Users.AbpUsersAbstractionModule
+2023-01-07 16:42:38.133 +02:00 [INF]         - Volo.Abp.EventBus.AbpEventBusModule
+2023-01-07 16:42:38.133 +02:00 [INF]           - Volo.Abp.Guids.AbpGuidsModule
+2023-01-07 16:42:38.133 +02:00 [INF]           - Volo.Abp.BackgroundWorkers.AbpBackgroundWorkersModule
+2023-01-07 16:42:38.133 +02:00 [INF]           - Volo.Abp.DistributedLocking.AbpDistributedLockingAbstractionsModule
+2023-01-07 16:42:38.133 +02:00 [INF]       - Volo.Abp.Authorization.AbpAuthorizationModule
+2023-01-07 16:42:38.133 +02:00 [INF]       - Volo.Abp.PermissionManagement.AbpPermissionManagementApplicationContractsModule
+2023-01-07 16:42:38.133 +02:00 [INF]         - Volo.Abp.Application.AbpDddApplicationContractsModule
+2023-01-07 16:42:38.133 +02:00 [INF]           - Volo.Abp.Auditing.AbpAuditingContractsModule
+2023-01-07 16:42:38.133 +02:00 [INF]         - Volo.Abp.PermissionManagement.AbpPermissionManagementDomainSharedModule
+2023-01-07 16:42:38.133 +02:00 [INF]   - ProductManagement.ProductManagementHttpApiClientModule
+2023-01-07 16:42:38.133 +02:00 [INF]     - ProductManagement.ProductManagementApplicationContractsModule
+2023-01-07 16:42:38.133 +02:00 [INF]       - ProductManagement.ProductManagementDomainSharedModule
+2023-01-07 16:42:38.133 +02:00 [INF]       - Volo.Abp.Application.AbpDddApplicationModule
+2023-01-07 16:42:38.133 +02:00 [INF]         - Volo.Abp.Domain.AbpDddDomainModule
+2023-01-07 16:42:38.133 +02:00 [INF]           - Volo.Abp.Auditing.AbpAuditingModule
+2023-01-07 16:42:38.134 +02:00 [INF]           - Volo.Abp.ObjectMapping.AbpObjectMappingModule
+2023-01-07 16:42:38.134 +02:00 [INF]           - Volo.Abp.Specifications.AbpSpecificationsModule
+2023-01-07 16:42:38.134 +02:00 [INF]         - Volo.Abp.GlobalFeatures.AbpGlobalFeaturesModule
+2023-01-07 16:42:38.134 +02:00 [INF]   - Volo.Abp.TenantManagement.AbpTenantManagementHttpApiClientModule
+2023-01-07 16:42:38.134 +02:00 [INF]     - Volo.Abp.TenantManagement.AbpTenantManagementApplicationContractsModule
+2023-01-07 16:42:38.134 +02:00 [INF]       - Volo.Abp.TenantManagement.AbpTenantManagementDomainSharedModule
+2023-01-07 16:42:38.290 +02:00 [INF] Initialized all ABP modules.
+2023-01-07 16:42:38.542 +02:00 [INF] Start processing HTTP request GET https://localhost:44330/.well-known/openid-configuration
+2023-01-07 16:42:38.552 +02:00 [INF] Sending HTTP request GET https://localhost:44330/.well-known/openid-configuration
+2023-01-07 16:42:38.701 +02:00 [INF] Received HTTP response headers after 143.9348ms - 200
+2023-01-07 16:42:38.704 +02:00 [INF] End processing HTTP request after 185.7468ms - 200
+2023-01-07 16:42:38.721 +02:00 [INF] Start processing HTTP request GET https://localhost:44330/.well-known/openid-configuration/jwks
+2023-01-07 16:42:38.721 +02:00 [INF] Sending HTTP request GET https://localhost:44330/.well-known/openid-configuration/jwks
+2023-01-07 16:42:38.728 +02:00 [INF] Received HTTP response headers after 6.9589ms - 200
+2023-01-07 16:42:38.729 +02:00 [INF] End processing HTTP request after 7.3165ms - 200
+2023-01-07 16:42:38.805 +02:00 [INF] Start processing HTTP request POST https://localhost:44330/connect/token
+2023-01-07 16:42:38.805 +02:00 [INF] Sending HTTP request POST https://localhost:44330/connect/token
+2023-01-07 16:42:38.911 +02:00 [INF] Received HTTP response headers after 105.3801ms - 200
+2023-01-07 16:42:38.911 +02:00 [INF] End processing HTTP request after 105.7614ms - 200
+2023-01-07 16:42:39.277 +02:00 [INF] Start processing HTTP request GET https://localhost:44329/api/abp/api-definition
+2023-01-07 16:42:39.278 +02:00 [INF] Sending HTTP request GET https://localhost:44329/api/abp/api-definition
+2023-01-07 16:42:39.516 +02:00 [INF] Received HTTP response headers after 238.0723ms - 200
+2023-01-07 16:42:39.516 +02:00 [INF] End processing HTTP request after 238.4334ms - 200

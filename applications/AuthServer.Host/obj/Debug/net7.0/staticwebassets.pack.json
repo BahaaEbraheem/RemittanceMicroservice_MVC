@@ -449,6 +449,14 @@
       "PackagePath": "staticwebassets\\libs\\bootstrap-datepicker\\locales\\bootstrap-datepicker.zh-TW.min.js"
     },
     {
+      "Id": "C:\\Git\\RemittanceMicroservice_MVC\\applications\\AuthServer.Host\\wwwroot\\libs\\bootstrap-daterangepicker\\daterangepicker.css",
+      "PackagePath": "staticwebassets\\libs\\bootstrap-daterangepicker\\daterangepicker.css"
+    },
+    {
+      "Id": "C:\\Git\\RemittanceMicroservice_MVC\\applications\\AuthServer.Host\\wwwroot\\libs\\bootstrap-daterangepicker\\daterangepicker.js",
+      "PackagePath": "staticwebassets\\libs\\bootstrap-daterangepicker\\daterangepicker.js"
+    },
+    {
       "Id": "C:\\Git\\RemittanceMicroservice_MVC\\applications\\AuthServer.Host\\wwwroot\\libs\\bootstrap\\css\\bootstrap.css",
       "PackagePath": "staticwebassets\\libs\\bootstrap\\css\\bootstrap.css"
     },
@@ -497,6 +505,10 @@
       "PackagePath": "staticwebassets\\libs\\bootstrap\\js\\bootstrap.bundle.min.js.map"
     },
     {
+      "Id": "C:\\Git\\RemittanceMicroservice_MVC\\applications\\AuthServer.Host\\wwwroot\\libs\\bootstrap\\js\\bootstrap.enable.popovers.everywhere.js",
+      "PackagePath": "staticwebassets\\libs\\bootstrap\\js\\bootstrap.enable.popovers.everywhere.js"
+    },
+    {
       "Id": "C:\\Git\\RemittanceMicroservice_MVC\\applications\\AuthServer.Host\\wwwroot\\libs\\bootstrap\\js\\bootstrap.enable.tooltips.everywhere.js",
       "PackagePath": "staticwebassets\\libs\\bootstrap\\js\\bootstrap.enable.tooltips.everywhere.js"
     },
@@ -515,10 +527,6 @@
     {
       "Id": "C:\\Git\\RemittanceMicroservice_MVC\\applications\\AuthServer.Host\\wwwroot\\libs\\jquery-form\\jquery.form.min.js",
       "PackagePath": "staticwebassets\\libs\\jquery-form\\jquery.form.min.js"
-    },
-    {
-      "Id": "C:\\Git\\RemittanceMicroservice_MVC\\applications\\AuthServer.Host\\wwwroot\\libs\\jquery-form\\jquery.form.min.js.map",
-      "PackagePath": "staticwebassets\\libs\\jquery-form\\jquery.form.min.js.map"
     },
     {
       "Id": "C:\\Git\\RemittanceMicroservice_MVC\\applications\\AuthServer.Host\\wwwroot\\libs\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.js",
@@ -1071,6 +1079,550 @@
     {
       "Id": "C:\\Git\\RemittanceMicroservice_MVC\\applications\\AuthServer.Host\\wwwroot\\libs\\malihu-custom-scrollbar-plugin\\readme.md",
       "PackagePath": "staticwebassets\\libs\\malihu-custom-scrollbar-plugin\\readme.md"
+    },
+    {
+      "Id": "C:\\Git\\RemittanceMicroservice_MVC\\applications\\AuthServer.Host\\wwwroot\\libs\\moment\\locale\\af.js",
+      "PackagePath": "staticwebassets\\libs\\moment\\locale\\af.js"
+    },
+    {
+      "Id": "C:\\Git\\RemittanceMicroservice_MVC\\applications\\AuthServer.Host\\wwwroot\\libs\\moment\\locale\\ar-dz.js",
+      "PackagePath": "staticwebassets\\libs\\moment\\locale\\ar-dz.js"
+    },
+    {
+      "Id": "C:\\Git\\RemittanceMicroservice_MVC\\applications\\AuthServer.Host\\wwwroot\\libs\\moment\\locale\\ar-kw.js",
+      "PackagePath": "staticwebassets\\libs\\moment\\locale\\ar-kw.js"
+    },
+    {
+      "Id": "C:\\Git\\RemittanceMicroservice_MVC\\applications\\AuthServer.Host\\wwwroot\\libs\\moment\\locale\\ar-ly.js",
+      "PackagePath": "staticwebassets\\libs\\moment\\locale\\ar-ly.js"
+    },
+    {
+      "Id": "C:\\Git\\RemittanceMicroservice_MVC\\applications\\AuthServer.Host\\wwwroot\\libs\\moment\\locale\\ar-ma.js",
+      "PackagePath": "staticwebassets\\libs\\moment\\locale\\ar-ma.js"
+    },
+    {
+      "Id": "C:\\Git\\RemittanceMicroservice_MVC\\applications\\AuthServer.Host\\wwwroot\\libs\\moment\\locale\\ar-sa.js",
+      "PackagePath": "staticwebassets\\libs\\moment\\locale\\ar-sa.js"
+    },
+    {
+      "Id": "C:\\Git\\RemittanceMicroservice_MVC\\applications\\AuthServer.Host\\wwwroot\\libs\\moment\\locale\\ar-tn.js",
+      "PackagePath": "staticwebassets\\libs\\moment\\locale\\ar-tn.js"
+    },
+    {
+      "Id": "C:\\Git\\RemittanceMicroservice_MVC\\applications\\AuthServer.Host\\wwwroot\\libs\\moment\\locale\\ar.js",
+      "PackagePath": "staticwebassets\\libs\\moment\\locale\\ar.js"
+    },
+    {
+      "Id": "C:\\Git\\RemittanceMicroservice_MVC\\applications\\AuthServer.Host\\wwwroot\\libs\\moment\\locale\\az.js",
+      "PackagePath": "staticwebassets\\libs\\moment\\locale\\az.js"
+    },
+    {
+      "Id": "C:\\Git\\RemittanceMicroservice_MVC\\applications\\AuthServer.Host\\wwwroot\\libs\\moment\\locale\\be.js",
+      "PackagePath": "staticwebassets\\libs\\moment\\locale\\be.js"
+    },
+    {
+      "Id": "C:\\Git\\RemittanceMicroservice_MVC\\applications\\AuthServer.Host\\wwwroot\\libs\\moment\\locale\\bg.js",
+      "PackagePath": "staticwebassets\\libs\\moment\\locale\\bg.js"
+    },
+    {
+      "Id": "C:\\Git\\RemittanceMicroservice_MVC\\applications\\AuthServer.Host\\wwwroot\\libs\\moment\\locale\\bm.js",
+      "PackagePath": "staticwebassets\\libs\\moment\\locale\\bm.js"
+    },
+    {
+      "Id": "C:\\Git\\RemittanceMicroservice_MVC\\applications\\AuthServer.Host\\wwwroot\\libs\\moment\\locale\\bn-bd.js",
+      "PackagePath": "staticwebassets\\libs\\moment\\locale\\bn-bd.js"
+    },
+    {
+      "Id": "C:\\Git\\RemittanceMicroservice_MVC\\applications\\AuthServer.Host\\wwwroot\\libs\\moment\\locale\\bn.js",
+      "PackagePath": "staticwebassets\\libs\\moment\\locale\\bn.js"
+    },
+    {
+      "Id": "C:\\Git\\RemittanceMicroservice_MVC\\applications\\AuthServer.Host\\wwwroot\\libs\\moment\\locale\\bo.js",
+      "PackagePath": "staticwebassets\\libs\\moment\\locale\\bo.js"
+    },
+    {
+      "Id": "C:\\Git\\RemittanceMicroservice_MVC\\applications\\AuthServer.Host\\wwwroot\\libs\\moment\\locale\\br.js",
+      "PackagePath": "staticwebassets\\libs\\moment\\locale\\br.js"
+    },
+    {
+      "Id": "C:\\Git\\RemittanceMicroservice_MVC\\applications\\AuthServer.Host\\wwwroot\\libs\\moment\\locale\\bs.js",
+      "PackagePath": "staticwebassets\\libs\\moment\\locale\\bs.js"
+    },
+    {
+      "Id": "C:\\Git\\RemittanceMicroservice_MVC\\applications\\AuthServer.Host\\wwwroot\\libs\\moment\\locale\\ca.js",
+      "PackagePath": "staticwebassets\\libs\\moment\\locale\\ca.js"
+    },
+    {
+      "Id": "C:\\Git\\RemittanceMicroservice_MVC\\applications\\AuthServer.Host\\wwwroot\\libs\\moment\\locale\\cs.js",
+      "PackagePath": "staticwebassets\\libs\\moment\\locale\\cs.js"
+    },
+    {
+      "Id": "C:\\Git\\RemittanceMicroservice_MVC\\applications\\AuthServer.Host\\wwwroot\\libs\\moment\\locale\\cv.js",
+      "PackagePath": "staticwebassets\\libs\\moment\\locale\\cv.js"
+    },
+    {
+      "Id": "C:\\Git\\RemittanceMicroservice_MVC\\applications\\AuthServer.Host\\wwwroot\\libs\\moment\\locale\\cy.js",
+      "PackagePath": "staticwebassets\\libs\\moment\\locale\\cy.js"
+    },
+    {
+      "Id": "C:\\Git\\RemittanceMicroservice_MVC\\applications\\AuthServer.Host\\wwwroot\\libs\\moment\\locale\\da.js",
+      "PackagePath": "staticwebassets\\libs\\moment\\locale\\da.js"
+    },
+    {
+      "Id": "C:\\Git\\RemittanceMicroservice_MVC\\applications\\AuthServer.Host\\wwwroot\\libs\\moment\\locale\\de-at.js",
+      "PackagePath": "staticwebassets\\libs\\moment\\locale\\de-at.js"
+    },
+    {
+      "Id": "C:\\Git\\RemittanceMicroservice_MVC\\applications\\AuthServer.Host\\wwwroot\\libs\\moment\\locale\\de-ch.js",
+      "PackagePath": "staticwebassets\\libs\\moment\\locale\\de-ch.js"
+    },
+    {
+      "Id": "C:\\Git\\RemittanceMicroservice_MVC\\applications\\AuthServer.Host\\wwwroot\\libs\\moment\\locale\\de.js",
+      "PackagePath": "staticwebassets\\libs\\moment\\locale\\de.js"
+    },
+    {
+      "Id": "C:\\Git\\RemittanceMicroservice_MVC\\applications\\AuthServer.Host\\wwwroot\\libs\\moment\\locale\\dv.js",
+      "PackagePath": "staticwebassets\\libs\\moment\\locale\\dv.js"
+    },
+    {
+      "Id": "C:\\Git\\RemittanceMicroservice_MVC\\applications\\AuthServer.Host\\wwwroot\\libs\\moment\\locale\\el.js",
+      "PackagePath": "staticwebassets\\libs\\moment\\locale\\el.js"
+    },
+    {
+      "Id": "C:\\Git\\RemittanceMicroservice_MVC\\applications\\AuthServer.Host\\wwwroot\\libs\\moment\\locale\\en-au.js",
+      "PackagePath": "staticwebassets\\libs\\moment\\locale\\en-au.js"
+    },
+    {
+      "Id": "C:\\Git\\RemittanceMicroservice_MVC\\applications\\AuthServer.Host\\wwwroot\\libs\\moment\\locale\\en-ca.js",
+      "PackagePath": "staticwebassets\\libs\\moment\\locale\\en-ca.js"
+    },
+    {
+      "Id": "C:\\Git\\RemittanceMicroservice_MVC\\applications\\AuthServer.Host\\wwwroot\\libs\\moment\\locale\\en-gb.js",
+      "PackagePath": "staticwebassets\\libs\\moment\\locale\\en-gb.js"
+    },
+    {
+      "Id": "C:\\Git\\RemittanceMicroservice_MVC\\applications\\AuthServer.Host\\wwwroot\\libs\\moment\\locale\\en-ie.js",
+      "PackagePath": "staticwebassets\\libs\\moment\\locale\\en-ie.js"
+    },
+    {
+      "Id": "C:\\Git\\RemittanceMicroservice_MVC\\applications\\AuthServer.Host\\wwwroot\\libs\\moment\\locale\\en-il.js",
+      "PackagePath": "staticwebassets\\libs\\moment\\locale\\en-il.js"
+    },
+    {
+      "Id": "C:\\Git\\RemittanceMicroservice_MVC\\applications\\AuthServer.Host\\wwwroot\\libs\\moment\\locale\\en-in.js",
+      "PackagePath": "staticwebassets\\libs\\moment\\locale\\en-in.js"
+    },
+    {
+      "Id": "C:\\Git\\RemittanceMicroservice_MVC\\applications\\AuthServer.Host\\wwwroot\\libs\\moment\\locale\\en-nz.js",
+      "PackagePath": "staticwebassets\\libs\\moment\\locale\\en-nz.js"
+    },
+    {
+      "Id": "C:\\Git\\RemittanceMicroservice_MVC\\applications\\AuthServer.Host\\wwwroot\\libs\\moment\\locale\\en-sg.js",
+      "PackagePath": "staticwebassets\\libs\\moment\\locale\\en-sg.js"
+    },
+    {
+      "Id": "C:\\Git\\RemittanceMicroservice_MVC\\applications\\AuthServer.Host\\wwwroot\\libs\\moment\\locale\\eo.js",
+      "PackagePath": "staticwebassets\\libs\\moment\\locale\\eo.js"
+    },
+    {
+      "Id": "C:\\Git\\RemittanceMicroservice_MVC\\applications\\AuthServer.Host\\wwwroot\\libs\\moment\\locale\\es-do.js",
+      "PackagePath": "staticwebassets\\libs\\moment\\locale\\es-do.js"
+    },
+    {
+      "Id": "C:\\Git\\RemittanceMicroservice_MVC\\applications\\AuthServer.Host\\wwwroot\\libs\\moment\\locale\\es-mx.js",
+      "PackagePath": "staticwebassets\\libs\\moment\\locale\\es-mx.js"
+    },
+    {
+      "Id": "C:\\Git\\RemittanceMicroservice_MVC\\applications\\AuthServer.Host\\wwwroot\\libs\\moment\\locale\\es-us.js",
+      "PackagePath": "staticwebassets\\libs\\moment\\locale\\es-us.js"
+    },
+    {
+      "Id": "C:\\Git\\RemittanceMicroservice_MVC\\applications\\AuthServer.Host\\wwwroot\\libs\\moment\\locale\\es.js",
+      "PackagePath": "staticwebassets\\libs\\moment\\locale\\es.js"
+    },
+    {
+      "Id": "C:\\Git\\RemittanceMicroservice_MVC\\applications\\AuthServer.Host\\wwwroot\\libs\\moment\\locale\\et.js",
+      "PackagePath": "staticwebassets\\libs\\moment\\locale\\et.js"
+    },
+    {
+      "Id": "C:\\Git\\RemittanceMicroservice_MVC\\applications\\AuthServer.Host\\wwwroot\\libs\\moment\\locale\\eu.js",
+      "PackagePath": "staticwebassets\\libs\\moment\\locale\\eu.js"
+    },
+    {
+      "Id": "C:\\Git\\RemittanceMicroservice_MVC\\applications\\AuthServer.Host\\wwwroot\\libs\\moment\\locale\\fa.js",
+      "PackagePath": "staticwebassets\\libs\\moment\\locale\\fa.js"
+    },
+    {
+      "Id": "C:\\Git\\RemittanceMicroservice_MVC\\applications\\AuthServer.Host\\wwwroot\\libs\\moment\\locale\\fi.js",
+      "PackagePath": "staticwebassets\\libs\\moment\\locale\\fi.js"
+    },
+    {
+      "Id": "C:\\Git\\RemittanceMicroservice_MVC\\applications\\AuthServer.Host\\wwwroot\\libs\\moment\\locale\\fil.js",
+      "PackagePath": "staticwebassets\\libs\\moment\\locale\\fil.js"
+    },
+    {
+      "Id": "C:\\Git\\RemittanceMicroservice_MVC\\applications\\AuthServer.Host\\wwwroot\\libs\\moment\\locale\\fo.js",
+      "PackagePath": "staticwebassets\\libs\\moment\\locale\\fo.js"
+    },
+    {
+      "Id": "C:\\Git\\RemittanceMicroservice_MVC\\applications\\AuthServer.Host\\wwwroot\\libs\\moment\\locale\\fr-ca.js",
+      "PackagePath": "staticwebassets\\libs\\moment\\locale\\fr-ca.js"
+    },
+    {
+      "Id": "C:\\Git\\RemittanceMicroservice_MVC\\applications\\AuthServer.Host\\wwwroot\\libs\\moment\\locale\\fr-ch.js",
+      "PackagePath": "staticwebassets\\libs\\moment\\locale\\fr-ch.js"
+    },
+    {
+      "Id": "C:\\Git\\RemittanceMicroservice_MVC\\applications\\AuthServer.Host\\wwwroot\\libs\\moment\\locale\\fr.js",
+      "PackagePath": "staticwebassets\\libs\\moment\\locale\\fr.js"
+    },
+    {
+      "Id": "C:\\Git\\RemittanceMicroservice_MVC\\applications\\AuthServer.Host\\wwwroot\\libs\\moment\\locale\\fy.js",
+      "PackagePath": "staticwebassets\\libs\\moment\\locale\\fy.js"
+    },
+    {
+      "Id": "C:\\Git\\RemittanceMicroservice_MVC\\applications\\AuthServer.Host\\wwwroot\\libs\\moment\\locale\\ga.js",
+      "PackagePath": "staticwebassets\\libs\\moment\\locale\\ga.js"
+    },
+    {
+      "Id": "C:\\Git\\RemittanceMicroservice_MVC\\applications\\AuthServer.Host\\wwwroot\\libs\\moment\\locale\\gd.js",
+      "PackagePath": "staticwebassets\\libs\\moment\\locale\\gd.js"
+    },
+    {
+      "Id": "C:\\Git\\RemittanceMicroservice_MVC\\applications\\AuthServer.Host\\wwwroot\\libs\\moment\\locale\\gl.js",
+      "PackagePath": "staticwebassets\\libs\\moment\\locale\\gl.js"
+    },
+    {
+      "Id": "C:\\Git\\RemittanceMicroservice_MVC\\applications\\AuthServer.Host\\wwwroot\\libs\\moment\\locale\\gom-deva.js",
+      "PackagePath": "staticwebassets\\libs\\moment\\locale\\gom-deva.js"
+    },
+    {
+      "Id": "C:\\Git\\RemittanceMicroservice_MVC\\applications\\AuthServer.Host\\wwwroot\\libs\\moment\\locale\\gom-latn.js",
+      "PackagePath": "staticwebassets\\libs\\moment\\locale\\gom-latn.js"
+    },
+    {
+      "Id": "C:\\Git\\RemittanceMicroservice_MVC\\applications\\AuthServer.Host\\wwwroot\\libs\\moment\\locale\\gu.js",
+      "PackagePath": "staticwebassets\\libs\\moment\\locale\\gu.js"
+    },
+    {
+      "Id": "C:\\Git\\RemittanceMicroservice_MVC\\applications\\AuthServer.Host\\wwwroot\\libs\\moment\\locale\\he.js",
+      "PackagePath": "staticwebassets\\libs\\moment\\locale\\he.js"
+    },
+    {
+      "Id": "C:\\Git\\RemittanceMicroservice_MVC\\applications\\AuthServer.Host\\wwwroot\\libs\\moment\\locale\\hi.js",
+      "PackagePath": "staticwebassets\\libs\\moment\\locale\\hi.js"
+    },
+    {
+      "Id": "C:\\Git\\RemittanceMicroservice_MVC\\applications\\AuthServer.Host\\wwwroot\\libs\\moment\\locale\\hr.js",
+      "PackagePath": "staticwebassets\\libs\\moment\\locale\\hr.js"
+    },
+    {
+      "Id": "C:\\Git\\RemittanceMicroservice_MVC\\applications\\AuthServer.Host\\wwwroot\\libs\\moment\\locale\\hu.js",
+      "PackagePath": "staticwebassets\\libs\\moment\\locale\\hu.js"
+    },
+    {
+      "Id": "C:\\Git\\RemittanceMicroservice_MVC\\applications\\AuthServer.Host\\wwwroot\\libs\\moment\\locale\\hy-am.js",
+      "PackagePath": "staticwebassets\\libs\\moment\\locale\\hy-am.js"
+    },
+    {
+      "Id": "C:\\Git\\RemittanceMicroservice_MVC\\applications\\AuthServer.Host\\wwwroot\\libs\\moment\\locale\\id.js",
+      "PackagePath": "staticwebassets\\libs\\moment\\locale\\id.js"
+    },
+    {
+      "Id": "C:\\Git\\RemittanceMicroservice_MVC\\applications\\AuthServer.Host\\wwwroot\\libs\\moment\\locale\\is.js",
+      "PackagePath": "staticwebassets\\libs\\moment\\locale\\is.js"
+    },
+    {
+      "Id": "C:\\Git\\RemittanceMicroservice_MVC\\applications\\AuthServer.Host\\wwwroot\\libs\\moment\\locale\\it-ch.js",
+      "PackagePath": "staticwebassets\\libs\\moment\\locale\\it-ch.js"
+    },
+    {
+      "Id": "C:\\Git\\RemittanceMicroservice_MVC\\applications\\AuthServer.Host\\wwwroot\\libs\\moment\\locale\\it.js",
+      "PackagePath": "staticwebassets\\libs\\moment\\locale\\it.js"
+    },
+    {
+      "Id": "C:\\Git\\RemittanceMicroservice_MVC\\applications\\AuthServer.Host\\wwwroot\\libs\\moment\\locale\\ja.js",
+      "PackagePath": "staticwebassets\\libs\\moment\\locale\\ja.js"
+    },
+    {
+      "Id": "C:\\Git\\RemittanceMicroservice_MVC\\applications\\AuthServer.Host\\wwwroot\\libs\\moment\\locale\\jv.js",
+      "PackagePath": "staticwebassets\\libs\\moment\\locale\\jv.js"
+    },
+    {
+      "Id": "C:\\Git\\RemittanceMicroservice_MVC\\applications\\AuthServer.Host\\wwwroot\\libs\\moment\\locale\\ka.js",
+      "PackagePath": "staticwebassets\\libs\\moment\\locale\\ka.js"
+    },
+    {
+      "Id": "C:\\Git\\RemittanceMicroservice_MVC\\applications\\AuthServer.Host\\wwwroot\\libs\\moment\\locale\\kk.js",
+      "PackagePath": "staticwebassets\\libs\\moment\\locale\\kk.js"
+    },
+    {
+      "Id": "C:\\Git\\RemittanceMicroservice_MVC\\applications\\AuthServer.Host\\wwwroot\\libs\\moment\\locale\\km.js",
+      "PackagePath": "staticwebassets\\libs\\moment\\locale\\km.js"
+    },
+    {
+      "Id": "C:\\Git\\RemittanceMicroservice_MVC\\applications\\AuthServer.Host\\wwwroot\\libs\\moment\\locale\\kn.js",
+      "PackagePath": "staticwebassets\\libs\\moment\\locale\\kn.js"
+    },
+    {
+      "Id": "C:\\Git\\RemittanceMicroservice_MVC\\applications\\AuthServer.Host\\wwwroot\\libs\\moment\\locale\\ko.js",
+      "PackagePath": "staticwebassets\\libs\\moment\\locale\\ko.js"
+    },
+    {
+      "Id": "C:\\Git\\RemittanceMicroservice_MVC\\applications\\AuthServer.Host\\wwwroot\\libs\\moment\\locale\\ku.js",
+      "PackagePath": "staticwebassets\\libs\\moment\\locale\\ku.js"
+    },
+    {
+      "Id": "C:\\Git\\RemittanceMicroservice_MVC\\applications\\AuthServer.Host\\wwwroot\\libs\\moment\\locale\\ky.js",
+      "PackagePath": "staticwebassets\\libs\\moment\\locale\\ky.js"
+    },
+    {
+      "Id": "C:\\Git\\RemittanceMicroservice_MVC\\applications\\AuthServer.Host\\wwwroot\\libs\\moment\\locale\\lb.js",
+      "PackagePath": "staticwebassets\\libs\\moment\\locale\\lb.js"
+    },
+    {
+      "Id": "C:\\Git\\RemittanceMicroservice_MVC\\applications\\AuthServer.Host\\wwwroot\\libs\\moment\\locale\\lo.js",
+      "PackagePath": "staticwebassets\\libs\\moment\\locale\\lo.js"
+    },
+    {
+      "Id": "C:\\Git\\RemittanceMicroservice_MVC\\applications\\AuthServer.Host\\wwwroot\\libs\\moment\\locale\\lt.js",
+      "PackagePath": "staticwebassets\\libs\\moment\\locale\\lt.js"
+    },
+    {
+      "Id": "C:\\Git\\RemittanceMicroservice_MVC\\applications\\AuthServer.Host\\wwwroot\\libs\\moment\\locale\\lv.js",
+      "PackagePath": "staticwebassets\\libs\\moment\\locale\\lv.js"
+    },
+    {
+      "Id": "C:\\Git\\RemittanceMicroservice_MVC\\applications\\AuthServer.Host\\wwwroot\\libs\\moment\\locale\\me.js",
+      "PackagePath": "staticwebassets\\libs\\moment\\locale\\me.js"
+    },
+    {
+      "Id": "C:\\Git\\RemittanceMicroservice_MVC\\applications\\AuthServer.Host\\wwwroot\\libs\\moment\\locale\\mi.js",
+      "PackagePath": "staticwebassets\\libs\\moment\\locale\\mi.js"
+    },
+    {
+      "Id": "C:\\Git\\RemittanceMicroservice_MVC\\applications\\AuthServer.Host\\wwwroot\\libs\\moment\\locale\\mk.js",
+      "PackagePath": "staticwebassets\\libs\\moment\\locale\\mk.js"
+    },
+    {
+      "Id": "C:\\Git\\RemittanceMicroservice_MVC\\applications\\AuthServer.Host\\wwwroot\\libs\\moment\\locale\\ml.js",
+      "PackagePath": "staticwebassets\\libs\\moment\\locale\\ml.js"
+    },
+    {
+      "Id": "C:\\Git\\RemittanceMicroservice_MVC\\applications\\AuthServer.Host\\wwwroot\\libs\\moment\\locale\\mn.js",
+      "PackagePath": "staticwebassets\\libs\\moment\\locale\\mn.js"
+    },
+    {
+      "Id": "C:\\Git\\RemittanceMicroservice_MVC\\applications\\AuthServer.Host\\wwwroot\\libs\\moment\\locale\\mr.js",
+      "PackagePath": "staticwebassets\\libs\\moment\\locale\\mr.js"
+    },
+    {
+      "Id": "C:\\Git\\RemittanceMicroservice_MVC\\applications\\AuthServer.Host\\wwwroot\\libs\\moment\\locale\\ms-my.js",
+      "PackagePath": "staticwebassets\\libs\\moment\\locale\\ms-my.js"
+    },
+    {
+      "Id": "C:\\Git\\RemittanceMicroservice_MVC\\applications\\AuthServer.Host\\wwwroot\\libs\\moment\\locale\\ms.js",
+      "PackagePath": "staticwebassets\\libs\\moment\\locale\\ms.js"
+    },
+    {
+      "Id": "C:\\Git\\RemittanceMicroservice_MVC\\applications\\AuthServer.Host\\wwwroot\\libs\\moment\\locale\\mt.js",
+      "PackagePath": "staticwebassets\\libs\\moment\\locale\\mt.js"
+    },
+    {
+      "Id": "C:\\Git\\RemittanceMicroservice_MVC\\applications\\AuthServer.Host\\wwwroot\\libs\\moment\\locale\\my.js",
+      "PackagePath": "staticwebassets\\libs\\moment\\locale\\my.js"
+    },
+    {
+      "Id": "C:\\Git\\RemittanceMicroservice_MVC\\applications\\AuthServer.Host\\wwwroot\\libs\\moment\\locale\\nb.js",
+      "PackagePath": "staticwebassets\\libs\\moment\\locale\\nb.js"
+    },
+    {
+      "Id": "C:\\Git\\RemittanceMicroservice_MVC\\applications\\AuthServer.Host\\wwwroot\\libs\\moment\\locale\\ne.js",
+      "PackagePath": "staticwebassets\\libs\\moment\\locale\\ne.js"
+    },
+    {
+      "Id": "C:\\Git\\RemittanceMicroservice_MVC\\applications\\AuthServer.Host\\wwwroot\\libs\\moment\\locale\\nl-be.js",
+      "PackagePath": "staticwebassets\\libs\\moment\\locale\\nl-be.js"
+    },
+    {
+      "Id": "C:\\Git\\RemittanceMicroservice_MVC\\applications\\AuthServer.Host\\wwwroot\\libs\\moment\\locale\\nl.js",
+      "PackagePath": "staticwebassets\\libs\\moment\\locale\\nl.js"
+    },
+    {
+      "Id": "C:\\Git\\RemittanceMicroservice_MVC\\applications\\AuthServer.Host\\wwwroot\\libs\\moment\\locale\\nn.js",
+      "PackagePath": "staticwebassets\\libs\\moment\\locale\\nn.js"
+    },
+    {
+      "Id": "C:\\Git\\RemittanceMicroservice_MVC\\applications\\AuthServer.Host\\wwwroot\\libs\\moment\\locale\\oc-lnc.js",
+      "PackagePath": "staticwebassets\\libs\\moment\\locale\\oc-lnc.js"
+    },
+    {
+      "Id": "C:\\Git\\RemittanceMicroservice_MVC\\applications\\AuthServer.Host\\wwwroot\\libs\\moment\\locale\\pa-in.js",
+      "PackagePath": "staticwebassets\\libs\\moment\\locale\\pa-in.js"
+    },
+    {
+      "Id": "C:\\Git\\RemittanceMicroservice_MVC\\applications\\AuthServer.Host\\wwwroot\\libs\\moment\\locale\\pl.js",
+      "PackagePath": "staticwebassets\\libs\\moment\\locale\\pl.js"
+    },
+    {
+      "Id": "C:\\Git\\RemittanceMicroservice_MVC\\applications\\AuthServer.Host\\wwwroot\\libs\\moment\\locale\\pt-br.js",
+      "PackagePath": "staticwebassets\\libs\\moment\\locale\\pt-br.js"
+    },
+    {
+      "Id": "C:\\Git\\RemittanceMicroservice_MVC\\applications\\AuthServer.Host\\wwwroot\\libs\\moment\\locale\\pt.js",
+      "PackagePath": "staticwebassets\\libs\\moment\\locale\\pt.js"
+    },
+    {
+      "Id": "C:\\Git\\RemittanceMicroservice_MVC\\applications\\AuthServer.Host\\wwwroot\\libs\\moment\\locale\\ro.js",
+      "PackagePath": "staticwebassets\\libs\\moment\\locale\\ro.js"
+    },
+    {
+      "Id": "C:\\Git\\RemittanceMicroservice_MVC\\applications\\AuthServer.Host\\wwwroot\\libs\\moment\\locale\\ru.js",
+      "PackagePath": "staticwebassets\\libs\\moment\\locale\\ru.js"
+    },
+    {
+      "Id": "C:\\Git\\RemittanceMicroservice_MVC\\applications\\AuthServer.Host\\wwwroot\\libs\\moment\\locale\\sd.js",
+      "PackagePath": "staticwebassets\\libs\\moment\\locale\\sd.js"
+    },
+    {
+      "Id": "C:\\Git\\RemittanceMicroservice_MVC\\applications\\AuthServer.Host\\wwwroot\\libs\\moment\\locale\\se.js",
+      "PackagePath": "staticwebassets\\libs\\moment\\locale\\se.js"
+    },
+    {
+      "Id": "C:\\Git\\RemittanceMicroservice_MVC\\applications\\AuthServer.Host\\wwwroot\\libs\\moment\\locale\\si.js",
+      "PackagePath": "staticwebassets\\libs\\moment\\locale\\si.js"
+    },
+    {
+      "Id": "C:\\Git\\RemittanceMicroservice_MVC\\applications\\AuthServer.Host\\wwwroot\\libs\\moment\\locale\\sk.js",
+      "PackagePath": "staticwebassets\\libs\\moment\\locale\\sk.js"
+    },
+    {
+      "Id": "C:\\Git\\RemittanceMicroservice_MVC\\applications\\AuthServer.Host\\wwwroot\\libs\\moment\\locale\\sl.js",
+      "PackagePath": "staticwebassets\\libs\\moment\\locale\\sl.js"
+    },
+    {
+      "Id": "C:\\Git\\RemittanceMicroservice_MVC\\applications\\AuthServer.Host\\wwwroot\\libs\\moment\\locale\\sq.js",
+      "PackagePath": "staticwebassets\\libs\\moment\\locale\\sq.js"
+    },
+    {
+      "Id": "C:\\Git\\RemittanceMicroservice_MVC\\applications\\AuthServer.Host\\wwwroot\\libs\\moment\\locale\\sr-cyrl.js",
+      "PackagePath": "staticwebassets\\libs\\moment\\locale\\sr-cyrl.js"
+    },
+    {
+      "Id": "C:\\Git\\RemittanceMicroservice_MVC\\applications\\AuthServer.Host\\wwwroot\\libs\\moment\\locale\\sr.js",
+      "PackagePath": "staticwebassets\\libs\\moment\\locale\\sr.js"
+    },
+    {
+      "Id": "C:\\Git\\RemittanceMicroservice_MVC\\applications\\AuthServer.Host\\wwwroot\\libs\\moment\\locale\\ss.js",
+      "PackagePath": "staticwebassets\\libs\\moment\\locale\\ss.js"
+    },
+    {
+      "Id": "C:\\Git\\RemittanceMicroservice_MVC\\applications\\AuthServer.Host\\wwwroot\\libs\\moment\\locale\\sv.js",
+      "PackagePath": "staticwebassets\\libs\\moment\\locale\\sv.js"
+    },
+    {
+      "Id": "C:\\Git\\RemittanceMicroservice_MVC\\applications\\AuthServer.Host\\wwwroot\\libs\\moment\\locale\\sw.js",
+      "PackagePath": "staticwebassets\\libs\\moment\\locale\\sw.js"
+    },
+    {
+      "Id": "C:\\Git\\RemittanceMicroservice_MVC\\applications\\AuthServer.Host\\wwwroot\\libs\\moment\\locale\\ta.js",
+      "PackagePath": "staticwebassets\\libs\\moment\\locale\\ta.js"
+    },
+    {
+      "Id": "C:\\Git\\RemittanceMicroservice_MVC\\applications\\AuthServer.Host\\wwwroot\\libs\\moment\\locale\\te.js",
+      "PackagePath": "staticwebassets\\libs\\moment\\locale\\te.js"
+    },
+    {
+      "Id": "C:\\Git\\RemittanceMicroservice_MVC\\applications\\AuthServer.Host\\wwwroot\\libs\\moment\\locale\\tet.js",
+      "PackagePath": "staticwebassets\\libs\\moment\\locale\\tet.js"
+    },
+    {
+      "Id": "C:\\Git\\RemittanceMicroservice_MVC\\applications\\AuthServer.Host\\wwwroot\\libs\\moment\\locale\\tg.js",
+      "PackagePath": "staticwebassets\\libs\\moment\\locale\\tg.js"
+    },
+    {
+      "Id": "C:\\Git\\RemittanceMicroservice_MVC\\applications\\AuthServer.Host\\wwwroot\\libs\\moment\\locale\\th.js",
+      "PackagePath": "staticwebassets\\libs\\moment\\locale\\th.js"
+    },
+    {
+      "Id": "C:\\Git\\RemittanceMicroservice_MVC\\applications\\AuthServer.Host\\wwwroot\\libs\\moment\\locale\\tk.js",
+      "PackagePath": "staticwebassets\\libs\\moment\\locale\\tk.js"
+    },
+    {
+      "Id": "C:\\Git\\RemittanceMicroservice_MVC\\applications\\AuthServer.Host\\wwwroot\\libs\\moment\\locale\\tl-ph.js",
+      "PackagePath": "staticwebassets\\libs\\moment\\locale\\tl-ph.js"
+    },
+    {
+      "Id": "C:\\Git\\RemittanceMicroservice_MVC\\applications\\AuthServer.Host\\wwwroot\\libs\\moment\\locale\\tlh.js",
+      "PackagePath": "staticwebassets\\libs\\moment\\locale\\tlh.js"
+    },
+    {
+      "Id": "C:\\Git\\RemittanceMicroservice_MVC\\applications\\AuthServer.Host\\wwwroot\\libs\\moment\\locale\\tr.js",
+      "PackagePath": "staticwebassets\\libs\\moment\\locale\\tr.js"
+    },
+    {
+      "Id": "C:\\Git\\RemittanceMicroservice_MVC\\applications\\AuthServer.Host\\wwwroot\\libs\\moment\\locale\\tzl.js",
+      "PackagePath": "staticwebassets\\libs\\moment\\locale\\tzl.js"
+    },
+    {
+      "Id": "C:\\Git\\RemittanceMicroservice_MVC\\applications\\AuthServer.Host\\wwwroot\\libs\\moment\\locale\\tzm-latn.js",
+      "PackagePath": "staticwebassets\\libs\\moment\\locale\\tzm-latn.js"
+    },
+    {
+      "Id": "C:\\Git\\RemittanceMicroservice_MVC\\applications\\AuthServer.Host\\wwwroot\\libs\\moment\\locale\\tzm.js",
+      "PackagePath": "staticwebassets\\libs\\moment\\locale\\tzm.js"
+    },
+    {
+      "Id": "C:\\Git\\RemittanceMicroservice_MVC\\applications\\AuthServer.Host\\wwwroot\\libs\\moment\\locale\\ug-cn.js",
+      "PackagePath": "staticwebassets\\libs\\moment\\locale\\ug-cn.js"
+    },
+    {
+      "Id": "C:\\Git\\RemittanceMicroservice_MVC\\applications\\AuthServer.Host\\wwwroot\\libs\\moment\\locale\\uk.js",
+      "PackagePath": "staticwebassets\\libs\\moment\\locale\\uk.js"
+    },
+    {
+      "Id": "C:\\Git\\RemittanceMicroservice_MVC\\applications\\AuthServer.Host\\wwwroot\\libs\\moment\\locale\\ur.js",
+      "PackagePath": "staticwebassets\\libs\\moment\\locale\\ur.js"
+    },
+    {
+      "Id": "C:\\Git\\RemittanceMicroservice_MVC\\applications\\AuthServer.Host\\wwwroot\\libs\\moment\\locale\\uz-latn.js",
+      "PackagePath": "staticwebassets\\libs\\moment\\locale\\uz-latn.js"
+    },
+    {
+      "Id": "C:\\Git\\RemittanceMicroservice_MVC\\applications\\AuthServer.Host\\wwwroot\\libs\\moment\\locale\\uz.js",
+      "PackagePath": "staticwebassets\\libs\\moment\\locale\\uz.js"
+    },
+    {
+      "Id": "C:\\Git\\RemittanceMicroservice_MVC\\applications\\AuthServer.Host\\wwwroot\\libs\\moment\\locale\\vi.js",
+      "PackagePath": "staticwebassets\\libs\\moment\\locale\\vi.js"
+    },
+    {
+      "Id": "C:\\Git\\RemittanceMicroservice_MVC\\applications\\AuthServer.Host\\wwwroot\\libs\\moment\\locale\\x-pseudo.js",
+      "PackagePath": "staticwebassets\\libs\\moment\\locale\\x-pseudo.js"
+    },
+    {
+      "Id": "C:\\Git\\RemittanceMicroservice_MVC\\applications\\AuthServer.Host\\wwwroot\\libs\\moment\\locale\\yo.js",
+      "PackagePath": "staticwebassets\\libs\\moment\\locale\\yo.js"
+    },
+    {
+      "Id": "C:\\Git\\RemittanceMicroservice_MVC\\applications\\AuthServer.Host\\wwwroot\\libs\\moment\\locale\\zh-cn.js",
+      "PackagePath": "staticwebassets\\libs\\moment\\locale\\zh-cn.js"
+    },
+    {
+      "Id": "C:\\Git\\RemittanceMicroservice_MVC\\applications\\AuthServer.Host\\wwwroot\\libs\\moment\\locale\\zh-hk.js",
+      "PackagePath": "staticwebassets\\libs\\moment\\locale\\zh-hk.js"
+    },
+    {
+      "Id": "C:\\Git\\RemittanceMicroservice_MVC\\applications\\AuthServer.Host\\wwwroot\\libs\\moment\\locale\\zh-mo.js",
+      "PackagePath": "staticwebassets\\libs\\moment\\locale\\zh-mo.js"
+    },
+    {
+      "Id": "C:\\Git\\RemittanceMicroservice_MVC\\applications\\AuthServer.Host\\wwwroot\\libs\\moment\\locale\\zh-tw.js",
+      "PackagePath": "staticwebassets\\libs\\moment\\locale\\zh-tw.js"
+    },
+    {
+      "Id": "C:\\Git\\RemittanceMicroservice_MVC\\applications\\AuthServer.Host\\wwwroot\\libs\\moment\\moment.min.js",
+      "PackagePath": "staticwebassets\\libs\\moment\\moment.min.js"
     },
     {
       "Id": "C:\\Git\\RemittanceMicroservice_MVC\\applications\\AuthServer.Host\\wwwroot\\libs\\select2\\css\\select2.min.css",

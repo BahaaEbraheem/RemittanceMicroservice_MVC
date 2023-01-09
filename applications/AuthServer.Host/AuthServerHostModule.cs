@@ -39,11 +39,13 @@ namespace AuthServer.Host
         typeof(AbpAuditLoggingEntityFrameworkCoreModule),
         typeof(AbpSettingManagementEntityFrameworkCoreModule),
         typeof(AbpIdentityEntityFrameworkCoreModule),
+
         typeof(AbpIdentityApplicationContractsModule),
         typeof(AbpAccountApplicationModule),
         typeof(AbpIdentityServerEntityFrameworkCoreModule),
         typeof(AbpEntityFrameworkCoreSqlServerModule),
         typeof(AbpAccountWebIdentityServerModule),
+
         typeof(AbpAspNetCoreMvcUiBasicThemeModule),
         typeof(AbpTenantManagementEntityFrameworkCoreModule),
         typeof(AbpTenantManagementApplicationContractsModule)
